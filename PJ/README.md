@@ -1,14 +1,16 @@
-PROJET_Drone
+Pierre-Jean TEXIER
 ============
-
-Repository personnel pour mon projet de fin d'étude 
-
-Je m'occupe de la partie segment SOL à savoir :
 
 - Création de l'OS Linux minimaliste (Bootloader, kernel, RootFS)
 - Cross compilation de Qtembedded et tslib
+- Cross Compilation de openCV
 - Gestion du power management
 
+Hiérarchie des dossiers
+----------------------
 
-- Le dossier cr contient les comptes-rendu de projet ainsi que diverses informations
-- Le dossier qt contient le fichier qmake.comf ainsi qu'un README : pour générer le readme au format PDF --> pandoc README -o qt.pdf
+README.md vers PDF
+------------------
+
+- pour générer le README.md au format PDF --> 
+      pandoc README -o qt.pdf

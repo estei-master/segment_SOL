@@ -27,3 +27,5 @@ README.md vers PDF
 ------------------
 	su -c 'aptitude install pandoc' 
 	pandoc README -o qt.pdf
+
+

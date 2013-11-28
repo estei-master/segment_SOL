@@ -21,7 +21,7 @@ Hiérarchie des dossiers
 :   Contient un mini tuto pour installer le driver mali	
 
 `uboot&kernel` 
-:   Contient des scripts (bash, Makefile), ainsi que le dernier .config à jour
+:   Contient des scripts (bash, Makefile, ...), ainsi que le dernier .config à jour
 
 README.md vers PDF
 ------------------

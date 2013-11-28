@@ -8,9 +8,20 @@ Pierre-Jean TEXIER
 
 Hiérarchie des dossiers
 ----------------------
+- Qt :
+	Contient un mini tuto pour cross-compiler Qt embedded, des exemples, des tests, ...
+
+- openCV :
+	Contient un mini tuto pour cross-compiler openCV	
+
+- openGLES :
+	Contient un mini tuto pour installer le driver mali	
+
+- uboot&kernel :
+	Contient des scripts (bash, Makefile), ainsi que le dernier .config à jour
 
 README.md vers PDF
 ------------------
 
 - pour générer le README.md au format PDF --> 
-      pandoc README -o qt.pdf
+	pandoc README -o qt.pdf

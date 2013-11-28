@@ -22,7 +22,5 @@ Hiérarchie des dossiers
 
 README.md vers PDF
 ------------------
-
-- pour générer le README.md au format PDF -->
 	su -c 'aptitude install pandoc' 
 	pandoc README -o qt.pdf

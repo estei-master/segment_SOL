@@ -29,7 +29,7 @@ Préambule : L'environnement
 	flex
 	gperf
 	build-essential
-	ibncurses5-dev
+	libncurses5-dev
 	libc6-i386
 	lib32stdc++6
 	lib32z1

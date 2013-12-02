@@ -138,8 +138,6 @@ DO_COMPILE()
 	-little-endian  \
 	-opensource  \
 	-confirm-license  \
-	-I /usr/local/tslib/include/  \
-	-L /usr/local/tslib/lib/  \
 	-no-qt3support  \
 	-no-cups  \
 	-no-webkit  \
@@ -172,12 +170,6 @@ General options
 
 `-confirm-license `
 :   Permet de répondre 'yes' de façon automatique
-
-`-I /usr/local/tslib/include/`
-:   Chemin des includes de la tslib
-
-`-L /usr/local/lib/ `
-:   Chemin des librairies de la tslib
 
 `-no-qt3support`
 :   Pas de support Qt3

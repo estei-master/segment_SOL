@@ -18,9 +18,9 @@
 
 
 ARCH ?= arm
-CROSS_COMPILE ?= /home/texierp/PROJET_Drone/gcc-linaro-arm-linux-gnueabihf-4.7-2013.01-20130125_linux/bin/arm-linux-gnueabihf-
-KERNEL_DIR ?= /home/texierp/a20_kernel_3.4_DRONE/linux-sunxi
-UBOOT_DIR ?= /home/texierp/a20_kernel_3.4_DRONE/u-boot-sunxi
+CROSS_COMPILE ?= /home/texierp/Documents/segment_SOL/crosstool-chain/gcc-linaro-arm-linux-gnueabihf-4.7-2013.01-20130125_linux/bin/arm-linux-gnueabihf-
+KERNEL_DIR ?= /home/texierp/Documents/segment_SOL/PJ/uboot&Kernel/linux-sunxi
+UBOOT_DIR ?= /home/texierp/Documents/segment_SOL/PJ/uboot&Kernel/u-boot-sunxi
 CFLAGS := -O3 -march=armv7-a -mcpu=cortex-a7 -mtune=cortex-a7 -mfpu=neon-vfpv4 -mfloat-abi=hard
 
 .PHONY: uboot uImage modules help

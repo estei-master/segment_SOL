@@ -23,7 +23,7 @@ KERNEL_DIR ?= /home/texierp/Documents/segment_SOL/PJ/uboot&Kernel/linux-sunxi
 UBOOT_DIR ?= /home/texierp/Documents/segment_SOL/PJ/uboot&Kernel/u-boot-sunxi
 CFLAGS := -O3 -march=armv7-a -mcpu=cortex-a7 -mtune=cortex-a7 -mfpu=neon-vfpv4 -mfloat-abi=hard
 
-.PHONY: uboot uImage modules help
+.PHONY: uboot uImage modules help 
 uboot::
 	${MAKE} -C ${UBOOT_DIR} A20-OLinuXino_MICRO_config CROSS_COMPILE=${CROSS_COMPILE} -j2 
 

@@ -1,0 +1,1821 @@
+vcma9: VCMA9_config; $(MAKE)
+cpu9260_128m: cpu9260_128M_config; $(MAKE)
+cpu9260_nand_128m: cpu9260_nand_128M_config; $(MAKE)
+cpu9g20: cpu9G20_config; $(MAKE)
+cpu9g20_128m: cpu9G20_128M_config; $(MAKE)
+cpu9g20_nand: cpu9G20_nand_config; $(MAKE)
+cpu9g20_nand_128m: cpu9G20_nand_128M_config; $(MAKE)
+davinci_dm6467tevm: davinci_dm6467Tevm_config; $(MAKE)
+a10_mid_1gb: A10_MID_1GB_config; $(MAKE)
+a10s-olinuxino-m: A10s-OLinuXino-M_config; $(MAKE)
+a10s-olinuxino-m_fel: A10s-OLinuXino-M_FEL_config; $(MAKE)
+a13-olinuxino: A13-OLinuXino_config; $(MAKE)
+a13-olinuxino_fel: A13-OLinuXino_FEL_config; $(MAKE)
+a13-olinuxino_fel_sdcon: A13-OLinuXino_FEL_sdcon_config; $(MAKE)
+a13-olinuxinom: A13-OLinuXinoM_config; $(MAKE)
+a13-olinuxinom_fel: A13-OLinuXinoM_FEL_config; $(MAKE)
+a13_mid: A13_MID_config; $(MAKE)
+a20-olinuxino_micro: A20-OLinuXino_MICRO_config; $(MAKE)
+a20-olinuxino_micro_fel: A20-OLinuXino_MICRO_FEL_config; $(MAKE)
+auxtek-t003: Auxtek-T003_config; $(MAKE)
+auxtek-t004: Auxtek-T004_config; $(MAKE)
+coby_mid7042: Coby_MID7042_config; $(MAKE)
+coby_mid8042: Coby_MID8042_config; $(MAKE)
+coby_mid9742: Coby_MID9742_config; $(MAKE)
+cubieboard: Cubieboard_config; $(MAKE)
+cubieboard2: Cubieboard2_config; $(MAKE)
+cubieboard2_fel: Cubieboard2_FEL_config; $(MAKE)
+cubietruck: Cubietruck_config; $(MAKE)
+cubietruck_fel: Cubietruck_FEL_config; $(MAKE)
+cubieboard_512: Cubieboard_512_config; $(MAKE)
+cubieboard_fel: Cubieboard_FEL_config; $(MAKE)
+dns_m82: DNS_M82_config; $(MAKE)
+eoma68_a10: EOMA68_A10_config; $(MAKE)
+eoma68_a10_fel: EOMA68_A10_FEL_config; $(MAKE)
+eoma68_a20: EOMA68_A20_config; $(MAKE)
+eoma68_a20_fel: EOMA68_A20_FEL_config; $(MAKE)
+eu3000: EU3000_config; $(MAKE)
+gooseberry_a721: Gooseberry_A721_config; $(MAKE)
+h6: H6_config; $(MAKE)
+hackberry: Hackberry_config; $(MAKE)
+hyundai_a7hd: Hyundai_A7HD_config; $(MAKE)
+inet97f-ii: INet97F-II_config; $(MAKE)
+marsboard_a10: Marsboard_A10_config; $(MAKE)
+marsboard_a20: Marsboard_A20_config; $(MAKE)
+marsboard_a20_debug: Marsboard_A20_debug_config; $(MAKE)
+megafeis_a08: Megafeis_A08_config; $(MAKE)
+mele_a1000: Mele_A1000_config; $(MAKE)
+mele_a1000_fel: Mele_A1000_FEL_config; $(MAKE)
+mele_a1000g: Mele_A1000G_config; $(MAKE)
+mele_a3700: Mele_A3700_config; $(MAKE)
+mini-x: Mini-X_config; $(MAKE)
+mini-x-1gb: Mini-X-1Gb_config; $(MAKE)
+mini-x_a10s: Mini-X_A10s_config; $(MAKE)
+pcduino: pcDuino_config; $(MAKE)
+pov_protab2_ips9: PoV_ProTab2_IPS9_config; $(MAKE)
+pov_protab2_ips_3g: PoV_ProTab2_IPS_3g_config; $(MAKE)
+pov_protab2_xxl: PoV_ProTab2_XXL_config; $(MAKE)
+sanei_n90: Sanei_N90_config; $(MAKE)
+m52277evb: M52277EVB_config; $(MAKE)
+m52277evb_stmicro: M52277EVB_stmicro_config; $(MAKE)
+m5235evb: M5235EVB_config; $(MAKE)
+m5235evb_flash32: M5235EVB_Flash32_config; $(MAKE)
+tasreg: TASREG_config; $(MAKE)
+m5208evbe: M5208EVBE_config; $(MAKE)
+m5249evb: M5249EVB_config; $(MAKE)
+m5253demo: M5253DEMO_config; $(MAKE)
+m5253evbe: M5253EVBE_config; $(MAKE)
+m5271evb: M5271EVB_config; $(MAKE)
+m5272c3: M5272C3_config; $(MAKE)
+m5275evb: M5275EVB_config; $(MAKE)
+m5282evb: M5282EVB_config; $(MAKE)
+m53017evb: M53017EVB_config; $(MAKE)
+m5329afee: M5329AFEE_config; $(MAKE)
+m5329bfee: M5329BFEE_config; $(MAKE)
+m5373evb: M5373EVB_config; $(MAKE)
+m54418twr: M54418TWR_config; $(MAKE)
+m54418twr_nand_mii: M54418TWR_nand_mii_config; $(MAKE)
+m54418twr_nand_rmii: M54418TWR_nand_rmii_config; $(MAKE)
+m54418twr_nand_rmii_lowfreq: M54418TWR_nand_rmii_lowfreq_config; $(MAKE)
+m54418twr_serial_mii: M54418TWR_serial_mii_config; $(MAKE)
+m54418twr_serial_rmii: M54418TWR_serial_rmii_config; $(MAKE)
+m54451evb: M54451EVB_config; $(MAKE)
+m54451evb_stmicro: M54451EVB_stmicro_config; $(MAKE)
+m54455evb: M54455EVB_config; $(MAKE)
+m54455evb_a66: M54455EVB_a66_config; $(MAKE)
+m54455evb_i66: M54455EVB_i66_config; $(MAKE)
+m54455evb_intel: M54455EVB_intel_config; $(MAKE)
+m54455evb_stm33: M54455EVB_stm33_config; $(MAKE)
+m5475afe: M5475AFE_config; $(MAKE)
+m5475bfe: M5475BFE_config; $(MAKE)
+m5475cfe: M5475CFE_config; $(MAKE)
+m5475dfe: M5475DFE_config; $(MAKE)
+m5475efe: M5475EFE_config; $(MAKE)
+m5475ffe: M5475FFE_config; $(MAKE)
+m5475gfe: M5475GFE_config; $(MAKE)
+m5485afe: M5485AFE_config; $(MAKE)
+m5485bfe: M5485BFE_config; $(MAKE)
+m5485cfe: M5485CFE_config; $(MAKE)
+m5485dfe: M5485DFE_config; $(MAKE)
+m5485efe: M5485EFE_config; $(MAKE)
+m5485ffe: M5485FFE_config; $(MAKE)
+m5485gfe: M5485GFE_config; $(MAKE)
+m5485hfe: M5485HFE_config; $(MAKE)
+incaip_100mhz: incaip_100MHz_config; $(MAKE)
+incaip_133mhz: incaip_133MHz_config; $(MAKE)
+incaip_150mhz: incaip_150MHz_config; $(MAKE)
+pci5441: PCI5441_config; $(MAKE)
+pk1c20: PK1C20_config; $(MAKE)
+p3g4: P3G4_config; $(MAKE)
+zuma: ZUMA_config; $(MAKE)
+elppc: ELPPC_config; $(MAKE)
+cpci750: CPCI750_config; $(MAKE)
+db64360: DB64360_config; $(MAKE)
+db64460: DB64460_config; $(MAKE)
+pati: PATI_config; $(MAKE)
+bc3450: BC3450_config; $(MAKE)
+galaxy5200_lowboot: galaxy5200_LOWBOOT_config; $(MAKE)
+icecube_5200_ddr: icecube_5200_DDR_config; $(MAKE)
+icecube_5200_ddr_lowboot: icecube_5200_DDR_LOWBOOT_config; $(MAKE)
+icecube_5200_ddr_lowboot08: icecube_5200_DDR_LOWBOOT08_config; $(MAKE)
+icecube_5200_lowboot: icecube_5200_LOWBOOT_config; $(MAKE)
+icecube_5200_lowboot08: icecube_5200_LOWBOOT08_config; $(MAKE)
+lite5200: Lite5200_config; $(MAKE)
+lite5200_lowboot: Lite5200_LOWBOOT_config; $(MAKE)
+lite5200_lowboot08: Lite5200_LOWBOOT08_config; $(MAKE)
+lite5200b_lowboot: lite5200b_LOWBOOT_config; $(MAKE)
+lite5200b_pm: lite5200b_PM_config; $(MAKE)
+mcc200_com12: mcc200_COM12_config; $(MAKE)
+mcc200_com12_highboot: mcc200_COM12_highboot_config; $(MAKE)
+mcc200_com12_highboot_sdram: mcc200_COM12_highboot_SDRAM_config; $(MAKE)
+mcc200_com12_sdram: mcc200_COM12_SDRAM_config; $(MAKE)
+mcc200_highboot_sdram: mcc200_highboot_SDRAM_config; $(MAKE)
+mcc200_sdram: mcc200_SDRAM_config; $(MAKE)
+prs200_ddr: prs200_DDR_config; $(MAKE)
+prs200_highboot_ddr: prs200_highboot_DDR_config; $(MAKE)
+pm520: PM520_config; $(MAKE)
+pm520_ddr: PM520_DDR_config; $(MAKE)
+pm520_romboot: PM520_ROMBOOT_config; $(MAKE)
+pm520_romboot_ddr: PM520_ROMBOOT_DDR_config; $(MAKE)
+total5200: Total5200_config; $(MAKE)
+total5200_lowboot: Total5200_lowboot_config; $(MAKE)
+total5200_rev2: Total5200_Rev2_config; $(MAKE)
+total5200_rev2_lowboot: Total5200_Rev2_lowboot_config; $(MAKE)
+eval5200: EVAL5200_config; $(MAKE)
+mini5200: MINI5200_config; $(MAKE)
+top5200: TOP5200_config; $(MAKE)
+o2d: O2D_config; $(MAKE)
+o2d300: O2D300_config; $(MAKE)
+o2dnt2: O2DNT2_config; $(MAKE)
+o2dnt2_ramboot: O2DNT2_RAMBOOT_config; $(MAKE)
+o2i: O2I_config; $(MAKE)
+o2mnt: O2MNT_config; $(MAKE)
+o2mnt_o2m110: O2MNT_O2M110_config; $(MAKE)
+o2mnt_o2m112: O2MNT_O2M112_config; $(MAKE)
+o2mnt_o2m113: O2MNT_O2M113_config; $(MAKE)
+o3dnt: O3DNT_config; $(MAKE)
+digsy_mtc_ramboot: digsy_mtc_RAMBOOT_config; $(MAKE)
+digsy_mtc_rev5_ramboot: digsy_mtc_rev5_RAMBOOT_config; $(MAKE)
+mvbc_p: MVBC_P_config; $(MAKE)
+mvsmr: MVSMR_config; $(MAKE)
+pcm030_lowboot: pcm030_LOWBOOT_config; $(MAKE)
+minifap: MiniFAP_config; $(MAKE)
+tb5200: TB5200_config; $(MAKE)
+tb5200_b: TB5200_B_config; $(MAKE)
+tqm5200: TQM5200_config; $(MAKE)
+tqm5200_b: TQM5200_B_config; $(MAKE)
+tqm5200_b_highboot: TQM5200_B_HIGHBOOT_config; $(MAKE)
+tqm5200_stk100: TQM5200_STK100_config; $(MAKE)
+tqm5200s: TQM5200S_config; $(MAKE)
+tqm5200s_highboot: TQM5200S_HIGHBOOT_config; $(MAKE)
+a3000: A3000_config; $(MAKE)
+cpc45: CPC45_config; $(MAKE)
+cpc45_romboot: CPC45_ROMBOOT_config; $(MAKE)
+cu824: CU824_config; $(MAKE)
+exalion: eXalion_config; $(MAKE)
+hidden_dragon: HIDDEN_DRAGON_config; $(MAKE)
+linkstation_hglan: linkstation_HGLAN_config; $(MAKE)
+musenki: MUSENKI_config; $(MAKE)
+mvblue: MVBLUE_config; $(MAKE)
+pn62: PN62_config; $(MAKE)
+sandpoint8240: Sandpoint8240_config; $(MAKE)
+sandpoint8245: Sandpoint8245_config; $(MAKE)
+cpu86: CPU86_config; $(MAKE)
+cpu86_romboot: CPU86_ROMBOOT_config; $(MAKE)
+cpu87: CPU87_config; $(MAKE)
+cpu87_romboot: CPU87_ROMBOOT_config; $(MAKE)
+ep8248e: ep8248E_config; $(MAKE)
+ids8247: IDS8247_config; $(MAKE)
+iphase4539: IPHASE4539_config; $(MAKE)
+ispan: ISPAN_config; $(MAKE)
+ispan_revb: ISPAN_REVB_config; $(MAKE)
+pm825: PM825_config; $(MAKE)
+pm825_bigflash: PM825_BIGFLASH_config; $(MAKE)
+pm825_romboot: PM825_ROMBOOT_config; $(MAKE)
+pm825_romboot_bigflash: PM825_ROMBOOT_BIGFLASH_config; $(MAKE)
+pm826: PM826_config; $(MAKE)
+pm826_bigflash: PM826_BIGFLASH_config; $(MAKE)
+pm826_romboot: PM826_ROMBOOT_config; $(MAKE)
+pm826_romboot_bigflash: PM826_ROMBOOT_BIGFLASH_config; $(MAKE)
+pm828: PM828_config; $(MAKE)
+pm828_pci: PM828_PCI_config; $(MAKE)
+pm828_romboot: PM828_ROMBOOT_config; $(MAKE)
+pm828_romboot_pci: PM828_ROMBOOT_PCI_config; $(MAKE)
+rattler: Rattler_config; $(MAKE)
+rattler8248: Rattler8248_config; $(MAKE)
+zpc1900: ZPC1900_config; $(MAKE)
+mpc8260ads: MPC8260ADS_config; $(MAKE)
+mpc8260ads_33mhz: MPC8260ADS_33MHz_config; $(MAKE)
+mpc8260ads_33mhz_lowboot: MPC8260ADS_33MHz_lowboot_config; $(MAKE)
+mpc8260ads_40mhz: MPC8260ADS_40MHz_config; $(MAKE)
+mpc8260ads_40mhz_lowboot: MPC8260ADS_40MHz_lowboot_config; $(MAKE)
+mpc8260ads_lowboot: MPC8260ADS_lowboot_config; $(MAKE)
+mpc8272ads: MPC8272ADS_config; $(MAKE)
+mpc8272ads_lowboot: MPC8272ADS_lowboot_config; $(MAKE)
+pq2fads: PQ2FADS_config; $(MAKE)
+pq2fads-vr: PQ2FADS-VR_config; $(MAKE)
+pq2fads-vr_lowboot: PQ2FADS-VR_lowboot_config; $(MAKE)
+pq2fads-zu: PQ2FADS-ZU_config; $(MAKE)
+pq2fads-zu_66mhz: PQ2FADS-ZU_66MHz_config; $(MAKE)
+pq2fads-zu_66mhz_lowboot: PQ2FADS-ZU_66MHz_lowboot_config; $(MAKE)
+pq2fads-zu_lowboot: PQ2FADS-ZU_lowboot_config; $(MAKE)
+pq2fads_lowboot: PQ2FADS_lowboot_config; $(MAKE)
+mpc8266ads: MPC8266ADS_config; $(MAKE)
+vovpn-gw_66mhz: VoVPN-GW_66MHz_config; $(MAKE)
+tqm8255_aa: TQM8255_AA_config; $(MAKE)
+tqm8260_aa: TQM8260_AA_config; $(MAKE)
+tqm8260_ab: TQM8260_AB_config; $(MAKE)
+tqm8260_ac: TQM8260_AC_config; $(MAKE)
+tqm8260_ad: TQM8260_AD_config; $(MAKE)
+tqm8260_ae: TQM8260_AE_config; $(MAKE)
+tqm8260_af: TQM8260_AF_config; $(MAKE)
+tqm8260_ag: TQM8260_AG_config; $(MAKE)
+tqm8260_ah: TQM8260_AH_config; $(MAKE)
+tqm8260_ai: TQM8260_AI_config; $(MAKE)
+tqm8265_aa: TQM8265_AA_config; $(MAKE)
+tqm8272: TQM8272_config; $(MAKE)
+sbc8349_pci_33: sbc8349_PCI_33_config; $(MAKE)
+sbc8349_pci_66: sbc8349_PCI_66_config; $(MAKE)
+mpc8308rdb: MPC8308RDB_config; $(MAKE)
+mpc8313erdb_33: MPC8313ERDB_33_config; $(MAKE)
+mpc8313erdb_66: MPC8313ERDB_66_config; $(MAKE)
+mpc8313erdb_nand_33: MPC8313ERDB_NAND_33_config; $(MAKE)
+mpc8313erdb_nand_66: MPC8313ERDB_NAND_66_config; $(MAKE)
+mpc8315erdb: MPC8315ERDB_config; $(MAKE)
+mpc8315erdb_nand: MPC8315ERDB_NAND_config; $(MAKE)
+mpc8323erdb: MPC8323ERDB_config; $(MAKE)
+mpc832xemds: MPC832XEMDS_config; $(MAKE)
+mpc832xemds_atm: MPC832XEMDS_ATM_config; $(MAKE)
+mpc832xemds_host_33: MPC832XEMDS_HOST_33_config; $(MAKE)
+mpc832xemds_host_66: MPC832XEMDS_HOST_66_config; $(MAKE)
+mpc832xemds_slave: MPC832XEMDS_SLAVE_config; $(MAKE)
+mpc8349emds: MPC8349EMDS_config; $(MAKE)
+mpc8349itx: MPC8349ITX_config; $(MAKE)
+mpc8349itx_lowboot: MPC8349ITX_LOWBOOT_config; $(MAKE)
+mpc8349itxgp: MPC8349ITXGP_config; $(MAKE)
+mpc8360emds_33: MPC8360EMDS_33_config; $(MAKE)
+mpc8360emds_33_atm: MPC8360EMDS_33_ATM_config; $(MAKE)
+mpc8360emds_33_host_33: MPC8360EMDS_33_HOST_33_config; $(MAKE)
+mpc8360emds_33_host_66: MPC8360EMDS_33_HOST_66_config; $(MAKE)
+mpc8360emds_33_slave: MPC8360EMDS_33_SLAVE_config; $(MAKE)
+mpc8360emds_66: MPC8360EMDS_66_config; $(MAKE)
+mpc8360emds_66_atm: MPC8360EMDS_66_ATM_config; $(MAKE)
+mpc8360emds_66_host_33: MPC8360EMDS_66_HOST_33_config; $(MAKE)
+mpc8360emds_66_host_66: MPC8360EMDS_66_HOST_66_config; $(MAKE)
+mpc8360emds_66_slave: MPC8360EMDS_66_SLAVE_config; $(MAKE)
+mpc8360erdk: MPC8360ERDK_config; $(MAKE)
+mpc8360erdk_33: MPC8360ERDK_33_config; $(MAKE)
+mpc8360erdk_66: MPC8360ERDK_66_config; $(MAKE)
+mpc837xemds: MPC837XEMDS_config; $(MAKE)
+mpc837xemds_host: MPC837XEMDS_HOST_config; $(MAKE)
+mpc837xerdb: MPC837XERDB_config; $(MAKE)
+mergerbox: MERGERBOX_config; $(MAKE)
+mvblm7: MVBLM7_config; $(MAKE)
+simpc8313_lp: SIMPC8313_LP_config; $(MAKE)
+simpc8313_sp: SIMPC8313_SP_config; $(MAKE)
+tqm834x: TQM834x_config; $(MAKE)
+sbc8548_pci_33: sbc8548_PCI_33_config; $(MAKE)
+sbc8548_pci_33_pcie: sbc8548_PCI_33_PCIE_config; $(MAKE)
+sbc8548_pci_66: sbc8548_PCI_66_config; $(MAKE)
+sbc8548_pci_66_pcie: sbc8548_PCI_66_PCIE_config; $(MAKE)
+hww1u1a: HWW1U1A_config; $(MAKE)
+b4420qds: B4420QDS_config; $(MAKE)
+b4420qds_nand: B4420QDS_NAND_config; $(MAKE)
+b4420qds_spiflash: B4420QDS_SPIFLASH_config; $(MAKE)
+b4860qds: B4860QDS_config; $(MAKE)
+b4860qds_nand: B4860QDS_NAND_config; $(MAKE)
+b4860qds_spiflash: B4860QDS_SPIFLASH_config; $(MAKE)
+b4860qds_srio_pcie_boot: B4860QDS_SRIO_PCIE_BOOT_config; $(MAKE)
+bsc9131rdb_nand: BSC9131RDB_NAND_config; $(MAKE)
+bsc9131rdb_nand_sysclk100: BSC9131RDB_NAND_SYSCLK100_config; $(MAKE)
+bsc9131rdb_spiflash: BSC9131RDB_SPIFLASH_config; $(MAKE)
+bsc9131rdb_spiflash_sysclk100: BSC9131RDB_SPIFLASH_SYSCLK100_config; $(MAKE)
+bsc9132qds_nand_ddrclk100: BSC9132QDS_NAND_DDRCLK100_config; $(MAKE)
+bsc9132qds_nand_ddrclk133: BSC9132QDS_NAND_DDRCLK133_config; $(MAKE)
+bsc9132qds_nor_ddrclk100: BSC9132QDS_NOR_DDRCLK100_config; $(MAKE)
+bsc9132qds_nor_ddrclk133: BSC9132QDS_NOR_DDRCLK133_config; $(MAKE)
+bsc9132qds_sdcard_ddrclk100: BSC9132QDS_SDCARD_DDRCLK100_config; $(MAKE)
+bsc9132qds_sdcard_ddrclk133: BSC9132QDS_SDCARD_DDRCLK133_config; $(MAKE)
+bsc9132qds_spiflash_ddrclk100: BSC9132QDS_SPIFLASH_DDRCLK100_config; $(MAKE)
+bsc9132qds_spiflash_ddrclk133: BSC9132QDS_SPIFLASH_DDRCLK133_config; $(MAKE)
+c29xpcie: C29XPCIE_config; $(MAKE)
+c29xpcie_spiflash: C29XPCIE_SPIFLASH_config; $(MAKE)
+p3041ds: P3041DS_config; $(MAKE)
+p3041ds_nand: P3041DS_NAND_config; $(MAKE)
+p3041ds_sdcard: P3041DS_SDCARD_config; $(MAKE)
+p3041ds_secure_boot: P3041DS_SECURE_BOOT_config; $(MAKE)
+p3041ds_spiflash: P3041DS_SPIFLASH_config; $(MAKE)
+p3041ds_srio_pcie_boot: P3041DS_SRIO_PCIE_BOOT_config; $(MAKE)
+p4080ds: P4080DS_config; $(MAKE)
+p4080ds_sdcard: P4080DS_SDCARD_config; $(MAKE)
+p4080ds_secure_boot: P4080DS_SECURE_BOOT_config; $(MAKE)
+p4080ds_spiflash: P4080DS_SPIFLASH_config; $(MAKE)
+p4080ds_srio_pcie_boot: P4080DS_SRIO_PCIE_BOOT_config; $(MAKE)
+p5020ds: P5020DS_config; $(MAKE)
+p5020ds_nand: P5020DS_NAND_config; $(MAKE)
+p5020ds_sdcard: P5020DS_SDCARD_config; $(MAKE)
+p5020ds_secure_boot: P5020DS_SECURE_BOOT_config; $(MAKE)
+p5020ds_spiflash: P5020DS_SPIFLASH_config; $(MAKE)
+p5020ds_srio_pcie_boot: P5020DS_SRIO_PCIE_BOOT_config; $(MAKE)
+p5040ds: P5040DS_config; $(MAKE)
+p5040ds_nand: P5040DS_NAND_config; $(MAKE)
+p5040ds_sdcard: P5040DS_SDCARD_config; $(MAKE)
+p5040ds_spiflash: P5040DS_SPIFLASH_config; $(MAKE)
+mpc8536ds: MPC8536DS_config; $(MAKE)
+mpc8536ds_36bit: MPC8536DS_36BIT_config; $(MAKE)
+mpc8536ds_nand: MPC8536DS_NAND_config; $(MAKE)
+mpc8536ds_sdcard: MPC8536DS_SDCARD_config; $(MAKE)
+mpc8536ds_spiflash: MPC8536DS_SPIFLASH_config; $(MAKE)
+mpc8540ads: MPC8540ADS_config; $(MAKE)
+mpc8541cds: MPC8541CDS_config; $(MAKE)
+mpc8541cds_legacy: MPC8541CDS_legacy_config; $(MAKE)
+mpc8544ds: MPC8544DS_config; $(MAKE)
+mpc8548cds: MPC8548CDS_config; $(MAKE)
+mpc8548cds_36bit: MPC8548CDS_36BIT_config; $(MAKE)
+mpc8548cds_legacy: MPC8548CDS_legacy_config; $(MAKE)
+mpc8555cds: MPC8555CDS_config; $(MAKE)
+mpc8555cds_legacy: MPC8555CDS_legacy_config; $(MAKE)
+mpc8560ads: MPC8560ADS_config; $(MAKE)
+mpc8568mds: MPC8568MDS_config; $(MAKE)
+mpc8569mds: MPC8569MDS_config; $(MAKE)
+mpc8569mds_atm: MPC8569MDS_ATM_config; $(MAKE)
+mpc8569mds_nand: MPC8569MDS_NAND_config; $(MAKE)
+mpc8572ds: MPC8572DS_config; $(MAKE)
+mpc8572ds_36bit: MPC8572DS_36BIT_config; $(MAKE)
+mpc8572ds_nand: MPC8572DS_NAND_config; $(MAKE)
+p1010rdb_36bit_nand: P1010RDB_36BIT_NAND_config; $(MAKE)
+p1010rdb_36bit_nand_secboot: P1010RDB_36BIT_NAND_SECBOOT_config; $(MAKE)
+p1010rdb_36bit_nor: P1010RDB_36BIT_NOR_config; $(MAKE)
+p1010rdb_36bit_nor_secboot: P1010RDB_36BIT_NOR_SECBOOT_config; $(MAKE)
+p1010rdb_36bit_sdcard: P1010RDB_36BIT_SDCARD_config; $(MAKE)
+p1010rdb_36bit_spiflash: P1010RDB_36BIT_SPIFLASH_config; $(MAKE)
+p1010rdb_36bit_spiflash_secboot: P1010RDB_36BIT_SPIFLASH_SECBOOT_config; $(MAKE)
+p1010rdb_nand: P1010RDB_NAND_config; $(MAKE)
+p1010rdb_nand_secboot: P1010RDB_NAND_SECBOOT_config; $(MAKE)
+p1010rdb_nor: P1010RDB_NOR_config; $(MAKE)
+p1010rdb_nor_secboot: P1010RDB_NOR_SECBOOT_config; $(MAKE)
+p1010rdb_sdcard: P1010RDB_SDCARD_config; $(MAKE)
+p1010rdb_spiflash: P1010RDB_SPIFLASH_config; $(MAKE)
+p1010rdb_spiflash_secboot: P1010RDB_SPIFLASH_SECBOOT_config; $(MAKE)
+p1022ds: P1022DS_config; $(MAKE)
+p1022ds_36bit: P1022DS_36BIT_config; $(MAKE)
+p1022ds_36bit_nand: P1022DS_36BIT_NAND_config; $(MAKE)
+p1022ds_36bit_sdcard: P1022DS_36BIT_SDCARD_config; $(MAKE)
+p1022ds_36bit_spiflash: P1022DS_36BIT_SPIFLASH_config; $(MAKE)
+p1022ds_nand: P1022DS_NAND_config; $(MAKE)
+p1022ds_sdcard: P1022DS_SDCARD_config; $(MAKE)
+p1022ds_spiflash: P1022DS_SPIFLASH_config; $(MAKE)
+p1023rdb: P1023RDB_config; $(MAKE)
+p1023rds: P1023RDS_config; $(MAKE)
+p1023rds_nand: P1023RDS_NAND_config; $(MAKE)
+p1011rdb: P1011RDB_config; $(MAKE)
+p1011rdb_36bit: P1011RDB_36BIT_config; $(MAKE)
+p1011rdb_36bit_sdcard: P1011RDB_36BIT_SDCARD_config; $(MAKE)
+p1011rdb_36bit_spiflash: P1011RDB_36BIT_SPIFLASH_config; $(MAKE)
+p1011rdb_nand: P1011RDB_NAND_config; $(MAKE)
+p1011rdb_sdcard: P1011RDB_SDCARD_config; $(MAKE)
+p1011rdb_spiflash: P1011RDB_SPIFLASH_config; $(MAKE)
+p1020rdb: P1020RDB_config; $(MAKE)
+p1020rdb_36bit: P1020RDB_36BIT_config; $(MAKE)
+p1020rdb_36bit_sdcard: P1020RDB_36BIT_SDCARD_config; $(MAKE)
+p1020rdb_36bit_spiflash: P1020RDB_36BIT_SPIFLASH_config; $(MAKE)
+p1020rdb_nand: P1020RDB_NAND_config; $(MAKE)
+p1020rdb_sdcard: P1020RDB_SDCARD_config; $(MAKE)
+p1020rdb_spiflash: P1020RDB_SPIFLASH_config; $(MAKE)
+p2010rdb: P2010RDB_config; $(MAKE)
+p2010rdb_36bit: P2010RDB_36BIT_config; $(MAKE)
+p2010rdb_36bit_sdcard: P2010RDB_36BIT_SDCARD_config; $(MAKE)
+p2010rdb_36bit_spiflash: P2010RDB_36BIT_SPIFLASH_config; $(MAKE)
+p2010rdb_nand: P2010RDB_NAND_config; $(MAKE)
+p2010rdb_sdcard: P2010RDB_SDCARD_config; $(MAKE)
+p2010rdb_spiflash: P2010RDB_SPIFLASH_config; $(MAKE)
+p2020rdb: P2020RDB_config; $(MAKE)
+p2020rdb_36bit: P2020RDB_36BIT_config; $(MAKE)
+p2020rdb_36bit_sdcard: P2020RDB_36BIT_SDCARD_config; $(MAKE)
+p2020rdb_36bit_spiflash: P2020RDB_36BIT_SPIFLASH_config; $(MAKE)
+p2020rdb_nand: P2020RDB_NAND_config; $(MAKE)
+p2020rdb_sdcard: P2020RDB_SDCARD_config; $(MAKE)
+p2020rdb_spiflash: P2020RDB_SPIFLASH_config; $(MAKE)
+p1020mbg-pc: P1020MBG-PC_config; $(MAKE)
+p1020mbg-pc_36bit: P1020MBG-PC_36BIT_config; $(MAKE)
+p1020mbg-pc_36bit_sdcard: P1020MBG-PC_36BIT_SDCARD_config; $(MAKE)
+p1020mbg-pc_sdcard: P1020MBG-PC_SDCARD_config; $(MAKE)
+p1020rdb-pc: P1020RDB-PC_config; $(MAKE)
+p1020rdb-pc_36bit: P1020RDB-PC_36BIT_config; $(MAKE)
+p1020rdb-pc_36bit_nand: P1020RDB-PC_36BIT_NAND_config; $(MAKE)
+p1020rdb-pc_36bit_sdcard: P1020RDB-PC_36BIT_SDCARD_config; $(MAKE)
+p1020rdb-pc_36bit_spiflash: P1020RDB-PC_36BIT_SPIFLASH_config; $(MAKE)
+p1020rdb-pc_nand: P1020RDB-PC_NAND_config; $(MAKE)
+p1020rdb-pc_sdcard: P1020RDB-PC_SDCARD_config; $(MAKE)
+p1020rdb-pc_spiflash: P1020RDB-PC_SPIFLASH_config; $(MAKE)
+p1020rdb-pd: P1020RDB-PD_config; $(MAKE)
+p1020rdb-pd_nand: P1020RDB-PD_NAND_config; $(MAKE)
+p1020rdb-pd_sdcard: P1020RDB-PD_SDCARD_config; $(MAKE)
+p1020rdb-pd_spiflash: P1020RDB-PD_SPIFLASH_config; $(MAKE)
+p1020utm-pc: P1020UTM-PC_config; $(MAKE)
+p1020utm-pc_36bit: P1020UTM-PC_36BIT_config; $(MAKE)
+p1020utm-pc_36bit_sdcard: P1020UTM-PC_36BIT_SDCARD_config; $(MAKE)
+p1020utm-pc_sdcard: P1020UTM-PC_SDCARD_config; $(MAKE)
+p1021rdb-pc: P1021RDB-PC_config; $(MAKE)
+p1021rdb-pc_36bit: P1021RDB-PC_36BIT_config; $(MAKE)
+p1021rdb-pc_36bit_nand: P1021RDB-PC_36BIT_NAND_config; $(MAKE)
+p1021rdb-pc_36bit_sdcard: P1021RDB-PC_36BIT_SDCARD_config; $(MAKE)
+p1021rdb-pc_36bit_spiflash: P1021RDB-PC_36BIT_SPIFLASH_config; $(MAKE)
+p1021rdb-pc_nand: P1021RDB-PC_NAND_config; $(MAKE)
+p1021rdb-pc_sdcard: P1021RDB-PC_SDCARD_config; $(MAKE)
+p1021rdb-pc_spiflash: P1021RDB-PC_SPIFLASH_config; $(MAKE)
+p1024rdb: P1024RDB_config; $(MAKE)
+p1024rdb_36bit: P1024RDB_36BIT_config; $(MAKE)
+p1024rdb_nand: P1024RDB_NAND_config; $(MAKE)
+p1024rdb_sdcard: P1024RDB_SDCARD_config; $(MAKE)
+p1024rdb_spiflash: P1024RDB_SPIFLASH_config; $(MAKE)
+p1025rdb: P1025RDB_config; $(MAKE)
+p1025rdb_36bit: P1025RDB_36BIT_config; $(MAKE)
+p1025rdb_nand: P1025RDB_NAND_config; $(MAKE)
+p1025rdb_sdcard: P1025RDB_SDCARD_config; $(MAKE)
+p1025rdb_spiflash: P1025RDB_SPIFLASH_config; $(MAKE)
+p2020rdb-pc: P2020RDB-PC_config; $(MAKE)
+p2020rdb-pc_36bit: P2020RDB-PC_36BIT_config; $(MAKE)
+p2020rdb-pc_36bit_nand: P2020RDB-PC_36BIT_NAND_config; $(MAKE)
+p2020rdb-pc_36bit_sdcard: P2020RDB-PC_36BIT_SDCARD_config; $(MAKE)
+p2020rdb-pc_36bit_spiflash: P2020RDB-PC_36BIT_SPIFLASH_config; $(MAKE)
+p2020rdb-pc_nand: P2020RDB-PC_NAND_config; $(MAKE)
+p2020rdb-pc_sdcard: P2020RDB-PC_SDCARD_config; $(MAKE)
+p2020rdb-pc_spiflash: P2020RDB-PC_SPIFLASH_config; $(MAKE)
+twr-p1025: TWR-P1025_config; $(MAKE)
+p2020come_sdcard: P2020COME_SDCARD_config; $(MAKE)
+p2020come_spiflash: P2020COME_SPIFLASH_config; $(MAKE)
+p2020ds: P2020DS_config; $(MAKE)
+p2020ds_36bit: P2020DS_36BIT_config; $(MAKE)
+p2020ds_ddr2: P2020DS_DDR2_config; $(MAKE)
+p2020ds_sdcard: P2020DS_SDCARD_config; $(MAKE)
+p2020ds_spiflash: P2020DS_SPIFLASH_config; $(MAKE)
+p2041rdb: P2041RDB_config; $(MAKE)
+p2041rdb_nand: P2041RDB_NAND_config; $(MAKE)
+p2041rdb_sdcard: P2041RDB_SDCARD_config; $(MAKE)
+p2041rdb_secure_boot: P2041RDB_SECURE_BOOT_config; $(MAKE)
+p2041rdb_spiflash: P2041RDB_SPIFLASH_config; $(MAKE)
+p2041rdb_srio_pcie_boot: P2041RDB_SRIO_PCIE_BOOT_config; $(MAKE)
+t4160qds: T4160QDS_config; $(MAKE)
+t4160qds_sdcard: T4160QDS_SDCARD_config; $(MAKE)
+t4160qds_spiflash: T4160QDS_SPIFLASH_config; $(MAKE)
+t4240emu: T4240EMU_config; $(MAKE)
+t4240qds: T4240QDS_config; $(MAKE)
+t4240qds_sdcard: T4240QDS_SDCARD_config; $(MAKE)
+t4240qds_spiflash: T4240QDS_SPIFLASH_config; $(MAKE)
+t4240qds_srio_pcie_boot: T4240QDS_SRIO_PCIE_BOOT_config; $(MAKE)
+controlcenterd_36bit_sdcard: controlcenterd_36BIT_SDCARD_config; $(MAKE)
+controlcenterd_36bit_sdcard_develop: controlcenterd_36BIT_SDCARD_DEVELOP_config; $(MAKE)
+controlcenterd_trailblazer: controlcenterd_TRAILBLAZER_config; $(MAKE)
+controlcenterd_trailblazer_develop: controlcenterd_TRAILBLAZER_DEVELOP_config; $(MAKE)
+stxssa_4m: stxssa_4M_config; $(MAKE)
+mpc8610hpcd: MPC8610HPCD_config; $(MAKE)
+mpc8641hpcn: MPC8641HPCN_config; $(MAKE)
+mpc8641hpcn_36bit: MPC8641HPCN_36BIT_config; $(MAKE)
+rrvision: RRvision_config; $(MAKE)
+adder: Adder_config; $(MAKE)
+adder87x: Adder87x_config; $(MAKE)
+adderii: AdderII_config; $(MAKE)
+adderusb: AdderUSB_config; $(MAKE)
+esteem192e: ESTEEM192E_config; $(MAKE)
+mpc86xads: MPC86xADS_config; $(MAKE)
+mpc885ads: MPC885ADS_config; $(MAKE)
+flagadm: FLAGADM_config; $(MAKE)
+gen860t: GEN860T_config; $(MAKE)
+gen860t_sc: GEN860T_SC_config; $(MAKE)
+icu862: ICU862_config; $(MAKE)
+icu862_100mhz: ICU862_100MHz_config; $(MAKE)
+ip860: IP860_config; $(MAKE)
+ivml24: IVML24_config; $(MAKE)
+ivml24_128: IVML24_128_config; $(MAKE)
+ivml24_256: IVML24_256_config; $(MAKE)
+ivms8: IVMS8_config; $(MAKE)
+ivms8_128: IVMS8_128_config; $(MAKE)
+ivms8_256: IVMS8_256_config; $(MAKE)
+netphone: NETPHONE_config; $(MAKE)
+netphone_v2: NETPHONE_V2_config; $(MAKE)
+netta: NETTA_config; $(MAKE)
+netta_6412: NETTA_6412_config; $(MAKE)
+netta_6412_swaphook: NETTA_6412_SWAPHOOK_config; $(MAKE)
+netta_isdn: NETTA_ISDN_config; $(MAKE)
+netta_isdn_6412: NETTA_ISDN_6412_config; $(MAKE)
+netta_isdn_6412_swaphook: NETTA_ISDN_6412_SWAPHOOK_config; $(MAKE)
+netta_isdn_swaphook: NETTA_ISDN_SWAPHOOK_config; $(MAKE)
+netta_swaphook: NETTA_SWAPHOOK_config; $(MAKE)
+netta2: NETTA2_config; $(MAKE)
+netta2_v2: NETTA2_V2_config; $(MAKE)
+netvia: NETVIA_config; $(MAKE)
+netvia_v2: NETVIA_V2_config; $(MAKE)
+r360mpi: R360MPI_config; $(MAKE)
+rbc823: RBC823_config; $(MAKE)
+rpxlite_dw: RPXlite_DW_config; $(MAKE)
+rpxlite_dw_64: RPXlite_DW_64_config; $(MAKE)
+rpxlite_dw_64_lcd: RPXlite_DW_64_LCD_config; $(MAKE)
+rpxlite_dw_lcd: RPXlite_DW_LCD_config; $(MAKE)
+rpxlite_dw_nvram: RPXlite_DW_NVRAM_config; $(MAKE)
+rpxlite_dw_nvram_64: RPXlite_DW_NVRAM_64_config; $(MAKE)
+rpxlite_dw_nvram_64_lcd: RPXlite_DW_NVRAM_64_LCD_config; $(MAKE)
+rpxlite_dw_nvram_lcd: RPXlite_DW_NVRAM_LCD_config; $(MAKE)
+rrvision_lcd: RRvision_LCD_config; $(MAKE)
+sxni855t: SXNI855T_config; $(MAKE)
+spd823ts: SPD823TS_config; $(MAKE)
+mhpc: MHPC_config; $(MAKE)
+top860: TOP860_config; $(MAKE)
+kup4k: KUP4K_config; $(MAKE)
+kup4x: KUP4X_config; $(MAKE)
+elpt860: ELPT860_config; $(MAKE)
+qs823: QS823_config; $(MAKE)
+qs850: QS850_config; $(MAKE)
+qs860t: QS860T_config; $(MAKE)
+fps850l: FPS850L_config; $(MAKE)
+fps860l: FPS860L_config; $(MAKE)
+nscu: NSCU_config; $(MAKE)
+sm850: SM850_config; $(MAKE)
+tk885d: TK885D_config; $(MAKE)
+tqm823l: TQM823L_config; $(MAKE)
+tqm823l_lcd: TQM823L_LCD_config; $(MAKE)
+tqm823m: TQM823M_config; $(MAKE)
+tqm850l: TQM850L_config; $(MAKE)
+tqm850m: TQM850M_config; $(MAKE)
+tqm855l: TQM855L_config; $(MAKE)
+tqm855m: TQM855M_config; $(MAKE)
+tqm860l: TQM860L_config; $(MAKE)
+tqm860m: TQM860M_config; $(MAKE)
+tqm862l: TQM862L_config; $(MAKE)
+tqm862m: TQM862M_config; $(MAKE)
+tqm866m: TQM866M_config; $(MAKE)
+tqm885d: TQM885D_config; $(MAKE)
+tttech: TTTech_config; $(MAKE)
+g2000: G2000_config; $(MAKE)
+jse: JSE_config; $(MAKE)
+w7olmc: W7OLMC_config; $(MAKE)
+w7olmg: W7OLMG_config; $(MAKE)
+crayl1: CRAYL1_config; $(MAKE)
+catcenter: CATcenter_config; $(MAKE)
+catcenter_25: CATcenter_25_config; $(MAKE)
+catcenter_33: CATcenter_33_config; $(MAKE)
+ppchameleonevb: PPChameleonEVB_config; $(MAKE)
+ppchameleonevb_ba_25: PPChameleonEVB_BA_25_config; $(MAKE)
+ppchameleonevb_ba_33: PPChameleonEVB_BA_33_config; $(MAKE)
+ppchameleonevb_hi_25: PPChameleonEVB_HI_25_config; $(MAKE)
+ppchameleonevb_hi_33: PPChameleonEVB_HI_33_config; $(MAKE)
+ppchameleonevb_me_25: PPChameleonEVB_ME_25_config; $(MAKE)
+ppchameleonevb_me_33: PPChameleonEVB_ME_33_config; $(MAKE)
+apc405: APC405_config; $(MAKE)
+ar405: AR405_config; $(MAKE)
+ash405: ASH405_config; $(MAKE)
+cms700: CMS700_config; $(MAKE)
+cpci2dp: CPCI2DP_config; $(MAKE)
+cpci405: CPCI405_config; $(MAKE)
+cpci4052: CPCI4052_config; $(MAKE)
+cpci405ab: CPCI405AB_config; $(MAKE)
+cpci405dt: CPCI405DT_config; $(MAKE)
+cpciiser4: CPCIISER4_config; $(MAKE)
+dp405: DP405_config; $(MAKE)
+du405: DU405_config; $(MAKE)
+du440: DU440_config; $(MAKE)
+hh405: HH405_config; $(MAKE)
+hub405: HUB405_config; $(MAKE)
+ocrtc: OCRTC_config; $(MAKE)
+pci405: PCI405_config; $(MAKE)
+plu405: PLU405_config; $(MAKE)
+pmc405: PMC405_config; $(MAKE)
+pmc405de: PMC405DE_config; $(MAKE)
+pmc440: PMC440_config; $(MAKE)
+voh405: VOH405_config; $(MAKE)
+vom405: VOM405_config; $(MAKE)
+wuh405: WUH405_config; $(MAKE)
+mip405: MIP405_config; $(MAKE)
+mip405t: MIP405T_config; $(MAKE)
+pip405: PIP405_config; $(MAKE)
+karef: KAREF_config; $(MAKE)
+metrobox: METROBOX_config; $(MAKE)
+migor: MigoR_config; $(MAKE)
+evb64260: EVB64260_config; $(MAKE)
+evb64260_750cx: EVB64260_750CX_config; $(MAKE)
+mousse: MOUSSE_config; $(MAKE)
+rpxsuper: RPXsuper_config; $(MAKE)
+rpxclassic: RPXClassic_config; $(MAKE)
+rpxlite: RPXlite_config; $(MAKE)
+ads860: ADS860_config; $(MAKE)
+fads823: FADS823_config; $(MAKE)
+fads850sar: FADS850SAR_config; $(MAKE)
+fads860t: FADS860T_config; $(MAKE)
+genietv: GENIETV_config; $(MAKE)
+mbx: MBX_config; $(MAKE)
+mbx860t: MBX860T_config; $(MAKE)
+nx823: NX823_config; $(MAKE)
+.PHONY: vcma9_config
+vcma9_config: VCMA9_config
+.PHONY: cpu9260_128m_config
+cpu9260_128m_config: cpu9260_128M_config
+.PHONY: cpu9260_nand_128m_config
+cpu9260_nand_128m_config: cpu9260_nand_128M_config
+.PHONY: cpu9g20_config
+cpu9g20_config: cpu9G20_config
+.PHONY: cpu9g20_128m_config
+cpu9g20_128m_config: cpu9G20_128M_config
+.PHONY: cpu9g20_nand_config
+cpu9g20_nand_config: cpu9G20_nand_config
+.PHONY: cpu9g20_nand_128m_config
+cpu9g20_nand_128m_config: cpu9G20_nand_128M_config
+.PHONY: davinci_dm6467tevm_config
+davinci_dm6467tevm_config: davinci_dm6467Tevm_config
+.PHONY: a10_mid_1gb_config
+a10_mid_1gb_config: A10_MID_1GB_config
+.PHONY: a10s-olinuxino-m_config
+a10s-olinuxino-m_config: A10s-OLinuXino-M_config
+.PHONY: a10s-olinuxino-m_fel_config
+a10s-olinuxino-m_fel_config: A10s-OLinuXino-M_FEL_config
+.PHONY: a13-olinuxino_config
+a13-olinuxino_config: A13-OLinuXino_config
+.PHONY: a13-olinuxino_fel_config
+a13-olinuxino_fel_config: A13-OLinuXino_FEL_config
+.PHONY: a13-olinuxino_fel_sdcon_config
+a13-olinuxino_fel_sdcon_config: A13-OLinuXino_FEL_sdcon_config
+.PHONY: a13-olinuxinom_config
+a13-olinuxinom_config: A13-OLinuXinoM_config
+.PHONY: a13-olinuxinom_fel_config
+a13-olinuxinom_fel_config: A13-OLinuXinoM_FEL_config
+.PHONY: a13_mid_config
+a13_mid_config: A13_MID_config
+.PHONY: a20-olinuxino_micro_config
+a20-olinuxino_micro_config: A20-OLinuXino_MICRO_config
+.PHONY: a20-olinuxino_micro_fel_config
+a20-olinuxino_micro_fel_config: A20-OLinuXino_MICRO_FEL_config
+.PHONY: auxtek-t003_config
+auxtek-t003_config: Auxtek-T003_config
+.PHONY: auxtek-t004_config
+auxtek-t004_config: Auxtek-T004_config
+.PHONY: coby_mid7042_config
+coby_mid7042_config: Coby_MID7042_config
+.PHONY: coby_mid8042_config
+coby_mid8042_config: Coby_MID8042_config
+.PHONY: coby_mid9742_config
+coby_mid9742_config: Coby_MID9742_config
+.PHONY: cubieboard_config
+cubieboard_config: Cubieboard_config
+.PHONY: cubieboard2_config
+cubieboard2_config: Cubieboard2_config
+.PHONY: cubieboard2_fel_config
+cubieboard2_fel_config: Cubieboard2_FEL_config
+.PHONY: cubietruck_config
+cubietruck_config: Cubietruck_config
+.PHONY: cubietruck_fel_config
+cubietruck_fel_config: Cubietruck_FEL_config
+.PHONY: cubieboard_512_config
+cubieboard_512_config: Cubieboard_512_config
+.PHONY: cubieboard_fel_config
+cubieboard_fel_config: Cubieboard_FEL_config
+.PHONY: dns_m82_config
+dns_m82_config: DNS_M82_config
+.PHONY: eoma68_a10_config
+eoma68_a10_config: EOMA68_A10_config
+.PHONY: eoma68_a10_fel_config
+eoma68_a10_fel_config: EOMA68_A10_FEL_config
+.PHONY: eoma68_a20_config
+eoma68_a20_config: EOMA68_A20_config
+.PHONY: eoma68_a20_fel_config
+eoma68_a20_fel_config: EOMA68_A20_FEL_config
+.PHONY: eu3000_config
+eu3000_config: EU3000_config
+.PHONY: gooseberry_a721_config
+gooseberry_a721_config: Gooseberry_A721_config
+.PHONY: h6_config
+h6_config: H6_config
+.PHONY: hackberry_config
+hackberry_config: Hackberry_config
+.PHONY: hyundai_a7hd_config
+hyundai_a7hd_config: Hyundai_A7HD_config
+.PHONY: inet97f-ii_config
+inet97f-ii_config: INet97F-II_config
+.PHONY: marsboard_a10_config
+marsboard_a10_config: Marsboard_A10_config
+.PHONY: marsboard_a20_config
+marsboard_a20_config: Marsboard_A20_config
+.PHONY: marsboard_a20_debug_config
+marsboard_a20_debug_config: Marsboard_A20_debug_config
+.PHONY: megafeis_a08_config
+megafeis_a08_config: Megafeis_A08_config
+.PHONY: mele_a1000_config
+mele_a1000_config: Mele_A1000_config
+.PHONY: mele_a1000_fel_config
+mele_a1000_fel_config: Mele_A1000_FEL_config
+.PHONY: mele_a1000g_config
+mele_a1000g_config: Mele_A1000G_config
+.PHONY: mele_a3700_config
+mele_a3700_config: Mele_A3700_config
+.PHONY: mini-x_config
+mini-x_config: Mini-X_config
+.PHONY: mini-x-1gb_config
+mini-x-1gb_config: Mini-X-1Gb_config
+.PHONY: mini-x_a10s_config
+mini-x_a10s_config: Mini-X_A10s_config
+.PHONY: pcduino_config
+pcduino_config: pcDuino_config
+.PHONY: pov_protab2_ips9_config
+pov_protab2_ips9_config: PoV_ProTab2_IPS9_config
+.PHONY: pov_protab2_ips_3g_config
+pov_protab2_ips_3g_config: PoV_ProTab2_IPS_3g_config
+.PHONY: pov_protab2_xxl_config
+pov_protab2_xxl_config: PoV_ProTab2_XXL_config
+.PHONY: sanei_n90_config
+sanei_n90_config: Sanei_N90_config
+.PHONY: m52277evb_config
+m52277evb_config: M52277EVB_config
+.PHONY: m52277evb_stmicro_config
+m52277evb_stmicro_config: M52277EVB_stmicro_config
+.PHONY: m5235evb_config
+m5235evb_config: M5235EVB_config
+.PHONY: m5235evb_flash32_config
+m5235evb_flash32_config: M5235EVB_Flash32_config
+.PHONY: tasreg_config
+tasreg_config: TASREG_config
+.PHONY: m5208evbe_config
+m5208evbe_config: M5208EVBE_config
+.PHONY: m5249evb_config
+m5249evb_config: M5249EVB_config
+.PHONY: m5253demo_config
+m5253demo_config: M5253DEMO_config
+.PHONY: m5253evbe_config
+m5253evbe_config: M5253EVBE_config
+.PHONY: m5271evb_config
+m5271evb_config: M5271EVB_config
+.PHONY: m5272c3_config
+m5272c3_config: M5272C3_config
+.PHONY: m5275evb_config
+m5275evb_config: M5275EVB_config
+.PHONY: m5282evb_config
+m5282evb_config: M5282EVB_config
+.PHONY: m53017evb_config
+m53017evb_config: M53017EVB_config
+.PHONY: m5329afee_config
+m5329afee_config: M5329AFEE_config
+.PHONY: m5329bfee_config
+m5329bfee_config: M5329BFEE_config
+.PHONY: m5373evb_config
+m5373evb_config: M5373EVB_config
+.PHONY: m54418twr_config
+m54418twr_config: M54418TWR_config
+.PHONY: m54418twr_nand_mii_config
+m54418twr_nand_mii_config: M54418TWR_nand_mii_config
+.PHONY: m54418twr_nand_rmii_config
+m54418twr_nand_rmii_config: M54418TWR_nand_rmii_config
+.PHONY: m54418twr_nand_rmii_lowfreq_config
+m54418twr_nand_rmii_lowfreq_config: M54418TWR_nand_rmii_lowfreq_config
+.PHONY: m54418twr_serial_mii_config
+m54418twr_serial_mii_config: M54418TWR_serial_mii_config
+.PHONY: m54418twr_serial_rmii_config
+m54418twr_serial_rmii_config: M54418TWR_serial_rmii_config
+.PHONY: m54451evb_config
+m54451evb_config: M54451EVB_config
+.PHONY: m54451evb_stmicro_config
+m54451evb_stmicro_config: M54451EVB_stmicro_config
+.PHONY: m54455evb_config
+m54455evb_config: M54455EVB_config
+.PHONY: m54455evb_a66_config
+m54455evb_a66_config: M54455EVB_a66_config
+.PHONY: m54455evb_i66_config
+m54455evb_i66_config: M54455EVB_i66_config
+.PHONY: m54455evb_intel_config
+m54455evb_intel_config: M54455EVB_intel_config
+.PHONY: m54455evb_stm33_config
+m54455evb_stm33_config: M54455EVB_stm33_config
+.PHONY: m5475afe_config
+m5475afe_config: M5475AFE_config
+.PHONY: m5475bfe_config
+m5475bfe_config: M5475BFE_config
+.PHONY: m5475cfe_config
+m5475cfe_config: M5475CFE_config
+.PHONY: m5475dfe_config
+m5475dfe_config: M5475DFE_config
+.PHONY: m5475efe_config
+m5475efe_config: M5475EFE_config
+.PHONY: m5475ffe_config
+m5475ffe_config: M5475FFE_config
+.PHONY: m5475gfe_config
+m5475gfe_config: M5475GFE_config
+.PHONY: m5485afe_config
+m5485afe_config: M5485AFE_config
+.PHONY: m5485bfe_config
+m5485bfe_config: M5485BFE_config
+.PHONY: m5485cfe_config
+m5485cfe_config: M5485CFE_config
+.PHONY: m5485dfe_config
+m5485dfe_config: M5485DFE_config
+.PHONY: m5485efe_config
+m5485efe_config: M5485EFE_config
+.PHONY: m5485ffe_config
+m5485ffe_config: M5485FFE_config
+.PHONY: m5485gfe_config
+m5485gfe_config: M5485GFE_config
+.PHONY: m5485hfe_config
+m5485hfe_config: M5485HFE_config
+.PHONY: incaip_100mhz_config
+incaip_100mhz_config: incaip_100MHz_config
+.PHONY: incaip_133mhz_config
+incaip_133mhz_config: incaip_133MHz_config
+.PHONY: incaip_150mhz_config
+incaip_150mhz_config: incaip_150MHz_config
+.PHONY: pci5441_config
+pci5441_config: PCI5441_config
+.PHONY: pk1c20_config
+pk1c20_config: PK1C20_config
+.PHONY: p3g4_config
+p3g4_config: P3G4_config
+.PHONY: zuma_config
+zuma_config: ZUMA_config
+.PHONY: elppc_config
+elppc_config: ELPPC_config
+.PHONY: cpci750_config
+cpci750_config: CPCI750_config
+.PHONY: db64360_config
+db64360_config: DB64360_config
+.PHONY: db64460_config
+db64460_config: DB64460_config
+.PHONY: pati_config
+pati_config: PATI_config
+.PHONY: bc3450_config
+bc3450_config: BC3450_config
+.PHONY: galaxy5200_lowboot_config
+galaxy5200_lowboot_config: galaxy5200_LOWBOOT_config
+.PHONY: icecube_5200_ddr_config
+icecube_5200_ddr_config: icecube_5200_DDR_config
+.PHONY: icecube_5200_ddr_lowboot_config
+icecube_5200_ddr_lowboot_config: icecube_5200_DDR_LOWBOOT_config
+.PHONY: icecube_5200_ddr_lowboot08_config
+icecube_5200_ddr_lowboot08_config: icecube_5200_DDR_LOWBOOT08_config
+.PHONY: icecube_5200_lowboot_config
+icecube_5200_lowboot_config: icecube_5200_LOWBOOT_config
+.PHONY: icecube_5200_lowboot08_config
+icecube_5200_lowboot08_config: icecube_5200_LOWBOOT08_config
+.PHONY: lite5200_config
+lite5200_config: Lite5200_config
+.PHONY: lite5200_lowboot_config
+lite5200_lowboot_config: Lite5200_LOWBOOT_config
+.PHONY: lite5200_lowboot08_config
+lite5200_lowboot08_config: Lite5200_LOWBOOT08_config
+.PHONY: lite5200b_lowboot_config
+lite5200b_lowboot_config: lite5200b_LOWBOOT_config
+.PHONY: lite5200b_pm_config
+lite5200b_pm_config: lite5200b_PM_config
+.PHONY: mcc200_com12_config
+mcc200_com12_config: mcc200_COM12_config
+.PHONY: mcc200_com12_highboot_config
+mcc200_com12_highboot_config: mcc200_COM12_highboot_config
+.PHONY: mcc200_com12_highboot_sdram_config
+mcc200_com12_highboot_sdram_config: mcc200_COM12_highboot_SDRAM_config
+.PHONY: mcc200_com12_sdram_config
+mcc200_com12_sdram_config: mcc200_COM12_SDRAM_config
+.PHONY: mcc200_highboot_sdram_config
+mcc200_highboot_sdram_config: mcc200_highboot_SDRAM_config
+.PHONY: mcc200_sdram_config
+mcc200_sdram_config: mcc200_SDRAM_config
+.PHONY: prs200_ddr_config
+prs200_ddr_config: prs200_DDR_config
+.PHONY: prs200_highboot_ddr_config
+prs200_highboot_ddr_config: prs200_highboot_DDR_config
+.PHONY: pm520_config
+pm520_config: PM520_config
+.PHONY: pm520_ddr_config
+pm520_ddr_config: PM520_DDR_config
+.PHONY: pm520_romboot_config
+pm520_romboot_config: PM520_ROMBOOT_config
+.PHONY: pm520_romboot_ddr_config
+pm520_romboot_ddr_config: PM520_ROMBOOT_DDR_config
+.PHONY: total5200_config
+total5200_config: Total5200_config
+.PHONY: total5200_lowboot_config
+total5200_lowboot_config: Total5200_lowboot_config
+.PHONY: total5200_rev2_config
+total5200_rev2_config: Total5200_Rev2_config
+.PHONY: total5200_rev2_lowboot_config
+total5200_rev2_lowboot_config: Total5200_Rev2_lowboot_config
+.PHONY: eval5200_config
+eval5200_config: EVAL5200_config
+.PHONY: mini5200_config
+mini5200_config: MINI5200_config
+.PHONY: top5200_config
+top5200_config: TOP5200_config
+.PHONY: o2d_config
+o2d_config: O2D_config
+.PHONY: o2d300_config
+o2d300_config: O2D300_config
+.PHONY: o2dnt2_config
+o2dnt2_config: O2DNT2_config
+.PHONY: o2dnt2_ramboot_config
+o2dnt2_ramboot_config: O2DNT2_RAMBOOT_config
+.PHONY: o2i_config
+o2i_config: O2I_config
+.PHONY: o2mnt_config
+o2mnt_config: O2MNT_config
+.PHONY: o2mnt_o2m110_config
+o2mnt_o2m110_config: O2MNT_O2M110_config
+.PHONY: o2mnt_o2m112_config
+o2mnt_o2m112_config: O2MNT_O2M112_config
+.PHONY: o2mnt_o2m113_config
+o2mnt_o2m113_config: O2MNT_O2M113_config
+.PHONY: o3dnt_config
+o3dnt_config: O3DNT_config
+.PHONY: digsy_mtc_ramboot_config
+digsy_mtc_ramboot_config: digsy_mtc_RAMBOOT_config
+.PHONY: digsy_mtc_rev5_ramboot_config
+digsy_mtc_rev5_ramboot_config: digsy_mtc_rev5_RAMBOOT_config
+.PHONY: mvbc_p_config
+mvbc_p_config: MVBC_P_config
+.PHONY: mvsmr_config
+mvsmr_config: MVSMR_config
+.PHONY: pcm030_lowboot_config
+pcm030_lowboot_config: pcm030_LOWBOOT_config
+.PHONY: minifap_config
+minifap_config: MiniFAP_config
+.PHONY: tb5200_config
+tb5200_config: TB5200_config
+.PHONY: tb5200_b_config
+tb5200_b_config: TB5200_B_config
+.PHONY: tqm5200_config
+tqm5200_config: TQM5200_config
+.PHONY: tqm5200_b_config
+tqm5200_b_config: TQM5200_B_config
+.PHONY: tqm5200_b_highboot_config
+tqm5200_b_highboot_config: TQM5200_B_HIGHBOOT_config
+.PHONY: tqm5200_stk100_config
+tqm5200_stk100_config: TQM5200_STK100_config
+.PHONY: tqm5200s_config
+tqm5200s_config: TQM5200S_config
+.PHONY: tqm5200s_highboot_config
+tqm5200s_highboot_config: TQM5200S_HIGHBOOT_config
+.PHONY: a3000_config
+a3000_config: A3000_config
+.PHONY: cpc45_config
+cpc45_config: CPC45_config
+.PHONY: cpc45_romboot_config
+cpc45_romboot_config: CPC45_ROMBOOT_config
+.PHONY: cu824_config
+cu824_config: CU824_config
+.PHONY: exalion_config
+exalion_config: eXalion_config
+.PHONY: hidden_dragon_config
+hidden_dragon_config: HIDDEN_DRAGON_config
+.PHONY: linkstation_hglan_config
+linkstation_hglan_config: linkstation_HGLAN_config
+.PHONY: musenki_config
+musenki_config: MUSENKI_config
+.PHONY: mvblue_config
+mvblue_config: MVBLUE_config
+.PHONY: pn62_config
+pn62_config: PN62_config
+.PHONY: sandpoint8240_config
+sandpoint8240_config: Sandpoint8240_config
+.PHONY: sandpoint8245_config
+sandpoint8245_config: Sandpoint8245_config
+.PHONY: cpu86_config
+cpu86_config: CPU86_config
+.PHONY: cpu86_romboot_config
+cpu86_romboot_config: CPU86_ROMBOOT_config
+.PHONY: cpu87_config
+cpu87_config: CPU87_config
+.PHONY: cpu87_romboot_config
+cpu87_romboot_config: CPU87_ROMBOOT_config
+.PHONY: ep8248e_config
+ep8248e_config: ep8248E_config
+.PHONY: ids8247_config
+ids8247_config: IDS8247_config
+.PHONY: iphase4539_config
+iphase4539_config: IPHASE4539_config
+.PHONY: ispan_config
+ispan_config: ISPAN_config
+.PHONY: ispan_revb_config
+ispan_revb_config: ISPAN_REVB_config
+.PHONY: pm825_config
+pm825_config: PM825_config
+.PHONY: pm825_bigflash_config
+pm825_bigflash_config: PM825_BIGFLASH_config
+.PHONY: pm825_romboot_config
+pm825_romboot_config: PM825_ROMBOOT_config
+.PHONY: pm825_romboot_bigflash_config
+pm825_romboot_bigflash_config: PM825_ROMBOOT_BIGFLASH_config
+.PHONY: pm826_config
+pm826_config: PM826_config
+.PHONY: pm826_bigflash_config
+pm826_bigflash_config: PM826_BIGFLASH_config
+.PHONY: pm826_romboot_config
+pm826_romboot_config: PM826_ROMBOOT_config
+.PHONY: pm826_romboot_bigflash_config
+pm826_romboot_bigflash_config: PM826_ROMBOOT_BIGFLASH_config
+.PHONY: pm828_config
+pm828_config: PM828_config
+.PHONY: pm828_pci_config
+pm828_pci_config: PM828_PCI_config
+.PHONY: pm828_romboot_config
+pm828_romboot_config: PM828_ROMBOOT_config
+.PHONY: pm828_romboot_pci_config
+pm828_romboot_pci_config: PM828_ROMBOOT_PCI_config
+.PHONY: rattler_config
+rattler_config: Rattler_config
+.PHONY: rattler8248_config
+rattler8248_config: Rattler8248_config
+.PHONY: zpc1900_config
+zpc1900_config: ZPC1900_config
+.PHONY: mpc8260ads_config
+mpc8260ads_config: MPC8260ADS_config
+.PHONY: mpc8260ads_33mhz_config
+mpc8260ads_33mhz_config: MPC8260ADS_33MHz_config
+.PHONY: mpc8260ads_33mhz_lowboot_config
+mpc8260ads_33mhz_lowboot_config: MPC8260ADS_33MHz_lowboot_config
+.PHONY: mpc8260ads_40mhz_config
+mpc8260ads_40mhz_config: MPC8260ADS_40MHz_config
+.PHONY: mpc8260ads_40mhz_lowboot_config
+mpc8260ads_40mhz_lowboot_config: MPC8260ADS_40MHz_lowboot_config
+.PHONY: mpc8260ads_lowboot_config
+mpc8260ads_lowboot_config: MPC8260ADS_lowboot_config
+.PHONY: mpc8272ads_config
+mpc8272ads_config: MPC8272ADS_config
+.PHONY: mpc8272ads_lowboot_config
+mpc8272ads_lowboot_config: MPC8272ADS_lowboot_config
+.PHONY: pq2fads_config
+pq2fads_config: PQ2FADS_config
+.PHONY: pq2fads-vr_config
+pq2fads-vr_config: PQ2FADS-VR_config
+.PHONY: pq2fads-vr_lowboot_config
+pq2fads-vr_lowboot_config: PQ2FADS-VR_lowboot_config
+.PHONY: pq2fads-zu_config
+pq2fads-zu_config: PQ2FADS-ZU_config
+.PHONY: pq2fads-zu_66mhz_config
+pq2fads-zu_66mhz_config: PQ2FADS-ZU_66MHz_config
+.PHONY: pq2fads-zu_66mhz_lowboot_config
+pq2fads-zu_66mhz_lowboot_config: PQ2FADS-ZU_66MHz_lowboot_config
+.PHONY: pq2fads-zu_lowboot_config
+pq2fads-zu_lowboot_config: PQ2FADS-ZU_lowboot_config
+.PHONY: pq2fads_lowboot_config
+pq2fads_lowboot_config: PQ2FADS_lowboot_config
+.PHONY: mpc8266ads_config
+mpc8266ads_config: MPC8266ADS_config
+.PHONY: vovpn-gw_66mhz_config
+vovpn-gw_66mhz_config: VoVPN-GW_66MHz_config
+.PHONY: tqm8255_aa_config
+tqm8255_aa_config: TQM8255_AA_config
+.PHONY: tqm8260_aa_config
+tqm8260_aa_config: TQM8260_AA_config
+.PHONY: tqm8260_ab_config
+tqm8260_ab_config: TQM8260_AB_config
+.PHONY: tqm8260_ac_config
+tqm8260_ac_config: TQM8260_AC_config
+.PHONY: tqm8260_ad_config
+tqm8260_ad_config: TQM8260_AD_config
+.PHONY: tqm8260_ae_config
+tqm8260_ae_config: TQM8260_AE_config
+.PHONY: tqm8260_af_config
+tqm8260_af_config: TQM8260_AF_config
+.PHONY: tqm8260_ag_config
+tqm8260_ag_config: TQM8260_AG_config
+.PHONY: tqm8260_ah_config
+tqm8260_ah_config: TQM8260_AH_config
+.PHONY: tqm8260_ai_config
+tqm8260_ai_config: TQM8260_AI_config
+.PHONY: tqm8265_aa_config
+tqm8265_aa_config: TQM8265_AA_config
+.PHONY: tqm8272_config
+tqm8272_config: TQM8272_config
+.PHONY: sbc8349_pci_33_config
+sbc8349_pci_33_config: sbc8349_PCI_33_config
+.PHONY: sbc8349_pci_66_config
+sbc8349_pci_66_config: sbc8349_PCI_66_config
+.PHONY: mpc8308rdb_config
+mpc8308rdb_config: MPC8308RDB_config
+.PHONY: mpc8313erdb_33_config
+mpc8313erdb_33_config: MPC8313ERDB_33_config
+.PHONY: mpc8313erdb_66_config
+mpc8313erdb_66_config: MPC8313ERDB_66_config
+.PHONY: mpc8313erdb_nand_33_config
+mpc8313erdb_nand_33_config: MPC8313ERDB_NAND_33_config
+.PHONY: mpc8313erdb_nand_66_config
+mpc8313erdb_nand_66_config: MPC8313ERDB_NAND_66_config
+.PHONY: mpc8315erdb_config
+mpc8315erdb_config: MPC8315ERDB_config
+.PHONY: mpc8315erdb_nand_config
+mpc8315erdb_nand_config: MPC8315ERDB_NAND_config
+.PHONY: mpc8323erdb_config
+mpc8323erdb_config: MPC8323ERDB_config
+.PHONY: mpc832xemds_config
+mpc832xemds_config: MPC832XEMDS_config
+.PHONY: mpc832xemds_atm_config
+mpc832xemds_atm_config: MPC832XEMDS_ATM_config
+.PHONY: mpc832xemds_host_33_config
+mpc832xemds_host_33_config: MPC832XEMDS_HOST_33_config
+.PHONY: mpc832xemds_host_66_config
+mpc832xemds_host_66_config: MPC832XEMDS_HOST_66_config
+.PHONY: mpc832xemds_slave_config
+mpc832xemds_slave_config: MPC832XEMDS_SLAVE_config
+.PHONY: mpc8349emds_config
+mpc8349emds_config: MPC8349EMDS_config
+.PHONY: mpc8349itx_config
+mpc8349itx_config: MPC8349ITX_config
+.PHONY: mpc8349itx_lowboot_config
+mpc8349itx_lowboot_config: MPC8349ITX_LOWBOOT_config
+.PHONY: mpc8349itxgp_config
+mpc8349itxgp_config: MPC8349ITXGP_config
+.PHONY: mpc8360emds_33_config
+mpc8360emds_33_config: MPC8360EMDS_33_config
+.PHONY: mpc8360emds_33_atm_config
+mpc8360emds_33_atm_config: MPC8360EMDS_33_ATM_config
+.PHONY: mpc8360emds_33_host_33_config
+mpc8360emds_33_host_33_config: MPC8360EMDS_33_HOST_33_config
+.PHONY: mpc8360emds_33_host_66_config
+mpc8360emds_33_host_66_config: MPC8360EMDS_33_HOST_66_config
+.PHONY: mpc8360emds_33_slave_config
+mpc8360emds_33_slave_config: MPC8360EMDS_33_SLAVE_config
+.PHONY: mpc8360emds_66_config
+mpc8360emds_66_config: MPC8360EMDS_66_config
+.PHONY: mpc8360emds_66_atm_config
+mpc8360emds_66_atm_config: MPC8360EMDS_66_ATM_config
+.PHONY: mpc8360emds_66_host_33_config
+mpc8360emds_66_host_33_config: MPC8360EMDS_66_HOST_33_config
+.PHONY: mpc8360emds_66_host_66_config
+mpc8360emds_66_host_66_config: MPC8360EMDS_66_HOST_66_config
+.PHONY: mpc8360emds_66_slave_config
+mpc8360emds_66_slave_config: MPC8360EMDS_66_SLAVE_config
+.PHONY: mpc8360erdk_config
+mpc8360erdk_config: MPC8360ERDK_config
+.PHONY: mpc8360erdk_33_config
+mpc8360erdk_33_config: MPC8360ERDK_33_config
+.PHONY: mpc8360erdk_66_config
+mpc8360erdk_66_config: MPC8360ERDK_66_config
+.PHONY: mpc837xemds_config
+mpc837xemds_config: MPC837XEMDS_config
+.PHONY: mpc837xemds_host_config
+mpc837xemds_host_config: MPC837XEMDS_HOST_config
+.PHONY: mpc837xerdb_config
+mpc837xerdb_config: MPC837XERDB_config
+.PHONY: mergerbox_config
+mergerbox_config: MERGERBOX_config
+.PHONY: mvblm7_config
+mvblm7_config: MVBLM7_config
+.PHONY: simpc8313_lp_config
+simpc8313_lp_config: SIMPC8313_LP_config
+.PHONY: simpc8313_sp_config
+simpc8313_sp_config: SIMPC8313_SP_config
+.PHONY: tqm834x_config
+tqm834x_config: TQM834x_config
+.PHONY: sbc8548_pci_33_config
+sbc8548_pci_33_config: sbc8548_PCI_33_config
+.PHONY: sbc8548_pci_33_pcie_config
+sbc8548_pci_33_pcie_config: sbc8548_PCI_33_PCIE_config
+.PHONY: sbc8548_pci_66_config
+sbc8548_pci_66_config: sbc8548_PCI_66_config
+.PHONY: sbc8548_pci_66_pcie_config
+sbc8548_pci_66_pcie_config: sbc8548_PCI_66_PCIE_config
+.PHONY: hww1u1a_config
+hww1u1a_config: HWW1U1A_config
+.PHONY: b4420qds_config
+b4420qds_config: B4420QDS_config
+.PHONY: b4420qds_nand_config
+b4420qds_nand_config: B4420QDS_NAND_config
+.PHONY: b4420qds_spiflash_config
+b4420qds_spiflash_config: B4420QDS_SPIFLASH_config
+.PHONY: b4860qds_config
+b4860qds_config: B4860QDS_config
+.PHONY: b4860qds_nand_config
+b4860qds_nand_config: B4860QDS_NAND_config
+.PHONY: b4860qds_spiflash_config
+b4860qds_spiflash_config: B4860QDS_SPIFLASH_config
+.PHONY: b4860qds_srio_pcie_boot_config
+b4860qds_srio_pcie_boot_config: B4860QDS_SRIO_PCIE_BOOT_config
+.PHONY: bsc9131rdb_nand_config
+bsc9131rdb_nand_config: BSC9131RDB_NAND_config
+.PHONY: bsc9131rdb_nand_sysclk100_config
+bsc9131rdb_nand_sysclk100_config: BSC9131RDB_NAND_SYSCLK100_config
+.PHONY: bsc9131rdb_spiflash_config
+bsc9131rdb_spiflash_config: BSC9131RDB_SPIFLASH_config
+.PHONY: bsc9131rdb_spiflash_sysclk100_config
+bsc9131rdb_spiflash_sysclk100_config: BSC9131RDB_SPIFLASH_SYSCLK100_config
+.PHONY: bsc9132qds_nand_ddrclk100_config
+bsc9132qds_nand_ddrclk100_config: BSC9132QDS_NAND_DDRCLK100_config
+.PHONY: bsc9132qds_nand_ddrclk133_config
+bsc9132qds_nand_ddrclk133_config: BSC9132QDS_NAND_DDRCLK133_config
+.PHONY: bsc9132qds_nor_ddrclk100_config
+bsc9132qds_nor_ddrclk100_config: BSC9132QDS_NOR_DDRCLK100_config
+.PHONY: bsc9132qds_nor_ddrclk133_config
+bsc9132qds_nor_ddrclk133_config: BSC9132QDS_NOR_DDRCLK133_config
+.PHONY: bsc9132qds_sdcard_ddrclk100_config
+bsc9132qds_sdcard_ddrclk100_config: BSC9132QDS_SDCARD_DDRCLK100_config
+.PHONY: bsc9132qds_sdcard_ddrclk133_config
+bsc9132qds_sdcard_ddrclk133_config: BSC9132QDS_SDCARD_DDRCLK133_config
+.PHONY: bsc9132qds_spiflash_ddrclk100_config
+bsc9132qds_spiflash_ddrclk100_config: BSC9132QDS_SPIFLASH_DDRCLK100_config
+.PHONY: bsc9132qds_spiflash_ddrclk133_config
+bsc9132qds_spiflash_ddrclk133_config: BSC9132QDS_SPIFLASH_DDRCLK133_config
+.PHONY: c29xpcie_config
+c29xpcie_config: C29XPCIE_config
+.PHONY: c29xpcie_spiflash_config
+c29xpcie_spiflash_config: C29XPCIE_SPIFLASH_config
+.PHONY: p3041ds_config
+p3041ds_config: P3041DS_config
+.PHONY: p3041ds_nand_config
+p3041ds_nand_config: P3041DS_NAND_config
+.PHONY: p3041ds_sdcard_config
+p3041ds_sdcard_config: P3041DS_SDCARD_config
+.PHONY: p3041ds_secure_boot_config
+p3041ds_secure_boot_config: P3041DS_SECURE_BOOT_config
+.PHONY: p3041ds_spiflash_config
+p3041ds_spiflash_config: P3041DS_SPIFLASH_config
+.PHONY: p3041ds_srio_pcie_boot_config
+p3041ds_srio_pcie_boot_config: P3041DS_SRIO_PCIE_BOOT_config
+.PHONY: p4080ds_config
+p4080ds_config: P4080DS_config
+.PHONY: p4080ds_sdcard_config
+p4080ds_sdcard_config: P4080DS_SDCARD_config
+.PHONY: p4080ds_secure_boot_config
+p4080ds_secure_boot_config: P4080DS_SECURE_BOOT_config
+.PHONY: p4080ds_spiflash_config
+p4080ds_spiflash_config: P4080DS_SPIFLASH_config
+.PHONY: p4080ds_srio_pcie_boot_config
+p4080ds_srio_pcie_boot_config: P4080DS_SRIO_PCIE_BOOT_config
+.PHONY: p5020ds_config
+p5020ds_config: P5020DS_config
+.PHONY: p5020ds_nand_config
+p5020ds_nand_config: P5020DS_NAND_config
+.PHONY: p5020ds_sdcard_config
+p5020ds_sdcard_config: P5020DS_SDCARD_config
+.PHONY: p5020ds_secure_boot_config
+p5020ds_secure_boot_config: P5020DS_SECURE_BOOT_config
+.PHONY: p5020ds_spiflash_config
+p5020ds_spiflash_config: P5020DS_SPIFLASH_config
+.PHONY: p5020ds_srio_pcie_boot_config
+p5020ds_srio_pcie_boot_config: P5020DS_SRIO_PCIE_BOOT_config
+.PHONY: p5040ds_config
+p5040ds_config: P5040DS_config
+.PHONY: p5040ds_nand_config
+p5040ds_nand_config: P5040DS_NAND_config
+.PHONY: p5040ds_sdcard_config
+p5040ds_sdcard_config: P5040DS_SDCARD_config
+.PHONY: p5040ds_spiflash_config
+p5040ds_spiflash_config: P5040DS_SPIFLASH_config
+.PHONY: mpc8536ds_config
+mpc8536ds_config: MPC8536DS_config
+.PHONY: mpc8536ds_36bit_config
+mpc8536ds_36bit_config: MPC8536DS_36BIT_config
+.PHONY: mpc8536ds_nand_config
+mpc8536ds_nand_config: MPC8536DS_NAND_config
+.PHONY: mpc8536ds_sdcard_config
+mpc8536ds_sdcard_config: MPC8536DS_SDCARD_config
+.PHONY: mpc8536ds_spiflash_config
+mpc8536ds_spiflash_config: MPC8536DS_SPIFLASH_config
+.PHONY: mpc8540ads_config
+mpc8540ads_config: MPC8540ADS_config
+.PHONY: mpc8541cds_config
+mpc8541cds_config: MPC8541CDS_config
+.PHONY: mpc8541cds_legacy_config
+mpc8541cds_legacy_config: MPC8541CDS_legacy_config
+.PHONY: mpc8544ds_config
+mpc8544ds_config: MPC8544DS_config
+.PHONY: mpc8548cds_config
+mpc8548cds_config: MPC8548CDS_config
+.PHONY: mpc8548cds_36bit_config
+mpc8548cds_36bit_config: MPC8548CDS_36BIT_config
+.PHONY: mpc8548cds_legacy_config
+mpc8548cds_legacy_config: MPC8548CDS_legacy_config
+.PHONY: mpc8555cds_config
+mpc8555cds_config: MPC8555CDS_config
+.PHONY: mpc8555cds_legacy_config
+mpc8555cds_legacy_config: MPC8555CDS_legacy_config
+.PHONY: mpc8560ads_config
+mpc8560ads_config: MPC8560ADS_config
+.PHONY: mpc8568mds_config
+mpc8568mds_config: MPC8568MDS_config
+.PHONY: mpc8569mds_config
+mpc8569mds_config: MPC8569MDS_config
+.PHONY: mpc8569mds_atm_config
+mpc8569mds_atm_config: MPC8569MDS_ATM_config
+.PHONY: mpc8569mds_nand_config
+mpc8569mds_nand_config: MPC8569MDS_NAND_config
+.PHONY: mpc8572ds_config
+mpc8572ds_config: MPC8572DS_config
+.PHONY: mpc8572ds_36bit_config
+mpc8572ds_36bit_config: MPC8572DS_36BIT_config
+.PHONY: mpc8572ds_nand_config
+mpc8572ds_nand_config: MPC8572DS_NAND_config
+.PHONY: p1010rdb_36bit_nand_config
+p1010rdb_36bit_nand_config: P1010RDB_36BIT_NAND_config
+.PHONY: p1010rdb_36bit_nand_secboot_config
+p1010rdb_36bit_nand_secboot_config: P1010RDB_36BIT_NAND_SECBOOT_config
+.PHONY: p1010rdb_36bit_nor_config
+p1010rdb_36bit_nor_config: P1010RDB_36BIT_NOR_config
+.PHONY: p1010rdb_36bit_nor_secboot_config
+p1010rdb_36bit_nor_secboot_config: P1010RDB_36BIT_NOR_SECBOOT_config
+.PHONY: p1010rdb_36bit_sdcard_config
+p1010rdb_36bit_sdcard_config: P1010RDB_36BIT_SDCARD_config
+.PHONY: p1010rdb_36bit_spiflash_config
+p1010rdb_36bit_spiflash_config: P1010RDB_36BIT_SPIFLASH_config
+.PHONY: p1010rdb_36bit_spiflash_secboot_config
+p1010rdb_36bit_spiflash_secboot_config: P1010RDB_36BIT_SPIFLASH_SECBOOT_config
+.PHONY: p1010rdb_nand_config
+p1010rdb_nand_config: P1010RDB_NAND_config
+.PHONY: p1010rdb_nand_secboot_config
+p1010rdb_nand_secboot_config: P1010RDB_NAND_SECBOOT_config
+.PHONY: p1010rdb_nor_config
+p1010rdb_nor_config: P1010RDB_NOR_config
+.PHONY: p1010rdb_nor_secboot_config
+p1010rdb_nor_secboot_config: P1010RDB_NOR_SECBOOT_config
+.PHONY: p1010rdb_sdcard_config
+p1010rdb_sdcard_config: P1010RDB_SDCARD_config
+.PHONY: p1010rdb_spiflash_config
+p1010rdb_spiflash_config: P1010RDB_SPIFLASH_config
+.PHONY: p1010rdb_spiflash_secboot_config
+p1010rdb_spiflash_secboot_config: P1010RDB_SPIFLASH_SECBOOT_config
+.PHONY: p1022ds_config
+p1022ds_config: P1022DS_config
+.PHONY: p1022ds_36bit_config
+p1022ds_36bit_config: P1022DS_36BIT_config
+.PHONY: p1022ds_36bit_nand_config
+p1022ds_36bit_nand_config: P1022DS_36BIT_NAND_config
+.PHONY: p1022ds_36bit_sdcard_config
+p1022ds_36bit_sdcard_config: P1022DS_36BIT_SDCARD_config
+.PHONY: p1022ds_36bit_spiflash_config
+p1022ds_36bit_spiflash_config: P1022DS_36BIT_SPIFLASH_config
+.PHONY: p1022ds_nand_config
+p1022ds_nand_config: P1022DS_NAND_config
+.PHONY: p1022ds_sdcard_config
+p1022ds_sdcard_config: P1022DS_SDCARD_config
+.PHONY: p1022ds_spiflash_config
+p1022ds_spiflash_config: P1022DS_SPIFLASH_config
+.PHONY: p1023rdb_config
+p1023rdb_config: P1023RDB_config
+.PHONY: p1023rds_config
+p1023rds_config: P1023RDS_config
+.PHONY: p1023rds_nand_config
+p1023rds_nand_config: P1023RDS_NAND_config
+.PHONY: p1011rdb_config
+p1011rdb_config: P1011RDB_config
+.PHONY: p1011rdb_36bit_config
+p1011rdb_36bit_config: P1011RDB_36BIT_config
+.PHONY: p1011rdb_36bit_sdcard_config
+p1011rdb_36bit_sdcard_config: P1011RDB_36BIT_SDCARD_config
+.PHONY: p1011rdb_36bit_spiflash_config
+p1011rdb_36bit_spiflash_config: P1011RDB_36BIT_SPIFLASH_config
+.PHONY: p1011rdb_nand_config
+p1011rdb_nand_config: P1011RDB_NAND_config
+.PHONY: p1011rdb_sdcard_config
+p1011rdb_sdcard_config: P1011RDB_SDCARD_config
+.PHONY: p1011rdb_spiflash_config
+p1011rdb_spiflash_config: P1011RDB_SPIFLASH_config
+.PHONY: p1020rdb_config
+p1020rdb_config: P1020RDB_config
+.PHONY: p1020rdb_36bit_config
+p1020rdb_36bit_config: P1020RDB_36BIT_config
+.PHONY: p1020rdb_36bit_sdcard_config
+p1020rdb_36bit_sdcard_config: P1020RDB_36BIT_SDCARD_config
+.PHONY: p1020rdb_36bit_spiflash_config
+p1020rdb_36bit_spiflash_config: P1020RDB_36BIT_SPIFLASH_config
+.PHONY: p1020rdb_nand_config
+p1020rdb_nand_config: P1020RDB_NAND_config
+.PHONY: p1020rdb_sdcard_config
+p1020rdb_sdcard_config: P1020RDB_SDCARD_config
+.PHONY: p1020rdb_spiflash_config
+p1020rdb_spiflash_config: P1020RDB_SPIFLASH_config
+.PHONY: p2010rdb_config
+p2010rdb_config: P2010RDB_config
+.PHONY: p2010rdb_36bit_config
+p2010rdb_36bit_config: P2010RDB_36BIT_config
+.PHONY: p2010rdb_36bit_sdcard_config
+p2010rdb_36bit_sdcard_config: P2010RDB_36BIT_SDCARD_config
+.PHONY: p2010rdb_36bit_spiflash_config
+p2010rdb_36bit_spiflash_config: P2010RDB_36BIT_SPIFLASH_config
+.PHONY: p2010rdb_nand_config
+p2010rdb_nand_config: P2010RDB_NAND_config
+.PHONY: p2010rdb_sdcard_config
+p2010rdb_sdcard_config: P2010RDB_SDCARD_config
+.PHONY: p2010rdb_spiflash_config
+p2010rdb_spiflash_config: P2010RDB_SPIFLASH_config
+.PHONY: p2020rdb_config
+p2020rdb_config: P2020RDB_config
+.PHONY: p2020rdb_36bit_config
+p2020rdb_36bit_config: P2020RDB_36BIT_config
+.PHONY: p2020rdb_36bit_sdcard_config
+p2020rdb_36bit_sdcard_config: P2020RDB_36BIT_SDCARD_config
+.PHONY: p2020rdb_36bit_spiflash_config
+p2020rdb_36bit_spiflash_config: P2020RDB_36BIT_SPIFLASH_config
+.PHONY: p2020rdb_nand_config
+p2020rdb_nand_config: P2020RDB_NAND_config
+.PHONY: p2020rdb_sdcard_config
+p2020rdb_sdcard_config: P2020RDB_SDCARD_config
+.PHONY: p2020rdb_spiflash_config
+p2020rdb_spiflash_config: P2020RDB_SPIFLASH_config
+.PHONY: p1020mbg-pc_config
+p1020mbg-pc_config: P1020MBG-PC_config
+.PHONY: p1020mbg-pc_36bit_config
+p1020mbg-pc_36bit_config: P1020MBG-PC_36BIT_config
+.PHONY: p1020mbg-pc_36bit_sdcard_config
+p1020mbg-pc_36bit_sdcard_config: P1020MBG-PC_36BIT_SDCARD_config
+.PHONY: p1020mbg-pc_sdcard_config
+p1020mbg-pc_sdcard_config: P1020MBG-PC_SDCARD_config
+.PHONY: p1020rdb-pc_config
+p1020rdb-pc_config: P1020RDB-PC_config
+.PHONY: p1020rdb-pc_36bit_config
+p1020rdb-pc_36bit_config: P1020RDB-PC_36BIT_config
+.PHONY: p1020rdb-pc_36bit_nand_config
+p1020rdb-pc_36bit_nand_config: P1020RDB-PC_36BIT_NAND_config
+.PHONY: p1020rdb-pc_36bit_sdcard_config
+p1020rdb-pc_36bit_sdcard_config: P1020RDB-PC_36BIT_SDCARD_config
+.PHONY: p1020rdb-pc_36bit_spiflash_config
+p1020rdb-pc_36bit_spiflash_config: P1020RDB-PC_36BIT_SPIFLASH_config
+.PHONY: p1020rdb-pc_nand_config
+p1020rdb-pc_nand_config: P1020RDB-PC_NAND_config
+.PHONY: p1020rdb-pc_sdcard_config
+p1020rdb-pc_sdcard_config: P1020RDB-PC_SDCARD_config
+.PHONY: p1020rdb-pc_spiflash_config
+p1020rdb-pc_spiflash_config: P1020RDB-PC_SPIFLASH_config
+.PHONY: p1020rdb-pd_config
+p1020rdb-pd_config: P1020RDB-PD_config
+.PHONY: p1020rdb-pd_nand_config
+p1020rdb-pd_nand_config: P1020RDB-PD_NAND_config
+.PHONY: p1020rdb-pd_sdcard_config
+p1020rdb-pd_sdcard_config: P1020RDB-PD_SDCARD_config
+.PHONY: p1020rdb-pd_spiflash_config
+p1020rdb-pd_spiflash_config: P1020RDB-PD_SPIFLASH_config
+.PHONY: p1020utm-pc_config
+p1020utm-pc_config: P1020UTM-PC_config
+.PHONY: p1020utm-pc_36bit_config
+p1020utm-pc_36bit_config: P1020UTM-PC_36BIT_config
+.PHONY: p1020utm-pc_36bit_sdcard_config
+p1020utm-pc_36bit_sdcard_config: P1020UTM-PC_36BIT_SDCARD_config
+.PHONY: p1020utm-pc_sdcard_config
+p1020utm-pc_sdcard_config: P1020UTM-PC_SDCARD_config
+.PHONY: p1021rdb-pc_config
+p1021rdb-pc_config: P1021RDB-PC_config
+.PHONY: p1021rdb-pc_36bit_config
+p1021rdb-pc_36bit_config: P1021RDB-PC_36BIT_config
+.PHONY: p1021rdb-pc_36bit_nand_config
+p1021rdb-pc_36bit_nand_config: P1021RDB-PC_36BIT_NAND_config
+.PHONY: p1021rdb-pc_36bit_sdcard_config
+p1021rdb-pc_36bit_sdcard_config: P1021RDB-PC_36BIT_SDCARD_config
+.PHONY: p1021rdb-pc_36bit_spiflash_config
+p1021rdb-pc_36bit_spiflash_config: P1021RDB-PC_36BIT_SPIFLASH_config
+.PHONY: p1021rdb-pc_nand_config
+p1021rdb-pc_nand_config: P1021RDB-PC_NAND_config
+.PHONY: p1021rdb-pc_sdcard_config
+p1021rdb-pc_sdcard_config: P1021RDB-PC_SDCARD_config
+.PHONY: p1021rdb-pc_spiflash_config
+p1021rdb-pc_spiflash_config: P1021RDB-PC_SPIFLASH_config
+.PHONY: p1024rdb_config
+p1024rdb_config: P1024RDB_config
+.PHONY: p1024rdb_36bit_config
+p1024rdb_36bit_config: P1024RDB_36BIT_config
+.PHONY: p1024rdb_nand_config
+p1024rdb_nand_config: P1024RDB_NAND_config
+.PHONY: p1024rdb_sdcard_config
+p1024rdb_sdcard_config: P1024RDB_SDCARD_config
+.PHONY: p1024rdb_spiflash_config
+p1024rdb_spiflash_config: P1024RDB_SPIFLASH_config
+.PHONY: p1025rdb_config
+p1025rdb_config: P1025RDB_config
+.PHONY: p1025rdb_36bit_config
+p1025rdb_36bit_config: P1025RDB_36BIT_config
+.PHONY: p1025rdb_nand_config
+p1025rdb_nand_config: P1025RDB_NAND_config
+.PHONY: p1025rdb_sdcard_config
+p1025rdb_sdcard_config: P1025RDB_SDCARD_config
+.PHONY: p1025rdb_spiflash_config
+p1025rdb_spiflash_config: P1025RDB_SPIFLASH_config
+.PHONY: p2020rdb-pc_config
+p2020rdb-pc_config: P2020RDB-PC_config
+.PHONY: p2020rdb-pc_36bit_config
+p2020rdb-pc_36bit_config: P2020RDB-PC_36BIT_config
+.PHONY: p2020rdb-pc_36bit_nand_config
+p2020rdb-pc_36bit_nand_config: P2020RDB-PC_36BIT_NAND_config
+.PHONY: p2020rdb-pc_36bit_sdcard_config
+p2020rdb-pc_36bit_sdcard_config: P2020RDB-PC_36BIT_SDCARD_config
+.PHONY: p2020rdb-pc_36bit_spiflash_config
+p2020rdb-pc_36bit_spiflash_config: P2020RDB-PC_36BIT_SPIFLASH_config
+.PHONY: p2020rdb-pc_nand_config
+p2020rdb-pc_nand_config: P2020RDB-PC_NAND_config
+.PHONY: p2020rdb-pc_sdcard_config
+p2020rdb-pc_sdcard_config: P2020RDB-PC_SDCARD_config
+.PHONY: p2020rdb-pc_spiflash_config
+p2020rdb-pc_spiflash_config: P2020RDB-PC_SPIFLASH_config
+.PHONY: twr-p1025_config
+twr-p1025_config: TWR-P1025_config
+.PHONY: p2020come_sdcard_config
+p2020come_sdcard_config: P2020COME_SDCARD_config
+.PHONY: p2020come_spiflash_config
+p2020come_spiflash_config: P2020COME_SPIFLASH_config
+.PHONY: p2020ds_config
+p2020ds_config: P2020DS_config
+.PHONY: p2020ds_36bit_config
+p2020ds_36bit_config: P2020DS_36BIT_config
+.PHONY: p2020ds_ddr2_config
+p2020ds_ddr2_config: P2020DS_DDR2_config
+.PHONY: p2020ds_sdcard_config
+p2020ds_sdcard_config: P2020DS_SDCARD_config
+.PHONY: p2020ds_spiflash_config
+p2020ds_spiflash_config: P2020DS_SPIFLASH_config
+.PHONY: p2041rdb_config
+p2041rdb_config: P2041RDB_config
+.PHONY: p2041rdb_nand_config
+p2041rdb_nand_config: P2041RDB_NAND_config
+.PHONY: p2041rdb_sdcard_config
+p2041rdb_sdcard_config: P2041RDB_SDCARD_config
+.PHONY: p2041rdb_secure_boot_config
+p2041rdb_secure_boot_config: P2041RDB_SECURE_BOOT_config
+.PHONY: p2041rdb_spiflash_config
+p2041rdb_spiflash_config: P2041RDB_SPIFLASH_config
+.PHONY: p2041rdb_srio_pcie_boot_config
+p2041rdb_srio_pcie_boot_config: P2041RDB_SRIO_PCIE_BOOT_config
+.PHONY: t4160qds_config
+t4160qds_config: T4160QDS_config
+.PHONY: t4160qds_sdcard_config
+t4160qds_sdcard_config: T4160QDS_SDCARD_config
+.PHONY: t4160qds_spiflash_config
+t4160qds_spiflash_config: T4160QDS_SPIFLASH_config
+.PHONY: t4240emu_config
+t4240emu_config: T4240EMU_config
+.PHONY: t4240qds_config
+t4240qds_config: T4240QDS_config
+.PHONY: t4240qds_sdcard_config
+t4240qds_sdcard_config: T4240QDS_SDCARD_config
+.PHONY: t4240qds_spiflash_config
+t4240qds_spiflash_config: T4240QDS_SPIFLASH_config
+.PHONY: t4240qds_srio_pcie_boot_config
+t4240qds_srio_pcie_boot_config: T4240QDS_SRIO_PCIE_BOOT_config
+.PHONY: controlcenterd_36bit_sdcard_config
+controlcenterd_36bit_sdcard_config: controlcenterd_36BIT_SDCARD_config
+.PHONY: controlcenterd_36bit_sdcard_develop_config
+controlcenterd_36bit_sdcard_develop_config: controlcenterd_36BIT_SDCARD_DEVELOP_config
+.PHONY: controlcenterd_trailblazer_config
+controlcenterd_trailblazer_config: controlcenterd_TRAILBLAZER_config
+.PHONY: controlcenterd_trailblazer_develop_config
+controlcenterd_trailblazer_develop_config: controlcenterd_TRAILBLAZER_DEVELOP_config
+.PHONY: stxssa_4m_config
+stxssa_4m_config: stxssa_4M_config
+.PHONY: mpc8610hpcd_config
+mpc8610hpcd_config: MPC8610HPCD_config
+.PHONY: mpc8641hpcn_config
+mpc8641hpcn_config: MPC8641HPCN_config
+.PHONY: mpc8641hpcn_36bit_config
+mpc8641hpcn_36bit_config: MPC8641HPCN_36BIT_config
+.PHONY: rrvision_config
+rrvision_config: RRvision_config
+.PHONY: adder_config
+adder_config: Adder_config
+.PHONY: adder87x_config
+adder87x_config: Adder87x_config
+.PHONY: adderii_config
+adderii_config: AdderII_config
+.PHONY: adderusb_config
+adderusb_config: AdderUSB_config
+.PHONY: esteem192e_config
+esteem192e_config: ESTEEM192E_config
+.PHONY: mpc86xads_config
+mpc86xads_config: MPC86xADS_config
+.PHONY: mpc885ads_config
+mpc885ads_config: MPC885ADS_config
+.PHONY: flagadm_config
+flagadm_config: FLAGADM_config
+.PHONY: gen860t_config
+gen860t_config: GEN860T_config
+.PHONY: gen860t_sc_config
+gen860t_sc_config: GEN860T_SC_config
+.PHONY: icu862_config
+icu862_config: ICU862_config
+.PHONY: icu862_100mhz_config
+icu862_100mhz_config: ICU862_100MHz_config
+.PHONY: ip860_config
+ip860_config: IP860_config
+.PHONY: ivml24_config
+ivml24_config: IVML24_config
+.PHONY: ivml24_128_config
+ivml24_128_config: IVML24_128_config
+.PHONY: ivml24_256_config
+ivml24_256_config: IVML24_256_config
+.PHONY: ivms8_config
+ivms8_config: IVMS8_config
+.PHONY: ivms8_128_config
+ivms8_128_config: IVMS8_128_config
+.PHONY: ivms8_256_config
+ivms8_256_config: IVMS8_256_config
+.PHONY: netphone_config
+netphone_config: NETPHONE_config
+.PHONY: netphone_v2_config
+netphone_v2_config: NETPHONE_V2_config
+.PHONY: netta_config
+netta_config: NETTA_config
+.PHONY: netta_6412_config
+netta_6412_config: NETTA_6412_config
+.PHONY: netta_6412_swaphook_config
+netta_6412_swaphook_config: NETTA_6412_SWAPHOOK_config
+.PHONY: netta_isdn_config
+netta_isdn_config: NETTA_ISDN_config
+.PHONY: netta_isdn_6412_config
+netta_isdn_6412_config: NETTA_ISDN_6412_config
+.PHONY: netta_isdn_6412_swaphook_config
+netta_isdn_6412_swaphook_config: NETTA_ISDN_6412_SWAPHOOK_config
+.PHONY: netta_isdn_swaphook_config
+netta_isdn_swaphook_config: NETTA_ISDN_SWAPHOOK_config
+.PHONY: netta_swaphook_config
+netta_swaphook_config: NETTA_SWAPHOOK_config
+.PHONY: netta2_config
+netta2_config: NETTA2_config
+.PHONY: netta2_v2_config
+netta2_v2_config: NETTA2_V2_config
+.PHONY: netvia_config
+netvia_config: NETVIA_config
+.PHONY: netvia_v2_config
+netvia_v2_config: NETVIA_V2_config
+.PHONY: r360mpi_config
+r360mpi_config: R360MPI_config
+.PHONY: rbc823_config
+rbc823_config: RBC823_config
+.PHONY: rpxlite_dw_config
+rpxlite_dw_config: RPXlite_DW_config
+.PHONY: rpxlite_dw_64_config
+rpxlite_dw_64_config: RPXlite_DW_64_config
+.PHONY: rpxlite_dw_64_lcd_config
+rpxlite_dw_64_lcd_config: RPXlite_DW_64_LCD_config
+.PHONY: rpxlite_dw_lcd_config
+rpxlite_dw_lcd_config: RPXlite_DW_LCD_config
+.PHONY: rpxlite_dw_nvram_config
+rpxlite_dw_nvram_config: RPXlite_DW_NVRAM_config
+.PHONY: rpxlite_dw_nvram_64_config
+rpxlite_dw_nvram_64_config: RPXlite_DW_NVRAM_64_config
+.PHONY: rpxlite_dw_nvram_64_lcd_config
+rpxlite_dw_nvram_64_lcd_config: RPXlite_DW_NVRAM_64_LCD_config
+.PHONY: rpxlite_dw_nvram_lcd_config
+rpxlite_dw_nvram_lcd_config: RPXlite_DW_NVRAM_LCD_config
+.PHONY: rrvision_lcd_config
+rrvision_lcd_config: RRvision_LCD_config
+.PHONY: sxni855t_config
+sxni855t_config: SXNI855T_config
+.PHONY: spd823ts_config
+spd823ts_config: SPD823TS_config
+.PHONY: mhpc_config
+mhpc_config: MHPC_config
+.PHONY: top860_config
+top860_config: TOP860_config
+.PHONY: kup4k_config
+kup4k_config: KUP4K_config
+.PHONY: kup4x_config
+kup4x_config: KUP4X_config
+.PHONY: elpt860_config
+elpt860_config: ELPT860_config
+.PHONY: qs823_config
+qs823_config: QS823_config
+.PHONY: qs850_config
+qs850_config: QS850_config
+.PHONY: qs860t_config
+qs860t_config: QS860T_config
+.PHONY: fps850l_config
+fps850l_config: FPS850L_config
+.PHONY: fps860l_config
+fps860l_config: FPS860L_config
+.PHONY: nscu_config
+nscu_config: NSCU_config
+.PHONY: sm850_config
+sm850_config: SM850_config
+.PHONY: tk885d_config
+tk885d_config: TK885D_config
+.PHONY: tqm823l_config
+tqm823l_config: TQM823L_config
+.PHONY: tqm823l_lcd_config
+tqm823l_lcd_config: TQM823L_LCD_config
+.PHONY: tqm823m_config
+tqm823m_config: TQM823M_config
+.PHONY: tqm850l_config
+tqm850l_config: TQM850L_config
+.PHONY: tqm850m_config
+tqm850m_config: TQM850M_config
+.PHONY: tqm855l_config
+tqm855l_config: TQM855L_config
+.PHONY: tqm855m_config
+tqm855m_config: TQM855M_config
+.PHONY: tqm860l_config
+tqm860l_config: TQM860L_config
+.PHONY: tqm860m_config
+tqm860m_config: TQM860M_config
+.PHONY: tqm862l_config
+tqm862l_config: TQM862L_config
+.PHONY: tqm862m_config
+tqm862m_config: TQM862M_config
+.PHONY: tqm866m_config
+tqm866m_config: TQM866M_config
+.PHONY: tqm885d_config
+tqm885d_config: TQM885D_config
+.PHONY: tttech_config
+tttech_config: TTTech_config
+.PHONY: g2000_config
+g2000_config: G2000_config
+.PHONY: jse_config
+jse_config: JSE_config
+.PHONY: w7olmc_config
+w7olmc_config: W7OLMC_config
+.PHONY: w7olmg_config
+w7olmg_config: W7OLMG_config
+.PHONY: crayl1_config
+crayl1_config: CRAYL1_config
+.PHONY: catcenter_config
+catcenter_config: CATcenter_config
+.PHONY: catcenter_25_config
+catcenter_25_config: CATcenter_25_config
+.PHONY: catcenter_33_config
+catcenter_33_config: CATcenter_33_config
+.PHONY: ppchameleonevb_config
+ppchameleonevb_config: PPChameleonEVB_config
+.PHONY: ppchameleonevb_ba_25_config
+ppchameleonevb_ba_25_config: PPChameleonEVB_BA_25_config
+.PHONY: ppchameleonevb_ba_33_config
+ppchameleonevb_ba_33_config: PPChameleonEVB_BA_33_config
+.PHONY: ppchameleonevb_hi_25_config
+ppchameleonevb_hi_25_config: PPChameleonEVB_HI_25_config
+.PHONY: ppchameleonevb_hi_33_config
+ppchameleonevb_hi_33_config: PPChameleonEVB_HI_33_config
+.PHONY: ppchameleonevb_me_25_config
+ppchameleonevb_me_25_config: PPChameleonEVB_ME_25_config
+.PHONY: ppchameleonevb_me_33_config
+ppchameleonevb_me_33_config: PPChameleonEVB_ME_33_config
+.PHONY: apc405_config
+apc405_config: APC405_config
+.PHONY: ar405_config
+ar405_config: AR405_config
+.PHONY: ash405_config
+ash405_config: ASH405_config
+.PHONY: cms700_config
+cms700_config: CMS700_config
+.PHONY: cpci2dp_config
+cpci2dp_config: CPCI2DP_config
+.PHONY: cpci405_config
+cpci405_config: CPCI405_config
+.PHONY: cpci4052_config
+cpci4052_config: CPCI4052_config
+.PHONY: cpci405ab_config
+cpci405ab_config: CPCI405AB_config
+.PHONY: cpci405dt_config
+cpci405dt_config: CPCI405DT_config
+.PHONY: cpciiser4_config
+cpciiser4_config: CPCIISER4_config
+.PHONY: dp405_config
+dp405_config: DP405_config
+.PHONY: du405_config
+du405_config: DU405_config
+.PHONY: du440_config
+du440_config: DU440_config
+.PHONY: hh405_config
+hh405_config: HH405_config
+.PHONY: hub405_config
+hub405_config: HUB405_config
+.PHONY: ocrtc_config
+ocrtc_config: OCRTC_config
+.PHONY: pci405_config
+pci405_config: PCI405_config
+.PHONY: plu405_config
+plu405_config: PLU405_config
+.PHONY: pmc405_config
+pmc405_config: PMC405_config
+.PHONY: pmc405de_config
+pmc405de_config: PMC405DE_config
+.PHONY: pmc440_config
+pmc440_config: PMC440_config
+.PHONY: voh405_config
+voh405_config: VOH405_config
+.PHONY: vom405_config
+vom405_config: VOM405_config
+.PHONY: wuh405_config
+wuh405_config: WUH405_config
+.PHONY: mip405_config
+mip405_config: MIP405_config
+.PHONY: mip405t_config
+mip405t_config: MIP405T_config
+.PHONY: pip405_config
+pip405_config: PIP405_config
+.PHONY: karef_config
+karef_config: KAREF_config
+.PHONY: metrobox_config
+metrobox_config: METROBOX_config
+.PHONY: migor_config
+migor_config: MigoR_config
+.PHONY: evb64260_config
+evb64260_config: EVB64260_config
+.PHONY: evb64260_750cx_config
+evb64260_750cx_config: EVB64260_750CX_config
+.PHONY: mousse_config
+mousse_config: MOUSSE_config
+.PHONY: rpxsuper_config
+rpxsuper_config: RPXsuper_config
+.PHONY: rpxclassic_config
+rpxclassic_config: RPXClassic_config
+.PHONY: rpxlite_config
+rpxlite_config: RPXlite_config
+.PHONY: ads860_config
+ads860_config: ADS860_config
+.PHONY: fads823_config
+fads823_config: FADS823_config
+.PHONY: fads850sar_config
+fads850sar_config: FADS850SAR_config
+.PHONY: fads860t_config
+fads860t_config: FADS860T_config
+.PHONY: genietv_config
+genietv_config: GENIETV_config
+.PHONY: mbx_config
+mbx_config: MBX_config
+.PHONY: mbx860t_config
+mbx860t_config: MBX860T_config
+.PHONY: nx823_config
+nx823_config: NX823_config

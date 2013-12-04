@@ -1,0 +1,2 @@
+ctype.o: ctype.c \
+ /home/texierp/segment_SOL/u-boot-sunxi/include/linux/ctype.h

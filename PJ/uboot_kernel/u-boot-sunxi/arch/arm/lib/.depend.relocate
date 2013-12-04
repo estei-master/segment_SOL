@@ -1,0 +1,4 @@
+relocate.o: relocate.S \
+ /home/texierp/segment_SOL/u-boot-sunxi/include/linux/linkage.h \
+ /home/texierp/segment_SOL/u-boot-sunxi/include/asm/linkage.h \
+ /home/texierp/segment_SOL/u-boot-sunxi/include/linux/config.h

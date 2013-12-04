@@ -1,0 +1,8 @@
+crc16.o: crc16.c /home/texierp/segment_SOL/u-boot-sunxi/include/crc.h \
+ /home/texierp/segment_SOL/u-boot-sunxi/include/linux/types.h \
+ /home/texierp/segment_SOL/u-boot-sunxi/include/linux/config.h \
+ /home/texierp/segment_SOL/u-boot-sunxi/include/linux/posix_types.h \
+ /home/texierp/segment_SOL/u-boot-sunxi/include/linux/stddef.h \
+ /home/texierp/segment_SOL/u-boot-sunxi/include/asm/posix_types.h \
+ /home/texierp/segment_SOL/u-boot-sunxi/include/asm/types.h \
+ /home/texierp/PROJET_Drone/gcc-linaro-arm-linux-gnueabihf-4.7-2013.01-20130125_linux/bin/../lib/gcc/arm-linux-gnueabihf/4.7.3/include/stdbool.h

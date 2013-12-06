@@ -1,0 +1,66 @@
+--- drivers/input/touchscreen/sun4i-ts.c	2013-08-30 11:51:44.251283063 +0300
++++ drivers/input/touchscreen/sun4i-ts.c	2013-09-02 15:37:12.673011716 +0300
+@@ -38,7 +38,7 @@
+ #include <linux/jiffies.h>
+ #include <linux/tick.h>
+ #include <asm-generic/cputime.h>
+-
++#include <mach/irqs.h>
+ #include <mach/system.h>
+ #include <mach/hardware.h>
+ #include <plat/sys_config.h>
+@@ -48,7 +48,7 @@
+     #include <linux/earlysuspend.h>
+ #endif
+ 
+-//#undef CONFIG_HAS_EARLYSUSPEND
++#undef CONFIG_HAS_EARLYSUSPEND
+ 
+ static int tp_flag = 0;
+ 
+@@ -76,7 +76,7 @@
+ //#define TP_INT_PERIOD_TEST
+ //#define TP_TEMP_DEBUG
+ //#define TP_FREQ_DEBUG
+-//#define PRINT_UP_SEPARATOR
++#define PRINT_UP_SEPARATOR
+ #define TP_FIX_CENTER
+ 
+ #define IRQ_TP                 (29)
+@@ -1636,7 +1636,7 @@
+ 	ts_data->irq = irq;
+ 	//tp_irq = irq;
+ 
+-	err = request_irq(irq, sun4i_isr_tp,
++	err = request_irq(SW_INT_IRQNO_TOUCH_PANEL, sun4i_isr_tp,
+ 		IRQF_DISABLED, pdev->name, pdev);
+ 	if (err) {
+ 		dev_err(&pdev->dev, "Cannot request keypad IRQ\n");
+@@ -1735,8 +1735,8 @@
+ static struct resource sun4i_ts_resource[] = {
+ 	{
+ 	.flags  = IORESOURCE_IRQ,
+-	.start  = IRQ_TP ,
+-	.end    = IRQ_TP ,
++	.start  = SW_INT_IRQNO_TOUCH_PANEL ,
++	.end    = SW_INT_IRQNO_TOUCH_PANEL ,
+ 	},
+ 
+ 	{
+@@ -1769,6 +1769,8 @@
+ #endif
+ 
+ 	//config rtp
++	    
++
+ 	if(SCRIPT_PARSER_OK != script_parser_fetch("rtp_para", "rtp_used", &device_used, sizeof(device_used)/sizeof(int))){
+ 	    pr_err("sun4i_ts_init: script_parser_fetch err. \n");
+ 	    goto script_parser_fetch_err;
+@@ -1780,6 +1782,7 @@
+ 	        goto script_parser_fetch_err;
+ 	    }
+ 	    printk("sun4i-ts: tp_screen_size is %d inch.\n", tp_screen_size);
++
+ 	    if(7 == tp_screen_size){
+                 dual_touch_distance = 20;
+                 glide_delta_ds_max_limit = 90;

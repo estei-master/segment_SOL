@@ -15,12 +15,18 @@ Hiérarchie des dossiers
 :   Contient un mini tuto pour cross-compiler Qt embedded, des exemples, des tests, ...
 
 `openCV`
-:   Contient un mini tuto pour cross-compiler openCV	
+:   Contient un mini tuto pour cross-compiler openCV
+
+`Optimisation_TEMPS_DE_BOOT` 
+:   Contient les images de boot, des patchs, ...
 
 `openGLES` 
 :   Contient un mini tuto pour installer le driver mali	
 
-`uboot&kernel` 
+`power_management` 
+:   Contient un script permettant de récupérer le pourcentage de niveau batterie
+
+`uboot_kernel` 
 :   Contient des scripts (bash, Makefile, ...), ainsi que le dernier .config à jour
 
 README.md vers PDF

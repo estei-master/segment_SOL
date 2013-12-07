@@ -23,9 +23,9 @@ LIMIT=50
 
 if [ $(cat /sys/class/power_supply/battery/capacity) -ge $LIMIT ]  
 then
-        echo "`date +\%d-%m-%y_%X` : $(cat /sys/class/power_supply/battery/capacity)%" >> LOG
+        echo "`date +\%d-%m-%y_%X` : $(cat /sys/class/power_supply/battery/capacity)%" >> /tmp/LOG_pm
 else
-        echo "Niveau de charge Batterie inf�érieur �à $LIMIT%"
+        echo "Niveau de charge Batterie inférieur à $LIMIT%"
         #echo powersave > /sys/devices/system/cpu/cpu0/cpufreq/scalling_governor
         #echo powersave > /sys/devices/system/cpu/cpu0/cpufreq/scalling_governor
         kill -9 $(pidof lightmaps)

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.10.18)  10 DEC 2013 13:47
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.10.18)  10 DEC 2013 17:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1236,59 +1236,92 @@ Package pdftex.def Info: commons/Gantt.png used on input line 107.
 
 ] [8
 
+] [9
+
+] [10
+
+] [11
+
 ]
-<commons/A20-OLinuXino-MICRO-0.jpg, id=482, 542.025pt x 375.4025pt>
+[12
+
+] [13
+
+] [14
+
+] [15
+
+]
+<commons/A20-OLinuXino-MICRO-0.jpg, id=775, 542.025pt x 375.4025pt>
 File: commons/A20-OLinuXino-MICRO-0.jpg Graphic file (type jpg)
 
 <use commons/A20-OLinuXino-MICRO-0.jpg>
 Package pdftex.def Info: commons/A20-OLinuXino-MICRO-0.jpg used on input line 1
 49.
 (pdftex.def)             Requested size: 113.81102pt x 78.81966pt.
- [9
+ [16
 
- <./commons/A20-OLinuXino-MICRO-0.jpg>] <commons/linaro.jpeg, id=524, 319.1925p
+ <./commons/A20-OLinuXino-MICRO-0.jpg>] <commons/linaro.jpeg, id=817, 319.1925p
 t x 159.59625pt>
 File: commons/linaro.jpeg Graphic file (type jpg)
 
 <use commons/linaro.jpeg>
 Package pdftex.def Info: commons/linaro.jpeg used on input line 170.
 (pdftex.def)             Requested size: 56.9055pt x 28.4509pt.
- <commons/gnu.jpeg, id=525, 206.7725pt x 245.91875pt>
+ <commons/gnu.jpeg, id=818, 206.7725pt x 245.91875pt>
 File: commons/gnu.jpeg Graphic file (type jpg)
 
 <use commons/gnu.jpeg>
 Package pdftex.def Info: commons/gnu.jpeg used on input line 170.
 (pdftex.def)             Requested size: 28.45274pt x 33.83925pt.
- [10
+ [17
 
  <./commons/linaro.jpeg> <./commons/gnu.jpeg>]
-[11
+[18
 
-] <commons/tux.png, id=608, 128.48pt x 128.48pt>
+] <commons/tux.png, id=900, 128.48pt x 128.48pt>
 File: commons/tux.png Graphic file (type png)
  <use commons/tux.png>
 Package pdftex.def Info: commons/tux.png used on input line 193.
 (pdftex.def)             Requested size: 28.45274pt x 28.45192pt.
 
-[12
+[19
 
- <./commons/tux.png>] [13
+ <./commons/tux.png>] [20
 
 ]
-<commons/qt-embedded-linux-architecture.png, id=692, 351.3125pt x 156.585pt>
+<commons/qt-embedded-linux-architecture.png, id=985, 351.3125pt x 156.585pt>
 File: commons/qt-embedded-linux-architecture.png Graphic file (type png)
 
 <use commons/qt-embedded-linux-architecture.png>
 Package pdftex.def Info: commons/qt-embedded-linux-architecture.png used on inp
 ut line 213.
 (pdftex.def)             Requested size: 113.81102pt x 50.72704pt.
- [14
+ [21
 
- <./commons/qt-embedded-linux-architecture.png (PNG copy)>] [15
+ <./commons/qt-embedded-linux-architecture.png (PNG copy)>]
+File: commons/qt-embedded-linux-architecture.png Graphic file (type png)
 
-] [16
+<use commons/qt-embedded-linux-architecture.png>
+Package pdftex.def Info: commons/qt-embedded-linux-architecture.png used on inp
+ut line 213.
+(pdftex.def)             Requested size: 113.81102pt x 50.72704pt.
+ [22
 
-] [17
+]
+File: commons/qt-embedded-linux-architecture.png Graphic file (type png)
+
+<use commons/qt-embedded-linux-architecture.png>
+Package pdftex.def Info: commons/qt-embedded-linux-architecture.png used on inp
+ut line 213.
+(pdftex.def)             Requested size: 113.81102pt x 50.72704pt.
+ [23
+
+] [24
+
+] [25
+
+] [26
 
 ]
 \tf@nav=\write6
@@ -1302,29 +1335,43 @@ ut line 213.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 244.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 244.
- (./slide_projet.aux)
+
+(./slide_projet.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 244.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 244.
-Package rerunfilecheck Info: File `slide_projet.out' has not changed.
-(rerunfilecheck)             Checksum: D298FC327E9642A448E953606C75F9D0;921.
+
+
+Package rerunfilecheck Warning: File `slide_projet.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `slide_projet.out':
+(rerunfilecheck)             Before: 1C8E0F36B190C4FA562E76A8F09C089F;922
+(rerunfilecheck)             After:  FB7645ABFA4E683236468D04FB064879;922.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 244.
  ) 
 Here is how much of TeX's memory you used:
- 17360 strings out of 495059
- 315595 string characters out of 3182029
+ 17401 strings out of 495059
+ 316392 string characters out of 3182029
  425659 words of memory out of 3000000
- 20061 multiletter control sequences out of 15000+200000
+ 20082 multiletter control sequences out of 15000+200000
  21680 words of font info for 23 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  49i,20n,62p,401b,988s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf/fonts/type1/
-public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/
-share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/publ
-ic/lm/lmss8.pfb>
-Output written on slide_projet.pdf (17 pages, 479269 bytes).
+pdfTeX warning (dest): name{Outline0.5.8.23} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Outline0.5.7.22} has been referenced but does not e
+xist, replaced by a fixed one
+
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf/fonts/type1/pu
+blic/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/sh
+are/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public
+/lm/lmss8.pfb>
+Output written on slide_projet.pdf (26 pages, 503780 bytes).
 PDF statistics:
- 886 PDF objects out of 1000 (max. 8388607)
- 813 compressed objects within 9 object streams
- 51 named destinations out of 1000 (max. 500000)
- 273 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1267 PDF objects out of 1440 (max. 8388607)
+ 1181 compressed objects within 12 object streams
+ 71 named destinations out of 1000 (max. 500000)
+ 279 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -30,39 +30,39 @@
 \headcommand {\sectionentry {5}{R\IeC {\'e}alisations}{8}{R\IeC {\'e}alisations}{0}}
 \headcommand {\beamer@sectionpages {7}{7}}
 \headcommand {\beamer@subsectionpages {7}{7}}
-\headcommand {\slideentry {5}{0}{3}{8/8}{}{0}}
-\headcommand {\beamer@framepages {8}{8}}
-\headcommand {\beamer@subsectionentry {0}{5}{1}{9}{Choix technologiques}}\headcommand {\beamer@subsectionpages {8}{8}}
-\headcommand {\slideentry {5}{1}{1}{9/9}{Choix technologiques}{0}}
-\headcommand {\beamer@framepages {9}{9}}
-\headcommand {\beamer@subsectionentry {0}{5}{2}{10}{Environnement}}\headcommand {\beamer@subsectionpages {9}{9}}
-\headcommand {\slideentry {5}{2}{1}{10/10}{Environnement}{0}}
-\headcommand {\beamer@framepages {10}{10}}
-\headcommand {\beamer@subsectionentry {0}{5}{3}{11}{U-boot}}\headcommand {\beamer@subsectionpages {10}{10}}
-\headcommand {\slideentry {5}{3}{1}{11/11}{U-boot}{0}}
-\headcommand {\beamer@framepages {11}{11}}
-\headcommand {\beamer@subsectionentry {0}{5}{4}{12}{Kernel}}\headcommand {\beamer@subsectionpages {11}{11}}
-\headcommand {\slideentry {5}{4}{1}{12/12}{Kernel}{0}}
-\headcommand {\beamer@framepages {12}{12}}
-\headcommand {\beamer@subsectionentry {0}{5}{5}{13}{RootFS}}\headcommand {\beamer@subsectionpages {12}{12}}
-\headcommand {\slideentry {5}{5}{1}{13/13}{RootFS}{0}}
-\headcommand {\beamer@framepages {13}{13}}
-\headcommand {\beamer@subsectionentry {0}{5}{6}{14}{Qt embedded}}\headcommand {\beamer@subsectionpages {13}{13}}
-\headcommand {\slideentry {5}{6}{1}{14/14}{Qt embedded}{0}}
-\headcommand {\beamer@framepages {14}{14}}
-\headcommand {\beamer@subsectionentry {0}{5}{7}{15}{OpenCV embedded}}\headcommand {\beamer@subsectionpages {14}{14}}
-\headcommand {\slideentry {5}{7}{1}{15/15}{OpenCV embedded}{0}}
-\headcommand {\beamer@framepages {15}{15}}
-\headcommand {\beamer@subsectionentry {0}{5}{8}{16}{Power Management}}\headcommand {\beamer@subsectionpages {15}{15}}
-\headcommand {\slideentry {5}{8}{1}{16/16}{Power Management}{0}}
+\headcommand {\slideentry {5}{0}{3}{8/15}{}{0}}
+\headcommand {\beamer@framepages {8}{15}}
+\headcommand {\beamer@subsectionentry {0}{5}{1}{16}{Choix technologiques}}\headcommand {\beamer@subsectionpages {8}{15}}
+\headcommand {\slideentry {5}{1}{1}{16/16}{Choix technologiques}{0}}
 \headcommand {\beamer@framepages {16}{16}}
-\headcommand {\sectionentry {6}{Conclusion}{17}{Conclusion}{0}}
-\headcommand {\beamer@sectionpages {8}{16}}
-\headcommand {\beamer@subsectionpages {16}{16}}
-\headcommand {\slideentry {6}{0}{2}{17/17}{}{0}}
+\headcommand {\beamer@subsectionentry {0}{5}{2}{17}{Environnement}}\headcommand {\beamer@subsectionpages {16}{16}}
+\headcommand {\slideentry {5}{2}{1}{17/17}{Environnement}{0}}
 \headcommand {\beamer@framepages {17}{17}}
-\headcommand {\beamer@partpages {1}{17}}
-\headcommand {\beamer@subsectionpages {17}{17}}
-\headcommand {\beamer@sectionpages {17}{17}}
-\headcommand {\beamer@documentpages {17}}
+\headcommand {\beamer@subsectionentry {0}{5}{3}{18}{U-boot}}\headcommand {\beamer@subsectionpages {17}{17}}
+\headcommand {\slideentry {5}{3}{1}{18/18}{U-boot}{0}}
+\headcommand {\beamer@framepages {18}{18}}
+\headcommand {\beamer@subsectionentry {0}{5}{4}{19}{Kernel}}\headcommand {\beamer@subsectionpages {18}{18}}
+\headcommand {\slideentry {5}{4}{1}{19/19}{Kernel}{0}}
+\headcommand {\beamer@framepages {19}{19}}
+\headcommand {\beamer@subsectionentry {0}{5}{5}{20}{RootFS}}\headcommand {\beamer@subsectionpages {19}{19}}
+\headcommand {\slideentry {5}{5}{1}{20/20}{RootFS}{0}}
+\headcommand {\beamer@framepages {20}{20}}
+\headcommand {\beamer@subsectionentry {0}{5}{6}{21}{Qt embedded}}\headcommand {\beamer@subsectionpages {20}{20}}
+\headcommand {\slideentry {5}{6}{1}{21/23}{Qt embedded}{0}}
+\headcommand {\beamer@framepages {21}{23}}
+\headcommand {\beamer@subsectionentry {0}{5}{7}{24}{OpenCV embedded}}\headcommand {\beamer@subsectionpages {21}{23}}
+\headcommand {\slideentry {5}{7}{1}{24/24}{OpenCV embedded}{0}}
+\headcommand {\beamer@framepages {24}{24}}
+\headcommand {\beamer@subsectionentry {0}{5}{8}{25}{Power Management}}\headcommand {\beamer@subsectionpages {24}{24}}
+\headcommand {\slideentry {5}{8}{1}{25/25}{Power Management}{0}}
+\headcommand {\beamer@framepages {25}{25}}
+\headcommand {\sectionentry {6}{Conclusion}{26}{Conclusion}{0}}
+\headcommand {\beamer@sectionpages {8}{25}}
+\headcommand {\beamer@subsectionpages {25}{25}}
+\headcommand {\slideentry {6}{0}{2}{26/26}{}{0}}
+\headcommand {\beamer@framepages {26}{26}}
+\headcommand {\beamer@partpages {1}{26}}
+\headcommand {\beamer@subsectionpages {26}{26}}
+\headcommand {\beamer@sectionpages {26}{26}}
+\headcommand {\beamer@documentpages {26}}
 \headcommand {\def \inserttotalframenumber {17}}

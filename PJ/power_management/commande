@@ -1,0 +1,2 @@
+echo "set terminal png size 1024,600 ; set xrange [0:40] ; set xlabel 'Temps' ; set ylabel '% Batterie' ; set title 'Consommation Batterie sur 34 min' ; set output './power_management.png'; plot 'LOG' using 1:2 with linespoints" | gnuplot
+

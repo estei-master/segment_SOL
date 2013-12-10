@@ -2,6 +2,7 @@
 
 # Author : Pierre-jean TEXIER
 # Date   : November 2013
+# Goal	 : write capacity of battery on /tmp/LOG
 
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU Lesser General Public License as published by the Free
@@ -23,10 +24,21 @@ LIMIT=50
 
 if [ $(cat /sys/class/power_supply/battery/capacity) -ge $LIMIT ]  
 then
-        echo "`date +\%d-%m-%y_%X` : $(cat /sys/class/power_supply/battery/capacity)%" >> /tmp/LOG_pm
+        echo "$(cat /sys/class/power_supply/battery/capacity)%" >> /tmp/LOG_pm
 else
         echo "Niveau de charge Batterie inférieur à $LIMIT%"
+
+	# On passe le governor en mode powersave (fréquence la plus basse)
+	# Governor disponible sur notre SoC
+	#	powersave
+	#	fantasy
+	#	ondemand
+	#	interactive
+	#	userspace
+	#	perfomance
+
         #echo powersave > /sys/devices/system/cpu/cpu0/cpufreq/scalling_governor
         #echo powersave > /sys/devices/system/cpu/cpu0/cpufreq/scalling_governor
-        kill -9 $(pidof lightmaps)
 fi
+
+

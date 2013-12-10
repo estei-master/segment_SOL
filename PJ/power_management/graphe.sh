@@ -1,7 +1,7 @@
 #!/bin/bash                                          
 
 # Author : Pierre-jean TEXIER
-# Date   : November 2013
+# Date   : December 2013
 
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU Lesser General Public License as published by the Free
@@ -19,10 +19,22 @@
 #--------------------------------------------------------------------------------#
 
 # Variables #
+NAME='power_management.png'
 
-echo "set terminal png size 1024,600 ; set xrange [0:40] ; set xlabel 'Temps' ; set ylabel '% Batterie' ; set title 'Consommation Batterie sur 34 min' ; set output './power_management.png'; set multiplot layout 2,1 ;
-	plot '$1' using 1:2 with linespoints title 'sans Appli Qt'  ; 
+echo "set terminal png size 1024,600 ; set xrange [0:40] ; set xlabel 'Temps' ; set ylabel '% Batterie' ; set title 'Consommation Batterie sur 34 min' ; set output './$NAME'; set multiplot layout 2,1 ;
+	plot '$1' using 1:2 with linespoints title 'Sans Appli Qt'  ; 
 	plot '$2' using 1:2 with linespoints lc rgb '#000000FF' title 'Avec Appli Qt'" | gnuplot
+
+if [ $? != 0 ]  
+then
+	echo "Echec de la création de $NAME"
+else
+	echo "Création de $NAME réussie"
+fi
+
+
+
+
 
 
 

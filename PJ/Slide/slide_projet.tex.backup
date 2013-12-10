@@ -1,0 +1,196 @@
+\documentclass[11pt]{beamer}
+
+\usepackage[utf8]{inputenc} 
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage[french]{babel}
+\setbeamertemplate{blocks}[rounded][shadow=true]
+
+% \onehalfspacing
+
+% Espacement des lignes
+\linespread{1.3}
+
+% Theme
+\usepackage{animate}
+\usetheme{Frankfurt}                                % un theme voir .../beamer/theme/
+
+
+% Numéro diapo en bas
+\setbeamertemplate{footline}[frame number]
+
+\title[segment SOL]{Projet DRONE}
+\subtitle{Création de L'OS embarqué}
+\institute{ ESTEI }
+\author{Pierre-jean \textsc{TEXIER}}
+\date{14 Février 2014}
+ 
+
+ 
+
+
+\hypersetup{% Modifiez la valeur des champs suivants
+	pdfauthor   = {auteur},%
+	pdftitle    = {Titre},%
+	pdfsubject  = {Sujet},%
+	pdfkeywords = {Mots clés},%
+	pdfcreator  = {PDFLaTeX},%
+	pdfproducer = {PDFLaTeX},%
+	pdfpagemode = {FullScreen}%                           % ouvre le pdf directement en plein écran
+}
+
+
+\begin{document}
+	% Diapositive
+	\begin{frame}
+		\maketitle
+
+		\begin{figure}
+			\begin{center}
+				\includegraphics{commons/estei.png}
+			\end{center}
+		\end{figure}
+		\begin{figure}
+			\begin{center}
+				\includegraphics[width=1cm]{commons/cc.png}
+			\end{center}
+		\end{figure}
+		
+	\end{frame}
+		
+% 	\section{Sommaire}
+%	\subsection{} ...
+%   \subsubsection{} ...
+	\begin{frame}
+		\frametitle{Sommaire}
+		%\framesubtitle{}
+		\begin{columns}[t]
+		\begin{column}{5cm}
+		\tableofcontents[sections={1-4}]
+		\end{column}
+		\begin{column}{5cm}
+		\tableofcontents[sections={5-8}]
+		\end{column}
+		\end{columns}
+	 \end{frame}
+	
+ 	\section{Introduction}
+	\begin{frame}{Introduction}
+		\begin{itemize}
+			\item 
+			\item 
+			\item 
+			\item 
+		\end{itemize}
+	\end{frame}
+
+ 	\section{Objectif}
+	\begin{frame}
+		\frametitle{Objectif}
+		\framesubtitle{}
+		\begin{center}
+			\includegraphics[width=10cm]{commons/linux.png}
+		\end{center}
+	\end{frame}
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%ù
+	\section{Gestion de Projet}
+	\subsection{Diagramme de GANTT}
+	\begin{frame}{Gantt}
+		\begin{center}
+			
+		\end{center}
+	\end{frame}
+	
+	\subsection{Diagramme PERT}
+	\begin{frame}{Pert}
+		\begin{center}
+			
+		\end{center}
+	\end{frame}
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%ù
+	\section{Analyse Fonctionelle}
+	\begin{frame}{Degré 2}
+	
+	\begin{block}{Analyse second degré}
+	      ...
+	\end{block}
+
+	\end{frame}
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%ù
+	\section{Réalisation}
+	
+	\subsection{Choix technologiques}
+	\begin{frame}{Choix technologiques}
+	\begin{center}
+		  \includegraphics[width=4cm]{commons/A20-OLinuXino-MICRO-0.jpg}	
+	\end{center}
+	\end{frame}
+	
+	\subsection{Environnement}
+	\begin{frame}{Environnement}
+	\begin{center}
+	  \includegraphics[width=2cm]{commons/linaro.jpeg}
+	\end{center}
+	\begin{itemize}
+			\item 
+			\item 
+			\item 
+			\item 
+		\end{itemize}
+	\end{frame}
+	
+	\subsection{U-boot}
+	\begin{frame}{U-boot}
+		\begin{center}
+			
+		\end{center}
+	\end{frame}
+	
+	\subsection{Kernel}
+	\begin{frame}{Kernel}
+		\begin{center}
+			
+		\end{center}
+	\end{frame}
+	
+	\subsection{RootFS}
+	\begin{frame}{RootFS}
+		\begin{center}
+			
+		\end{center}
+	\end{frame}
+	
+	\subsection{Qt embedded}
+	\begin{frame}{Qt embedded}
+		\begin{center}
+			
+		\end{center}
+	\end{frame}
+	
+	\subsection{OpenCV embedded}
+	\begin{frame}{OpenCV embedded}
+		\begin{center}
+			
+		\end{center}
+	\end{frame}
+	
+	\subsection{Power Management}
+	\begin{frame}{OpenCV embedded}
+		\begin{center}
+		
+			
+		\end{center}
+	\end{frame}
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%ù
+	\section{Conclusion}
+	\begin{frame}{Conclusion}
+		\begin{center}
+			
+		\end{center}
+	\end{frame}
+\end{document}

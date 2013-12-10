@@ -1,0 +1,18 @@
+\beamer@endinputifotherversion {3.10pt}
+\select@language {french}
+\beamer@sectionintoc {1}{Introduction}{3}{0}{1}
+\beamer@sectionintoc {2}{Objectif}{4}{0}{2}
+\beamer@sectionintoc {3}{Gestion de Projet}{5}{0}{3}
+\beamer@subsectionintoc {3}{1}{Diagramme de GANTT}{5}{0}{3}
+\beamer@subsectionintoc {3}{2}{Diagramme PERT}{6}{0}{3}
+\beamer@sectionintoc {4}{Analyse Fonctionelle}{7}{0}{4}
+\beamer@sectionintoc {5}{R\IeC {\'e}alisations}{8}{0}{5}
+\beamer@subsectionintoc {5}{1}{Choix technologiques}{9}{0}{5}
+\beamer@subsectionintoc {5}{2}{Environnement}{10}{0}{5}
+\beamer@subsectionintoc {5}{3}{U-boot}{11}{0}{5}
+\beamer@subsectionintoc {5}{4}{Kernel}{12}{0}{5}
+\beamer@subsectionintoc {5}{5}{RootFS}{13}{0}{5}
+\beamer@subsectionintoc {5}{6}{Qt embedded}{14}{0}{5}
+\beamer@subsectionintoc {5}{7}{OpenCV embedded}{15}{0}{5}
+\beamer@subsectionintoc {5}{8}{Power Management}{16}{0}{5}
+\beamer@sectionintoc {6}{Conclusion}{17}{0}{6}

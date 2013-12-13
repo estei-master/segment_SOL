@@ -1,14 +1,12 @@
 Bootloader & Kernel
 ============
 
-Hiérarchie des dossiers
-----------------------
-`config` 
-:   Contient le dernier .config à jour
+Hiérarchie 
+----------
+`graphe.sh` 
+:   Script permettant de générer une image au format .png de la consommation batterie via gnuplot
 
-`u-boot-sunxi`
-:   Contient un ensemble de fichiers permettant de générer le bootloader : fork du projet sunxi
-	
-`Makefile` 
-:   Permet de générer : le bootloader, une image kernel et/ou les modules kernel
+`power_management.sh`
+:   Script qui écrit le pourcentage du niveau batterie dans /tmp/LOG
+
 

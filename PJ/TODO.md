@@ -35,3 +35,9 @@ TODO
 	pour faire une sauvegarde
 	dd if=/dev/sdb | gzip > ./debian_V1.gz
 
+8
+---
+	modifier inittab
+	1:2345:respawn:/sbin/agetty --autologin root 38400 tty1
+
+

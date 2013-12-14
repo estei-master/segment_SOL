@@ -1,36 +1,61 @@
 #!/bin/bash                                          
+### BEGIN INIT INFO
+# Provides:          pbit
+# Required-Start:   
+# Required-Stop:   
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: Start daemon at boot time
+# Description:       Enable service provided by daemon.
+### END INIT INFO
 
-# Author : Pierre-jean TEXIER
-# Date   : December 2013
 
-# This program is free software: you can redistribute it and/or modify it under
-# the terms of the GNU Lesser General Public License as published by the Free
-# Software Foundation, either version 3 of the License, or (at your option) any
-# later version.
-
-# This program is distributed in the hope that it will be useful, but WITHOUT
-# ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
-# FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License for more
-# details.
-
-# You should have received a copy of the GNU Lesser General Public License
-# along with this program.  If not, see <http://www.gnu.org/licenses/>.
-
-#--------------------------------------------------------------------------------#
-
-# Variables #
 LIMIT=50
 
-echo q | fbvis /home/PJ/PBIT.png
-sleep 5
-if [ $(cat /sys/class/power_supply/battery/capacity) -ge $LIMIT ]  
-then
-        echo q | fbvis /home/PJ/PBIT_OK.png
-	cd /home
-	sleep 2
-	./horizon.sh
-else
-	echo q | fbvis /home/PJ/PBIT_Failed.png
+usage()
+{
+        echo "-----------------------"
+        echo "Usage: $0 (stop|start|restart)"
+        echo "-----------------------"
+}
+ 
+if [ -z $1 ]; then
+        usage
 fi
-
+ 
+service_start()
+{
+        echo q | /usr/local/bin/fbvis /home/PJ/PBIT.png
+	sleep 5
+	if [ $(cat /sys/class/power_supply/battery/capacity) -ge $LIMIT ]  
+	then
+		echo q | /usr/local/bin/fbvis /home/PJ/PBIT_OK.png
+		cd /home
+		sleep 2
+		./horizon.sh
+	else
+		echo q | fbvis /home/PJ/PBIT_Failed.png
+	fi
+}
+ 
+service_stop()
+{
+	echo q | /usr/local/bin/fbvis /home/PJ/Goodbye.png
+}
+ 
+case $1 in
+        stop)
+                service_stop
+        ;;
+        start)
+                service_start
+        ;;
+        restart)
+                service_stop
+                service_start
+        ;;
+        *)
+                usage
+esac
+exit 0
 

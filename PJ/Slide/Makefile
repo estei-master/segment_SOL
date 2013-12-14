@@ -18,6 +18,6 @@
 
 .PHONY: slide
 slide:
-	pdflatex slide_projet.tex
+	texi2pdf slide_projet.tex
 clean:
 	$(RM) *.pdf *.snm *.toc *.aux *.nav *.out *.log

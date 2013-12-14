@@ -20,4 +20,4 @@
 slide:
 	pdflatex slide_projet.tex
 clean:
-	$(RM) *.pdf *.snm *.toc *.vrb *.aux *.nav *.out *.log
+	$(RM) *.pdf *.snm *.toc *.aux *.nav *.out *.log

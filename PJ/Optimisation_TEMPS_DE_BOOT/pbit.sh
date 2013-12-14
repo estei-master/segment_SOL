@@ -34,7 +34,7 @@ service_start()
 		sleep 2
 		./horizon.sh
 	else
-		echo q | fbvis /home/PJ/PBIT_Failed.png
+		echo q | /usr/local/bin/fbvis /home/PJ/PBIT_Failed.png
 	fi
 }
  

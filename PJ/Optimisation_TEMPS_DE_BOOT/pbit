@@ -30,9 +30,8 @@ service_start()
 	if [ $(cat /sys/class/power_supply/battery/capacity) -ge $LIMIT ]  
 	then
 		echo q | /usr/local/bin/fbvis /home/PJ/PBIT_OK.png
-		cd /home
 		sleep 2
-		./horizon.sh
+		/home/Demo/horizon.sh
 	else
 		echo q | /usr/local/bin/fbvis /home/PJ/PBIT_Failed.png
 	fi

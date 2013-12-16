@@ -3,6 +3,8 @@
 # Author : Pierre-jean TEXIER
 # Date   : December 2013
 # Goal	 : Generate .png with gnuplot
+
+# Copyright (C) 2013 Pierre-jean TEXIER
  
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU Lesser General Public License as published by the Free

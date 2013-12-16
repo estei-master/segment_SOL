@@ -41,7 +41,7 @@ then
 	echo "Echec de la création de $NAME"
 	usage
 else
-	echo "Création de $NAME réussie"
+	echo "Création de $NAME réussie dans --> $PWD"
 fi
 
 

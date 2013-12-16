@@ -27,9 +27,6 @@
 \date{14 Février 2014}
  
 
- 
-
-
 \hypersetup{% Modifiez la valeur des champs suivants
 	pdfauthor   = {auteur},%
 	pdftitle    = {Titre},%
@@ -44,7 +41,7 @@
 \begin{document}
 	% Diapositive
 	\begin{frame}
-		\maketitle
+	  \maketitle
 
 		\begin{figure}
 			\begin{center}
@@ -90,7 +87,7 @@
 		\begin{itemize}
 			\item OS Linux embarqué Fonctionnel
 			\item Préparation de l'environnement graphique (Qt, openCV, ...)
-			\item Optimisation du temps de boot hardware et subjectif
+			\item Optimisation du temps de boot \textbf<2>{hardware} et \textbf<2>{subjectif}
 			\item Gestion de l'énergie
 		\end{itemize}
 	\end{block}
@@ -102,6 +99,7 @@
 	\begin{frame}{Gantt}
 		\begin{center}
 			Dans les jalons le long du projet\\
+			
 			\includegraphics[width=10cm]{commons/Gantt.png}
 		\end{center}
 	\end{frame}
@@ -127,7 +125,7 @@
 		\begin{enumerate}
 			\item<+-|alert@+> Choix technologiques
 			\item<+-|alert@+> Environnement
-			\item<+-|alert@+> U-boot
+			\item<+-|alert@+> Bootloader
 			\item<+-|alert@+> Kernel
 			\item<+-|alert@+> RootFS
 			\item<+-|alert@+> Qtembedded
@@ -142,8 +140,8 @@
 	\begin{center}
 		  \includegraphics[width=4cm]{commons/A20-OLinuXino-MICRO-0.jpg}
 		 \begin{itemize}
-			\item SbC
-			\item SoC
+			\item Choix du '\textbf<2>{S}ystem \textbf<2>{O}n \textbf<2>{C}hip'
+			\item Choix de la carte de développement
 		\end{itemize}
 	\end{center}
 	\end{frame}
@@ -151,15 +149,26 @@
 	\subsection{Environnement}
 	\begin{frame}{Environnement}
 	\begin{center}
+	\includegraphics[width=10cm]{commons/env.png}	
+	\end{center}
+	\end{frame}
+	
+	
+	\begin{frame}{Chaine de compilation croisée}
+	\begin{center}
 	  \includegraphics[width=2cm]{commons/linaro.jpeg}
 	\end{center}
 	\begin{itemize}
 			\item gcc-linaro-arm-linux-gnueabihf-4.7-linux
 			\includegraphics[width=1cm]{commons/gnu.jpeg}
 	\end{itemize}
+	\begin{columns}[t]
+	\begin{column}{5cm}
 	\begin{block}{Pourquoi armhf ?}
 		FPU neon-vfvp4
 	\end{block}
+	\end{column}
+	\begin{column}{5cm}
 	\begin{block}{Pourquoi Linaro ?}
 	\begin{itemize}
 	      \item CodeSourcery
@@ -167,12 +176,21 @@
 	      \item Buildroot
 	\end{itemize}
 	\end{block}
+	\end{column}
+	\end{columns}
 	\end{frame}
 	
-	\subsection{U-boot}
-	\begin{frame}{U-boot}
+	\begin{frame}{Environnement}
+	\begin{center}
+	
+	\end{center}
+	\end{frame}
+	
+	\subsection{Bootloader}
+	\begin{frame}{Bootloader}
 		\begin{block}{Informations}
 		\begin{itemize}
+			\item Version 2013.10
 			\item Non mainline - Git du projet sunxi
 			\href{https://github.com/linux-sunxi/u-boot-sunxi}{\beamergotobutton{Lien github}}
 		\end{itemize}
@@ -182,20 +200,26 @@
 	
 	\subsection{Kernel}
 	\begin{frame}{Kernel}
+	\begin{columns}[t]
+	\begin{column}{5cm}
 	\includegraphics[width=1cm]{commons/tux.png}
+	\end{column}
+	\begin{column}{5cm}
 		\begin{block}{Informations}
 		\begin{itemize}
 			\item Version 3.4.67
-			\item Non mainline - Git du projet sunxi
+			\item Non mainline \\
 			\href{https://github.com/linux-sunxi/linux-sunxi}{\beamergotobutton{Lien github}}
 		\end{itemize}
 	\end{block}
+	\end{column}
+		\end{columns}
 	\end{frame}
 	
 	\subsection{RootFS}
 	\begin{frame}{RootFS}
 		\begin{center}
-			
+		
 		\end{center}
 	\end{frame}
 	
@@ -223,7 +247,7 @@
 	\begin{frame}{Power Management}
 		\begin{columns}[t]
 		\begin{column}{5cm}
-		AXP209
+		\includegraphics[width=10cm]{commons/power_management.png}
 		\end{column}
 		\begin{column}{5cm}
 		AXP209

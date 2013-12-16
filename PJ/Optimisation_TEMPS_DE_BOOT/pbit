@@ -3,7 +3,7 @@
 # Provides:          pbit
 # Required-Start:   
 # Required-Stop:   
-# Default-Start:     2 3 4 5
+# Default-Start:     2
 # Default-Stop:      0 1 6
 # Short-Description: Start daemon at boot time
 # Description:       Enable service provided by daemon.
@@ -25,21 +25,25 @@ fi
  
 service_start()
 {
-        echo q | /usr/local/bin/fbvis /home/PJ/PBIT.png
-	sleep 5
-	if [ $(cat /sys/class/power_supply/battery/capacity) -ge $LIMIT ]  
-	then
-		echo q | /usr/local/bin/fbvis /home/PJ/PBIT_OK.png
-		sleep 2
-		/home/Demo/horizon.sh
-	else
-		echo q | /usr/local/bin/fbvis /home/PJ/PBIT_Failed.png
-	fi
+        if [ $(cat /sys/class/power_supply/battery/uevent | grep POWER_SUPPLY_STATUS | awk -F = '{print $2}') == "Charging" ]
+        then
+                echo q | /usr/local/bin/fbvis /home/PJ/charge.png
+
+        elif [ $(cat /sys/class/power_supply/battery/capacity) -ge $LIMIT ]  
+        then
+                echo q | /usr/local/bin/fbvis /home/PJ/PBIT.png
+                sleep 5
+                echo q | /usr/local/bin/fbvis /home/PJ/PBIT_OK.png
+                sleep 2
+                #/home/Demo/horizon.sh
+        else
+                echo q | /usr/local/bin/fbvis /home/PJ/PBIT_Failed.png
+        fi
 }
  
 service_stop()
 {
-	echo q | /usr/local/bin/fbvis /home/PJ/Goodbye.png
+        echo q | /usr/local/bin/fbvis /home/PJ/Goodbye.png
 }
  
 case $1 in

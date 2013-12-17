@@ -1,7 +1,9 @@
 #!/bin/sh
 
 # Author : Pierre-jean TEXIER        
-# Date   : November 2013                                                        
+# Date   : November 2013 
+
+# Copyright (C) 2013 Pierre-jean TEXIER
                                                         
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software

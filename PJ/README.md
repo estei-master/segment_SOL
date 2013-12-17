@@ -14,6 +14,9 @@ Hiérarchie des dossiers
 `Qt` 
 :   Contient un mini tuto pour cross-compiler Qt embedded, des exemples, des tests, ...
 
+`Slide` 
+:   Contient les slides de la présentation orale du projet (fichier Latex + Makefile)
+
 `openCV`
 :   Contient un mini tuto pour cross-compiler openCV
 

@@ -8,7 +8,7 @@ Options de compilations
 :   Précise à GCC d'optimiser le code pour l'architecture choisie --> `cortex-a7` 
 
 `-mfpu` 
-:   Définie l'unité de virgule flottante disponible sur la carte `neon-vfvp4` 
+:   Définie l'unité de virgule flottante disponible sur la carte --> `neon-vfvp4` 
 
 `-mcpu` 
 :   Ceci spécifie le nom du processeur cible ARM. GCC utilise ce nom pour déterminer le type d'instructions, il peut émettre lors de la génération du code assembleur. --> `cortex-a7` 

@@ -106,8 +106,8 @@ modification du fichier : qmake.conf
 	include(../../common/qws.conf)
 
 	# modifications to g++.conf
-	QMAKE_CFLAGS_RELEASE    = -O3 -march=armv7-a -mcpu=cortex-a7 -mtune=cortex-a7 -mfpu=neon
-	QMAKE_CXXFLAGS_RELEASE  = -O3 -march=armv7-a -mcpu=cortex-a7 -mtune=cortex-a7 -mfpu=neon
+	QMAKE_CFLAGS_RELEASE    = -O3 -mtune=cortex-a7 -mfpu=neon-vfvp4
+	QMAKE_CXXFLAGS_RELEASE  = -O3 -mtune=cortex-a7 -mfpu=neon-vfvp4
 	QMAKE_CC                = <chemin de la cross-tool chain>/bin/arm-linux gnueabihf-gcc
 	QMAKE_CXX               = <chemin de la cross-tool chain>/bin/arm-linux-gnueabihf-g++
 	QMAKE_LINK              = <chemin de la cross-tool chain>/bin/arm-linux-gnueabihf-g++

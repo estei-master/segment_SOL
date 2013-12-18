@@ -40,4 +40,7 @@ TODO
 	modifier inittab
 	1:2345:respawn:/sbin/agetty --autologin root 38400 tty1
 
-
+9
+---
+	Citer la GPL
+	"Le logiciel libre est un pilier de toute société moderne. Nous le construisons."

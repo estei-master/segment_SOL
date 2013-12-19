@@ -1,7 +1,7 @@
 Pierre-Jean TEXIER
 ============
 
-![ESTEI](https://github.com/estei-master/segment_SOL/blob/master/PJ/Slide/common/estei.png)
+![ESTEI](https://raw.github.com/estei-master/segment_SOL/master/PJ/Slide/common/estei.png)
 
 TODO
 ----

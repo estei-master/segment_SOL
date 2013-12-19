@@ -15,3 +15,6 @@ segment SOL
 
 `Pierre-jean TEXIER` 
 :   Partie OS embarqué
+
+
+![ESTEI](https://raw.github.com/estei-master/segment_SOL/master/PJ/Slide/common/cc.png)

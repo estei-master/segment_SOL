@@ -3,6 +3,8 @@
 % Année 2013/2014
 % Master 2
 
+![ESTEI](https://raw.github.com/estei-master/segment_SOL/master/PJ/Slide/common/qt-embedded-linux-architecture.png)
+
 Synopsis
 ========
 

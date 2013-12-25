@@ -1,0 +1,1 @@
+su -c 'aptitude install -y texlive cm-super gv spdf kile'

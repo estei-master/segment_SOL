@@ -32,7 +32,7 @@ service_start()
         elif [ $(cat /sys/class/power_supply/battery/capacity) -ge $LIMIT ]  
         then
                 echo q | /usr/local/bin/fbvis /home/PJ/PBIT.png
-                sleep 5
+                sleep 2
                 echo q | /usr/local/bin/fbvis /home/PJ/PBIT_OK.png
                 sleep 2
                 #/home/Demo/horizon.sh

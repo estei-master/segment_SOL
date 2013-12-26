@@ -29,7 +29,7 @@ service_start()
         then
                 echo q | /usr/local/bin/fbvis /home/PJ/charge.png
 
-        elif [ $(cat /sys/class/power_supply/battery/capacity) -ge $LIMIT ]  
+        elif [ $(cat /sys/class/power_supply/battery/capacity) -ge $LIMIT ] && [ $(cat /proc/meminfo | grep MemFree | awk '{print $2}') -ge 200000 ] 
         then
                 echo q | /usr/local/bin/fbvis /home/PJ/PBIT.png
                 sleep 2

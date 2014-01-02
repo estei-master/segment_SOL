@@ -38,7 +38,7 @@ else
 	#	perfomance
 
         #echo powersave > /sys/devices/system/cpu/cpu0/cpufreq/scalling_governor
-        #echo powersave > /sys/devices/system/cpu/cpu0/cpufreq/scalling_governor
+        #echo powersave > /sys/devices/system/cpu/cpu1/cpufreq/scalling_governor
 fi
 
 

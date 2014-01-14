@@ -32,7 +32,7 @@ uImage::
 	${MAKE} -C ${KERNEL_DIR} ARCH=${ARCH} CROSS_COMPILE=${CROSS_COMPILE} -j2 uImage
 
 modules::
-	rm -rf output
+	rm -rf ${KERNEL_DIR}/output
 	${MAKE} -C ${KERNEL_DIR} ARCH=${ARCH} CROSS_COMPILE=${CROSS_COMPILE} -j2 modules
 	${MAKE} -C ${KERNEL_DIR} ARCH=${ARCH} CROSS_COMPILE=${CROSS_COMPILE} -j2 INSTALL_MOD_PATH=output modules_install
 

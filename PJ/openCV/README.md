@@ -33,11 +33,14 @@ Configuration
 	su -c 'aptitude install cmake-gui'
 	cmake-gui
 	
-	Choisir: 
+	Choisir:
+	
+![ESTEI](https://raw2.github.com/estei-master/segment_SOL/master/PJ/openCV/1.png)
 	unix Makefiles
 	Specify options for cross-compiling
 	Operating system : Linux
 	Processor : arm
+	
 	Puis rentrer le chemin de la chaine de compilation-croisée
 	
 	Cocher : 

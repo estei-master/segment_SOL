@@ -36,11 +36,13 @@ Configuration
 	Choisir:
 	
 ![ESTEI](https://raw2.github.com/estei-master/segment_SOL/master/PJ/openCV/1.png)
+	
 	unix Makefiles
 	Specify options for cross-compiling
 	Operating system : Linux
 	Processor : arm
-	
+![ESTEI](https://raw2.github.com/estei-master/segment_SOL/master/PJ/openCV/2.png)
+
 	Puis rentrer le chemin de la chaine de compilation-croisée
 	
 	Cocher : 

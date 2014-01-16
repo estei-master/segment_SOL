@@ -38,7 +38,7 @@ Hiérarchie des dossiers
 README.md vers PDF
 ------------------
 	su -c 'aptitude install pandoc' 
-	pandoc README.md -o qt.pdf
+	pandoc README.md -o README.pdf
 
 
 ![ESTEI](https://raw.github.com/estei-master/segment_SOL/master/PJ/Slide/common/cc.png)

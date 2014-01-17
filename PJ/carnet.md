@@ -51,9 +51,9 @@ CARNET DE BORD : Pierre-jean TEXIER
 
 `Vendredi 29 Novembre 2013` Revue de projet avec Cyril SAGONERO
 
-`Mardi 03 Décembre 2013` Linux renvoie un message d'erreur lors de la compilation du projet → appel à un assistant technique Guillaume L'HUILLIER
+`Mardi 03 Décembre 2013` Linux renvoie un message d'erreur lors de la compilation du projet appel à un assistant technique Guillaume L'HUILLIER
 
-`Mercredi 04 Décembre 2013` Linux renvoie un message d'erreur lors de la compilation du projet → appel à un assistant technique Guillaume L'HUILLIER
+`Mercredi 04 Décembre 2013` Linux renvoie un message d'erreur lors de la compilation du projet appel à un assistant technique Guillaume L'HUILLIER
 
 `Vendredi 06 Décembre 2013` Revue de projet avec Cyril SAGONERO
 

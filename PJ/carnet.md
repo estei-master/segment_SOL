@@ -9,23 +9,21 @@ CARNET DE BORD : Pierre-jean TEXIER
 
 `Lundi 30 Septembre 2013` Revue de projet avec Cyril SAGONERO
 
-`Mercredi 02 Octobre 2013` Choix d'un écran tactile avec l'équipe segment sol suite à la rédaction d'un document confrontant différents écrans
+`Mercredi 02 Octobre 2013` Recherches carte d'évaluation `ARM`
 
-`Vendredi 04 Octobre 2013` Rédaction d'un document résumant les avantages et inconvénients de Qt et Java
+`Vendredi 04 Octobre 2013` Choix d'une carte d'évaluation `ARM` avec l'équipe segment sol suite à la rédaction d'un document confrontant différentes cartes 
 
 `Lundi 07 Octobre 2013` Revue de projet avec Cyril SAGONERO
 
-`Mercredi 09 Octobre 2013` Rédaction d'un document résumant les avantages et inconvénients de Qt et Java 
+`Mercredi 09 Octobre 2013` Recherches sur le noyau compatible de la carte
 
-`Vendredi 11 Octobre 2013` Répartition des tâches au niveau de l'IHM
+`Vendredi 11 Octobre 2013` Clonage de la branche GIT du projet SUNXI
 
 `Lundi 14 Octobre 2013` Revue de projet avec Cyril SAGONERO
 
-`Mercredi 16 Octobre 2013` Installation de QtCreator / Prise en main de Qt 
+`Mercredi 16 Octobre 2013` Portage Qt embedded
 
-`Vendredi 18 Octobre 2013`
-  - Recherche de solutions existantes afin d'afficher un flux vidéo provenant d'une webcam
-  - Tests de plusieurs applications dont opencv-multithreaded sur x86 puis directement sur cible
+`Vendredi 18 Octobre 2013` Portage Qt embedded
 
 `Mardi 05 Novembre 2013` Réflexion sur le design de l'IHM, rédaction des spécifications techniques
 

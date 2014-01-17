@@ -1,4 +1,4 @@
-Lundi 23 Septembre 2013 Présentation du projet par Cyril SAGONERO et choix de la partie IHM sur le segment sol
+'Lundi 23 Septembre 2013' Présentation du projet par Cyril SAGONERO et choix de la partie IHM sur le segment sol
 Mercredi 25 Septembre 2013 Étude de solutions techniques, notamment entre Qt et Java
 Vendredi 27 Septembre 2013 Choix de Qt avec les membres de l'équipe segment sol
 Lundi 30 Septembre 2013 Revue de projet avec Cyril SAGONERO

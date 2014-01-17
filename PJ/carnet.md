@@ -1,6 +1,9 @@
-`Lundi 23 Septembre 2013` Présentation du projet par Cyril SAGONERO et choix de la partie IHM sur le segment sol
+CARNET DE BORD : Pierre-jean TEXIER
+================
 
-`Mercredi 25 Septembre 2013` Étude de solutions techniques, notamment entre Qt et Java
+`Lundi 23 Septembre 2013` Présentation du projet par Cyril SAGONERO et choix de la `partie OS` sur le segment sol
+
+`Mercredi 25 Septembre 2013` Étude de solutions techniques
 
 `Vendredi 27 Septembre 2013` Choix de Qt avec les membres de l'équipe segment sol
 
@@ -76,15 +79,15 @@
 
 `Mercredi 08 Janvier 2014`
 
-`Jeudi 09 Janvier 2014`
+`Jeudi 09 Janvier 2014` 
 
 `Vendredi 10 Janvier 2014` Revue de projet avec Cyril SAGONERO
 
-`Mardi 14 Janvier 2014`
+`Mardi 14 Janvier 2014` Participation à l'intégration de la partie cartographie sur l'IHM (Pierre POUCH et Martin PRADEAU)
 
-`Mercredi 15 Janvier 2014`
+`Mercredi 15 Janvier 2014` Test de cross-compilation du driver usb/video
 
-`Jeudi 16 Janvier 2014`
+`Jeudi 16 Janvier 2014` //
 
 `Vendredi 17 Janvier 2014` Revue de projet avec Cyril SAGONERO
 

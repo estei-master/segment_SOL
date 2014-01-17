@@ -1,10 +1,10 @@
 Bon de commande segment SOL
 ============
 
-Repères						Quantité			Désignation				Fabricant/Fournisseur		Prix en euro
-----
+Repères			Quantité	Désignation		Fabricant/Fournisseur		Prix en euro
+----			----
 
-A20-OLinuXino-MICRO-4GB		 		  1			Carte évaluation CPU Cortex A7		  `OLIMEX`					`65`
+A20-OLinuXino-MICRO-4GB	   1			Carte évaluation CPU Cortex A7		  `OLIMEX`					`65`
 A13-LCD10TS					  1			Ecran 10 pouces tactile/resistif	  `OLIMEX`					`95`
 USB-Serial-Cable-F			  	  1			Cable de debug UART					  `OLIMEX`					`5,95`
 SYO612E						  1			Alimentation Secteur				  `OLIMEX`					`6,95`

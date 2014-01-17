@@ -1,7 +1,7 @@
 Bon de commande segment SOL
 ============
 
-Repères		Quantité	Désignation		Fabricant/Fournisseur		Prix en euro
+`Repères`		`Quantité`	`Désignation`		`Fabricant/Fournisseur`		`Prix en euro`
 ----		----
 
 	A20-OLinuXino-MICRO-4GB		  1			Carte évaluation CPU Cortex A7		   `OLIMEX`					 `65`

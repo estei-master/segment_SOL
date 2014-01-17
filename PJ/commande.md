@@ -17,5 +17,5 @@ Repères		Quantité	Désignation		Fabricant/Fournisseur		Prix en euro
 	Récepteur					   1		 Récepteur							    `studio sport`			  `69`
 	Adaptateur					  1			Adaptateur usb-composite			  `ldlc`					`29,9`
 				
-																										`TOTAL`
-																										`382,71`
+																										   `TOTAL`
+																										   `382,71`

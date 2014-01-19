@@ -24,7 +24,7 @@ LIMIT=50
 
 if [ $(cat /sys/class/power_supply/battery/capacity) -ge $LIMIT ]  
 then
-        echo "$(cat /sys/class/power_supply/battery/capacity)%" >> /tmp/LOG_pm
+        echo "$(cat /sys/class/power_supply/battery/capacity)%" >> /tmp/LOG
 else
         echo "Niveau de charge Batterie inférieur à $LIMIT%"
 

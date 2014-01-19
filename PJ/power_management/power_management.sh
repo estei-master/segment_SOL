@@ -26,8 +26,6 @@ if [ $(cat /sys/class/power_supply/battery/capacity) -ge $LIMIT ]
 then
         echo "$(cat /sys/class/power_supply/battery/capacity)%" >> /tmp/LOG
 else
-        echo "Niveau de charge Batterie inférieur à $LIMIT%"
-
 	# On passe le governor en mode powersave (fréquence la plus basse)
 	# Governor disponible sur notre SoC
 	#	powersave

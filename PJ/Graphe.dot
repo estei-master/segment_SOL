@@ -1,0 +1,154 @@
+digraph g {
+	graph [
+		rankdir = RL
+		bgcolor= white
+	]
+	node [
+		fontsize = "10"
+		shape = box
+		style = "rounded,filled"
+	]
+	edge [
+		fontsize = "10"
+	]
+ 
+	myNodeSet1 [
+		label = <<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
+<TR><TD ALIGN="right" ><FONT COLOR="blue4">Name:</FONT></TD><TD ALIGN="left" >Etagere</TD></TR>
+<TR><TD ALIGN="right" ><FONT COLOR="blue4">Type:</FONT></TD><TD ALIGN="left" >Set</TD></TR>
+<TR><TD ALIGN="right" ><FONT COLOR="darkorchid4">Rev:</FONT></TD><TD ALIGN="left" >7</TD></TR>
+</TABLE>>
+		color = black
+		fillcolor = deepskyblue1
+	]
+	Nabil [
+		label = <<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
+<TR><TD ALIGN="right" ><FONT COLOR="darkgreen">Name:</FONT></TD><TD ALIGN="left" >EL HAMDOUNI Nabil</TD></TR>
+<TR><TD ALIGN="right" ><FONT COLOR="blue4">Type:</FONT></TD><TD ALIGN="left" >Chef de projet</TD></TR>
+<TR><TD ALIGN="right" ><FONT COLOR="darkorchid4">Tâche:</FONT></TD><TD ALIGN="left" > ... </TD></TR>
+</TABLE>>
+		color = black
+		fillcolor = white
+	]
+	PJ [
+		label = <<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
+<TR><TD ALIGN="right" ><FONT COLOR="deeppink">Name:</FONT></TD><TD ALIGN="left" >TEXIER Pierre-jean</TD></TR>
+<TR><TD ALIGN="right" ><FONT COLOR="blue4">Type:</FONT></TD><TD ALIGN="left" >Chef de projet</TD></TR>
+<TR><TD ALIGN="right" ><FONT COLOR="darkorchid4">Tache:</FONT></TD><TD ALIGN="left" >Réalisation de L'OS</TD></TR>
+</TABLE>>
+		color = black
+		fillcolor = white
+	]
+	Thomas [
+		label = <<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
+<TR><TD ALIGN="right" ><FONT COLOR="darkgreen">Name:</FONT></TD><TD ALIGN="left" >CERUTTI Thomas</TD></TR>
+<TR><TD ALIGN="right" ><FONT COLOR="blue4">Type:</FONT></TD><TD ALIGN="left" >Développeur</TD></TR>
+<TR><TD ALIGN="right" ><FONT COLOR="darkorchid4">Tâche:</FONT></TD><TD ALIGN="left" > ...</TD></TR>
+</TABLE>>
+		color = black
+		fillcolor = white
+	]
+		Greg [
+		label = <<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
+<TR><TD ALIGN="right" ><FONT COLOR="darkgreen">Name:</FONT></TD><TD ALIGN="left" >KABALANE Gregory</TD></TR>
+<TR><TD ALIGN="right" ><FONT COLOR="blue4">Type:</FONT></TD><TD ALIGN="left" >Développeur</TD></TR>
+<TR><TD ALIGN="right" ><FONT COLOR="darkorchid4">Tâche:</FONT></TD><TD ALIGN="left" > ...</TD></TR>
+</TABLE>>
+		color = black
+		fillcolor = white
+	]
+	
+		Sylvain [
+		label = <<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
+<TR><TD ALIGN="right" ><FONT COLOR="darkgreen">Name:</FONT></TD><TD ALIGN="left" >JUILLAT Sylvain</TD></TR>
+<TR><TD ALIGN="right" ><FONT COLOR="blue4">Type:</FONT></TD><TD ALIGN="left" >Développeur</TD></TR>
+<TR><TD ALIGN="right" ><FONT COLOR="darkorchid4">Tâche:</FONT></TD><TD ALIGN="left" > ...</TD></TR>
+</TABLE>>
+		color = black
+		fillcolor = white
+	]
+	
+		Hubert [
+		label = <<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
+<TR><TD ALIGN="right" ><FONT COLOR="darkgreen">Name:</FONT></TD><TD ALIGN="left" >CHAUMETTE Hubert</TD></TR>
+<TR><TD ALIGN="right" ><FONT COLOR="blue4">Type:</FONT></TD><TD ALIGN="left" >Développeur</TD></TR>
+<TR><TD ALIGN="right" ><FONT COLOR="darkorchid4">Tâche:</FONT></TD><TD ALIGN="left" > OS </TD></TR>
+</TABLE>>
+		color = black
+		fillcolor = white
+	]
+	
+	Martin [
+		label = <<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
+<TR><TD ALIGN="right" ><FONT COLOR="deeppink">Name:</FONT></TD><TD ALIGN="left" >PRADEAU Martin</TD></TR>
+<TR><TD ALIGN="right" ><FONT COLOR="blue4">Type:</FONT></TD><TD ALIGN="left" >Développeur</TD></TR>
+<TR><TD ALIGN="right" ><FONT COLOR="darkorchid4">Tâche:</FONT></TD><TD ALIGN="left" >IHM</TD></TR>
+</TABLE>>
+		color = black
+		fillcolor = white
+	]
+
+	Rémi [
+		label = <<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
+<TR><TD ALIGN="right" ><FONT COLOR="deeppink">Name:</FONT></TD><TD ALIGN="left" >OUKRAT Rémi</TD></TR>
+<TR><TD ALIGN="right" ><FONT COLOR="blue4">Type:</FONT></TD><TD ALIGN="left" >Développeur</TD></TR>
+<TR><TD ALIGN="right" ><FONT COLOR="darkorchid4">Tâche:</FONT></TD><TD ALIGN="left" >Vidéo</TD></TR>
+</TABLE>>
+		color = black
+		fillcolor = white
+	]
+	
+	Pierre [
+		label = <<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
+<TR><TD ALIGN="right" ><FONT COLOR="deeppink">Name:</FONT></TD><TD ALIGN="left" >POUCH Pierre</TD></TR>
+<TR><TD ALIGN="right" ><FONT COLOR="blue4">Type:</FONT></TD><TD ALIGN="left" >Développeur</TD></TR>
+<TR><TD ALIGN="right" ><FONT COLOR="darkorchid4">Tâche:</FONT></TD><TD ALIGN="left" >IHM</TD></TR>
+</TABLE>>
+		color = black
+		fillcolor = white
+	]
+	
+	Guillaume [
+		label = <<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
+<TR><TD ALIGN="right" ><FONT COLOR="deeppink">Name:</FONT></TD><TD ALIGN="left" >L'HUILLIER Guillaume</TD></TR>
+<TR><TD ALIGN="right" ><FONT COLOR="blue4">Type:</FONT></TD><TD ALIGN="left" >Développeur</TD></TR>
+<TR><TD ALIGN="right" ><FONT COLOR="darkorchid4">Tâche:</FONT></TD><TD ALIGN="left" >IHM + Zigbee</TD></TR>
+</TABLE>>
+		color = black
+		fillcolor = white
+	]
+
+	Thomas -> {Guillaume;Pierre} [style=dotted] [label = "RF"]
+	Pierre -> Martin [label = "Cartographie"];
+	Guillaume -> Martin [label = "nunchuk"];
+	Rémi -> Martin  [label = "openCV"];
+	Martin -> PJ;
+	Sylvain -> Hubert;
+	Nabil -> Hubert;
+	Thomas -> Hubert;
+ 
+	subgraph cluster_model1 {
+		label = "Segment Drone"
+		style = "rounded, filled"
+		color = black
+		fillcolor = darkolivegreen3
+		Nabil
+		Thomas
+		Greg
+		Sylvain
+		Hubert
+
+	}
+ 
+	subgraph cluster_cache1 {
+		label = "Segment SOL"
+		style = "rounded, filled"
+		color = black
+		fillcolor = paleturquoise
+		PJ
+		Martin
+		Rémi
+		Pierre
+		Guillaume
+	}
+}

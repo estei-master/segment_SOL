@@ -57,6 +57,27 @@ QPixmap CameraWidget::toPixmap(IplImage *cvimage) {
                         cvLineStart += cvimage->widthStep;
                     }
                     break;
+
+            case 1:
+                if ( (cvimage->width != m_image.width()) || (cvimage->height != m_image.height()) ) {
+                    QImage temp(cvimage->width, cvimage->height, QImage::Format_RGB32);
+                    m_image = temp;
+                }
+                cvIndex = 0; cvLineStart = 0;
+                for (int y = 0; y < cvimage->height; y++) {
+                    unsigned char red,green,blue;
+                    cvIndex = cvLineStart;
+                    for (int x = 0; x < cvimage->width; x++) {
+                        red = cvimage->imageData[cvIndex+2];
+                        green = cvimage->imageData[cvIndex+1];
+                        blue = cvimage->imageData[cvIndex+0];
+
+                        m_image.setPixel(x,y,qRgb(red, green, blue));
+                        cvIndex += 3;
+                    }
+                    cvLineStart += cvimage->widthStep;
+                }
+                break;
                 default:
                     qWarning("This number of channels is not supported\n");
                     break;

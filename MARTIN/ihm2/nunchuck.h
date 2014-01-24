@@ -14,8 +14,8 @@
 /*  Constantes port I2C */
 
 #define PARAM_DEVICENAME_COMMANDE    "/dev/i2c-X";
-#define PARAM_DRONE                  '1'
-#define PARAM_CAMERA                 '2'
+#define PARAM_DIRECTION                  '1'
+#define PARAM_ALTITUDE                   '0'
 
 #define JCENTRE                            0
 #define JDROITE                            1
@@ -25,7 +25,7 @@
 #define JDROITE_MAX                       16
 #define JGAUCHE_MAX                       32
 #define JHAUT_MAX                         64
-#define JBAS_MAX                          127
+#define JBAS_MAX                         127
 
 
 class Nunchuck
@@ -33,10 +33,13 @@ class Nunchuck
 public:
     Nunchuck(char cTypeNunk);
     ~Nunchuck();
+    /*  Initialisation  */
+
+    bool    Initialize(char cTypeNunk);
+    bool    bInitialize;
 
     void    ReadCommand();
 
-    bool    bInitialize;
 
     /*  Etat commandes  */
 
@@ -49,10 +52,6 @@ public:
 
 private:
     void DecodeBufferIn();
-
-    /*  Initialisation  */
-
-    bool    Initialize(char cTypeNunk);
 
     /*   Variable : Port I2C  */
 

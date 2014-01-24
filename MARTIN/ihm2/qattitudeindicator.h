@@ -31,12 +31,17 @@ public:
     void setPitch(qreal val){pitch = val;}
     qreal getRoll() {return roll;}
     qreal getPitch(){return pitch;}
-public slots:
-    void nunchuckEvent();
+
+    void doHorizon();
+
+    //Nunchuck *wiiTest;
+    qreal roll;
+    qreal pitch;
+
 protected:
     void paintEvent(QPaintEvent *event);
     void resizeEvent(QResizeEvent *event);
-    //void keyPressEvent(QKeyEvent *event);
+    //void timerEvent(QTimerEvent*);
 
 private:
     void getRollLine(EN_TYPES_ATTITUDE type,QPoint* pFrom,QPoint* pTo);
@@ -50,12 +55,9 @@ private:
     QPoint rollPoint[numbRollLine][2];
     qreal  rollRotate[numbRollLine];
     QPoint pitchPoint[numbPitchLine][2];
-    qreal roll;
-    qreal pitch;
     QVector<QLine> target;
     QVector<QLine> rollPointer;
 
-    Nunchuck *wiiTest;
     /*
     int iXnunchuck;
     int iYnunchuck;

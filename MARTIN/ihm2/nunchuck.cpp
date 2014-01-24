@@ -138,7 +138,7 @@ void Nunchuck::DecodeBufferIn() {
 
     if(bInitialize) {
 
-        FILE *file = fopen("/tmp/nunchuckLog", "a");
+        //FILE *file = fopen("/tmp/nunchuckLog", "a");
 
         /*  Test Bouttons : Si on appui sur le bouton Z, le bouton C est indiqué comme appuyé :
          *
@@ -171,7 +171,7 @@ void Nunchuck::DecodeBufferIn() {
             if(iValueJoystickX > 225)
                 cJoystickX = JDROITE_MAX;
         }
-        else if(iData[0] < 110) {           //Si Joystick à Gauche
+        else if(iData[0] < 95) {           //Si Joystick à Gauche
             cJoystickX = JGAUCHE;
 
             if(iValueJoystickX < 50)
@@ -186,16 +186,16 @@ void Nunchuck::DecodeBufferIn() {
 
         iValueJoystickY = iData[1];
 
-        if(iValueJoystickY > 175) {    //Si Joystick en Haut
+        if(iData[1] > 175) {    //Si Joystick en Haut
             cJoystickY = JHAUT;
 
-            if(iValueJoystickY > 220)
+            if(iData[1] > 225)
                 cJoystickY = JHAUT_MAX;
         }
-        else if(iData[1] < 125) {      //Si Joystick en Bas
+        else if(iData[1] < 95) {      //Si Joystick en Bas
             cJoystickY = JBAS;
 
-            if(iValueJoystickY < 50)
+            if(iData[1] < 50)
                 cJoystickY = JBAS_MAX;
         }
         else {                         //Si Joystick au Centre
@@ -216,7 +216,7 @@ void Nunchuck::DecodeBufferIn() {
             printf("Z-axis: %d\n", cBufferIn[4]);   */
 
 
-        fclose(file);
+        //fclose(file);
     }
 
 

@@ -1,15 +1,28 @@
-#ifndef MAINWINDOW2_H
-#define MAINWINDOW2_H
+#ifndef MAINWINDOW_H
+#define MAINWINDOW_H
 
-//#include <QWidget>
 #include <QMainWindow>
 #include <QVBoxLayout>
 #include <QDebug>
 #include <QPushButton>
-#include </usr/local/include/opencv/cv.h>
-#include </usr/local/include/opencv/highgui.h>
+//#include <opencv/highgui.h>
+#include </usr/local/include/opencv2/highgui.hpp>
+#include <assert.h>
+#include "mydisplay.h"
 #include "camerawidget.h"
-#include "qattitudeindicator.h"
+#include "qbase.h"
+#include "battery.h"
+#include "ui_mainwindow.h"
+
+#include "lightmaps.h"
+#include "slippymap.h"
+
+#define INDEX_ONGLET_CAMERA  0
+#define INDEX_ONGLET_HORIZON 1
+
+class QNetworkSession;
+class LightMaps;
+class SlippyMap;
 
 namespace Ui {
 class MainWindow;
@@ -21,28 +34,49 @@ class MainWindow : public QMainWindow
 
 public:
     explicit MainWindow(QWidget *parent = 0);
+
+    qreal latitude, longitude;
+
     ~MainWindow();
 
+private slots:
+    void sessionOpened();
+    void testGps();
+    void aboutOsm();
+
 private:
-    CameraWidget *m_cvwidget;
-    CvCapture *m_camera;
-    int m_photoCounter;
+    Ui::MainWindow  *ui;
 
-    qAttitudeIndicator *attInd;
+    QBase           *threadBase;
 
-    Ui::MainWindow *ui;
+    CameraWidget    *m_cvwidget;
+    CvCapture       *m_camera;
+    IplImage        *image;
+    MyDisplay       display;
+
+    LightMaps       *map;
+    QNetworkSession *networkSession;
+
+    battery         *batterie;
+    battery         *batterie2;
+
+    int             m_photoCounter;
+    int             indexOnglet;
+    bool            bVideoIsOn;
 
 protected:
-    void timerEvent(QTimerEvent*);
+   void timerEvent(QTimerEvent*);
 
 public slots:
-   // void savePicture(void);
+    void ChangeOnglet(int index);
+    void ButtonVideo();
+    void ButtonEmergency();
+
+    void savePicture(void);
 
 };
 
-
 #endif
-
 
 
 

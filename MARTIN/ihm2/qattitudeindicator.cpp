@@ -17,10 +17,12 @@ EN_TYPES_ATTITUDE defaultsTypePitch[numbPitchLine] = { normalPitchLine,smallPitc
 qAttitudeIndicator::qAttitudeIndicator(QWidget *parent)
     : QWidget(parent)
 {
-    QTimer *timer = new QTimer(this);
+    //QTimer *timer = new QTimer(this);
     //connect(timer, SIGNAL(timeout()), this, SLOT(update()));
-    connect(timer, SIGNAL(timeout()), this, SLOT(nunchuckEvent()));
-    timer->start(500);
+    //connect(timer, SIGNAL(timeout()), this, SLOT(nunchuckEvent()));
+    //timer->start(50);
+    //startTimer(50);
+
     size = sizeMin;
     setMinimumSize(sizeMin,sizeMin);
     setMaximumSize(sizeMax,sizeMax);
@@ -40,12 +42,12 @@ qAttitudeIndicator::qAttitudeIndicator(QWidget *parent)
     roll = 0.0;
     pitch = 0.0;
 
-    wiiTest = new Nunchuck(PARAM_DRONE);
+    //wiiTest = new Nunchuck(PARAM_DRONE);
 }
 
 qAttitudeIndicator::~qAttitudeIndicator()
 {
-    delete wiiTest;
+    //delete wiiTest;
 }
 
 void qAttitudeIndicator::initTargetChar()
@@ -116,6 +118,11 @@ void qAttitudeIndicator::resizeEvent(QResizeEvent *event)
     resizeRollChar();
 }
 
+void qAttitudeIndicator::doHorizon()
+{
+    update();
+}
+
 void qAttitudeIndicator::paintEvent(QPaintEvent *)
 {
     QPainter painter(this);
@@ -165,94 +172,3 @@ void qAttitudeIndicator::paintEvent(QPaintEvent *)
     painter.drawLines(target);
     painter.drawLines(rollPointer);
 }
-
-void qAttitudeIndicator::nunchuckEvent()
-{
-
-    if(wiiTest->bInitialize)
-        wiiTest->ReadCommand();
-
-    if(wiiTest->bButtonZ) {
-
-    }
-
-    if(wiiTest->bButtonC) {
-
-    }
-
-    switch (wiiTest->cJoystickX) {
-    case JCENTRE:
-        roll = 0.0;
-        break;
-    case JDROITE:
-        roll = -15.0;
-        break;
-    case JGAUCHE:
-        roll = 15.0;
-        break;
-    case JDROITE_MAX:
-        roll = -30.0;
-        break;
-    case JGAUCHE_MAX:
-        roll = 30.0;
-        break;
-    default:
-        roll = 90.0;
-        sleep(3);
-        roll = 0.0;
-        break;
-    }
-
-    switch (wiiTest->cJoystickY) {
-    case JCENTRE:
-        pitch = 0.0;
-        break;
-    case JHAUT:
-        pitch = -10.0;
-        break;
-    case JBAS:
-        pitch = 10.0;
-        break;
-    case JHAUT_MAX:
-        pitch = -20.0;
-        break;
-    case JBAS_MAX:
-        pitch = 20.0;
-        break;
-    default:
-        pitch = 90.0;
-        sleep(3);
-        pitch = 0.0;
-        break;
-    }
-
-    update();
-}
-
-/*
-void qAttitudeIndicator::keyPressEvent(QKeyEvent *event)
- {
-     switch (event->key())
-     {
-     case Qt::Key_Left:
-         if(roll>-90.)
-         roll -= 1.0;
-         break;
-     case Qt::Key_Right:
-         if(roll<90.)
-         roll += 1.0;
-         break;
-     case Qt::Key_Down:
-         if(pitch>-20.)
-         pitch -=1.0;
-         break;
-     case Qt::Key_Up:
-         if(pitch<20.)
-         pitch +=1.0;
-         break;
-     default: break;
-//         QFrame::keyPressEvent(event);
-     }
-     update();
- }
-*/

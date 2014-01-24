@@ -10,7 +10,7 @@
     <x>0</x>
     <y>0</y>
     <width>1000</width>
-    <height>600</height>
+    <height>580</height>
    </rect>
   </property>
   <property name="minimumSize">
@@ -29,7 +29,7 @@
       <x>0</x>
       <y>0</y>
       <width>1000</width>
-      <height>600</height>
+      <height>560</height>
      </rect>
     </property>
     <property name="whatsThis">
@@ -48,7 +48,7 @@
      <enum>QTabWidget::Rounded</enum>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>0</number>
     </property>
     <property name="elideMode">
      <enum>Qt::ElideLeft</enum>
@@ -69,9 +69,9 @@
      <widget class="QPushButton" name="VideoStreaming">
       <property name="geometry">
        <rect>
-        <x>40</x>
-        <y>510</y>
-        <width>231</width>
+        <x>30</x>
+        <y>480</y>
+        <width>361</width>
         <height>31</height>
        </rect>
       </property>
@@ -82,10 +82,10 @@
      <widget class="QLabel" name="logo">
       <property name="geometry">
        <rect>
-        <x>740</x>
-        <y>10</y>
-        <width>251</width>
-        <height>71</height>
+        <x>720</x>
+        <y>0</y>
+        <width>281</width>
+        <height>81</height>
        </rect>
       </property>
       <property name="text">
@@ -98,9 +98,9 @@
      <widget class="QPushButton" name="emergency_stop">
       <property name="geometry">
        <rect>
-        <x>800</x>
-        <y>500</y>
-        <width>151</width>
+        <x>760</x>
+        <y>480</y>
+        <width>221</width>
         <height>31</height>
        </rect>
       </property>
@@ -114,13 +114,98 @@
      <widget class="QWidget" name="gridLayoutWidget">
       <property name="geometry">
        <rect>
-        <x>20</x>
-        <y>20</y>
+        <x>10</x>
+        <y>0</y>
         <width>681</width>
         <height>471</height>
        </rect>
       </property>
-      <layout class="QGridLayout" name="gridLayout"/>
+      <layout class="QGridLayout" name="cameralayout"/>
+     </widget>
+     <widget class="QWidget" name="gridLayoutWidget_4">
+      <property name="geometry">
+       <rect>
+        <x>740</x>
+        <y>250</y>
+        <width>241</width>
+        <height>221</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="maplayout"/>
+     </widget>
+     <widget class="QPushButton" name="Photo">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>480</y>
+        <width>191</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>TAKE PICTURE</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="gridLayoutWidget_6">
+      <property name="geometry">
+       <rect>
+        <x>870</x>
+        <y>90</y>
+        <width>121</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="batterylayout"/>
+     </widget>
+     <widget class="QWidget" name="gridLayoutWidget_7">
+      <property name="geometry">
+       <rect>
+        <x>870</x>
+        <y>140</y>
+        <width>121</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="batterylayout_2"/>
+     </widget>
+     <widget class="QLabel" name="Name">
+      <property name="geometry">
+       <rect>
+        <x>770</x>
+        <y>100</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>BASE</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Name_2">
+      <property name="geometry">
+       <rect>
+        <x>770</x>
+        <y>150</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>DRONE</string>
+      </property>
+     </widget>
+     <widget class="Line" name="line_2">
+      <property name="geometry">
+       <rect>
+        <x>710</x>
+        <y>20</y>
+        <width>20</width>
+        <height>471</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
      </widget>
     </widget>
     <widget class="QWidget" name="vol_vue">
@@ -130,9 +215,9 @@
      <widget class="QPushButton" name="emergency_stop_2">
       <property name="geometry">
        <rect>
-        <x>800</x>
-        <y>500</y>
-        <width>151</width>
+        <x>760</x>
+        <y>480</y>
+        <width>201</width>
         <height>31</height>
        </rect>
       </property>
@@ -146,21 +231,21 @@
      <widget class="QWidget" name="gridLayoutWidget_2">
       <property name="geometry">
        <rect>
-        <x>20</x>
-        <y>20</y>
+        <x>10</x>
+        <y>30</y>
         <width>681</width>
         <height>471</height>
        </rect>
       </property>
-      <layout class="QGridLayout" name="gridLayout_2"/>
+      <layout class="QGridLayout" name="horizon_layout"/>
      </widget>
      <widget class="QLabel" name="logo_2">
       <property name="geometry">
        <rect>
-        <x>740</x>
-        <y>10</y>
-        <width>251</width>
-        <height>71</height>
+        <x>720</x>
+        <y>0</y>
+        <width>281</width>
+        <height>81</height>
        </rect>
       </property>
       <property name="text">
@@ -170,8 +255,90 @@
        <pixmap>../build-ihm2-Desktop-Debug/estei.png</pixmap>
       </property>
      </widget>
+     <widget class="QWidget" name="gridLayoutWidget_5">
+      <property name="geometry">
+       <rect>
+        <x>740</x>
+        <y>250</y>
+        <width>241</width>
+        <height>221</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="maplayout2"/>
+     </widget>
+     <widget class="QWidget" name="gridLayoutWidget_3">
+      <property name="geometry">
+       <rect>
+        <x>870</x>
+        <y>90</y>
+        <width>121</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="batterylayout2"/>
+     </widget>
+     <widget class="QWidget" name="gridLayoutWidget_8">
+      <property name="geometry">
+       <rect>
+        <x>870</x>
+        <y>140</y>
+        <width>121</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="batterylayout2_2"/>
+     </widget>
+     <widget class="QLabel" name="Name2">
+      <property name="geometry">
+       <rect>
+        <x>770</x>
+        <y>100</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>BASE</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Name2_2">
+      <property name="geometry">
+       <rect>
+        <x>770</x>
+        <y>150</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>DRONE</string>
+      </property>
+     </widget>
+     <widget class="Line" name="line">
+      <property name="geometry">
+       <rect>
+        <x>710</x>
+        <y>20</y>
+        <width>20</width>
+        <height>471</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
     </widget>
    </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1000</width>
+     <height>27</height>
+    </rect>
+   </property>
   </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>

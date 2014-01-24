@@ -7,7 +7,8 @@
 #include <QVBoxLayout>
 #include <QImage>
 #include <QDebug>
-#include </usr/local/include/opencv/cv.h>
+//#include <opencv/cv.h>
+#include </usr/local/include/opencv2/opencv.hpp>
 
 class CameraWidget : public QWidget
 {

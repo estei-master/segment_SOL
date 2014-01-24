@@ -1,14 +1,10 @@
-#include "mainwindow.h"
-#include "camerawidget.h"
 #include <QApplication>
-#include </usr/local/include/opencv/cv.h>
-#include </usr/local/include/opencv/highgui.h>
-#include <assert.h>
-#include "ui_mainwindow.h"
+#include "mainwindow.h"
 
 
-
-
+/*  Modifs : Bouton start/stop Video actif
+ *
+ */
 int main(int argc, char **argv) {
 
     QApplication app(argc, argv);

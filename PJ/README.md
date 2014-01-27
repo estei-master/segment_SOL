@@ -11,6 +11,7 @@ TODO
 - Cross compilation de Qtembedded et tslib
 - Cross Compilation de openCV
 - Gestion du power management
+- Optimisation du Système (Démarrage, stockage, ...)
 
 Hiérarchie des dossiers
 ----------------------

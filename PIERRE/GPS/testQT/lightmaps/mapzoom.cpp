@@ -19,9 +19,6 @@ MapZoom::MapZoom()
     setCentralWidget(map);
     map->setFocus();
 
-    /*m_normalMap = new SlippyMap(this);
-    connect(m_normalMap, SIGNAL(updated(QRect)), SLOT(updateMap(QRect)));*/
-
     QAction *testGpsAction = new QAction(tr("&testGps"), this);
     QAction *nightModeAction = new QAction(tr("Night Mode"), this);
     nightModeAction->setCheckable(true);

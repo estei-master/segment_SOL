@@ -9,8 +9,6 @@ s=0
 latitude=44.86
 longitude=-0.5
 heures=11h35m28
-niveauBatterie=$k
-nbSatellites=5
 trame=0
 
 while [[ $k -ne 3 ]]
@@ -21,71 +19,73 @@ do
 		longitude=-0.5$j$l
 		latitude=44.86$i
 		heures=11h35m$s
-		let s++
 		if [[ $l -ne 9 ]]
 		then
 			let l++
-			trame=$latitude,$longitude,$heures,$nbSatellites,
+			trame=$latitude,$longitude,$heures,
 			echo $trame
-			echo $trame > /home/pierre/Documents/GPS/donneeIHM.txt	
+			echo $trame > /home/pierre/Documents/GPS/donneeIHM.txt		
 			sleep 1
 		else
 			l=0
 			let j++
-			trame=$latitude,$longitude,$heures,$nbSatellites,
+			trame=$latitude,$longitude,$heures,
 			echo $trame
-			echo $trame > /home/pierre/Documents/GPS/donneeIHM.txt	
+ 			echo $trame > /home/pierre/Documents/GPS/donneeIHM.txt		
 			sleep 1
 		fi
 	done
+	
+	let s++
 	
 	while [[ $i -ne 8 ]]
 	do
 		longitude=-0.5$j$l
 		latitude=44.86$i
 		heures=11h35m$s
-		let s++
 		let i++
-		trame=$latitude,$longitude,$heures,$nbSatellites,
+		trame=$latitude,$longitude,$heures,
 		echo $trame
-		echo $trame > /home/pierre/Documents/GPS/donneeIHM.txt
+		echo $trame > /home/pierre/Documents/GPS/donneeIHM.txt	
 		sleep 1	
 	done
+	
+	let s++
 	
 	while [[ $j -ne 5 || $l -ne 0 ]]
 	do
 		longitude=-0.5$j$l
 		latitude=44.86$i
 		heures=11h35m$s
-		let s++
 		if [[ $l -ne 0 ]]
 		then
 			let l--
-			trame=$latitude,$longitude,$heures,$nbSatellites,
+			trame=$latitude,$longitude,$heures,
 			echo $trame
-			echo $trame > /home/pierre/Documents/GPS/donneeIHM.txt	
+			echo $trame > /home/pierre/Documents/GPS/donneeIHM.txt			
 			sleep 1
 		else
 			l=9
 			let j--
-			trame=$latitude,$longitude,$heures,$nbSatellites,
+			trame=$latitude,$longitude,$heures,
 			echo $trame
-			echo $trame > /home/pierre/Documents/GPS/donneeIHM.txt
+			echo $trame > /home/pierre/Documents/GPS/donneeIHM.txt	
 			sleep 1
 		fi	
 	done
+	
+	let s++
 	
 	while [[ $i -ne 1 ]]
 	do
 		longitude=-0.5$j$l
 		latitude=44.86$i
 		heures=11h35m$s
-		let s++
 		j=5
 		let i--
-		trame=$latitude,$longitude,$heures,$nbSatellites,
+		trame=$latitude,$longitude,$heures,
 		echo $trame
-		echo $trame > /home/pierre/Documents/GPS/donneeIHM.txt
+		echo $trame > /home/pierre/Documents/GPS/donneeIHM.txt	
 		sleep 1	
 	done
 	

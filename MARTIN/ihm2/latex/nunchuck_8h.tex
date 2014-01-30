@@ -1,0 +1,192 @@
+\hypertarget{nunchuck_8h}{\section{nunchuck.\-h File Reference}
+\label{nunchuck_8h}\index{nunchuck.\-h@{nunchuck.\-h}}
+}
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include $<$string.\-h$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include $<$unistd.\-h$>$}\\*
+{\ttfamily \#include $<$sys/ioctl.\-h$>$}\\*
+{\ttfamily \#include $<$fcntl.\-h$>$}\\*
+{\ttfamily \#include $<$linux/i2c.\-h$>$}\\*
+{\ttfamily \#include $<$linux/i2c-\/dev.\-h$>$}\\*
+Include dependency graph for nunchuck.\-h\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{nunchuck_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{nunchuck_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classNunchuck}{Nunchuck}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{nunchuck_8h_a0f3e5db0fbc68310b4cdc94e00f10f75}{P\-A\-R\-A\-M\-\_\-\-D\-E\-V\-I\-C\-E\-N\-A\-M\-E\-\_\-\-C\-O\-M\-M\-A\-N\-D\-E}~\char`\"{}/dev/i2c-\/X\char`\"{};
+\item 
+\#define \hyperlink{nunchuck_8h_abeac51046230d277dc5701b7e45dc88e}{P\-A\-R\-A\-M\-\_\-\-D\-I\-R\-E\-C\-T\-I\-O\-N}~'1'
+\item 
+\#define \hyperlink{nunchuck_8h_af420e9167d30b82b0f623019d165944a}{P\-A\-R\-A\-M\-\_\-\-A\-L\-T\-I\-T\-U\-D\-E}~'0'
+\item 
+\#define \hyperlink{nunchuck_8h_ac63506adba6ed764c5061ac249623554}{J\-C\-E\-N\-T\-R\-E}~0
+\item 
+\#define \hyperlink{nunchuck_8h_abb937f82823e628ca09a026777179226}{J\-D\-R\-O\-I\-T\-E}~1
+\item 
+\#define \hyperlink{nunchuck_8h_a2948a7fb931671c2935a67be056ec44d}{J\-G\-A\-U\-C\-H\-E}~2
+\item 
+\#define \hyperlink{nunchuck_8h_a624208e4279eb8508e4d7a4cd1983293}{J\-H\-A\-U\-T}~4
+\item 
+\#define \hyperlink{nunchuck_8h_ad9a8fe51b03c91dc0256cc7502d450a3}{J\-B\-A\-S}~8
+\item 
+\#define \hyperlink{nunchuck_8h_a13baf3bab74f21c7050fb8029bf5b871}{J\-D\-R\-O\-I\-T\-E\-\_\-\-M\-A\-X}~16
+\item 
+\#define \hyperlink{nunchuck_8h_a19f4efb3793bd7fd7da3a60339dc4631}{J\-G\-A\-U\-C\-H\-E\-\_\-\-M\-A\-X}~32
+\item 
+\#define \hyperlink{nunchuck_8h_a69c726c7ddc8415a81ea58834356ed2b}{J\-H\-A\-U\-T\-\_\-\-M\-A\-X}~64
+\item 
+\#define \hyperlink{nunchuck_8h_a8bd0c46505c3f0a7d5bc412d8a56d41a}{J\-B\-A\-S\-\_\-\-M\-A\-X}~127
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{nunchuck_8h_ad9a8fe51b03c91dc0256cc7502d450a3}{\index{nunchuck.\-h@{nunchuck.\-h}!J\-B\-A\-S@{J\-B\-A\-S}}
+\index{J\-B\-A\-S@{J\-B\-A\-S}!nunchuck.h@{nunchuck.\-h}}
+\subsubsection[{J\-B\-A\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define J\-B\-A\-S~8}}\label{nunchuck_8h_ad9a8fe51b03c91dc0256cc7502d450a3}
+
+
+Definition at line 24 of file nunchuck.\-h.
+
+
+
+Referenced by Nunchuck\-::\-Decode\-Buffer\-In(), and Q\-Base\-::run().
+
+\hypertarget{nunchuck_8h_a8bd0c46505c3f0a7d5bc412d8a56d41a}{\index{nunchuck.\-h@{nunchuck.\-h}!J\-B\-A\-S\-\_\-\-M\-A\-X@{J\-B\-A\-S\-\_\-\-M\-A\-X}}
+\index{J\-B\-A\-S\-\_\-\-M\-A\-X@{J\-B\-A\-S\-\_\-\-M\-A\-X}!nunchuck.h@{nunchuck.\-h}}
+\subsubsection[{J\-B\-A\-S\-\_\-\-M\-A\-X}]{\setlength{\rightskip}{0pt plus 5cm}\#define J\-B\-A\-S\-\_\-\-M\-A\-X~127}}\label{nunchuck_8h_a8bd0c46505c3f0a7d5bc412d8a56d41a}
+
+
+Definition at line 28 of file nunchuck.\-h.
+
+
+
+Referenced by Nunchuck\-::\-Decode\-Buffer\-In(), and Q\-Base\-::run().
+
+\hypertarget{nunchuck_8h_ac63506adba6ed764c5061ac249623554}{\index{nunchuck.\-h@{nunchuck.\-h}!J\-C\-E\-N\-T\-R\-E@{J\-C\-E\-N\-T\-R\-E}}
+\index{J\-C\-E\-N\-T\-R\-E@{J\-C\-E\-N\-T\-R\-E}!nunchuck.h@{nunchuck.\-h}}
+\subsubsection[{J\-C\-E\-N\-T\-R\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define J\-C\-E\-N\-T\-R\-E~0}}\label{nunchuck_8h_ac63506adba6ed764c5061ac249623554}
+
+
+Definition at line 20 of file nunchuck.\-h.
+
+
+
+Referenced by Nunchuck\-::\-Decode\-Buffer\-In(), and Q\-Base\-::run().
+
+\hypertarget{nunchuck_8h_abb937f82823e628ca09a026777179226}{\index{nunchuck.\-h@{nunchuck.\-h}!J\-D\-R\-O\-I\-T\-E@{J\-D\-R\-O\-I\-T\-E}}
+\index{J\-D\-R\-O\-I\-T\-E@{J\-D\-R\-O\-I\-T\-E}!nunchuck.h@{nunchuck.\-h}}
+\subsubsection[{J\-D\-R\-O\-I\-T\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define J\-D\-R\-O\-I\-T\-E~1}}\label{nunchuck_8h_abb937f82823e628ca09a026777179226}
+
+
+Definition at line 21 of file nunchuck.\-h.
+
+
+
+Referenced by Nunchuck\-::\-Decode\-Buffer\-In(), and Q\-Base\-::run().
+
+\hypertarget{nunchuck_8h_a13baf3bab74f21c7050fb8029bf5b871}{\index{nunchuck.\-h@{nunchuck.\-h}!J\-D\-R\-O\-I\-T\-E\-\_\-\-M\-A\-X@{J\-D\-R\-O\-I\-T\-E\-\_\-\-M\-A\-X}}
+\index{J\-D\-R\-O\-I\-T\-E\-\_\-\-M\-A\-X@{J\-D\-R\-O\-I\-T\-E\-\_\-\-M\-A\-X}!nunchuck.h@{nunchuck.\-h}}
+\subsubsection[{J\-D\-R\-O\-I\-T\-E\-\_\-\-M\-A\-X}]{\setlength{\rightskip}{0pt plus 5cm}\#define J\-D\-R\-O\-I\-T\-E\-\_\-\-M\-A\-X~16}}\label{nunchuck_8h_a13baf3bab74f21c7050fb8029bf5b871}
+
+
+Definition at line 25 of file nunchuck.\-h.
+
+
+
+Referenced by Nunchuck\-::\-Decode\-Buffer\-In(), and Q\-Base\-::run().
+
+\hypertarget{nunchuck_8h_a2948a7fb931671c2935a67be056ec44d}{\index{nunchuck.\-h@{nunchuck.\-h}!J\-G\-A\-U\-C\-H\-E@{J\-G\-A\-U\-C\-H\-E}}
+\index{J\-G\-A\-U\-C\-H\-E@{J\-G\-A\-U\-C\-H\-E}!nunchuck.h@{nunchuck.\-h}}
+\subsubsection[{J\-G\-A\-U\-C\-H\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define J\-G\-A\-U\-C\-H\-E~2}}\label{nunchuck_8h_a2948a7fb931671c2935a67be056ec44d}
+
+
+Definition at line 22 of file nunchuck.\-h.
+
+
+
+Referenced by Nunchuck\-::\-Decode\-Buffer\-In(), and Q\-Base\-::run().
+
+\hypertarget{nunchuck_8h_a19f4efb3793bd7fd7da3a60339dc4631}{\index{nunchuck.\-h@{nunchuck.\-h}!J\-G\-A\-U\-C\-H\-E\-\_\-\-M\-A\-X@{J\-G\-A\-U\-C\-H\-E\-\_\-\-M\-A\-X}}
+\index{J\-G\-A\-U\-C\-H\-E\-\_\-\-M\-A\-X@{J\-G\-A\-U\-C\-H\-E\-\_\-\-M\-A\-X}!nunchuck.h@{nunchuck.\-h}}
+\subsubsection[{J\-G\-A\-U\-C\-H\-E\-\_\-\-M\-A\-X}]{\setlength{\rightskip}{0pt plus 5cm}\#define J\-G\-A\-U\-C\-H\-E\-\_\-\-M\-A\-X~32}}\label{nunchuck_8h_a19f4efb3793bd7fd7da3a60339dc4631}
+
+
+Definition at line 26 of file nunchuck.\-h.
+
+
+
+Referenced by Nunchuck\-::\-Decode\-Buffer\-In(), and Q\-Base\-::run().
+
+\hypertarget{nunchuck_8h_a624208e4279eb8508e4d7a4cd1983293}{\index{nunchuck.\-h@{nunchuck.\-h}!J\-H\-A\-U\-T@{J\-H\-A\-U\-T}}
+\index{J\-H\-A\-U\-T@{J\-H\-A\-U\-T}!nunchuck.h@{nunchuck.\-h}}
+\subsubsection[{J\-H\-A\-U\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define J\-H\-A\-U\-T~4}}\label{nunchuck_8h_a624208e4279eb8508e4d7a4cd1983293}
+
+
+Definition at line 23 of file nunchuck.\-h.
+
+
+
+Referenced by Nunchuck\-::\-Decode\-Buffer\-In(), and Q\-Base\-::run().
+
+\hypertarget{nunchuck_8h_a69c726c7ddc8415a81ea58834356ed2b}{\index{nunchuck.\-h@{nunchuck.\-h}!J\-H\-A\-U\-T\-\_\-\-M\-A\-X@{J\-H\-A\-U\-T\-\_\-\-M\-A\-X}}
+\index{J\-H\-A\-U\-T\-\_\-\-M\-A\-X@{J\-H\-A\-U\-T\-\_\-\-M\-A\-X}!nunchuck.h@{nunchuck.\-h}}
+\subsubsection[{J\-H\-A\-U\-T\-\_\-\-M\-A\-X}]{\setlength{\rightskip}{0pt plus 5cm}\#define J\-H\-A\-U\-T\-\_\-\-M\-A\-X~64}}\label{nunchuck_8h_a69c726c7ddc8415a81ea58834356ed2b}
+
+
+Definition at line 27 of file nunchuck.\-h.
+
+
+
+Referenced by Nunchuck\-::\-Decode\-Buffer\-In(), and Q\-Base\-::run().
+
+\hypertarget{nunchuck_8h_af420e9167d30b82b0f623019d165944a}{\index{nunchuck.\-h@{nunchuck.\-h}!P\-A\-R\-A\-M\-\_\-\-A\-L\-T\-I\-T\-U\-D\-E@{P\-A\-R\-A\-M\-\_\-\-A\-L\-T\-I\-T\-U\-D\-E}}
+\index{P\-A\-R\-A\-M\-\_\-\-A\-L\-T\-I\-T\-U\-D\-E@{P\-A\-R\-A\-M\-\_\-\-A\-L\-T\-I\-T\-U\-D\-E}!nunchuck.h@{nunchuck.\-h}}
+\subsubsection[{P\-A\-R\-A\-M\-\_\-\-A\-L\-T\-I\-T\-U\-D\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\-A\-R\-A\-M\-\_\-\-A\-L\-T\-I\-T\-U\-D\-E~'0'}}\label{nunchuck_8h_af420e9167d30b82b0f623019d165944a}
+
+
+Definition at line 18 of file nunchuck.\-h.
+
+
+
+Referenced by Q\-Base\-::\-Q\-Base().
+
+\hypertarget{nunchuck_8h_a0f3e5db0fbc68310b4cdc94e00f10f75}{\index{nunchuck.\-h@{nunchuck.\-h}!P\-A\-R\-A\-M\-\_\-\-D\-E\-V\-I\-C\-E\-N\-A\-M\-E\-\_\-\-C\-O\-M\-M\-A\-N\-D\-E@{P\-A\-R\-A\-M\-\_\-\-D\-E\-V\-I\-C\-E\-N\-A\-M\-E\-\_\-\-C\-O\-M\-M\-A\-N\-D\-E}}
+\index{P\-A\-R\-A\-M\-\_\-\-D\-E\-V\-I\-C\-E\-N\-A\-M\-E\-\_\-\-C\-O\-M\-M\-A\-N\-D\-E@{P\-A\-R\-A\-M\-\_\-\-D\-E\-V\-I\-C\-E\-N\-A\-M\-E\-\_\-\-C\-O\-M\-M\-A\-N\-D\-E}!nunchuck.h@{nunchuck.\-h}}
+\subsubsection[{P\-A\-R\-A\-M\-\_\-\-D\-E\-V\-I\-C\-E\-N\-A\-M\-E\-\_\-\-C\-O\-M\-M\-A\-N\-D\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\-A\-R\-A\-M\-\_\-\-D\-E\-V\-I\-C\-E\-N\-A\-M\-E\-\_\-\-C\-O\-M\-M\-A\-N\-D\-E~\char`\"{}/dev/i2c-\/X\char`\"{};}}\label{nunchuck_8h_a0f3e5db0fbc68310b4cdc94e00f10f75}
+
+
+Definition at line 16 of file nunchuck.\-h.
+
+
+
+Referenced by Nunchuck\-::\-Initialize().
+
+\hypertarget{nunchuck_8h_abeac51046230d277dc5701b7e45dc88e}{\index{nunchuck.\-h@{nunchuck.\-h}!P\-A\-R\-A\-M\-\_\-\-D\-I\-R\-E\-C\-T\-I\-O\-N@{P\-A\-R\-A\-M\-\_\-\-D\-I\-R\-E\-C\-T\-I\-O\-N}}
+\index{P\-A\-R\-A\-M\-\_\-\-D\-I\-R\-E\-C\-T\-I\-O\-N@{P\-A\-R\-A\-M\-\_\-\-D\-I\-R\-E\-C\-T\-I\-O\-N}!nunchuck.h@{nunchuck.\-h}}
+\subsubsection[{P\-A\-R\-A\-M\-\_\-\-D\-I\-R\-E\-C\-T\-I\-O\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\-A\-R\-A\-M\-\_\-\-D\-I\-R\-E\-C\-T\-I\-O\-N~'1'}}\label{nunchuck_8h_abeac51046230d277dc5701b7e45dc88e}
+
+
+Definition at line 17 of file nunchuck.\-h.
+
+
+
+Referenced by Q\-Base\-::\-Q\-Base().
+

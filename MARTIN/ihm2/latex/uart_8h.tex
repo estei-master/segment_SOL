@@ -1,0 +1,148 @@
+\hypertarget{uart_8h}{\section{uart.\-h File Reference}
+\label{uart_8h}\index{uart.\-h@{uart.\-h}}
+}
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include $<$fcntl.\-h$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include $<$unistd.\-h$>$}\\*
+{\ttfamily \#include $<$sys/ioctl.\-h$>$}\\*
+{\ttfamily \#include $<$string.\-h$>$}\\*
+{\ttfamily \#include $<$termios.\-h$>$}\\*
+Include dependency graph for uart.\-h\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{uart_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{uart_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classUart}{Uart}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{uart_8h_ab24fe93d414e2d2790a5ce8e5503fd7d}{param\-\_\-\-U\-A\-R\-T\-\_\-\-F\-I\-L\-E}~(const char$\ast$)\char`\"{}/dev/tty\-S0\char`\"{}
+\item 
+\#define \hyperlink{uart_8h_af89774268ea3d3837342a1698e105883}{param\-\_\-\-E\-N\-T\-R\-E\-\_\-\-C\-O\-N\-F\-I\-G}~(char$\ast$)\char`\"{}+++\char`\"{}
+\item 
+\#define \hyperlink{uart_8h_ab8d053e00fdf4476be4730d5390bfd73}{param\-\_\-\-Q\-U\-I\-T\-E\-\_\-\-C\-O\-N\-F\-I\-G}~(char$\ast$)\char`\"{}A\-T\-C\-N\char`\"{}
+\item 
+\#define \hyperlink{uart_8h_a54593750162c64711790d32ae7deb6a0}{param\-\_\-\-A\-D\-R\-E\-S\-S\-E\-\_\-\-D\-E\-S\-T\-\_\-\-H}~(char$\ast$)\char`\"{}A\-T\-D\-H\char`\"{}
+\item 
+\#define \hyperlink{uart_8h_ab612303ad75cf1a97d2a79ea2760561b}{param\-\_\-\-A\-D\-R\-E\-S\-S\-E\-\_\-\-D\-E\-S\-T\-\_\-\-L}~(char$\ast$)\char`\"{}A\-T\-D\-L\char`\"{}
+\item 
+\#define \hyperlink{uart_8h_a5eb04239c6384873a45b0c4f43aaa864}{param\-\_\-\-A\-D\-R\-E\-S\-S\-E\-\_\-\-E\-M\-E\-T\-\_\-\-H}~(char$\ast$)\char`\"{}A\-T\-S\-H\char`\"{}
+\item 
+\#define \hyperlink{uart_8h_ac12bfbd9bb75329241513b728f667963}{param\-\_\-\-A\-D\-R\-E\-S\-S\-E\-\_\-\-E\-M\-E\-T\-\_\-\-L}~(char$\ast$)\char`\"{}A\-T\-S\-L\char`\"{}
+\item 
+\#define \hyperlink{uart_8h_a2d0c6f9659fde77efee0b205d121ff46}{H\-I\-S\-T\-O\-R\-Y\-\_\-\-D\-E\-S\-T\-\_\-\-H}~(const char$\ast$)\char`\"{}1234\char`\"{}
+\item 
+\#define \hyperlink{uart_8h_a05660c40ae41611e14b7aea03ea994be}{H\-I\-S\-T\-O\-R\-Y\-\_\-\-D\-E\-S\-T\-\_\-\-L}~(const char$\ast$)\char`\"{}1234\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{uart_8h_a2d0c6f9659fde77efee0b205d121ff46}{\index{uart.\-h@{uart.\-h}!H\-I\-S\-T\-O\-R\-Y\-\_\-\-D\-E\-S\-T\-\_\-\-H@{H\-I\-S\-T\-O\-R\-Y\-\_\-\-D\-E\-S\-T\-\_\-\-H}}
+\index{H\-I\-S\-T\-O\-R\-Y\-\_\-\-D\-E\-S\-T\-\_\-\-H@{H\-I\-S\-T\-O\-R\-Y\-\_\-\-D\-E\-S\-T\-\_\-\-H}!uart.h@{uart.\-h}}
+\subsubsection[{H\-I\-S\-T\-O\-R\-Y\-\_\-\-D\-E\-S\-T\-\_\-\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define H\-I\-S\-T\-O\-R\-Y\-\_\-\-D\-E\-S\-T\-\_\-\-H~(const char$\ast$)\char`\"{}1234\char`\"{}}}\label{uart_8h_a2d0c6f9659fde77efee0b205d121ff46}
+
+
+Definition at line 18 of file uart.\-h.
+
+
+
+Referenced by Zig\-Bee\-::\-Config\-Zig\-Bee().
+
+\hypertarget{uart_8h_a05660c40ae41611e14b7aea03ea994be}{\index{uart.\-h@{uart.\-h}!H\-I\-S\-T\-O\-R\-Y\-\_\-\-D\-E\-S\-T\-\_\-\-L@{H\-I\-S\-T\-O\-R\-Y\-\_\-\-D\-E\-S\-T\-\_\-\-L}}
+\index{H\-I\-S\-T\-O\-R\-Y\-\_\-\-D\-E\-S\-T\-\_\-\-L@{H\-I\-S\-T\-O\-R\-Y\-\_\-\-D\-E\-S\-T\-\_\-\-L}!uart.h@{uart.\-h}}
+\subsubsection[{H\-I\-S\-T\-O\-R\-Y\-\_\-\-D\-E\-S\-T\-\_\-\-L}]{\setlength{\rightskip}{0pt plus 5cm}\#define H\-I\-S\-T\-O\-R\-Y\-\_\-\-D\-E\-S\-T\-\_\-\-L~(const char$\ast$)\char`\"{}1234\char`\"{}}}\label{uart_8h_a05660c40ae41611e14b7aea03ea994be}
+
+
+Definition at line 19 of file uart.\-h.
+
+\hypertarget{uart_8h_a54593750162c64711790d32ae7deb6a0}{\index{uart.\-h@{uart.\-h}!param\-\_\-\-A\-D\-R\-E\-S\-S\-E\-\_\-\-D\-E\-S\-T\-\_\-\-H@{param\-\_\-\-A\-D\-R\-E\-S\-S\-E\-\_\-\-D\-E\-S\-T\-\_\-\-H}}
+\index{param\-\_\-\-A\-D\-R\-E\-S\-S\-E\-\_\-\-D\-E\-S\-T\-\_\-\-H@{param\-\_\-\-A\-D\-R\-E\-S\-S\-E\-\_\-\-D\-E\-S\-T\-\_\-\-H}!uart.h@{uart.\-h}}
+\subsubsection[{param\-\_\-\-A\-D\-R\-E\-S\-S\-E\-\_\-\-D\-E\-S\-T\-\_\-\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define param\-\_\-\-A\-D\-R\-E\-S\-S\-E\-\_\-\-D\-E\-S\-T\-\_\-\-H~(char$\ast$)\char`\"{}A\-T\-D\-H\char`\"{}}}\label{uart_8h_a54593750162c64711790d32ae7deb6a0}
+
+
+Definition at line 14 of file uart.\-h.
+
+
+
+Referenced by Zig\-Bee\-::\-Config\-Zig\-Bee().
+
+\hypertarget{uart_8h_ab612303ad75cf1a97d2a79ea2760561b}{\index{uart.\-h@{uart.\-h}!param\-\_\-\-A\-D\-R\-E\-S\-S\-E\-\_\-\-D\-E\-S\-T\-\_\-\-L@{param\-\_\-\-A\-D\-R\-E\-S\-S\-E\-\_\-\-D\-E\-S\-T\-\_\-\-L}}
+\index{param\-\_\-\-A\-D\-R\-E\-S\-S\-E\-\_\-\-D\-E\-S\-T\-\_\-\-L@{param\-\_\-\-A\-D\-R\-E\-S\-S\-E\-\_\-\-D\-E\-S\-T\-\_\-\-L}!uart.h@{uart.\-h}}
+\subsubsection[{param\-\_\-\-A\-D\-R\-E\-S\-S\-E\-\_\-\-D\-E\-S\-T\-\_\-\-L}]{\setlength{\rightskip}{0pt plus 5cm}\#define param\-\_\-\-A\-D\-R\-E\-S\-S\-E\-\_\-\-D\-E\-S\-T\-\_\-\-L~(char$\ast$)\char`\"{}A\-T\-D\-L\char`\"{}}}\label{uart_8h_ab612303ad75cf1a97d2a79ea2760561b}
+
+
+Definition at line 15 of file uart.\-h.
+
+
+
+Referenced by Zig\-Bee\-::\-Config\-Zig\-Bee().
+
+\hypertarget{uart_8h_a5eb04239c6384873a45b0c4f43aaa864}{\index{uart.\-h@{uart.\-h}!param\-\_\-\-A\-D\-R\-E\-S\-S\-E\-\_\-\-E\-M\-E\-T\-\_\-\-H@{param\-\_\-\-A\-D\-R\-E\-S\-S\-E\-\_\-\-E\-M\-E\-T\-\_\-\-H}}
+\index{param\-\_\-\-A\-D\-R\-E\-S\-S\-E\-\_\-\-E\-M\-E\-T\-\_\-\-H@{param\-\_\-\-A\-D\-R\-E\-S\-S\-E\-\_\-\-E\-M\-E\-T\-\_\-\-H}!uart.h@{uart.\-h}}
+\subsubsection[{param\-\_\-\-A\-D\-R\-E\-S\-S\-E\-\_\-\-E\-M\-E\-T\-\_\-\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define param\-\_\-\-A\-D\-R\-E\-S\-S\-E\-\_\-\-E\-M\-E\-T\-\_\-\-H~(char$\ast$)\char`\"{}A\-T\-S\-H\char`\"{}}}\label{uart_8h_a5eb04239c6384873a45b0c4f43aaa864}
+
+
+Definition at line 16 of file uart.\-h.
+
+
+
+Referenced by Zig\-Bee\-::\-Config\-Zig\-Bee().
+
+\hypertarget{uart_8h_ac12bfbd9bb75329241513b728f667963}{\index{uart.\-h@{uart.\-h}!param\-\_\-\-A\-D\-R\-E\-S\-S\-E\-\_\-\-E\-M\-E\-T\-\_\-\-L@{param\-\_\-\-A\-D\-R\-E\-S\-S\-E\-\_\-\-E\-M\-E\-T\-\_\-\-L}}
+\index{param\-\_\-\-A\-D\-R\-E\-S\-S\-E\-\_\-\-E\-M\-E\-T\-\_\-\-L@{param\-\_\-\-A\-D\-R\-E\-S\-S\-E\-\_\-\-E\-M\-E\-T\-\_\-\-L}!uart.h@{uart.\-h}}
+\subsubsection[{param\-\_\-\-A\-D\-R\-E\-S\-S\-E\-\_\-\-E\-M\-E\-T\-\_\-\-L}]{\setlength{\rightskip}{0pt plus 5cm}\#define param\-\_\-\-A\-D\-R\-E\-S\-S\-E\-\_\-\-E\-M\-E\-T\-\_\-\-L~(char$\ast$)\char`\"{}A\-T\-S\-L\char`\"{}}}\label{uart_8h_ac12bfbd9bb75329241513b728f667963}
+
+
+Definition at line 17 of file uart.\-h.
+
+
+
+Referenced by Zig\-Bee\-::\-Config\-Zig\-Bee().
+
+\hypertarget{uart_8h_af89774268ea3d3837342a1698e105883}{\index{uart.\-h@{uart.\-h}!param\-\_\-\-E\-N\-T\-R\-E\-\_\-\-C\-O\-N\-F\-I\-G@{param\-\_\-\-E\-N\-T\-R\-E\-\_\-\-C\-O\-N\-F\-I\-G}}
+\index{param\-\_\-\-E\-N\-T\-R\-E\-\_\-\-C\-O\-N\-F\-I\-G@{param\-\_\-\-E\-N\-T\-R\-E\-\_\-\-C\-O\-N\-F\-I\-G}!uart.h@{uart.\-h}}
+\subsubsection[{param\-\_\-\-E\-N\-T\-R\-E\-\_\-\-C\-O\-N\-F\-I\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define param\-\_\-\-E\-N\-T\-R\-E\-\_\-\-C\-O\-N\-F\-I\-G~(char$\ast$)\char`\"{}+++\char`\"{}}}\label{uart_8h_af89774268ea3d3837342a1698e105883}
+
+
+Definition at line 12 of file uart.\-h.
+
+
+
+Referenced by Zig\-Bee\-::\-Config\-Zig\-Bee().
+
+\hypertarget{uart_8h_ab8d053e00fdf4476be4730d5390bfd73}{\index{uart.\-h@{uart.\-h}!param\-\_\-\-Q\-U\-I\-T\-E\-\_\-\-C\-O\-N\-F\-I\-G@{param\-\_\-\-Q\-U\-I\-T\-E\-\_\-\-C\-O\-N\-F\-I\-G}}
+\index{param\-\_\-\-Q\-U\-I\-T\-E\-\_\-\-C\-O\-N\-F\-I\-G@{param\-\_\-\-Q\-U\-I\-T\-E\-\_\-\-C\-O\-N\-F\-I\-G}!uart.h@{uart.\-h}}
+\subsubsection[{param\-\_\-\-Q\-U\-I\-T\-E\-\_\-\-C\-O\-N\-F\-I\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define param\-\_\-\-Q\-U\-I\-T\-E\-\_\-\-C\-O\-N\-F\-I\-G~(char$\ast$)\char`\"{}A\-T\-C\-N\char`\"{}}}\label{uart_8h_ab8d053e00fdf4476be4730d5390bfd73}
+
+
+Definition at line 13 of file uart.\-h.
+
+
+
+Referenced by Zig\-Bee\-::\-Config\-Zig\-Bee().
+
+\hypertarget{uart_8h_ab24fe93d414e2d2790a5ce8e5503fd7d}{\index{uart.\-h@{uart.\-h}!param\-\_\-\-U\-A\-R\-T\-\_\-\-F\-I\-L\-E@{param\-\_\-\-U\-A\-R\-T\-\_\-\-F\-I\-L\-E}}
+\index{param\-\_\-\-U\-A\-R\-T\-\_\-\-F\-I\-L\-E@{param\-\_\-\-U\-A\-R\-T\-\_\-\-F\-I\-L\-E}!uart.h@{uart.\-h}}
+\subsubsection[{param\-\_\-\-U\-A\-R\-T\-\_\-\-F\-I\-L\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define param\-\_\-\-U\-A\-R\-T\-\_\-\-F\-I\-L\-E~(const char$\ast$)\char`\"{}/dev/tty\-S0\char`\"{}}}\label{uart_8h_ab24fe93d414e2d2790a5ce8e5503fd7d}
+
+
+Definition at line 11 of file uart.\-h.
+
+
+
+Referenced by Uart\-::\-Uart().
+

@@ -1,8 +1,8 @@
 #include "mydisplay.h"
 #include "librairie.h"
 
-#include <opencv/cv.h>
-#include <opencv/highgui.h>
+#include </usr/local/include/opencv/cv.h>
+#include </usr/local/include/opencv/highgui.h>
 #include <assert.h>
 
 //threshold parameters

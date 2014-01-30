@@ -1,0 +1,462 @@
+\hypertarget{typdefUart_8h}{\section{typdef\-Uart.\-h File Reference}
+\label{typdefUart_8h}\index{typdef\-Uart.\-h@{typdef\-Uart.\-h}}
+}
+{\ttfamily \#include $<$fcntl.\-h$>$}\\*
+Include dependency graph for typdef\-Uart.\-h\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=150pt]{typdefUart_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{typdefUart_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structtramZigbee}{tram\-Zigbee}
+\item 
+struct \hyperlink{structdroneConfig}{drone\-Config}
+\item 
+struct \hyperlink{structflightCommand}{flight\-Command}
+\item 
+struct \hyperlink{structdroneState}{drone\-State}
+\item 
+struct \hyperlink{structdroneIMUData}{drone\-I\-M\-U\-Data}
+\item 
+struct \hyperlink{structdroneGPSData}{drone\-G\-P\-S\-Data}
+\item 
+struct \hyperlink{structdroneTelemeterData}{drone\-Telemeter\-Data}
+\item 
+struct \hyperlink{structdroneBatteryData}{drone\-Battery\-Data}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef unsigned int \hyperlink{typdefUart_8h_a435d1572bf3f880d55459d9805097f62}{uint32\-\_\-t}
+\item 
+typedef \hyperlink{typdefUart_8h_a435d1572bf3f880d55459d9805097f62}{uint32\-\_\-t} \hyperlink{typdefUart_8h_ae9fa5e001303f1be1c0294f26cde8caf}{port\-Tick\-Type}
+\item 
+typedef unsigned char \hyperlink{typdefUart_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\-\_\-t}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{typdefUart_8h_aa8a212aca1d1f49ff85fe2ac4b74cbb6}{zigbee\-Command\-Id} \{ \\*
+\hyperlink{typdefUart_8h_aa8a212aca1d1f49ff85fe2ac4b74cbb6a239722b6c1371469bb65b83c5aa92a31}{C\-M\-D\-\_\-\-R\-E\-B\-O\-O\-T}, 
+\hyperlink{typdefUart_8h_aa8a212aca1d1f49ff85fe2ac4b74cbb6a8bbf29869938b9b99e9e98e2685c2af0}{C\-M\-D\-\_\-\-S\-H\-U\-T\-D\-O\-W\-N}, 
+\hyperlink{typdefUart_8h_aa8a212aca1d1f49ff85fe2ac4b74cbb6abb5a621b2e8f98474199365307c1583c}{C\-M\-D\-\_\-\-V\-I\-D\-E\-O\-\_\-\-E\-N\-A\-B\-L\-E}, 
+\hyperlink{typdefUart_8h_aa8a212aca1d1f49ff85fe2ac4b74cbb6a3147545d7cf162c55a4dfdb8a9b842f8}{C\-M\-D\-\_\-\-V\-I\-D\-E\-O\-\_\-\-D\-I\-S\-A\-B\-L\-E}, 
+\\*
+\hyperlink{typdefUart_8h_aa8a212aca1d1f49ff85fe2ac4b74cbb6a4c63207daec4bc4c947f0a63d48761cb}{C\-M\-D\-\_\-\-F\-L\-T\-\_\-\-T\-A\-K\-E\-O\-F\-F}, 
+\hyperlink{typdefUart_8h_aa8a212aca1d1f49ff85fe2ac4b74cbb6a7f3b918346242aa7d684a14ba2c2b441}{C\-M\-D\-\_\-\-F\-L\-T\-\_\-\-L\-A\-N\-D\-I\-N\-G}, 
+\hyperlink{typdefUart_8h_aa8a212aca1d1f49ff85fe2ac4b74cbb6ae0ea43f407f8211a9acef5f717dcf933}{C\-M\-D\-\_\-\-F\-L\-T\-\_\-\-A\-U\-T\-O\-T\-U\-N\-I\-N\-G}, 
+\hyperlink{typdefUart_8h_aa8a212aca1d1f49ff85fe2ac4b74cbb6a79510fc7f07b52c1fef87c672e3a9d9e}{C\-M\-D\-\_\-\-R\-E\-S\-E\-T\-\_\-\-A\-U\-T\-O\-T\-U\-N\-I\-N\-G}, 
+\\*
+\hyperlink{typdefUart_8h_aa8a212aca1d1f49ff85fe2ac4b74cbb6a77553c4f9197b5892c5827a04c25a968}{C\-M\-D\-\_\-\-S\-E\-T\-\_\-\-C\-O\-N\-F\-I\-G}, 
+\hyperlink{typdefUart_8h_aa8a212aca1d1f49ff85fe2ac4b74cbb6a824277770f43b1df4f00e8ee24b1d26c}{C\-M\-D\-\_\-\-R\-E\-S\-E\-T\-\_\-\-C\-O\-N\-F\-I\-G}, 
+\hyperlink{typdefUart_8h_aa8a212aca1d1f49ff85fe2ac4b74cbb6a72722dc0846a5fc226f850301b703609}{C\-M\-D\-\_\-\-G\-E\-T\-\_\-\-C\-O\-N\-F\-I\-G}, 
+\hyperlink{typdefUart_8h_aa8a212aca1d1f49ff85fe2ac4b74cbb6aa9f5e1d3fa7a48a053cb78acdf95e57a}{C\-M\-D\-\_\-\-G\-E\-T\-\_\-\-S\-T\-A\-T\-U\-S}, 
+\\*
+\hyperlink{typdefUart_8h_aa8a212aca1d1f49ff85fe2ac4b74cbb6aefb30be8a8f1fedd95be57cd09c85398}{C\-M\-D\-\_\-\-F\-L\-T\-\_\-\-M\-A\-N\-E\-U\-V\-E\-R}, 
+\hyperlink{typdefUart_8h_aa8a212aca1d1f49ff85fe2ac4b74cbb6a7b05a94faeba01c6ca01fc3f46b740af}{C\-M\-D\-\_\-\-E\-R\-R\-\_\-\-I\-G\-N\-O\-R\-E}
+ \}
+\item 
+enum \hyperlink{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632}{tram\-Data\-Id} \{ \\*
+\hyperlink{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a7828400a62571bb441a0216f1c2e29be}{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-ul\-Max\-Angle}, 
+\hyperlink{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632af954ea9792a880b2593da24e0214708f}{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-ul\-Takeoff\-Altitude}, 
+\hyperlink{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a516ded0a007275ce22b40cba97734484}{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-ul\-Min\-Altitude}, 
+\hyperlink{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a212c640074147bd9d0d63888d538d256}{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-ul\-Crit\-Battery\-Lvl}, 
+\\*
+\hyperlink{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632adc16eed85f98b926f829decb1e7f3175}{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-ul\-Crit\-Obstacle\-Dist}, 
+\hyperlink{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a91adcfa9ba7373cb5e94cb7dad749286}{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-ul\-Crit\-Zigbee\-Signal\-Lvl}, 
+\hyperlink{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632adaafa83d8768d26374d1cca8f3c4914d}{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-Battery\-Monitoring\-Period}, 
+\hyperlink{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a70d207333012bb820cb3576f3fad9048}{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-Detect\-Obstacle\-Period}, 
+\\*
+\hyperlink{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a5c305ec532822ca3aa2ff74d0052f757}{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-Zigbee\-Receive\-Period}, 
+\hyperlink{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a22871458b110498e27a8b6244d14fd4e}{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-Flight\-Ctrl\-Period}, 
+\hyperlink{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a80df4e54f488c528a0af260bf4287bcb}{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-G\-P\-S\-Receive\-Period}, 
+\hyperlink{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a590b78e1b29c0c8dcdf6d2dc869e43aa}{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-Video\-Toggle\-Period}, 
+\\*
+\hyperlink{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a8bd205ac7401d53092ff7ffc98e754aa}{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-I\-M\-U\-Data\-Timeout}, 
+\hyperlink{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632afaa7777e435be6b471009c6cdf74c948}{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-Zigbee\-Cmd\-Timeout}, 
+\hyperlink{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632af2f4da476de6fc43e2118826e9e8bc9b}{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-Zigbee\-Receive\-Timeout}, 
+\hyperlink{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632aa01da571181efda4755ff66c627d007e}{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-Telemeter\-Timeout}, 
+\\*
+\hyperlink{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a1298f95dd257a888bde3262a86c4d136}{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-Battery\-Timeout}, 
+\hyperlink{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a9cd65980217626ee680a9055e78d4131}{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-G\-P\-S\-Timeout}, 
+\hyperlink{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a653f0737cc2f062b0f5563ee5c9023e4}{P\-A\-R\-A\-M\-\_\-\-C\-M\-D\-\_\-\-I\-D}, 
+\hyperlink{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632ab52e565f8ee0b43ab5fdba5dd32ef949}{P\-A\-R\-A\-M\-\_\-\-C\-M\-D\-\_\-\-D\-R\-O\-N\-E}, 
+\\*
+\hyperlink{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a8f2ad857311b305a40e6294736196f47}{P\-A\-R\-A\-M\-\_\-\-F\-L\-Y\-\_\-\-S\-T\-A\-T\-E}, 
+\hyperlink{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a01acce445241211e5ef11328c1b8d1e2}{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-E\-R\-R\-O\-R}, 
+\hyperlink{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632aba9ba51d13875fc28dbcb7aefb4706b2}{P\-A\-R\-A\-M\-\_\-\-I\-M\-U\-\_\-x\-Update\-Time}, 
+\hyperlink{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632af3fc4126f4c3a7540f615932cf7b6144}{P\-A\-R\-A\-M\-\_\-\-G\-P\-S\-\_\-x\-Update\-Time}, 
+\\*
+\hyperlink{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a5b5200507842f7d81676e1fc196b9a03}{P\-A\-R\-A\-M\-\_\-\-T\-E\-L\-M\-\_\-x\-Update\-Time}, 
+\hyperlink{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a84d1fa4a6fe3f1b379971515cbab995d}{P\-A\-R\-A\-M\-\_\-\-B\-A\-T\-\_\-ul\-Power\-Lvl}, 
+\hyperlink{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632aa12b8c52c4643e91d235de4613b56ee1}{P\-A\-R\-A\-M\-\_\-\-B\-A\-T\-\_\-x\-Update\-Time}
+ \}
+\item 
+enum \hyperlink{typdefUart_8h_aac9034800b5ef8e755ade03d164e3b6c}{drone\-Flt\-State} \{ \\*
+\hyperlink{typdefUart_8h_aac9034800b5ef8e755ade03d164e3b6caa5f51c4eb8c8eec3b16b058c5e29a037}{S\-T\-A\-T\-E\-\_\-\-S\-T\-A\-R\-T\-I\-N\-G}, 
+\hyperlink{typdefUart_8h_aac9034800b5ef8e755ade03d164e3b6ca6bbc8323e31abccea998c00dfe5d20a0}{S\-T\-A\-T\-E\-\_\-\-G\-R\-O\-U\-N\-D\-\_\-\-R\-D\-Y}, 
+\hyperlink{typdefUart_8h_aac9034800b5ef8e755ade03d164e3b6ca0cab358e8f859a193657d1d9b854c235}{S\-T\-A\-T\-E\-\_\-\-G\-R\-O\-U\-N\-D\-\_\-\-E\-R\-R}, 
+\hyperlink{typdefUart_8h_aac9034800b5ef8e755ade03d164e3b6ca53e82bf3cade7e163576fa495996d853}{S\-T\-A\-T\-E\-\_\-\-T\-A\-K\-E\-O\-F\-F}, 
+\\*
+\hyperlink{typdefUart_8h_aac9034800b5ef8e755ade03d164e3b6cadaf68b8f3e3aa6f6f7250e8965aa720c}{S\-T\-A\-T\-E\-\_\-\-F\-L\-I\-G\-H\-T}, 
+\hyperlink{typdefUart_8h_aac9034800b5ef8e755ade03d164e3b6cad4e643150006cdb1e80a11aa25cd860f}{S\-T\-A\-T\-E\-\_\-\-A\-U\-T\-O\-T\-U\-N\-I\-N\-G}, 
+\hyperlink{typdefUart_8h_aac9034800b5ef8e755ade03d164e3b6caed26b59c0afa78ad7080428ba383e2fa}{S\-T\-A\-T\-E\-\_\-\-F\-L\-I\-G\-H\-T\-\_\-\-E\-R\-R}, 
+\hyperlink{typdefUart_8h_aac9034800b5ef8e755ade03d164e3b6ca8022b6b06eea757154be17d06c5441b7}{S\-T\-A\-T\-E\-\_\-\-L\-A\-N\-D\-I\-N\-G}
+ \}
+\item 
+enum \hyperlink{typdefUart_8h_aad4124e5a34e185d704fe88506ecf352}{drone\-Error} \{ \\*
+\hyperlink{typdefUart_8h_aad4124e5a34e185d704fe88506ecf352a4eb8e22beceecc6e83a76fc46f56e03a}{D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-N\-O\-N\-E} =  0x00, 
+\hyperlink{typdefUart_8h_aad4124e5a34e185d704fe88506ecf352a6490e84f47f8baed82eb8ec0c3635ee5}{D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-T\-L\-M\-\_\-\-T\-O\-U\-T} =  0x01, 
+\hyperlink{typdefUart_8h_aad4124e5a34e185d704fe88506ecf352a475a89ae9e8123cb50bbcd0fd519dd66}{D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-T\-L\-M\-\_\-\-I\-N\-V\-A\-L} =  0x02, 
+\hyperlink{typdefUart_8h_aad4124e5a34e185d704fe88506ecf352a795b43a2f0a142565346125d00a27d60}{D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-I\-M\-U\-\_\-\-T\-O\-U\-T} =  0x04, 
+\\*
+\hyperlink{typdefUart_8h_aad4124e5a34e185d704fe88506ecf352a65d6f68d28c3555056d18b2c273ac433}{D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-I\-M\-U\-\_\-\-I\-N\-V\-A\-L} =  0x08, 
+\hyperlink{typdefUart_8h_aad4124e5a34e185d704fe88506ecf352af0e3bb3a5358ffbf2efad0dbb7f6e45a}{D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-G\-P\-S\-\_\-\-T\-O\-U\-T} =  0x10, 
+\hyperlink{typdefUart_8h_aad4124e5a34e185d704fe88506ecf352a816cf76d244f3951ede4e2f8fb204af4}{D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-G\-P\-S\-\_\-\-I\-N\-V\-A\-L} =  0x20, 
+\hyperlink{typdefUart_8h_aad4124e5a34e185d704fe88506ecf352a4048ab78d8443f714af4f6cf9f5a1c0c}{D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-C\-M\-D\-\_\-\-T\-O\-U\-T} =  0x40, 
+\\*
+\hyperlink{typdefUart_8h_aad4124e5a34e185d704fe88506ecf352ac6ac67da7d10405e907c3672d84b9186}{D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-B\-A\-T\-T\-\_\-\-T\-O\-U\-T} =  0x80, 
+\hyperlink{typdefUart_8h_aad4124e5a34e185d704fe88506ecf352a85117dc073a0b9e9143d5fc903512fb2}{D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-B\-A\-T\-T\-\_\-\-I\-N\-V\-A\-L} =  0x100, 
+\hyperlink{typdefUart_8h_aad4124e5a34e185d704fe88506ecf352a22848fed5eebff66eaeb5e262435ce77}{D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-R\-X\-\_\-\-T\-O\-U\-T} =  0x200, 
+\hyperlink{typdefUart_8h_aad4124e5a34e185d704fe88506ecf352a80138de1c3a91db00596e22a7544e0b2}{D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-C\-O\-N\-F\-I\-G} =  0x400, 
+\\*
+\hyperlink{typdefUart_8h_aad4124e5a34e185d704fe88506ecf352ad87cede38525b6afdd6dc98bea304204}{D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-C\-M\-D} =  0x800, 
+\hyperlink{typdefUart_8h_aad4124e5a34e185d704fe88506ecf352a68060eb9b68ae5cd82c632ff11429c2f}{D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-I\-N\-I\-T} =  0x8000
+ \}
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{typdefUart_8h_ae9fa5e001303f1be1c0294f26cde8caf}{\index{typdef\-Uart.\-h@{typdef\-Uart.\-h}!port\-Tick\-Type@{port\-Tick\-Type}}
+\index{port\-Tick\-Type@{port\-Tick\-Type}!typdefUart.h@{typdef\-Uart.\-h}}
+\subsubsection[{port\-Tick\-Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf uint32\-\_\-t} {\bf port\-Tick\-Type}}}\label{typdefUart_8h_ae9fa5e001303f1be1c0294f26cde8caf}
+
+
+Definition at line 10 of file typdef\-Uart.\-h.
+
+\hypertarget{typdefUart_8h_a435d1572bf3f880d55459d9805097f62}{\index{typdef\-Uart.\-h@{typdef\-Uart.\-h}!uint32\-\_\-t@{uint32\-\_\-t}}
+\index{uint32\-\_\-t@{uint32\-\_\-t}!typdefUart.h@{typdef\-Uart.\-h}}
+\subsubsection[{uint32\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned int {\bf uint32\-\_\-t}}}\label{typdefUart_8h_a435d1572bf3f880d55459d9805097f62}
+
+
+Definition at line 9 of file typdef\-Uart.\-h.
+
+\hypertarget{typdefUart_8h_aba7bc1797add20fe3efdf37ced1182c5}{\index{typdef\-Uart.\-h@{typdef\-Uart.\-h}!uint8\-\_\-t@{uint8\-\_\-t}}
+\index{uint8\-\_\-t@{uint8\-\_\-t}!typdefUart.h@{typdef\-Uart.\-h}}
+\subsubsection[{uint8\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned char {\bf uint8\-\_\-t}}}\label{typdefUart_8h_aba7bc1797add20fe3efdf37ced1182c5}
+
+
+Definition at line 12 of file typdef\-Uart.\-h.
+
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{typdefUart_8h_aad4124e5a34e185d704fe88506ecf352}{\index{typdef\-Uart.\-h@{typdef\-Uart.\-h}!drone\-Error@{drone\-Error}}
+\index{drone\-Error@{drone\-Error}!typdefUart.h@{typdef\-Uart.\-h}}
+\subsubsection[{drone\-Error}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf drone\-Error}}}\label{typdefUart_8h_aad4124e5a34e185d704fe88506ecf352}
+\begin{Desc}
+\item[Enumerator\-: ]\par
+\begin{description}
+\index{D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-N\-O\-N\-E@{D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-N\-O\-N\-E}!typdef\-Uart.\-h@{typdef\-Uart.\-h}}\index{typdef\-Uart.\-h@{typdef\-Uart.\-h}!D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-N\-O\-N\-E@{D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-N\-O\-N\-E}}\item[{\em 
+\hypertarget{typdefUart_8h_aad4124e5a34e185d704fe88506ecf352a4eb8e22beceecc6e83a76fc46f56e03a}{D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-N\-O\-N\-E}\label{typdefUart_8h_aad4124e5a34e185d704fe88506ecf352a4eb8e22beceecc6e83a76fc46f56e03a}
+}]\index{D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-T\-L\-M\-\_\-\-T\-O\-U\-T@{D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-T\-L\-M\-\_\-\-T\-O\-U\-T}!typdef\-Uart.\-h@{typdef\-Uart.\-h}}\index{typdef\-Uart.\-h@{typdef\-Uart.\-h}!D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-T\-L\-M\-\_\-\-T\-O\-U\-T@{D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-T\-L\-M\-\_\-\-T\-O\-U\-T}}\item[{\em 
+\hypertarget{typdefUart_8h_aad4124e5a34e185d704fe88506ecf352a6490e84f47f8baed82eb8ec0c3635ee5}{D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-T\-L\-M\-\_\-\-T\-O\-U\-T}\label{typdefUart_8h_aad4124e5a34e185d704fe88506ecf352a6490e84f47f8baed82eb8ec0c3635ee5}
+}]\index{D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-T\-L\-M\-\_\-\-I\-N\-V\-A\-L@{D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-T\-L\-M\-\_\-\-I\-N\-V\-A\-L}!typdef\-Uart.\-h@{typdef\-Uart.\-h}}\index{typdef\-Uart.\-h@{typdef\-Uart.\-h}!D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-T\-L\-M\-\_\-\-I\-N\-V\-A\-L@{D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-T\-L\-M\-\_\-\-I\-N\-V\-A\-L}}\item[{\em 
+\hypertarget{typdefUart_8h_aad4124e5a34e185d704fe88506ecf352a475a89ae9e8123cb50bbcd0fd519dd66}{D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-T\-L\-M\-\_\-\-I\-N\-V\-A\-L}\label{typdefUart_8h_aad4124e5a34e185d704fe88506ecf352a475a89ae9e8123cb50bbcd0fd519dd66}
+}]\index{D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-I\-M\-U\-\_\-\-T\-O\-U\-T@{D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-I\-M\-U\-\_\-\-T\-O\-U\-T}!typdef\-Uart.\-h@{typdef\-Uart.\-h}}\index{typdef\-Uart.\-h@{typdef\-Uart.\-h}!D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-I\-M\-U\-\_\-\-T\-O\-U\-T@{D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-I\-M\-U\-\_\-\-T\-O\-U\-T}}\item[{\em 
+\hypertarget{typdefUart_8h_aad4124e5a34e185d704fe88506ecf352a795b43a2f0a142565346125d00a27d60}{D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-I\-M\-U\-\_\-\-T\-O\-U\-T}\label{typdefUart_8h_aad4124e5a34e185d704fe88506ecf352a795b43a2f0a142565346125d00a27d60}
+}]\index{D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-I\-M\-U\-\_\-\-I\-N\-V\-A\-L@{D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-I\-M\-U\-\_\-\-I\-N\-V\-A\-L}!typdef\-Uart.\-h@{typdef\-Uart.\-h}}\index{typdef\-Uart.\-h@{typdef\-Uart.\-h}!D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-I\-M\-U\-\_\-\-I\-N\-V\-A\-L@{D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-I\-M\-U\-\_\-\-I\-N\-V\-A\-L}}\item[{\em 
+\hypertarget{typdefUart_8h_aad4124e5a34e185d704fe88506ecf352a65d6f68d28c3555056d18b2c273ac433}{D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-I\-M\-U\-\_\-\-I\-N\-V\-A\-L}\label{typdefUart_8h_aad4124e5a34e185d704fe88506ecf352a65d6f68d28c3555056d18b2c273ac433}
+}]\index{D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-G\-P\-S\-\_\-\-T\-O\-U\-T@{D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-G\-P\-S\-\_\-\-T\-O\-U\-T}!typdef\-Uart.\-h@{typdef\-Uart.\-h}}\index{typdef\-Uart.\-h@{typdef\-Uart.\-h}!D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-G\-P\-S\-\_\-\-T\-O\-U\-T@{D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-G\-P\-S\-\_\-\-T\-O\-U\-T}}\item[{\em 
+\hypertarget{typdefUart_8h_aad4124e5a34e185d704fe88506ecf352af0e3bb3a5358ffbf2efad0dbb7f6e45a}{D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-G\-P\-S\-\_\-\-T\-O\-U\-T}\label{typdefUart_8h_aad4124e5a34e185d704fe88506ecf352af0e3bb3a5358ffbf2efad0dbb7f6e45a}
+}]\index{D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-G\-P\-S\-\_\-\-I\-N\-V\-A\-L@{D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-G\-P\-S\-\_\-\-I\-N\-V\-A\-L}!typdef\-Uart.\-h@{typdef\-Uart.\-h}}\index{typdef\-Uart.\-h@{typdef\-Uart.\-h}!D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-G\-P\-S\-\_\-\-I\-N\-V\-A\-L@{D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-G\-P\-S\-\_\-\-I\-N\-V\-A\-L}}\item[{\em 
+\hypertarget{typdefUart_8h_aad4124e5a34e185d704fe88506ecf352a816cf76d244f3951ede4e2f8fb204af4}{D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-G\-P\-S\-\_\-\-I\-N\-V\-A\-L}\label{typdefUart_8h_aad4124e5a34e185d704fe88506ecf352a816cf76d244f3951ede4e2f8fb204af4}
+}]\index{D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-C\-M\-D\-\_\-\-T\-O\-U\-T@{D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-C\-M\-D\-\_\-\-T\-O\-U\-T}!typdef\-Uart.\-h@{typdef\-Uart.\-h}}\index{typdef\-Uart.\-h@{typdef\-Uart.\-h}!D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-C\-M\-D\-\_\-\-T\-O\-U\-T@{D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-C\-M\-D\-\_\-\-T\-O\-U\-T}}\item[{\em 
+\hypertarget{typdefUart_8h_aad4124e5a34e185d704fe88506ecf352a4048ab78d8443f714af4f6cf9f5a1c0c}{D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-C\-M\-D\-\_\-\-T\-O\-U\-T}\label{typdefUart_8h_aad4124e5a34e185d704fe88506ecf352a4048ab78d8443f714af4f6cf9f5a1c0c}
+}]\index{D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-B\-A\-T\-T\-\_\-\-T\-O\-U\-T@{D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-B\-A\-T\-T\-\_\-\-T\-O\-U\-T}!typdef\-Uart.\-h@{typdef\-Uart.\-h}}\index{typdef\-Uart.\-h@{typdef\-Uart.\-h}!D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-B\-A\-T\-T\-\_\-\-T\-O\-U\-T@{D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-B\-A\-T\-T\-\_\-\-T\-O\-U\-T}}\item[{\em 
+\hypertarget{typdefUart_8h_aad4124e5a34e185d704fe88506ecf352ac6ac67da7d10405e907c3672d84b9186}{D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-B\-A\-T\-T\-\_\-\-T\-O\-U\-T}\label{typdefUart_8h_aad4124e5a34e185d704fe88506ecf352ac6ac67da7d10405e907c3672d84b9186}
+}]\index{D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-B\-A\-T\-T\-\_\-\-I\-N\-V\-A\-L@{D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-B\-A\-T\-T\-\_\-\-I\-N\-V\-A\-L}!typdef\-Uart.\-h@{typdef\-Uart.\-h}}\index{typdef\-Uart.\-h@{typdef\-Uart.\-h}!D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-B\-A\-T\-T\-\_\-\-I\-N\-V\-A\-L@{D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-B\-A\-T\-T\-\_\-\-I\-N\-V\-A\-L}}\item[{\em 
+\hypertarget{typdefUart_8h_aad4124e5a34e185d704fe88506ecf352a85117dc073a0b9e9143d5fc903512fb2}{D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-B\-A\-T\-T\-\_\-\-I\-N\-V\-A\-L}\label{typdefUart_8h_aad4124e5a34e185d704fe88506ecf352a85117dc073a0b9e9143d5fc903512fb2}
+}]\index{D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-R\-X\-\_\-\-T\-O\-U\-T@{D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-R\-X\-\_\-\-T\-O\-U\-T}!typdef\-Uart.\-h@{typdef\-Uart.\-h}}\index{typdef\-Uart.\-h@{typdef\-Uart.\-h}!D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-R\-X\-\_\-\-T\-O\-U\-T@{D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-R\-X\-\_\-\-T\-O\-U\-T}}\item[{\em 
+\hypertarget{typdefUart_8h_aad4124e5a34e185d704fe88506ecf352a22848fed5eebff66eaeb5e262435ce77}{D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-R\-X\-\_\-\-T\-O\-U\-T}\label{typdefUart_8h_aad4124e5a34e185d704fe88506ecf352a22848fed5eebff66eaeb5e262435ce77}
+}]\index{D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-C\-O\-N\-F\-I\-G@{D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-C\-O\-N\-F\-I\-G}!typdef\-Uart.\-h@{typdef\-Uart.\-h}}\index{typdef\-Uart.\-h@{typdef\-Uart.\-h}!D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-C\-O\-N\-F\-I\-G@{D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-C\-O\-N\-F\-I\-G}}\item[{\em 
+\hypertarget{typdefUart_8h_aad4124e5a34e185d704fe88506ecf352a80138de1c3a91db00596e22a7544e0b2}{D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-C\-O\-N\-F\-I\-G}\label{typdefUart_8h_aad4124e5a34e185d704fe88506ecf352a80138de1c3a91db00596e22a7544e0b2}
+}]\index{D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-C\-M\-D@{D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-C\-M\-D}!typdef\-Uart.\-h@{typdef\-Uart.\-h}}\index{typdef\-Uart.\-h@{typdef\-Uart.\-h}!D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-C\-M\-D@{D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-C\-M\-D}}\item[{\em 
+\hypertarget{typdefUart_8h_aad4124e5a34e185d704fe88506ecf352ad87cede38525b6afdd6dc98bea304204}{D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-C\-M\-D}\label{typdefUart_8h_aad4124e5a34e185d704fe88506ecf352ad87cede38525b6afdd6dc98bea304204}
+}]\index{D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-I\-N\-I\-T@{D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-I\-N\-I\-T}!typdef\-Uart.\-h@{typdef\-Uart.\-h}}\index{typdef\-Uart.\-h@{typdef\-Uart.\-h}!D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-I\-N\-I\-T@{D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-I\-N\-I\-T}}\item[{\em 
+\hypertarget{typdefUart_8h_aad4124e5a34e185d704fe88506ecf352a68060eb9b68ae5cd82c632ff11429c2f}{D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-I\-N\-I\-T}\label{typdefUart_8h_aad4124e5a34e185d704fe88506ecf352a68060eb9b68ae5cd82c632ff11429c2f}
+}]\end{description}
+\end{Desc}
+
+
+
+Definition at line 152 of file typdef\-Uart.\-h.
+
+
+\begin{DoxyCode}
+\{
+\textcolor{comment}{/* Everything is shiny */}
+\hyperlink{typdefUart_8h_aad4124e5a34e185d704fe88506ecf352a4eb8e22beceecc6e83a76fc46f56e03a}{DRN\_ERR\_NONE} = 0x00,
+\textcolor{comment}{/* Timeout of telemeter data */}
+\hyperlink{typdefUart_8h_aad4124e5a34e185d704fe88506ecf352a6490e84f47f8baed82eb8ec0c3635ee5}{DRN\_ERR\_TLM\_TOUT} = 0x01,
+\textcolor{comment}{/* Data out of valid range */}
+\hyperlink{typdefUart_8h_aad4124e5a34e185d704fe88506ecf352a475a89ae9e8123cb50bbcd0fd519dd66}{DRN\_ERR\_TLM\_INVAL} = 0x02,
+\textcolor{comment}{/* Timeout of IMU data */}
+\hyperlink{typdefUart_8h_aad4124e5a34e185d704fe88506ecf352a795b43a2f0a142565346125d00a27d60}{DRN\_ERR\_IMU\_TOUT} = 0x04,
+\textcolor{comment}{/* Data out of valid range */}
+\hyperlink{typdefUart_8h_aad4124e5a34e185d704fe88506ecf352a65d6f68d28c3555056d18b2c273ac433}{DRN\_ERR\_IMU\_INVAL} = 0x08,
+\textcolor{comment}{/* Timeout of GPS data */}
+\hyperlink{typdefUart_8h_aad4124e5a34e185d704fe88506ecf352af0e3bb3a5358ffbf2efad0dbb7f6e45a}{DRN\_ERR\_GPS\_TOUT} = 0x10,
+\textcolor{comment}{/* Data out of valid range */}
+\hyperlink{typdefUart_8h_aad4124e5a34e185d704fe88506ecf352a816cf76d244f3951ede4e2f8fb204af4}{DRN\_ERR\_GPS\_INVAL} = 0x20,
+\textcolor{comment}{/* Timeout of telemeter data */}
+\hyperlink{typdefUart_8h_aad4124e5a34e185d704fe88506ecf352a4048ab78d8443f714af4f6cf9f5a1c0c}{DRN\_ERR\_CMD\_TOUT} = 0x40,
+\textcolor{comment}{/* Timeout of battery level */}
+\hyperlink{typdefUart_8h_aad4124e5a34e185d704fe88506ecf352ac6ac67da7d10405e907c3672d84b9186}{DRN\_ERR\_BATT\_TOUT} = 0x80,
+\textcolor{comment}{/* Data out of valid range */}
+\hyperlink{typdefUart_8h_aad4124e5a34e185d704fe88506ecf352a85117dc073a0b9e9143d5fc903512fb2}{DRN\_ERR\_BATT\_INVAL} = 0x100,
+\textcolor{comment}{/* Timeout of base-drone communication data */}
+\hyperlink{typdefUart_8h_aad4124e5a34e185d704fe88506ecf352a22848fed5eebff66eaeb5e262435ce77}{DRN\_ERR\_RX\_TOUT} = 0x200,
+\textcolor{comment}{/* Initialization errors */}
+\hyperlink{typdefUart_8h_aad4124e5a34e185d704fe88506ecf352a80138de1c3a91db00596e22a7544e0b2}{DRN\_ERR\_CONFIG} = 0x400,
+\hyperlink{typdefUart_8h_aad4124e5a34e185d704fe88506ecf352ad87cede38525b6afdd6dc98bea304204}{DRN\_ERR\_CMD} = 0x800,
+\hyperlink{typdefUart_8h_aad4124e5a34e185d704fe88506ecf352a68060eb9b68ae5cd82c632ff11429c2f}{DRN\_ERR\_INIT} = 0x8000
+\textcolor{comment}{/* No video error because we don't have much to do with it */}
+\};
+\end{DoxyCode}
+\hypertarget{typdefUart_8h_aac9034800b5ef8e755ade03d164e3b6c}{\index{typdef\-Uart.\-h@{typdef\-Uart.\-h}!drone\-Flt\-State@{drone\-Flt\-State}}
+\index{drone\-Flt\-State@{drone\-Flt\-State}!typdefUart.h@{typdef\-Uart.\-h}}
+\subsubsection[{drone\-Flt\-State}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf drone\-Flt\-State}}}\label{typdefUart_8h_aac9034800b5ef8e755ade03d164e3b6c}
+\begin{Desc}
+\item[Enumerator\-: ]\par
+\begin{description}
+\index{S\-T\-A\-T\-E\-\_\-\-S\-T\-A\-R\-T\-I\-N\-G@{S\-T\-A\-T\-E\-\_\-\-S\-T\-A\-R\-T\-I\-N\-G}!typdef\-Uart.\-h@{typdef\-Uart.\-h}}\index{typdef\-Uart.\-h@{typdef\-Uart.\-h}!S\-T\-A\-T\-E\-\_\-\-S\-T\-A\-R\-T\-I\-N\-G@{S\-T\-A\-T\-E\-\_\-\-S\-T\-A\-R\-T\-I\-N\-G}}\item[{\em 
+\hypertarget{typdefUart_8h_aac9034800b5ef8e755ade03d164e3b6caa5f51c4eb8c8eec3b16b058c5e29a037}{S\-T\-A\-T\-E\-\_\-\-S\-T\-A\-R\-T\-I\-N\-G}\label{typdefUart_8h_aac9034800b5ef8e755ade03d164e3b6caa5f51c4eb8c8eec3b16b058c5e29a037}
+}]\index{S\-T\-A\-T\-E\-\_\-\-G\-R\-O\-U\-N\-D\-\_\-\-R\-D\-Y@{S\-T\-A\-T\-E\-\_\-\-G\-R\-O\-U\-N\-D\-\_\-\-R\-D\-Y}!typdef\-Uart.\-h@{typdef\-Uart.\-h}}\index{typdef\-Uart.\-h@{typdef\-Uart.\-h}!S\-T\-A\-T\-E\-\_\-\-G\-R\-O\-U\-N\-D\-\_\-\-R\-D\-Y@{S\-T\-A\-T\-E\-\_\-\-G\-R\-O\-U\-N\-D\-\_\-\-R\-D\-Y}}\item[{\em 
+\hypertarget{typdefUart_8h_aac9034800b5ef8e755ade03d164e3b6ca6bbc8323e31abccea998c00dfe5d20a0}{S\-T\-A\-T\-E\-\_\-\-G\-R\-O\-U\-N\-D\-\_\-\-R\-D\-Y}\label{typdefUart_8h_aac9034800b5ef8e755ade03d164e3b6ca6bbc8323e31abccea998c00dfe5d20a0}
+}]\index{S\-T\-A\-T\-E\-\_\-\-G\-R\-O\-U\-N\-D\-\_\-\-E\-R\-R@{S\-T\-A\-T\-E\-\_\-\-G\-R\-O\-U\-N\-D\-\_\-\-E\-R\-R}!typdef\-Uart.\-h@{typdef\-Uart.\-h}}\index{typdef\-Uart.\-h@{typdef\-Uart.\-h}!S\-T\-A\-T\-E\-\_\-\-G\-R\-O\-U\-N\-D\-\_\-\-E\-R\-R@{S\-T\-A\-T\-E\-\_\-\-G\-R\-O\-U\-N\-D\-\_\-\-E\-R\-R}}\item[{\em 
+\hypertarget{typdefUart_8h_aac9034800b5ef8e755ade03d164e3b6ca0cab358e8f859a193657d1d9b854c235}{S\-T\-A\-T\-E\-\_\-\-G\-R\-O\-U\-N\-D\-\_\-\-E\-R\-R}\label{typdefUart_8h_aac9034800b5ef8e755ade03d164e3b6ca0cab358e8f859a193657d1d9b854c235}
+}]\index{S\-T\-A\-T\-E\-\_\-\-T\-A\-K\-E\-O\-F\-F@{S\-T\-A\-T\-E\-\_\-\-T\-A\-K\-E\-O\-F\-F}!typdef\-Uart.\-h@{typdef\-Uart.\-h}}\index{typdef\-Uart.\-h@{typdef\-Uart.\-h}!S\-T\-A\-T\-E\-\_\-\-T\-A\-K\-E\-O\-F\-F@{S\-T\-A\-T\-E\-\_\-\-T\-A\-K\-E\-O\-F\-F}}\item[{\em 
+\hypertarget{typdefUart_8h_aac9034800b5ef8e755ade03d164e3b6ca53e82bf3cade7e163576fa495996d853}{S\-T\-A\-T\-E\-\_\-\-T\-A\-K\-E\-O\-F\-F}\label{typdefUart_8h_aac9034800b5ef8e755ade03d164e3b6ca53e82bf3cade7e163576fa495996d853}
+}]\index{S\-T\-A\-T\-E\-\_\-\-F\-L\-I\-G\-H\-T@{S\-T\-A\-T\-E\-\_\-\-F\-L\-I\-G\-H\-T}!typdef\-Uart.\-h@{typdef\-Uart.\-h}}\index{typdef\-Uart.\-h@{typdef\-Uart.\-h}!S\-T\-A\-T\-E\-\_\-\-F\-L\-I\-G\-H\-T@{S\-T\-A\-T\-E\-\_\-\-F\-L\-I\-G\-H\-T}}\item[{\em 
+\hypertarget{typdefUart_8h_aac9034800b5ef8e755ade03d164e3b6cadaf68b8f3e3aa6f6f7250e8965aa720c}{S\-T\-A\-T\-E\-\_\-\-F\-L\-I\-G\-H\-T}\label{typdefUart_8h_aac9034800b5ef8e755ade03d164e3b6cadaf68b8f3e3aa6f6f7250e8965aa720c}
+}]\index{S\-T\-A\-T\-E\-\_\-\-A\-U\-T\-O\-T\-U\-N\-I\-N\-G@{S\-T\-A\-T\-E\-\_\-\-A\-U\-T\-O\-T\-U\-N\-I\-N\-G}!typdef\-Uart.\-h@{typdef\-Uart.\-h}}\index{typdef\-Uart.\-h@{typdef\-Uart.\-h}!S\-T\-A\-T\-E\-\_\-\-A\-U\-T\-O\-T\-U\-N\-I\-N\-G@{S\-T\-A\-T\-E\-\_\-\-A\-U\-T\-O\-T\-U\-N\-I\-N\-G}}\item[{\em 
+\hypertarget{typdefUart_8h_aac9034800b5ef8e755ade03d164e3b6cad4e643150006cdb1e80a11aa25cd860f}{S\-T\-A\-T\-E\-\_\-\-A\-U\-T\-O\-T\-U\-N\-I\-N\-G}\label{typdefUart_8h_aac9034800b5ef8e755ade03d164e3b6cad4e643150006cdb1e80a11aa25cd860f}
+}]\index{S\-T\-A\-T\-E\-\_\-\-F\-L\-I\-G\-H\-T\-\_\-\-E\-R\-R@{S\-T\-A\-T\-E\-\_\-\-F\-L\-I\-G\-H\-T\-\_\-\-E\-R\-R}!typdef\-Uart.\-h@{typdef\-Uart.\-h}}\index{typdef\-Uart.\-h@{typdef\-Uart.\-h}!S\-T\-A\-T\-E\-\_\-\-F\-L\-I\-G\-H\-T\-\_\-\-E\-R\-R@{S\-T\-A\-T\-E\-\_\-\-F\-L\-I\-G\-H\-T\-\_\-\-E\-R\-R}}\item[{\em 
+\hypertarget{typdefUart_8h_aac9034800b5ef8e755ade03d164e3b6caed26b59c0afa78ad7080428ba383e2fa}{S\-T\-A\-T\-E\-\_\-\-F\-L\-I\-G\-H\-T\-\_\-\-E\-R\-R}\label{typdefUart_8h_aac9034800b5ef8e755ade03d164e3b6caed26b59c0afa78ad7080428ba383e2fa}
+}]\index{S\-T\-A\-T\-E\-\_\-\-L\-A\-N\-D\-I\-N\-G@{S\-T\-A\-T\-E\-\_\-\-L\-A\-N\-D\-I\-N\-G}!typdef\-Uart.\-h@{typdef\-Uart.\-h}}\index{typdef\-Uart.\-h@{typdef\-Uart.\-h}!S\-T\-A\-T\-E\-\_\-\-L\-A\-N\-D\-I\-N\-G@{S\-T\-A\-T\-E\-\_\-\-L\-A\-N\-D\-I\-N\-G}}\item[{\em 
+\hypertarget{typdefUart_8h_aac9034800b5ef8e755ade03d164e3b6ca8022b6b06eea757154be17d06c5441b7}{S\-T\-A\-T\-E\-\_\-\-L\-A\-N\-D\-I\-N\-G}\label{typdefUart_8h_aac9034800b5ef8e755ade03d164e3b6ca8022b6b06eea757154be17d06c5441b7}
+}]\end{description}
+\end{Desc}
+
+
+
+Definition at line 126 of file typdef\-Uart.\-h.
+
+
+\begin{DoxyCode}
+\{
+\textcolor{comment}{/* Initialization phase */}
+\hyperlink{typdefUart_8h_aac9034800b5ef8e755ade03d164e3b6caa5f51c4eb8c8eec3b16b058c5e29a037}{STATE\_STARTING},
+\textcolor{comment}{/* Initialization successful */}
+\hyperlink{typdefUart_8h_aac9034800b5ef8e755ade03d164e3b6ca6bbc8323e31abccea998c00dfe5d20a0}{STATE\_GROUND\_RDY},
+\textcolor{comment}{/* Error while landed */}
+\hyperlink{typdefUart_8h_aac9034800b5ef8e755ade03d164e3b6ca0cab358e8f859a193657d1d9b854c235}{STATE\_GROUND\_ERR},
+\textcolor{comment}{/* Must be landed */}
+\hyperlink{typdefUart_8h_aac9034800b5ef8e755ade03d164e3b6ca53e82bf3cade7e163576fa495996d853}{STATE\_TAKEOFF},
+\textcolor{comment}{/* Normal flight, stationary flight if no flight command received */}
+\hyperlink{typdefUart_8h_aac9034800b5ef8e755ade03d164e3b6cadaf68b8f3e3aa6f6f7250e8965aa720c}{STATE\_FLIGHT},
+\textcolor{comment}{/* PID parameters autotuning */}
+\hyperlink{typdefUart_8h_aac9034800b5ef8e755ade03d164e3b6cad4e643150006cdb1e80a11aa25cd860f}{STATE\_AUTOTUNING},
+\textcolor{comment}{/* Error while flying - triggers emergency landing */}
+\hyperlink{typdefUart_8h_aac9034800b5ef8e755ade03d164e3b6caed26b59c0afa78ad7080428ba383e2fa}{STATE\_FLIGHT\_ERR},
+\textcolor{comment}{/* Must be flying */}
+\hyperlink{typdefUart_8h_aac9034800b5ef8e755ade03d164e3b6ca8022b6b06eea757154be17d06c5441b7}{STATE\_LANDING}
+\};
+\end{DoxyCode}
+\hypertarget{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632}{\index{typdef\-Uart.\-h@{typdef\-Uart.\-h}!tram\-Data\-Id@{tram\-Data\-Id}}
+\index{tram\-Data\-Id@{tram\-Data\-Id}!typdefUart.h@{typdef\-Uart.\-h}}
+\subsubsection[{tram\-Data\-Id}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf tram\-Data\-Id}}}\label{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632}
+\begin{Desc}
+\item[Enumerator\-: ]\par
+\begin{description}
+\index{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-ul\-Max\-Angle@{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-ul\-Max\-Angle}!typdef\-Uart.\-h@{typdef\-Uart.\-h}}\index{typdef\-Uart.\-h@{typdef\-Uart.\-h}!P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-ul\-Max\-Angle@{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-ul\-Max\-Angle}}\item[{\em 
+\hypertarget{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a7828400a62571bb441a0216f1c2e29be}{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-ul\-Max\-Angle}\label{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a7828400a62571bb441a0216f1c2e29be}
+}]\index{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-ul\-Takeoff\-Altitude@{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-ul\-Takeoff\-Altitude}!typdef\-Uart.\-h@{typdef\-Uart.\-h}}\index{typdef\-Uart.\-h@{typdef\-Uart.\-h}!P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-ul\-Takeoff\-Altitude@{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-ul\-Takeoff\-Altitude}}\item[{\em 
+\hypertarget{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632af954ea9792a880b2593da24e0214708f}{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-ul\-Takeoff\-Altitude}\label{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632af954ea9792a880b2593da24e0214708f}
+}]\index{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-ul\-Min\-Altitude@{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-ul\-Min\-Altitude}!typdef\-Uart.\-h@{typdef\-Uart.\-h}}\index{typdef\-Uart.\-h@{typdef\-Uart.\-h}!P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-ul\-Min\-Altitude@{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-ul\-Min\-Altitude}}\item[{\em 
+\hypertarget{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a516ded0a007275ce22b40cba97734484}{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-ul\-Min\-Altitude}\label{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a516ded0a007275ce22b40cba97734484}
+}]\index{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-ul\-Crit\-Battery\-Lvl@{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-ul\-Crit\-Battery\-Lvl}!typdef\-Uart.\-h@{typdef\-Uart.\-h}}\index{typdef\-Uart.\-h@{typdef\-Uart.\-h}!P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-ul\-Crit\-Battery\-Lvl@{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-ul\-Crit\-Battery\-Lvl}}\item[{\em 
+\hypertarget{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a212c640074147bd9d0d63888d538d256}{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-ul\-Crit\-Battery\-Lvl}\label{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a212c640074147bd9d0d63888d538d256}
+}]\index{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-ul\-Crit\-Obstacle\-Dist@{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-ul\-Crit\-Obstacle\-Dist}!typdef\-Uart.\-h@{typdef\-Uart.\-h}}\index{typdef\-Uart.\-h@{typdef\-Uart.\-h}!P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-ul\-Crit\-Obstacle\-Dist@{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-ul\-Crit\-Obstacle\-Dist}}\item[{\em 
+\hypertarget{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632adc16eed85f98b926f829decb1e7f3175}{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-ul\-Crit\-Obstacle\-Dist}\label{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632adc16eed85f98b926f829decb1e7f3175}
+}]\index{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-ul\-Crit\-Zigbee\-Signal\-Lvl@{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-ul\-Crit\-Zigbee\-Signal\-Lvl}!typdef\-Uart.\-h@{typdef\-Uart.\-h}}\index{typdef\-Uart.\-h@{typdef\-Uart.\-h}!P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-ul\-Crit\-Zigbee\-Signal\-Lvl@{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-ul\-Crit\-Zigbee\-Signal\-Lvl}}\item[{\em 
+\hypertarget{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a91adcfa9ba7373cb5e94cb7dad749286}{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-ul\-Crit\-Zigbee\-Signal\-Lvl}\label{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a91adcfa9ba7373cb5e94cb7dad749286}
+}]\index{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-Battery\-Monitoring\-Period@{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-Battery\-Monitoring\-Period}!typdef\-Uart.\-h@{typdef\-Uart.\-h}}\index{typdef\-Uart.\-h@{typdef\-Uart.\-h}!P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-Battery\-Monitoring\-Period@{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-Battery\-Monitoring\-Period}}\item[{\em 
+\hypertarget{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632adaafa83d8768d26374d1cca8f3c4914d}{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-Battery\-Monitoring\-Period}\label{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632adaafa83d8768d26374d1cca8f3c4914d}
+}]\index{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-Detect\-Obstacle\-Period@{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-Detect\-Obstacle\-Period}!typdef\-Uart.\-h@{typdef\-Uart.\-h}}\index{typdef\-Uart.\-h@{typdef\-Uart.\-h}!P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-Detect\-Obstacle\-Period@{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-Detect\-Obstacle\-Period}}\item[{\em 
+\hypertarget{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a70d207333012bb820cb3576f3fad9048}{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-Detect\-Obstacle\-Period}\label{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a70d207333012bb820cb3576f3fad9048}
+}]\index{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-Zigbee\-Receive\-Period@{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-Zigbee\-Receive\-Period}!typdef\-Uart.\-h@{typdef\-Uart.\-h}}\index{typdef\-Uart.\-h@{typdef\-Uart.\-h}!P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-Zigbee\-Receive\-Period@{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-Zigbee\-Receive\-Period}}\item[{\em 
+\hypertarget{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a5c305ec532822ca3aa2ff74d0052f757}{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-Zigbee\-Receive\-Period}\label{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a5c305ec532822ca3aa2ff74d0052f757}
+}]\index{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-Flight\-Ctrl\-Period@{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-Flight\-Ctrl\-Period}!typdef\-Uart.\-h@{typdef\-Uart.\-h}}\index{typdef\-Uart.\-h@{typdef\-Uart.\-h}!P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-Flight\-Ctrl\-Period@{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-Flight\-Ctrl\-Period}}\item[{\em 
+\hypertarget{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a22871458b110498e27a8b6244d14fd4e}{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-Flight\-Ctrl\-Period}\label{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a22871458b110498e27a8b6244d14fd4e}
+}]\index{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-G\-P\-S\-Receive\-Period@{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-G\-P\-S\-Receive\-Period}!typdef\-Uart.\-h@{typdef\-Uart.\-h}}\index{typdef\-Uart.\-h@{typdef\-Uart.\-h}!P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-G\-P\-S\-Receive\-Period@{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-G\-P\-S\-Receive\-Period}}\item[{\em 
+\hypertarget{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a80df4e54f488c528a0af260bf4287bcb}{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-G\-P\-S\-Receive\-Period}\label{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a80df4e54f488c528a0af260bf4287bcb}
+}]\index{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-Video\-Toggle\-Period@{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-Video\-Toggle\-Period}!typdef\-Uart.\-h@{typdef\-Uart.\-h}}\index{typdef\-Uart.\-h@{typdef\-Uart.\-h}!P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-Video\-Toggle\-Period@{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-Video\-Toggle\-Period}}\item[{\em 
+\hypertarget{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a590b78e1b29c0c8dcdf6d2dc869e43aa}{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-Video\-Toggle\-Period}\label{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a590b78e1b29c0c8dcdf6d2dc869e43aa}
+}]\index{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-I\-M\-U\-Data\-Timeout@{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-I\-M\-U\-Data\-Timeout}!typdef\-Uart.\-h@{typdef\-Uart.\-h}}\index{typdef\-Uart.\-h@{typdef\-Uart.\-h}!P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-I\-M\-U\-Data\-Timeout@{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-I\-M\-U\-Data\-Timeout}}\item[{\em 
+\hypertarget{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a8bd205ac7401d53092ff7ffc98e754aa}{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-I\-M\-U\-Data\-Timeout}\label{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a8bd205ac7401d53092ff7ffc98e754aa}
+}]\index{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-Zigbee\-Cmd\-Timeout@{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-Zigbee\-Cmd\-Timeout}!typdef\-Uart.\-h@{typdef\-Uart.\-h}}\index{typdef\-Uart.\-h@{typdef\-Uart.\-h}!P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-Zigbee\-Cmd\-Timeout@{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-Zigbee\-Cmd\-Timeout}}\item[{\em 
+\hypertarget{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632afaa7777e435be6b471009c6cdf74c948}{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-Zigbee\-Cmd\-Timeout}\label{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632afaa7777e435be6b471009c6cdf74c948}
+}]\index{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-Zigbee\-Receive\-Timeout@{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-Zigbee\-Receive\-Timeout}!typdef\-Uart.\-h@{typdef\-Uart.\-h}}\index{typdef\-Uart.\-h@{typdef\-Uart.\-h}!P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-Zigbee\-Receive\-Timeout@{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-Zigbee\-Receive\-Timeout}}\item[{\em 
+\hypertarget{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632af2f4da476de6fc43e2118826e9e8bc9b}{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-Zigbee\-Receive\-Timeout}\label{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632af2f4da476de6fc43e2118826e9e8bc9b}
+}]\index{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-Telemeter\-Timeout@{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-Telemeter\-Timeout}!typdef\-Uart.\-h@{typdef\-Uart.\-h}}\index{typdef\-Uart.\-h@{typdef\-Uart.\-h}!P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-Telemeter\-Timeout@{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-Telemeter\-Timeout}}\item[{\em 
+\hypertarget{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632aa01da571181efda4755ff66c627d007e}{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-Telemeter\-Timeout}\label{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632aa01da571181efda4755ff66c627d007e}
+}]\index{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-Battery\-Timeout@{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-Battery\-Timeout}!typdef\-Uart.\-h@{typdef\-Uart.\-h}}\index{typdef\-Uart.\-h@{typdef\-Uart.\-h}!P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-Battery\-Timeout@{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-Battery\-Timeout}}\item[{\em 
+\hypertarget{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a1298f95dd257a888bde3262a86c4d136}{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-Battery\-Timeout}\label{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a1298f95dd257a888bde3262a86c4d136}
+}]\index{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-G\-P\-S\-Timeout@{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-G\-P\-S\-Timeout}!typdef\-Uart.\-h@{typdef\-Uart.\-h}}\index{typdef\-Uart.\-h@{typdef\-Uart.\-h}!P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-G\-P\-S\-Timeout@{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-G\-P\-S\-Timeout}}\item[{\em 
+\hypertarget{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a9cd65980217626ee680a9055e78d4131}{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-G\-P\-S\-Timeout}\label{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a9cd65980217626ee680a9055e78d4131}
+}]\index{P\-A\-R\-A\-M\-\_\-\-C\-M\-D\-\_\-\-I\-D@{P\-A\-R\-A\-M\-\_\-\-C\-M\-D\-\_\-\-I\-D}!typdef\-Uart.\-h@{typdef\-Uart.\-h}}\index{typdef\-Uart.\-h@{typdef\-Uart.\-h}!P\-A\-R\-A\-M\-\_\-\-C\-M\-D\-\_\-\-I\-D@{P\-A\-R\-A\-M\-\_\-\-C\-M\-D\-\_\-\-I\-D}}\item[{\em 
+\hypertarget{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a653f0737cc2f062b0f5563ee5c9023e4}{P\-A\-R\-A\-M\-\_\-\-C\-M\-D\-\_\-\-I\-D}\label{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a653f0737cc2f062b0f5563ee5c9023e4}
+}]\index{P\-A\-R\-A\-M\-\_\-\-C\-M\-D\-\_\-\-D\-R\-O\-N\-E@{P\-A\-R\-A\-M\-\_\-\-C\-M\-D\-\_\-\-D\-R\-O\-N\-E}!typdef\-Uart.\-h@{typdef\-Uart.\-h}}\index{typdef\-Uart.\-h@{typdef\-Uart.\-h}!P\-A\-R\-A\-M\-\_\-\-C\-M\-D\-\_\-\-D\-R\-O\-N\-E@{P\-A\-R\-A\-M\-\_\-\-C\-M\-D\-\_\-\-D\-R\-O\-N\-E}}\item[{\em 
+\hypertarget{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632ab52e565f8ee0b43ab5fdba5dd32ef949}{P\-A\-R\-A\-M\-\_\-\-C\-M\-D\-\_\-\-D\-R\-O\-N\-E}\label{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632ab52e565f8ee0b43ab5fdba5dd32ef949}
+}]\index{P\-A\-R\-A\-M\-\_\-\-F\-L\-Y\-\_\-\-S\-T\-A\-T\-E@{P\-A\-R\-A\-M\-\_\-\-F\-L\-Y\-\_\-\-S\-T\-A\-T\-E}!typdef\-Uart.\-h@{typdef\-Uart.\-h}}\index{typdef\-Uart.\-h@{typdef\-Uart.\-h}!P\-A\-R\-A\-M\-\_\-\-F\-L\-Y\-\_\-\-S\-T\-A\-T\-E@{P\-A\-R\-A\-M\-\_\-\-F\-L\-Y\-\_\-\-S\-T\-A\-T\-E}}\item[{\em 
+\hypertarget{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a8f2ad857311b305a40e6294736196f47}{P\-A\-R\-A\-M\-\_\-\-F\-L\-Y\-\_\-\-S\-T\-A\-T\-E}\label{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a8f2ad857311b305a40e6294736196f47}
+}]\index{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-E\-R\-R\-O\-R@{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-E\-R\-R\-O\-R}!typdef\-Uart.\-h@{typdef\-Uart.\-h}}\index{typdef\-Uart.\-h@{typdef\-Uart.\-h}!P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-E\-R\-R\-O\-R@{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-E\-R\-R\-O\-R}}\item[{\em 
+\hypertarget{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a01acce445241211e5ef11328c1b8d1e2}{P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-E\-R\-R\-O\-R}\label{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a01acce445241211e5ef11328c1b8d1e2}
+}]\index{P\-A\-R\-A\-M\-\_\-\-I\-M\-U\-\_\-x\-Update\-Time@{P\-A\-R\-A\-M\-\_\-\-I\-M\-U\-\_\-x\-Update\-Time}!typdef\-Uart.\-h@{typdef\-Uart.\-h}}\index{typdef\-Uart.\-h@{typdef\-Uart.\-h}!P\-A\-R\-A\-M\-\_\-\-I\-M\-U\-\_\-x\-Update\-Time@{P\-A\-R\-A\-M\-\_\-\-I\-M\-U\-\_\-x\-Update\-Time}}\item[{\em 
+\hypertarget{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632aba9ba51d13875fc28dbcb7aefb4706b2}{P\-A\-R\-A\-M\-\_\-\-I\-M\-U\-\_\-x\-Update\-Time}\label{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632aba9ba51d13875fc28dbcb7aefb4706b2}
+}]\index{P\-A\-R\-A\-M\-\_\-\-G\-P\-S\-\_\-x\-Update\-Time@{P\-A\-R\-A\-M\-\_\-\-G\-P\-S\-\_\-x\-Update\-Time}!typdef\-Uart.\-h@{typdef\-Uart.\-h}}\index{typdef\-Uart.\-h@{typdef\-Uart.\-h}!P\-A\-R\-A\-M\-\_\-\-G\-P\-S\-\_\-x\-Update\-Time@{P\-A\-R\-A\-M\-\_\-\-G\-P\-S\-\_\-x\-Update\-Time}}\item[{\em 
+\hypertarget{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632af3fc4126f4c3a7540f615932cf7b6144}{P\-A\-R\-A\-M\-\_\-\-G\-P\-S\-\_\-x\-Update\-Time}\label{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632af3fc4126f4c3a7540f615932cf7b6144}
+}]\index{P\-A\-R\-A\-M\-\_\-\-T\-E\-L\-M\-\_\-x\-Update\-Time@{P\-A\-R\-A\-M\-\_\-\-T\-E\-L\-M\-\_\-x\-Update\-Time}!typdef\-Uart.\-h@{typdef\-Uart.\-h}}\index{typdef\-Uart.\-h@{typdef\-Uart.\-h}!P\-A\-R\-A\-M\-\_\-\-T\-E\-L\-M\-\_\-x\-Update\-Time@{P\-A\-R\-A\-M\-\_\-\-T\-E\-L\-M\-\_\-x\-Update\-Time}}\item[{\em 
+\hypertarget{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a5b5200507842f7d81676e1fc196b9a03}{P\-A\-R\-A\-M\-\_\-\-T\-E\-L\-M\-\_\-x\-Update\-Time}\label{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a5b5200507842f7d81676e1fc196b9a03}
+}]\index{P\-A\-R\-A\-M\-\_\-\-B\-A\-T\-\_\-ul\-Power\-Lvl@{P\-A\-R\-A\-M\-\_\-\-B\-A\-T\-\_\-ul\-Power\-Lvl}!typdef\-Uart.\-h@{typdef\-Uart.\-h}}\index{typdef\-Uart.\-h@{typdef\-Uart.\-h}!P\-A\-R\-A\-M\-\_\-\-B\-A\-T\-\_\-ul\-Power\-Lvl@{P\-A\-R\-A\-M\-\_\-\-B\-A\-T\-\_\-ul\-Power\-Lvl}}\item[{\em 
+\hypertarget{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a84d1fa4a6fe3f1b379971515cbab995d}{P\-A\-R\-A\-M\-\_\-\-B\-A\-T\-\_\-ul\-Power\-Lvl}\label{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a84d1fa4a6fe3f1b379971515cbab995d}
+}]\index{P\-A\-R\-A\-M\-\_\-\-B\-A\-T\-\_\-x\-Update\-Time@{P\-A\-R\-A\-M\-\_\-\-B\-A\-T\-\_\-x\-Update\-Time}!typdef\-Uart.\-h@{typdef\-Uart.\-h}}\index{typdef\-Uart.\-h@{typdef\-Uart.\-h}!P\-A\-R\-A\-M\-\_\-\-B\-A\-T\-\_\-x\-Update\-Time@{P\-A\-R\-A\-M\-\_\-\-B\-A\-T\-\_\-x\-Update\-Time}}\item[{\em 
+\hypertarget{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632aa12b8c52c4643e91d235de4613b56ee1}{P\-A\-R\-A\-M\-\_\-\-B\-A\-T\-\_\-x\-Update\-Time}\label{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632aa12b8c52c4643e91d235de4613b56ee1}
+}]\end{description}
+\end{Desc}
+
+
+
+Definition at line 41 of file typdef\-Uart.\-h.
+
+
+\begin{DoxyCode}
+                \{       \textcolor{comment}{//Manque les structure GPS IMU TELEMETER}
+    \hyperlink{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a7828400a62571bb441a0216f1c2e29be}{PARAM\_DRONE\_CONFIG\_ulMaxAngle},
+    \hyperlink{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632af954ea9792a880b2593da24e0214708f}{PARAM\_DRONE\_CONFIG\_ulTakeoffAltitude},
+    \hyperlink{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a516ded0a007275ce22b40cba97734484}{PARAM\_DRONE\_CONFIG\_ulMinAltitude},
+    \hyperlink{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a212c640074147bd9d0d63888d538d256}{PARAM\_DRONE\_CONFIG\_ulCritBatteryLvl},
+    \hyperlink{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632adc16eed85f98b926f829decb1e7f3175}{PARAM\_DRONE\_CONFIG\_ulCritObstacleDist},
+    \hyperlink{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a91adcfa9ba7373cb5e94cb7dad749286}{PARAM\_DRONE\_CONFIG\_ulCritZigbeeSignalLvl}
+      ,
+    \hyperlink{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632adaafa83d8768d26374d1cca8f3c4914d}{PARAM\_DRONE\_CONFIG\_xBatteryMonitoringPeriod}
+      ,
+    \hyperlink{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a70d207333012bb820cb3576f3fad9048}{PARAM\_DRONE\_CONFIG\_xDetectObstaclePeriod}
+      ,
+    \hyperlink{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a5c305ec532822ca3aa2ff74d0052f757}{PARAM\_DRONE\_CONFIG\_xZigbeeReceivePeriod}
+      ,
+    \hyperlink{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a22871458b110498e27a8b6244d14fd4e}{PARAM\_DRONE\_CONFIG\_xFlightCtrlPeriod},
+    \hyperlink{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a80df4e54f488c528a0af260bf4287bcb}{PARAM\_DRONE\_CONFIG\_xGPSReceivePeriod},
+    \hyperlink{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a590b78e1b29c0c8dcdf6d2dc869e43aa}{PARAM\_DRONE\_CONFIG\_xVideoTogglePeriod},
+    \hyperlink{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a8bd205ac7401d53092ff7ffc98e754aa}{PARAM\_DRONE\_CONFIG\_xIMUDataTimeout},
+    \hyperlink{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632afaa7777e435be6b471009c6cdf74c948}{PARAM\_DRONE\_CONFIG\_xZigbeeCmdTimeout},
+    \hyperlink{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632af2f4da476de6fc43e2118826e9e8bc9b}{PARAM\_DRONE\_CONFIG\_xZigbeeReceiveTimeout}
+      ,
+    \hyperlink{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632aa01da571181efda4755ff66c627d007e}{PARAM\_DRONE\_CONFIG\_xTelemeterTimeout},
+    \hyperlink{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a1298f95dd257a888bde3262a86c4d136}{PARAM\_DRONE\_CONFIG\_xBatteryTimeout},
+    \hyperlink{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a9cd65980217626ee680a9055e78d4131}{PARAM\_DRONE\_CONFIG\_xGPSTimeout},
+        \hyperlink{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a653f0737cc2f062b0f5563ee5c9023e4}{PARAM\_CMD\_ID},
+    \hyperlink{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632ab52e565f8ee0b43ab5fdba5dd32ef949}{PARAM\_CMD\_DRONE}, \textcolor{comment}{/*          Commande de Vol(X,Y,Z,R)        
+      */}
+    \textcolor{comment}{/*  PARAM\_FLY\_TransX,       */}
+    \textcolor{comment}{/*  PARAM\_FLY\_TransY,       */}
+    \textcolor{comment}{/*  PARAM\_FLY\_TransZ,       */}
+    \textcolor{comment}{/*  PARAM\_FLY\_RotZ,         */}
+    \hyperlink{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a8f2ad857311b305a40e6294736196f47}{PARAM\_FLY\_STATE},
+    \hyperlink{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a01acce445241211e5ef11328c1b8d1e2}{PARAM\_DRONE\_ERROR},
+    \hyperlink{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632aba9ba51d13875fc28dbcb7aefb4706b2}{PARAM\_IMU\_xUpdateTime},
+    \hyperlink{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632af3fc4126f4c3a7540f615932cf7b6144}{PARAM\_GPS\_xUpdateTime},
+    \hyperlink{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a5b5200507842f7d81676e1fc196b9a03}{PARAM\_TELM\_xUpdateTime},
+    \hyperlink{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a84d1fa4a6fe3f1b379971515cbab995d}{PARAM\_BAT\_ulPowerLvl},
+    \hyperlink{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632aa12b8c52c4643e91d235de4613b56ee1}{PARAM\_BAT\_xUpdateTime}
+\};
+\end{DoxyCode}
+\hypertarget{typdefUart_8h_aa8a212aca1d1f49ff85fe2ac4b74cbb6}{\index{typdef\-Uart.\-h@{typdef\-Uart.\-h}!zigbee\-Command\-Id@{zigbee\-Command\-Id}}
+\index{zigbee\-Command\-Id@{zigbee\-Command\-Id}!typdefUart.h@{typdef\-Uart.\-h}}
+\subsubsection[{zigbee\-Command\-Id}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf zigbee\-Command\-Id}}}\label{typdefUart_8h_aa8a212aca1d1f49ff85fe2ac4b74cbb6}
+\begin{Desc}
+\item[Enumerator\-: ]\par
+\begin{description}
+\index{C\-M\-D\-\_\-\-R\-E\-B\-O\-O\-T@{C\-M\-D\-\_\-\-R\-E\-B\-O\-O\-T}!typdef\-Uart.\-h@{typdef\-Uart.\-h}}\index{typdef\-Uart.\-h@{typdef\-Uart.\-h}!C\-M\-D\-\_\-\-R\-E\-B\-O\-O\-T@{C\-M\-D\-\_\-\-R\-E\-B\-O\-O\-T}}\item[{\em 
+\hypertarget{typdefUart_8h_aa8a212aca1d1f49ff85fe2ac4b74cbb6a239722b6c1371469bb65b83c5aa92a31}{C\-M\-D\-\_\-\-R\-E\-B\-O\-O\-T}\label{typdefUart_8h_aa8a212aca1d1f49ff85fe2ac4b74cbb6a239722b6c1371469bb65b83c5aa92a31}
+}]\index{C\-M\-D\-\_\-\-S\-H\-U\-T\-D\-O\-W\-N@{C\-M\-D\-\_\-\-S\-H\-U\-T\-D\-O\-W\-N}!typdef\-Uart.\-h@{typdef\-Uart.\-h}}\index{typdef\-Uart.\-h@{typdef\-Uart.\-h}!C\-M\-D\-\_\-\-S\-H\-U\-T\-D\-O\-W\-N@{C\-M\-D\-\_\-\-S\-H\-U\-T\-D\-O\-W\-N}}\item[{\em 
+\hypertarget{typdefUart_8h_aa8a212aca1d1f49ff85fe2ac4b74cbb6a8bbf29869938b9b99e9e98e2685c2af0}{C\-M\-D\-\_\-\-S\-H\-U\-T\-D\-O\-W\-N}\label{typdefUart_8h_aa8a212aca1d1f49ff85fe2ac4b74cbb6a8bbf29869938b9b99e9e98e2685c2af0}
+}]\index{C\-M\-D\-\_\-\-V\-I\-D\-E\-O\-\_\-\-E\-N\-A\-B\-L\-E@{C\-M\-D\-\_\-\-V\-I\-D\-E\-O\-\_\-\-E\-N\-A\-B\-L\-E}!typdef\-Uart.\-h@{typdef\-Uart.\-h}}\index{typdef\-Uart.\-h@{typdef\-Uart.\-h}!C\-M\-D\-\_\-\-V\-I\-D\-E\-O\-\_\-\-E\-N\-A\-B\-L\-E@{C\-M\-D\-\_\-\-V\-I\-D\-E\-O\-\_\-\-E\-N\-A\-B\-L\-E}}\item[{\em 
+\hypertarget{typdefUart_8h_aa8a212aca1d1f49ff85fe2ac4b74cbb6abb5a621b2e8f98474199365307c1583c}{C\-M\-D\-\_\-\-V\-I\-D\-E\-O\-\_\-\-E\-N\-A\-B\-L\-E}\label{typdefUart_8h_aa8a212aca1d1f49ff85fe2ac4b74cbb6abb5a621b2e8f98474199365307c1583c}
+}]\index{C\-M\-D\-\_\-\-V\-I\-D\-E\-O\-\_\-\-D\-I\-S\-A\-B\-L\-E@{C\-M\-D\-\_\-\-V\-I\-D\-E\-O\-\_\-\-D\-I\-S\-A\-B\-L\-E}!typdef\-Uart.\-h@{typdef\-Uart.\-h}}\index{typdef\-Uart.\-h@{typdef\-Uart.\-h}!C\-M\-D\-\_\-\-V\-I\-D\-E\-O\-\_\-\-D\-I\-S\-A\-B\-L\-E@{C\-M\-D\-\_\-\-V\-I\-D\-E\-O\-\_\-\-D\-I\-S\-A\-B\-L\-E}}\item[{\em 
+\hypertarget{typdefUart_8h_aa8a212aca1d1f49ff85fe2ac4b74cbb6a3147545d7cf162c55a4dfdb8a9b842f8}{C\-M\-D\-\_\-\-V\-I\-D\-E\-O\-\_\-\-D\-I\-S\-A\-B\-L\-E}\label{typdefUart_8h_aa8a212aca1d1f49ff85fe2ac4b74cbb6a3147545d7cf162c55a4dfdb8a9b842f8}
+}]\index{C\-M\-D\-\_\-\-F\-L\-T\-\_\-\-T\-A\-K\-E\-O\-F\-F@{C\-M\-D\-\_\-\-F\-L\-T\-\_\-\-T\-A\-K\-E\-O\-F\-F}!typdef\-Uart.\-h@{typdef\-Uart.\-h}}\index{typdef\-Uart.\-h@{typdef\-Uart.\-h}!C\-M\-D\-\_\-\-F\-L\-T\-\_\-\-T\-A\-K\-E\-O\-F\-F@{C\-M\-D\-\_\-\-F\-L\-T\-\_\-\-T\-A\-K\-E\-O\-F\-F}}\item[{\em 
+\hypertarget{typdefUart_8h_aa8a212aca1d1f49ff85fe2ac4b74cbb6a4c63207daec4bc4c947f0a63d48761cb}{C\-M\-D\-\_\-\-F\-L\-T\-\_\-\-T\-A\-K\-E\-O\-F\-F}\label{typdefUart_8h_aa8a212aca1d1f49ff85fe2ac4b74cbb6a4c63207daec4bc4c947f0a63d48761cb}
+}]\index{C\-M\-D\-\_\-\-F\-L\-T\-\_\-\-L\-A\-N\-D\-I\-N\-G@{C\-M\-D\-\_\-\-F\-L\-T\-\_\-\-L\-A\-N\-D\-I\-N\-G}!typdef\-Uart.\-h@{typdef\-Uart.\-h}}\index{typdef\-Uart.\-h@{typdef\-Uart.\-h}!C\-M\-D\-\_\-\-F\-L\-T\-\_\-\-L\-A\-N\-D\-I\-N\-G@{C\-M\-D\-\_\-\-F\-L\-T\-\_\-\-L\-A\-N\-D\-I\-N\-G}}\item[{\em 
+\hypertarget{typdefUart_8h_aa8a212aca1d1f49ff85fe2ac4b74cbb6a7f3b918346242aa7d684a14ba2c2b441}{C\-M\-D\-\_\-\-F\-L\-T\-\_\-\-L\-A\-N\-D\-I\-N\-G}\label{typdefUart_8h_aa8a212aca1d1f49ff85fe2ac4b74cbb6a7f3b918346242aa7d684a14ba2c2b441}
+}]\index{C\-M\-D\-\_\-\-F\-L\-T\-\_\-\-A\-U\-T\-O\-T\-U\-N\-I\-N\-G@{C\-M\-D\-\_\-\-F\-L\-T\-\_\-\-A\-U\-T\-O\-T\-U\-N\-I\-N\-G}!typdef\-Uart.\-h@{typdef\-Uart.\-h}}\index{typdef\-Uart.\-h@{typdef\-Uart.\-h}!C\-M\-D\-\_\-\-F\-L\-T\-\_\-\-A\-U\-T\-O\-T\-U\-N\-I\-N\-G@{C\-M\-D\-\_\-\-F\-L\-T\-\_\-\-A\-U\-T\-O\-T\-U\-N\-I\-N\-G}}\item[{\em 
+\hypertarget{typdefUart_8h_aa8a212aca1d1f49ff85fe2ac4b74cbb6ae0ea43f407f8211a9acef5f717dcf933}{C\-M\-D\-\_\-\-F\-L\-T\-\_\-\-A\-U\-T\-O\-T\-U\-N\-I\-N\-G}\label{typdefUart_8h_aa8a212aca1d1f49ff85fe2ac4b74cbb6ae0ea43f407f8211a9acef5f717dcf933}
+}]\index{C\-M\-D\-\_\-\-R\-E\-S\-E\-T\-\_\-\-A\-U\-T\-O\-T\-U\-N\-I\-N\-G@{C\-M\-D\-\_\-\-R\-E\-S\-E\-T\-\_\-\-A\-U\-T\-O\-T\-U\-N\-I\-N\-G}!typdef\-Uart.\-h@{typdef\-Uart.\-h}}\index{typdef\-Uart.\-h@{typdef\-Uart.\-h}!C\-M\-D\-\_\-\-R\-E\-S\-E\-T\-\_\-\-A\-U\-T\-O\-T\-U\-N\-I\-N\-G@{C\-M\-D\-\_\-\-R\-E\-S\-E\-T\-\_\-\-A\-U\-T\-O\-T\-U\-N\-I\-N\-G}}\item[{\em 
+\hypertarget{typdefUart_8h_aa8a212aca1d1f49ff85fe2ac4b74cbb6a79510fc7f07b52c1fef87c672e3a9d9e}{C\-M\-D\-\_\-\-R\-E\-S\-E\-T\-\_\-\-A\-U\-T\-O\-T\-U\-N\-I\-N\-G}\label{typdefUart_8h_aa8a212aca1d1f49ff85fe2ac4b74cbb6a79510fc7f07b52c1fef87c672e3a9d9e}
+}]\index{C\-M\-D\-\_\-\-S\-E\-T\-\_\-\-C\-O\-N\-F\-I\-G@{C\-M\-D\-\_\-\-S\-E\-T\-\_\-\-C\-O\-N\-F\-I\-G}!typdef\-Uart.\-h@{typdef\-Uart.\-h}}\index{typdef\-Uart.\-h@{typdef\-Uart.\-h}!C\-M\-D\-\_\-\-S\-E\-T\-\_\-\-C\-O\-N\-F\-I\-G@{C\-M\-D\-\_\-\-S\-E\-T\-\_\-\-C\-O\-N\-F\-I\-G}}\item[{\em 
+\hypertarget{typdefUart_8h_aa8a212aca1d1f49ff85fe2ac4b74cbb6a77553c4f9197b5892c5827a04c25a968}{C\-M\-D\-\_\-\-S\-E\-T\-\_\-\-C\-O\-N\-F\-I\-G}\label{typdefUart_8h_aa8a212aca1d1f49ff85fe2ac4b74cbb6a77553c4f9197b5892c5827a04c25a968}
+}]\index{C\-M\-D\-\_\-\-R\-E\-S\-E\-T\-\_\-\-C\-O\-N\-F\-I\-G@{C\-M\-D\-\_\-\-R\-E\-S\-E\-T\-\_\-\-C\-O\-N\-F\-I\-G}!typdef\-Uart.\-h@{typdef\-Uart.\-h}}\index{typdef\-Uart.\-h@{typdef\-Uart.\-h}!C\-M\-D\-\_\-\-R\-E\-S\-E\-T\-\_\-\-C\-O\-N\-F\-I\-G@{C\-M\-D\-\_\-\-R\-E\-S\-E\-T\-\_\-\-C\-O\-N\-F\-I\-G}}\item[{\em 
+\hypertarget{typdefUart_8h_aa8a212aca1d1f49ff85fe2ac4b74cbb6a824277770f43b1df4f00e8ee24b1d26c}{C\-M\-D\-\_\-\-R\-E\-S\-E\-T\-\_\-\-C\-O\-N\-F\-I\-G}\label{typdefUart_8h_aa8a212aca1d1f49ff85fe2ac4b74cbb6a824277770f43b1df4f00e8ee24b1d26c}
+}]\index{C\-M\-D\-\_\-\-G\-E\-T\-\_\-\-C\-O\-N\-F\-I\-G@{C\-M\-D\-\_\-\-G\-E\-T\-\_\-\-C\-O\-N\-F\-I\-G}!typdef\-Uart.\-h@{typdef\-Uart.\-h}}\index{typdef\-Uart.\-h@{typdef\-Uart.\-h}!C\-M\-D\-\_\-\-G\-E\-T\-\_\-\-C\-O\-N\-F\-I\-G@{C\-M\-D\-\_\-\-G\-E\-T\-\_\-\-C\-O\-N\-F\-I\-G}}\item[{\em 
+\hypertarget{typdefUart_8h_aa8a212aca1d1f49ff85fe2ac4b74cbb6a72722dc0846a5fc226f850301b703609}{C\-M\-D\-\_\-\-G\-E\-T\-\_\-\-C\-O\-N\-F\-I\-G}\label{typdefUart_8h_aa8a212aca1d1f49ff85fe2ac4b74cbb6a72722dc0846a5fc226f850301b703609}
+}]\index{C\-M\-D\-\_\-\-G\-E\-T\-\_\-\-S\-T\-A\-T\-U\-S@{C\-M\-D\-\_\-\-G\-E\-T\-\_\-\-S\-T\-A\-T\-U\-S}!typdef\-Uart.\-h@{typdef\-Uart.\-h}}\index{typdef\-Uart.\-h@{typdef\-Uart.\-h}!C\-M\-D\-\_\-\-G\-E\-T\-\_\-\-S\-T\-A\-T\-U\-S@{C\-M\-D\-\_\-\-G\-E\-T\-\_\-\-S\-T\-A\-T\-U\-S}}\item[{\em 
+\hypertarget{typdefUart_8h_aa8a212aca1d1f49ff85fe2ac4b74cbb6aa9f5e1d3fa7a48a053cb78acdf95e57a}{C\-M\-D\-\_\-\-G\-E\-T\-\_\-\-S\-T\-A\-T\-U\-S}\label{typdefUart_8h_aa8a212aca1d1f49ff85fe2ac4b74cbb6aa9f5e1d3fa7a48a053cb78acdf95e57a}
+}]\index{C\-M\-D\-\_\-\-F\-L\-T\-\_\-\-M\-A\-N\-E\-U\-V\-E\-R@{C\-M\-D\-\_\-\-F\-L\-T\-\_\-\-M\-A\-N\-E\-U\-V\-E\-R}!typdef\-Uart.\-h@{typdef\-Uart.\-h}}\index{typdef\-Uart.\-h@{typdef\-Uart.\-h}!C\-M\-D\-\_\-\-F\-L\-T\-\_\-\-M\-A\-N\-E\-U\-V\-E\-R@{C\-M\-D\-\_\-\-F\-L\-T\-\_\-\-M\-A\-N\-E\-U\-V\-E\-R}}\item[{\em 
+\hypertarget{typdefUart_8h_aa8a212aca1d1f49ff85fe2ac4b74cbb6aefb30be8a8f1fedd95be57cd09c85398}{C\-M\-D\-\_\-\-F\-L\-T\-\_\-\-M\-A\-N\-E\-U\-V\-E\-R}\label{typdefUart_8h_aa8a212aca1d1f49ff85fe2ac4b74cbb6aefb30be8a8f1fedd95be57cd09c85398}
+}]\index{C\-M\-D\-\_\-\-E\-R\-R\-\_\-\-I\-G\-N\-O\-R\-E@{C\-M\-D\-\_\-\-E\-R\-R\-\_\-\-I\-G\-N\-O\-R\-E}!typdef\-Uart.\-h@{typdef\-Uart.\-h}}\index{typdef\-Uart.\-h@{typdef\-Uart.\-h}!C\-M\-D\-\_\-\-E\-R\-R\-\_\-\-I\-G\-N\-O\-R\-E@{C\-M\-D\-\_\-\-E\-R\-R\-\_\-\-I\-G\-N\-O\-R\-E}}\item[{\em 
+\hypertarget{typdefUart_8h_aa8a212aca1d1f49ff85fe2ac4b74cbb6a7b05a94faeba01c6ca01fc3f46b740af}{C\-M\-D\-\_\-\-E\-R\-R\-\_\-\-I\-G\-N\-O\-R\-E}\label{typdefUart_8h_aa8a212aca1d1f49ff85fe2ac4b74cbb6a7b05a94faeba01c6ca01fc3f46b740af}
+}]\end{description}
+\end{Desc}
+
+
+
+Definition at line 20 of file typdef\-Uart.\-h.
+
+
+\begin{DoxyCode}
+\{
+\hyperlink{typdefUart_8h_aa8a212aca1d1f49ff85fe2ac4b74cbb6a239722b6c1371469bb65b83c5aa92a31}{CMD\_REBOOT},
+\hyperlink{typdefUart_8h_aa8a212aca1d1f49ff85fe2ac4b74cbb6a8bbf29869938b9b99e9e98e2685c2af0}{CMD\_SHUTDOWN},
+\hyperlink{typdefUart_8h_aa8a212aca1d1f49ff85fe2ac4b74cbb6abb5a621b2e8f98474199365307c1583c}{CMD\_VIDEO\_ENABLE},
+\hyperlink{typdefUart_8h_aa8a212aca1d1f49ff85fe2ac4b74cbb6a3147545d7cf162c55a4dfdb8a9b842f8}{CMD\_VIDEO\_DISABLE},
+\hyperlink{typdefUart_8h_aa8a212aca1d1f49ff85fe2ac4b74cbb6a4c63207daec4bc4c947f0a63d48761cb}{CMD\_FLT\_TAKEOFF},
+\hyperlink{typdefUart_8h_aa8a212aca1d1f49ff85fe2ac4b74cbb6a7f3b918346242aa7d684a14ba2c2b441}{CMD\_FLT\_LANDING},
+\hyperlink{typdefUart_8h_aa8a212aca1d1f49ff85fe2ac4b74cbb6ae0ea43f407f8211a9acef5f717dcf933}{CMD\_FLT\_AUTOTUNING}, \textcolor{comment}{/* changer automatiquement les paramètres
+       de}
+\textcolor{comment}{l'asservissement moteur (PID) */}
+\hyperlink{typdefUart_8h_aa8a212aca1d1f49ff85fe2ac4b74cbb6a79510fc7f07b52c1fef87c672e3a9d9e}{CMD\_RESET\_AUTOTUNING}, \textcolor{comment}{/* Retour au défaut */}
+\hyperlink{typdefUart_8h_aa8a212aca1d1f49ff85fe2ac4b74cbb6a77553c4f9197b5892c5827a04c25a968}{CMD\_SET\_CONFIG}, \textcolor{comment}{/* Configuration depuis la base… voir droneConfig
+       */}
+\hyperlink{typdefUart_8h_aa8a212aca1d1f49ff85fe2ac4b74cbb6a824277770f43b1df4f00e8ee24b1d26c}{CMD\_RESET\_CONFIG},
+\hyperlink{typdefUart_8h_aa8a212aca1d1f49ff85fe2ac4b74cbb6a72722dc0846a5fc226f850301b703609}{CMD\_GET\_CONFIG}, \textcolor{comment}{/* Récupération de la config actuelle */}
+\hyperlink{typdefUart_8h_aa8a212aca1d1f49ff85fe2ac4b74cbb6aa9f5e1d3fa7a48a053cb78acdf95e57a}{CMD\_GET\_STATUS}, \textcolor{comment}{/* Statut du drone (voir droneState,
+       droneIMUData,}
+\textcolor{comment}{droneZigbeeData, droneGPSData, droneTelemeterData, droneBatteryData) */}
+\hyperlink{typdefUart_8h_aa8a212aca1d1f49ff85fe2ac4b74cbb6aefb30be8a8f1fedd95be57cd09c85398}{CMD\_FLT\_MANEUVER},
+\textcolor{comment}{/* Ignore minor error */}
+\hyperlink{typdefUart_8h_aa8a212aca1d1f49ff85fe2ac4b74cbb6a7b05a94faeba01c6ca01fc3f46b740af}{CMD\_ERR\_IGNORE}
+\};
+\end{DoxyCode}

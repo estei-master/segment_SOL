@@ -1,0 +1,12 @@
+<map id="nunchuck.h" name="nunchuck.h">
+<area shape="rect" id="node3" href="$qbase_8h.html" title="qbase.h" alt="" coords="128,160,195,189"/>
+<area shape="rect" id="node13" href="$qattitudeindicator_8h.html" title="qattitudeindicator.h" alt="" coords="219,83,349,112"/>
+<area shape="rect" id="node22" href="$nunchuck_8cpp.html" title="nunchuck.cpp" alt="" coords="373,83,475,112"/>
+<area shape="rect" id="node5" href="$mainwindow_8h.html" title="Fichier d&#39;inclusion des librairies nécessaires à la MainWindow." alt="" coords="51,237,155,267"/>
+<area shape="rect" id="node11" href="$qbase_8cpp.html" title="qbase.cpp" alt="" coords="179,237,261,267"/>
+<area shape="rect" id="node7" href="$main_8cpp.html" title="Ficher main qui permet d&#39;afficher la MainWindow." alt="" coords="5,315,80,344"/>
+<area shape="rect" id="node9" href="$mainwindow_8cpp.html" title="Ce programme permet le placement de tous les widgets ou objets nécessaires au fonctionnement de l&#39;app..." alt="" coords="104,315,221,344"/>
+<area shape="rect" id="node16" href="$qattitudeindicator_8cpp.html" title="qattitudeindicator.cpp" alt="" coords="219,160,365,189"/>
+<area shape="rect" id="node18" href="$qth__base_8h.html" title="qth_base.h" alt="" coords="389,160,475,189"/>
+<area shape="rect" id="node20" href="$qth__base_8cpp.html" title="qth_base.cpp" alt="" coords="383,237,481,267"/>
+</map>

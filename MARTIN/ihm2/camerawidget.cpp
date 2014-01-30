@@ -1,6 +1,19 @@
 #include "camerawidget.h"
 
-// Constructor
+/**
+* \file camerawidget.cpp
+* \brief Ce programme permet la conversion d'une IplImage en une QPixmap et le placement du constructeur (widget) dans un layout.
+* \author Martin PRADEAU
+* \version Version finale
+* \date Janvier 2014
+*/
+
+/**
+ * \brief    Constructeur
+ * \details  Placement du label dans un layout.
+ * \param    QWidget *parent
+ */
+
 CameraWidget::CameraWidget(QWidget *parent)
     : QWidget(parent)
 {
@@ -21,15 +34,33 @@ CameraWidget::CameraWidget(QWidget *parent)
     setLayout(m_layout);
 }
 
+/**
+ * \brief    Destructeur
+ * \param    void
+ */
+
 CameraWidget::~CameraWidget(void)
 {
 
 }
 
+/**
+ * \brief    Placement d'image
+ * \details  Fonction qui permet le placement de l'image dans le label destiné à l'accueillir
+ * \param    IplImage *image
+ */
+
 void CameraWidget::putFrame(IplImage *image)
 {
     m_imageLabel->setPixmap(toPixmap(image));
 }
+
+/**
+ * \brief    Conversion d'image
+ * \details  Fonction de conversion d'une IplImage en une QPixmap
+ * \param    IplImage *cvimage
+ * \return   QPixmap
+ */
 
 QPixmap CameraWidget::toPixmap(IplImage *cvimage) {
     int cvIndex, cvLineStart;

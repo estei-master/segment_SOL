@@ -1,0 +1,6 @@
+<map id="qbase.h" name="qbase.h">
+<area shape="rect" id="node3" href="$mainwindow_8h.html" title="Fichier d&#39;inclusion des librairies nécessaires à la MainWindow." alt="" coords="51,83,155,112"/>
+<area shape="rect" id="node9" href="$qbase_8cpp.html" title="qbase.cpp" alt="" coords="179,83,261,112"/>
+<area shape="rect" id="node5" href="$main_8cpp.html" title="Ficher main qui permet d&#39;afficher la MainWindow." alt="" coords="5,160,80,189"/>
+<area shape="rect" id="node7" href="$mainwindow_8cpp.html" title="Ce programme permet le placement de tous les widgets ou objets nécessaires au fonctionnement de l&#39;app..." alt="" coords="104,160,221,189"/>
+</map>

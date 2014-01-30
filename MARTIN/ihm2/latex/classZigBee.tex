@@ -1,0 +1,608 @@
+\hypertarget{classZigBee}{\section{Zig\-Bee Class Reference}
+\label{classZigBee}\index{Zig\-Bee@{Zig\-Bee}}
+}
+
+
+{\ttfamily \#include \char`\"{}zigbee.\-h\char`\"{}}
+
+
+
+Inheritance diagram for Zig\-Bee\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=178pt]{classZigBee__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Zig\-Bee\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=178pt]{classZigBee__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classZigBee_a488ea980dd12ecd0d02be341f7f6af1b}{Zig\-Bee} ()
+\item 
+void \hyperlink{classZigBee_a0852f85771d48df17a6256edcd91bece}{receive} ()
+\item 
+void \hyperlink{classZigBee_a6b69e04be626400b5b245fa1b56f0810}{Send\-Command} ()
+\item 
+void \hyperlink{classZigBee_aef177ea29c57953e74ddcd8bb356fe2f}{Send\-Config} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classZigBee_a318ed8b8b67393a603c4bfcf0dd0524f}{Config\-Zig\-Bee} ()
+\item 
+void \hyperlink{classZigBee_a8967d2ce7d04ce2d267654975e5bc87c}{decode\-Trame} ()
+\item 
+void \hyperlink{classZigBee_a1817781f9b8e805bdd4eba25498714fe}{Get\-Config\-Drone} (\hyperlink{typdefUart_8h_a435d1572bf3f880d55459d9805097f62}{uint32\-\_\-t} $\ast$param)
+\item 
+void \hyperlink{classZigBee_ac4ea5e99c087a7e536d97a41ef8145d2}{Get\-Drone\-Error} (\hyperlink{typdefUart_8h_aad4124e5a34e185d704fe88506ecf352}{drone\-Error} $\ast$param)
+\item 
+void \hyperlink{classZigBee_a246506a3d990d052a37a4d816b88f3e6}{Get\-Drone\-State} (\hyperlink{typdefUart_8h_aac9034800b5ef8e755ade03d164e3b6c}{drone\-Flt\-State} $\ast$param)
+\item 
+void \hyperlink{classZigBee_a65751fbcd303e5c8e5ff63d69f5eba35}{Get\-Drone\-Time} (\hyperlink{typdefUart_8h_ae9fa5e001303f1be1c0294f26cde8caf}{port\-Tick\-Type} $\ast$param)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Q\-Message\-Box \hyperlink{classZigBee_a7048223c8f5546e3614641cba1062357}{Msg\-Box}
+\item 
+int \hyperlink{classZigBee_a2b6ec705974d8db622f3eb00efeb9ad8}{i\-Index\-Buffer\-In}
+\item 
+int \hyperlink{classZigBee_aa510069113962d7a107f27c4d798d08c}{i\-Index\-Buffer\-Out}
+\item 
+bool \hyperlink{classZigBee_ac954bdd2f3b1c5bcfe11563765f10878}{b\-Ready\-To\-Send}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 13 of file zigbee.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classZigBee_a488ea980dd12ecd0d02be341f7f6af1b}{\index{Zig\-Bee@{Zig\-Bee}!Zig\-Bee@{Zig\-Bee}}
+\index{Zig\-Bee@{Zig\-Bee}!ZigBee@{Zig\-Bee}}
+\subsubsection[{Zig\-Bee}]{\setlength{\rightskip}{0pt plus 5cm}Zig\-Bee\-::\-Zig\-Bee (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}}\label{classZigBee_a488ea980dd12ecd0d02be341f7f6af1b}
+
+
+Definition at line 3 of file zigbee.\-cpp.
+
+
+
+References Uart\-::b\-Initialize, b\-Ready\-To\-Send, Config\-Zig\-Bee(), D\-R\-N\-\_\-\-E\-R\-R\-\_\-\-N\-O\-N\-E, and S\-T\-A\-T\-E\-\_\-\-S\-T\-A\-R\-T\-I\-N\-G.
+
+
+\begin{DoxyCode}
+\{
+    \textcolor{keywordflow}{if}(\hyperlink{classUart_a082b349fdf73dd9f4e1a2f1a09af28c3}{bInitialize}) \{
+
+        \hyperlink{classUart_a082b349fdf73dd9f4e1a2f1a09af28c3}{bInitialize} = \hyperlink{classZigBee_a318ed8b8b67393a603c4bfcf0dd0524f}{ConfigZigBee}();
+        st\_CommandDrone.cTransX = 0;
+        st\_CommandDrone.cTransY = 0;
+        st\_CommandDrone.cTransZ = 0;
+        st\_CommandDrone.cRotZ = 0;
+        st\_DataIMU.xUpdateTime = 0;
+        st\_DataGPS.xUpdateTime = 0;
+        st\_DroneState.eErrorMask = \hyperlink{typdefUart_8h_aad4124e5a34e185d704fe88506ecf352a4eb8e22beceecc6e83a76fc46f56e03a}{DRN\_ERR\_NONE};
+        st\_DroneState.eFltState = \hyperlink{typdefUart_8h_aac9034800b5ef8e755ade03d164e3b6caa5f51c4eb8c8eec3b16b058c5e29a037}{STATE\_STARTING};
+        \hyperlink{classZigBee_ac954bdd2f3b1c5bcfe11563765f10878}{bReadyToSend} = \textcolor{keyword}{false};
+    \}
+    \textcolor{keywordflow}{else} \{
+        \textcolor{comment}{//Erreur d'init UART}
+    \}
+\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classZigBee_a318ed8b8b67393a603c4bfcf0dd0524f}{\index{Zig\-Bee@{Zig\-Bee}!Config\-Zig\-Bee@{Config\-Zig\-Bee}}
+\index{Config\-Zig\-Bee@{Config\-Zig\-Bee}!ZigBee@{Zig\-Bee}}
+\subsubsection[{Config\-Zig\-Bee}]{\setlength{\rightskip}{0pt plus 5cm}bool Zig\-Bee\-::\-Config\-Zig\-Bee (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classZigBee_a318ed8b8b67393a603c4bfcf0dd0524f}
+
+
+Definition at line 23 of file zigbee.\-cpp.
+
+
+
+References Uart\-::c\-Recev\-Buff, H\-I\-S\-T\-O\-R\-Y\-\_\-\-D\-E\-S\-T\-\_\-\-H, param\-\_\-\-A\-D\-R\-E\-S\-S\-E\-\_\-\-D\-E\-S\-T\-\_\-\-H, param\-\_\-\-A\-D\-R\-E\-S\-S\-E\-\_\-\-D\-E\-S\-T\-\_\-\-L, param\-\_\-\-A\-D\-R\-E\-S\-S\-E\-\_\-\-E\-M\-E\-T\-\_\-\-H, param\-\_\-\-A\-D\-R\-E\-S\-S\-E\-\_\-\-E\-M\-E\-T\-\_\-\-L, param\-\_\-\-E\-N\-T\-R\-E\-\_\-\-C\-O\-N\-F\-I\-G, param\-\_\-\-Q\-U\-I\-T\-E\-\_\-\-C\-O\-N\-F\-I\-G, Uart\-::\-Serial\-\_\-\-Read(), and Uart\-::\-Serial\-\_\-\-Send().
+
+
+
+Referenced by Zig\-Bee().
+
+
+\begin{DoxyCode}
+\{
+    \hyperlink{classUart_ace4b7eaee7374cac2c91ca627b2a78b6}{Serial\_Send}(\hyperlink{uart_8h_af89774268ea3d3837342a1698e105883}{param\_ENTRE\_CONFIG}, 3);
+
+    \hyperlink{classUart_aba195c21510bc9bbab776b961d866e1e}{Serial\_Read}(\hyperlink{classUart_afe931bc10d90890bce0d9331edb99598}{cRecevBuff}, 2);      \textcolor{comment}{//Reçoit la
+       confirmation}
+
+    \textcolor{keywordflow}{if}(\hyperlink{classUart_afe931bc10d90890bce0d9331edb99598}{cRecevBuff}[0] != \textcolor{charliteral}{'o'} || \hyperlink{classUart_afe931bc10d90890bce0d9331edb99598}{cRecevBuff}[1] != \textcolor{charliteral}{'k'}) \{
+        \textcolor{keywordflow}{return} \textcolor{keyword}{false};               \textcolor{comment}{//Si pas de confirmation, on quite}
+    \}
+
+    \hyperlink{classUart_ace4b7eaee7374cac2c91ca627b2a78b6}{Serial\_Send}(\hyperlink{uart_8h_a5eb04239c6384873a45b0c4f43aaa864}{param\_ADRESSE\_EMET\_H}, 4);       
+            \textcolor{comment}{//Demande l'adresse de l'émetteur (MSBs)}
+
+    \hyperlink{classUart_aba195c21510bc9bbab776b961d866e1e}{Serial\_Read}(\hyperlink{classUart_afe931bc10d90890bce0d9331edb99598}{cRecevBuff}, 4);
+
+    printf(\textcolor{stringliteral}{"adresse du module : %X %X %X %X "},\hyperlink{classUart_afe931bc10d90890bce0d9331edb99598}{cRecevBuff}[0],\hyperlink{classUart_afe931bc10d90890bce0d9331edb99598}{
+      cRecevBuff}[1],\hyperlink{classUart_afe931bc10d90890bce0d9331edb99598}{cRecevBuff}[2],\hyperlink{classUart_afe931bc10d90890bce0d9331edb99598}{cRecevBuff}[3]);
+
+    \hyperlink{classUart_ace4b7eaee7374cac2c91ca627b2a78b6}{Serial\_Send}(\hyperlink{uart_8h_ac12bfbd9bb75329241513b728f667963}{param\_ADRESSE\_EMET\_L}, 4);       
+            \textcolor{comment}{//Demande l'adresse de l'émetteur (LSBs)}
+
+    \hyperlink{classUart_aba195c21510bc9bbab776b961d866e1e}{Serial\_Read}(\hyperlink{classUart_afe931bc10d90890bce0d9331edb99598}{cRecevBuff}, 4);
+
+    printf(\textcolor{stringliteral}{"%X %X %X %X\(\backslash\)n"},\hyperlink{classUart_afe931bc10d90890bce0d9331edb99598}{cRecevBuff}[0],\hyperlink{classUart_afe931bc10d90890bce0d9331edb99598}{cRecevBuff}[1],
+      \hyperlink{classUart_afe931bc10d90890bce0d9331edb99598}{cRecevBuff}[2],\hyperlink{classUart_afe931bc10d90890bce0d9331edb99598}{cRecevBuff}[3]);
+
+    \hyperlink{classUart_ace4b7eaee7374cac2c91ca627b2a78b6}{Serial\_Send}(\hyperlink{uart_8h_a54593750162c64711790d32ae7deb6a0}{param\_ADRESSE\_DEST\_H}, 4);       
+            \textcolor{comment}{//Demande l'adresse du recepteur (MSBs)}
+
+    \hyperlink{classUart_aba195c21510bc9bbab776b961d866e1e}{Serial\_Read}(\hyperlink{classUart_afe931bc10d90890bce0d9331edb99598}{cRecevBuff}, 4);
+
+    \textcolor{keywordflow}{if}(strncmp(\hyperlink{classUart_afe931bc10d90890bce0d9331edb99598}{cRecevBuff}, \hyperlink{uart_8h_a2d0c6f9659fde77efee0b205d121ff46}{HISTORY\_DEST\_H}, 4) != 0) \{
+\textcolor{comment}{//        return false;}
+        \textcolor{comment}{//Si différente, on tape dedans...}
+    \}
+
+    \hyperlink{classUart_ace4b7eaee7374cac2c91ca627b2a78b6}{Serial\_Send}(\hyperlink{uart_8h_ab612303ad75cf1a97d2a79ea2760561b}{param\_ADRESSE\_DEST\_L}, 4);       
+            \textcolor{comment}{//Demande l'adresse du recepteur (LSBs)}
+
+    \hyperlink{classUart_aba195c21510bc9bbab776b961d866e1e}{Serial\_Read}(\hyperlink{classUart_afe931bc10d90890bce0d9331edb99598}{cRecevBuff}, 4);
+
+    \textcolor{keywordflow}{if}(strncmp(\hyperlink{classUart_afe931bc10d90890bce0d9331edb99598}{cRecevBuff}, \hyperlink{uart_8h_a2d0c6f9659fde77efee0b205d121ff46}{HISTORY\_DEST\_H}, 4) != 0) \{
+\textcolor{comment}{//        return false;}
+        \textcolor{comment}{//Si différente, on tape dedans...}
+    \}
+
+    \hyperlink{classUart_ace4b7eaee7374cac2c91ca627b2a78b6}{Serial\_Send}(\hyperlink{uart_8h_ab8d053e00fdf4476be4730d5390bfd73}{param\_QUITE\_CONFIG}, 4);           
+        \textcolor{comment}{//Quite la Config}
+
+    \hyperlink{classUart_aba195c21510bc9bbab776b961d866e1e}{Serial\_Read}(\hyperlink{classUart_afe931bc10d90890bce0d9331edb99598}{cRecevBuff}, 2);      \textcolor{comment}{//Reçoit la
+       confirmation}
+
+    \textcolor{keywordflow}{if}(\hyperlink{classUart_afe931bc10d90890bce0d9331edb99598}{cRecevBuff}[0] != \textcolor{charliteral}{'o'} || \hyperlink{classUart_afe931bc10d90890bce0d9331edb99598}{cRecevBuff}[1] != \textcolor{charliteral}{'k'}) \{
+        \textcolor{keywordflow}{return} \textcolor{keyword}{false};               \textcolor{comment}{//Si pas de confirmation, on quite}
+    \}
+
+    \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+\}
+\end{DoxyCode}
+\hypertarget{classZigBee_a8967d2ce7d04ce2d267654975e5bc87c}{\index{Zig\-Bee@{Zig\-Bee}!decode\-Trame@{decode\-Trame}}
+\index{decode\-Trame@{decode\-Trame}!ZigBee@{Zig\-Bee}}
+\subsubsection[{decode\-Trame}]{\setlength{\rightskip}{0pt plus 5cm}void Zig\-Bee\-::decode\-Trame (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classZigBee_a8967d2ce7d04ce2d267654975e5bc87c}
+
+
+Definition at line 128 of file zigbee.\-cpp.
+
+
+
+References b\-Ready\-To\-Send, Get\-Config\-Drone(), Get\-Drone\-Error(), Get\-Drone\-State(), Get\-Drone\-Time(), i\-Index\-Buffer\-In, P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-ul\-Crit\-Battery\-Lvl, P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-ul\-Crit\-Obstacle\-Dist, P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-ul\-Crit\-Zigbee\-Signal\-Lvl, P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-ul\-Max\-Angle, P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-ul\-Min\-Altitude, P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-ul\-Takeoff\-Altitude, P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-Battery\-Monitoring\-Period, P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-Battery\-Timeout, P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-Detect\-Obstacle\-Period, P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-Flight\-Ctrl\-Period, P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-G\-P\-S\-Receive\-Period, P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-G\-P\-S\-Timeout, P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-I\-M\-U\-Data\-Timeout, P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-Telemeter\-Timeout, P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-Video\-Toggle\-Period, P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-Zigbee\-Cmd\-Timeout, P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-Zigbee\-Receive\-Period, P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-x\-Zigbee\-Receive\-Timeout, P\-A\-R\-A\-M\-\_\-\-D\-R\-O\-N\-E\-\_\-\-E\-R\-R\-O\-R, P\-A\-R\-A\-M\-\_\-\-F\-L\-Y\-\_\-\-S\-T\-A\-T\-E, P\-A\-R\-A\-M\-\_\-\-G\-P\-S\-\_\-x\-Update\-Time, P\-A\-R\-A\-M\-\_\-\-I\-M\-U\-\_\-x\-Update\-Time, and S\-T\-A\-T\-E\-\_\-\-S\-T\-A\-R\-T\-I\-N\-G.
+
+
+
+Referenced by receive().
+
+
+\begin{DoxyCode}
+\{
+    \hyperlink{classZigBee_a2b6ec705974d8db622f3eb00efeb9ad8}{iIndexBufferIn} = 0;
+
+    \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0 ; i < st\_BufferIn.lengthData ; i++) \{
+
+        \textcolor{keywordflow}{switch}(st\_BufferIn.Data[\hyperlink{classZigBee_a2b6ec705974d8db622f3eb00efeb9ad8}{iIndexBufferIn}++]) \{
+
+        \textcolor{keywordflow}{case} \hyperlink{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a7828400a62571bb441a0216f1c2e29be}{PARAM\_DRONE\_CONFIG\_ulMaxAngle}:
+            \hyperlink{classZigBee_a1817781f9b8e805bdd4eba25498714fe}{GetConfigDrone}(&(st\_droneConfig.ulMaxAngle));
+            \textcolor{keywordflow}{break};
+        \textcolor{keywordflow}{case} \hyperlink{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632af954ea9792a880b2593da24e0214708f}{PARAM\_DRONE\_CONFIG\_ulTakeoffAltitude}
+      :
+            \hyperlink{classZigBee_a1817781f9b8e805bdd4eba25498714fe}{GetConfigDrone}(&(st\_droneConfig.ulTakeoffAltitude));
+            \textcolor{keywordflow}{break};
+        \textcolor{keywordflow}{case} \hyperlink{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a516ded0a007275ce22b40cba97734484}{PARAM\_DRONE\_CONFIG\_ulMinAltitude}:
+            \hyperlink{classZigBee_a1817781f9b8e805bdd4eba25498714fe}{GetConfigDrone}(&(st\_droneConfig.ulMinAltitude));
+            \textcolor{keywordflow}{break};
+        \textcolor{keywordflow}{case} \hyperlink{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a212c640074147bd9d0d63888d538d256}{PARAM\_DRONE\_CONFIG\_ulCritBatteryLvl}
+      :
+            \hyperlink{classZigBee_a1817781f9b8e805bdd4eba25498714fe}{GetConfigDrone}(&(st\_droneConfig.ulCritBatteryLvl));
+            \textcolor{keywordflow}{break};
+        \textcolor{keywordflow}{case} \hyperlink{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632adc16eed85f98b926f829decb1e7f3175}{PARAM\_DRONE\_CONFIG\_ulCritObstacleDist}
+      :
+            \hyperlink{classZigBee_a1817781f9b8e805bdd4eba25498714fe}{GetConfigDrone}(&(st\_droneConfig.ulCritObstacleDist));
+            \textcolor{keywordflow}{break};
+        \textcolor{keywordflow}{case} \hyperlink{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a91adcfa9ba7373cb5e94cb7dad749286}{PARAM\_DRONE\_CONFIG\_ulCritZigbeeSignalLvl}
+      :
+            \hyperlink{classZigBee_a1817781f9b8e805bdd4eba25498714fe}{GetConfigDrone}(&(st\_droneConfig.ulCritZigbeeSignalLvl
+      ));
+            \textcolor{keywordflow}{break};
+        \textcolor{keywordflow}{case} \hyperlink{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632adaafa83d8768d26374d1cca8f3c4914d}{PARAM\_DRONE\_CONFIG\_xBatteryMonitoringPeriod}
+      :
+            \hyperlink{classZigBee_a1817781f9b8e805bdd4eba25498714fe}{GetConfigDrone}(&(st\_droneConfig.
+      xBatteryMonitoringPeriod));
+            \textcolor{keywordflow}{break};
+        \textcolor{keywordflow}{case} \hyperlink{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a70d207333012bb820cb3576f3fad9048}{PARAM\_DRONE\_CONFIG\_xDetectObstaclePeriod}
+      :
+            \hyperlink{classZigBee_a1817781f9b8e805bdd4eba25498714fe}{GetConfigDrone}(&(st\_droneConfig.xDetectObstaclePeriod
+      ));
+            \textcolor{keywordflow}{break};
+        \textcolor{keywordflow}{case} \hyperlink{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a5c305ec532822ca3aa2ff74d0052f757}{PARAM\_DRONE\_CONFIG\_xZigbeeReceivePeriod}
+      :
+            \hyperlink{classZigBee_a1817781f9b8e805bdd4eba25498714fe}{GetConfigDrone}(&(st\_droneConfig.xZigbeeReceivePeriod)
+      );
+            \textcolor{keywordflow}{break};
+        \textcolor{keywordflow}{case} \hyperlink{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a22871458b110498e27a8b6244d14fd4e}{PARAM\_DRONE\_CONFIG\_xFlightCtrlPeriod}
+      :
+            \hyperlink{classZigBee_a1817781f9b8e805bdd4eba25498714fe}{GetConfigDrone}(&(st\_droneConfig.xFlightCtrlPeriod));
+            \textcolor{keywordflow}{break};
+        \textcolor{keywordflow}{case} \hyperlink{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a80df4e54f488c528a0af260bf4287bcb}{PARAM\_DRONE\_CONFIG\_xGPSReceivePeriod}
+      :
+            \hyperlink{classZigBee_a1817781f9b8e805bdd4eba25498714fe}{GetConfigDrone}(&(st\_droneConfig.xGPSReceivePeriod));
+            \textcolor{keywordflow}{break};
+        \textcolor{keywordflow}{case} \hyperlink{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a590b78e1b29c0c8dcdf6d2dc869e43aa}{PARAM\_DRONE\_CONFIG\_xVideoTogglePeriod}
+      :
+            \hyperlink{classZigBee_a1817781f9b8e805bdd4eba25498714fe}{GetConfigDrone}(&(st\_droneConfig.xVideoTogglePeriod));
+            \textcolor{keywordflow}{break};
+        \textcolor{keywordflow}{case} \hyperlink{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a8bd205ac7401d53092ff7ffc98e754aa}{PARAM\_DRONE\_CONFIG\_xIMUDataTimeout}
+      :
+            st\_droneConfig.xIMUDataTimeout = st\_BufferIn.Data[\hyperlink{classZigBee_a2b6ec705974d8db622f3eb00efeb9ad8}{iIndexBufferIn}
+      ++];
+            \textcolor{keywordflow}{break};
+        \textcolor{keywordflow}{case} \hyperlink{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632afaa7777e435be6b471009c6cdf74c948}{PARAM\_DRONE\_CONFIG\_xZigbeeCmdTimeout}
+      :
+            st\_droneConfig.xZigbeeCmdTimeout = st\_BufferIn.Data[\hyperlink{classZigBee_a2b6ec705974d8db622f3eb00efeb9ad8}{iIndexBufferIn}
+      ++];
+            \textcolor{keywordflow}{break};
+        \textcolor{keywordflow}{case} \hyperlink{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632af2f4da476de6fc43e2118826e9e8bc9b}{PARAM\_DRONE\_CONFIG\_xZigbeeReceiveTimeout}
+      :
+            st\_droneConfig.xZigbeeReceiveTimeout = st\_BufferIn.Data[
+      \hyperlink{classZigBee_a2b6ec705974d8db622f3eb00efeb9ad8}{iIndexBufferIn}++];
+            \textcolor{keywordflow}{break};
+        \textcolor{keywordflow}{case} \hyperlink{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632aa01da571181efda4755ff66c627d007e}{PARAM\_DRONE\_CONFIG\_xTelemeterTimeout}
+      :
+            st\_droneConfig.xTelemeterTimeout = st\_BufferIn.Data[\hyperlink{classZigBee_a2b6ec705974d8db622f3eb00efeb9ad8}{iIndexBufferIn}
+      ++];
+            \textcolor{keywordflow}{break};
+        \textcolor{keywordflow}{case} \hyperlink{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a1298f95dd257a888bde3262a86c4d136}{PARAM\_DRONE\_CONFIG\_xBatteryTimeout}
+      :
+            st\_droneConfig.xBatteryTimeout = st\_BufferIn.Data[\hyperlink{classZigBee_a2b6ec705974d8db622f3eb00efeb9ad8}{iIndexBufferIn}
+      ++];
+            \textcolor{keywordflow}{break};
+        \textcolor{keywordflow}{case} \hyperlink{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a9cd65980217626ee680a9055e78d4131}{PARAM\_DRONE\_CONFIG\_xGPSTimeout}:
+            st\_droneConfig.xGPSTimeout = st\_BufferIn.Data[\hyperlink{classZigBee_a2b6ec705974d8db622f3eb00efeb9ad8}{iIndexBufferIn}
+      ++];
+            \textcolor{comment}{//printf("\(\backslash\)n%d\(\backslash\)n",st\_droneConfig.xGPSTimeout);}
+            \textcolor{keywordflow}{break};
+        \textcolor{keywordflow}{case} \hyperlink{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a01acce445241211e5ef11328c1b8d1e2}{PARAM\_DRONE\_ERROR}:
+            \hyperlink{classZigBee_ac4ea5e99c087a7e536d97a41ef8145d2}{GetDroneError}(&(st\_DroneState.eErrorMask));
+            \textcolor{comment}{//ERREUR A TRAITER?}
+            \textcolor{comment}{//Ici, si erreur mineur-> on demande si elle doit être ignoré}
+                                   \textcolor{comment}{// et on stock pour la prochaine émission}
+            \textcolor{keywordflow}{break};
+        \textcolor{keywordflow}{case} \hyperlink{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a8f2ad857311b305a40e6294736196f47}{PARAM\_FLY\_STATE}:
+            \hyperlink{classZigBee_a246506a3d990d052a37a4d816b88f3e6}{GetDroneState}(&(st\_DroneState.eFltState));
+            \textcolor{keywordflow}{if}(st\_DroneState.eFltState == \hyperlink{typdefUart_8h_aac9034800b5ef8e755ade03d164e3b6caa5f51c4eb8c8eec3b16b058c5e29a037}{STATE\_STARTING})
+                \hyperlink{classZigBee_ac954bdd2f3b1c5bcfe11563765f10878}{bReadyToSend} = \textcolor{keyword}{false};
+            \textcolor{keywordflow}{break};
+        \textcolor{keywordflow}{case} \hyperlink{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632aba9ba51d13875fc28dbcb7aefb4706b2}{PARAM\_IMU\_xUpdateTime}:
+            \hyperlink{classZigBee_a65751fbcd303e5c8e5ff63d69f5eba35}{GetDroneTime}(&(st\_DataIMU.xUpdateTime));
+            \textcolor{keywordflow}{break};
+        \textcolor{keywordflow}{case} \hyperlink{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632af3fc4126f4c3a7540f615932cf7b6144}{PARAM\_GPS\_xUpdateTime}:
+            \hyperlink{classZigBee_a65751fbcd303e5c8e5ff63d69f5eba35}{GetDroneTime}(&(st\_DataGPS.xUpdateTime));
+            \textcolor{keywordflow}{break};
+        \textcolor{keywordflow}{default}:
+            \textcolor{keywordflow}{break};
+        \}
+    \}
+\}
+\end{DoxyCode}
+\hypertarget{classZigBee_a1817781f9b8e805bdd4eba25498714fe}{\index{Zig\-Bee@{Zig\-Bee}!Get\-Config\-Drone@{Get\-Config\-Drone}}
+\index{Get\-Config\-Drone@{Get\-Config\-Drone}!ZigBee@{Zig\-Bee}}
+\subsubsection[{Get\-Config\-Drone}]{\setlength{\rightskip}{0pt plus 5cm}void Zig\-Bee\-::\-Get\-Config\-Drone (
+\begin{DoxyParamCaption}
+\item[{{\bf uint32\-\_\-t} $\ast$}]{param}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classZigBee_a1817781f9b8e805bdd4eba25498714fe}
+
+
+Definition at line 214 of file zigbee.\-cpp.
+
+
+
+References i\-Index\-Buffer\-In.
+
+
+
+Referenced by decode\-Trame().
+
+
+\begin{DoxyCode}
+\{
+    *param = 0;
+
+    \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j = 0 ; j < 4 ; j++)
+        *param = (\hyperlink{typdefUart_8h_a435d1572bf3f880d55459d9805097f62}{uint32\_t})( (*param)*256 + (\hyperlink{typdefUart_8h_a435d1572bf3f880d55459d9805097f62}{uint32\_t})
+      st\_BufferIn.Data[ (3-j) + \hyperlink{classZigBee_a2b6ec705974d8db622f3eb00efeb9ad8}{iIndexBufferIn} ] );
+    \hyperlink{classZigBee_a2b6ec705974d8db622f3eb00efeb9ad8}{iIndexBufferIn} += 4;
+\}
+\end{DoxyCode}
+\hypertarget{classZigBee_ac4ea5e99c087a7e536d97a41ef8145d2}{\index{Zig\-Bee@{Zig\-Bee}!Get\-Drone\-Error@{Get\-Drone\-Error}}
+\index{Get\-Drone\-Error@{Get\-Drone\-Error}!ZigBee@{Zig\-Bee}}
+\subsubsection[{Get\-Drone\-Error}]{\setlength{\rightskip}{0pt plus 5cm}void Zig\-Bee\-::\-Get\-Drone\-Error (
+\begin{DoxyParamCaption}
+\item[{{\bf drone\-Error} $\ast$}]{param}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classZigBee_ac4ea5e99c087a7e536d97a41ef8145d2}
+
+
+Definition at line 223 of file zigbee.\-cpp.
+
+
+
+References i\-Index\-Buffer\-In.
+
+
+
+Referenced by decode\-Trame().
+
+
+\begin{DoxyCode}
+\{
+    *param = (\hyperlink{typdefUart_8h_aad4124e5a34e185d704fe88506ecf352}{droneError})0;
+
+    \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j = 0 ; j < 2 ; j++)
+        *param = (\hyperlink{typdefUart_8h_aad4124e5a34e185d704fe88506ecf352}{droneError})( (*param)*256 + (\hyperlink{typdefUart_8h_aad4124e5a34e185d704fe88506ecf352}{droneError})
+      st\_BufferIn.Data[ (1-j) + \hyperlink{classZigBee_a2b6ec705974d8db622f3eb00efeb9ad8}{iIndexBufferIn} ] );
+    \hyperlink{classZigBee_a2b6ec705974d8db622f3eb00efeb9ad8}{iIndexBufferIn} += 2;
+\}
+\end{DoxyCode}
+\hypertarget{classZigBee_a246506a3d990d052a37a4d816b88f3e6}{\index{Zig\-Bee@{Zig\-Bee}!Get\-Drone\-State@{Get\-Drone\-State}}
+\index{Get\-Drone\-State@{Get\-Drone\-State}!ZigBee@{Zig\-Bee}}
+\subsubsection[{Get\-Drone\-State}]{\setlength{\rightskip}{0pt plus 5cm}void Zig\-Bee\-::\-Get\-Drone\-State (
+\begin{DoxyParamCaption}
+\item[{{\bf drone\-Flt\-State} $\ast$}]{param}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classZigBee_a246506a3d990d052a37a4d816b88f3e6}
+
+
+Definition at line 232 of file zigbee.\-cpp.
+
+
+
+References i\-Index\-Buffer\-In.
+
+
+
+Referenced by decode\-Trame().
+
+
+\begin{DoxyCode}
+\{
+    *param = (\hyperlink{typdefUart_8h_aac9034800b5ef8e755ade03d164e3b6c}{droneFltState})st\_BufferIn.Data[\hyperlink{classZigBee_a2b6ec705974d8db622f3eb00efeb9ad8}{iIndexBufferIn}
+      ++];
+\}
+\end{DoxyCode}
+\hypertarget{classZigBee_a65751fbcd303e5c8e5ff63d69f5eba35}{\index{Zig\-Bee@{Zig\-Bee}!Get\-Drone\-Time@{Get\-Drone\-Time}}
+\index{Get\-Drone\-Time@{Get\-Drone\-Time}!ZigBee@{Zig\-Bee}}
+\subsubsection[{Get\-Drone\-Time}]{\setlength{\rightskip}{0pt plus 5cm}void Zig\-Bee\-::\-Get\-Drone\-Time (
+\begin{DoxyParamCaption}
+\item[{{\bf port\-Tick\-Type} $\ast$}]{param}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classZigBee_a65751fbcd303e5c8e5ff63d69f5eba35}
+
+
+Definition at line 237 of file zigbee.\-cpp.
+
+
+
+References i\-Index\-Buffer\-In.
+
+
+
+Referenced by decode\-Trame().
+
+
+\begin{DoxyCode}
+                                             \{
+
+    *param = 0;
+
+    \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j = 0 ; j < 4 ; j++)
+        *param = (\hyperlink{typdefUart_8h_ae9fa5e001303f1be1c0294f26cde8caf}{portTickType})( (*param)*256 + (\hyperlink{typdefUart_8h_ae9fa5e001303f1be1c0294f26cde8caf}{portTickType}
+      )st\_BufferIn.Data[ (3-j) + \hyperlink{classZigBee_a2b6ec705974d8db622f3eb00efeb9ad8}{iIndexBufferIn} ] );
+    \hyperlink{classZigBee_a2b6ec705974d8db622f3eb00efeb9ad8}{iIndexBufferIn} += 4;
+\}
+\end{DoxyCode}
+\hypertarget{classZigBee_a0852f85771d48df17a6256edcd91bece}{\index{Zig\-Bee@{Zig\-Bee}!receive@{receive}}
+\index{receive@{receive}!ZigBee@{Zig\-Bee}}
+\subsubsection[{receive}]{\setlength{\rightskip}{0pt plus 5cm}void Zig\-Bee\-::receive (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classZigBee_a0852f85771d48df17a6256edcd91bece}
+
+
+Definition at line 74 of file zigbee.\-cpp.
+
+
+
+References b\-Ready\-To\-Send, decode\-Trame(), and Uart\-::\-Serial\-\_\-\-Read().
+
+
+
+Referenced by Q\-Base\-::run().
+
+
+\begin{DoxyCode}
+\{
+    \textcolor{keywordflow}{if}( (st\_BufferIn.lengthData = (\textcolor{keywordtype}{char})\hyperlink{classUart_aba195c21510bc9bbab776b961d866e1e}{Serial\_Read}(st\_BufferIn.Data
+      , 95)) < 0) \{\textcolor{comment}{// !! SA ASSURER QU'IL PEUT LIRE MOINS DE 95 OCTETS}
+        \textcolor{keywordflow}{return};
+    \}
+
+    \textcolor{keywordflow}{if}(st\_BufferIn.lengthData == 0) \{
+        printf(\textcolor{stringliteral}{"HELLO\(\backslash\)n"});
+        \textcolor{keywordflow}{return};
+    \}
+    \hyperlink{classZigBee_ac954bdd2f3b1c5bcfe11563765f10878}{bReadyToSend} = \textcolor{keyword}{true};
+    \hyperlink{classZigBee_a8967d2ce7d04ce2d267654975e5bc87c}{decodeTrame}();
+\}
+\end{DoxyCode}
+\hypertarget{classZigBee_a6b69e04be626400b5b245fa1b56f0810}{\index{Zig\-Bee@{Zig\-Bee}!Send\-Command@{Send\-Command}}
+\index{Send\-Command@{Send\-Command}!ZigBee@{Zig\-Bee}}
+\subsubsection[{Send\-Command}]{\setlength{\rightskip}{0pt plus 5cm}void Zig\-Bee\-::\-Send\-Command (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classZigBee_a6b69e04be626400b5b245fa1b56f0810}
+
+
+Definition at line 88 of file zigbee.\-cpp.
+
+
+
+References b\-Ready\-To\-Send, C\-M\-D\-\_\-\-G\-E\-T\-\_\-\-S\-T\-A\-T\-U\-S, i\-Index\-Buffer\-Out, P\-A\-R\-A\-M\-\_\-\-C\-M\-D\-\_\-\-D\-R\-O\-N\-E, P\-A\-R\-A\-M\-\_\-\-C\-M\-D\-\_\-\-I\-D, and Uart\-::\-Serial\-\_\-\-Send().
+
+
+
+Referenced by Q\-Base\-::run().
+
+
+\begin{DoxyCode}
+\{
+    \textcolor{comment}{/* Envoit les infos Commandes au drone}
+\textcolor{comment}{     * Et demande de retourner son status}
+\textcolor{comment}{     */}
+
+    \textcolor{keywordflow}{if}(\hyperlink{classZigBee_ac954bdd2f3b1c5bcfe11563765f10878}{bReadyToSend}) \{
+
+        \hyperlink{classZigBee_aa510069113962d7a107f27c4d798d08c}{iIndexBufferOut} = 0;
+        st\_BufferOut.lengthData = 0;
+
+        st\_BufferOut.Data[\hyperlink{classZigBee_aa510069113962d7a107f27c4d798d08c}{iIndexBufferOut}++] = (char)(
+      \hyperlink{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632ab52e565f8ee0b43ab5fdba5dd32ef949}{PARAM\_CMD\_DRONE});
+        st\_BufferOut.Data[\hyperlink{classZigBee_aa510069113962d7a107f27c4d798d08c}{iIndexBufferOut}++] = (char)(
+      st\_CommandDrone.cTransX);
+        st\_BufferOut.Data[\hyperlink{classZigBee_aa510069113962d7a107f27c4d798d08c}{iIndexBufferOut}++] = (char)(
+      st\_CommandDrone.cTransY);
+        st\_BufferOut.Data[\hyperlink{classZigBee_aa510069113962d7a107f27c4d798d08c}{iIndexBufferOut}++] = (char)(
+      st\_CommandDrone.cTransZ);
+        st\_BufferOut.Data[\hyperlink{classZigBee_aa510069113962d7a107f27c4d798d08c}{iIndexBufferOut}++] = (char)(
+      st\_CommandDrone.cRotZ);
+        st\_BufferOut.lengthData++;
+
+        st\_BufferOut.Data[\hyperlink{classZigBee_aa510069113962d7a107f27c4d798d08c}{iIndexBufferOut}++] = (char)(
+      \hyperlink{typdefUart_8h_a7fdf1e7bfbebe0c7a2eb84a10e069632a653f0737cc2f062b0f5563ee5c9023e4}{PARAM\_CMD\_ID});
+        st\_BufferOut.Data[\hyperlink{classZigBee_aa510069113962d7a107f27c4d798d08c}{iIndexBufferOut}++] = (char)(
+      \hyperlink{typdefUart_8h_aa8a212aca1d1f49ff85fe2ac4b74cbb6aa9f5e1d3fa7a48a053cb78acdf95e57a}{CMD\_GET\_STATUS});
+        st\_BufferOut.lengthData++;
+
+        \textcolor{keywordtype}{char} *tmp = (\textcolor{keywordtype}{char}*)malloc((\textcolor{keywordtype}{size\_t})(\hyperlink{classZigBee_aa510069113962d7a107f27c4d798d08c}{iIndexBufferOut}+1));
+
+        tmp[0] = st\_BufferOut.lengthData;
+        memcpy(&tmp[1],st\_BufferOut.Data, \hyperlink{classZigBee_aa510069113962d7a107f27c4d798d08c}{iIndexBufferOut});
+
+        \textcolor{keywordflow}{if}(\hyperlink{classUart_ace4b7eaee7374cac2c91ca627b2a78b6}{Serial\_Send}(tmp, \hyperlink{classZigBee_aa510069113962d7a107f27c4d798d08c}{iIndexBufferOut}+1 ) < 0) 
+      \{
+            \textcolor{comment}{//ERREUR D'ECRITURE!!}
+        \}
+        free(tmp);
+        \hyperlink{classZigBee_ac954bdd2f3b1c5bcfe11563765f10878}{bReadyToSend} = \textcolor{keyword}{false};
+    \}
+\}
+\end{DoxyCode}
+\hypertarget{classZigBee_aef177ea29c57953e74ddcd8bb356fe2f}{\index{Zig\-Bee@{Zig\-Bee}!Send\-Config@{Send\-Config}}
+\index{Send\-Config@{Send\-Config}!ZigBee@{Zig\-Bee}}
+\subsubsection[{Send\-Config}]{\setlength{\rightskip}{0pt plus 5cm}void Zig\-Bee\-::\-Send\-Config (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classZigBee_aef177ea29c57953e74ddcd8bb356fe2f}
+
+
+Definition at line 123 of file zigbee.\-cpp.
+
+
+
+References b\-Ready\-To\-Send.
+
+
+\begin{DoxyCode}
+\{
+    \hyperlink{classZigBee_ac954bdd2f3b1c5bcfe11563765f10878}{bReadyToSend} = \textcolor{keyword}{false};
+\}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classZigBee_ac954bdd2f3b1c5bcfe11563765f10878}{\index{Zig\-Bee@{Zig\-Bee}!b\-Ready\-To\-Send@{b\-Ready\-To\-Send}}
+\index{b\-Ready\-To\-Send@{b\-Ready\-To\-Send}!ZigBee@{Zig\-Bee}}
+\subsubsection[{b\-Ready\-To\-Send}]{\setlength{\rightskip}{0pt plus 5cm}bool Zig\-Bee\-::b\-Ready\-To\-Send\hspace{0.3cm}{\ttfamily [private]}}}\label{classZigBee_ac954bdd2f3b1c5bcfe11563765f10878}
+
+
+Definition at line 39 of file zigbee.\-h.
+
+
+
+Referenced by decode\-Trame(), receive(), Send\-Command(), Send\-Config(), and Zig\-Bee().
+
+\hypertarget{classZigBee_a2b6ec705974d8db622f3eb00efeb9ad8}{\index{Zig\-Bee@{Zig\-Bee}!i\-Index\-Buffer\-In@{i\-Index\-Buffer\-In}}
+\index{i\-Index\-Buffer\-In@{i\-Index\-Buffer\-In}!ZigBee@{Zig\-Bee}}
+\subsubsection[{i\-Index\-Buffer\-In}]{\setlength{\rightskip}{0pt plus 5cm}int Zig\-Bee\-::i\-Index\-Buffer\-In\hspace{0.3cm}{\ttfamily [private]}}}\label{classZigBee_a2b6ec705974d8db622f3eb00efeb9ad8}
+
+
+Definition at line 37 of file zigbee.\-h.
+
+
+
+Referenced by decode\-Trame(), Get\-Config\-Drone(), Get\-Drone\-Error(), Get\-Drone\-State(), and Get\-Drone\-Time().
+
+\hypertarget{classZigBee_aa510069113962d7a107f27c4d798d08c}{\index{Zig\-Bee@{Zig\-Bee}!i\-Index\-Buffer\-Out@{i\-Index\-Buffer\-Out}}
+\index{i\-Index\-Buffer\-Out@{i\-Index\-Buffer\-Out}!ZigBee@{Zig\-Bee}}
+\subsubsection[{i\-Index\-Buffer\-Out}]{\setlength{\rightskip}{0pt plus 5cm}int Zig\-Bee\-::i\-Index\-Buffer\-Out\hspace{0.3cm}{\ttfamily [private]}}}\label{classZigBee_aa510069113962d7a107f27c4d798d08c}
+
+
+Definition at line 38 of file zigbee.\-h.
+
+
+
+Referenced by Send\-Command().
+
+\hypertarget{classZigBee_a7048223c8f5546e3614641cba1062357}{\index{Zig\-Bee@{Zig\-Bee}!Msg\-Box@{Msg\-Box}}
+\index{Msg\-Box@{Msg\-Box}!ZigBee@{Zig\-Bee}}
+\subsubsection[{Msg\-Box}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Message\-Box Zig\-Bee\-::\-Msg\-Box\hspace{0.3cm}{\ttfamily [private]}}}\label{classZigBee_a7048223c8f5546e3614641cba1062357}
+
+
+Definition at line 34 of file zigbee.\-h.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{zigbee_8h}{zigbee.\-h}\item 
+\hyperlink{zigbee_8cpp}{zigbee.\-cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,715 @@
+\hypertarget{classLightMaps}{\section{Light\-Maps Class Reference}
+\label{classLightMaps}\index{Light\-Maps@{Light\-Maps}}
+}
+
+
+{\ttfamily \#include \char`\"{}lightmaps.\-h\char`\"{}}
+
+
+
+Collaboration diagram for Light\-Maps\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classLightMaps__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classLightMaps_a231905fb3ab4d3d488a64f3ac3bba7a3}{toggle\-Night\-Mode} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classLightMaps_ae481a3b0cb8f2bce40e8ae2703aa6cbd}{Light\-Maps} (Q\-Widget $\ast$parent=0)
+\item 
+void \hyperlink{classLightMaps_a48a673b2f3167a02004ced0b182a8498}{set\-Center} (qreal lat, qreal lng)
+\item 
+Q\-String \hyperlink{classLightMaps_a4ba4104b6f73f5887227075c38ae8a7c}{affiche\-Heure} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Q\-String \hyperlink{classLightMaps_a3bffc587b77f94dadef10a63ba9b627e}{heure}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classLightMaps_a21fa5e0c300553570417ebd907d53d61}{activate\-Zoom} ()
+\item 
+void \hyperlink{classLightMaps_a1a4eb844187dd9fe819925312a000748}{resize\-Event} (Q\-Resize\-Event $\ast$)
+\item 
+void \hyperlink{classLightMaps_a5ef253065acd4c9d3ea3015b0fa1e336}{paint\-Event} (Q\-Paint\-Event $\ast$event)
+\item 
+void \hyperlink{classLightMaps_a89475b3da6e594e645d19ea507e61907}{timer\-Event} (Q\-Timer\-Event $\ast$)
+\item 
+void \hyperlink{classLightMaps_a12c0b5ff0ef36b7f160dd9184036e346}{mouse\-Press\-Event} (Q\-Mouse\-Event $\ast$event)
+\item 
+void \hyperlink{classLightMaps_ab55b7bda0a50fd27457ed52118513109}{mouse\-Move\-Event} (Q\-Mouse\-Event $\ast$event)
+\item 
+void \hyperlink{classLightMaps_a4c66425af6f5ecbca3d0af52e9cee998}{mouse\-Release\-Event} (Q\-Mouse\-Event $\ast$)
+\item 
+void \hyperlink{classLightMaps_ae6752e8bbc4bd80b4080e6308cb40a99}{key\-Press\-Event} (Q\-Key\-Event $\ast$event)
+\end{DoxyCompactItemize}
+\subsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classLightMaps_ae5e717309f666a3462cf5c5f5c5fbe43}{update\-Map} (const Q\-Rect \&r)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSlippyMap}{Slippy\-Map} $\ast$ \hyperlink{classLightMaps_a62539ec15fdc3559461cfa5b80ed3f84}{m\-\_\-normal\-Map}
+\item 
+\hyperlink{classSlippyMap}{Slippy\-Map} $\ast$ \hyperlink{classLightMaps_a46a1d64c4860e7bdeec5d3dc23b5b66a}{m\-\_\-large\-Map}
+\item 
+bool \hyperlink{classLightMaps_a3de175af7a5611709dd46895b5b2baf7}{pressed}
+\item 
+bool \hyperlink{classLightMaps_a573f99d2f902a8b0b53ec7f7a5207775}{snapped}
+\item 
+Q\-Point \hyperlink{classLightMaps_a938551c74aa20bfb6896a46ea1437c79}{press\-Pos}
+\item 
+Q\-Point \hyperlink{classLightMaps_aa848f52d9b220d969605564bbba30005}{drag\-Pos}
+\item 
+Q\-Basic\-Timer \hyperlink{classLightMaps_a5a537b004e79b6d8667d5550c0e3af07}{tap\-Timer}
+\item 
+bool \hyperlink{classLightMaps_a3ecc8b8c64dfe20dd5bdfc7974ac48e3}{zoomed}
+\item 
+Q\-Pixmap \hyperlink{classLightMaps_a5a3f56996f498669ecd48b2670c3937f}{zoom\-Pixmap}
+\item 
+Q\-Pixmap \hyperlink{classLightMaps_a3a24ed88ec215d755ab8a2255b61ebf0}{mask\-Pixmap}
+\item 
+bool \hyperlink{classLightMaps_af4784df46ac3c6cf085e48811cc367b6}{invert}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 9 of file lightmaps.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classLightMaps_ae481a3b0cb8f2bce40e8ae2703aa6cbd}{\index{Light\-Maps@{Light\-Maps}!Light\-Maps@{Light\-Maps}}
+\index{Light\-Maps@{Light\-Maps}!LightMaps@{Light\-Maps}}
+\subsubsection[{Light\-Maps}]{\setlength{\rightskip}{0pt plus 5cm}Light\-Maps\-::\-Light\-Maps (
+\begin{DoxyParamCaption}
+\item[{Q\-Widget $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{classLightMaps_ae481a3b0cb8f2bce40e8ae2703aa6cbd}
+
+
+Definition at line 22 of file lightmaps.\-cpp.
+
+
+
+References m\-\_\-large\-Map, m\-\_\-normal\-Map, and update\-Map().
+
+
+\begin{DoxyCode}
+    : QWidget(parent), \hyperlink{classLightMaps_a3de175af7a5611709dd46895b5b2baf7}{pressed}(\textcolor{keyword}{false}), \hyperlink{classLightMaps_a573f99d2f902a8b0b53ec7f7a5207775}{snapped}(\textcolor{keyword}{false}), \hyperlink{classLightMaps_a3ecc8b8c64dfe20dd5bdfc7974ac48e3}{zoomed}
+      (\textcolor{keyword}{false}),
+      \hyperlink{classLightMaps_af4784df46ac3c6cf085e48811cc367b6}{invert}(\textcolor{keyword}{false})
+\{
+    \hyperlink{classLightMaps_a62539ec15fdc3559461cfa5b80ed3f84}{m\_normalMap} = \textcolor{keyword}{new} \hyperlink{classSlippyMap}{SlippyMap}(\textcolor{keyword}{this});
+    \hyperlink{classLightMaps_a46a1d64c4860e7bdeec5d3dc23b5b66a}{m\_largeMap} = \textcolor{keyword}{new} \hyperlink{classSlippyMap}{SlippyMap}(\textcolor{keyword}{this});
+    connect(\hyperlink{classLightMaps_a62539ec15fdc3559461cfa5b80ed3f84}{m\_normalMap}, SIGNAL(updated(QRect)), SLOT(\hyperlink{classLightMaps_ae5e717309f666a3462cf5c5f5c5fbe43}{updateMap}
+      (QRect)));
+    connect(\hyperlink{classLightMaps_a46a1d64c4860e7bdeec5d3dc23b5b66a}{m\_largeMap}, SIGNAL(updated(QRect)), SLOT(update()));
+\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classLightMaps_a21fa5e0c300553570417ebd907d53d61}{\index{Light\-Maps@{Light\-Maps}!activate\-Zoom@{activate\-Zoom}}
+\index{activate\-Zoom@{activate\-Zoom}!LightMaps@{Light\-Maps}}
+\subsubsection[{activate\-Zoom}]{\setlength{\rightskip}{0pt plus 5cm}void Light\-Maps\-::activate\-Zoom (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classLightMaps_a21fa5e0c300553570417ebd907d53d61}
+
+
+Definition at line 53 of file lightmaps.\-cpp.
+
+
+
+References Slippy\-Map\-::height, Slippy\-Map\-::invalidate(), Slippy\-Map\-::latitude, Slippy\-Map\-::longitude, m\-\_\-large\-Map, m\-\_\-normal\-Map, tap\-Timer, Slippy\-Map\-::width, Slippy\-Map\-::zoom, and zoomed.
+
+
+
+Referenced by key\-Press\-Event(), and timer\-Event().
+
+
+\begin{DoxyCode}
+\{
+    \hyperlink{classLightMaps_a3ecc8b8c64dfe20dd5bdfc7974ac48e3}{zoomed} = \textcolor{keyword}{true};
+    \hyperlink{classLightMaps_a5a537b004e79b6d8667d5550c0e3af07}{tapTimer}.stop();
+    \hyperlink{classLightMaps_a46a1d64c4860e7bdeec5d3dc23b5b66a}{m\_largeMap}->\hyperlink{classSlippyMap_a13dcc9915570a1a333c1e9275ffe64b3}{zoom} = \hyperlink{classLightMaps_a62539ec15fdc3559461cfa5b80ed3f84}{m\_normalMap}->\hyperlink{classSlippyMap_a13dcc9915570a1a333c1e9275ffe64b3}{zoom} + 1;
+    \hyperlink{classLightMaps_a46a1d64c4860e7bdeec5d3dc23b5b66a}{m\_largeMap}->\hyperlink{classSlippyMap_ada3532095a8c4083e9da3db17de29fc1}{width} = \hyperlink{classLightMaps_a62539ec15fdc3559461cfa5b80ed3f84}{m\_normalMap}->\hyperlink{classSlippyMap_ada3532095a8c4083e9da3db17de29fc1}{width} * 2;
+    \hyperlink{classLightMaps_a46a1d64c4860e7bdeec5d3dc23b5b66a}{m\_largeMap}->\hyperlink{classSlippyMap_aacec4be5e2b83eb2744a3b3b03c4af7a}{height} = \hyperlink{classLightMaps_a62539ec15fdc3559461cfa5b80ed3f84}{m\_normalMap}->\hyperlink{classSlippyMap_aacec4be5e2b83eb2744a3b3b03c4af7a}{height} *
+       2;
+    \hyperlink{classLightMaps_a46a1d64c4860e7bdeec5d3dc23b5b66a}{m\_largeMap}->\hyperlink{classSlippyMap_a223220fdcbf2197845f009d48225c0c8}{latitude} = \hyperlink{classLightMaps_a62539ec15fdc3559461cfa5b80ed3f84}{m\_normalMap}->\hyperlink{classSlippyMap_a223220fdcbf2197845f009d48225c0c8}{latitude}
+      ;
+    \hyperlink{classLightMaps_a46a1d64c4860e7bdeec5d3dc23b5b66a}{m\_largeMap}->\hyperlink{classSlippyMap_af93efe003c192b7bc6a1ece6c7342de6}{longitude} = \hyperlink{classLightMaps_a62539ec15fdc3559461cfa5b80ed3f84}{m\_normalMap}->\hyperlink{classSlippyMap_af93efe003c192b7bc6a1ece6c7342de6}{
+      longitude};
+    \hyperlink{classLightMaps_a46a1d64c4860e7bdeec5d3dc23b5b66a}{m\_largeMap}->\hyperlink{classSlippyMap_aa8a2647176ff7db85ab52ce9e7acb549}{invalidate}();
+    update();
+\}
+\end{DoxyCode}
+\hypertarget{classLightMaps_a4ba4104b6f73f5887227075c38ae8a7c}{\index{Light\-Maps@{Light\-Maps}!affiche\-Heure@{affiche\-Heure}}
+\index{affiche\-Heure@{affiche\-Heure}!LightMaps@{Light\-Maps}}
+\subsubsection[{affiche\-Heure}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String Light\-Maps\-::affiche\-Heure (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classLightMaps_a4ba4104b6f73f5887227075c38ae8a7c}
+
+
+Definition at line 157 of file lightmaps.\-cpp.
+
+
+
+References heure.
+
+
+
+Referenced by paint\-Event().
+
+
+\begin{DoxyCode}
+\{
+    \textcolor{comment}{/*QFile fichier("/home/estei/projet/fonctionnel/GPS/testQT/lightmaps/
+      dataIHM.txt");*/}
+    QFile fichier(\textcolor{stringliteral}{"/home/Guillaume\_Pierre/GPS/dataIHM.txt"});
+    QString ligne;
+    \textcolor{keywordtype}{int} i = 0;
+    QTextStream flux(&fichier);
+
+    \textcolor{keywordflow}{if}(fichier.open(QIODevice::ReadOnly | QIODevice::Text))
+    \{
+        \textcolor{keywordflow}{while}(!flux.atEnd())
+        \{
+            ligne = fichier.readLine();
+            \textcolor{keywordflow}{if}(i == 2)
+                \hyperlink{classLightMaps_a3bffc587b77f94dadef10a63ba9b627e}{heure} = ligne;
+            i++;
+        \}
+        fichier.close();
+        i = 0;
+    \}
+    \textcolor{keywordflow}{else}
+        ligne = \textcolor{stringliteral}{"Impossible d'ouvrir le fichier !"};
+
+    \textcolor{keywordflow}{return} \hyperlink{classLightMaps_a3bffc587b77f94dadef10a63ba9b627e}{heure};
+\}
+\end{DoxyCode}
+\hypertarget{classLightMaps_ae6752e8bbc4bd80b4080e6308cb40a99}{\index{Light\-Maps@{Light\-Maps}!key\-Press\-Event@{key\-Press\-Event}}
+\index{key\-Press\-Event@{key\-Press\-Event}!LightMaps@{Light\-Maps}}
+\subsubsection[{key\-Press\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void Light\-Maps\-::key\-Press\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Key\-Event $\ast$}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classLightMaps_ae6752e8bbc4bd80b4080e6308cb40a99}
+
+
+Definition at line 234 of file lightmaps.\-cpp.
+
+
+
+References activate\-Zoom(), drag\-Pos, m\-\_\-normal\-Map, Slippy\-Map\-::pan(), and zoomed.
+
+
+\begin{DoxyCode}
+\{
+    \textcolor{keywordflow}{if} (!\hyperlink{classLightMaps_a3ecc8b8c64dfe20dd5bdfc7974ac48e3}{zoomed}) \{
+        \textcolor{keywordflow}{if} (event->key() == Qt::Key\_Left)
+            \hyperlink{classLightMaps_a62539ec15fdc3559461cfa5b80ed3f84}{m\_normalMap}->\hyperlink{classSlippyMap_ae954bbb164e84e5cecf3fbb518eb266c}{pan}(QPoint(20, 0));
+        \textcolor{keywordflow}{if} (event->key() == Qt::Key\_Right)
+            \hyperlink{classLightMaps_a62539ec15fdc3559461cfa5b80ed3f84}{m\_normalMap}->\hyperlink{classSlippyMap_ae954bbb164e84e5cecf3fbb518eb266c}{pan}(QPoint(-20, 0));
+        \textcolor{keywordflow}{if} (event->key() == Qt::Key\_Up)
+            \hyperlink{classLightMaps_a62539ec15fdc3559461cfa5b80ed3f84}{m\_normalMap}->\hyperlink{classSlippyMap_ae954bbb164e84e5cecf3fbb518eb266c}{pan}(QPoint(0, 20));
+        \textcolor{keywordflow}{if} (event->key() == Qt::Key\_Down)
+            \hyperlink{classLightMaps_a62539ec15fdc3559461cfa5b80ed3f84}{m\_normalMap}->\hyperlink{classSlippyMap_ae954bbb164e84e5cecf3fbb518eb266c}{pan}(QPoint(0, -20));
+        \textcolor{keywordflow}{if} (event->key() == Qt::Key\_Z || \textcolor{keyword}{event}->key() == Qt::Key\_Select) \{
+            \hyperlink{classLightMaps_aa848f52d9b220d969605564bbba30005}{dragPos} = QPoint(width() / 2, height() / 2);
+            \hyperlink{classLightMaps_a21fa5e0c300553570417ebd907d53d61}{activateZoom}();
+        \}
+    \} \textcolor{keywordflow}{else} \{
+        \textcolor{keywordflow}{if} (event->key() == Qt::Key\_Z || \textcolor{keyword}{event}->key() == Qt::Key\_Select) \{
+            \hyperlink{classLightMaps_a3ecc8b8c64dfe20dd5bdfc7974ac48e3}{zoomed} = \textcolor{keyword}{false};
+            update();
+        \}
+        QPoint delta(0, 0);
+        \textcolor{keywordflow}{if} (event->key() == Qt::Key\_Left)
+            delta = QPoint(-15, 0);
+        \textcolor{keywordflow}{if} (event->key() == Qt::Key\_Right)
+            delta = QPoint(15, 0);
+        \textcolor{keywordflow}{if} (event->key() == Qt::Key\_Up)
+            delta = QPoint(0, -15);
+        \textcolor{keywordflow}{if} (event->key() == Qt::Key\_Down)
+            delta = QPoint(0, 15);
+        \textcolor{keywordflow}{if} (delta != QPoint(0, 0)) \{
+            \hyperlink{classLightMaps_aa848f52d9b220d969605564bbba30005}{dragPos} += delta;
+            update();
+        \}
+    \}
+\}
+\end{DoxyCode}
+\hypertarget{classLightMaps_ab55b7bda0a50fd27457ed52118513109}{\index{Light\-Maps@{Light\-Maps}!mouse\-Move\-Event@{mouse\-Move\-Event}}
+\index{mouse\-Move\-Event@{mouse\-Move\-Event}!LightMaps@{Light\-Maps}}
+\subsubsection[{mouse\-Move\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void Light\-Maps\-::mouse\-Move\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Mouse\-Event $\ast$}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classLightMaps_ab55b7bda0a50fd27457ed52118513109}
+
+
+Definition at line 200 of file lightmaps.\-cpp.
+
+
+
+References drag\-Pos, m\-\_\-normal\-Map, Slippy\-Map\-::pan(), pressed, press\-Pos, snapped, tap\-Timer, and zoomed.
+
+
+\begin{DoxyCode}
+\{
+    \textcolor{keywordflow}{if} (!event->buttons())
+        \textcolor{keywordflow}{return};
+    \textcolor{keywordflow}{if} (!\hyperlink{classLightMaps_a3ecc8b8c64dfe20dd5bdfc7974ac48e3}{zoomed}) \{
+        \textcolor{keywordflow}{if} (!\hyperlink{classLightMaps_a3de175af7a5611709dd46895b5b2baf7}{pressed} || !\hyperlink{classLightMaps_a573f99d2f902a8b0b53ec7f7a5207775}{snapped}) \{
+            QPoint delta = \textcolor{keyword}{event}->pos() - \hyperlink{classLightMaps_a938551c74aa20bfb6896a46ea1437c79}{pressPos};
+            \hyperlink{classLightMaps_a938551c74aa20bfb6896a46ea1437c79}{pressPos} = \textcolor{keyword}{event}->pos();
+            \hyperlink{classLightMaps_a62539ec15fdc3559461cfa5b80ed3f84}{m\_normalMap}->\hyperlink{classSlippyMap_ae954bbb164e84e5cecf3fbb518eb266c}{pan}(delta);
+            \textcolor{keywordflow}{return};
+        \} \textcolor{keywordflow}{else} \{
+            \textcolor{keyword}{const} \textcolor{keywordtype}{int} threshold = 10;
+            QPoint delta = \textcolor{keyword}{event}->pos() - \hyperlink{classLightMaps_a938551c74aa20bfb6896a46ea1437c79}{pressPos};
+            \textcolor{keywordflow}{if} (\hyperlink{classLightMaps_a573f99d2f902a8b0b53ec7f7a5207775}{snapped}) \{
+                \hyperlink{classLightMaps_a573f99d2f902a8b0b53ec7f7a5207775}{snapped} &= delta.x() < threshold;
+                \hyperlink{classLightMaps_a573f99d2f902a8b0b53ec7f7a5207775}{snapped} &= delta.y() < threshold;
+                \hyperlink{classLightMaps_a573f99d2f902a8b0b53ec7f7a5207775}{snapped} &= delta.x() > -threshold;
+                \hyperlink{classLightMaps_a573f99d2f902a8b0b53ec7f7a5207775}{snapped} &= delta.y() > -threshold;
+            \}
+            \textcolor{keywordflow}{if} (!\hyperlink{classLightMaps_a573f99d2f902a8b0b53ec7f7a5207775}{snapped})
+                \hyperlink{classLightMaps_a5a537b004e79b6d8667d5550c0e3af07}{tapTimer}.stop();
+        \}
+    \} \textcolor{keywordflow}{else} \{
+        \hyperlink{classLightMaps_aa848f52d9b220d969605564bbba30005}{dragPos} = \textcolor{keyword}{event}->pos();
+        update();
+    \}
+\}
+\end{DoxyCode}
+\hypertarget{classLightMaps_a12c0b5ff0ef36b7f160dd9184036e346}{\index{Light\-Maps@{Light\-Maps}!mouse\-Press\-Event@{mouse\-Press\-Event}}
+\index{mouse\-Press\-Event@{mouse\-Press\-Event}!LightMaps@{Light\-Maps}}
+\subsubsection[{mouse\-Press\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void Light\-Maps\-::mouse\-Press\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Mouse\-Event $\ast$}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classLightMaps_a12c0b5ff0ef36b7f160dd9184036e346}
+
+
+Definition at line 190 of file lightmaps.\-cpp.
+
+
+
+References drag\-Pos, H\-O\-L\-D\-\_\-\-T\-I\-M\-E, pressed, press\-Pos, snapped, and tap\-Timer.
+
+
+\begin{DoxyCode}
+\{
+    \textcolor{keywordflow}{if} (event->buttons() != Qt::LeftButton)
+        \textcolor{keywordflow}{return};
+    \hyperlink{classLightMaps_a3de175af7a5611709dd46895b5b2baf7}{pressed} = \hyperlink{classLightMaps_a573f99d2f902a8b0b53ec7f7a5207775}{snapped} = \textcolor{keyword}{true};
+    \hyperlink{classLightMaps_a938551c74aa20bfb6896a46ea1437c79}{pressPos} = \hyperlink{classLightMaps_aa848f52d9b220d969605564bbba30005}{dragPos} = \textcolor{keyword}{event}->pos();
+    \hyperlink{classLightMaps_a5a537b004e79b6d8667d5550c0e3af07}{tapTimer}.stop();
+    \hyperlink{classLightMaps_a5a537b004e79b6d8667d5550c0e3af07}{tapTimer}.start(\hyperlink{lightmaps_8cpp_a3f171629948a6f7ad5c9e9a4d9f1366c}{HOLD\_TIME}, \textcolor{keyword}{this});
+\}
+\end{DoxyCode}
+\hypertarget{classLightMaps_a4c66425af6f5ecbca3d0af52e9cee998}{\index{Light\-Maps@{Light\-Maps}!mouse\-Release\-Event@{mouse\-Release\-Event}}
+\index{mouse\-Release\-Event@{mouse\-Release\-Event}!LightMaps@{Light\-Maps}}
+\subsubsection[{mouse\-Release\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void Light\-Maps\-::mouse\-Release\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Mouse\-Event $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classLightMaps_a4c66425af6f5ecbca3d0af52e9cee998}
+
+
+Definition at line 228 of file lightmaps.\-cpp.
+
+
+
+References zoomed.
+
+
+\begin{DoxyCode}
+\{
+    \hyperlink{classLightMaps_a3ecc8b8c64dfe20dd5bdfc7974ac48e3}{zoomed} = \textcolor{keyword}{false};
+    update();
+\}
+\end{DoxyCode}
+\hypertarget{classLightMaps_a5ef253065acd4c9d3ea3015b0fa1e336}{\index{Light\-Maps@{Light\-Maps}!paint\-Event@{paint\-Event}}
+\index{paint\-Event@{paint\-Event}!LightMaps@{Light\-Maps}}
+\subsubsection[{paint\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void Light\-Maps\-::paint\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Paint\-Event $\ast$}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classLightMaps_a5ef253065acd4c9d3ea3015b0fa1e336}
+
+
+Definition at line 76 of file lightmaps.\-cpp.
+
+
+
+References affiche\-Heure(), drag\-Pos, invert, m\-\_\-large\-Map, m\-\_\-normal\-Map, mask\-Pixmap, M\-A\-X\-\_\-\-M\-A\-G\-N\-I\-F\-I\-E\-R, Slippy\-Map\-::render(), zoomed, and zoom\-Pixmap.
+
+
+\begin{DoxyCode}
+\{
+    QPainter p;
+    p.begin(\textcolor{keyword}{this});
+    \hyperlink{classLightMaps_a62539ec15fdc3559461cfa5b80ed3f84}{m\_normalMap}->\hyperlink{classSlippyMap_ada1e00e2870d0fdeb70c037b3222a0ad}{render}(&p, event->rect());
+    p.setPen(Qt::black);
+    QFont font = p.font();
+    font.setPixelSize(12);
+    font.bold();
+    p.setFont(font);
+    p.drawText(rect(),  Qt::AlignBottom | Qt::TextWordWrap, \hyperlink{classLightMaps_a4ba4104b6f73f5887227075c38ae8a7c}{afficheHeure}
+      ());
+    p.end();
+
+    \textcolor{keywordflow}{if} (\hyperlink{classLightMaps_a3ecc8b8c64dfe20dd5bdfc7974ac48e3}{zoomed}) \{
+        \textcolor{keywordtype}{int} dim = qMin(width(), height());
+        \textcolor{keywordtype}{int} magnifierSize = qMin(\hyperlink{lightmaps_8cpp_a51ac6ea721e00a4f2396493f9517b9e5}{MAX\_MAGNIFIER}, dim * 2 / 3);
+        \textcolor{keywordtype}{int} radius = magnifierSize / 2;
+        \textcolor{keywordtype}{int} ring = radius - 15;
+        QSize box = QSize(magnifierSize, magnifierSize);
+
+        \textcolor{comment}{// reupdate our mask}
+        \textcolor{keywordflow}{if} (\hyperlink{classLightMaps_a3a24ed88ec215d755ab8a2255b61ebf0}{maskPixmap}.size() != box) \{
+            \hyperlink{classLightMaps_a3a24ed88ec215d755ab8a2255b61ebf0}{maskPixmap} = QPixmap(box);
+            \hyperlink{classLightMaps_a3a24ed88ec215d755ab8a2255b61ebf0}{maskPixmap}.fill(Qt::transparent);
+
+            QRadialGradient g;
+            g.setCenter(radius, radius);
+            g.setFocalPoint(radius, radius);
+            g.setRadius(radius);
+            g.setColorAt(1.0, QColor(255, 255, 255, 0));
+            g.setColorAt(0.5, QColor(128, 128, 128, 255));
+
+            QPainter mask(&\hyperlink{classLightMaps_a3a24ed88ec215d755ab8a2255b61ebf0}{maskPixmap});
+            mask.setRenderHint(QPainter::Antialiasing);
+            mask.setCompositionMode(QPainter::CompositionMode\_Source);
+            mask.setBrush(g);
+            mask.setPen(Qt::NoPen);
+            mask.drawRect(\hyperlink{classLightMaps_a3a24ed88ec215d755ab8a2255b61ebf0}{maskPixmap}.rect());
+            mask.setBrush(QColor(Qt::transparent));
+            mask.drawEllipse(g.center(), ring, ring);
+            mask.end();
+        \}
+
+        QPoint center = \hyperlink{classLightMaps_aa848f52d9b220d969605564bbba30005}{dragPos} - QPoint(0, radius);
+        center = center + QPoint(0, radius / 2);
+        QPoint corner = center - QPoint(radius, radius);
+
+        QPoint xy = center * 2 - QPoint(radius, radius);
+
+        \textcolor{comment}{// only set the dimension to the magnified portion}
+        \textcolor{keywordflow}{if} (\hyperlink{classLightMaps_a5a3f56996f498669ecd48b2670c3937f}{zoomPixmap}.size() != box) \{
+            \hyperlink{classLightMaps_a5a3f56996f498669ecd48b2670c3937f}{zoomPixmap} = QPixmap(box);
+            \hyperlink{classLightMaps_a5a3f56996f498669ecd48b2670c3937f}{zoomPixmap}.fill(Qt::lightGray);
+        \}
+        \textcolor{keywordflow}{if} (\textcolor{keyword}{true}) \{
+            QPainter p(&\hyperlink{classLightMaps_a5a3f56996f498669ecd48b2670c3937f}{zoomPixmap});
+            p.translate(-xy);
+            \hyperlink{classLightMaps_a46a1d64c4860e7bdeec5d3dc23b5b66a}{m\_largeMap}->\hyperlink{classSlippyMap_ada1e00e2870d0fdeb70c037b3222a0ad}{render}(&p, QRect(xy, box));
+            p.end();
+        \}
+
+        QPainterPath clipPath;
+        clipPath.addEllipse(center, ring, ring);
+
+        QPainter p(\textcolor{keyword}{this});
+        p.setRenderHint(QPainter::Antialiasing);
+        p.setClipPath(clipPath);
+        p.drawPixmap(corner, \hyperlink{classLightMaps_a5a3f56996f498669ecd48b2670c3937f}{zoomPixmap});
+        p.setClipping(\textcolor{keyword}{false});
+        p.drawPixmap(corner, \hyperlink{classLightMaps_a3a24ed88ec215d755ab8a2255b61ebf0}{maskPixmap});
+        p.setPen(Qt::gray);
+        p.drawPath(clipPath);
+    \}
+    \textcolor{keywordflow}{if} (\hyperlink{classLightMaps_af4784df46ac3c6cf085e48811cc367b6}{invert}) \{
+        QPainter p(\textcolor{keyword}{this});
+        p.setCompositionMode(QPainter::CompositionMode\_Difference);
+        p.fillRect(event->rect(), Qt::white);
+        p.end();
+    \}
+\}
+\end{DoxyCode}
+\hypertarget{classLightMaps_a1a4eb844187dd9fe819925312a000748}{\index{Light\-Maps@{Light\-Maps}!resize\-Event@{resize\-Event}}
+\index{resize\-Event@{resize\-Event}!LightMaps@{Light\-Maps}}
+\subsubsection[{resize\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void Light\-Maps\-::resize\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Resize\-Event $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classLightMaps_a1a4eb844187dd9fe819925312a000748}
+
+
+Definition at line 66 of file lightmaps.\-cpp.
+
+
+
+References Slippy\-Map\-::height, Slippy\-Map\-::invalidate(), m\-\_\-large\-Map, m\-\_\-normal\-Map, and Slippy\-Map\-::width.
+
+
+\begin{DoxyCode}
+\{
+    \hyperlink{classLightMaps_a62539ec15fdc3559461cfa5b80ed3f84}{m\_normalMap}->\hyperlink{classSlippyMap_ada3532095a8c4083e9da3db17de29fc1}{width} = width();
+    \hyperlink{classLightMaps_a62539ec15fdc3559461cfa5b80ed3f84}{m\_normalMap}->\hyperlink{classSlippyMap_aacec4be5e2b83eb2744a3b3b03c4af7a}{height} = height();
+    \hyperlink{classLightMaps_a62539ec15fdc3559461cfa5b80ed3f84}{m\_normalMap}->\hyperlink{classSlippyMap_aa8a2647176ff7db85ab52ce9e7acb549}{invalidate}();
+    \hyperlink{classLightMaps_a46a1d64c4860e7bdeec5d3dc23b5b66a}{m\_largeMap}->\hyperlink{classSlippyMap_ada3532095a8c4083e9da3db17de29fc1}{width} = \hyperlink{classLightMaps_a62539ec15fdc3559461cfa5b80ed3f84}{m\_normalMap}->\hyperlink{classSlippyMap_ada3532095a8c4083e9da3db17de29fc1}{width} * 2;
+    \hyperlink{classLightMaps_a46a1d64c4860e7bdeec5d3dc23b5b66a}{m\_largeMap}->\hyperlink{classSlippyMap_aacec4be5e2b83eb2744a3b3b03c4af7a}{height} = \hyperlink{classLightMaps_a62539ec15fdc3559461cfa5b80ed3f84}{m\_normalMap}->\hyperlink{classSlippyMap_aacec4be5e2b83eb2744a3b3b03c4af7a}{height} *
+       2;
+    \hyperlink{classLightMaps_a46a1d64c4860e7bdeec5d3dc23b5b66a}{m\_largeMap}->\hyperlink{classSlippyMap_aa8a2647176ff7db85ab52ce9e7acb549}{invalidate}();
+\}
+\end{DoxyCode}
+\hypertarget{classLightMaps_a48a673b2f3167a02004ced0b182a8498}{\index{Light\-Maps@{Light\-Maps}!set\-Center@{set\-Center}}
+\index{set\-Center@{set\-Center}!LightMaps@{Light\-Maps}}
+\subsubsection[{set\-Center}]{\setlength{\rightskip}{0pt plus 5cm}void Light\-Maps\-::set\-Center (
+\begin{DoxyParamCaption}
+\item[{qreal}]{lat, }
+\item[{qreal}]{lng}
+\end{DoxyParamCaption}
+)}}\label{classLightMaps_a48a673b2f3167a02004ced0b182a8498}
+
+
+Definition at line 32 of file lightmaps.\-cpp.
+
+
+
+References Slippy\-Map\-::invalidate(), Slippy\-Map\-::latitude, Slippy\-Map\-::longitude, m\-\_\-large\-Map, and m\-\_\-normal\-Map.
+
+
+
+Referenced by Main\-Window\-::test\-Gps(), and Main\-Window\-::timer\-Event().
+
+
+\begin{DoxyCode}
+\{
+    \hyperlink{classLightMaps_a62539ec15fdc3559461cfa5b80ed3f84}{m\_normalMap}->\hyperlink{classSlippyMap_a223220fdcbf2197845f009d48225c0c8}{latitude} = lat;
+    \hyperlink{classLightMaps_a62539ec15fdc3559461cfa5b80ed3f84}{m\_normalMap}->\hyperlink{classSlippyMap_af93efe003c192b7bc6a1ece6c7342de6}{longitude} = lng;
+    \hyperlink{classLightMaps_a62539ec15fdc3559461cfa5b80ed3f84}{m\_normalMap}->\hyperlink{classSlippyMap_aa8a2647176ff7db85ab52ce9e7acb549}{invalidate}();
+    \hyperlink{classLightMaps_a46a1d64c4860e7bdeec5d3dc23b5b66a}{m\_largeMap}->\hyperlink{classSlippyMap_a223220fdcbf2197845f009d48225c0c8}{latitude} = lat;
+    \hyperlink{classLightMaps_a46a1d64c4860e7bdeec5d3dc23b5b66a}{m\_largeMap}->\hyperlink{classSlippyMap_af93efe003c192b7bc6a1ece6c7342de6}{longitude} = lng;
+    \hyperlink{classLightMaps_a46a1d64c4860e7bdeec5d3dc23b5b66a}{m\_largeMap}->\hyperlink{classSlippyMap_aa8a2647176ff7db85ab52ce9e7acb549}{invalidate}();
+\}
+\end{DoxyCode}
+\hypertarget{classLightMaps_a89475b3da6e594e645d19ea507e61907}{\index{Light\-Maps@{Light\-Maps}!timer\-Event@{timer\-Event}}
+\index{timer\-Event@{timer\-Event}!LightMaps@{Light\-Maps}}
+\subsubsection[{timer\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void Light\-Maps\-::timer\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Timer\-Event $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classLightMaps_a89475b3da6e594e645d19ea507e61907}
+
+
+Definition at line 183 of file lightmaps.\-cpp.
+
+
+
+References activate\-Zoom(), and zoomed.
+
+
+\begin{DoxyCode}
+\{
+    \textcolor{keywordflow}{if} (!\hyperlink{classLightMaps_a3ecc8b8c64dfe20dd5bdfc7974ac48e3}{zoomed})
+        \hyperlink{classLightMaps_a21fa5e0c300553570417ebd907d53d61}{activateZoom}();
+    update();
+\}
+\end{DoxyCode}
+\hypertarget{classLightMaps_a231905fb3ab4d3d488a64f3ac3bba7a3}{\index{Light\-Maps@{Light\-Maps}!toggle\-Night\-Mode@{toggle\-Night\-Mode}}
+\index{toggle\-Night\-Mode@{toggle\-Night\-Mode}!LightMaps@{Light\-Maps}}
+\subsubsection[{toggle\-Night\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}void Light\-Maps\-::toggle\-Night\-Mode (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}}\label{classLightMaps_a231905fb3ab4d3d488a64f3ac3bba7a3}
+
+
+Definition at line 42 of file lightmaps.\-cpp.
+
+
+
+References invert.
+
+
+\begin{DoxyCode}
+\{
+    \hyperlink{classLightMaps_af4784df46ac3c6cf085e48811cc367b6}{invert} = !\hyperlink{classLightMaps_af4784df46ac3c6cf085e48811cc367b6}{invert};
+    update();
+\}
+\end{DoxyCode}
+\hypertarget{classLightMaps_ae5e717309f666a3462cf5c5f5c5fbe43}{\index{Light\-Maps@{Light\-Maps}!update\-Map@{update\-Map}}
+\index{update\-Map@{update\-Map}!LightMaps@{Light\-Maps}}
+\subsubsection[{update\-Map}]{\setlength{\rightskip}{0pt plus 5cm}void Light\-Maps\-::update\-Map (
+\begin{DoxyParamCaption}
+\item[{const Q\-Rect \&}]{r}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{classLightMaps_ae5e717309f666a3462cf5c5f5c5fbe43}
+
+
+Definition at line 48 of file lightmaps.\-cpp.
+
+
+
+Referenced by Light\-Maps().
+
+
+\begin{DoxyCode}
+\{
+    update(r);
+\}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classLightMaps_aa848f52d9b220d969605564bbba30005}{\index{Light\-Maps@{Light\-Maps}!drag\-Pos@{drag\-Pos}}
+\index{drag\-Pos@{drag\-Pos}!LightMaps@{Light\-Maps}}
+\subsubsection[{drag\-Pos}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Point Light\-Maps\-::drag\-Pos\hspace{0.3cm}{\ttfamily [private]}}}\label{classLightMaps_aa848f52d9b220d969605564bbba30005}
+
+
+Definition at line 41 of file lightmaps.\-h.
+
+
+
+Referenced by key\-Press\-Event(), mouse\-Move\-Event(), mouse\-Press\-Event(), and paint\-Event().
+
+\hypertarget{classLightMaps_a3bffc587b77f94dadef10a63ba9b627e}{\index{Light\-Maps@{Light\-Maps}!heure@{heure}}
+\index{heure@{heure}!LightMaps@{Light\-Maps}}
+\subsubsection[{heure}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String Light\-Maps\-::heure}}\label{classLightMaps_a3bffc587b77f94dadef10a63ba9b627e}
+
+
+Definition at line 17 of file lightmaps.\-h.
+
+
+
+Referenced by affiche\-Heure().
+
+\hypertarget{classLightMaps_af4784df46ac3c6cf085e48811cc367b6}{\index{Light\-Maps@{Light\-Maps}!invert@{invert}}
+\index{invert@{invert}!LightMaps@{Light\-Maps}}
+\subsubsection[{invert}]{\setlength{\rightskip}{0pt plus 5cm}bool Light\-Maps\-::invert\hspace{0.3cm}{\ttfamily [private]}}}\label{classLightMaps_af4784df46ac3c6cf085e48811cc367b6}
+
+
+Definition at line 46 of file lightmaps.\-h.
+
+
+
+Referenced by paint\-Event(), and toggle\-Night\-Mode().
+
+\hypertarget{classLightMaps_a46a1d64c4860e7bdeec5d3dc23b5b66a}{\index{Light\-Maps@{Light\-Maps}!m\-\_\-large\-Map@{m\-\_\-large\-Map}}
+\index{m\-\_\-large\-Map@{m\-\_\-large\-Map}!LightMaps@{Light\-Maps}}
+\subsubsection[{m\-\_\-large\-Map}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Slippy\-Map}$\ast$ Light\-Maps\-::m\-\_\-large\-Map\hspace{0.3cm}{\ttfamily [private]}}}\label{classLightMaps_a46a1d64c4860e7bdeec5d3dc23b5b66a}
+
+
+Definition at line 37 of file lightmaps.\-h.
+
+
+
+Referenced by activate\-Zoom(), Light\-Maps(), paint\-Event(), resize\-Event(), and set\-Center().
+
+\hypertarget{classLightMaps_a62539ec15fdc3559461cfa5b80ed3f84}{\index{Light\-Maps@{Light\-Maps}!m\-\_\-normal\-Map@{m\-\_\-normal\-Map}}
+\index{m\-\_\-normal\-Map@{m\-\_\-normal\-Map}!LightMaps@{Light\-Maps}}
+\subsubsection[{m\-\_\-normal\-Map}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Slippy\-Map}$\ast$ Light\-Maps\-::m\-\_\-normal\-Map\hspace{0.3cm}{\ttfamily [private]}}}\label{classLightMaps_a62539ec15fdc3559461cfa5b80ed3f84}
+
+
+Definition at line 36 of file lightmaps.\-h.
+
+
+
+Referenced by activate\-Zoom(), key\-Press\-Event(), Light\-Maps(), mouse\-Move\-Event(), paint\-Event(), resize\-Event(), and set\-Center().
+
+\hypertarget{classLightMaps_a3a24ed88ec215d755ab8a2255b61ebf0}{\index{Light\-Maps@{Light\-Maps}!mask\-Pixmap@{mask\-Pixmap}}
+\index{mask\-Pixmap@{mask\-Pixmap}!LightMaps@{Light\-Maps}}
+\subsubsection[{mask\-Pixmap}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Pixmap Light\-Maps\-::mask\-Pixmap\hspace{0.3cm}{\ttfamily [private]}}}\label{classLightMaps_a3a24ed88ec215d755ab8a2255b61ebf0}
+
+
+Definition at line 45 of file lightmaps.\-h.
+
+
+
+Referenced by paint\-Event().
+
+\hypertarget{classLightMaps_a3de175af7a5611709dd46895b5b2baf7}{\index{Light\-Maps@{Light\-Maps}!pressed@{pressed}}
+\index{pressed@{pressed}!LightMaps@{Light\-Maps}}
+\subsubsection[{pressed}]{\setlength{\rightskip}{0pt plus 5cm}bool Light\-Maps\-::pressed\hspace{0.3cm}{\ttfamily [private]}}}\label{classLightMaps_a3de175af7a5611709dd46895b5b2baf7}
+
+
+Definition at line 38 of file lightmaps.\-h.
+
+
+
+Referenced by mouse\-Move\-Event(), and mouse\-Press\-Event().
+
+\hypertarget{classLightMaps_a938551c74aa20bfb6896a46ea1437c79}{\index{Light\-Maps@{Light\-Maps}!press\-Pos@{press\-Pos}}
+\index{press\-Pos@{press\-Pos}!LightMaps@{Light\-Maps}}
+\subsubsection[{press\-Pos}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Point Light\-Maps\-::press\-Pos\hspace{0.3cm}{\ttfamily [private]}}}\label{classLightMaps_a938551c74aa20bfb6896a46ea1437c79}
+
+
+Definition at line 40 of file lightmaps.\-h.
+
+
+
+Referenced by mouse\-Move\-Event(), and mouse\-Press\-Event().
+
+\hypertarget{classLightMaps_a573f99d2f902a8b0b53ec7f7a5207775}{\index{Light\-Maps@{Light\-Maps}!snapped@{snapped}}
+\index{snapped@{snapped}!LightMaps@{Light\-Maps}}
+\subsubsection[{snapped}]{\setlength{\rightskip}{0pt plus 5cm}bool Light\-Maps\-::snapped\hspace{0.3cm}{\ttfamily [private]}}}\label{classLightMaps_a573f99d2f902a8b0b53ec7f7a5207775}
+
+
+Definition at line 39 of file lightmaps.\-h.
+
+
+
+Referenced by mouse\-Move\-Event(), and mouse\-Press\-Event().
+
+\hypertarget{classLightMaps_a5a537b004e79b6d8667d5550c0e3af07}{\index{Light\-Maps@{Light\-Maps}!tap\-Timer@{tap\-Timer}}
+\index{tap\-Timer@{tap\-Timer}!LightMaps@{Light\-Maps}}
+\subsubsection[{tap\-Timer}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Basic\-Timer Light\-Maps\-::tap\-Timer\hspace{0.3cm}{\ttfamily [private]}}}\label{classLightMaps_a5a537b004e79b6d8667d5550c0e3af07}
+
+
+Definition at line 42 of file lightmaps.\-h.
+
+
+
+Referenced by activate\-Zoom(), mouse\-Move\-Event(), and mouse\-Press\-Event().
+
+\hypertarget{classLightMaps_a3ecc8b8c64dfe20dd5bdfc7974ac48e3}{\index{Light\-Maps@{Light\-Maps}!zoomed@{zoomed}}
+\index{zoomed@{zoomed}!LightMaps@{Light\-Maps}}
+\subsubsection[{zoomed}]{\setlength{\rightskip}{0pt plus 5cm}bool Light\-Maps\-::zoomed\hspace{0.3cm}{\ttfamily [private]}}}\label{classLightMaps_a3ecc8b8c64dfe20dd5bdfc7974ac48e3}
+
+
+Definition at line 43 of file lightmaps.\-h.
+
+
+
+Referenced by activate\-Zoom(), key\-Press\-Event(), mouse\-Move\-Event(), mouse\-Release\-Event(), paint\-Event(), and timer\-Event().
+
+\hypertarget{classLightMaps_a5a3f56996f498669ecd48b2670c3937f}{\index{Light\-Maps@{Light\-Maps}!zoom\-Pixmap@{zoom\-Pixmap}}
+\index{zoom\-Pixmap@{zoom\-Pixmap}!LightMaps@{Light\-Maps}}
+\subsubsection[{zoom\-Pixmap}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Pixmap Light\-Maps\-::zoom\-Pixmap\hspace{0.3cm}{\ttfamily [private]}}}\label{classLightMaps_a5a3f56996f498669ecd48b2670c3937f}
+
+
+Definition at line 44 of file lightmaps.\-h.
+
+
+
+Referenced by paint\-Event().
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{lightmaps_8h}{lightmaps.\-h}\item 
+\hyperlink{lightmaps_8cpp}{lightmaps.\-cpp}\end{DoxyCompactItemize}

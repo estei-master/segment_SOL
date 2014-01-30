@@ -1,0 +1,6 @@
+<map id="battery.h" name="battery.h">
+<area shape="rect" id="node3" href="$battery_8cpp.html" title="Ce programme permet l&#39;affichage des états des batteries du drone et du segment sol grâce à des QProgr..." alt="" coords="5,83,91,112"/>
+<area shape="rect" id="node5" href="$mainwindow_8h.html" title="Fichier d&#39;inclusion des librairies nécessaires à la MainWindow." alt="" coords="115,83,219,112"/>
+<area shape="rect" id="node9" href="$mainwindow_8cpp.html" title="Ce programme permet le placement de tous les widgets ou objets nécessaires au fonctionnement de l&#39;app..." alt="" coords="197,160,315,189"/>
+<area shape="rect" id="node7" href="$main_8cpp.html" title="Ficher main qui permet d&#39;afficher la MainWindow." alt="" coords="99,160,173,189"/>
+</map>

@@ -79,22 +79,6 @@
        <string>START/STOP VIDEO STREAMING</string>
       </property>
      </widget>
-     <widget class="QLabel" name="logo">
-      <property name="geometry">
-       <rect>
-        <x>720</x>
-        <y>0</y>
-        <width>281</width>
-        <height>81</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap>../build-ihm2-Desktop-Debug/estei.png</pixmap>
-      </property>
-     </widget>
      <widget class="QPushButton" name="emergency_stop">
       <property name="geometry">
        <rect>
@@ -126,7 +110,7 @@
       <property name="geometry">
        <rect>
         <x>740</x>
-        <y>250</y>
+        <y>200</y>
         <width>241</width>
         <height>221</height>
        </rect>
@@ -150,7 +134,7 @@
       <property name="geometry">
        <rect>
         <x>870</x>
-        <y>90</y>
+        <y>80</y>
         <width>121</width>
         <height>41</height>
        </rect>
@@ -161,7 +145,7 @@
       <property name="geometry">
        <rect>
         <x>870</x>
-        <y>140</y>
+        <y>130</y>
         <width>121</width>
         <height>41</height>
        </rect>
@@ -207,6 +191,63 @@
        <enum>Qt::Vertical</enum>
       </property>
      </widget>
+     <widget class="QWidget" name="gridLayoutWidget_9">
+      <property name="geometry">
+       <rect>
+        <x>940</x>
+        <y>10</y>
+        <width>20</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="powerlayout4"/>
+     </widget>
+     <widget class="QWidget" name="gridLayoutWidget_10">
+      <property name="geometry">
+       <rect>
+        <x>920</x>
+        <y>20</y>
+        <width>20</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="powerlayout3"/>
+     </widget>
+     <widget class="QWidget" name="gridLayoutWidget_11">
+      <property name="geometry">
+       <rect>
+        <x>900</x>
+        <y>30</y>
+        <width>20</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="powerlayout2"/>
+     </widget>
+     <widget class="QWidget" name="gridLayoutWidget_12">
+      <property name="geometry">
+       <rect>
+        <x>880</x>
+        <y>40</y>
+        <width>20</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="powerlayout1"/>
+     </widget>
+     <widget class="QLabel" name="Name_3">
+      <property name="geometry">
+       <rect>
+        <x>770</x>
+        <y>50</y>
+        <width>121</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>SIGNAL RF</string>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="vol_vue">
      <attribute name="title">
@@ -239,27 +280,11 @@
       </property>
       <layout class="QGridLayout" name="horizon_layout"/>
      </widget>
-     <widget class="QLabel" name="logo_2">
-      <property name="geometry">
-       <rect>
-        <x>720</x>
-        <y>0</y>
-        <width>281</width>
-        <height>81</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap>../build-ihm2-Desktop-Debug/estei.png</pixmap>
-      </property>
-     </widget>
      <widget class="QWidget" name="gridLayoutWidget_5">
       <property name="geometry">
        <rect>
         <x>740</x>
-        <y>250</y>
+        <y>200</y>
         <width>241</width>
         <height>221</height>
        </rect>
@@ -270,7 +295,7 @@
       <property name="geometry">
        <rect>
         <x>870</x>
-        <y>90</y>
+        <y>80</y>
         <width>121</width>
         <height>41</height>
        </rect>
@@ -281,7 +306,7 @@
       <property name="geometry">
        <rect>
         <x>870</x>
-        <y>140</y>
+        <y>130</y>
         <width>121</width>
         <height>41</height>
        </rect>
@@ -325,6 +350,63 @@
       </property>
       <property name="orientation">
        <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="QWidget" name="gridLayoutWidget_13">
+      <property name="geometry">
+       <rect>
+        <x>940</x>
+        <y>10</y>
+        <width>20</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="powerlayout4_2"/>
+     </widget>
+     <widget class="QWidget" name="gridLayoutWidget_14">
+      <property name="geometry">
+       <rect>
+        <x>920</x>
+        <y>20</y>
+        <width>20</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="powerlayout3_2"/>
+     </widget>
+     <widget class="QWidget" name="gridLayoutWidget_15">
+      <property name="geometry">
+       <rect>
+        <x>900</x>
+        <y>30</y>
+        <width>20</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="powerlayout2_2"/>
+     </widget>
+     <widget class="QWidget" name="gridLayoutWidget_16">
+      <property name="geometry">
+       <rect>
+        <x>880</x>
+        <y>40</y>
+        <width>20</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="powerlayout1_2"/>
+     </widget>
+     <widget class="QLabel" name="Name_4">
+      <property name="geometry">
+       <rect>
+        <x>770</x>
+        <y>50</y>
+        <width>121</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>SIGNAL RF</string>
       </property>
      </widget>
     </widget>

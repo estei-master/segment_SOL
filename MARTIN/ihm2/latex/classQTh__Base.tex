@@ -1,0 +1,150 @@
+\hypertarget{classQTh__Base}{\section{Q\-Th\-\_\-\-Base Class Reference}
+\label{classQTh__Base}\index{Q\-Th\-\_\-\-Base@{Q\-Th\-\_\-\-Base}}
+}
+
+
+{\ttfamily \#include \char`\"{}qth\-\_\-base.\-h\char`\"{}}
+
+
+
+Collaboration diagram for Q\-Th\-\_\-\-Base\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{classQTh__Base__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classQTh__Base_a74f0d7d927529f648cb8f5d29059c786}{Q\-Th\-\_\-\-Base} (int type, Q\-Object $\ast$parent=0)
+\item 
+void \hyperlink{classQTh__Base_a391a2d2c1b79448577333036eb7bc591}{run} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classqAttitudeIndicator}{q\-Attitude\-Indicator} $\ast$ \hyperlink{classQTh__Base_a51fa634be0cdd712417ee2f97919acc7}{att\-Ind}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classQTh__Base_acc21cc2cc7304e83231c9f305874499f}{type\-Thread}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 10 of file qth\-\_\-base.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classQTh__Base_a74f0d7d927529f648cb8f5d29059c786}{\index{Q\-Th\-\_\-\-Base@{Q\-Th\-\_\-\-Base}!Q\-Th\-\_\-\-Base@{Q\-Th\-\_\-\-Base}}
+\index{Q\-Th\-\_\-\-Base@{Q\-Th\-\_\-\-Base}!QTh_Base@{Q\-Th\-\_\-\-Base}}
+\subsubsection[{Q\-Th\-\_\-\-Base}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Th\-\_\-\-Base\-::\-Q\-Th\-\_\-\-Base (
+\begin{DoxyParamCaption}
+\item[{int}]{type, }
+\item[{Q\-Object $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}}\label{classQTh__Base_a74f0d7d927529f648cb8f5d29059c786}
+
+
+Definition at line 10 of file qth\-\_\-base.\-cpp.
+
+
+
+References att\-Ind, Q\-T\-H\-R\-E\-A\-D\-\_\-\-H\-O\-R\-I\-Z\-O\-N, and type\-Thread.
+
+
+\begin{DoxyCode}
+                                            :
+    QThread(parent)
+\{
+    \hyperlink{classQTh__Base_acc21cc2cc7304e83231c9f305874499f}{typeThread} = type;
+
+    \textcolor{keywordflow}{switch}(\hyperlink{classQTh__Base_acc21cc2cc7304e83231c9f305874499f}{typeThread}) \{
+
+    \textcolor{keywordflow}{case} \hyperlink{qth__base_8h_a2f3670a7586687feccfde021b896c2b8}{QTHREAD\_HORIZON}:
+        \hyperlink{classQTh__Base_a51fa634be0cdd712417ee2f97919acc7}{attInd} = \textcolor{keyword}{new} \hyperlink{classqAttitudeIndicator}{qAttitudeIndicator}();
+        \textcolor{keywordflow}{break};
+
+    \textcolor{keywordflow}{default}:
+        \textcolor{keywordflow}{break};
+    \}
+\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classQTh__Base_a391a2d2c1b79448577333036eb7bc591}{\index{Q\-Th\-\_\-\-Base@{Q\-Th\-\_\-\-Base}!run@{run}}
+\index{run@{run}!QTh_Base@{Q\-Th\-\_\-\-Base}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-Th\-\_\-\-Base\-::run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classQTh__Base_a391a2d2c1b79448577333036eb7bc591}
+
+
+Definition at line 26 of file qth\-\_\-base.\-cpp.
+
+
+
+References att\-Ind, q\-Attitude\-Indicator\-::do\-Horizon(), Q\-T\-H\-R\-E\-A\-D\-\_\-\-H\-O\-R\-I\-Z\-O\-N, and type\-Thread.
+
+
+\begin{DoxyCode}
+\{
+\textcolor{comment}{//    switch(typeThread) \{}
+\textcolor{comment}{//    case QTHREAD\_HORIZON:}
+\textcolor{comment}{//        break;}
+\textcolor{comment}{//    default:}
+\textcolor{comment}{//        break;}
+\textcolor{comment}{//    \}}
+
+    \textcolor{keywordflow}{while} (1) \{
+        \textcolor{keywordflow}{switch}(\hyperlink{classQTh__Base_acc21cc2cc7304e83231c9f305874499f}{typeThread}) \{
+
+        \textcolor{keywordflow}{case} \hyperlink{qth__base_8h_a2f3670a7586687feccfde021b896c2b8}{QTHREAD\_HORIZON}:
+            \hyperlink{classQTh__Base_a51fa634be0cdd712417ee2f97919acc7}{attInd}->\hyperlink{classqAttitudeIndicator_a7d4e7b19bc493de63a91b0e0480c24e2}{doHorizon}();
+            \textcolor{keywordflow}{break};
+
+        \textcolor{keywordflow}{default}:
+            \textcolor{keywordflow}{break};
+        \}
+        msleep(50);
+    \}
+\}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classQTh__Base_a51fa634be0cdd712417ee2f97919acc7}{\index{Q\-Th\-\_\-\-Base@{Q\-Th\-\_\-\-Base}!att\-Ind@{att\-Ind}}
+\index{att\-Ind@{att\-Ind}!QTh_Base@{Q\-Th\-\_\-\-Base}}
+\subsubsection[{att\-Ind}]{\setlength{\rightskip}{0pt plus 5cm}{\bf q\-Attitude\-Indicator}$\ast$ Q\-Th\-\_\-\-Base\-::att\-Ind}}\label{classQTh__Base_a51fa634be0cdd712417ee2f97919acc7}
+
+
+Definition at line 18 of file qth\-\_\-base.\-h.
+
+
+
+Referenced by Q\-Th\-\_\-\-Base(), and run().
+
+\hypertarget{classQTh__Base_acc21cc2cc7304e83231c9f305874499f}{\index{Q\-Th\-\_\-\-Base@{Q\-Th\-\_\-\-Base}!type\-Thread@{type\-Thread}}
+\index{type\-Thread@{type\-Thread}!QTh_Base@{Q\-Th\-\_\-\-Base}}
+\subsubsection[{type\-Thread}]{\setlength{\rightskip}{0pt plus 5cm}int Q\-Th\-\_\-\-Base\-::type\-Thread\hspace{0.3cm}{\ttfamily [private]}}}\label{classQTh__Base_acc21cc2cc7304e83231c9f305874499f}
+
+
+Definition at line 21 of file qth\-\_\-base.\-h.
+
+
+
+Referenced by Q\-Th\-\_\-\-Base(), and run().
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{qth__base_8h}{qth\-\_\-base.\-h}\item 
+\hyperlink{qth__base_8cpp}{qth\-\_\-base.\-cpp}\end{DoxyCompactItemize}

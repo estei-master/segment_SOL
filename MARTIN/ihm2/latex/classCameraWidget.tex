@@ -1,0 +1,294 @@
+\hypertarget{classCameraWidget}{\section{Camera\-Widget Class Reference}
+\label{classCameraWidget}\index{Camera\-Widget@{Camera\-Widget}}
+}
+
+
+{\ttfamily \#include \char`\"{}camerawidget.\-h\char`\"{}}
+
+
+
+Collaboration diagram for Camera\-Widget\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=182pt]{classCameraWidget__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCameraWidget_a637ffd88fb213dad01dfa7294248029e}{Camera\-Widget} (Q\-Widget $\ast$parent=0)
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+\hyperlink{classCameraWidget_a434ed0e3355c13cd4a51eba0dfcfa66a}{$\sim$\-Camera\-Widget} (void)
+\begin{DoxyCompactList}\small\item\em Destructeur. \end{DoxyCompactList}\item 
+Q\-Pixmap \hyperlink{classCameraWidget_a349b27ddfbcd67ae055f56e51ffe3e44}{to\-Pixmap} (Ipl\-Image $\ast$)
+\begin{DoxyCompactList}\small\item\em Conversion d'image. \end{DoxyCompactList}\item 
+void \hyperlink{classCameraWidget_a9ef3bc90490e18855ac24f29cc5cb20f}{put\-Frame} (Ipl\-Image $\ast$)
+\begin{DoxyCompactList}\small\item\em Placement d'image. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Q\-Label $\ast$ \hyperlink{classCameraWidget_aca76b8be07d57c2d715a685768dfcbe6}{m\-\_\-image\-Label}
+\item 
+Q\-V\-Box\-Layout $\ast$ \hyperlink{classCameraWidget_a22be3fef82e8e5c1e125b280ec1434df}{m\-\_\-layout}
+\item 
+Q\-Image \hyperlink{classCameraWidget_a953550f36cf3dd234dd33e36f0e85e95}{m\-\_\-image}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 21 of file camerawidget.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCameraWidget_a637ffd88fb213dad01dfa7294248029e}{\index{Camera\-Widget@{Camera\-Widget}!Camera\-Widget@{Camera\-Widget}}
+\index{Camera\-Widget@{Camera\-Widget}!CameraWidget@{Camera\-Widget}}
+\subsubsection[{Camera\-Widget}]{\setlength{\rightskip}{0pt plus 5cm}Camera\-Widget\-::\-Camera\-Widget (
+\begin{DoxyParamCaption}
+\item[{Q\-Widget $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{classCameraWidget_a637ffd88fb213dad01dfa7294248029e}
+
+
+Constructeur. 
+
+Placement du label dans un layout. 
+\begin{DoxyParams}{Parameters}
+{\em Q\-Widget} & $\ast$parent \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 17 of file camerawidget.\-cpp.
+
+
+
+References m\-\_\-image, m\-\_\-image\-Label, and m\-\_\-layout.
+
+
+\begin{DoxyCode}
+    : QWidget(parent)
+\{
+    \hyperlink{classCameraWidget_a22be3fef82e8e5c1e125b280ec1434df}{m\_layout} = \textcolor{keyword}{new} QVBoxLayout;
+    \hyperlink{classCameraWidget_aca76b8be07d57c2d715a685768dfcbe6}{m\_imageLabel} = \textcolor{keyword}{new} QLabel;
+
+    QImage dummy(100, 100, QImage::Format\_RGB32);
+    \hyperlink{classCameraWidget_a953550f36cf3dd234dd33e36f0e85e95}{m\_image} = dummy;
+
+    \hyperlink{classCameraWidget_a22be3fef82e8e5c1e125b280ec1434df}{m\_layout}->addWidget(\hyperlink{classCameraWidget_aca76b8be07d57c2d715a685768dfcbe6}{m\_imageLabel});
+
+    \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} x = 0; x < 100; x ++)
+        \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} y =0; y < 100; y++)
+            \hyperlink{classCameraWidget_a953550f36cf3dd234dd33e36f0e85e95}{m\_image}.setPixel(x,y,qRgb(x, y, y));
+
+    \hyperlink{classCameraWidget_aca76b8be07d57c2d715a685768dfcbe6}{m\_imageLabel}->setPixmap(QPixmap::fromImage(\hyperlink{classCameraWidget_a953550f36cf3dd234dd33e36f0e85e95}{m\_image}));
+
+    setLayout(\hyperlink{classCameraWidget_a22be3fef82e8e5c1e125b280ec1434df}{m\_layout});
+\}
+\end{DoxyCode}
+\hypertarget{classCameraWidget_a434ed0e3355c13cd4a51eba0dfcfa66a}{\index{Camera\-Widget@{Camera\-Widget}!$\sim$\-Camera\-Widget@{$\sim$\-Camera\-Widget}}
+\index{$\sim$\-Camera\-Widget@{$\sim$\-Camera\-Widget}!CameraWidget@{Camera\-Widget}}
+\subsubsection[{$\sim$\-Camera\-Widget}]{\setlength{\rightskip}{0pt plus 5cm}Camera\-Widget\-::$\sim$\-Camera\-Widget (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{classCameraWidget_a434ed0e3355c13cd4a51eba0dfcfa66a}
+
+
+Destructeur. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 42 of file camerawidget.\-cpp.
+
+
+\begin{DoxyCode}
+\{
+
+\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classCameraWidget_a9ef3bc90490e18855ac24f29cc5cb20f}{\index{Camera\-Widget@{Camera\-Widget}!put\-Frame@{put\-Frame}}
+\index{put\-Frame@{put\-Frame}!CameraWidget@{Camera\-Widget}}
+\subsubsection[{put\-Frame}]{\setlength{\rightskip}{0pt plus 5cm}void Camera\-Widget\-::put\-Frame (
+\begin{DoxyParamCaption}
+\item[{Ipl\-Image $\ast$}]{image}
+\end{DoxyParamCaption}
+)}}\label{classCameraWidget_a9ef3bc90490e18855ac24f29cc5cb20f}
+
+
+Placement d'image. 
+
+Fonction qui permet le placement de l'image dans le label destiné à l'accueillir 
+\begin{DoxyParams}{Parameters}
+{\em Ipl\-Image} & $\ast$image \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 53 of file camerawidget.\-cpp.
+
+
+
+References m\-\_\-image\-Label, and to\-Pixmap().
+
+
+
+Referenced by Main\-Window\-::timer\-Event().
+
+
+\begin{DoxyCode}
+\{
+    \hyperlink{classCameraWidget_aca76b8be07d57c2d715a685768dfcbe6}{m\_imageLabel}->setPixmap(\hyperlink{classCameraWidget_a349b27ddfbcd67ae055f56e51ffe3e44}{toPixmap}(image));
+\}
+\end{DoxyCode}
+\hypertarget{classCameraWidget_a349b27ddfbcd67ae055f56e51ffe3e44}{\index{Camera\-Widget@{Camera\-Widget}!to\-Pixmap@{to\-Pixmap}}
+\index{to\-Pixmap@{to\-Pixmap}!CameraWidget@{Camera\-Widget}}
+\subsubsection[{to\-Pixmap}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Pixmap Camera\-Widget\-::to\-Pixmap (
+\begin{DoxyParamCaption}
+\item[{Ipl\-Image $\ast$}]{cvimage}
+\end{DoxyParamCaption}
+)}}\label{classCameraWidget_a349b27ddfbcd67ae055f56e51ffe3e44}
+
+
+Conversion d'image. 
+
+Fonction de conversion d'une Ipl\-Image en une Q\-Pixmap 
+\begin{DoxyParams}{Parameters}
+{\em Ipl\-Image} & $\ast$cvimage \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Q\-Pixmap 
+\end{DoxyReturn}
+
+
+Definition at line 65 of file camerawidget.\-cpp.
+
+
+
+References m\-\_\-image.
+
+
+
+Referenced by put\-Frame(), and Main\-Window\-::save\-Picture().
+
+
+\begin{DoxyCode}
+                                                \{
+    \textcolor{keywordtype}{int} cvIndex, cvLineStart;
+
+    \textcolor{keywordflow}{switch} (cvimage->depth) \{
+        \textcolor{keywordflow}{case} IPL\_DEPTH\_8U:
+            \textcolor{keywordflow}{switch} (cvimage->nChannels) \{
+                \textcolor{keywordflow}{case} 3:
+                    \textcolor{keywordflow}{if} ( (cvimage->width != \hyperlink{classCameraWidget_a953550f36cf3dd234dd33e36f0e85e95}{m\_image}.width()) || (cvimage
+      ->height != \hyperlink{classCameraWidget_a953550f36cf3dd234dd33e36f0e85e95}{m\_image}.height()) ) \{
+                        QImage temp(cvimage->width, cvimage->height, 
+      QImage::Format\_RGB32);
+                        \hyperlink{classCameraWidget_a953550f36cf3dd234dd33e36f0e85e95}{m\_image} = temp;
+                    \}
+                    cvIndex = 0; cvLineStart = 0;
+                    \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} y = 0; y < cvimage->height; y++) \{
+                        \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{char} red,green,blue;
+                        cvIndex = cvLineStart;
+                        \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} x = 0; x < cvimage->width; x++) \{
+                            red = cvimage->imageData[cvIndex+2];
+                            green = cvimage->imageData[cvIndex+1];
+                            blue = cvimage->imageData[cvIndex+0];
+
+                            \hyperlink{classCameraWidget_a953550f36cf3dd234dd33e36f0e85e95}{m\_image}.setPixel(x,y,qRgb(red, green, blue))
+      ;
+                            cvIndex += 3;
+                        \}
+                        cvLineStart += cvimage->widthStep;
+                    \}
+                    \textcolor{keywordflow}{break};
+
+            \textcolor{keywordflow}{case} 1:
+                \textcolor{keywordflow}{if} ( (cvimage->width != \hyperlink{classCameraWidget_a953550f36cf3dd234dd33e36f0e85e95}{m\_image}.width()) || (cvimage->
+      height != \hyperlink{classCameraWidget_a953550f36cf3dd234dd33e36f0e85e95}{m\_image}.height()) ) \{
+                    QImage temp(cvimage->width, cvimage->height, 
+      QImage::Format\_RGB32);
+                    \hyperlink{classCameraWidget_a953550f36cf3dd234dd33e36f0e85e95}{m\_image} = temp;
+                \}
+                cvIndex = 0; cvLineStart = 0;
+                \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} y = 0; y < cvimage->height; y++) \{
+                    \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{char} red,green,blue;
+                    cvIndex = cvLineStart;
+                    \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} x = 0; x < cvimage->width; x++) \{
+                        red = cvimage->imageData[cvIndex+2];
+                        green = cvimage->imageData[cvIndex+1];
+                        blue = cvimage->imageData[cvIndex+0];
+
+                        \hyperlink{classCameraWidget_a953550f36cf3dd234dd33e36f0e85e95}{m\_image}.setPixel(x,y,qRgb(red, green, blue));
+                        cvIndex += 3;
+                    \}
+                    cvLineStart += cvimage->widthStep;
+                \}
+                \textcolor{keywordflow}{break};
+                \textcolor{keywordflow}{default}:
+                    qWarning(\textcolor{stringliteral}{"This number of channels is not supported\(\backslash\)n"});
+                    \textcolor{keywordflow}{break};
+            \}
+            \textcolor{keywordflow}{break};
+        \textcolor{keywordflow}{default}:
+            qWarning(\textcolor{stringliteral}{"This type of IplImage is not implemented in QOpenCVWidget
+      \(\backslash\)n"});
+            \textcolor{keywordflow}{break};
+    \}
+    \textcolor{keywordflow}{return} QPixmap::fromImage(\hyperlink{classCameraWidget_a953550f36cf3dd234dd33e36f0e85e95}{m\_image});
+\}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classCameraWidget_a953550f36cf3dd234dd33e36f0e85e95}{\index{Camera\-Widget@{Camera\-Widget}!m\-\_\-image@{m\-\_\-image}}
+\index{m\-\_\-image@{m\-\_\-image}!CameraWidget@{Camera\-Widget}}
+\subsubsection[{m\-\_\-image}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Image Camera\-Widget\-::m\-\_\-image\hspace{0.3cm}{\ttfamily [private]}}}\label{classCameraWidget_a953550f36cf3dd234dd33e36f0e85e95}
+
+
+Definition at line 33 of file camerawidget.\-h.
+
+
+
+Referenced by Camera\-Widget(), and to\-Pixmap().
+
+\hypertarget{classCameraWidget_aca76b8be07d57c2d715a685768dfcbe6}{\index{Camera\-Widget@{Camera\-Widget}!m\-\_\-image\-Label@{m\-\_\-image\-Label}}
+\index{m\-\_\-image\-Label@{m\-\_\-image\-Label}!CameraWidget@{Camera\-Widget}}
+\subsubsection[{m\-\_\-image\-Label}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Label$\ast$ Camera\-Widget\-::m\-\_\-image\-Label\hspace{0.3cm}{\ttfamily [private]}}}\label{classCameraWidget_aca76b8be07d57c2d715a685768dfcbe6}
+
+
+Definition at line 31 of file camerawidget.\-h.
+
+
+
+Referenced by Camera\-Widget(), and put\-Frame().
+
+\hypertarget{classCameraWidget_a22be3fef82e8e5c1e125b280ec1434df}{\index{Camera\-Widget@{Camera\-Widget}!m\-\_\-layout@{m\-\_\-layout}}
+\index{m\-\_\-layout@{m\-\_\-layout}!CameraWidget@{Camera\-Widget}}
+\subsubsection[{m\-\_\-layout}]{\setlength{\rightskip}{0pt plus 5cm}Q\-V\-Box\-Layout$\ast$ Camera\-Widget\-::m\-\_\-layout\hspace{0.3cm}{\ttfamily [private]}}}\label{classCameraWidget_a22be3fef82e8e5c1e125b280ec1434df}
+
+
+Definition at line 32 of file camerawidget.\-h.
+
+
+
+Referenced by Camera\-Widget().
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{camerawidget_8h}{camerawidget.\-h}\item 
+\hyperlink{camerawidget_8cpp}{camerawidget.\-cpp}\end{DoxyCompactItemize}

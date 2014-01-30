@@ -1,0 +1,6 @@
+<map id="camerawidget.h" name="camerawidget.h">
+<area shape="rect" id="node3" href="$camerawidget_8cpp.html" title="Ce programme permet la conversion d&#39;une IplImage en une QPixmap et le placement du constructeur (widg..." alt="" coords="5,83,133,112"/>
+<area shape="rect" id="node5" href="$mainwindow_8h.html" title="Fichier d&#39;inclusion des librairies nécessaires à la MainWindow." alt="" coords="157,83,261,112"/>
+<area shape="rect" id="node7" href="$main_8cpp.html" title="Ficher main qui permet d&#39;afficher la MainWindow." alt="" coords="112,160,187,189"/>
+<area shape="rect" id="node9" href="$mainwindow_8cpp.html" title="Ce programme permet le placement de tous les widgets ou objets nécessaires au fonctionnement de l&#39;app..." alt="" coords="211,160,328,189"/>
+</map>

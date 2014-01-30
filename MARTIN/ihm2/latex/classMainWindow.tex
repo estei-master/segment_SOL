@@ -1,0 +1,995 @@
+\hypertarget{classMainWindow}{\section{Main\-Window Class Reference}
+\label{classMainWindow}\index{Main\-Window@{Main\-Window}}
+}
+
+
+{\ttfamily \#include \char`\"{}mainwindow.\-h\char`\"{}}
+
+
+
+Collaboration diagram for Main\-Window\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classMainWindow__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classMainWindow_a613b559650b3fe5dbe121de8abe92917}{Change\-Onglet} (int index)
+\begin{DoxyCompactList}\small\item\em Changement d'onglet. \end{DoxyCompactList}\item 
+void \hyperlink{classMainWindow_ad4e4c739790c121e308e876b490f6da9}{Button\-Video} ()
+\begin{DoxyCompactList}\small\item\em Button\-Video. \end{DoxyCompactList}\item 
+void \hyperlink{classMainWindow_a5d732a8b1e964a00dd04ed8ec2f5c1ef}{Button\-Emergency} ()
+\begin{DoxyCompactList}\small\item\em Arrêt d'urgence. \end{DoxyCompactList}\item 
+void \hyperlink{classMainWindow_a4d4b2c73d974fd4dbce801bdaf9b71f2}{save\-Picture} (void)
+\begin{DoxyCompactList}\small\item\em Prise de photos. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMainWindow_a8b244be8b7b7db1b08de2a2acb9409db}{Main\-Window} (Q\-Widget $\ast$parent=0)
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+\hyperlink{classMainWindow_ae98d00a93bc118200eeef9f9bba1dba7}{$\sim$\-Main\-Window} ()
+\begin{DoxyCompactList}\small\item\em Destructeur. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+qreal \hyperlink{classMainWindow_a8eb6f9adebecfb3cf78c566686f1f35e}{latitude}
+\item 
+qreal \hyperlink{classMainWindow_ac7c0f22da72ad33678ff3d3e22c722c7}{longitude}
+\item 
+Q\-Progress\-Bar $\ast$ \hyperlink{classMainWindow_a50d8f5aa716821eca4ad0a3bfb0cf2ec}{progress\-Bar1}
+\item 
+Q\-Progress\-Bar $\ast$ \hyperlink{classMainWindow_a0594f2275ce1af436549e95cf62cfe7d}{progress\-Bar2}
+\item 
+Q\-Progress\-Bar $\ast$ \hyperlink{classMainWindow_a4afea90f9ba8cd1d26fa3b552639a012}{progress\-Bar3}
+\item 
+Q\-Progress\-Bar $\ast$ \hyperlink{classMainWindow_a8672c729ad5494d2890676bf07518ea2}{progress\-Bar4}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classMainWindow_a1c7877c1ca466bd8034d88762ce2af9f}{timer\-Event} (Q\-Timer\-Event $\ast$)
+\begin{DoxyCompactList}\small\item\em Timer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classMainWindow_ab218243366728139f7af5b3d6d97e8af}{session\-Opened} ()
+\item 
+void \hyperlink{classMainWindow_a99e264f214b0841cb0f990ae7b103289}{test\-Gps} ()
+\item 
+void \hyperlink{classMainWindow_af8ce1443f9a63d9edb6207f6361c0b9c}{about\-Osm} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Ui\-::\-Main\-Window $\ast$ \hyperlink{classMainWindow_a35466a70ed47252a0191168126a352a5}{ui}
+\item 
+\hyperlink{classQBase}{Q\-Base} $\ast$ \hyperlink{classMainWindow_aa35075e5c401c08057511b93444701cf}{thread\-Base}
+\item 
+\hyperlink{classCameraWidget}{Camera\-Widget} $\ast$ \hyperlink{classMainWindow_a3225ace47a46792151d14646b6429712}{m\-\_\-cvwidget}
+\item 
+Cv\-Capture $\ast$ \hyperlink{classMainWindow_a1e4ee7611df9ee764de50cd2bfdebc55}{m\-\_\-camera}
+\item 
+Ipl\-Image $\ast$ \hyperlink{classMainWindow_aeb45155a2035daf28097e853724529a1}{image}
+\item 
+\hyperlink{classMyDisplay}{My\-Display} \hyperlink{classMainWindow_a144a0c272b675a9e8721ee486d629874}{display}
+\item 
+\hyperlink{classLightMaps}{Light\-Maps} $\ast$ \hyperlink{classMainWindow_a2f9e7ca90c2813bd1969055871782cfb}{map}
+\item 
+Q\-Network\-Session $\ast$ \hyperlink{classMainWindow_a638a10aec0de799787205387ee4da83e}{network\-Session}
+\item 
+\hyperlink{classbattery}{battery} $\ast$ \hyperlink{classMainWindow_af02a0259f044a5b2a1feabffccbc227e}{batterie}
+\item 
+\hyperlink{classbattery}{battery} $\ast$ \hyperlink{classMainWindow_a2c5aa6244af6d3e2018b98f285b0b84a}{batterie2}
+\item 
+int \hyperlink{classMainWindow_a264802533d4b55dce30d220ba9559471}{m\-\_\-photo\-Counter}
+\item 
+int \hyperlink{classMainWindow_a2cf797221c17fdcce7888b123bd5847b}{index\-Onglet}
+\item 
+bool \hyperlink{classMainWindow_a8f36c27c20d39c3f0eafe091b9f2cf29}{b\-Video\-Is\-On}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 40 of file mainwindow.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classMainWindow_a8b244be8b7b7db1b08de2a2acb9409db}{\index{Main\-Window@{Main\-Window}!Main\-Window@{Main\-Window}}
+\index{Main\-Window@{Main\-Window}!MainWindow@{Main\-Window}}
+\subsubsection[{Main\-Window}]{\setlength{\rightskip}{0pt plus 5cm}Main\-Window\-::\-Main\-Window (
+\begin{DoxyParamCaption}
+\item[{Q\-Widget $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}}\label{classMainWindow_a8b244be8b7b7db1b08de2a2acb9409db}
+
+
+Constructeur. 
+
+Permet la déclaration des widgets présents dans l'application. 
+\begin{DoxyParams}{Parameters}
+{\em Q\-Widget} & $\ast$parent \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 47 of file mainwindow.\-cpp.
+
+
+
+References about\-Osm(), batterie, batterie2, Button\-Video(), b\-Video\-Is\-On, Change\-Onglet(), index\-Onglet, m\-\_\-cvwidget, m\-\_\-photo\-Counter, map, network\-Session, progress\-Bar1, progress\-Bar2, progress\-Bar3, progress\-Bar4, save\-Picture(), session\-Opened(), test\-Gps(), thread\-Base, and ui.
+
+
+\begin{DoxyCode}
+                                      :
+    QMainWindow(parent),
+    \hyperlink{classMainWindow_a35466a70ed47252a0191168126a352a5}{ui}(\textcolor{keyword}{new} Ui::MainWindow)
+\{
+    \hyperlink{classMainWindow_a35466a70ed47252a0191168126a352a5}{ui}->setupUi(\textcolor{keyword}{this});
+
+    \textcolor{comment}{/* Déclaration du widget permettant l'affichage vidéo des et du thread
+       utilisé pour la communication et l'affichange de l'horizon artificiel */}
+
+    \hyperlink{classMainWindow_aa35075e5c401c08057511b93444701cf}{threadBase} = \textcolor{keyword}{new} \hyperlink{classQBase}{QBase}();
+    \hyperlink{classMainWindow_a3225ace47a46792151d14646b6429712}{m\_cvwidget} = \textcolor{keyword}{new} \hyperlink{classCameraWidget}{CameraWidget}();
+
+    \textcolor{comment}{/* Déclaration du widget permettant l'affichage de l'état de la batterie et
+       placement dans les layouts définis à l'aide de QtDesigner */}
+
+    \hyperlink{classMainWindow_af02a0259f044a5b2a1feabffccbc227e}{batterie} = \textcolor{keyword}{new} \hyperlink{classbattery}{battery};
+    \hyperlink{classMainWindow_a35466a70ed47252a0191168126a352a5}{ui}->batterylayout->addWidget(\hyperlink{classMainWindow_af02a0259f044a5b2a1feabffccbc227e}{batterie});
+    \hyperlink{classMainWindow_a2c5aa6244af6d3e2018b98f285b0b84a}{batterie2} = \textcolor{keyword}{new} \hyperlink{classbattery}{battery};
+    \hyperlink{classMainWindow_a35466a70ed47252a0191168126a352a5}{ui}->batterylayout\_2->addWidget(\hyperlink{classMainWindow_a2c5aa6244af6d3e2018b98f285b0b84a}{batterie2});
+
+    \textcolor{comment}{/* Déclaration des progressBars permettant l'affichage de la puissance du
+       signal */}
+
+    \hyperlink{classMainWindow_a50d8f5aa716821eca4ad0a3bfb0cf2ec}{progressBar1} = \textcolor{keyword}{new} QProgressBar(\textcolor{keyword}{this});
+    \hyperlink{classMainWindow_a50d8f5aa716821eca4ad0a3bfb0cf2ec}{progressBar1}->setGeometry(10, 10, 5, 10);
+    \hyperlink{classMainWindow_a50d8f5aa716821eca4ad0a3bfb0cf2ec}{progressBar1}->setOrientation(Qt::Vertical);
+    \hyperlink{classMainWindow_a50d8f5aa716821eca4ad0a3bfb0cf2ec}{progressBar1}->setTextVisible(\textcolor{keyword}{false});
+    \hyperlink{classMainWindow_a50d8f5aa716821eca4ad0a3bfb0cf2ec}{progressBar1}->setStyleSheet(\textcolor{stringliteral}{"
+      QProgressBar::chunk\{background-color:orange\}"});
+    \hyperlink{classMainWindow_a0594f2275ce1af436549e95cf62cfe7d}{progressBar2} = \textcolor{keyword}{new} QProgressBar(\textcolor{keyword}{this});
+    \hyperlink{classMainWindow_a0594f2275ce1af436549e95cf62cfe7d}{progressBar2}->setGeometry(10, 10, 5, 20);
+    \hyperlink{classMainWindow_a0594f2275ce1af436549e95cf62cfe7d}{progressBar2}->setOrientation(Qt::Vertical);
+    \hyperlink{classMainWindow_a0594f2275ce1af436549e95cf62cfe7d}{progressBar2}->setTextVisible(\textcolor{keyword}{false});
+    \hyperlink{classMainWindow_a0594f2275ce1af436549e95cf62cfe7d}{progressBar2}->setStyleSheet(\textcolor{stringliteral}{"
+      QProgressBar::chunk\{background-color:orange\}"});
+    \hyperlink{classMainWindow_a4afea90f9ba8cd1d26fa3b552639a012}{progressBar3} = \textcolor{keyword}{new} QProgressBar(\textcolor{keyword}{this});
+    \hyperlink{classMainWindow_a4afea90f9ba8cd1d26fa3b552639a012}{progressBar3}->setGeometry(10, 10, 5, 30);
+    \hyperlink{classMainWindow_a4afea90f9ba8cd1d26fa3b552639a012}{progressBar3}->setOrientation(Qt::Vertical);
+    \hyperlink{classMainWindow_a4afea90f9ba8cd1d26fa3b552639a012}{progressBar3}->setTextVisible(\textcolor{keyword}{false});
+    \hyperlink{classMainWindow_a4afea90f9ba8cd1d26fa3b552639a012}{progressBar3}->setStyleSheet(\textcolor{stringliteral}{"
+      QProgressBar::chunk\{background-color:orange\}"});
+    \hyperlink{classMainWindow_a8672c729ad5494d2890676bf07518ea2}{progressBar4} = \textcolor{keyword}{new} QProgressBar(\textcolor{keyword}{this});
+    \hyperlink{classMainWindow_a8672c729ad5494d2890676bf07518ea2}{progressBar4}->setGeometry(10, 10, 5, 40);
+    \hyperlink{classMainWindow_a8672c729ad5494d2890676bf07518ea2}{progressBar4}->setOrientation(Qt::Vertical);
+    \hyperlink{classMainWindow_a8672c729ad5494d2890676bf07518ea2}{progressBar4}->setTextVisible(\textcolor{keyword}{false});
+    \hyperlink{classMainWindow_a8672c729ad5494d2890676bf07518ea2}{progressBar4}->setStyleSheet(\textcolor{stringliteral}{"
+      QProgressBar::chunk\{background-color:orange\}"});
+
+    \textcolor{comment}{//startTimer(200);}
+
+    \textcolor{comment}{/* Ajout des widgets affichant la puissance du signal dans les layouts
+       prédéfinis à l'aide de QtDesigner */}
+
+    \hyperlink{classMainWindow_a35466a70ed47252a0191168126a352a5}{ui}->powerlayout1->addWidget(\hyperlink{classMainWindow_a50d8f5aa716821eca4ad0a3bfb0cf2ec}{progressBar1});
+    \hyperlink{classMainWindow_a35466a70ed47252a0191168126a352a5}{ui}->powerlayout2->addWidget(\hyperlink{classMainWindow_a0594f2275ce1af436549e95cf62cfe7d}{progressBar2});
+    \hyperlink{classMainWindow_a35466a70ed47252a0191168126a352a5}{ui}->powerlayout3->addWidget(\hyperlink{classMainWindow_a4afea90f9ba8cd1d26fa3b552639a012}{progressBar3});
+    \hyperlink{classMainWindow_a35466a70ed47252a0191168126a352a5}{ui}->powerlayout4->addWidget(\hyperlink{classMainWindow_a8672c729ad5494d2890676bf07518ea2}{progressBar4});
+
+
+
+    \textcolor{comment}{/* Déclaration du widget Lightmaps afin d'afficher la carte dans un layout
+       préfdéfini à l'aide de QtDesigner */}
+
+    \hyperlink{classMainWindow_a2f9e7ca90c2813bd1969055871782cfb}{map} = \textcolor{keyword}{new} \hyperlink{classLightMaps}{LightMaps}();
+    \hyperlink{classMainWindow_a35466a70ed47252a0191168126a352a5}{ui}->maplayout->addWidget(\hyperlink{classMainWindow_a2f9e7ca90c2813bd1969055871782cfb}{map});
+    \hyperlink{classMainWindow_a2f9e7ca90c2813bd1969055871782cfb}{map}->setFocus();
+
+    \textcolor{comment}{/*m\_normalMap = new SlippyMap(this);}
+\textcolor{comment}{    connect(m\_normalMap, SIGNAL(updated(QRect)), SLOT(updateMap(QRect)));*/}
+
+    QAction *testGpsAction = \textcolor{keyword}{new} QAction(tr(\textcolor{stringliteral}{"&testGps"}), \textcolor{keyword}{this});
+    QAction *nightModeAction = \textcolor{keyword}{new} QAction(tr(\textcolor{stringliteral}{"Night Mode"}), \textcolor{keyword}{this});
+    nightModeAction->setCheckable(\textcolor{keyword}{true});
+    nightModeAction->setChecked(\textcolor{keyword}{false});
+    QAction *osmAction = \textcolor{keyword}{new} QAction(tr(\textcolor{stringliteral}{"About OpenStreetMap"}), \textcolor{keyword}{this});
+    connect(testGpsAction, SIGNAL(triggered()), SLOT(\hyperlink{classMainWindow_a99e264f214b0841cb0f990ae7b103289}{testGps}()));
+    connect(nightModeAction, SIGNAL(triggered()), \hyperlink{classMainWindow_a2f9e7ca90c2813bd1969055871782cfb}{map}, SLOT(toggleNightMode(
+      )));
+    connect(osmAction, SIGNAL(triggered()), SLOT(\hyperlink{classMainWindow_af8ce1443f9a63d9edb6207f6361c0b9c}{aboutOsm}()));
+
+\textcolor{preprocessor}{    #if defined(Q\_OS\_SYMBIAN) || defined(Q\_OS\_WINCE\_WM)}
+\textcolor{preprocessor}{}        menuBar()->addAction(testGpsAction);
+        menuBar()->addAction(nightModeAction);
+        menuBar()->addAction(osmAction);
+\textcolor{preprocessor}{    #else}
+\textcolor{preprocessor}{}        QMenu *menu = menuBar()->addMenu(tr(\textcolor{stringliteral}{"&Options"}));
+        menu->addAction(testGpsAction);
+        menu->addSeparator();
+        menu->addAction(nightModeAction);
+        menu->addAction(osmAction);
+\textcolor{preprocessor}{    #endif}
+\textcolor{preprocessor}{}
+    QNetworkConfigurationManager manager;
+    \textcolor{keywordflow}{if} (manager.capabilities() & 
+      QNetworkConfigurationManager::NetworkSessionRequired)
+    \{
+            \textcolor{comment}{// Get saved network configuration}
+            QSettings settings(QSettings::UserScope, QLatin1String(\textcolor{stringliteral}{"Trolltech"})
+      );
+            settings.beginGroup(QLatin1String(\textcolor{stringliteral}{"QtNetwork"}));
+            \textcolor{keyword}{const} QString \textcolor{keywordtype}{id} =
+                settings.value(QLatin1String(\textcolor{stringliteral}{"DefaultNetworkConfiguration"})).
+      toString();
+            settings.endGroup();
+
+            \textcolor{comment}{// If the saved network configuration is not currently discovered
+       use the system}
+            \textcolor{comment}{// default}
+            QNetworkConfiguration config = manager.configurationFromIdentifier(\textcolor{keywordtype}{
+      id});
+            \textcolor{keywordflow}{if} ((config.state() & QNetworkConfiguration::Discovered) !=
+                QNetworkConfiguration::Discovered)
+            \{
+                config = manager.defaultConfiguration();
+            \}
+
+            \hyperlink{classMainWindow_a638a10aec0de799787205387ee4da83e}{networkSession} = \textcolor{keyword}{new} QNetworkSession(config, \textcolor{keyword}{this});
+            connect(\hyperlink{classMainWindow_a638a10aec0de799787205387ee4da83e}{networkSession}, SIGNAL(opened()), \textcolor{keyword}{this}, SLOT(
+      \hyperlink{classMainWindow_ab218243366728139f7af5b3d6d97e8af}{sessionOpened}()));
+
+            \hyperlink{classMainWindow_a638a10aec0de799787205387ee4da83e}{networkSession}->open();
+    \}
+
+    \textcolor{keywordflow}{else}
+    \{
+            \hyperlink{classMainWindow_a638a10aec0de799787205387ee4da83e}{networkSession} = 0;
+    \}
+
+    \textcolor{comment}{/* Ajout d'un titre pour l'application */}
+
+    setWindowTitle(tr(\textcolor{stringliteral}{"WELCOME TO THE APPLICATION OF ESTEI STUDENTS !"}));
+    \textcolor{comment}{//startTimer(200);}
+
+
+    \hyperlink{classMainWindow_a2cf797221c17fdcce7888b123bd5847b}{indexOnglet} = \hyperlink{classMainWindow_a35466a70ed47252a0191168126a352a5}{ui}->Onglet->currentIndex();
+    \hyperlink{classMainWindow_a8f36c27c20d39c3f0eafe091b9f2cf29}{bVideoIsOn} = \textcolor{keyword}{false};
+
+    \textcolor{comment}{/* Mise à zéro de m\_photoCounter et connexion entre le bouton "SAVE
+       PICTURE" et la fonction décrite plus bas dans ce fichier */}
+
+    \hyperlink{classMainWindow_a264802533d4b55dce30d220ba9559471}{m\_photoCounter} = 0;
+    connect(\hyperlink{classMainWindow_a35466a70ed47252a0191168126a352a5}{ui}->Photo, SIGNAL(pressed()), \textcolor{keyword}{this}, SLOT(\hyperlink{classMainWindow_a4d4b2c73d974fd4dbce801bdaf9b71f2}{savePicture}()
+      ));
+
+    \textcolor{comment}{/* Connexion du bouton "START/STOP VIDEO STREAMING" au slot ButtonVideo */}
+
+    connect(\hyperlink{classMainWindow_a35466a70ed47252a0191168126a352a5}{ui}->Onglet, SIGNAL(currentChanged(\textcolor{keywordtype}{int})), \textcolor{keyword}{this}, SLOT(\hyperlink{classMainWindow_a613b559650b3fe5dbe121de8abe92917}{ChangeOnglet}
+      (\textcolor{keywordtype}{int})));
+    connect(\hyperlink{classMainWindow_a35466a70ed47252a0191168126a352a5}{ui}->VideoStreaming, SIGNAL(clicked()), \textcolor{keyword}{this}, SLOT(\hyperlink{classMainWindow_ad4e4c739790c121e308e876b490f6da9}{ButtonVideo}
+      ()));
+    startTimer(47);     \textcolor{comment}{/* Environ 21 images/s */}
+
+    \textcolor{comment}{/*  Lancement du thread */}
+    \hyperlink{classMainWindow_aa35075e5c401c08057511b93444701cf}{threadBase}->start();
+
+\}
+\end{DoxyCode}
+\hypertarget{classMainWindow_ae98d00a93bc118200eeef9f9bba1dba7}{\index{Main\-Window@{Main\-Window}!$\sim$\-Main\-Window@{$\sim$\-Main\-Window}}
+\index{$\sim$\-Main\-Window@{$\sim$\-Main\-Window}!MainWindow@{Main\-Window}}
+\subsubsection[{$\sim$\-Main\-Window}]{\setlength{\rightskip}{0pt plus 5cm}Main\-Window\-::$\sim$\-Main\-Window (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classMainWindow_ae98d00a93bc118200eeef9f9bba1dba7}
+
+
+Destructeur. 
+
+Permet la destruction du thread et de la capture vidéo. 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 190 of file mainwindow.\-cpp.
+
+
+
+References m\-\_\-camera, thread\-Base, and ui.
+
+
+\begin{DoxyCode}
+\{
+    \textcolor{keywordflow}{if}(\hyperlink{classMainWindow_a1e4ee7611df9ee764de50cd2bfdebc55}{m\_camera} != NULL)                                               
+               \textcolor{comment}{/* Appel à la fonction qui permet de détruire la capture de la vidéo si
+       son argument n'est pas nul */}
+        cvReleaseCapture(&\hyperlink{classMainWindow_a1e4ee7611df9ee764de50cd2bfdebc55}{m\_camera});
+    \hyperlink{classMainWindow_aa35075e5c401c08057511b93444701cf}{threadBase}->deleteLater();                                       
+                 \textcolor{comment}{/* Destruction du thread */}
+    \textcolor{keyword}{delete} \hyperlink{classMainWindow_a35466a70ed47252a0191168126a352a5}{ui};                                                               
+         \textcolor{comment}{/* Destruction du fichier .ui */}
+\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classMainWindow_af8ce1443f9a63d9edb6207f6361c0b9c}{\index{Main\-Window@{Main\-Window}!about\-Osm@{about\-Osm}}
+\index{about\-Osm@{about\-Osm}!MainWindow@{Main\-Window}}
+\subsubsection[{about\-Osm}]{\setlength{\rightskip}{0pt plus 5cm}void Main\-Window\-::about\-Osm (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{classMainWindow_af8ce1443f9a63d9edb6207f6361c0b9c}
+
+
+Definition at line 250 of file mainwindow.\-cpp.
+
+
+
+Referenced by Main\-Window().
+
+
+\begin{DoxyCode}
+\{
+    QDesktopServices::openUrl(QUrl(\textcolor{stringliteral}{"http://www.openstreetmap.org"}));
+\}
+\end{DoxyCode}
+\hypertarget{classMainWindow_a5d732a8b1e964a00dd04ed8ec2f5c1ef}{\index{Main\-Window@{Main\-Window}!Button\-Emergency@{Button\-Emergency}}
+\index{Button\-Emergency@{Button\-Emergency}!MainWindow@{Main\-Window}}
+\subsubsection[{Button\-Emergency}]{\setlength{\rightskip}{0pt plus 5cm}void Main\-Window\-::\-Button\-Emergency (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}}\label{classMainWindow_a5d732a8b1e964a00dd04ed8ec2f5c1ef}
+
+
+Arrêt d'urgence. 
+
+Permet l'arrêt du drône en cas de grave problème. 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 461 of file mainwindow.\-cpp.
+
+
+\begin{DoxyCode}
+\{
+
+\}
+\end{DoxyCode}
+\hypertarget{classMainWindow_ad4e4c739790c121e308e876b490f6da9}{\index{Main\-Window@{Main\-Window}!Button\-Video@{Button\-Video}}
+\index{Button\-Video@{Button\-Video}!MainWindow@{Main\-Window}}
+\subsubsection[{Button\-Video}]{\setlength{\rightskip}{0pt plus 5cm}void Main\-Window\-::\-Button\-Video (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}}\label{classMainWindow_ad4e4c739790c121e308e876b490f6da9}
+
+
+Button\-Video. 
+
+Fonction permettant la destructution ou l'ajout du widget permettant la capture de la vidéo. 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 438 of file mainwindow.\-cpp.
+
+
+
+References b\-Video\-Is\-On, m\-\_\-camera, m\-\_\-cvwidget, and ui.
+
+
+
+Referenced by Main\-Window().
+
+
+\begin{DoxyCode}
+\{
+    \textcolor{keywordflow}{if}(\hyperlink{classMainWindow_a8f36c27c20d39c3f0eafe091b9f2cf29}{bVideoIsOn})
+    \{
+        \hyperlink{classMainWindow_a35466a70ed47252a0191168126a352a5}{ui}->cameralayout->removeWidget(\hyperlink{classMainWindow_a3225ace47a46792151d14646b6429712}{m\_cvwidget});
+        cvReleaseCapture(&\hyperlink{classMainWindow_a1e4ee7611df9ee764de50cd2bfdebc55}{m\_camera});
+        \hyperlink{classMainWindow_a8f36c27c20d39c3f0eafe091b9f2cf29}{bVideoIsOn} = \textcolor{keyword}{false};
+    \}
+
+    \textcolor{keywordflow}{else}
+    \{
+        \hyperlink{classMainWindow_a35466a70ed47252a0191168126a352a5}{ui}->cameralayout->addWidget(\hyperlink{classMainWindow_a3225ace47a46792151d14646b6429712}{m\_cvwidget});
+        \hyperlink{classMainWindow_a1e4ee7611df9ee764de50cd2bfdebc55}{m\_camera} = cvCreateCameraCapture(0);
+        \hyperlink{classMainWindow_a8f36c27c20d39c3f0eafe091b9f2cf29}{bVideoIsOn} = \textcolor{keyword}{true};
+    \}
+\}
+\end{DoxyCode}
+\hypertarget{classMainWindow_a613b559650b3fe5dbe121de8abe92917}{\index{Main\-Window@{Main\-Window}!Change\-Onglet@{Change\-Onglet}}
+\index{Change\-Onglet@{Change\-Onglet}!MainWindow@{Main\-Window}}
+\subsubsection[{Change\-Onglet}]{\setlength{\rightskip}{0pt plus 5cm}void Main\-Window\-::\-Change\-Onglet (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}}\label{classMainWindow_a613b559650b3fe5dbe121de8abe92917}
+
+
+Changement d'onglet. 
+
+Fonction qui permet l'ajout ou la destruction de widgets suivant l'onglet sélectionnée. 
+\begin{DoxyParams}{Parameters}
+{\em int} & index \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 383 of file mainwindow.\-cpp.
+
+
+
+References batterie, batterie2, Q\-Base\-::\-Horizon, I\-N\-D\-E\-X\-\_\-\-O\-N\-G\-L\-E\-T\-\_\-\-C\-A\-M\-E\-R\-A, I\-N\-D\-E\-X\-\_\-\-O\-N\-G\-L\-E\-T\-\_\-\-H\-O\-R\-I\-Z\-O\-N, index\-Onglet, map, progress\-Bar1, progress\-Bar2, progress\-Bar3, progress\-Bar4, thread\-Base, and ui.
+
+
+
+Referenced by Main\-Window().
+
+
+\begin{DoxyCode}
+\{
+    \hyperlink{classMainWindow_a2cf797221c17fdcce7888b123bd5847b}{indexOnglet} = index;
+
+    \textcolor{keywordflow}{switch}(\hyperlink{classMainWindow_a2cf797221c17fdcce7888b123bd5847b}{indexOnglet}) \{
+
+    \textcolor{keywordflow}{case} \hyperlink{mainwindow_8h_ab9f3d4f131379475d4b36a15d2b59b5e}{INDEX\_ONGLET\_CAMERA}:
+            \hyperlink{classMainWindow_a35466a70ed47252a0191168126a352a5}{ui}->horizon\_layout->removeWidget(\hyperlink{classMainWindow_aa35075e5c401c08057511b93444701cf}{threadBase}->\hyperlink{classQBase_ae4a8b78621695d9a61c311d422824a8d}{Horizon}
+      );
+            \hyperlink{classMainWindow_a35466a70ed47252a0191168126a352a5}{ui}->maplayout2->removeWidget(\hyperlink{classMainWindow_a2f9e7ca90c2813bd1969055871782cfb}{map});
+            \hyperlink{classMainWindow_a35466a70ed47252a0191168126a352a5}{ui}->maplayout->addWidget(\hyperlink{classMainWindow_a2f9e7ca90c2813bd1969055871782cfb}{map});
+            \hyperlink{classMainWindow_a35466a70ed47252a0191168126a352a5}{ui}->batterylayout2->removeWidget(\hyperlink{classMainWindow_af02a0259f044a5b2a1feabffccbc227e}{batterie});
+            \hyperlink{classMainWindow_a35466a70ed47252a0191168126a352a5}{ui}->batterylayout->addWidget(\hyperlink{classMainWindow_af02a0259f044a5b2a1feabffccbc227e}{batterie});
+            \hyperlink{classMainWindow_a35466a70ed47252a0191168126a352a5}{ui}->batterylayout2\_2->removeWidget(\hyperlink{classMainWindow_a2c5aa6244af6d3e2018b98f285b0b84a}{batterie2});
+            \hyperlink{classMainWindow_a35466a70ed47252a0191168126a352a5}{ui}->batterylayout\_2->addWidget(\hyperlink{classMainWindow_a2c5aa6244af6d3e2018b98f285b0b84a}{batterie2});
+            \hyperlink{classMainWindow_a35466a70ed47252a0191168126a352a5}{ui}->powerlayout1\_2->removeWidget(\hyperlink{classMainWindow_a50d8f5aa716821eca4ad0a3bfb0cf2ec}{progressBar1});
+            \hyperlink{classMainWindow_a35466a70ed47252a0191168126a352a5}{ui}->powerlayout2\_2->removeWidget(\hyperlink{classMainWindow_a0594f2275ce1af436549e95cf62cfe7d}{progressBar2});
+            \hyperlink{classMainWindow_a35466a70ed47252a0191168126a352a5}{ui}->powerlayout3\_2->removeWidget(\hyperlink{classMainWindow_a4afea90f9ba8cd1d26fa3b552639a012}{progressBar3});
+            \hyperlink{classMainWindow_a35466a70ed47252a0191168126a352a5}{ui}->powerlayout4\_2->removeWidget(\hyperlink{classMainWindow_a8672c729ad5494d2890676bf07518ea2}{progressBar4});
+            \hyperlink{classMainWindow_a35466a70ed47252a0191168126a352a5}{ui}->powerlayout1->addWidget(\hyperlink{classMainWindow_a50d8f5aa716821eca4ad0a3bfb0cf2ec}{progressBar1});
+            \hyperlink{classMainWindow_a35466a70ed47252a0191168126a352a5}{ui}->powerlayout2->addWidget(\hyperlink{classMainWindow_a0594f2275ce1af436549e95cf62cfe7d}{progressBar2});
+            \hyperlink{classMainWindow_a35466a70ed47252a0191168126a352a5}{ui}->powerlayout3->addWidget(\hyperlink{classMainWindow_a4afea90f9ba8cd1d26fa3b552639a012}{progressBar3});
+            \hyperlink{classMainWindow_a35466a70ed47252a0191168126a352a5}{ui}->powerlayout4->addWidget(\hyperlink{classMainWindow_a8672c729ad5494d2890676bf07518ea2}{progressBar4});
+
+        \textcolor{keywordflow}{break};
+
+    \textcolor{keywordflow}{case} \hyperlink{mainwindow_8h_ac416243e121530c2fc222e5204d7fe30}{INDEX\_ONGLET\_HORIZON}:
+            \hyperlink{classMainWindow_a35466a70ed47252a0191168126a352a5}{ui}->horizon\_layout->addWidget(\hyperlink{classMainWindow_aa35075e5c401c08057511b93444701cf}{threadBase}->\hyperlink{classQBase_ae4a8b78621695d9a61c311d422824a8d}{Horizon}
+      );
+            \hyperlink{classMainWindow_a35466a70ed47252a0191168126a352a5}{ui}->maplayout->removeWidget(\hyperlink{classMainWindow_a2f9e7ca90c2813bd1969055871782cfb}{map});
+            \hyperlink{classMainWindow_a35466a70ed47252a0191168126a352a5}{ui}->maplayout2->addWidget(\hyperlink{classMainWindow_a2f9e7ca90c2813bd1969055871782cfb}{map});
+            \hyperlink{classMainWindow_a35466a70ed47252a0191168126a352a5}{ui}->batterylayout->removeWidget(\hyperlink{classMainWindow_af02a0259f044a5b2a1feabffccbc227e}{batterie});
+            \hyperlink{classMainWindow_a35466a70ed47252a0191168126a352a5}{ui}->batterylayout2->addWidget(\hyperlink{classMainWindow_af02a0259f044a5b2a1feabffccbc227e}{batterie});
+            \hyperlink{classMainWindow_a35466a70ed47252a0191168126a352a5}{ui}->batterylayout\_2->removeWidget(\hyperlink{classMainWindow_a2c5aa6244af6d3e2018b98f285b0b84a}{batterie2});
+            \hyperlink{classMainWindow_a35466a70ed47252a0191168126a352a5}{ui}->batterylayout2\_2->addWidget(\hyperlink{classMainWindow_a2c5aa6244af6d3e2018b98f285b0b84a}{batterie2});
+            \hyperlink{classMainWindow_a35466a70ed47252a0191168126a352a5}{ui}->powerlayout1->removeWidget(\hyperlink{classMainWindow_a50d8f5aa716821eca4ad0a3bfb0cf2ec}{progressBar1});
+            \hyperlink{classMainWindow_a35466a70ed47252a0191168126a352a5}{ui}->powerlayout2->removeWidget(\hyperlink{classMainWindow_a0594f2275ce1af436549e95cf62cfe7d}{progressBar2});
+            \hyperlink{classMainWindow_a35466a70ed47252a0191168126a352a5}{ui}->powerlayout3->removeWidget(\hyperlink{classMainWindow_a4afea90f9ba8cd1d26fa3b552639a012}{progressBar3});
+            \hyperlink{classMainWindow_a35466a70ed47252a0191168126a352a5}{ui}->powerlayout4->removeWidget(\hyperlink{classMainWindow_a8672c729ad5494d2890676bf07518ea2}{progressBar4});
+            \hyperlink{classMainWindow_a35466a70ed47252a0191168126a352a5}{ui}->powerlayout1\_2->addWidget(\hyperlink{classMainWindow_a50d8f5aa716821eca4ad0a3bfb0cf2ec}{progressBar1});
+            \hyperlink{classMainWindow_a35466a70ed47252a0191168126a352a5}{ui}->powerlayout2\_2->addWidget(\hyperlink{classMainWindow_a0594f2275ce1af436549e95cf62cfe7d}{progressBar2});
+            \hyperlink{classMainWindow_a35466a70ed47252a0191168126a352a5}{ui}->powerlayout3\_2->addWidget(\hyperlink{classMainWindow_a4afea90f9ba8cd1d26fa3b552639a012}{progressBar3});
+            \hyperlink{classMainWindow_a35466a70ed47252a0191168126a352a5}{ui}->powerlayout4\_2->addWidget(\hyperlink{classMainWindow_a8672c729ad5494d2890676bf07518ea2}{progressBar4});
+
+        \textcolor{keywordflow}{break};
+    \textcolor{keywordflow}{default}:
+        \textcolor{keywordflow}{break};
+    \}
+\}
+\end{DoxyCode}
+\hypertarget{classMainWindow_a4d4b2c73d974fd4dbce801bdaf9b71f2}{\index{Main\-Window@{Main\-Window}!save\-Picture@{save\-Picture}}
+\index{save\-Picture@{save\-Picture}!MainWindow@{Main\-Window}}
+\subsubsection[{save\-Picture}]{\setlength{\rightskip}{0pt plus 5cm}void Main\-Window\-::save\-Picture (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}}\label{classMainWindow_a4d4b2c73d974fd4dbce801bdaf9b71f2}
+
+
+Prise de photos. 
+
+Fonction permettant l'enregistrement de photos via un appui sur le bouton \char`\"{}\-S\-A\-V\-E P\-I\-C\-T\-U\-R\-E\char`\"{}. 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 472 of file mainwindow.\-cpp.
+
+
+
+References image, m\-\_\-camera, m\-\_\-cvwidget, m\-\_\-photo\-Counter, and Camera\-Widget\-::to\-Pixmap().
+
+
+
+Referenced by Main\-Window().
+
+
+\begin{DoxyCode}
+\{
+    IplImage *\hyperlink{classMainWindow_aeb45155a2035daf28097e853724529a1}{image} = cvQueryFrame(\hyperlink{classMainWindow_a1e4ee7611df9ee764de50cd2bfdebc55}{m\_camera});
+    QPixmap photo = \hyperlink{classMainWindow_a3225ace47a46792151d14646b6429712}{m\_cvwidget}->\hyperlink{classCameraWidget_a349b27ddfbcd67ae055f56e51ffe3e44}{toPixmap}(image);
+
+    \textcolor{keywordflow}{if} (photo.save(\textcolor{stringliteral}{"/tmp/Picture"} + QString::number(\hyperlink{classMainWindow_a264802533d4b55dce30d220ba9559471}{m\_photoCounter}
+      ) + \textcolor{stringliteral}{".jpg"}))                  \textcolor{comment}{/* Définition du chemin d'enregistrement */}
+    \{
+        qDebug(\textcolor{stringliteral}{"Picture successfully saved!"});
+        \hyperlink{classMainWindow_a264802533d4b55dce30d220ba9559471}{m\_photoCounter}++;                                        
+                                     \textcolor{comment}{/* Incrémentation de m\_photoCounter */}
+    \}
+
+    \textcolor{keywordflow}{else}
+    \{
+        qDebug(\textcolor{stringliteral}{"Error while saving the picture"});
+    \}
+\}
+\end{DoxyCode}
+\hypertarget{classMainWindow_ab218243366728139f7af5b3d6d97e8af}{\index{Main\-Window@{Main\-Window}!session\-Opened@{session\-Opened}}
+\index{session\-Opened@{session\-Opened}!MainWindow@{Main\-Window}}
+\subsubsection[{session\-Opened}]{\setlength{\rightskip}{0pt plus 5cm}void Main\-Window\-::session\-Opened (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{classMainWindow_ab218243366728139f7af5b3d6d97e8af}
+
+
+Definition at line 200 of file mainwindow.\-cpp.
+
+
+
+References network\-Session.
+
+
+
+Referenced by Main\-Window().
+
+
+\begin{DoxyCode}
+\{
+    \textcolor{comment}{// Save the used configuration}
+    QNetworkConfiguration config = \hyperlink{classMainWindow_a638a10aec0de799787205387ee4da83e}{networkSession}->configuration(
+      );
+    QString id;
+    \textcolor{keywordflow}{if} (config.type() == QNetworkConfiguration::UserChoice) \{
+        \textcolor{keywordtype}{id} = \hyperlink{classMainWindow_a638a10aec0de799787205387ee4da83e}{networkSession}->sessionProperty(
+                QLatin1String(\textcolor{stringliteral}{"UserChoiceConfiguration"})).toString();
+    \} \textcolor{keywordflow}{else} \{
+        \textcolor{keywordtype}{id} = config.identifier();
+    \}
+
+    QSettings settings(QSettings::UserScope, QLatin1String(\textcolor{stringliteral}{"Trolltech"}));
+    settings.beginGroup(QLatin1String(\textcolor{stringliteral}{"QtNetwork"}));
+    settings.setValue(QLatin1String(\textcolor{stringliteral}{"DefaultNetworkConfiguration"}), \textcolor{keywordtype}{id});
+    settings.endGroup();
+\}
+\end{DoxyCode}
+\hypertarget{classMainWindow_a99e264f214b0841cb0f990ae7b103289}{\index{Main\-Window@{Main\-Window}!test\-Gps@{test\-Gps}}
+\index{test\-Gps@{test\-Gps}!MainWindow@{Main\-Window}}
+\subsubsection[{test\-Gps}]{\setlength{\rightskip}{0pt plus 5cm}void Main\-Window\-::test\-Gps (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{classMainWindow_a99e264f214b0841cb0f990ae7b103289}
+
+
+Definition at line 220 of file mainwindow.\-cpp.
+
+
+
+References latitude, longitude, map, and Light\-Maps\-::set\-Center().
+
+
+
+Referenced by Main\-Window().
+
+
+\begin{DoxyCode}
+\{
+    QFile fichier(\textcolor{stringliteral}{"/home/Guillaume\_Pierre/GPS/dataIHM.txt"});
+    QString ligne;
+    \textcolor{keywordtype}{float} coordonnees[2];
+    \textcolor{keywordtype}{int} i = 0;
+    QTextStream flux(&fichier);
+
+    \textcolor{keywordflow}{if}(fichier.open(QIODevice::ReadOnly | QIODevice::Text))
+    \{
+        \textcolor{keywordflow}{while}(!flux.atEnd())
+        \{
+            ligne = fichier.readLine();
+            \textcolor{keywordflow}{if}(i < 2)
+                coordonnees[i] = ligne.toFloat();
+            i++;
+        \}
+        fichier.close();
+        i = 0;
+    \}
+    \textcolor{keywordflow}{else}
+        ligne = \textcolor{stringliteral}{"Impossible d'ouvrir le fichier !"};
+
+    \hyperlink{classMainWindow_a8eb6f9adebecfb3cf78c566686f1f35e}{latitude} = coordonnees[0];
+    \hyperlink{classMainWindow_ac7c0f22da72ad33678ff3d3e22c722c7}{longitude} = coordonnees[1];
+    \hyperlink{classMainWindow_a2f9e7ca90c2813bd1969055871782cfb}{map}->\hyperlink{classLightMaps_a48a673b2f3167a02004ced0b182a8498}{setCenter}(\hyperlink{classMainWindow_a8eb6f9adebecfb3cf78c566686f1f35e}{latitude}, \hyperlink{classMainWindow_ac7c0f22da72ad33678ff3d3e22c722c7}{longitude});
+\}
+\end{DoxyCode}
+\hypertarget{classMainWindow_a1c7877c1ca466bd8034d88762ce2af9f}{\index{Main\-Window@{Main\-Window}!timer\-Event@{timer\-Event}}
+\index{timer\-Event@{timer\-Event}!MainWindow@{Main\-Window}}
+\subsubsection[{timer\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void Main\-Window\-::timer\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Timer\-Event $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classMainWindow_a1c7877c1ca466bd8034d88762ce2af9f}
+
+
+Timer. 
+
+Permet le rafraichissement de l'affichage vidéo. 
+\begin{DoxyParams}{Parameters}
+{\em Q\-Timer\-Event} & $\ast$ \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 261 of file mainwindow.\-cpp.
+
+
+
+References b\-Video\-Is\-On, image, I\-N\-D\-E\-X\-\_\-\-O\-N\-G\-L\-E\-T\-\_\-\-C\-A\-M\-E\-R\-A, index\-Onglet, latitude, longitude, m\-\_\-camera, m\-\_\-cvwidget, map, progress\-Bar1, progress\-Bar2, progress\-Bar3, progress\-Bar4, Camera\-Widget\-::put\-Frame(), and Light\-Maps\-::set\-Center().
+
+
+\begin{DoxyCode}
+\{
+    QTime time;
+    QString Qtmp;
+    std::ofstream    f(\textcolor{stringliteral}{"/tmp/LogMainWindow"}, std::ios\_base::app);
+
+    time.start();
+
+    \textcolor{keywordflow}{switch}(\hyperlink{classMainWindow_a2cf797221c17fdcce7888b123bd5847b}{indexOnglet})
+    \{
+
+        \textcolor{keywordflow}{case} \hyperlink{mainwindow_8h_ab9f3d4f131379475d4b36a15d2b59b5e}{INDEX\_ONGLET\_CAMERA}:                           
+                                  \textcolor{comment}{/* Dans le cas où l'onglet "VOL IMMERSIF est
+       sélectionné */}
+            \textcolor{keywordflow}{if}(\hyperlink{classMainWindow_a8f36c27c20d39c3f0eafe091b9f2cf29}{bVideoIsOn})                                           
+                         \textcolor{comment}{/* Test si la vidéo est active */}
+            \{
+                assert(\hyperlink{classMainWindow_a1e4ee7611df9ee764de50cd2bfdebc55}{m\_camera});                                      
+                       \textcolor{comment}{/* Appel à la fonction assert qui renvoie une exception en cas
+       d'erreur en précisant le fichier concerné et le numéro de ligne */}
+                \hyperlink{classMainWindow_aeb45155a2035daf28097e853724529a1}{image} = cvQueryFrame(\hyperlink{classMainWindow_a1e4ee7611df9ee764de50cd2bfdebc55}{m\_camera});                   
+                            \textcolor{comment}{/* Acquisition de la vidéo */}
+                \textcolor{comment}{/*image = display.image\_camera(m\_camera);*/}
+                assert(\hyperlink{classMainWindow_aeb45155a2035daf28097e853724529a1}{image});                                            
+                    \textcolor{comment}{/* Appel à la fonction assert qui renvoie une exception en cas
+       d'erreur en précisant le fichier concerné et le numéro de ligne */}
+                \hyperlink{classMainWindow_a3225ace47a46792151d14646b6429712}{m\_cvwidget}->\hyperlink{classCameraWidget_a9ef3bc90490e18855ac24f29cc5cb20f}{putFrame}(\hyperlink{classMainWindow_aeb45155a2035daf28097e853724529a1}{image});            
+                                      \textcolor{comment}{/* Envoi de l'acquisition afin de l'afficher */}
+            \}
+        \textcolor{keywordflow}{break};
+    \textcolor{keywordflow}{default}:
+        \textcolor{keywordflow}{break};
+     \}
+
+    \textcolor{comment}{/* Pour la map */}
+
+    QFile fichier(\textcolor{stringliteral}{"/home/Guillaume\_Pierre/GPS/dataIHM.txt"});
+    QString ligne;
+    \textcolor{keywordtype}{float} coordonnees[2];
+    \textcolor{keywordtype}{int} i = 0;
+    QTextStream flux(&fichier);
+
+    \textcolor{keywordflow}{if}(fichier.open(QIODevice::ReadOnly | QIODevice::Text))
+    \{
+        \textcolor{keywordflow}{while}(!flux.atEnd())
+        \{
+            ligne = fichier.readLine();
+            \textcolor{keywordflow}{if}(i < 2)
+                coordonnees[i] = ligne.toFloat();
+            i++;
+        \}
+        fichier.close();
+        i = 0;
+    \}
+    \textcolor{keywordflow}{else}
+        ligne = \textcolor{stringliteral}{"Impossible d'ouvrir le fichier !"};
+
+    \hyperlink{classMainWindow_a8eb6f9adebecfb3cf78c566686f1f35e}{latitude} = coordonnees[0];
+    \hyperlink{classMainWindow_ac7c0f22da72ad33678ff3d3e22c722c7}{longitude} = coordonnees[1];
+    \hyperlink{classMainWindow_a2f9e7ca90c2813bd1969055871782cfb}{map}->\hyperlink{classLightMaps_a48a673b2f3167a02004ced0b182a8498}{setCenter}(\hyperlink{classMainWindow_a8eb6f9adebecfb3cf78c566686f1f35e}{latitude}, \hyperlink{classMainWindow_ac7c0f22da72ad33678ff3d3e22c722c7}{longitude});
+
+    Qtmp.sprintf(\textcolor{stringliteral}{"Time to execut mainWindowTimeEvent : %d\(\backslash\)n"},time.elapsed());
+    f.write(Qtmp.toStdString().c\_str(), Qtmp.length());
+
+    \textcolor{comment}{/* Simulation du niveau de puissance de la liaison RF */}
+
+    \textcolor{comment}{//QFile fichier2("/home/estei/projet/fonctionnel/GPS/signalRF.txt");}
+    QFile fichier2(\textcolor{stringliteral}{"/home/Guillaume\_Pierre/RF/signalRF.txt"});
+    QString ligne2;
+    QTextStream flux2(&fichier2);
+
+    \textcolor{keywordflow}{if}(fichier2.open(QIODevice::ReadOnly | QIODevice::Text))
+    \{
+        \textcolor{keywordflow}{while}(!flux2.atEnd())
+        \{
+            ligne2 = fichier2.readLine();
+        \}
+        fichier2.close();
+    \}
+    \textcolor{keywordflow}{else}
+        ligne2 = \textcolor{stringliteral}{"Impossible d'ouvrir le fichier !"};
+
+    \textcolor{keywordflow}{if}(ligne2.toInt() < 1)
+    \{
+        \hyperlink{classMainWindow_a50d8f5aa716821eca4ad0a3bfb0cf2ec}{progressBar1}->setValue(0);
+        \hyperlink{classMainWindow_a0594f2275ce1af436549e95cf62cfe7d}{progressBar2}->setValue(0);
+        \hyperlink{classMainWindow_a4afea90f9ba8cd1d26fa3b552639a012}{progressBar3}->setValue(0);
+        \hyperlink{classMainWindow_a8672c729ad5494d2890676bf07518ea2}{progressBar4}->setValue(0);
+    \}
+
+    \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(1 <= ligne2.toInt()&&ligne2.toInt() < 2)
+    \{
+        \hyperlink{classMainWindow_a50d8f5aa716821eca4ad0a3bfb0cf2ec}{progressBar1}->setValue(100);
+        \hyperlink{classMainWindow_a0594f2275ce1af436549e95cf62cfe7d}{progressBar2}->setValue(0);
+        \hyperlink{classMainWindow_a4afea90f9ba8cd1d26fa3b552639a012}{progressBar3}->setValue(0);
+        \hyperlink{classMainWindow_a8672c729ad5494d2890676bf07518ea2}{progressBar4}->setValue(0);
+    \}
+
+    \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(2 <= ligne2.toInt()&&ligne2.toInt() < 3)
+    \{
+        \hyperlink{classMainWindow_a50d8f5aa716821eca4ad0a3bfb0cf2ec}{progressBar1}->setValue(100);
+        \hyperlink{classMainWindow_a0594f2275ce1af436549e95cf62cfe7d}{progressBar2}->setValue(100);
+        \hyperlink{classMainWindow_a4afea90f9ba8cd1d26fa3b552639a012}{progressBar3}->setValue(0);
+        \hyperlink{classMainWindow_a8672c729ad5494d2890676bf07518ea2}{progressBar4}->setValue(0);
+    \}
+
+    \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(3 <= ligne2.toInt()&&ligne2.toInt() < 4)
+    \{
+        \hyperlink{classMainWindow_a50d8f5aa716821eca4ad0a3bfb0cf2ec}{progressBar1}->setValue(100);
+        \hyperlink{classMainWindow_a0594f2275ce1af436549e95cf62cfe7d}{progressBar2}->setValue(100);
+        \hyperlink{classMainWindow_a4afea90f9ba8cd1d26fa3b552639a012}{progressBar3}->setValue(100);
+        \hyperlink{classMainWindow_a8672c729ad5494d2890676bf07518ea2}{progressBar4}->setValue(0);
+    \}
+
+    \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(4 <= ligne2.toInt()&&ligne2.toInt() < 5)
+    \{
+        \hyperlink{classMainWindow_a50d8f5aa716821eca4ad0a3bfb0cf2ec}{progressBar1}->setValue(100);
+        \hyperlink{classMainWindow_a0594f2275ce1af436549e95cf62cfe7d}{progressBar2}->setValue(100);
+        \hyperlink{classMainWindow_a4afea90f9ba8cd1d26fa3b552639a012}{progressBar3}->setValue(100);
+        \hyperlink{classMainWindow_a8672c729ad5494d2890676bf07518ea2}{progressBar4}->setValue(100);
+    \}
+
+\}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classMainWindow_af02a0259f044a5b2a1feabffccbc227e}{\index{Main\-Window@{Main\-Window}!batterie@{batterie}}
+\index{batterie@{batterie}!MainWindow@{Main\-Window}}
+\subsubsection[{batterie}]{\setlength{\rightskip}{0pt plus 5cm}{\bf battery}$\ast$ Main\-Window\-::batterie\hspace{0.3cm}{\ttfamily [private]}}}\label{classMainWindow_af02a0259f044a5b2a1feabffccbc227e}
+
+
+Definition at line 73 of file mainwindow.\-h.
+
+
+
+Referenced by Change\-Onglet(), and Main\-Window().
+
+\hypertarget{classMainWindow_a2c5aa6244af6d3e2018b98f285b0b84a}{\index{Main\-Window@{Main\-Window}!batterie2@{batterie2}}
+\index{batterie2@{batterie2}!MainWindow@{Main\-Window}}
+\subsubsection[{batterie2}]{\setlength{\rightskip}{0pt plus 5cm}{\bf battery}$\ast$ Main\-Window\-::batterie2\hspace{0.3cm}{\ttfamily [private]}}}\label{classMainWindow_a2c5aa6244af6d3e2018b98f285b0b84a}
+
+
+Definition at line 74 of file mainwindow.\-h.
+
+
+
+Referenced by Change\-Onglet(), and Main\-Window().
+
+\hypertarget{classMainWindow_a8f36c27c20d39c3f0eafe091b9f2cf29}{\index{Main\-Window@{Main\-Window}!b\-Video\-Is\-On@{b\-Video\-Is\-On}}
+\index{b\-Video\-Is\-On@{b\-Video\-Is\-On}!MainWindow@{Main\-Window}}
+\subsubsection[{b\-Video\-Is\-On}]{\setlength{\rightskip}{0pt plus 5cm}bool Main\-Window\-::b\-Video\-Is\-On\hspace{0.3cm}{\ttfamily [private]}}}\label{classMainWindow_a8f36c27c20d39c3f0eafe091b9f2cf29}
+
+
+Definition at line 78 of file mainwindow.\-h.
+
+
+
+Referenced by Button\-Video(), Main\-Window(), and timer\-Event().
+
+\hypertarget{classMainWindow_a144a0c272b675a9e8721ee486d629874}{\index{Main\-Window@{Main\-Window}!display@{display}}
+\index{display@{display}!MainWindow@{Main\-Window}}
+\subsubsection[{display}]{\setlength{\rightskip}{0pt plus 5cm}{\bf My\-Display} Main\-Window\-::display\hspace{0.3cm}{\ttfamily [private]}}}\label{classMainWindow_a144a0c272b675a9e8721ee486d629874}
+
+
+Definition at line 68 of file mainwindow.\-h.
+
+\hypertarget{classMainWindow_aeb45155a2035daf28097e853724529a1}{\index{Main\-Window@{Main\-Window}!image@{image}}
+\index{image@{image}!MainWindow@{Main\-Window}}
+\subsubsection[{image}]{\setlength{\rightskip}{0pt plus 5cm}Ipl\-Image$\ast$ Main\-Window\-::image\hspace{0.3cm}{\ttfamily [private]}}}\label{classMainWindow_aeb45155a2035daf28097e853724529a1}
+
+
+Definition at line 67 of file mainwindow.\-h.
+
+
+
+Referenced by save\-Picture(), and timer\-Event().
+
+\hypertarget{classMainWindow_a2cf797221c17fdcce7888b123bd5847b}{\index{Main\-Window@{Main\-Window}!index\-Onglet@{index\-Onglet}}
+\index{index\-Onglet@{index\-Onglet}!MainWindow@{Main\-Window}}
+\subsubsection[{index\-Onglet}]{\setlength{\rightskip}{0pt plus 5cm}int Main\-Window\-::index\-Onglet\hspace{0.3cm}{\ttfamily [private]}}}\label{classMainWindow_a2cf797221c17fdcce7888b123bd5847b}
+
+
+Definition at line 77 of file mainwindow.\-h.
+
+
+
+Referenced by Change\-Onglet(), Main\-Window(), and timer\-Event().
+
+\hypertarget{classMainWindow_a8eb6f9adebecfb3cf78c566686f1f35e}{\index{Main\-Window@{Main\-Window}!latitude@{latitude}}
+\index{latitude@{latitude}!MainWindow@{Main\-Window}}
+\subsubsection[{latitude}]{\setlength{\rightskip}{0pt plus 5cm}qreal Main\-Window\-::latitude}}\label{classMainWindow_a8eb6f9adebecfb3cf78c566686f1f35e}
+
+
+Definition at line 47 of file mainwindow.\-h.
+
+
+
+Referenced by test\-Gps(), and timer\-Event().
+
+\hypertarget{classMainWindow_ac7c0f22da72ad33678ff3d3e22c722c7}{\index{Main\-Window@{Main\-Window}!longitude@{longitude}}
+\index{longitude@{longitude}!MainWindow@{Main\-Window}}
+\subsubsection[{longitude}]{\setlength{\rightskip}{0pt plus 5cm}qreal Main\-Window\-::longitude}}\label{classMainWindow_ac7c0f22da72ad33678ff3d3e22c722c7}
+
+
+Definition at line 47 of file mainwindow.\-h.
+
+
+
+Referenced by test\-Gps(), and timer\-Event().
+
+\hypertarget{classMainWindow_a1e4ee7611df9ee764de50cd2bfdebc55}{\index{Main\-Window@{Main\-Window}!m\-\_\-camera@{m\-\_\-camera}}
+\index{m\-\_\-camera@{m\-\_\-camera}!MainWindow@{Main\-Window}}
+\subsubsection[{m\-\_\-camera}]{\setlength{\rightskip}{0pt plus 5cm}Cv\-Capture$\ast$ Main\-Window\-::m\-\_\-camera\hspace{0.3cm}{\ttfamily [private]}}}\label{classMainWindow_a1e4ee7611df9ee764de50cd2bfdebc55}
+
+
+Definition at line 66 of file mainwindow.\-h.
+
+
+
+Referenced by Button\-Video(), save\-Picture(), timer\-Event(), and $\sim$\-Main\-Window().
+
+\hypertarget{classMainWindow_a3225ace47a46792151d14646b6429712}{\index{Main\-Window@{Main\-Window}!m\-\_\-cvwidget@{m\-\_\-cvwidget}}
+\index{m\-\_\-cvwidget@{m\-\_\-cvwidget}!MainWindow@{Main\-Window}}
+\subsubsection[{m\-\_\-cvwidget}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Camera\-Widget}$\ast$ Main\-Window\-::m\-\_\-cvwidget\hspace{0.3cm}{\ttfamily [private]}}}\label{classMainWindow_a3225ace47a46792151d14646b6429712}
+
+
+Definition at line 65 of file mainwindow.\-h.
+
+
+
+Referenced by Button\-Video(), Main\-Window(), save\-Picture(), and timer\-Event().
+
+\hypertarget{classMainWindow_a264802533d4b55dce30d220ba9559471}{\index{Main\-Window@{Main\-Window}!m\-\_\-photo\-Counter@{m\-\_\-photo\-Counter}}
+\index{m\-\_\-photo\-Counter@{m\-\_\-photo\-Counter}!MainWindow@{Main\-Window}}
+\subsubsection[{m\-\_\-photo\-Counter}]{\setlength{\rightskip}{0pt plus 5cm}int Main\-Window\-::m\-\_\-photo\-Counter\hspace{0.3cm}{\ttfamily [private]}}}\label{classMainWindow_a264802533d4b55dce30d220ba9559471}
+
+
+Definition at line 76 of file mainwindow.\-h.
+
+
+
+Referenced by Main\-Window(), and save\-Picture().
+
+\hypertarget{classMainWindow_a2f9e7ca90c2813bd1969055871782cfb}{\index{Main\-Window@{Main\-Window}!map@{map}}
+\index{map@{map}!MainWindow@{Main\-Window}}
+\subsubsection[{map}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Light\-Maps}$\ast$ Main\-Window\-::map\hspace{0.3cm}{\ttfamily [private]}}}\label{classMainWindow_a2f9e7ca90c2813bd1969055871782cfb}
+
+
+Definition at line 70 of file mainwindow.\-h.
+
+
+
+Referenced by Change\-Onglet(), Main\-Window(), test\-Gps(), and timer\-Event().
+
+\hypertarget{classMainWindow_a638a10aec0de799787205387ee4da83e}{\index{Main\-Window@{Main\-Window}!network\-Session@{network\-Session}}
+\index{network\-Session@{network\-Session}!MainWindow@{Main\-Window}}
+\subsubsection[{network\-Session}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Network\-Session$\ast$ Main\-Window\-::network\-Session\hspace{0.3cm}{\ttfamily [private]}}}\label{classMainWindow_a638a10aec0de799787205387ee4da83e}
+
+
+Definition at line 71 of file mainwindow.\-h.
+
+
+
+Referenced by Main\-Window(), and session\-Opened().
+
+\hypertarget{classMainWindow_a50d8f5aa716821eca4ad0a3bfb0cf2ec}{\index{Main\-Window@{Main\-Window}!progress\-Bar1@{progress\-Bar1}}
+\index{progress\-Bar1@{progress\-Bar1}!MainWindow@{Main\-Window}}
+\subsubsection[{progress\-Bar1}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Progress\-Bar$\ast$ Main\-Window\-::progress\-Bar1}}\label{classMainWindow_a50d8f5aa716821eca4ad0a3bfb0cf2ec}
+
+
+Definition at line 48 of file mainwindow.\-h.
+
+
+
+Referenced by Change\-Onglet(), Main\-Window(), and timer\-Event().
+
+\hypertarget{classMainWindow_a0594f2275ce1af436549e95cf62cfe7d}{\index{Main\-Window@{Main\-Window}!progress\-Bar2@{progress\-Bar2}}
+\index{progress\-Bar2@{progress\-Bar2}!MainWindow@{Main\-Window}}
+\subsubsection[{progress\-Bar2}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Progress\-Bar$\ast$ Main\-Window\-::progress\-Bar2}}\label{classMainWindow_a0594f2275ce1af436549e95cf62cfe7d}
+
+
+Definition at line 49 of file mainwindow.\-h.
+
+
+
+Referenced by Change\-Onglet(), Main\-Window(), and timer\-Event().
+
+\hypertarget{classMainWindow_a4afea90f9ba8cd1d26fa3b552639a012}{\index{Main\-Window@{Main\-Window}!progress\-Bar3@{progress\-Bar3}}
+\index{progress\-Bar3@{progress\-Bar3}!MainWindow@{Main\-Window}}
+\subsubsection[{progress\-Bar3}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Progress\-Bar$\ast$ Main\-Window\-::progress\-Bar3}}\label{classMainWindow_a4afea90f9ba8cd1d26fa3b552639a012}
+
+
+Definition at line 50 of file mainwindow.\-h.
+
+
+
+Referenced by Change\-Onglet(), Main\-Window(), and timer\-Event().
+
+\hypertarget{classMainWindow_a8672c729ad5494d2890676bf07518ea2}{\index{Main\-Window@{Main\-Window}!progress\-Bar4@{progress\-Bar4}}
+\index{progress\-Bar4@{progress\-Bar4}!MainWindow@{Main\-Window}}
+\subsubsection[{progress\-Bar4}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Progress\-Bar$\ast$ Main\-Window\-::progress\-Bar4}}\label{classMainWindow_a8672c729ad5494d2890676bf07518ea2}
+
+
+Definition at line 51 of file mainwindow.\-h.
+
+
+
+Referenced by Change\-Onglet(), Main\-Window(), and timer\-Event().
+
+\hypertarget{classMainWindow_aa35075e5c401c08057511b93444701cf}{\index{Main\-Window@{Main\-Window}!thread\-Base@{thread\-Base}}
+\index{thread\-Base@{thread\-Base}!MainWindow@{Main\-Window}}
+\subsubsection[{thread\-Base}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-Base}$\ast$ Main\-Window\-::thread\-Base\hspace{0.3cm}{\ttfamily [private]}}}\label{classMainWindow_aa35075e5c401c08057511b93444701cf}
+
+
+Definition at line 63 of file mainwindow.\-h.
+
+
+
+Referenced by Change\-Onglet(), Main\-Window(), and $\sim$\-Main\-Window().
+
+\hypertarget{classMainWindow_a35466a70ed47252a0191168126a352a5}{\index{Main\-Window@{Main\-Window}!ui@{ui}}
+\index{ui@{ui}!MainWindow@{Main\-Window}}
+\subsubsection[{ui}]{\setlength{\rightskip}{0pt plus 5cm}Ui\-::\-Main\-Window$\ast$ Main\-Window\-::ui\hspace{0.3cm}{\ttfamily [private]}}}\label{classMainWindow_a35466a70ed47252a0191168126a352a5}
+
+
+Definition at line 61 of file mainwindow.\-h.
+
+
+
+Referenced by Button\-Video(), Change\-Onglet(), Main\-Window(), and $\sim$\-Main\-Window().
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{mainwindow_8h}{mainwindow.\-h}\item 
+\hyperlink{mainwindow_8cpp}{mainwindow.\-cpp}\end{DoxyCompactItemize}

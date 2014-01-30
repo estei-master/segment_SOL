@@ -9,7 +9,7 @@ QT       += network
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = ihm2
+TARGET = ihm
 TEMPLATE = app
 
 INCLUDEPATH += /usr/local/include/opencv \
@@ -28,9 +28,9 @@ SOURCES += main.cpp\
         slippymap.cpp \
         mydisplay.cpp \
         battery.cpp \
-    qbase.cpp \
-    uart.cpp \
-    zigbee.cpp
+        qbase.cpp \
+        uart.cpp \
+        zigbee.cpp
 
 HEADERS  += mainwindow.h \
         camerawidget.h \
@@ -41,10 +41,10 @@ HEADERS  += mainwindow.h \
         mydisplay.h \
         librairie.h \
         battery.h \
-    zigbee.h \
-    qbase.h \
-    typdefUart.h \
-    uart.h
+        zigbee.h \
+        qbase.h \
+        typdefUart.h \
+        uart.h
 
 FORMS    += mainwindow.ui
 

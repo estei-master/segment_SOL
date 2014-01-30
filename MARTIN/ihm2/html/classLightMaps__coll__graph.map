@@ -1,0 +1,3 @@
+<map id="LightMaps" name="LightMaps">
+<area shape="rect" id="node2" href="$classSlippyMap.html" title="{SlippyMap\n|+ width\l+ height\l+ zoom\l+ latitude\l+ longitude\l&#45; m_offset\l&#45; m_tilesRect\l&#45; m_emptyTile\l&#45; m_tilePixmaps\l&#45; m_manager\l&#45; m_url\l|+ SlippyMap()\l+ invalidate()\l+ render()\l+ pan()\l# tileRect()\l&#45; handleNetworkData()\l&#45; download()\l}" alt="" coords="11,5,163,368"/>
+</map>

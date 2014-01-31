@@ -1,0 +1,79 @@
+\hypertarget{qattitudeindicator_8cpp}{\section{qattitudeindicator.\-cpp File Reference}
+\label{qattitudeindicator_8cpp}\index{qattitudeindicator.\-cpp@{qattitudeindicator.\-cpp}}
+}
+{\ttfamily \#include $<$Qt\-Gui$>$}\\*
+{\ttfamily \#include $<$Q\-Debug$>$}\\*
+{\ttfamily \#include \char`\"{}qattitudeindicator.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$fstream$>$}\\*
+{\ttfamily \#include $<$sstream$>$}\\*
+Include dependency graph for qattitudeindicator.\-cpp\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{qattitudeindicator_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+qreal \hyperlink{qattitudeindicator_8cpp_a2f4f279d4d5470569f9b4d6db0e913c3}{defaults\-Roll\-Rotate} \mbox{[}\hyperlink{qattitudeindicator_8h_a533fb9cffe544953a1e34ef3ca40cd9aae68d533445c770721902ff44425e6cda}{numb\-Roll\-Line}\mbox{]} = \{270.\-0,30.\-0,15.\-0,15.\-0,10.\-0,10.\-0,10.\-0,10.\-0,10.\-0,10.\-0,15.\-0,15.\-0,30.\-0\}
+\item 
+\hyperlink{qattitudeindicator_8h_a343e47e8a321f67b38cb4522cb218c94}{E\-N\-\_\-\-T\-Y\-P\-E\-S\-\_\-\-A\-T\-T\-I\-T\-U\-D\-E} \hyperlink{qattitudeindicator_8cpp_a3e866b9c9b8bde50fd68030b49604a15}{defaults\-Type\-Roll} \mbox{[}\hyperlink{qattitudeindicator_8h_a533fb9cffe544953a1e34ef3ca40cd9aae68d533445c770721902ff44425e6cda}{numb\-Roll\-Line}\mbox{]}
+\item 
+\hyperlink{qattitudeindicator_8h_a343e47e8a321f67b38cb4522cb218c94}{E\-N\-\_\-\-T\-Y\-P\-E\-S\-\_\-\-A\-T\-T\-I\-T\-U\-D\-E} \hyperlink{qattitudeindicator_8cpp_aeb622d2485fb495e7b9864ca595af136}{defaults\-Type\-Pitch} \mbox{[}\hyperlink{qattitudeindicator_8h_a533fb9cffe544953a1e34ef3ca40cd9aaf86b1d616737ab90eedf9d904603bbc7}{numb\-Pitch\-Line}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\hypertarget{qattitudeindicator_8cpp_a2f4f279d4d5470569f9b4d6db0e913c3}{\index{qattitudeindicator.\-cpp@{qattitudeindicator.\-cpp}!defaults\-Roll\-Rotate@{defaults\-Roll\-Rotate}}
+\index{defaults\-Roll\-Rotate@{defaults\-Roll\-Rotate}!qattitudeindicator.cpp@{qattitudeindicator.\-cpp}}
+\subsubsection[{defaults\-Roll\-Rotate}]{\setlength{\rightskip}{0pt plus 5cm}qreal defaults\-Roll\-Rotate\mbox{[}{\bf numb\-Roll\-Line}\mbox{]} = \{270.\-0,30.\-0,15.\-0,15.\-0,10.\-0,10.\-0,10.\-0,10.\-0,10.\-0,10.\-0,15.\-0,15.\-0,30.\-0\}}}\label{qattitudeindicator_8cpp_a2f4f279d4d5470569f9b4d6db0e913c3}
+
+
+Definition at line 7 of file qattitudeindicator.\-cpp.
+
+
+
+Referenced by q\-Attitude\-Indicator\-::q\-Attitude\-Indicator().
+
+\hypertarget{qattitudeindicator_8cpp_aeb622d2485fb495e7b9864ca595af136}{\index{qattitudeindicator.\-cpp@{qattitudeindicator.\-cpp}!defaults\-Type\-Pitch@{defaults\-Type\-Pitch}}
+\index{defaults\-Type\-Pitch@{defaults\-Type\-Pitch}!qattitudeindicator.cpp@{qattitudeindicator.\-cpp}}
+\subsubsection[{defaults\-Type\-Pitch}]{\setlength{\rightskip}{0pt plus 5cm}{\bf E\-N\-\_\-\-T\-Y\-P\-E\-S\-\_\-\-A\-T\-T\-I\-T\-U\-D\-E} defaults\-Type\-Pitch\mbox{[}{\bf numb\-Pitch\-Line}\mbox{]}}}\label{qattitudeindicator_8cpp_aeb622d2485fb495e7b9864ca595af136}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+ \{ \hyperlink{qattitudeindicator_8h_a9e6157b3f1ec4c2db1f8a664f6347784a0369563b4b4cadd85d30f57de453ffb8}{normalPitchLine},\hyperlink{qattitudeindicator_8h_a9e6157b3f1ec4c2db1f8a664f6347784a27d8d9b85932b52acefebc1edaebac45}{smallPitchLine} ,\hyperlink{qattitudeindicator_8h_a9e6157b3f1ec4c2db1f8a664f6347784a0369563b4b4cadd85d30f57de453ffb8}{normalPitchLine}
+      ,\hyperlink{qattitudeindicator_8h_a9e6157b3f1ec4c2db1f8a664f6347784a27d8d9b85932b52acefebc1edaebac45}{smallPitchLine},
+                                                       \hyperlink{qattitudeindicator_8h_a9e6157b3f1ec4c2db1f8a664f6347784a27d8d9b85932b52acefebc1edaebac45}{smallPitchLine}
+       ,\hyperlink{qattitudeindicator_8h_a9e6157b3f1ec4c2db1f8a664f6347784a0369563b4b4cadd85d30f57de453ffb8}{normalPitchLine},\hyperlink{qattitudeindicator_8h_a9e6157b3f1ec4c2db1f8a664f6347784a27d8d9b85932b52acefebc1edaebac45}{smallPitchLine}, normalPitchLine\}
+\end{DoxyCode}
+
+
+Definition at line 13 of file qattitudeindicator.\-cpp.
+
+
+
+Referenced by q\-Attitude\-Indicator\-::q\-Attitude\-Indicator(), and q\-Attitude\-Indicator\-::resize\-Event().
+
+\hypertarget{qattitudeindicator_8cpp_a3e866b9c9b8bde50fd68030b49604a15}{\index{qattitudeindicator.\-cpp@{qattitudeindicator.\-cpp}!defaults\-Type\-Roll@{defaults\-Type\-Roll}}
+\index{defaults\-Type\-Roll@{defaults\-Type\-Roll}!qattitudeindicator.cpp@{qattitudeindicator.\-cpp}}
+\subsubsection[{defaults\-Type\-Roll}]{\setlength{\rightskip}{0pt plus 5cm}{\bf E\-N\-\_\-\-T\-Y\-P\-E\-S\-\_\-\-A\-T\-T\-I\-T\-U\-D\-E} defaults\-Type\-Roll\mbox{[}{\bf numb\-Roll\-Line}\mbox{]}}}\label{qattitudeindicator_8cpp_a3e866b9c9b8bde50fd68030b49604a15}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+ \{ \hyperlink{qattitudeindicator_8h_a9e6157b3f1ec4c2db1f8a664f6347784a282d8d28348dde5a5265aa34d80a0f01}{normalRollLine},\hyperlink{qattitudeindicator_8h_a9e6157b3f1ec4c2db1f8a664f6347784a282d8d28348dde5a5265aa34d80a0f01}{normalRollLine} ,\hyperlink{qattitudeindicator_8h_a9e6157b3f1ec4c2db1f8a664f6347784a24e88cb96dabfbd43afd71b24529147a}{smallRollLine}
+       ,\hyperlink{qattitudeindicator_8h_a9e6157b3f1ec4c2db1f8a664f6347784a282d8d28348dde5a5265aa34d80a0f01}{normalRollLine},
+                                                     \hyperlink{qattitudeindicator_8h_a9e6157b3f1ec4c2db1f8a664f6347784a24e88cb96dabfbd43afd71b24529147a}{smallRollLine}
+       ,\hyperlink{qattitudeindicator_8h_a9e6157b3f1ec4c2db1f8a664f6347784a24e88cb96dabfbd43afd71b24529147a}{smallRollLine}  ,\hyperlink{qattitudeindicator_8h_a9e6157b3f1ec4c2db1f8a664f6347784a282d8d28348dde5a5265aa34d80a0f01}{normalRollLine},\hyperlink{qattitudeindicator_8h_a9e6157b3f1ec4c2db1f8a664f6347784a24e88cb96dabfbd43afd71b24529147a}{smallRollLine}
+      ,
+                                                     \hyperlink{qattitudeindicator_8h_a9e6157b3f1ec4c2db1f8a664f6347784a24e88cb96dabfbd43afd71b24529147a}{smallRollLine}
+       ,\hyperlink{qattitudeindicator_8h_a9e6157b3f1ec4c2db1f8a664f6347784a282d8d28348dde5a5265aa34d80a0f01}{normalRollLine} ,\hyperlink{qattitudeindicator_8h_a9e6157b3f1ec4c2db1f8a664f6347784a24e88cb96dabfbd43afd71b24529147a}{smallRollLine} ,\hyperlink{qattitudeindicator_8h_a9e6157b3f1ec4c2db1f8a664f6347784a282d8d28348dde5a5265aa34d80a0f01}{normalRollLine}
+      ,
+                                                     normalRollLine \}
+\end{DoxyCode}
+
+
+Definition at line 8 of file qattitudeindicator.\-cpp.
+
+
+
+Referenced by q\-Attitude\-Indicator\-::q\-Attitude\-Indicator(), and q\-Attitude\-Indicator\-::resize\-Event().
+

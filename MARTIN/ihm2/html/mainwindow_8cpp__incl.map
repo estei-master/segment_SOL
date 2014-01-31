@@ -1,0 +1,12 @@
+<map id="mainwindow.cpp" name="mainwindow.cpp">
+<area shape="rect" id="node5" href="$mainwindow_8h.html" title="Fichier d&#39;inclusion des librairies nécessaires à la MainWindow." alt="" coords="1581,83,1685,112"/>
+<area shape="rect" id="node19" href="$mydisplay_8h.html" title="mydisplay.h" alt="" coords="967,160,1057,189"/>
+<area shape="rect" id="node21" href="$librairie_8h.html" title="librairie.h" alt="" coords="928,237,1003,267"/>
+<area shape="rect" id="node73" href="$battery_8h.html" title="Fichier d&#39;inclusion des librairies nécessaires au widget permettant l&#39;affichage de l&#39;état des batteri..." alt="" coords="1081,160,1153,189"/>
+<area shape="rect" id="node80" href="$lightmaps_8h.html" title="lightmaps.h" alt="" coords="1969,160,2057,189"/>
+<area shape="rect" id="node85" href="$slippymap_8h.html" title="slippymap.h" alt="" coords="2467,160,2557,189"/>
+<area shape="rect" id="node46" href="$camerawidget_8h.html" title="Fichier d&#39;inclusion des librairies nécessaires au widget." alt="" coords="1793,160,1908,189"/>
+<area shape="rect" id="node59" href="$qbase_8h.html" title="qbase.h" alt="" coords="2177,160,2244,189"/>
+<area shape="rect" id="node65" href="$nunchuck_8h.html" title="nunchuck.h" alt="" coords="2415,237,2503,267"/>
+<area shape="rect" id="node70" href="$zigbee_8h.html" title="zigbee.h" alt="" coords="2271,237,2340,267"/>
+</map>

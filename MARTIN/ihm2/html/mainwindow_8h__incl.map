@@ -1,0 +1,14 @@
+<map id="mainwindow.h" name="mainwindow.h">
+<area shape="rect" id="node15" href="$mydisplay_8h.html" title="mydisplay.h" alt="" coords="1196,83,1287,112"/>
+<area shape="rect" id="node42" href="$camerawidget_8h.html" title="Fichier d&#39;inclusion des librairies nécessaires au widget." alt="" coords="1479,83,1593,112"/>
+<area shape="rect" id="node55" href="$qbase_8h.html" title="qbase.h" alt="" coords="451,83,517,112"/>
+<area shape="rect" id="node98" href="$battery_8h.html" title="Fichier d&#39;inclusion des librairies nécessaires au widget permettant l&#39;affichage de l&#39;état des batteri..." alt="" coords="177,83,249,112"/>
+<area shape="rect" id="node105" href="$lightmaps_8h.html" title="lightmaps.h" alt="" coords="1693,83,1781,112"/>
+<area shape="rect" id="node110" href="$slippymap_8h.html" title="slippymap.h" alt="" coords="1805,83,1896,112"/>
+<area shape="rect" id="node17" href="$librairie_8h.html" title="librairie.h" alt="" coords="1180,160,1255,189"/>
+<area shape="rect" id="node61" href="$nunchuck_8h.html" title="nunchuck.h" alt="" coords="401,255,489,284"/>
+<area shape="rect" id="node78" href="$zigbee_8h.html" title="zigbee.h" alt="" coords="289,160,359,189"/>
+<area shape="rect" id="node94" href="$qattitudeindicator_8h.html" title="qattitudeindicator.h" alt="" coords="580,160,711,189"/>
+<area shape="rect" id="node80" href="$uart_8h.html" title="uart.h" alt="" coords="193,255,247,284"/>
+<area shape="rect" id="node90" href="$typdefUart_8h.html" title="typdefUart.h" alt="" coords="32,255,125,284"/>
+</map>

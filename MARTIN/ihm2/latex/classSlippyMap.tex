@@ -1,0 +1,519 @@
+\hypertarget{classSlippyMap}{\section{Slippy\-Map Class Reference}
+\label{classSlippyMap}\index{Slippy\-Map@{Slippy\-Map}}
+}
+
+
+{\ttfamily \#include \char`\"{}slippymap.\-h\char`\"{}}
+
+
+
+Collaboration diagram for Slippy\-Map\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{classSlippyMap__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classSlippyMap_a6ff062c778eec629347d834976760c98}{updated} (const Q\-Rect \&rect)
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSlippyMap_aefaa28b154b2e9602b391668ed167080}{Slippy\-Map} (Q\-Object $\ast$parent=0)
+\item 
+void \hyperlink{classSlippyMap_aa8a2647176ff7db85ab52ce9e7acb549}{invalidate} ()
+\item 
+void \hyperlink{classSlippyMap_ada1e00e2870d0fdeb70c037b3222a0ad}{render} (Q\-Painter $\ast$p, const Q\-Rect \&rect)
+\item 
+void \hyperlink{classSlippyMap_ae954bbb164e84e5cecf3fbb518eb266c}{pan} (const Q\-Point \&delta)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classSlippyMap_ada3532095a8c4083e9da3db17de29fc1}{width}
+\item 
+int \hyperlink{classSlippyMap_aacec4be5e2b83eb2744a3b3b03c4af7a}{height}
+\item 
+int \hyperlink{classSlippyMap_a13dcc9915570a1a333c1e9275ffe64b3}{zoom}
+\item 
+qreal \hyperlink{classSlippyMap_a223220fdcbf2197845f009d48225c0c8}{latitude}
+\item 
+qreal \hyperlink{classSlippyMap_af93efe003c192b7bc6a1ece6c7342de6}{longitude}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Q\-Rect \hyperlink{classSlippyMap_ada0e611fc8d684f9255236237105508d}{tile\-Rect} (const Q\-Point \&tp)
+\end{DoxyCompactItemize}
+\subsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classSlippyMap_af069a885b3750deed3ebf1f992426753}{handle\-Network\-Data} (Q\-Network\-Reply $\ast$reply)
+\item 
+void \hyperlink{classSlippyMap_a25dc08d50224b8aa392adbaa1667bbc1}{download} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Q\-Point \hyperlink{classSlippyMap_a705bb1600f5003868b890f1e25a198a6}{m\-\_\-offset}
+\item 
+Q\-Rect \hyperlink{classSlippyMap_aa8154d798c574c1d6ed89f3347835a76}{m\-\_\-tiles\-Rect}
+\item 
+Q\-Pixmap \hyperlink{classSlippyMap_a0021bf8f7ecbaa61bd47f8f0a36ea9d0}{m\-\_\-empty\-Tile}
+\item 
+Q\-Hash$<$ Q\-Point, Q\-Pixmap $>$ \hyperlink{classSlippyMap_a2c88805d8030caedb95af10ce5d95aae}{m\-\_\-tile\-Pixmaps}
+\item 
+Q\-Network\-Access\-Manager \hyperlink{classSlippyMap_a7df40e5af7c39bca00ce51f69e68ce57}{m\-\_\-manager}
+\item 
+Q\-Url \hyperlink{classSlippyMap_a3b265edb8c33bc1ff185cf081ea0fdaa}{m\-\_\-url}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 11 of file slippymap.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classSlippyMap_aefaa28b154b2e9602b391668ed167080}{\index{Slippy\-Map@{Slippy\-Map}!Slippy\-Map@{Slippy\-Map}}
+\index{Slippy\-Map@{Slippy\-Map}!SlippyMap@{Slippy\-Map}}
+\subsubsection[{Slippy\-Map}]{\setlength{\rightskip}{0pt plus 5cm}Slippy\-Map\-::\-Slippy\-Map (
+\begin{DoxyParamCaption}
+\item[{Q\-Object $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{classSlippyMap_aefaa28b154b2e9602b391668ed167080}
+
+
+Definition at line 43 of file slippymap.\-cpp.
+
+
+
+References handle\-Network\-Data(), m\-\_\-empty\-Tile, m\-\_\-manager, and tdim.
+
+
+\begin{DoxyCode}
+    : QObject(parent), \hyperlink{classSlippyMap_ada3532095a8c4083e9da3db17de29fc1}{width}(400), \hyperlink{classSlippyMap_aacec4be5e2b83eb2744a3b3b03c4af7a}{height}(300), \hyperlink{classSlippyMap_a13dcc9915570a1a333c1e9275ffe64b3}{zoom}(15),
+      \hyperlink{classSlippyMap_a223220fdcbf2197845f009d48225c0c8}{latitude}(59.9138204), \hyperlink{classSlippyMap_af93efe003c192b7bc6a1ece6c7342de6}{longitude}(10.7387413)
+\{
+    \hyperlink{classSlippyMap_a0021bf8f7ecbaa61bd47f8f0a36ea9d0}{m\_emptyTile} = QPixmap(\hyperlink{slippymap_8cpp_a8ce10e914ae6c794640aeae2e2781d83}{tdim}, \hyperlink{slippymap_8cpp_a8ce10e914ae6c794640aeae2e2781d83}{tdim});
+    \hyperlink{classSlippyMap_a0021bf8f7ecbaa61bd47f8f0a36ea9d0}{m\_emptyTile}.fill(Qt::lightGray);
+
+    QNetworkDiskCache *cache = \textcolor{keyword}{new} QNetworkDiskCache;
+    cache->setCacheDirectory(QDesktopServices::storageLocation
+                                (QDesktopServices::CacheLocation));
+    \hyperlink{classSlippyMap_a7df40e5af7c39bca00ce51f69e68ce57}{m\_manager}.setCache(cache);
+    connect(&\hyperlink{classSlippyMap_a7df40e5af7c39bca00ce51f69e68ce57}{m\_manager}, SIGNAL(finished(QNetworkReply*)),
+            \textcolor{keyword}{this}, SLOT(\hyperlink{classSlippyMap_af069a885b3750deed3ebf1f992426753}{handleNetworkData}(QNetworkReply*)));
+\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classSlippyMap_a25dc08d50224b8aa392adbaa1667bbc1}{\index{Slippy\-Map@{Slippy\-Map}!download@{download}}
+\index{download@{download}!SlippyMap@{Slippy\-Map}}
+\subsubsection[{download}]{\setlength{\rightskip}{0pt plus 5cm}void Slippy\-Map\-::download (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{classSlippyMap_a25dc08d50224b8aa392adbaa1667bbc1}
+
+
+Definition at line 160 of file slippymap.\-cpp.
+
+
+
+References m\-\_\-manager, m\-\_\-tile\-Pixmaps, m\-\_\-tiles\-Rect, m\-\_\-url, and zoom.
+
+
+
+Referenced by handle\-Network\-Data(), and invalidate().
+
+
+\begin{DoxyCode}
+\{
+    QPoint grab(0, 0);
+    \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} x = 0; x <= \hyperlink{classSlippyMap_aa8154d798c574c1d6ed89f3347835a76}{m\_tilesRect}.width(); ++x)
+        \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} y = 0; y <= \hyperlink{classSlippyMap_aa8154d798c574c1d6ed89f3347835a76}{m\_tilesRect}.height(); ++y) \{
+            QPoint tp = \hyperlink{classSlippyMap_aa8154d798c574c1d6ed89f3347835a76}{m\_tilesRect}.topLeft() + QPoint(x, y);
+            \textcolor{keywordflow}{if} (!\hyperlink{classSlippyMap_a2c88805d8030caedb95af10ce5d95aae}{m\_tilePixmaps}.contains(tp)) \{
+                grab = tp;
+                \textcolor{keywordflow}{break};
+            \}
+        \}
+    \textcolor{keywordflow}{if} (grab == QPoint(0, 0)) \{
+        \hyperlink{classSlippyMap_a3b265edb8c33bc1ff185cf081ea0fdaa}{m\_url} = QUrl();
+        \textcolor{keywordflow}{return};
+    \}
+
+    QString path = \textcolor{stringliteral}{"http://tile.openstreetmap.org/%1/%2/%3.png"};
+    \hyperlink{classSlippyMap_a3b265edb8c33bc1ff185cf081ea0fdaa}{m\_url} = QUrl(path.arg(\hyperlink{classSlippyMap_a13dcc9915570a1a333c1e9275ffe64b3}{zoom}).arg(grab.x()).arg(grab.y()));
+    QNetworkRequest request;
+    request.setUrl(\hyperlink{classSlippyMap_a3b265edb8c33bc1ff185cf081ea0fdaa}{m\_url});
+    request.setRawHeader(\textcolor{stringliteral}{"User-Agent"}, \textcolor{stringliteral}{"Nokia (Qt) Graphics Dojo 1.0"});
+    request.setAttribute(QNetworkRequest::User, QVariant(grab));
+    \hyperlink{classSlippyMap_a7df40e5af7c39bca00ce51f69e68ce57}{m\_manager}.get(request);
+\}
+\end{DoxyCode}
+\hypertarget{classSlippyMap_af069a885b3750deed3ebf1f992426753}{\index{Slippy\-Map@{Slippy\-Map}!handle\-Network\-Data@{handle\-Network\-Data}}
+\index{handle\-Network\-Data@{handle\-Network\-Data}!SlippyMap@{Slippy\-Map}}
+\subsubsection[{handle\-Network\-Data}]{\setlength{\rightskip}{0pt plus 5cm}void Slippy\-Map\-::handle\-Network\-Data (
+\begin{DoxyParamCaption}
+\item[{Q\-Network\-Reply $\ast$}]{reply}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{classSlippyMap_af069a885b3750deed3ebf1f992426753}
+
+
+Definition at line 137 of file slippymap.\-cpp.
+
+
+
+References download(), m\-\_\-empty\-Tile, m\-\_\-tile\-Pixmaps, m\-\_\-tiles\-Rect, tile\-Rect(), and updated().
+
+
+
+Referenced by Slippy\-Map().
+
+
+\begin{DoxyCode}
+\{
+    QImage img;
+    QPoint tp = reply->request().attribute(QNetworkRequest::User).toPoint();
+    QUrl url = reply->url();
+    \textcolor{keywordflow}{if} (!reply->error())
+        \textcolor{keywordflow}{if} (!img.load(reply, 0))
+            img = QImage();
+    reply->deleteLater();
+    \hyperlink{classSlippyMap_a2c88805d8030caedb95af10ce5d95aae}{m\_tilePixmaps}[tp] = QPixmap::fromImage(img);
+    \textcolor{keywordflow}{if} (img.isNull())
+        \hyperlink{classSlippyMap_a2c88805d8030caedb95af10ce5d95aae}{m\_tilePixmaps}[tp] = \hyperlink{classSlippyMap_a0021bf8f7ecbaa61bd47f8f0a36ea9d0}{m\_emptyTile};
+    emit \hyperlink{classSlippyMap_a6ff062c778eec629347d834976760c98}{updated}(\hyperlink{classSlippyMap_ada0e611fc8d684f9255236237105508d}{tileRect}(tp));
+
+    \textcolor{comment}{// purge unused spaces}
+    QRect bound = \hyperlink{classSlippyMap_aa8154d798c574c1d6ed89f3347835a76}{m\_tilesRect}.adjusted(-2, -2, 2, 2);
+    \textcolor{keywordflow}{foreach}(QPoint tp, \hyperlink{classSlippyMap_a2c88805d8030caedb95af10ce5d95aae}{m\_tilePixmaps}.keys())
+    \textcolor{keywordflow}{if} (!bound.contains(tp))
+        \hyperlink{classSlippyMap_a2c88805d8030caedb95af10ce5d95aae}{m\_tilePixmaps}.remove(tp);
+
+    \hyperlink{classSlippyMap_a25dc08d50224b8aa392adbaa1667bbc1}{download}();
+\}
+\end{DoxyCode}
+\hypertarget{classSlippyMap_aa8a2647176ff7db85ab52ce9e7acb549}{\index{Slippy\-Map@{Slippy\-Map}!invalidate@{invalidate}}
+\index{invalidate@{invalidate}!SlippyMap@{Slippy\-Map}}
+\subsubsection[{invalidate}]{\setlength{\rightskip}{0pt plus 5cm}void Slippy\-Map\-::invalidate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSlippyMap_aa8a2647176ff7db85ab52ce9e7acb549}
+
+
+Definition at line 58 of file slippymap.\-cpp.
+
+
+
+References download(), height, latitude, longitude, m\-\_\-offset, m\-\_\-tiles\-Rect, m\-\_\-url, tdim, tile\-For\-Coordinate(), updated(), width, and zoom.
+
+
+
+Referenced by Light\-Maps\-::activate\-Zoom(), pan(), Light\-Maps\-::resize\-Event(), and Light\-Maps\-::set\-Center().
+
+
+\begin{DoxyCode}
+\{
+    \textcolor{keywordflow}{if} (\hyperlink{classSlippyMap_ada3532095a8c4083e9da3db17de29fc1}{width} <= 0 || \hyperlink{classSlippyMap_aacec4be5e2b83eb2744a3b3b03c4af7a}{height} <= 0)
+        \textcolor{keywordflow}{return};
+
+    QPointF ct = \hyperlink{slippymap_8cpp_a7b006b28fd0e4ace99c58e6162b501c9}{tileForCoordinate}(\hyperlink{classSlippyMap_a223220fdcbf2197845f009d48225c0c8}{latitude}, \hyperlink{classSlippyMap_af93efe003c192b7bc6a1ece6c7342de6}{longitude}
+      , \hyperlink{classSlippyMap_a13dcc9915570a1a333c1e9275ffe64b3}{zoom});
+    qreal tx = ct.x();
+    qreal ty = ct.y();
+
+    \textcolor{comment}{// top-left corner of the center tile}
+    \textcolor{keywordtype}{int} xp = \hyperlink{classSlippyMap_ada3532095a8c4083e9da3db17de29fc1}{width} / 2 - (tx - floor(tx)) * \hyperlink{slippymap_8cpp_a8ce10e914ae6c794640aeae2e2781d83}{tdim};
+    \textcolor{keywordtype}{int} yp = \hyperlink{classSlippyMap_aacec4be5e2b83eb2744a3b3b03c4af7a}{height} / 2 - (ty - floor(ty)) * \hyperlink{slippymap_8cpp_a8ce10e914ae6c794640aeae2e2781d83}{tdim};
+
+    \textcolor{comment}{// first tile vertical and horizontal}
+    \textcolor{keywordtype}{int} xa = (xp + \hyperlink{slippymap_8cpp_a8ce10e914ae6c794640aeae2e2781d83}{tdim} - 1) / \hyperlink{slippymap_8cpp_a8ce10e914ae6c794640aeae2e2781d83}{tdim};
+    \textcolor{keywordtype}{int} ya = (yp + \hyperlink{slippymap_8cpp_a8ce10e914ae6c794640aeae2e2781d83}{tdim} - 1) / \hyperlink{slippymap_8cpp_a8ce10e914ae6c794640aeae2e2781d83}{tdim};
+    \textcolor{keywordtype}{int} xs = \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(tx) - xa;
+    \textcolor{keywordtype}{int} ys = \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(ty) - ya;
+
+    \textcolor{comment}{// offset for top-left tile}
+    \hyperlink{classSlippyMap_a705bb1600f5003868b890f1e25a198a6}{m\_offset} = QPoint(xp - xa * \hyperlink{slippymap_8cpp_a8ce10e914ae6c794640aeae2e2781d83}{tdim}, yp - ya * tdim);
+
+    \textcolor{comment}{// last tile vertical and horizontal}
+    \textcolor{keywordtype}{int} xe = \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(tx) + (\hyperlink{classSlippyMap_ada3532095a8c4083e9da3db17de29fc1}{width} - xp - 1) / \hyperlink{slippymap_8cpp_a8ce10e914ae6c794640aeae2e2781d83}{tdim};
+    \textcolor{keywordtype}{int} ye = \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(ty) + (\hyperlink{classSlippyMap_aacec4be5e2b83eb2744a3b3b03c4af7a}{height} - yp - 1) / \hyperlink{slippymap_8cpp_a8ce10e914ae6c794640aeae2e2781d83}{tdim};
+
+    \textcolor{comment}{// build a rect}
+    \hyperlink{classSlippyMap_aa8154d798c574c1d6ed89f3347835a76}{m\_tilesRect} = QRect(xs, ys, xe - xs + 1, ye - ys + 1);
+
+    \textcolor{keywordflow}{if} (\hyperlink{classSlippyMap_a3b265edb8c33bc1ff185cf081ea0fdaa}{m\_url}.isEmpty())
+        \hyperlink{classSlippyMap_a25dc08d50224b8aa392adbaa1667bbc1}{download}();
+
+    emit \hyperlink{classSlippyMap_a6ff062c778eec629347d834976760c98}{updated}(QRect(0, 0, \hyperlink{classSlippyMap_ada3532095a8c4083e9da3db17de29fc1}{width}, \hyperlink{classSlippyMap_aacec4be5e2b83eb2744a3b3b03c4af7a}{height}));
+\}
+\end{DoxyCode}
+\hypertarget{classSlippyMap_ae954bbb164e84e5cecf3fbb518eb266c}{\index{Slippy\-Map@{Slippy\-Map}!pan@{pan}}
+\index{pan@{pan}!SlippyMap@{Slippy\-Map}}
+\subsubsection[{pan}]{\setlength{\rightskip}{0pt plus 5cm}void Slippy\-Map\-::pan (
+\begin{DoxyParamCaption}
+\item[{const Q\-Point \&}]{delta}
+\end{DoxyParamCaption}
+)}}\label{classSlippyMap_ae954bbb164e84e5cecf3fbb518eb266c}
+
+
+Definition at line 128 of file slippymap.\-cpp.
+
+
+
+References invalidate(), latitude, latitude\-From\-Tile(), longitude, longitude\-From\-Tile(), tdim, tile\-For\-Coordinate(), and zoom.
+
+
+
+Referenced by Light\-Maps\-::key\-Press\-Event(), and Light\-Maps\-::mouse\-Move\-Event().
+
+
+\begin{DoxyCode}
+\{
+    QPointF dx = QPointF(delta) / qreal(\hyperlink{slippymap_8cpp_a8ce10e914ae6c794640aeae2e2781d83}{tdim});
+    QPointF center = \hyperlink{slippymap_8cpp_a7b006b28fd0e4ace99c58e6162b501c9}{tileForCoordinate}(\hyperlink{classSlippyMap_a223220fdcbf2197845f009d48225c0c8}{latitude}, 
+      \hyperlink{classSlippyMap_af93efe003c192b7bc6a1ece6c7342de6}{longitude}, \hyperlink{classSlippyMap_a13dcc9915570a1a333c1e9275ffe64b3}{zoom}) - dx;
+    \hyperlink{classSlippyMap_a223220fdcbf2197845f009d48225c0c8}{latitude} = \hyperlink{slippymap_8cpp_adbe934a4ade6aa7f2e0d82a4fe6e71e3}{latitudeFromTile}(center.y(), \hyperlink{classSlippyMap_a13dcc9915570a1a333c1e9275ffe64b3}{zoom});
+    \hyperlink{classSlippyMap_af93efe003c192b7bc6a1ece6c7342de6}{longitude} = \hyperlink{slippymap_8cpp_abfafaf71741cb91b95caa7218bf2993e}{longitudeFromTile}(center.x(), \hyperlink{classSlippyMap_a13dcc9915570a1a333c1e9275ffe64b3}{zoom}
+      );
+    \hyperlink{classSlippyMap_aa8a2647176ff7db85ab52ce9e7acb549}{invalidate}();
+\}
+\end{DoxyCode}
+\hypertarget{classSlippyMap_ada1e00e2870d0fdeb70c037b3222a0ad}{\index{Slippy\-Map@{Slippy\-Map}!render@{render}}
+\index{render@{render}!SlippyMap@{Slippy\-Map}}
+\subsubsection[{render}]{\setlength{\rightskip}{0pt plus 5cm}void Slippy\-Map\-::render (
+\begin{DoxyParamCaption}
+\item[{Q\-Painter $\ast$}]{p, }
+\item[{const Q\-Rect \&}]{rect}
+\end{DoxyParamCaption}
+)}}\label{classSlippyMap_ada1e00e2870d0fdeb70c037b3222a0ad}
+
+
+Definition at line 93 of file slippymap.\-cpp.
+
+
+
+References latitude, longitude, m\-\_\-empty\-Tile, m\-\_\-tile\-Pixmaps, m\-\_\-tiles\-Rect, tile\-For\-Coordinate(), tile\-Rect(), and zoom.
+
+
+
+Referenced by Light\-Maps\-::paint\-Event().
+
+
+\begin{DoxyCode}
+\{
+    \textcolor{keywordtype}{int} mx = 0, my = 0; \textcolor{comment}{// x and y for marker}
+    qreal latdiff = 0, lngdiff = 0; \textcolor{comment}{// storing reminder}
+    QPointF center = \hyperlink{slippymap_8cpp_a7b006b28fd0e4ace99c58e6162b501c9}{tileForCoordinate}(\hyperlink{classSlippyMap_a223220fdcbf2197845f009d48225c0c8}{latitude}, 
+      \hyperlink{classSlippyMap_af93efe003c192b7bc6a1ece6c7342de6}{longitude}, \hyperlink{classSlippyMap_a13dcc9915570a1a333c1e9275ffe64b3}{zoom}); \textcolor{comment}{// getting tile points for real gps point}
+    \textcolor{keywordtype}{int} cx = qFloor(center.x());
+    \textcolor{keywordtype}{int} cy = qFloor(center.y());
+
+    \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} x = 0; x <= \hyperlink{classSlippyMap_aa8154d798c574c1d6ed89f3347835a76}{m\_tilesRect}.width(); ++x)
+        \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} y = 0; y <= \hyperlink{classSlippyMap_aa8154d798c574c1d6ed89f3347835a76}{m\_tilesRect}.height(); ++y) \{
+            QPoint tp(x + \hyperlink{classSlippyMap_aa8154d798c574c1d6ed89f3347835a76}{m\_tilesRect}.left(), y + \hyperlink{classSlippyMap_aa8154d798c574c1d6ed89f3347835a76}{m\_tilesRect}
+      .top());
+            QRect box = \hyperlink{classSlippyMap_ada0e611fc8d684f9255236237105508d}{tileRect}(tp);
+
+            \textcolor{keywordflow}{if} (tp.x() == cx && tp.y() == cy) \{
+            mx = box.x();
+            my = box.y();
+            latdiff = qAbs(tp.x() - center.x());
+            lngdiff = qAbs(tp.y() - center.y());
+            \}
+
+            \textcolor{keywordflow}{if} (rect.intersects(box)) \{
+                \textcolor{keywordflow}{if} (\hyperlink{classSlippyMap_a2c88805d8030caedb95af10ce5d95aae}{m\_tilePixmaps}.contains(tp))
+                    p->drawPixmap(box, \hyperlink{classSlippyMap_a2c88805d8030caedb95af10ce5d95aae}{m\_tilePixmaps}.value(tp));
+                \textcolor{keywordflow}{else}
+                    p->drawPixmap(box, \hyperlink{classSlippyMap_a0021bf8f7ecbaa61bd47f8f0a36ea9d0}{m\_emptyTile});
+            \}
+        \}
+
+    \textcolor{comment}{// marker}
+    \textcolor{keywordflow}{if} (mx != 0 && my != 0) \{
+    QIcon marker = QIcon(\textcolor{stringliteral}{"/home/Guillaume\_Pierre/GPS/quadcopter-24.png"});
+    p->drawPixmap((mx+(latdiff*256.0)-24), (my+(lngdiff*256.0)-24), marker.
+      pixmap(24,24));
+    \}
+\}
+\end{DoxyCode}
+\hypertarget{classSlippyMap_ada0e611fc8d684f9255236237105508d}{\index{Slippy\-Map@{Slippy\-Map}!tile\-Rect@{tile\-Rect}}
+\index{tile\-Rect@{tile\-Rect}!SlippyMap@{Slippy\-Map}}
+\subsubsection[{tile\-Rect}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Rect Slippy\-Map\-::tile\-Rect (
+\begin{DoxyParamCaption}
+\item[{const Q\-Point \&}]{tp}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classSlippyMap_ada0e611fc8d684f9255236237105508d}
+
+
+Definition at line 185 of file slippymap.\-cpp.
+
+
+
+References m\-\_\-offset, m\-\_\-tiles\-Rect, and tdim.
+
+
+
+Referenced by handle\-Network\-Data(), and render().
+
+
+\begin{DoxyCode}
+\{
+    QPoint t = tp - \hyperlink{classSlippyMap_aa8154d798c574c1d6ed89f3347835a76}{m\_tilesRect}.topLeft();
+    \textcolor{keywordtype}{int} x = t.x() * \hyperlink{slippymap_8cpp_a8ce10e914ae6c794640aeae2e2781d83}{tdim} + \hyperlink{classSlippyMap_a705bb1600f5003868b890f1e25a198a6}{m\_offset}.x();
+    \textcolor{keywordtype}{int} y = t.y() * \hyperlink{slippymap_8cpp_a8ce10e914ae6c794640aeae2e2781d83}{tdim} + \hyperlink{classSlippyMap_a705bb1600f5003868b890f1e25a198a6}{m\_offset}.y();
+    \textcolor{keywordflow}{return} QRect(x, y, \hyperlink{slippymap_8cpp_a8ce10e914ae6c794640aeae2e2781d83}{tdim}, \hyperlink{slippymap_8cpp_a8ce10e914ae6c794640aeae2e2781d83}{tdim});
+\}
+\end{DoxyCode}
+\hypertarget{classSlippyMap_a6ff062c778eec629347d834976760c98}{\index{Slippy\-Map@{Slippy\-Map}!updated@{updated}}
+\index{updated@{updated}!SlippyMap@{Slippy\-Map}}
+\subsubsection[{updated}]{\setlength{\rightskip}{0pt plus 5cm}void Slippy\-Map\-::updated (
+\begin{DoxyParamCaption}
+\item[{const Q\-Rect \&}]{rect}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [signal]}}}\label{classSlippyMap_a6ff062c778eec629347d834976760c98}
+
+
+Referenced by handle\-Network\-Data(), and invalidate().
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classSlippyMap_aacec4be5e2b83eb2744a3b3b03c4af7a}{\index{Slippy\-Map@{Slippy\-Map}!height@{height}}
+\index{height@{height}!SlippyMap@{Slippy\-Map}}
+\subsubsection[{height}]{\setlength{\rightskip}{0pt plus 5cm}int Slippy\-Map\-::height}}\label{classSlippyMap_aacec4be5e2b83eb2744a3b3b03c4af7a}
+
+
+Definition at line 22 of file slippymap.\-h.
+
+
+
+Referenced by Light\-Maps\-::activate\-Zoom(), invalidate(), and Light\-Maps\-::resize\-Event().
+
+\hypertarget{classSlippyMap_a223220fdcbf2197845f009d48225c0c8}{\index{Slippy\-Map@{Slippy\-Map}!latitude@{latitude}}
+\index{latitude@{latitude}!SlippyMap@{Slippy\-Map}}
+\subsubsection[{latitude}]{\setlength{\rightskip}{0pt plus 5cm}qreal Slippy\-Map\-::latitude}}\label{classSlippyMap_a223220fdcbf2197845f009d48225c0c8}
+
+
+Definition at line 24 of file slippymap.\-h.
+
+
+
+Referenced by Light\-Maps\-::activate\-Zoom(), invalidate(), pan(), render(), and Light\-Maps\-::set\-Center().
+
+\hypertarget{classSlippyMap_af93efe003c192b7bc6a1ece6c7342de6}{\index{Slippy\-Map@{Slippy\-Map}!longitude@{longitude}}
+\index{longitude@{longitude}!SlippyMap@{Slippy\-Map}}
+\subsubsection[{longitude}]{\setlength{\rightskip}{0pt plus 5cm}qreal Slippy\-Map\-::longitude}}\label{classSlippyMap_af93efe003c192b7bc6a1ece6c7342de6}
+
+
+Definition at line 25 of file slippymap.\-h.
+
+
+
+Referenced by Light\-Maps\-::activate\-Zoom(), invalidate(), pan(), render(), and Light\-Maps\-::set\-Center().
+
+\hypertarget{classSlippyMap_a0021bf8f7ecbaa61bd47f8f0a36ea9d0}{\index{Slippy\-Map@{Slippy\-Map}!m\-\_\-empty\-Tile@{m\-\_\-empty\-Tile}}
+\index{m\-\_\-empty\-Tile@{m\-\_\-empty\-Tile}!SlippyMap@{Slippy\-Map}}
+\subsubsection[{m\-\_\-empty\-Tile}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Pixmap Slippy\-Map\-::m\-\_\-empty\-Tile\hspace{0.3cm}{\ttfamily [private]}}}\label{classSlippyMap_a0021bf8f7ecbaa61bd47f8f0a36ea9d0}
+
+
+Definition at line 40 of file slippymap.\-h.
+
+
+
+Referenced by handle\-Network\-Data(), render(), and Slippy\-Map().
+
+\hypertarget{classSlippyMap_a7df40e5af7c39bca00ce51f69e68ce57}{\index{Slippy\-Map@{Slippy\-Map}!m\-\_\-manager@{m\-\_\-manager}}
+\index{m\-\_\-manager@{m\-\_\-manager}!SlippyMap@{Slippy\-Map}}
+\subsubsection[{m\-\_\-manager}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Network\-Access\-Manager Slippy\-Map\-::m\-\_\-manager\hspace{0.3cm}{\ttfamily [private]}}}\label{classSlippyMap_a7df40e5af7c39bca00ce51f69e68ce57}
+
+
+Definition at line 42 of file slippymap.\-h.
+
+
+
+Referenced by download(), and Slippy\-Map().
+
+\hypertarget{classSlippyMap_a705bb1600f5003868b890f1e25a198a6}{\index{Slippy\-Map@{Slippy\-Map}!m\-\_\-offset@{m\-\_\-offset}}
+\index{m\-\_\-offset@{m\-\_\-offset}!SlippyMap@{Slippy\-Map}}
+\subsubsection[{m\-\_\-offset}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Point Slippy\-Map\-::m\-\_\-offset\hspace{0.3cm}{\ttfamily [private]}}}\label{classSlippyMap_a705bb1600f5003868b890f1e25a198a6}
+
+
+Definition at line 38 of file slippymap.\-h.
+
+
+
+Referenced by invalidate(), and tile\-Rect().
+
+\hypertarget{classSlippyMap_a2c88805d8030caedb95af10ce5d95aae}{\index{Slippy\-Map@{Slippy\-Map}!m\-\_\-tile\-Pixmaps@{m\-\_\-tile\-Pixmaps}}
+\index{m\-\_\-tile\-Pixmaps@{m\-\_\-tile\-Pixmaps}!SlippyMap@{Slippy\-Map}}
+\subsubsection[{m\-\_\-tile\-Pixmaps}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Hash$<$Q\-Point, Q\-Pixmap$>$ Slippy\-Map\-::m\-\_\-tile\-Pixmaps\hspace{0.3cm}{\ttfamily [private]}}}\label{classSlippyMap_a2c88805d8030caedb95af10ce5d95aae}
+
+
+Definition at line 41 of file slippymap.\-h.
+
+
+
+Referenced by download(), handle\-Network\-Data(), and render().
+
+\hypertarget{classSlippyMap_aa8154d798c574c1d6ed89f3347835a76}{\index{Slippy\-Map@{Slippy\-Map}!m\-\_\-tiles\-Rect@{m\-\_\-tiles\-Rect}}
+\index{m\-\_\-tiles\-Rect@{m\-\_\-tiles\-Rect}!SlippyMap@{Slippy\-Map}}
+\subsubsection[{m\-\_\-tiles\-Rect}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Rect Slippy\-Map\-::m\-\_\-tiles\-Rect\hspace{0.3cm}{\ttfamily [private]}}}\label{classSlippyMap_aa8154d798c574c1d6ed89f3347835a76}
+
+
+Definition at line 39 of file slippymap.\-h.
+
+
+
+Referenced by download(), handle\-Network\-Data(), invalidate(), render(), and tile\-Rect().
+
+\hypertarget{classSlippyMap_a3b265edb8c33bc1ff185cf081ea0fdaa}{\index{Slippy\-Map@{Slippy\-Map}!m\-\_\-url@{m\-\_\-url}}
+\index{m\-\_\-url@{m\-\_\-url}!SlippyMap@{Slippy\-Map}}
+\subsubsection[{m\-\_\-url}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Url Slippy\-Map\-::m\-\_\-url\hspace{0.3cm}{\ttfamily [private]}}}\label{classSlippyMap_a3b265edb8c33bc1ff185cf081ea0fdaa}
+
+
+Definition at line 43 of file slippymap.\-h.
+
+
+
+Referenced by download(), and invalidate().
+
+\hypertarget{classSlippyMap_ada3532095a8c4083e9da3db17de29fc1}{\index{Slippy\-Map@{Slippy\-Map}!width@{width}}
+\index{width@{width}!SlippyMap@{Slippy\-Map}}
+\subsubsection[{width}]{\setlength{\rightskip}{0pt plus 5cm}int Slippy\-Map\-::width}}\label{classSlippyMap_ada3532095a8c4083e9da3db17de29fc1}
+
+
+Definition at line 21 of file slippymap.\-h.
+
+
+
+Referenced by Light\-Maps\-::activate\-Zoom(), invalidate(), and Light\-Maps\-::resize\-Event().
+
+\hypertarget{classSlippyMap_a13dcc9915570a1a333c1e9275ffe64b3}{\index{Slippy\-Map@{Slippy\-Map}!zoom@{zoom}}
+\index{zoom@{zoom}!SlippyMap@{Slippy\-Map}}
+\subsubsection[{zoom}]{\setlength{\rightskip}{0pt plus 5cm}int Slippy\-Map\-::zoom}}\label{classSlippyMap_a13dcc9915570a1a333c1e9275ffe64b3}
+
+
+Definition at line 23 of file slippymap.\-h.
+
+
+
+Referenced by Light\-Maps\-::activate\-Zoom(), download(), invalidate(), pan(), and render().
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{slippymap_8h}{slippymap.\-h}\item 
+\hyperlink{slippymap_8cpp}{slippymap.\-cpp}\end{DoxyCompactItemize}

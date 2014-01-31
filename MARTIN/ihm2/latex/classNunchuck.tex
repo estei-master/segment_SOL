@@ -1,0 +1,543 @@
+\hypertarget{classNunchuck}{\section{Nunchuck Class Reference}
+\label{classNunchuck}\index{Nunchuck@{Nunchuck}}
+}
+
+
+{\ttfamily \#include \char`\"{}nunchuck.\-h\char`\"{}}
+
+
+
+Collaboration diagram for Nunchuck\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{classNunchuck__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classNunchuck_a655b8b1dcb8afcb60b44fcd5ab328407}{Nunchuck} (char c\-Type\-Nunk)
+\item 
+\hyperlink{classNunchuck_a2ff51de933f8099585f36eee2f280b38}{$\sim$\-Nunchuck} ()
+\item 
+bool \hyperlink{classNunchuck_aabc3105bbe185edb4521506e5da3dc48}{Initialize} (char c\-Type\-Nunk)
+\item 
+void \hyperlink{classNunchuck_ade6607a55fda6ae67c90d3d1ee7ce56b}{Read\-Command} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classNunchuck_a3ecbcb3a01a247605b4f0a37b579581d}{b\-Initialize}
+\item 
+int \hyperlink{classNunchuck_a931870243c74e9df416639c53670b234}{i\-Value\-Joystick\-X}
+\item 
+int \hyperlink{classNunchuck_a0e084b1760acfc06305bbb339e3c8232}{i\-Value\-Joystick\-Y}
+\item 
+bool \hyperlink{classNunchuck_a0db1f3d2f58fafda23a5af3936c12598}{b\-Button\-Z}
+\item 
+bool \hyperlink{classNunchuck_a1d5cac3b603b3060984e3184d795561d}{b\-Button\-C}
+\item 
+char \hyperlink{classNunchuck_ad9467642b97b8b008ddd137d273a22f8}{c\-Joystick\-X}
+\item 
+char \hyperlink{classNunchuck_aaf0f299016f5acf686f716518a7ce567}{c\-Joystick\-Y}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classNunchuck_aac4e5f6da04ee3fb6beada59aefd1612}{Decode\-Buffer\-In} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classNunchuck_a61f4874769103ba04e13f75a08442f8e}{f\-Device}
+\item 
+char \hyperlink{classNunchuck_a1bd7122f88582d12ab2ac5d3c8c7b8f8}{c\-Buffer\-In} \mbox{[}6\mbox{]}
+\item 
+char \hyperlink{classNunchuck_a4f2eea10fb4eba245c24168ce00429f8}{c\-Buffer\-Out} \mbox{[}2\mbox{]}
+\item 
+int \hyperlink{classNunchuck_a671e2732508cdd56e51898b79e58d455}{i\-Size\-Buffer}
+\item 
+int \hyperlink{classNunchuck_a6bf3cbe405e9611658f1a6bbc1cd56b4}{i\-Data} \mbox{[}6\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 31 of file nunchuck.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classNunchuck_a655b8b1dcb8afcb60b44fcd5ab328407}{\index{Nunchuck@{Nunchuck}!Nunchuck@{Nunchuck}}
+\index{Nunchuck@{Nunchuck}!Nunchuck@{Nunchuck}}
+\subsubsection[{Nunchuck}]{\setlength{\rightskip}{0pt plus 5cm}Nunchuck\-::\-Nunchuck (
+\begin{DoxyParamCaption}
+\item[{char}]{c\-Type\-Nunk}
+\end{DoxyParamCaption}
+)}}\label{classNunchuck_a655b8b1dcb8afcb60b44fcd5ab328407}
+
+
+Definition at line 3 of file nunchuck.\-cpp.
+
+
+
+References b\-Initialize, Initialize(), and Read\-Command().
+
+
+\begin{DoxyCode}
+\{
+    \textcolor{comment}{/*   Initialisation du nunchuck}
+\textcolor{comment}{         "bInitialize" est égale à VRAI si l'objet est correctement initialisé 
+        */}
+
+    \hyperlink{classNunchuck_a3ecbcb3a01a247605b4f0a37b579581d}{bInitialize} = \hyperlink{classNunchuck_aabc3105bbe185edb4521506e5da3dc48}{Initialize}(cTypeNunk);
+
+    \textcolor{comment}{/*  Lecture des informations commandes  :   Passe "bInitialize" à FAUX en
+       cas d'échec   */}
+    \textcolor{keywordflow}{if}(\hyperlink{classNunchuck_a3ecbcb3a01a247605b4f0a37b579581d}{bInitialize})\{
+        \hyperlink{classNunchuck_ade6607a55fda6ae67c90d3d1ee7ce56b}{ReadCommand}();
+    \}
+    \textcolor{keywordflow}{else} \{
+
+    \}
+\}
+\end{DoxyCode}
+\hypertarget{classNunchuck_a2ff51de933f8099585f36eee2f280b38}{\index{Nunchuck@{Nunchuck}!$\sim$\-Nunchuck@{$\sim$\-Nunchuck}}
+\index{$\sim$\-Nunchuck@{$\sim$\-Nunchuck}!Nunchuck@{Nunchuck}}
+\subsubsection[{$\sim$\-Nunchuck}]{\setlength{\rightskip}{0pt plus 5cm}Nunchuck\-::$\sim$\-Nunchuck (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classNunchuck_a2ff51de933f8099585f36eee2f280b38}
+
+
+Definition at line 19 of file nunchuck.\-cpp.
+
+
+
+References f\-Device.
+
+
+\begin{DoxyCode}
+\{
+    close(\hyperlink{classNunchuck_a61f4874769103ba04e13f75a08442f8e}{fDevice});
+\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classNunchuck_aac4e5f6da04ee3fb6beada59aefd1612}{\index{Nunchuck@{Nunchuck}!Decode\-Buffer\-In@{Decode\-Buffer\-In}}
+\index{Decode\-Buffer\-In@{Decode\-Buffer\-In}!Nunchuck@{Nunchuck}}
+\subsubsection[{Decode\-Buffer\-In}]{\setlength{\rightskip}{0pt plus 5cm}void Nunchuck\-::\-Decode\-Buffer\-In (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classNunchuck_aac4e5f6da04ee3fb6beada59aefd1612}
+
+
+Definition at line 128 of file nunchuck.\-cpp.
+
+
+
+References b\-Button\-C, b\-Button\-Z, b\-Initialize, c\-Buffer\-In, c\-Joystick\-X, c\-Joystick\-Y, i\-Data, i\-Value\-Joystick\-X, i\-Value\-Joystick\-Y, J\-B\-A\-S, J\-B\-A\-S\-\_\-\-M\-A\-X, J\-C\-E\-N\-T\-R\-E, J\-D\-R\-O\-I\-T\-E, J\-D\-R\-O\-I\-T\-E\-\_\-\-M\-A\-X, J\-G\-A\-U\-C\-H\-E, J\-G\-A\-U\-C\-H\-E\-\_\-\-M\-A\-X, J\-H\-A\-U\-T, and J\-H\-A\-U\-T\-\_\-\-M\-A\-X.
+
+
+
+Referenced by Read\-Command().
+
+
+\begin{DoxyCode}
+                              \{
+
+    \textcolor{comment}{/*  Données recu sans cryptage  */}
+
+    \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0 ; i < 6 ; i++) \{
+        \textcolor{comment}{//cBufferIn[i] ^= 0x17;}
+        \hyperlink{classNunchuck_a6bf3cbe405e9611658f1a6bbc1cd56b4}{iData}[i]      = (int)\hyperlink{classNunchuck_a1bd7122f88582d12ab2ac5d3c8c7b8f8}{cBufferIn}[i];
+        \textcolor{comment}{//iData[i]     += 0x17;}
+    \}
+
+
+    \textcolor{keywordflow}{if}(\hyperlink{classNunchuck_a3ecbcb3a01a247605b4f0a37b579581d}{bInitialize}) \{
+
+        \textcolor{comment}{//FILE *file = fopen("/tmp/nunchuckLog", "a");}
+
+        \textcolor{comment}{/*  Test Bouttons : Si on appui sur le bouton Z, le bouton C est
+       indiqué comme appuyé :}
+\textcolor{comment}{         *}
+\textcolor{comment}{         *Solution -> on ne test pas le bouton C si Z est appuyé    */}
+
+        \textcolor{keywordflow}{if}(\hyperlink{classNunchuck_a6bf3cbe405e9611658f1a6bbc1cd56b4}{iData}[5] & 0x01) \{                           \textcolor{comment}{//Si Boutton Z
+       relaché}
+
+            \hyperlink{classNunchuck_a0db1f3d2f58fafda23a5af3936c12598}{bButtonZ} = \textcolor{keyword}{false};
+
+            \hyperlink{classNunchuck_a6bf3cbe405e9611658f1a6bbc1cd56b4}{iData}[5] >>= 1;
+
+            \textcolor{keywordflow}{if}( \hyperlink{classNunchuck_a6bf3cbe405e9611658f1a6bbc1cd56b4}{iData}[5] & 0x01 ) \{                     \textcolor{comment}{//Si Boutton C
+       relaché}
+                \hyperlink{classNunchuck_a1d5cac3b603b3060984e3184d795561d}{bButtonC} = \textcolor{keyword}{false};
+            \}
+            \textcolor{keywordflow}{else} \{                                      \textcolor{comment}{//Si Boutton C appuyé}
+                \hyperlink{classNunchuck_a1d5cac3b603b3060984e3184d795561d}{bButtonC} = \textcolor{keyword}{true};
+            \}
+        \}                                               \textcolor{comment}{//Si Boutton Z appuyé}
+        \textcolor{keywordflow}{else} \{
+            \hyperlink{classNunchuck_a0db1f3d2f58fafda23a5af3936c12598}{bButtonZ} = \textcolor{keyword}{true};
+        \}
+
+        \textcolor{comment}{/*  Test Joystick axe horizontal (X)    */}
+
+        \hyperlink{classNunchuck_a931870243c74e9df416639c53670b234}{iValueJoystickX} = \hyperlink{classNunchuck_a6bf3cbe405e9611658f1a6bbc1cd56b4}{iData}[0];
+
+        \textcolor{keywordflow}{if}(\hyperlink{classNunchuck_a931870243c74e9df416639c53670b234}{iValueJoystickX} > 175) \{    \textcolor{comment}{//Si Joystick à Droite}
+            \hyperlink{classNunchuck_ad9467642b97b8b008ddd137d273a22f8}{cJoystickX} = \hyperlink{nunchuck_8h_abb937f82823e628ca09a026777179226}{JDROITE};
+
+            \textcolor{keywordflow}{if}(\hyperlink{classNunchuck_a931870243c74e9df416639c53670b234}{iValueJoystickX} > 225)
+                \hyperlink{classNunchuck_ad9467642b97b8b008ddd137d273a22f8}{cJoystickX} = \hyperlink{nunchuck_8h_a13baf3bab74f21c7050fb8029bf5b871}{JDROITE\_MAX};
+        \}
+        \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(\hyperlink{classNunchuck_a6bf3cbe405e9611658f1a6bbc1cd56b4}{iData}[0] < 95) \{           \textcolor{comment}{//Si Joystick à Gauche}
+            \hyperlink{classNunchuck_ad9467642b97b8b008ddd137d273a22f8}{cJoystickX} = \hyperlink{nunchuck_8h_a2948a7fb931671c2935a67be056ec44d}{JGAUCHE};
+
+            \textcolor{keywordflow}{if}(\hyperlink{classNunchuck_a931870243c74e9df416639c53670b234}{iValueJoystickX} < 50)
+                \hyperlink{classNunchuck_ad9467642b97b8b008ddd137d273a22f8}{cJoystickX} = \hyperlink{nunchuck_8h_a19f4efb3793bd7fd7da3a60339dc4631}{JGAUCHE\_MAX};
+        \}
+        \textcolor{keywordflow}{else} \{                              \textcolor{comment}{//Si Joystick au Centre}
+            \hyperlink{classNunchuck_ad9467642b97b8b008ddd137d273a22f8}{cJoystickX} = \hyperlink{nunchuck_8h_ac63506adba6ed764c5061ac249623554}{JCENTRE};
+        \}
+
+
+        \textcolor{comment}{/*  Test Joystick axe vertical (Y)    */}
+
+        \hyperlink{classNunchuck_a0e084b1760acfc06305bbb339e3c8232}{iValueJoystickY} = \hyperlink{classNunchuck_a6bf3cbe405e9611658f1a6bbc1cd56b4}{iData}[1];
+
+        \textcolor{keywordflow}{if}(\hyperlink{classNunchuck_a6bf3cbe405e9611658f1a6bbc1cd56b4}{iData}[1] > 175) \{    \textcolor{comment}{//Si Joystick en Haut}
+            \hyperlink{classNunchuck_aaf0f299016f5acf686f716518a7ce567}{cJoystickY} = \hyperlink{nunchuck_8h_a624208e4279eb8508e4d7a4cd1983293}{JHAUT};
+
+            \textcolor{keywordflow}{if}(\hyperlink{classNunchuck_a6bf3cbe405e9611658f1a6bbc1cd56b4}{iData}[1] > 225)
+                \hyperlink{classNunchuck_aaf0f299016f5acf686f716518a7ce567}{cJoystickY} = \hyperlink{nunchuck_8h_a69c726c7ddc8415a81ea58834356ed2b}{JHAUT\_MAX};
+        \}
+        \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(\hyperlink{classNunchuck_a6bf3cbe405e9611658f1a6bbc1cd56b4}{iData}[1] < 95) \{      \textcolor{comment}{//Si Joystick en Bas}
+            \hyperlink{classNunchuck_aaf0f299016f5acf686f716518a7ce567}{cJoystickY} = \hyperlink{nunchuck_8h_ad9a8fe51b03c91dc0256cc7502d450a3}{JBAS};
+
+            \textcolor{keywordflow}{if}(\hyperlink{classNunchuck_a6bf3cbe405e9611658f1a6bbc1cd56b4}{iData}[1] < 50)
+                \hyperlink{classNunchuck_aaf0f299016f5acf686f716518a7ce567}{cJoystickY} = \hyperlink{nunchuck_8h_a8bd0c46505c3f0a7d5bc412d8a56d41a}{JBAS\_MAX};
+        \}
+        \textcolor{keywordflow}{else} \{                         \textcolor{comment}{//Si Joystick au Centre}
+            \hyperlink{classNunchuck_aaf0f299016f5acf686f716518a7ce567}{cJoystickY} = \hyperlink{nunchuck_8h_ac63506adba6ed764c5061ac249623554}{JCENTRE};
+        \}
+
+        \textcolor{comment}{/*  Accéléromètre}
+\textcolor{comment}{            cBufferIn[2] <<= 2;}
+\textcolor{comment}{            cBufferIn[2] |= ((cBufferIn[5] >> 2) & 0x03);}
+\textcolor{comment}{            printf("X-axis: %d\(\backslash\)n", cBufferIn[2]);}
+\textcolor{comment}{}
+\textcolor{comment}{            cBufferIn[3] <<= 2;}
+\textcolor{comment}{            cBufferIn[3] |= ((cBufferIn[5] >> 4) & 0x03);}
+\textcolor{comment}{            printf("Y-axis: %d\(\backslash\)n", cBufferIn[3]);}
+\textcolor{comment}{}
+\textcolor{comment}{            cBufferIn[4] <<= 2;}
+\textcolor{comment}{            cBufferIn[4] |= ((cBufferIn[5] >> 6) & 0x03);}
+\textcolor{comment}{            printf("Z-axis: %d\(\backslash\)n", cBufferIn[4]);   */}
+
+
+        \textcolor{comment}{//fclose(file);}
+    \}
+
+
+
+\}
+\end{DoxyCode}
+\hypertarget{classNunchuck_aabc3105bbe185edb4521506e5da3dc48}{\index{Nunchuck@{Nunchuck}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!Nunchuck@{Nunchuck}}
+\subsubsection[{Initialize}]{\setlength{\rightskip}{0pt plus 5cm}bool Nunchuck\-::\-Initialize (
+\begin{DoxyParamCaption}
+\item[{char}]{c\-Type\-Nunk}
+\end{DoxyParamCaption}
+)}}\label{classNunchuck_aabc3105bbe185edb4521506e5da3dc48}
+
+
+Definition at line 24 of file nunchuck.\-cpp.
+
+
+
+References b\-Button\-C, b\-Button\-Z, c\-Buffer\-Out, c\-Joystick\-X, c\-Joystick\-Y, f\-Device, i\-Size\-Buffer, i\-Value\-Joystick\-X, i\-Value\-Joystick\-Y, and P\-A\-R\-A\-M\-\_\-\-D\-E\-V\-I\-C\-E\-N\-A\-M\-E\-\_\-\-C\-O\-M\-M\-A\-N\-D\-E.
+
+
+
+Referenced by Nunchuck(), and Q\-Base\-::\-Q\-Base().
+
+
+\begin{DoxyCode}
+\{
+    \textcolor{keywordtype}{int} iAddress\_I2C = 0x52;
+
+    \textcolor{keywordtype}{char} cDeviceName[] = \hyperlink{nunchuck_8h_a0f3e5db0fbc68310b4cdc94e00f10f75}{PARAM\_DEVICENAME\_COMMANDE};
+
+    cDeviceName[\textcolor{keyword}{sizeof}(cDeviceName)-2] = cTypeNunk;
+
+    \textcolor{comment}{/*  Initialisation des variables et  périphériques (Joystick,
+       Accéléromètre)   */}
+
+    \hyperlink{classNunchuck_a1d5cac3b603b3060984e3184d795561d}{bButtonC} = \textcolor{keyword}{false};
+    \hyperlink{classNunchuck_a0db1f3d2f58fafda23a5af3936c12598}{bButtonZ} = \textcolor{keyword}{false};
+    \hyperlink{classNunchuck_ad9467642b97b8b008ddd137d273a22f8}{cJoystickX} = -1;
+    \hyperlink{classNunchuck_aaf0f299016f5acf686f716518a7ce567}{cJoystickY} = -1;
+    \hyperlink{classNunchuck_a0e084b1760acfc06305bbb339e3c8232}{iValueJoystickY} = -1;
+    \hyperlink{classNunchuck_a931870243c74e9df416639c53670b234}{iValueJoystickX} = -1;
+
+    \textcolor{keywordflow}{if} ((\hyperlink{classNunchuck_a61f4874769103ba04e13f75a08442f8e}{fDevice} = open(cDeviceName, O\_RDWR)) < 0) \{
+    \textcolor{comment}{/*   Si le périphérique est inéxistant on retourne FAUX   */}
+            \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+    \}
+    \textcolor{keywordflow}{else} \{
+
+    \}
+
+    \textcolor{keywordflow}{if}(ioctl(\hyperlink{classNunchuck_a61f4874769103ba04e13f75a08442f8e}{fDevice}, I2C\_SLAVE, iAddress\_I2C) < 0) \{
+    \textcolor{comment}{/*   Si le nunchuck ne répond pas on retourne FAUX   */}
+        close(\hyperlink{classNunchuck_a61f4874769103ba04e13f75a08442f8e}{fDevice});
+        \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+    \}
+    \textcolor{keywordflow}{else} \{
+
+    \}
+
+    \textcolor{comment}{/*  Si le nunchuck est reconnue, on l'initialise    */}
+
+    \hyperlink{classNunchuck_a671e2732508cdd56e51898b79e58d455}{iSizeBuffer} = 0;
+
+    \hyperlink{classNunchuck_a4f2eea10fb4eba245c24168ce00429f8}{cBufferOut}[\hyperlink{classNunchuck_a671e2732508cdd56e51898b79e58d455}{iSizeBuffer}++] = 0xF0;
+    \hyperlink{classNunchuck_a4f2eea10fb4eba245c24168ce00429f8}{cBufferOut}[\hyperlink{classNunchuck_a671e2732508cdd56e51898b79e58d455}{iSizeBuffer}++] = 0x55;
+
+
+    \textcolor{keywordflow}{if}(write(\hyperlink{classNunchuck_a61f4874769103ba04e13f75a08442f8e}{fDevice}, \hyperlink{classNunchuck_a4f2eea10fb4eba245c24168ce00429f8}{cBufferOut}, \hyperlink{classNunchuck_a671e2732508cdd56e51898b79e58d455}{iSizeBuffer}) != 
+      \hyperlink{classNunchuck_a671e2732508cdd56e51898b79e58d455}{iSizeBuffer}) \{
+    \textcolor{comment}{/*   Si il y a erreur d'écriture, on retourne FAUX   */}
+        close(\hyperlink{classNunchuck_a61f4874769103ba04e13f75a08442f8e}{fDevice});
+        \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+    \}
+    \textcolor{keywordflow}{else} \{
+
+    \}
+
+    \hyperlink{classNunchuck_a671e2732508cdd56e51898b79e58d455}{iSizeBuffer} = 0;
+
+    \hyperlink{classNunchuck_a4f2eea10fb4eba245c24168ce00429f8}{cBufferOut}[\hyperlink{classNunchuck_a671e2732508cdd56e51898b79e58d455}{iSizeBuffer}++] = 0xFB;
+    \hyperlink{classNunchuck_a4f2eea10fb4eba245c24168ce00429f8}{cBufferOut}[\hyperlink{classNunchuck_a671e2732508cdd56e51898b79e58d455}{iSizeBuffer}++] = 0x00;
+
+
+    \textcolor{keywordflow}{if}(write(\hyperlink{classNunchuck_a61f4874769103ba04e13f75a08442f8e}{fDevice}, \hyperlink{classNunchuck_a4f2eea10fb4eba245c24168ce00429f8}{cBufferOut}, \hyperlink{classNunchuck_a671e2732508cdd56e51898b79e58d455}{iSizeBuffer}) != 
+      \hyperlink{classNunchuck_a671e2732508cdd56e51898b79e58d455}{iSizeBuffer}) \{
+    \textcolor{comment}{/*   Si il y a erreur d'écriture, on retourne FAUX   */}
+        close(\hyperlink{classNunchuck_a61f4874769103ba04e13f75a08442f8e}{fDevice});
+        \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+    \}
+    \textcolor{keywordflow}{else} \{
+
+    \}
+
+    \textcolor{comment}{/*  Nunchuck Initialisé est calibré}
+\textcolor{comment}{        On retourne VRAI  */}
+
+    \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+\}
+\end{DoxyCode}
+\hypertarget{classNunchuck_ade6607a55fda6ae67c90d3d1ee7ce56b}{\index{Nunchuck@{Nunchuck}!Read\-Command@{Read\-Command}}
+\index{Read\-Command@{Read\-Command}!Nunchuck@{Nunchuck}}
+\subsubsection[{Read\-Command}]{\setlength{\rightskip}{0pt plus 5cm}void Nunchuck\-::\-Read\-Command (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classNunchuck_ade6607a55fda6ae67c90d3d1ee7ce56b}
+
+
+Definition at line 96 of file nunchuck.\-cpp.
+
+
+
+References b\-Initialize, c\-Buffer\-In, c\-Buffer\-Out, Decode\-Buffer\-In(), f\-Device, and i\-Size\-Buffer.
+
+
+
+Referenced by Nunchuck(), and Q\-Base\-::run().
+
+
+\begin{DoxyCode}
+                           \{
+
+    \hyperlink{classNunchuck_a671e2732508cdd56e51898b79e58d455}{iSizeBuffer} = 1;
+
+    \textcolor{comment}{/*  Ordre de lecture des informations des capteurs   */}
+    \hyperlink{classNunchuck_a4f2eea10fb4eba245c24168ce00429f8}{cBufferOut}[0] = 0x00;
+
+    \textcolor{keywordflow}{if}(write(\hyperlink{classNunchuck_a61f4874769103ba04e13f75a08442f8e}{fDevice}, \hyperlink{classNunchuck_a4f2eea10fb4eba245c24168ce00429f8}{cBufferOut}, \hyperlink{classNunchuck_a671e2732508cdd56e51898b79e58d455}{iSizeBuffer}) != 
+      \hyperlink{classNunchuck_a671e2732508cdd56e51898b79e58d455}{iSizeBuffer}) \{
+    \textcolor{comment}{/*   Si il y a erreur d'écriture, demande une réinitialisation   */}
+       \hyperlink{classNunchuck_a3ecbcb3a01a247605b4f0a37b579581d}{bInitialize} = \textcolor{keyword}{false};
+       close(\hyperlink{classNunchuck_a61f4874769103ba04e13f75a08442f8e}{fDevice});
+       \textcolor{keywordflow}{return};
+    \}
+    \textcolor{keywordflow}{else} \{
+
+    \}
+
+    \hyperlink{classNunchuck_a671e2732508cdd56e51898b79e58d455}{iSizeBuffer} = 6;
+
+    \textcolor{keywordflow}{if}(read(\hyperlink{classNunchuck_a61f4874769103ba04e13f75a08442f8e}{fDevice}, \hyperlink{classNunchuck_a1bd7122f88582d12ab2ac5d3c8c7b8f8}{cBufferIn}, \hyperlink{classNunchuck_a671e2732508cdd56e51898b79e58d455}{iSizeBuffer}) != 
+      \hyperlink{classNunchuck_a671e2732508cdd56e51898b79e58d455}{iSizeBuffer}) \{
+    \textcolor{comment}{/*   Si il y a erreur de lecture, demande une réinitialisation   */}
+       \hyperlink{classNunchuck_a3ecbcb3a01a247605b4f0a37b579581d}{bInitialize} = \textcolor{keyword}{false};
+       close(\hyperlink{classNunchuck_a61f4874769103ba04e13f75a08442f8e}{fDevice});
+       \textcolor{keywordflow}{return};
+    \}
+    \textcolor{keywordflow}{else} \{
+
+    \}
+
+    \hyperlink{classNunchuck_aac4e5f6da04ee3fb6beada59aefd1612}{DecodeBufferIn}();
+\}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classNunchuck_a1d5cac3b603b3060984e3184d795561d}{\index{Nunchuck@{Nunchuck}!b\-Button\-C@{b\-Button\-C}}
+\index{b\-Button\-C@{b\-Button\-C}!Nunchuck@{Nunchuck}}
+\subsubsection[{b\-Button\-C}]{\setlength{\rightskip}{0pt plus 5cm}bool Nunchuck\-::b\-Button\-C}}\label{classNunchuck_a1d5cac3b603b3060984e3184d795561d}
+
+
+Definition at line 49 of file nunchuck.\-h.
+
+
+
+Referenced by Decode\-Buffer\-In(), Initialize(), and Q\-Base\-::run().
+
+\hypertarget{classNunchuck_a0db1f3d2f58fafda23a5af3936c12598}{\index{Nunchuck@{Nunchuck}!b\-Button\-Z@{b\-Button\-Z}}
+\index{b\-Button\-Z@{b\-Button\-Z}!Nunchuck@{Nunchuck}}
+\subsubsection[{b\-Button\-Z}]{\setlength{\rightskip}{0pt plus 5cm}bool Nunchuck\-::b\-Button\-Z}}\label{classNunchuck_a0db1f3d2f58fafda23a5af3936c12598}
+
+
+Definition at line 48 of file nunchuck.\-h.
+
+
+
+Referenced by Decode\-Buffer\-In(), Initialize(), and Q\-Base\-::run().
+
+\hypertarget{classNunchuck_a3ecbcb3a01a247605b4f0a37b579581d}{\index{Nunchuck@{Nunchuck}!b\-Initialize@{b\-Initialize}}
+\index{b\-Initialize@{b\-Initialize}!Nunchuck@{Nunchuck}}
+\subsubsection[{b\-Initialize}]{\setlength{\rightskip}{0pt plus 5cm}bool Nunchuck\-::b\-Initialize}}\label{classNunchuck_a3ecbcb3a01a247605b4f0a37b579581d}
+
+
+Definition at line 39 of file nunchuck.\-h.
+
+
+
+Referenced by Decode\-Buffer\-In(), Nunchuck(), Q\-Base\-::\-Q\-Base(), Read\-Command(), and Q\-Base\-::run().
+
+\hypertarget{classNunchuck_a1bd7122f88582d12ab2ac5d3c8c7b8f8}{\index{Nunchuck@{Nunchuck}!c\-Buffer\-In@{c\-Buffer\-In}}
+\index{c\-Buffer\-In@{c\-Buffer\-In}!Nunchuck@{Nunchuck}}
+\subsubsection[{c\-Buffer\-In}]{\setlength{\rightskip}{0pt plus 5cm}char Nunchuck\-::c\-Buffer\-In\mbox{[}6\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}}\label{classNunchuck_a1bd7122f88582d12ab2ac5d3c8c7b8f8}
+
+
+Definition at line 59 of file nunchuck.\-h.
+
+
+
+Referenced by Decode\-Buffer\-In(), and Read\-Command().
+
+\hypertarget{classNunchuck_a4f2eea10fb4eba245c24168ce00429f8}{\index{Nunchuck@{Nunchuck}!c\-Buffer\-Out@{c\-Buffer\-Out}}
+\index{c\-Buffer\-Out@{c\-Buffer\-Out}!Nunchuck@{Nunchuck}}
+\subsubsection[{c\-Buffer\-Out}]{\setlength{\rightskip}{0pt plus 5cm}char Nunchuck\-::c\-Buffer\-Out\mbox{[}2\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}}\label{classNunchuck_a4f2eea10fb4eba245c24168ce00429f8}
+
+
+Definition at line 60 of file nunchuck.\-h.
+
+
+
+Referenced by Initialize(), and Read\-Command().
+
+\hypertarget{classNunchuck_ad9467642b97b8b008ddd137d273a22f8}{\index{Nunchuck@{Nunchuck}!c\-Joystick\-X@{c\-Joystick\-X}}
+\index{c\-Joystick\-X@{c\-Joystick\-X}!Nunchuck@{Nunchuck}}
+\subsubsection[{c\-Joystick\-X}]{\setlength{\rightskip}{0pt plus 5cm}char Nunchuck\-::c\-Joystick\-X}}\label{classNunchuck_ad9467642b97b8b008ddd137d273a22f8}
+
+
+Definition at line 50 of file nunchuck.\-h.
+
+
+
+Referenced by Decode\-Buffer\-In(), Initialize(), and Q\-Base\-::run().
+
+\hypertarget{classNunchuck_aaf0f299016f5acf686f716518a7ce567}{\index{Nunchuck@{Nunchuck}!c\-Joystick\-Y@{c\-Joystick\-Y}}
+\index{c\-Joystick\-Y@{c\-Joystick\-Y}!Nunchuck@{Nunchuck}}
+\subsubsection[{c\-Joystick\-Y}]{\setlength{\rightskip}{0pt plus 5cm}char Nunchuck\-::c\-Joystick\-Y}}\label{classNunchuck_aaf0f299016f5acf686f716518a7ce567}
+
+
+Definition at line 51 of file nunchuck.\-h.
+
+
+
+Referenced by Decode\-Buffer\-In(), Initialize(), and Q\-Base\-::run().
+
+\hypertarget{classNunchuck_a61f4874769103ba04e13f75a08442f8e}{\index{Nunchuck@{Nunchuck}!f\-Device@{f\-Device}}
+\index{f\-Device@{f\-Device}!Nunchuck@{Nunchuck}}
+\subsubsection[{f\-Device}]{\setlength{\rightskip}{0pt plus 5cm}int Nunchuck\-::f\-Device\hspace{0.3cm}{\ttfamily [private]}}}\label{classNunchuck_a61f4874769103ba04e13f75a08442f8e}
+
+
+Definition at line 58 of file nunchuck.\-h.
+
+
+
+Referenced by Initialize(), Read\-Command(), and $\sim$\-Nunchuck().
+
+\hypertarget{classNunchuck_a6bf3cbe405e9611658f1a6bbc1cd56b4}{\index{Nunchuck@{Nunchuck}!i\-Data@{i\-Data}}
+\index{i\-Data@{i\-Data}!Nunchuck@{Nunchuck}}
+\subsubsection[{i\-Data}]{\setlength{\rightskip}{0pt plus 5cm}int Nunchuck\-::i\-Data\mbox{[}6\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}}\label{classNunchuck_a6bf3cbe405e9611658f1a6bbc1cd56b4}
+
+
+Definition at line 64 of file nunchuck.\-h.
+
+
+
+Referenced by Decode\-Buffer\-In().
+
+\hypertarget{classNunchuck_a671e2732508cdd56e51898b79e58d455}{\index{Nunchuck@{Nunchuck}!i\-Size\-Buffer@{i\-Size\-Buffer}}
+\index{i\-Size\-Buffer@{i\-Size\-Buffer}!Nunchuck@{Nunchuck}}
+\subsubsection[{i\-Size\-Buffer}]{\setlength{\rightskip}{0pt plus 5cm}int Nunchuck\-::i\-Size\-Buffer\hspace{0.3cm}{\ttfamily [private]}}}\label{classNunchuck_a671e2732508cdd56e51898b79e58d455}
+
+
+Definition at line 61 of file nunchuck.\-h.
+
+
+
+Referenced by Initialize(), and Read\-Command().
+
+\hypertarget{classNunchuck_a931870243c74e9df416639c53670b234}{\index{Nunchuck@{Nunchuck}!i\-Value\-Joystick\-X@{i\-Value\-Joystick\-X}}
+\index{i\-Value\-Joystick\-X@{i\-Value\-Joystick\-X}!Nunchuck@{Nunchuck}}
+\subsubsection[{i\-Value\-Joystick\-X}]{\setlength{\rightskip}{0pt plus 5cm}int Nunchuck\-::i\-Value\-Joystick\-X}}\label{classNunchuck_a931870243c74e9df416639c53670b234}
+
+
+Definition at line 46 of file nunchuck.\-h.
+
+
+
+Referenced by Decode\-Buffer\-In(), and Initialize().
+
+\hypertarget{classNunchuck_a0e084b1760acfc06305bbb339e3c8232}{\index{Nunchuck@{Nunchuck}!i\-Value\-Joystick\-Y@{i\-Value\-Joystick\-Y}}
+\index{i\-Value\-Joystick\-Y@{i\-Value\-Joystick\-Y}!Nunchuck@{Nunchuck}}
+\subsubsection[{i\-Value\-Joystick\-Y}]{\setlength{\rightskip}{0pt plus 5cm}int Nunchuck\-::i\-Value\-Joystick\-Y}}\label{classNunchuck_a0e084b1760acfc06305bbb339e3c8232}
+
+
+Definition at line 47 of file nunchuck.\-h.
+
+
+
+Referenced by Decode\-Buffer\-In(), and Initialize().
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{nunchuck_8h}{nunchuck.\-h}\item 
+\hyperlink{nunchuck_8cpp}{nunchuck.\-cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,305 @@
+\hypertarget{classUart}{\section{Uart Class Reference}
+\label{classUart}\index{Uart@{Uart}}
+}
+
+
+{\ttfamily \#include \char`\"{}uart.\-h\char`\"{}}
+
+
+
+Inheritance diagram for Uart\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=178pt]{classUart__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Uart\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=166pt]{classUart__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classUart_af65a6888b8a623bdc70cfb5c5e8e9957}{Uart} ()
+\item 
+\hyperlink{classUart_a7160154094413395a23dbaa287dbef3c}{$\sim$\-Uart} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classUart_a082b349fdf73dd9f4e1a2f1a09af28c3}{b\-Initialize}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classUart_ac21470b359f66cc072f80b638258aa18}{Serial\-\_\-\-Close} ()
+\item 
+bool \hyperlink{classUart_ab41a877a430c87419c524c970d033ee5}{Serial\-\_\-\-Open} (const char $\ast$serial\-\_\-\-Name, speed\-\_\-t baudrate)
+\item 
+int \hyperlink{classUart_aba195c21510bc9bbab776b961d866e1e}{Serial\-\_\-\-Read} (char $\ast$buff, int len)
+\item 
+int \hyperlink{classUart_ace4b7eaee7374cac2c91ca627b2a78b6}{Serial\-\_\-\-Send} (char $\ast$string, int len)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+char \hyperlink{classUart_a41faef9fcb605cc62769abb551f49b1a}{c\-Send\-Buff} \mbox{[}12\mbox{]}
+\item 
+char \hyperlink{classUart_afe931bc10d90890bce0d9331edb99598}{c\-Recev\-Buff} \mbox{[}12\mbox{]}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classUart_a9beb12dfe4b673ede7b05ec04af0dee8}{fd}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 21 of file uart.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classUart_af65a6888b8a623bdc70cfb5c5e8e9957}{\index{Uart@{Uart}!Uart@{Uart}}
+\index{Uart@{Uart}!Uart@{Uart}}
+\subsubsection[{Uart}]{\setlength{\rightskip}{0pt plus 5cm}Uart\-::\-Uart (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classUart_af65a6888b8a623bdc70cfb5c5e8e9957}
+
+
+Definition at line 5 of file uart.\-cpp.
+
+
+
+References b\-Initialize, fd, param\-\_\-\-U\-A\-R\-T\-\_\-\-F\-I\-L\-E, and Serial\-\_\-\-Open().
+
+
+\begin{DoxyCode}
+\{
+    tcflush(\hyperlink{classUart_a9beb12dfe4b673ede7b05ec04af0dee8}{fd}, TCIOFLUSH);
+    \hyperlink{classUart_a082b349fdf73dd9f4e1a2f1a09af28c3}{bInitialize} = \hyperlink{classUart_ab41a877a430c87419c524c970d033ee5}{Serial\_Open}(\hyperlink{uart_8h_ab24fe93d414e2d2790a5ce8e5503fd7d}{param\_UART\_FILE}
+      , B9600);
+\}
+\end{DoxyCode}
+\hypertarget{classUart_a7160154094413395a23dbaa287dbef3c}{\index{Uart@{Uart}!$\sim$\-Uart@{$\sim$\-Uart}}
+\index{$\sim$\-Uart@{$\sim$\-Uart}!Uart@{Uart}}
+\subsubsection[{$\sim$\-Uart}]{\setlength{\rightskip}{0pt plus 5cm}Uart\-::$\sim$\-Uart (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classUart_a7160154094413395a23dbaa287dbef3c}
+
+
+Definition at line 11 of file uart.\-cpp.
+
+
+
+References Serial\-\_\-\-Close().
+
+
+\begin{DoxyCode}
+\{
+    \hyperlink{classUart_ac21470b359f66cc072f80b638258aa18}{Serial\_Close}();
+\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classUart_ac21470b359f66cc072f80b638258aa18}{\index{Uart@{Uart}!Serial\-\_\-\-Close@{Serial\-\_\-\-Close}}
+\index{Serial\-\_\-\-Close@{Serial\-\_\-\-Close}!Uart@{Uart}}
+\subsubsection[{Serial\-\_\-\-Close}]{\setlength{\rightskip}{0pt plus 5cm}bool Uart\-::\-Serial\-\_\-\-Close (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classUart_ac21470b359f66cc072f80b638258aa18}
+
+
+Definition at line 61 of file uart.\-cpp.
+
+
+
+References fd.
+
+
+
+Referenced by $\sim$\-Uart().
+
+
+\begin{DoxyCode}
+\{
+        \textcolor{keywordflow}{if}(close (\hyperlink{classUart_a9beb12dfe4b673ede7b05ec04af0dee8}{fd}) < 0)
+        \{
+            \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+                \}
+                \textcolor{keywordflow}{else}
+            \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+\}
+\end{DoxyCode}
+\hypertarget{classUart_ab41a877a430c87419c524c970d033ee5}{\index{Uart@{Uart}!Serial\-\_\-\-Open@{Serial\-\_\-\-Open}}
+\index{Serial\-\_\-\-Open@{Serial\-\_\-\-Open}!Uart@{Uart}}
+\subsubsection[{Serial\-\_\-\-Open}]{\setlength{\rightskip}{0pt plus 5cm}bool Uart\-::\-Serial\-\_\-\-Open (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{serial\-\_\-\-Name, }
+\item[{speed\-\_\-t}]{baudrate}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classUart_ab41a877a430c87419c524c970d033ee5}
+
+
+Definition at line 16 of file uart.\-cpp.
+
+
+
+References fd.
+
+
+
+Referenced by Uart().
+
+
+\begin{DoxyCode}
+\{
+    \textcolor{keyword}{struct }termios serCfg;
+
+        memset(&serCfg, 0, \textcolor{keyword}{sizeof}(serCfg));
+
+    \textcolor{keywordflow}{if}((\hyperlink{classUart_a9beb12dfe4b673ede7b05ec04af0dee8}{fd} = open(serial\_Name, O\_RDWR | O\_NOCTTY | O\_NDELAY )) < 0) \{
+        printf(\textcolor{stringliteral}{"Failed to open serial port"});
+        \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+        \}
+    \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(tcgetattr(\hyperlink{classUart_a9beb12dfe4b673ede7b05ec04af0dee8}{fd}, &serCfg) != 0) \{
+            printf(\textcolor{stringliteral}{"Failed to get configuration"});
+            \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+    \}
+
+        cfsetispeed(&serCfg, baudrate);
+        cfsetospeed(&serCfg, baudrate);
+        cfmakeraw(&serCfg);
+
+    \textcolor{keywordflow}{if}(tcsetattr(\hyperlink{classUart_a9beb12dfe4b673ede7b05ec04af0dee8}{fd}, TCSANOW, &serCfg) != 0) \{
+        printf(\textcolor{stringliteral}{"Failed to set configuration"});
+        \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+        \}
+    \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+\}
+\end{DoxyCode}
+\hypertarget{classUart_aba195c21510bc9bbab776b961d866e1e}{\index{Uart@{Uart}!Serial\-\_\-\-Read@{Serial\-\_\-\-Read}}
+\index{Serial\-\_\-\-Read@{Serial\-\_\-\-Read}!Uart@{Uart}}
+\subsubsection[{Serial\-\_\-\-Read}]{\setlength{\rightskip}{0pt plus 5cm}int Uart\-::\-Serial\-\_\-\-Read (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{buff, }
+\item[{int}]{len}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classUart_aba195c21510bc9bbab776b961d866e1e}
+
+
+Definition at line 51 of file uart.\-cpp.
+
+
+
+References b\-Initialize, and fd.
+
+
+
+Referenced by Zig\-Bee\-::\-Config\-Zig\-Bee(), and Zig\-Bee\-::receive().
+
+
+\begin{DoxyCode}
+\{
+    \textcolor{keywordflow}{if}(\hyperlink{classUart_a082b349fdf73dd9f4e1a2f1a09af28c3}{bInitialize}) \{
+        \textcolor{keywordflow}{return} read(\hyperlink{classUart_a9beb12dfe4b673ede7b05ec04af0dee8}{fd}, buff, len);
+    \}
+    \textcolor{keywordflow}{else} \{
+        \textcolor{keywordflow}{return} -1;
+    \}
+\}
+\end{DoxyCode}
+\hypertarget{classUart_ace4b7eaee7374cac2c91ca627b2a78b6}{\index{Uart@{Uart}!Serial\-\_\-\-Send@{Serial\-\_\-\-Send}}
+\index{Serial\-\_\-\-Send@{Serial\-\_\-\-Send}!Uart@{Uart}}
+\subsubsection[{Serial\-\_\-\-Send}]{\setlength{\rightskip}{0pt plus 5cm}int Uart\-::\-Serial\-\_\-\-Send (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{string, }
+\item[{int}]{len}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classUart_ace4b7eaee7374cac2c91ca627b2a78b6}
+
+
+Definition at line 41 of file uart.\-cpp.
+
+
+
+References b\-Initialize, and fd.
+
+
+
+Referenced by Zig\-Bee\-::\-Config\-Zig\-Bee(), and Zig\-Bee\-::\-Send\-Command().
+
+
+\begin{DoxyCode}
+\{
+    \textcolor{keywordflow}{if}(\hyperlink{classUart_a082b349fdf73dd9f4e1a2f1a09af28c3}{bInitialize}) \{
+        \textcolor{keywordflow}{return} write(\hyperlink{classUart_a9beb12dfe4b673ede7b05ec04af0dee8}{fd}, \textcolor{keywordtype}{string},len);
+    \}
+    \textcolor{keywordflow}{else} \{
+        \textcolor{keywordflow}{return} -1;
+    \}
+\}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classUart_a082b349fdf73dd9f4e1a2f1a09af28c3}{\index{Uart@{Uart}!b\-Initialize@{b\-Initialize}}
+\index{b\-Initialize@{b\-Initialize}!Uart@{Uart}}
+\subsubsection[{b\-Initialize}]{\setlength{\rightskip}{0pt plus 5cm}bool Uart\-::b\-Initialize}}\label{classUart_a082b349fdf73dd9f4e1a2f1a09af28c3}
+
+
+Definition at line 28 of file uart.\-h.
+
+
+
+Referenced by Q\-Base\-::\-Q\-Base(), Serial\-\_\-\-Read(), Serial\-\_\-\-Send(), Uart(), and Zig\-Bee\-::\-Zig\-Bee().
+
+\hypertarget{classUart_afe931bc10d90890bce0d9331edb99598}{\index{Uart@{Uart}!c\-Recev\-Buff@{c\-Recev\-Buff}}
+\index{c\-Recev\-Buff@{c\-Recev\-Buff}!Uart@{Uart}}
+\subsubsection[{c\-Recev\-Buff}]{\setlength{\rightskip}{0pt plus 5cm}char Uart\-::c\-Recev\-Buff\mbox{[}12\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}}\label{classUart_afe931bc10d90890bce0d9331edb99598}
+
+
+Definition at line 36 of file uart.\-h.
+
+
+
+Referenced by Zig\-Bee\-::\-Config\-Zig\-Bee().
+
+\hypertarget{classUart_a41faef9fcb605cc62769abb551f49b1a}{\index{Uart@{Uart}!c\-Send\-Buff@{c\-Send\-Buff}}
+\index{c\-Send\-Buff@{c\-Send\-Buff}!Uart@{Uart}}
+\subsubsection[{c\-Send\-Buff}]{\setlength{\rightskip}{0pt plus 5cm}char Uart\-::c\-Send\-Buff\mbox{[}12\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}}\label{classUart_a41faef9fcb605cc62769abb551f49b1a}
+
+
+Definition at line 35 of file uart.\-h.
+
+\hypertarget{classUart_a9beb12dfe4b673ede7b05ec04af0dee8}{\index{Uart@{Uart}!fd@{fd}}
+\index{fd@{fd}!Uart@{Uart}}
+\subsubsection[{fd}]{\setlength{\rightskip}{0pt plus 5cm}int Uart\-::fd\hspace{0.3cm}{\ttfamily [private]}}}\label{classUart_a9beb12dfe4b673ede7b05ec04af0dee8}
+
+
+Definition at line 39 of file uart.\-h.
+
+
+
+Referenced by Serial\-\_\-\-Close(), Serial\-\_\-\-Open(), Serial\-\_\-\-Read(), Serial\-\_\-\-Send(), and Uart().
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{uart_8h}{uart.\-h}\item 
+\hyperlink{uart_8cpp}{uart.\-cpp}\end{DoxyCompactItemize}

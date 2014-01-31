@@ -1,0 +1,158 @@
+\hypertarget{classbattery}{\section{battery Class Reference}
+\label{classbattery}\index{battery@{battery}}
+}
+
+
+{\ttfamily \#include \char`\"{}battery.\-h\char`\"{}}
+
+
+
+Collaboration diagram for battery\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=158pt]{classbattery__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classbattery_a5fa1ba3fd447e78847e63f5733e157af}{battery} (Q\-Widget $\ast$parent=0)
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classbattery_a22c4b7b9932a588d61fde097aa7a91a5}{timer\-Event} (Q\-Timer\-Event $\ast$event)
+\begin{DoxyCompactList}\small\item\em Timer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Q\-Progress\-Bar $\ast$ \hyperlink{classbattery_af0da6fea5bb4d46f1e4bd9b3abe970ed}{progress\-Bar}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 15 of file battery.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classbattery_a5fa1ba3fd447e78847e63f5733e157af}{\index{battery@{battery}!battery@{battery}}
+\index{battery@{battery}!battery@{battery}}
+\subsubsection[{battery}]{\setlength{\rightskip}{0pt plus 5cm}battery\-::battery (
+\begin{DoxyParamCaption}
+\item[{Q\-Widget $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}}\label{classbattery_a5fa1ba3fd447e78847e63f5733e157af}
+
+
+Constructeur. 
+
+Permet la déclaration et la définition de de la taille de la progress\-Bar 
+\begin{DoxyParams}{Parameters}
+{\em Q\-Widget} & $\ast$parent \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 19 of file battery.\-cpp.
+
+
+
+References progress\-Bar.
+
+
+\begin{DoxyCode}
+                                :
+    QMainWindow(parent)
+\{
+    \hyperlink{classbattery_af0da6fea5bb4d46f1e4bd9b3abe970ed}{progressBar} = \textcolor{keyword}{new} QProgressBar(\textcolor{keyword}{this});
+    \hyperlink{classbattery_af0da6fea5bb4d46f1e4bd9b3abe970ed}{progressBar}->setGeometry(10, 10, 85, 20);
+    startTimer(200);
+\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classbattery_a22c4b7b9932a588d61fde097aa7a91a5}{\index{battery@{battery}!timer\-Event@{timer\-Event}}
+\index{timer\-Event@{timer\-Event}!battery@{battery}}
+\subsubsection[{timer\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void battery\-::timer\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Timer\-Event $\ast$}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classbattery_a22c4b7b9932a588d61fde097aa7a91a5}
+
+
+Timer. 
+
+Permet le rafraichissement des valeurs pour l'affichage de l'état des batteries du drone et de la base. 
+\begin{DoxyParams}{Parameters}
+{\em Q\-Timer\-Event} & $\ast$event \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 33 of file battery.\-cpp.
+
+
+
+References progress\-Bar.
+
+
+\begin{DoxyCode}
+\{
+    \textcolor{comment}{/*QFile fichier("/home/estei/projet/fonctionnel/GPS/niveauBatterie.txt");*/}
+                                                    \textcolor{comment}{/* Récupère la valeur contenue
+       dans le répertoire /temp/LOG pour la batterie de la base */}
+    \textcolor{comment}{/* POUR L'INTEGRATION */}
+    QFile fichier(\textcolor{stringliteral}{"/tmp/LOG"});
+    QString ligne;
+    QTextStream flux(&fichier);
+
+    \textcolor{keywordflow}{if}(fichier.open(QIODevice::ReadOnly | QIODevice::Text))
+    \{
+        \textcolor{keywordflow}{while}(!flux.atEnd())
+        \{
+            ligne = fichier.readLine();
+        \}
+        fichier.close();
+    \}
+    \textcolor{keywordflow}{else}
+        ligne = \textcolor{stringliteral}{"Impossible d'ouvrir le fichier !"};
+    \hyperlink{classbattery_af0da6fea5bb4d46f1e4bd9b3abe970ed}{progressBar}->setValue(ligne.toInt());                           
+              \textcolor{comment}{/* Fixe la valeur de la progressBar avec la valeur récupérée */}
+    \textcolor{keywordflow}{if}(ligne.toInt() >= 50)                                                 \textcolor{comment}{/*
+       Si la valeur est supérieure ou égale à 50%, elle est de couleur verte */}
+        setStyleSheet(\textcolor{stringliteral}{"QProgressBar::chunk\{background-color:green\}"});
+    \textcolor{keywordflow}{if}(ligne.toInt() < 50)                                                  \textcolor{comment}{/*
+       Si la valeur est inférieure à 50%, elle est de couleur orange */}
+        setStyleSheet(\textcolor{stringliteral}{"QProgressBar::chunk\{background-color:orange\}"});
+    \textcolor{keywordflow}{if}(ligne.toInt() < 20 )                                                 \textcolor{comment}{/*
+       Si la valeur est inférieure à 20%, elle est de couleur rouge */}
+        setStyleSheet(\textcolor{stringliteral}{"QProgressBar::chunk\{background-color:red\}"});
+
+
+\}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classbattery_af0da6fea5bb4d46f1e4bd9b3abe970ed}{\index{battery@{battery}!progress\-Bar@{progress\-Bar}}
+\index{progress\-Bar@{progress\-Bar}!battery@{battery}}
+\subsubsection[{progress\-Bar}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Progress\-Bar$\ast$ battery\-::progress\-Bar\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattery_af0da6fea5bb4d46f1e4bd9b3abe970ed}
+
+
+Definition at line 24 of file battery.\-h.
+
+
+
+Referenced by battery(), and timer\-Event().
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{battery_8h}{battery.\-h}\item 
+\hyperlink{battery_8cpp}{battery.\-cpp}\end{DoxyCompactItemize}

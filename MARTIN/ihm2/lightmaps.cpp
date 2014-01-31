@@ -156,7 +156,8 @@ void LightMaps::paintEvent(QPaintEvent *event)
 
 QString LightMaps::afficheHeure()
 {
-    QFile fichier("/home/estei/projet/fonctionnel/GPS/testQT/lightmaps/dataIHM.txt");
+    /*QFile fichier("/home/estei/projet/fonctionnel/GPS/testQT/lightmaps/dataIHM.txt");*/
+    QFile fichier("/home/Guillaume_Pierre/GPS/dataIHM.txt");
     QString ligne;
     int i = 0;
     QTextStream flux(&fichier);

@@ -1,0 +1,441 @@
+\hypertarget{classQBase}{\section{Q\-Base Class Reference}
+\label{classQBase}\index{Q\-Base@{Q\-Base}}
+}
+
+
+{\ttfamily \#include \char`\"{}qbase.\-h\char`\"{}}
+
+
+
+Collaboration diagram for Q\-Base\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classQBase__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classQBase_aeee57e313567e3c333d67e827228862a}{enable\-Camera} (bool b\-Enable)
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classQBase_a1951eae68b1eccba818635173cb4eaad}{Q\-Base} (Q\-Object $\ast$parent=0)
+\item 
+void \hyperlink{classQBase_ac0bbfb1690ac79a226ba59bd7834cdfc}{run} ()
+\item 
+void \hyperlink{classQBase_a53260534a66388d4b958bd017ebd0f32}{terminate} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classqAttitudeIndicator}{q\-Attitude\-Indicator} $\ast$ \hyperlink{classQBase_ae4a8b78621695d9a61c311d422824a8d}{Horizon}
+\item 
+\hyperlink{classNunchuck}{Nunchuck} $\ast$ \hyperlink{classQBase_aa39545ef1795a91bf18db836cde0640d}{Nunchuck\-Direction}
+\item 
+\hyperlink{classNunchuck}{Nunchuck} $\ast$ \hyperlink{classQBase_a615289f4d92be86986421ec16182ed90}{Nunchuck\-Altitude}
+\item 
+\hyperlink{classZigBee}{Zig\-Bee} $\ast$ \hyperlink{classQBase_a466b6191fec7cd0029dfc547a5437752}{Module\-Zig\-Bee}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Q\-Message\-Box \hyperlink{classQBase_aa75e9465559d8633736c52dae36ce1d0}{Msg\-Box}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 10 of file qbase.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classQBase_a1951eae68b1eccba818635173cb4eaad}{\index{Q\-Base@{Q\-Base}!Q\-Base@{Q\-Base}}
+\index{Q\-Base@{Q\-Base}!QBase@{Q\-Base}}
+\subsubsection[{Q\-Base}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Base\-::\-Q\-Base (
+\begin{DoxyParamCaption}
+\item[{Q\-Object $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}}\label{classQBase_a1951eae68b1eccba818635173cb4eaad}
+
+
+Definition at line 7 of file qbase.\-cpp.
+
+
+
+References Uart\-::b\-Initialize, Nunchuck\-::b\-Initialize, Horizon, Nunchuck\-::\-Initialize(), Module\-Zig\-Bee, Msg\-Box, Nunchuck\-Altitude, Nunchuck\-Direction, P\-A\-R\-A\-M\-\_\-\-A\-L\-T\-I\-T\-U\-D\-E, and P\-A\-R\-A\-M\-\_\-\-D\-I\-R\-E\-C\-T\-I\-O\-N.
+
+
+\begin{DoxyCode}
+                            :
+    QThread(parent)
+\{
+    \hyperlink{classQBase_ae4a8b78621695d9a61c311d422824a8d}{Horizon} = \textcolor{keyword}{new} \hyperlink{classqAttitudeIndicator}{qAttitudeIndicator}();
+    \hyperlink{classQBase_aa39545ef1795a91bf18db836cde0640d}{NunchuckDirection} = \textcolor{keyword}{new} \hyperlink{classNunchuck}{Nunchuck}(\hyperlink{nunchuck_8h_abeac51046230d277dc5701b7e45dc88e}{PARAM\_DIRECTION}
+      );
+    \hyperlink{classQBase_a615289f4d92be86986421ec16182ed90}{NunchuckAltitude} = \textcolor{keyword}{new} \hyperlink{classNunchuck}{Nunchuck}(\hyperlink{nunchuck_8h_af420e9167d30b82b0f623019d165944a}{PARAM\_ALTITUDE}
+      );
+    \hyperlink{classQBase_a466b6191fec7cd0029dfc547a5437752}{ModuleZigBee} = \textcolor{keyword}{new} \hyperlink{classZigBee}{ZigBee}();
+
+
+    \textcolor{keywordflow}{if}(!\hyperlink{classQBase_a615289f4d92be86986421ec16182ed90}{NunchuckAltitude}->\hyperlink{classNunchuck_a3ecbcb3a01a247605b4f0a37b579581d}{bInitialize}) \{
+        \hyperlink{classQBase_aa75e9465559d8633736c52dae36ce1d0}{MsgBox}.setText(\textcolor{stringliteral}{"Echec de connexion : Commande Altitude\(\backslash\)t\(\backslash\)n       
+              (Veuillez la reconnecter)"});
+        \hyperlink{classQBase_aa75e9465559d8633736c52dae36ce1d0}{MsgBox}.exec();
+        \hyperlink{classQBase_a615289f4d92be86986421ec16182ed90}{NunchuckAltitude}->\hyperlink{classNunchuck_a3ecbcb3a01a247605b4f0a37b579581d}{bInitialize} = 
+      \hyperlink{classQBase_a615289f4d92be86986421ec16182ed90}{NunchuckAltitude}->\hyperlink{classNunchuck_aabc3105bbe185edb4521506e5da3dc48}{Initialize}(\hyperlink{nunchuck_8h_af420e9167d30b82b0f623019d165944a}{PARAM\_ALTITUDE}
+      );
+
+        \textcolor{keywordflow}{if}(!\hyperlink{classQBase_a615289f4d92be86986421ec16182ed90}{NunchuckAltitude}->\hyperlink{classNunchuck_a3ecbcb3a01a247605b4f0a37b579581d}{bInitialize}) \{
+            \hyperlink{classQBase_aa75e9465559d8633736c52dae36ce1d0}{MsgBox}.setText(\textcolor{stringliteral}{"Echec de connexion : Commande Altitude\(\backslash\)t\(\backslash\)n   
+                  (Abandon)"});
+            \hyperlink{classQBase_aa75e9465559d8633736c52dae36ce1d0}{MsgBox}.exec();
+        \}
+    \}
+
+    \textcolor{keywordflow}{if}(!\hyperlink{classQBase_aa39545ef1795a91bf18db836cde0640d}{NunchuckDirection}->\hyperlink{classNunchuck_a3ecbcb3a01a247605b4f0a37b579581d}{bInitialize}) \{
+        \hyperlink{classQBase_aa75e9465559d8633736c52dae36ce1d0}{MsgBox}.setText(\textcolor{stringliteral}{"Echec de connexion : Commande Direction\(\backslash\)t\(\backslash\)n      
+               (Veuillez la reconnecter)"});
+        \hyperlink{classQBase_aa75e9465559d8633736c52dae36ce1d0}{MsgBox}.exec();
+        \hyperlink{classQBase_aa39545ef1795a91bf18db836cde0640d}{NunchuckDirection}->\hyperlink{classNunchuck_a3ecbcb3a01a247605b4f0a37b579581d}{bInitialize} = 
+      \hyperlink{classQBase_aa39545ef1795a91bf18db836cde0640d}{NunchuckDirection}->\hyperlink{classNunchuck_aabc3105bbe185edb4521506e5da3dc48}{Initialize}(\hyperlink{nunchuck_8h_abeac51046230d277dc5701b7e45dc88e}{PARAM\_DIRECTION}
+      );
+
+        \textcolor{keywordflow}{if}(!\hyperlink{classQBase_aa39545ef1795a91bf18db836cde0640d}{NunchuckDirection}->\hyperlink{classNunchuck_a3ecbcb3a01a247605b4f0a37b579581d}{bInitialize}) \{
+            \hyperlink{classQBase_aa75e9465559d8633736c52dae36ce1d0}{MsgBox}.setText(\textcolor{stringliteral}{"Echec de connexion : Commande Direction\(\backslash\)t\(\backslash\)n  
+                   (Abandon)"});
+            \hyperlink{classQBase_aa75e9465559d8633736c52dae36ce1d0}{MsgBox}.exec();
+        \}
+    \}
+
+    \textcolor{keywordflow}{if}(!\hyperlink{classQBase_a466b6191fec7cd0029dfc547a5437752}{ModuleZigBee}->\hyperlink{classUart_a082b349fdf73dd9f4e1a2f1a09af28c3}{bInitialize}) \{
+        \hyperlink{classQBase_aa75e9465559d8633736c52dae36ce1d0}{MsgBox}.setText(\textcolor{stringliteral}{"Echec de connexion : Module de Communication\(\backslash\)t\(\backslash\)n 
+                  (Abandon)"});
+        \hyperlink{classQBase_aa75e9465559d8633736c52dae36ce1d0}{MsgBox}.exec();
+    \}
+\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classQBase_aeee57e313567e3c333d67e827228862a}{\index{Q\-Base@{Q\-Base}!enable\-Camera@{enable\-Camera}}
+\index{enable\-Camera@{enable\-Camera}!QBase@{Q\-Base}}
+\subsubsection[{enable\-Camera}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-Base\-::enable\-Camera (
+\begin{DoxyParamCaption}
+\item[{bool}]{b\-Enable}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}}\label{classQBase_aeee57e313567e3c333d67e827228862a}
+
+
+Definition at line 222 of file qbase.\-cpp.
+
+
+\begin{DoxyCode}
+\{
+
+\}
+\end{DoxyCode}
+\hypertarget{classQBase_ac0bbfb1690ac79a226ba59bd7834cdfc}{\index{Q\-Base@{Q\-Base}!run@{run}}
+\index{run@{run}!QBase@{Q\-Base}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-Base\-::run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classQBase_ac0bbfb1690ac79a226ba59bd7834cdfc}
+
+
+Definition at line 44 of file qbase.\-cpp.
+
+
+
+References Nunchuck\-::b\-Button\-C, Nunchuck\-::b\-Button\-Z, Nunchuck\-::b\-Initialize, Nunchuck\-::c\-Joystick\-X, Nunchuck\-::c\-Joystick\-Y, q\-Attitude\-Indicator\-::do\-Horizon(), Horizon, J\-B\-A\-S, J\-B\-A\-S\-\_\-\-M\-A\-X, J\-C\-E\-N\-T\-R\-E, J\-D\-R\-O\-I\-T\-E, J\-D\-R\-O\-I\-T\-E\-\_\-\-M\-A\-X, J\-G\-A\-U\-C\-H\-E, J\-G\-A\-U\-C\-H\-E\-\_\-\-M\-A\-X, J\-H\-A\-U\-T, J\-H\-A\-U\-T\-\_\-\-M\-A\-X, Module\-Zig\-Bee, Nunchuck\-Altitude, Nunchuck\-Direction, q\-Attitude\-Indicator\-::pitch, Nunchuck\-::\-Read\-Command(), Zig\-Bee\-::receive(), q\-Attitude\-Indicator\-::roll, and Zig\-Bee\-::\-Send\-Command().
+
+
+\begin{DoxyCode}
+\{
+    \textcolor{comment}{//Doit attendre l'information de démarrage du drone : puis emettre toutes
+       les 500ms}
+    \textcolor{comment}{//Pourrait émettre toutes les 500ms, 250ms avant que le drone écoute?.
+       (voir fonction boquante read)}
+    \textcolor{comment}{//FONCTION DE SINCRONISATION !!}
+    QTime time;
+    QString Qtmp;
+    std::ofstream    f(\textcolor{stringliteral}{"/tmp/LogZigBee"}, std::ios\_base::app);
+
+    time.start();
+
+    \textcolor{keywordflow}{while} (1) \{
+
+        \textcolor{comment}{/* Recupère les données des commandes */}
+        \textcolor{keywordflow}{if}(\hyperlink{classQBase_aa39545ef1795a91bf18db836cde0640d}{NunchuckDirection}->\hyperlink{classNunchuck_a3ecbcb3a01a247605b4f0a37b579581d}{bInitialize})
+            \hyperlink{classQBase_aa39545ef1795a91bf18db836cde0640d}{NunchuckDirection}->\hyperlink{classNunchuck_ade6607a55fda6ae67c90d3d1ee7ce56b}{ReadCommand}();
+
+        \textcolor{keywordflow}{if}(\hyperlink{classQBase_aa39545ef1795a91bf18db836cde0640d}{NunchuckDirection}->\hyperlink{classNunchuck_a0db1f3d2f58fafda23a5af3936c12598}{bButtonZ}) \{
+
+        \}
+
+        \textcolor{keywordflow}{if}(\hyperlink{classQBase_aa39545ef1795a91bf18db836cde0640d}{NunchuckDirection}->\hyperlink{classNunchuck_a1d5cac3b603b3060984e3184d795561d}{bButtonC}) \{
+
+        \}
+
+        \textcolor{comment}{/* Mise à jour des commandes de vol et de l'Horizon(pour test) */}
+        \textcolor{keywordflow}{switch} (\hyperlink{classQBase_aa39545ef1795a91bf18db836cde0640d}{NunchuckDirection}->\hyperlink{classNunchuck_ad9467642b97b8b008ddd137d273a22f8}{cJoystickX}) \{
+        \textcolor{keywordflow}{case} \hyperlink{nunchuck_8h_ac63506adba6ed764c5061ac249623554}{JCENTRE}:
+            \hyperlink{classQBase_ae4a8b78621695d9a61c311d422824a8d}{Horizon}->\hyperlink{classqAttitudeIndicator_a10c98e2fd9195050cb305f4b12bf75bb}{roll} = 0.0;
+            \textcolor{comment}{/* Mise à jour des commandes de vol */}
+            \hyperlink{classQBase_a466b6191fec7cd0029dfc547a5437752}{ModuleZigBee}->st\_CommandDrone.cTransY = 0;    \textcolor{comment}{//
+      Vérifier avec Nabil!!!}
+            \textcolor{keywordflow}{break};
+        \textcolor{keywordflow}{case} \hyperlink{nunchuck_8h_abb937f82823e628ca09a026777179226}{JDROITE}:
+            \hyperlink{classQBase_ae4a8b78621695d9a61c311d422824a8d}{Horizon}->\hyperlink{classqAttitudeIndicator_a10c98e2fd9195050cb305f4b12bf75bb}{roll} = -15.0;
+            \textcolor{comment}{/* Mise à jour des commandes de vol */}
+            \hyperlink{classQBase_a466b6191fec7cd0029dfc547a5437752}{ModuleZigBee}->st\_CommandDrone.cTransY = 1;    \textcolor{comment}{//
+      Vérifier avec Nabil!!!}
+            \textcolor{keywordflow}{break};
+        \textcolor{keywordflow}{case} \hyperlink{nunchuck_8h_a2948a7fb931671c2935a67be056ec44d}{JGAUCHE}:
+            \hyperlink{classQBase_ae4a8b78621695d9a61c311d422824a8d}{Horizon}->\hyperlink{classqAttitudeIndicator_a10c98e2fd9195050cb305f4b12bf75bb}{roll} = 15.0;
+            \textcolor{comment}{/* Mise à jour des commandes de vol */}
+            \hyperlink{classQBase_a466b6191fec7cd0029dfc547a5437752}{ModuleZigBee}->st\_CommandDrone.cTransY = -1;    \textcolor{comment}{//
+      Vérifier avec Nabil!!!}
+            \textcolor{keywordflow}{break};
+        \textcolor{keywordflow}{case} \hyperlink{nunchuck_8h_a13baf3bab74f21c7050fb8029bf5b871}{JDROITE\_MAX}:
+            \hyperlink{classQBase_ae4a8b78621695d9a61c311d422824a8d}{Horizon}->\hyperlink{classqAttitudeIndicator_a10c98e2fd9195050cb305f4b12bf75bb}{roll} = -30.0;
+            \textcolor{comment}{/* Mise à jour des commandes de vol */}
+            \hyperlink{classQBase_a466b6191fec7cd0029dfc547a5437752}{ModuleZigBee}->st\_CommandDrone.cTransY = 2;    \textcolor{comment}{//
+      Vérifier avec Nabil!!!}
+            \textcolor{keywordflow}{break};
+        \textcolor{keywordflow}{case} \hyperlink{nunchuck_8h_a19f4efb3793bd7fd7da3a60339dc4631}{JGAUCHE\_MAX}:
+            \hyperlink{classQBase_ae4a8b78621695d9a61c311d422824a8d}{Horizon}->\hyperlink{classqAttitudeIndicator_a10c98e2fd9195050cb305f4b12bf75bb}{roll} = 30.0;
+            \textcolor{comment}{/* Mise à jour des commandes de vol */}
+            \hyperlink{classQBase_a466b6191fec7cd0029dfc547a5437752}{ModuleZigBee}->st\_CommandDrone.cTransY = -2;    \textcolor{comment}{//
+      Vérifier avec Nabil!!!}
+            \textcolor{keywordflow}{break};
+        \textcolor{keywordflow}{default}:
+            \hyperlink{classQBase_ae4a8b78621695d9a61c311d422824a8d}{Horizon}->\hyperlink{classqAttitudeIndicator_a10c98e2fd9195050cb305f4b12bf75bb}{roll} = 90.0;
+            \textcolor{comment}{/* Mise à jour des commandes de vol */}
+            \hyperlink{classQBase_a466b6191fec7cd0029dfc547a5437752}{ModuleZigBee}->st\_CommandDrone.cTransY = 0;    \textcolor{comment}{//
+      Vérifier avec Nabil!!!}
+            \textcolor{keywordflow}{break};
+        \}
+
+        \textcolor{keywordflow}{switch} (\hyperlink{classQBase_aa39545ef1795a91bf18db836cde0640d}{NunchuckDirection}->\hyperlink{classNunchuck_aaf0f299016f5acf686f716518a7ce567}{cJoystickY}) \{
+        \textcolor{keywordflow}{case} \hyperlink{nunchuck_8h_ac63506adba6ed764c5061ac249623554}{JCENTRE}:
+            \hyperlink{classQBase_ae4a8b78621695d9a61c311d422824a8d}{Horizon}->\hyperlink{classqAttitudeIndicator_ae0df6492b15cc2d3f51c3de0e6dd08bd}{pitch} = 0.0;
+            \textcolor{comment}{/* Mise à jour des commandes de vol */}
+            \hyperlink{classQBase_a466b6191fec7cd0029dfc547a5437752}{ModuleZigBee}->st\_CommandDrone.cTransX = 0;    \textcolor{comment}{//
+      Vérifier avec Nabil!!!}
+            \textcolor{keywordflow}{break};
+        \textcolor{keywordflow}{case} \hyperlink{nunchuck_8h_a624208e4279eb8508e4d7a4cd1983293}{JHAUT}:
+            \hyperlink{classQBase_ae4a8b78621695d9a61c311d422824a8d}{Horizon}->\hyperlink{classqAttitudeIndicator_ae0df6492b15cc2d3f51c3de0e6dd08bd}{pitch} = 10.0;
+            \textcolor{comment}{/* Mise à jour des commandes de vol */}
+            \hyperlink{classQBase_a466b6191fec7cd0029dfc547a5437752}{ModuleZigBee}->st\_CommandDrone.cTransX = -1;    \textcolor{comment}{//
+      Vérifier avec Nabil!!!}
+            \textcolor{keywordflow}{break};
+        \textcolor{keywordflow}{case} \hyperlink{nunchuck_8h_ad9a8fe51b03c91dc0256cc7502d450a3}{JBAS}:
+            \hyperlink{classQBase_ae4a8b78621695d9a61c311d422824a8d}{Horizon}->\hyperlink{classqAttitudeIndicator_ae0df6492b15cc2d3f51c3de0e6dd08bd}{pitch} = -10.0;
+            \textcolor{comment}{/* Mise à jour des commandes de vol */}
+            \hyperlink{classQBase_a466b6191fec7cd0029dfc547a5437752}{ModuleZigBee}->st\_CommandDrone.cTransX = 1;    \textcolor{comment}{//
+      Vérifier avec Nabil!!!}
+            \textcolor{keywordflow}{break};
+        \textcolor{keywordflow}{case} \hyperlink{nunchuck_8h_a69c726c7ddc8415a81ea58834356ed2b}{JHAUT\_MAX}:
+            \hyperlink{classQBase_ae4a8b78621695d9a61c311d422824a8d}{Horizon}->\hyperlink{classqAttitudeIndicator_ae0df6492b15cc2d3f51c3de0e6dd08bd}{pitch} = 20.0;
+            \textcolor{comment}{/* Mise à jour des commandes de vol */}
+            \hyperlink{classQBase_a466b6191fec7cd0029dfc547a5437752}{ModuleZigBee}->st\_CommandDrone.cTransX = -2;    \textcolor{comment}{//
+      Vérifier avec Nabil!!!}
+            \textcolor{keywordflow}{break};
+        \textcolor{keywordflow}{case} \hyperlink{nunchuck_8h_a8bd0c46505c3f0a7d5bc412d8a56d41a}{JBAS\_MAX}:
+            \hyperlink{classQBase_ae4a8b78621695d9a61c311d422824a8d}{Horizon}->\hyperlink{classqAttitudeIndicator_ae0df6492b15cc2d3f51c3de0e6dd08bd}{pitch} = -20.0;
+            \textcolor{comment}{/* Mise à jour des commandes de vol */}
+            \hyperlink{classQBase_a466b6191fec7cd0029dfc547a5437752}{ModuleZigBee}->st\_CommandDrone.cTransX = 2;    \textcolor{comment}{//
+      Vérifier avec Nabil!!!}
+            \textcolor{keywordflow}{break};
+        \textcolor{keywordflow}{default}:
+            \hyperlink{classQBase_ae4a8b78621695d9a61c311d422824a8d}{Horizon}->\hyperlink{classqAttitudeIndicator_ae0df6492b15cc2d3f51c3de0e6dd08bd}{pitch} = 90.0;
+            \textcolor{comment}{/* Mise à jour des commandes de vol */}
+            \hyperlink{classQBase_a466b6191fec7cd0029dfc547a5437752}{ModuleZigBee}->st\_CommandDrone.cTransX = 0;    \textcolor{comment}{//
+      Vérifier avec Nabil!!!}
+            \textcolor{keywordflow}{break};
+        \}
+        \hyperlink{classQBase_ae4a8b78621695d9a61c311d422824a8d}{Horizon}->\hyperlink{classqAttitudeIndicator_a7d4e7b19bc493de63a91b0e0480c24e2}{doHorizon}();
+
+        \textcolor{keywordflow}{switch} (\hyperlink{classQBase_a615289f4d92be86986421ec16182ed90}{NunchuckAltitude}->\hyperlink{classNunchuck_ad9467642b97b8b008ddd137d273a22f8}{cJoystickX}) \{
+        \textcolor{keywordflow}{case} \hyperlink{nunchuck_8h_ac63506adba6ed764c5061ac249623554}{JCENTRE}:
+            \textcolor{comment}{/* Mise à jour des commandes de vol */}
+            \hyperlink{classQBase_a466b6191fec7cd0029dfc547a5437752}{ModuleZigBee}->st\_CommandDrone.cRotZ = 0;    \textcolor{comment}{//Vérifier
+       avec Nabil!!!}
+            \textcolor{keywordflow}{break};
+        \textcolor{keywordflow}{case} \hyperlink{nunchuck_8h_abb937f82823e628ca09a026777179226}{JDROITE}:
+            \textcolor{comment}{/* Mise à jour des commandes de vol */}
+            \hyperlink{classQBase_a466b6191fec7cd0029dfc547a5437752}{ModuleZigBee}->st\_CommandDrone.cRotZ = 1;    \textcolor{comment}{//Vérifier
+       avec Nabil!!!}
+            \textcolor{keywordflow}{break};
+        \textcolor{keywordflow}{case} \hyperlink{nunchuck_8h_a2948a7fb931671c2935a67be056ec44d}{JGAUCHE}:
+            \textcolor{comment}{/* Mise à jour des commandes de vol */}
+            \hyperlink{classQBase_a466b6191fec7cd0029dfc547a5437752}{ModuleZigBee}->st\_CommandDrone.cRotZ = -1;    \textcolor{comment}{//Vérifier
+       avec Nabil!!!}
+            \textcolor{keywordflow}{break};
+        \textcolor{keywordflow}{case} \hyperlink{nunchuck_8h_a13baf3bab74f21c7050fb8029bf5b871}{JDROITE\_MAX}:
+            \textcolor{comment}{/* Mise à jour des commandes de vol */}
+            \hyperlink{classQBase_a466b6191fec7cd0029dfc547a5437752}{ModuleZigBee}->st\_CommandDrone.cRotZ = 2;    \textcolor{comment}{//Vérifier
+       avec Nabil!!!}
+            \textcolor{keywordflow}{break};
+        \textcolor{keywordflow}{case} \hyperlink{nunchuck_8h_a19f4efb3793bd7fd7da3a60339dc4631}{JGAUCHE\_MAX}:
+            \textcolor{comment}{/* Mise à jour des commandes de vol */}
+            \hyperlink{classQBase_a466b6191fec7cd0029dfc547a5437752}{ModuleZigBee}->st\_CommandDrone.cRotZ = -2;    \textcolor{comment}{//Vérifier
+       avec Nabil!!!}
+            \textcolor{keywordflow}{break};
+        \textcolor{keywordflow}{default}:
+            \textcolor{comment}{/* Mise à jour des commandes de vol */}
+            \hyperlink{classQBase_a466b6191fec7cd0029dfc547a5437752}{ModuleZigBee}->st\_CommandDrone.cRotZ = 0;    \textcolor{comment}{//Vérifier
+       avec Nabil!!!}
+            \textcolor{keywordflow}{break};
+        \}
+
+        \textcolor{keywordflow}{switch} (\hyperlink{classQBase_a615289f4d92be86986421ec16182ed90}{NunchuckAltitude}->\hyperlink{classNunchuck_aaf0f299016f5acf686f716518a7ce567}{cJoystickY}) \{
+        \textcolor{keywordflow}{case} \hyperlink{nunchuck_8h_ac63506adba6ed764c5061ac249623554}{JCENTRE}:
+            \textcolor{comment}{/* Mise à jour des commandes de vol */}
+            \hyperlink{classQBase_a466b6191fec7cd0029dfc547a5437752}{ModuleZigBee}->st\_CommandDrone.cTransZ = 0;    \textcolor{comment}{//
+      Vérifier avec Nabil!!!}
+            \textcolor{keywordflow}{break};
+        \textcolor{keywordflow}{case} \hyperlink{nunchuck_8h_a624208e4279eb8508e4d7a4cd1983293}{JHAUT}:
+            \textcolor{comment}{/* Mise à jour des commandes de vol */}
+            \hyperlink{classQBase_a466b6191fec7cd0029dfc547a5437752}{ModuleZigBee}->st\_CommandDrone.cTransZ = 1;    \textcolor{comment}{//
+      Vérifier avec Nabil!!!}
+            \textcolor{keywordflow}{break};
+        \textcolor{keywordflow}{case} \hyperlink{nunchuck_8h_ad9a8fe51b03c91dc0256cc7502d450a3}{JBAS}:
+            \textcolor{comment}{/* Mise à jour des commandes de vol */}
+            \hyperlink{classQBase_a466b6191fec7cd0029dfc547a5437752}{ModuleZigBee}->st\_CommandDrone.cTransZ = -1;    \textcolor{comment}{//
+      Vérifier avec Nabil!!!}
+            \textcolor{keywordflow}{break};
+        \textcolor{keywordflow}{case} \hyperlink{nunchuck_8h_a69c726c7ddc8415a81ea58834356ed2b}{JHAUT\_MAX}:
+            \textcolor{comment}{/* Mise à jour des commandes de vol */}
+            \hyperlink{classQBase_a466b6191fec7cd0029dfc547a5437752}{ModuleZigBee}->st\_CommandDrone.cTransZ = 2;    \textcolor{comment}{//
+      Vérifier avec Nabil!!!}
+            \textcolor{keywordflow}{break};
+        \textcolor{keywordflow}{case} \hyperlink{nunchuck_8h_a8bd0c46505c3f0a7d5bc412d8a56d41a}{JBAS\_MAX}:
+            \textcolor{comment}{/* Mise à jour des commandes de vol */}
+            \hyperlink{classQBase_a466b6191fec7cd0029dfc547a5437752}{ModuleZigBee}->st\_CommandDrone.cTransZ = -2;    \textcolor{comment}{//
+      Vérifier avec Nabil!!!}
+            \textcolor{keywordflow}{break};
+        \textcolor{keywordflow}{default}:
+            \textcolor{comment}{/* Mise à jour des commandes de vol */}
+            \hyperlink{classQBase_a466b6191fec7cd0029dfc547a5437752}{ModuleZigBee}->st\_CommandDrone.cTransZ = 0;    \textcolor{comment}{//
+      Vérifier avec Nabil!!!}
+            \textcolor{keywordflow}{break};
+        \}
+
+        \textcolor{comment}{//if(SET\_CONFIG\_TO\_DRONE) \{}
+            \textcolor{comment}{//OPEN\_WINDOW\_CONFIG AND SEND CONFIG}
+            \textcolor{comment}{//ModuleZigBee->SendConfig();}
+        \textcolor{comment}{//\}}
+        \textcolor{comment}{//else \{}
+            Qtmp.sprintf(\textcolor{stringliteral}{"Time before send : %d\(\backslash\)n"},time.elapsed());
+            f.write(Qtmp.toStdString().c\_str(), Qtmp.length());
+            \hyperlink{classQBase_a466b6191fec7cd0029dfc547a5437752}{ModuleZigBee}->\hyperlink{classZigBee_a6b69e04be626400b5b245fa1b56f0810}{SendCommand}();
+
+        \textcolor{comment}{//\}}
+        Qtmp.sprintf(\textcolor{stringliteral}{"Time before receive : %d\(\backslash\)n"},time.elapsed());
+        f.write(Qtmp.toStdString().c\_str(), Qtmp.length());
+        \textcolor{comment}{//printf("%s\(\backslash\)n",Qtmp.toStdString().c\_str());}
+        \hyperlink{classQBase_a466b6191fec7cd0029dfc547a5437752}{ModuleZigBee}->\hyperlink{classZigBee_a0852f85771d48df17a6256edcd91bece}{receive}();
+        Qtmp.sprintf(\textcolor{stringliteral}{"Time after receive : %d\(\backslash\)n"},time.elapsed());
+        f.write(Qtmp.toStdString().c\_str(), Qtmp.length());
+
+        usleep(50000);\textcolor{comment}{//Pour ralentir le programme...}
+        time.restart();
+
+    \}
+\}
+\end{DoxyCode}
+\hypertarget{classQBase_a53260534a66388d4b958bd017ebd0f32}{\index{Q\-Base@{Q\-Base}!terminate@{terminate}}
+\index{terminate@{terminate}!QBase@{Q\-Base}}
+\subsubsection[{terminate}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-Base\-::terminate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classQBase_a53260534a66388d4b958bd017ebd0f32}
+
+
+Definition at line 214 of file qbase.\-cpp.
+
+
+
+References Horizon, Module\-Zig\-Bee, Nunchuck\-Altitude, and Nunchuck\-Direction.
+
+
+\begin{DoxyCode}
+\{
+    \textcolor{keyword}{delete} \hyperlink{classQBase_a466b6191fec7cd0029dfc547a5437752}{ModuleZigBee};
+    \textcolor{keyword}{delete} \hyperlink{classQBase_aa39545ef1795a91bf18db836cde0640d}{NunchuckDirection};
+    \textcolor{keyword}{delete} \hyperlink{classQBase_a615289f4d92be86986421ec16182ed90}{NunchuckAltitude};
+    \textcolor{keyword}{delete} \hyperlink{classQBase_ae4a8b78621695d9a61c311d422824a8d}{Horizon};
+\}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classQBase_ae4a8b78621695d9a61c311d422824a8d}{\index{Q\-Base@{Q\-Base}!Horizon@{Horizon}}
+\index{Horizon@{Horizon}!QBase@{Q\-Base}}
+\subsubsection[{Horizon}]{\setlength{\rightskip}{0pt plus 5cm}{\bf q\-Attitude\-Indicator}$\ast$ Q\-Base\-::\-Horizon}}\label{classQBase_ae4a8b78621695d9a61c311d422824a8d}
+
+
+Definition at line 19 of file qbase.\-h.
+
+
+
+Referenced by Main\-Window\-::\-Change\-Onglet(), Q\-Base(), run(), and terminate().
+
+\hypertarget{classQBase_a466b6191fec7cd0029dfc547a5437752}{\index{Q\-Base@{Q\-Base}!Module\-Zig\-Bee@{Module\-Zig\-Bee}}
+\index{Module\-Zig\-Bee@{Module\-Zig\-Bee}!QBase@{Q\-Base}}
+\subsubsection[{Module\-Zig\-Bee}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Zig\-Bee}$\ast$ Q\-Base\-::\-Module\-Zig\-Bee}}\label{classQBase_a466b6191fec7cd0029dfc547a5437752}
+
+
+Definition at line 22 of file qbase.\-h.
+
+
+
+Referenced by Q\-Base(), run(), and terminate().
+
+\hypertarget{classQBase_aa75e9465559d8633736c52dae36ce1d0}{\index{Q\-Base@{Q\-Base}!Msg\-Box@{Msg\-Box}}
+\index{Msg\-Box@{Msg\-Box}!QBase@{Q\-Base}}
+\subsubsection[{Msg\-Box}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Message\-Box Q\-Base\-::\-Msg\-Box\hspace{0.3cm}{\ttfamily [private]}}}\label{classQBase_aa75e9465559d8633736c52dae36ce1d0}
+
+
+Definition at line 24 of file qbase.\-h.
+
+
+
+Referenced by Q\-Base().
+
+\hypertarget{classQBase_a615289f4d92be86986421ec16182ed90}{\index{Q\-Base@{Q\-Base}!Nunchuck\-Altitude@{Nunchuck\-Altitude}}
+\index{Nunchuck\-Altitude@{Nunchuck\-Altitude}!QBase@{Q\-Base}}
+\subsubsection[{Nunchuck\-Altitude}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Nunchuck}$\ast$ Q\-Base\-::\-Nunchuck\-Altitude}}\label{classQBase_a615289f4d92be86986421ec16182ed90}
+
+
+Definition at line 21 of file qbase.\-h.
+
+
+
+Referenced by Q\-Base(), run(), and terminate().
+
+\hypertarget{classQBase_aa39545ef1795a91bf18db836cde0640d}{\index{Q\-Base@{Q\-Base}!Nunchuck\-Direction@{Nunchuck\-Direction}}
+\index{Nunchuck\-Direction@{Nunchuck\-Direction}!QBase@{Q\-Base}}
+\subsubsection[{Nunchuck\-Direction}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Nunchuck}$\ast$ Q\-Base\-::\-Nunchuck\-Direction}}\label{classQBase_aa39545ef1795a91bf18db836cde0640d}
+
+
+Definition at line 20 of file qbase.\-h.
+
+
+
+Referenced by Q\-Base(), run(), and terminate().
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{qbase_8h}{qbase.\-h}\item 
+\hyperlink{qbase_8cpp}{qbase.\-cpp}\end{DoxyCompactItemize}

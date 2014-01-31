@@ -10,6 +10,14 @@
 //#include <opencv/cv.h>
 #include </usr/local/include/opencv2/opencv.hpp>
 
+/**
+* \file camerawidget.h
+* \brief Fichier d'inclusion des librairies nécessaires au widget.
+* \author Martin PRADEAU
+* \version Version finale
+* \date Janvier 2014
+*/
+
 class CameraWidget : public QWidget
 {
 

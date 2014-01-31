@@ -1,0 +1,629 @@
+\hypertarget{classqAttitudeIndicator}{\section{q\-Attitude\-Indicator Class Reference}
+\label{classqAttitudeIndicator}\index{q\-Attitude\-Indicator@{q\-Attitude\-Indicator}}
+}
+
+
+{\ttfamily \#include \char`\"{}qattitudeindicator.\-h\char`\"{}}
+
+
+
+Collaboration diagram for q\-Attitude\-Indicator\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{classqAttitudeIndicator__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classqAttitudeIndicator_abe94ed4d04dc448478a7ba19b42790b4}{q\-Attitude\-Indicator} (Q\-Widget $\ast$parent=0)
+\item 
+\hyperlink{classqAttitudeIndicator_a94754ebda94552125ff33481abe5a0ac}{$\sim$q\-Attitude\-Indicator} ()
+\item 
+void \hyperlink{classqAttitudeIndicator_a68de255908b787293310a088ef47c49b}{set\-Roll} (qreal val)
+\item 
+void \hyperlink{classqAttitudeIndicator_a5d8bcc03d0ba08c1494b0a32f56de91c}{set\-Pitch} (qreal val)
+\item 
+qreal \hyperlink{classqAttitudeIndicator_a6073499d7c349663f04dfef0b3788087}{get\-Roll} ()
+\item 
+qreal \hyperlink{classqAttitudeIndicator_a73dd028c85bba14faaca24b321b077f8}{get\-Pitch} ()
+\item 
+void \hyperlink{classqAttitudeIndicator_a7d4e7b19bc493de63a91b0e0480c24e2}{do\-Horizon} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+qreal \hyperlink{classqAttitudeIndicator_a10c98e2fd9195050cb305f4b12bf75bb}{roll}
+\item 
+qreal \hyperlink{classqAttitudeIndicator_ae0df6492b15cc2d3f51c3de0e6dd08bd}{pitch}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classqAttitudeIndicator_ab78d82e32c6f34dd246ef0deeda82400}{paint\-Event} (Q\-Paint\-Event $\ast$event)
+\item 
+void \hyperlink{classqAttitudeIndicator_aa37745feddf31f9ce553156ce51732bd}{resize\-Event} (Q\-Resize\-Event $\ast$event)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classqAttitudeIndicator_aaeaa7be50092cbfbf9b666ef5bc9aa4a}{get\-Roll\-Line} (\hyperlink{qattitudeindicator_8h_a343e47e8a321f67b38cb4522cb218c94}{E\-N\-\_\-\-T\-Y\-P\-E\-S\-\_\-\-A\-T\-T\-I\-T\-U\-D\-E} type, Q\-Point $\ast$p\-From, Q\-Point $\ast$p\-To)
+\item 
+void \hyperlink{classqAttitudeIndicator_a39c3505cf7817552213bf03c22b12bf7}{get\-Pitch\-Line} (\hyperlink{qattitudeindicator_8h_a343e47e8a321f67b38cb4522cb218c94}{E\-N\-\_\-\-T\-Y\-P\-E\-S\-\_\-\-A\-T\-T\-I\-T\-U\-D\-E} type, quint32 index, Q\-Point $\ast$p\-From, Q\-Point $\ast$p\-To)
+\item 
+void \hyperlink{classqAttitudeIndicator_a538e6a904f2a6521e21946541c23f596}{init\-Target\-Char} ()
+\item 
+void \hyperlink{classqAttitudeIndicator_a7589132ed175b095b8867881e99d26ab}{resize\-Target\-Char} ()
+\item 
+void \hyperlink{classqAttitudeIndicator_a4d477951cd83bf863eca1a395b092727}{init\-Roll\-Char} ()
+\item 
+void \hyperlink{classqAttitudeIndicator_a4367f3d4ba77c4dafcbbb99d23f00b58}{resize\-Roll\-Char} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classqAttitudeIndicator_a0d7a73e4ee536cda1a005f626ef3935f}{size}
+\item 
+Q\-Point \hyperlink{classqAttitudeIndicator_a739d71cc4dfba5d2fbb23186372c4fd4}{roll\-Point} \mbox{[}\hyperlink{qattitudeindicator_8h_a533fb9cffe544953a1e34ef3ca40cd9aae68d533445c770721902ff44425e6cda}{numb\-Roll\-Line}\mbox{]}\mbox{[}2\mbox{]}
+\item 
+qreal \hyperlink{classqAttitudeIndicator_afa3060f26300228565f05c0200d553c2}{roll\-Rotate} \mbox{[}\hyperlink{qattitudeindicator_8h_a533fb9cffe544953a1e34ef3ca40cd9aae68d533445c770721902ff44425e6cda}{numb\-Roll\-Line}\mbox{]}
+\item 
+Q\-Point \hyperlink{classqAttitudeIndicator_a715b6a95898985f0f52ec6bf18010c9e}{pitch\-Point} \mbox{[}\hyperlink{qattitudeindicator_8h_a533fb9cffe544953a1e34ef3ca40cd9aaf86b1d616737ab90eedf9d904603bbc7}{numb\-Pitch\-Line}\mbox{]}\mbox{[}2\mbox{]}
+\item 
+Q\-Vector$<$ Q\-Line $>$ \hyperlink{classqAttitudeIndicator_a7f5a24dd1bf00a9e81d2aeb0ac83359e}{target}
+\item 
+Q\-Vector$<$ Q\-Line $>$ \hyperlink{classqAttitudeIndicator_ac5ace954b2f7b2d88aeae586a1246c30}{roll\-Pointer}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 23 of file qattitudeindicator.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classqAttitudeIndicator_abe94ed4d04dc448478a7ba19b42790b4}{\index{q\-Attitude\-Indicator@{q\-Attitude\-Indicator}!q\-Attitude\-Indicator@{q\-Attitude\-Indicator}}
+\index{q\-Attitude\-Indicator@{q\-Attitude\-Indicator}!qAttitudeIndicator@{q\-Attitude\-Indicator}}
+\subsubsection[{q\-Attitude\-Indicator}]{\setlength{\rightskip}{0pt plus 5cm}q\-Attitude\-Indicator\-::q\-Attitude\-Indicator (
+\begin{DoxyParamCaption}
+\item[{Q\-Widget $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{classqAttitudeIndicator_abe94ed4d04dc448478a7ba19b42790b4}
+
+
+Definition at line 17 of file qattitudeindicator.\-cpp.
+
+
+
+References defaults\-Roll\-Rotate, defaults\-Type\-Pitch, defaults\-Type\-Roll, get\-Pitch\-Line(), get\-Roll\-Line(), init\-Roll\-Char(), init\-Target\-Char(), numb\-Pitch\-Line, numb\-Roll\-Line, pitch, pitch\-Point, roll, roll\-Point, roll\-Rotate, size, size\-Max, and size\-Min.
+
+
+\begin{DoxyCode}
+    : QWidget(parent)
+\{
+    \textcolor{comment}{//QTimer *timer = new QTimer(this);}
+    \textcolor{comment}{//connect(timer, SIGNAL(timeout()), this, SLOT(update()));}
+    \textcolor{comment}{//connect(timer, SIGNAL(timeout()), this, SLOT(nunchuckEvent()));}
+    \textcolor{comment}{//timer->start(50);}
+    \textcolor{comment}{//startTimer(50);}
+
+    \hyperlink{classqAttitudeIndicator_a0d7a73e4ee536cda1a005f626ef3935f}{size} = \hyperlink{qattitudeindicator_8h_a533fb9cffe544953a1e34ef3ca40cd9aa467c2cfbbeb81431d3520b2a334cbec1}{sizeMin};
+    setMinimumSize(\hyperlink{qattitudeindicator_8h_a533fb9cffe544953a1e34ef3ca40cd9aa467c2cfbbeb81431d3520b2a334cbec1}{sizeMin},\hyperlink{qattitudeindicator_8h_a533fb9cffe544953a1e34ef3ca40cd9aa467c2cfbbeb81431d3520b2a334cbec1}{sizeMin});
+    setMaximumSize(\hyperlink{qattitudeindicator_8h_a533fb9cffe544953a1e34ef3ca40cd9aa7c4896a6b7e0383b6dc1e1186a186c09}{sizeMax},\hyperlink{qattitudeindicator_8h_a533fb9cffe544953a1e34ef3ca40cd9aa7c4896a6b7e0383b6dc1e1186a186c09}{sizeMax});
+    resize(\hyperlink{classqAttitudeIndicator_a0d7a73e4ee536cda1a005f626ef3935f}{size}, \hyperlink{classqAttitudeIndicator_a0d7a73e4ee536cda1a005f626ef3935f}{size});
+
+    \textcolor{comment}{// from 0 degrees;}
+    \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0;i < \hyperlink{qattitudeindicator_8h_a533fb9cffe544953a1e34ef3ca40cd9aae68d533445c770721902ff44425e6cda}{numbRollLine};i++)
+    \{
+        \hyperlink{classqAttitudeIndicator_afa3060f26300228565f05c0200d553c2}{rollRotate}[i] = \hyperlink{qattitudeindicator_8cpp_a2f4f279d4d5470569f9b4d6db0e913c3}{defaultsRollRotate}[i];
+        \hyperlink{classqAttitudeIndicator_aaeaa7be50092cbfbf9b666ef5bc9aa4a}{getRollLine}(\hyperlink{qattitudeindicator_8cpp_a3e866b9c9b8bde50fd68030b49604a15}{defaultsTypeRoll}[i],&\hyperlink{classqAttitudeIndicator_a739d71cc4dfba5d2fbb23186372c4fd4}{rollPoint}
+      [i][0],&\hyperlink{classqAttitudeIndicator_a739d71cc4dfba5d2fbb23186372c4fd4}{rollPoint}[i][1]);
+    \}
+    \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0;i< \hyperlink{qattitudeindicator_8h_a533fb9cffe544953a1e34ef3ca40cd9aaf86b1d616737ab90eedf9d904603bbc7}{numbPitchLine};i++)
+        \hyperlink{classqAttitudeIndicator_a39c3505cf7817552213bf03c22b12bf7}{getPitchLine}(\hyperlink{qattitudeindicator_8cpp_aeb622d2485fb495e7b9864ca595af136}{defaultsTypePitch}[i],i,&
+      \hyperlink{classqAttitudeIndicator_a715b6a95898985f0f52ec6bf18010c9e}{pitchPoint}[i][0],&\hyperlink{classqAttitudeIndicator_a715b6a95898985f0f52ec6bf18010c9e}{pitchPoint}[i][1]);
+
+    \hyperlink{classqAttitudeIndicator_a538e6a904f2a6521e21946541c23f596}{initTargetChar}();
+    \hyperlink{classqAttitudeIndicator_a4d477951cd83bf863eca1a395b092727}{initRollChar}();
+    \hyperlink{classqAttitudeIndicator_a10c98e2fd9195050cb305f4b12bf75bb}{roll} = 0.0;
+    \hyperlink{classqAttitudeIndicator_ae0df6492b15cc2d3f51c3de0e6dd08bd}{pitch} = 0.0;
+
+    \textcolor{comment}{//wiiTest = new Nunchuck(PARAM\_DRONE);}
+\}
+\end{DoxyCode}
+\hypertarget{classqAttitudeIndicator_a94754ebda94552125ff33481abe5a0ac}{\index{q\-Attitude\-Indicator@{q\-Attitude\-Indicator}!$\sim$q\-Attitude\-Indicator@{$\sim$q\-Attitude\-Indicator}}
+\index{$\sim$q\-Attitude\-Indicator@{$\sim$q\-Attitude\-Indicator}!qAttitudeIndicator@{q\-Attitude\-Indicator}}
+\subsubsection[{$\sim$q\-Attitude\-Indicator}]{\setlength{\rightskip}{0pt plus 5cm}q\-Attitude\-Indicator\-::$\sim$q\-Attitude\-Indicator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classqAttitudeIndicator_a94754ebda94552125ff33481abe5a0ac}
+
+
+Definition at line 48 of file qattitudeindicator.\-cpp.
+
+
+\begin{DoxyCode}
+\{
+    \textcolor{comment}{//delete wiiTest;}
+\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classqAttitudeIndicator_a7d4e7b19bc493de63a91b0e0480c24e2}{\index{q\-Attitude\-Indicator@{q\-Attitude\-Indicator}!do\-Horizon@{do\-Horizon}}
+\index{do\-Horizon@{do\-Horizon}!qAttitudeIndicator@{q\-Attitude\-Indicator}}
+\subsubsection[{do\-Horizon}]{\setlength{\rightskip}{0pt plus 5cm}void q\-Attitude\-Indicator\-::do\-Horizon (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classqAttitudeIndicator_a7d4e7b19bc493de63a91b0e0480c24e2}
+
+
+Definition at line 121 of file qattitudeindicator.\-cpp.
+
+
+
+Referenced by Q\-Th\-\_\-\-Base\-::run(), and Q\-Base\-::run().
+
+
+\begin{DoxyCode}
+\{
+    update();
+\}
+\end{DoxyCode}
+\hypertarget{classqAttitudeIndicator_a73dd028c85bba14faaca24b321b077f8}{\index{q\-Attitude\-Indicator@{q\-Attitude\-Indicator}!get\-Pitch@{get\-Pitch}}
+\index{get\-Pitch@{get\-Pitch}!qAttitudeIndicator@{q\-Attitude\-Indicator}}
+\subsubsection[{get\-Pitch}]{\setlength{\rightskip}{0pt plus 5cm}qreal q\-Attitude\-Indicator\-::get\-Pitch (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classqAttitudeIndicator_a73dd028c85bba14faaca24b321b077f8}
+
+
+Definition at line 33 of file qattitudeindicator.\-h.
+
+
+
+References pitch.
+
+
+\begin{DoxyCode}
+\{\textcolor{keywordflow}{return} \hyperlink{classqAttitudeIndicator_ae0df6492b15cc2d3f51c3de0e6dd08bd}{pitch};\}
+\end{DoxyCode}
+\hypertarget{classqAttitudeIndicator_a39c3505cf7817552213bf03c22b12bf7}{\index{q\-Attitude\-Indicator@{q\-Attitude\-Indicator}!get\-Pitch\-Line@{get\-Pitch\-Line}}
+\index{get\-Pitch\-Line@{get\-Pitch\-Line}!qAttitudeIndicator@{q\-Attitude\-Indicator}}
+\subsubsection[{get\-Pitch\-Line}]{\setlength{\rightskip}{0pt plus 5cm}void q\-Attitude\-Indicator\-::get\-Pitch\-Line (
+\begin{DoxyParamCaption}
+\item[{{\bf E\-N\-\_\-\-T\-Y\-P\-E\-S\-\_\-\-A\-T\-T\-I\-T\-U\-D\-E}}]{type, }
+\item[{quint32}]{index, }
+\item[{Q\-Point $\ast$}]{p\-From, }
+\item[{Q\-Point $\ast$}]{p\-To}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classqAttitudeIndicator_a39c3505cf7817552213bf03c22b12bf7}
+
+
+Definition at line 98 of file qattitudeindicator.\-cpp.
+
+
+
+References size, and small\-Pitch\-Line.
+
+
+
+Referenced by q\-Attitude\-Indicator(), and resize\-Event().
+
+
+\begin{DoxyCode}
+\{
+    \textcolor{keywordtype}{int} x,y;
+    \textcolor{keywordflow}{if}(index>=4) index++;
+    y = \hyperlink{classqAttitudeIndicator_a0d7a73e4ee536cda1a005f626ef3935f}{size}*(0.25-index*0.0625);
+    x = (type==\hyperlink{qattitudeindicator_8h_a9e6157b3f1ec4c2db1f8a664f6347784a27d8d9b85932b52acefebc1edaebac45}{smallPitchLine})? (3*\hyperlink{classqAttitudeIndicator_a0d7a73e4ee536cda1a005f626ef3935f}{size}/32):(5*\hyperlink{classqAttitudeIndicator_a0d7a73e4ee536cda1a005f626ef3935f}{size}/32);
+    pFrom->setX(-x);
+    pFrom->setY(y);
+    pTo->setX(x);
+    pTo->setY(y);
+\}
+\end{DoxyCode}
+\hypertarget{classqAttitudeIndicator_a6073499d7c349663f04dfef0b3788087}{\index{q\-Attitude\-Indicator@{q\-Attitude\-Indicator}!get\-Roll@{get\-Roll}}
+\index{get\-Roll@{get\-Roll}!qAttitudeIndicator@{q\-Attitude\-Indicator}}
+\subsubsection[{get\-Roll}]{\setlength{\rightskip}{0pt plus 5cm}qreal q\-Attitude\-Indicator\-::get\-Roll (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classqAttitudeIndicator_a6073499d7c349663f04dfef0b3788087}
+
+
+Definition at line 32 of file qattitudeindicator.\-h.
+
+
+
+References roll.
+
+
+\begin{DoxyCode}
+\{\textcolor{keywordflow}{return} \hyperlink{classqAttitudeIndicator_a10c98e2fd9195050cb305f4b12bf75bb}{roll};\}
+\end{DoxyCode}
+\hypertarget{classqAttitudeIndicator_aaeaa7be50092cbfbf9b666ef5bc9aa4a}{\index{q\-Attitude\-Indicator@{q\-Attitude\-Indicator}!get\-Roll\-Line@{get\-Roll\-Line}}
+\index{get\-Roll\-Line@{get\-Roll\-Line}!qAttitudeIndicator@{q\-Attitude\-Indicator}}
+\subsubsection[{get\-Roll\-Line}]{\setlength{\rightskip}{0pt plus 5cm}void q\-Attitude\-Indicator\-::get\-Roll\-Line (
+\begin{DoxyParamCaption}
+\item[{{\bf E\-N\-\_\-\-T\-Y\-P\-E\-S\-\_\-\-A\-T\-T\-I\-T\-U\-D\-E}}]{type, }
+\item[{Q\-Point $\ast$}]{p\-From, }
+\item[{Q\-Point $\ast$}]{p\-To}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classqAttitudeIndicator_aaeaa7be50092cbfbf9b666ef5bc9aa4a}
+
+
+Definition at line 89 of file qattitudeindicator.\-cpp.
+
+
+
+References size, and small\-Roll\-Line.
+
+
+
+Referenced by q\-Attitude\-Indicator(), and resize\-Event().
+
+
+\begin{DoxyCode}
+\{
+    quint8 ofs = (type == \hyperlink{qattitudeindicator_8h_a9e6157b3f1ec4c2db1f8a664f6347784a24e88cb96dabfbd43afd71b24529147a}{smallRollLine})? (\hyperlink{classqAttitudeIndicator_a0d7a73e4ee536cda1a005f626ef3935f}{size}/40) : (\hyperlink{classqAttitudeIndicator_a0d7a73e4ee536cda1a005f626ef3935f}{size}
+      /20) ;
+    pFrom->setY(\hyperlink{classqAttitudeIndicator_a0d7a73e4ee536cda1a005f626ef3935f}{size}/2-ofs);
+    pFrom->setX(0);
+    pTo->setY(\hyperlink{classqAttitudeIndicator_a0d7a73e4ee536cda1a005f626ef3935f}{size}/2);
+    pTo->setX(0);
+\}
+\end{DoxyCode}
+\hypertarget{classqAttitudeIndicator_a4d477951cd83bf863eca1a395b092727}{\index{q\-Attitude\-Indicator@{q\-Attitude\-Indicator}!init\-Roll\-Char@{init\-Roll\-Char}}
+\index{init\-Roll\-Char@{init\-Roll\-Char}!qAttitudeIndicator@{q\-Attitude\-Indicator}}
+\subsubsection[{init\-Roll\-Char}]{\setlength{\rightskip}{0pt plus 5cm}void q\-Attitude\-Indicator\-::init\-Roll\-Char (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classqAttitudeIndicator_a4d477951cd83bf863eca1a395b092727}
+
+
+Definition at line 72 of file qattitudeindicator.\-cpp.
+
+
+
+References size, and target.
+
+
+
+Referenced by q\-Attitude\-Indicator(), and resize\-Roll\-Char().
+
+
+\begin{DoxyCode}
+\{
+    QLine line;
+    line.setLine(-\hyperlink{classqAttitudeIndicator_a0d7a73e4ee536cda1a005f626ef3935f}{size}/32,14*\hyperlink{classqAttitudeIndicator_a0d7a73e4ee536cda1a005f626ef3935f}{size}/32,0,15*\hyperlink{classqAttitudeIndicator_a0d7a73e4ee536cda1a005f626ef3935f}{size}/32);
+    \hyperlink{classqAttitudeIndicator_a7f5a24dd1bf00a9e81d2aeb0ac83359e}{target}.append(line);
+    line.setLine(0,15*\hyperlink{classqAttitudeIndicator_a0d7a73e4ee536cda1a005f626ef3935f}{size}/32,\hyperlink{classqAttitudeIndicator_a0d7a73e4ee536cda1a005f626ef3935f}{size}/32,14*\hyperlink{classqAttitudeIndicator_a0d7a73e4ee536cda1a005f626ef3935f}{size}/32);
+    \hyperlink{classqAttitudeIndicator_a7f5a24dd1bf00a9e81d2aeb0ac83359e}{target}.append(line);
+    line.setLine(\hyperlink{classqAttitudeIndicator_a0d7a73e4ee536cda1a005f626ef3935f}{size}/32,14*\hyperlink{classqAttitudeIndicator_a0d7a73e4ee536cda1a005f626ef3935f}{size}/32,-\hyperlink{classqAttitudeIndicator_a0d7a73e4ee536cda1a005f626ef3935f}{size}/32,14*\hyperlink{classqAttitudeIndicator_a0d7a73e4ee536cda1a005f626ef3935f}{size}/32);
+    \hyperlink{classqAttitudeIndicator_a7f5a24dd1bf00a9e81d2aeb0ac83359e}{target}.append(line);
+\}
+\end{DoxyCode}
+\hypertarget{classqAttitudeIndicator_a538e6a904f2a6521e21946541c23f596}{\index{q\-Attitude\-Indicator@{q\-Attitude\-Indicator}!init\-Target\-Char@{init\-Target\-Char}}
+\index{init\-Target\-Char@{init\-Target\-Char}!qAttitudeIndicator@{q\-Attitude\-Indicator}}
+\subsubsection[{init\-Target\-Char}]{\setlength{\rightskip}{0pt plus 5cm}void q\-Attitude\-Indicator\-::init\-Target\-Char (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classqAttitudeIndicator_a538e6a904f2a6521e21946541c23f596}
+
+
+Definition at line 53 of file qattitudeindicator.\-cpp.
+
+
+
+References size, and target.
+
+
+
+Referenced by q\-Attitude\-Indicator(), and resize\-Target\-Char().
+
+
+\begin{DoxyCode}
+\{
+    QLine line;
+    line.setLine(-\hyperlink{classqAttitudeIndicator_a0d7a73e4ee536cda1a005f626ef3935f}{size}/4,0,-\hyperlink{classqAttitudeIndicator_a0d7a73e4ee536cda1a005f626ef3935f}{size}/16,0);
+    \hyperlink{classqAttitudeIndicator_a7f5a24dd1bf00a9e81d2aeb0ac83359e}{target}.append(line);
+    line.setLine(-\hyperlink{classqAttitudeIndicator_a0d7a73e4ee536cda1a005f626ef3935f}{size}/16,0,0,-\hyperlink{classqAttitudeIndicator_a0d7a73e4ee536cda1a005f626ef3935f}{size}/32);
+    \hyperlink{classqAttitudeIndicator_a7f5a24dd1bf00a9e81d2aeb0ac83359e}{target}.append(line);
+    line.setLine(0,-\hyperlink{classqAttitudeIndicator_a0d7a73e4ee536cda1a005f626ef3935f}{size}/32,\hyperlink{classqAttitudeIndicator_a0d7a73e4ee536cda1a005f626ef3935f}{size}/16,0);
+    \hyperlink{classqAttitudeIndicator_a7f5a24dd1bf00a9e81d2aeb0ac83359e}{target}.append(line);
+    line.setLine(\hyperlink{classqAttitudeIndicator_a0d7a73e4ee536cda1a005f626ef3935f}{size}/16,0,\hyperlink{classqAttitudeIndicator_a0d7a73e4ee536cda1a005f626ef3935f}{size}/4,0);
+    \hyperlink{classqAttitudeIndicator_a7f5a24dd1bf00a9e81d2aeb0ac83359e}{target}.append(line);
+\}
+\end{DoxyCode}
+\hypertarget{classqAttitudeIndicator_ab78d82e32c6f34dd246ef0deeda82400}{\index{q\-Attitude\-Indicator@{q\-Attitude\-Indicator}!paint\-Event@{paint\-Event}}
+\index{paint\-Event@{paint\-Event}!qAttitudeIndicator@{q\-Attitude\-Indicator}}
+\subsubsection[{paint\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void q\-Attitude\-Indicator\-::paint\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Paint\-Event $\ast$}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classqAttitudeIndicator_ab78d82e32c6f34dd246ef0deeda82400}
+
+
+Definition at line 126 of file qattitudeindicator.\-cpp.
+
+
+
+References numb\-Pitch\-Line, numb\-Roll\-Line, pitch, pitch\-Point, roll, roll\-Point, roll\-Pointer, roll\-Rotate, size, and target.
+
+
+\begin{DoxyCode}
+\{
+    QPainter painter(\textcolor{keyword}{this});
+    QPoint center(0,0);
+    QPen whitePen(Qt::white);
+    QPen blackPen(Qt::black);
+    QBrush bgSky(QColor(48,172,220));
+    QBrush bgGround(QColor(247,168,21));
+    whitePen.setWidth(2);
+    blackPen.setWidth(1);
+    painter.setRenderHint(QPainter::Antialiasing);
+    painter.translate(width() / 2, height() / 2);
+    \textcolor{keywordtype}{int} side = qMin(width(), height());
+    painter.scale(side / (qreal)(\hyperlink{classqAttitudeIndicator_a0d7a73e4ee536cda1a005f626ef3935f}{size}), side / (qreal)(\hyperlink{classqAttitudeIndicator_a0d7a73e4ee536cda1a005f626ef3935f}{size}));
+    painter.setPen(blackPen);
+    painter.rotate(\hyperlink{classqAttitudeIndicator_a10c98e2fd9195050cb305f4b12bf75bb}{roll});
+    painter.setBrush(bgSky);
+
+    \textcolor{keywordtype}{int} y = 0.25*\hyperlink{classqAttitudeIndicator_a0d7a73e4ee536cda1a005f626ef3935f}{size}*\hyperlink{classqAttitudeIndicator_ae0df6492b15cc2d3f51c3de0e6dd08bd}{pitch}/20.;
+
+    \textcolor{keywordtype}{int} x = sqrt(\hyperlink{classqAttitudeIndicator_a0d7a73e4ee536cda1a005f626ef3935f}{size}*\hyperlink{classqAttitudeIndicator_a0d7a73e4ee536cda1a005f626ef3935f}{size}/4 - y*y);
+    qreal gr = atan((\textcolor{keywordtype}{double})(y)/x);
+    gr = gr * 180./3.1415926;
+    painter.drawChord(-side/2,-side/2,side,side,gr*16,(180-2*gr)*16);
+    painter.setBrush(bgGround);
+    painter.drawChord(-side/2,-side/2,side,side,gr*16,-(180+2*gr)*16);
+    painter.setPen(whitePen);
+
+    painter.drawLine(-x,-y,x,-y);
+    painter.setPen(blackPen);
+    painter.rotate(-180.);
+    \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0;i<\hyperlink{qattitudeindicator_8h_a533fb9cffe544953a1e34ef3ca40cd9aae68d533445c770721902ff44425e6cda}{numbRollLine};i++)
+    \{
+        painter.rotate(\hyperlink{classqAttitudeIndicator_afa3060f26300228565f05c0200d553c2}{rollRotate}[i]);
+        painter.drawLine(\hyperlink{classqAttitudeIndicator_a739d71cc4dfba5d2fbb23186372c4fd4}{rollPoint}[i][0],\hyperlink{classqAttitudeIndicator_a739d71cc4dfba5d2fbb23186372c4fd4}{rollPoint}[i][1]);
+    \}
+    whitePen.setWidth(1);
+    painter.setPen(whitePen);
+    painter.rotate(-90.);
+    \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0;i<\hyperlink{qattitudeindicator_8h_a533fb9cffe544953a1e34ef3ca40cd9aaf86b1d616737ab90eedf9d904603bbc7}{numbPitchLine};i++)
+    \{
+        painter.drawLine(\hyperlink{classqAttitudeIndicator_a715b6a95898985f0f52ec6bf18010c9e}{pitchPoint}[i][0],\hyperlink{classqAttitudeIndicator_a715b6a95898985f0f52ec6bf18010c9e}{pitchPoint}[i][1])
+      ;
+    \}
+    painter.rotate(-\hyperlink{classqAttitudeIndicator_a10c98e2fd9195050cb305f4b12bf75bb}{roll});
+    blackPen.setWidth(3);
+    painter.setPen(blackPen);
+    painter.drawLines(\hyperlink{classqAttitudeIndicator_a7f5a24dd1bf00a9e81d2aeb0ac83359e}{target});
+    painter.drawLines(\hyperlink{classqAttitudeIndicator_ac5ace954b2f7b2d88aeae586a1246c30}{rollPointer});
+\}
+\end{DoxyCode}
+\hypertarget{classqAttitudeIndicator_aa37745feddf31f9ce553156ce51732bd}{\index{q\-Attitude\-Indicator@{q\-Attitude\-Indicator}!resize\-Event@{resize\-Event}}
+\index{resize\-Event@{resize\-Event}!qAttitudeIndicator@{q\-Attitude\-Indicator}}
+\subsubsection[{resize\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void q\-Attitude\-Indicator\-::resize\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Resize\-Event $\ast$}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classqAttitudeIndicator_aa37745feddf31f9ce553156ce51732bd}
+
+
+Definition at line 110 of file qattitudeindicator.\-cpp.
+
+
+
+References defaults\-Type\-Pitch, defaults\-Type\-Roll, get\-Pitch\-Line(), get\-Roll\-Line(), numb\-Pitch\-Line, numb\-Roll\-Line, pitch\-Point, resize\-Roll\-Char(), resize\-Target\-Char(), roll\-Point, and size.
+
+
+\begin{DoxyCode}
+\{
+    \hyperlink{classqAttitudeIndicator_a0d7a73e4ee536cda1a005f626ef3935f}{size} = qMin(width(),height());
+    \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0;i < \hyperlink{qattitudeindicator_8h_a533fb9cffe544953a1e34ef3ca40cd9aae68d533445c770721902ff44425e6cda}{numbRollLine};i++)
+        \hyperlink{classqAttitudeIndicator_aaeaa7be50092cbfbf9b666ef5bc9aa4a}{getRollLine}(\hyperlink{qattitudeindicator_8cpp_a3e866b9c9b8bde50fd68030b49604a15}{defaultsTypeRoll}[i],&\hyperlink{classqAttitudeIndicator_a739d71cc4dfba5d2fbb23186372c4fd4}{rollPoint}
+      [i][0],&\hyperlink{classqAttitudeIndicator_a739d71cc4dfba5d2fbb23186372c4fd4}{rollPoint}[i][1]);
+    \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0;i< \hyperlink{qattitudeindicator_8h_a533fb9cffe544953a1e34ef3ca40cd9aaf86b1d616737ab90eedf9d904603bbc7}{numbPitchLine};i++)
+        \hyperlink{classqAttitudeIndicator_a39c3505cf7817552213bf03c22b12bf7}{getPitchLine}(\hyperlink{qattitudeindicator_8cpp_aeb622d2485fb495e7b9864ca595af136}{defaultsTypePitch}[i],i,&
+      \hyperlink{classqAttitudeIndicator_a715b6a95898985f0f52ec6bf18010c9e}{pitchPoint}[i][0],&\hyperlink{classqAttitudeIndicator_a715b6a95898985f0f52ec6bf18010c9e}{pitchPoint}[i][1]);
+    \hyperlink{classqAttitudeIndicator_a7589132ed175b095b8867881e99d26ab}{resizeTargetChar}();
+    \hyperlink{classqAttitudeIndicator_a4367f3d4ba77c4dafcbbb99d23f00b58}{resizeRollChar}();
+\}
+\end{DoxyCode}
+\hypertarget{classqAttitudeIndicator_a4367f3d4ba77c4dafcbbb99d23f00b58}{\index{q\-Attitude\-Indicator@{q\-Attitude\-Indicator}!resize\-Roll\-Char@{resize\-Roll\-Char}}
+\index{resize\-Roll\-Char@{resize\-Roll\-Char}!qAttitudeIndicator@{q\-Attitude\-Indicator}}
+\subsubsection[{resize\-Roll\-Char}]{\setlength{\rightskip}{0pt plus 5cm}void q\-Attitude\-Indicator\-::resize\-Roll\-Char (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classqAttitudeIndicator_a4367f3d4ba77c4dafcbbb99d23f00b58}
+
+
+Definition at line 83 of file qattitudeindicator.\-cpp.
+
+
+
+References init\-Roll\-Char(), and roll\-Pointer.
+
+
+
+Referenced by resize\-Event().
+
+
+\begin{DoxyCode}
+\{
+    \hyperlink{classqAttitudeIndicator_ac5ace954b2f7b2d88aeae586a1246c30}{rollPointer}.clear();
+    \hyperlink{classqAttitudeIndicator_a4d477951cd83bf863eca1a395b092727}{initRollChar}();
+\}
+\end{DoxyCode}
+\hypertarget{classqAttitudeIndicator_a7589132ed175b095b8867881e99d26ab}{\index{q\-Attitude\-Indicator@{q\-Attitude\-Indicator}!resize\-Target\-Char@{resize\-Target\-Char}}
+\index{resize\-Target\-Char@{resize\-Target\-Char}!qAttitudeIndicator@{q\-Attitude\-Indicator}}
+\subsubsection[{resize\-Target\-Char}]{\setlength{\rightskip}{0pt plus 5cm}void q\-Attitude\-Indicator\-::resize\-Target\-Char (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classqAttitudeIndicator_a7589132ed175b095b8867881e99d26ab}
+
+
+Definition at line 66 of file qattitudeindicator.\-cpp.
+
+
+
+References init\-Target\-Char(), and target.
+
+
+
+Referenced by resize\-Event().
+
+
+\begin{DoxyCode}
+\{
+    \hyperlink{classqAttitudeIndicator_a7f5a24dd1bf00a9e81d2aeb0ac83359e}{target}.clear();
+    \hyperlink{classqAttitudeIndicator_a538e6a904f2a6521e21946541c23f596}{initTargetChar}();
+\}
+\end{DoxyCode}
+\hypertarget{classqAttitudeIndicator_a5d8bcc03d0ba08c1494b0a32f56de91c}{\index{q\-Attitude\-Indicator@{q\-Attitude\-Indicator}!set\-Pitch@{set\-Pitch}}
+\index{set\-Pitch@{set\-Pitch}!qAttitudeIndicator@{q\-Attitude\-Indicator}}
+\subsubsection[{set\-Pitch}]{\setlength{\rightskip}{0pt plus 5cm}void q\-Attitude\-Indicator\-::set\-Pitch (
+\begin{DoxyParamCaption}
+\item[{qreal}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classqAttitudeIndicator_a5d8bcc03d0ba08c1494b0a32f56de91c}
+
+
+Definition at line 31 of file qattitudeindicator.\-h.
+
+
+
+References pitch.
+
+
+\begin{DoxyCode}
+\{\hyperlink{classqAttitudeIndicator_ae0df6492b15cc2d3f51c3de0e6dd08bd}{pitch} = val;\}
+\end{DoxyCode}
+\hypertarget{classqAttitudeIndicator_a68de255908b787293310a088ef47c49b}{\index{q\-Attitude\-Indicator@{q\-Attitude\-Indicator}!set\-Roll@{set\-Roll}}
+\index{set\-Roll@{set\-Roll}!qAttitudeIndicator@{q\-Attitude\-Indicator}}
+\subsubsection[{set\-Roll}]{\setlength{\rightskip}{0pt plus 5cm}void q\-Attitude\-Indicator\-::set\-Roll (
+\begin{DoxyParamCaption}
+\item[{qreal}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classqAttitudeIndicator_a68de255908b787293310a088ef47c49b}
+
+
+Definition at line 30 of file qattitudeindicator.\-h.
+
+
+
+References roll.
+
+
+\begin{DoxyCode}
+\{\hyperlink{classqAttitudeIndicator_a10c98e2fd9195050cb305f4b12bf75bb}{roll}  = val;\}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classqAttitudeIndicator_ae0df6492b15cc2d3f51c3de0e6dd08bd}{\index{q\-Attitude\-Indicator@{q\-Attitude\-Indicator}!pitch@{pitch}}
+\index{pitch@{pitch}!qAttitudeIndicator@{q\-Attitude\-Indicator}}
+\subsubsection[{pitch}]{\setlength{\rightskip}{0pt plus 5cm}qreal q\-Attitude\-Indicator\-::pitch}}\label{classqAttitudeIndicator_ae0df6492b15cc2d3f51c3de0e6dd08bd}
+
+
+Definition at line 39 of file qattitudeindicator.\-h.
+
+
+
+Referenced by get\-Pitch(), paint\-Event(), q\-Attitude\-Indicator(), Q\-Base\-::run(), and set\-Pitch().
+
+\hypertarget{classqAttitudeIndicator_a715b6a95898985f0f52ec6bf18010c9e}{\index{q\-Attitude\-Indicator@{q\-Attitude\-Indicator}!pitch\-Point@{pitch\-Point}}
+\index{pitch\-Point@{pitch\-Point}!qAttitudeIndicator@{q\-Attitude\-Indicator}}
+\subsubsection[{pitch\-Point}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Point q\-Attitude\-Indicator\-::pitch\-Point\mbox{[}{\bf numb\-Pitch\-Line}\mbox{]}\mbox{[}2\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}}\label{classqAttitudeIndicator_a715b6a95898985f0f52ec6bf18010c9e}
+
+
+Definition at line 57 of file qattitudeindicator.\-h.
+
+
+
+Referenced by paint\-Event(), q\-Attitude\-Indicator(), and resize\-Event().
+
+\hypertarget{classqAttitudeIndicator_a10c98e2fd9195050cb305f4b12bf75bb}{\index{q\-Attitude\-Indicator@{q\-Attitude\-Indicator}!roll@{roll}}
+\index{roll@{roll}!qAttitudeIndicator@{q\-Attitude\-Indicator}}
+\subsubsection[{roll}]{\setlength{\rightskip}{0pt plus 5cm}qreal q\-Attitude\-Indicator\-::roll}}\label{classqAttitudeIndicator_a10c98e2fd9195050cb305f4b12bf75bb}
+
+
+Definition at line 38 of file qattitudeindicator.\-h.
+
+
+
+Referenced by get\-Roll(), paint\-Event(), q\-Attitude\-Indicator(), Q\-Base\-::run(), and set\-Roll().
+
+\hypertarget{classqAttitudeIndicator_a739d71cc4dfba5d2fbb23186372c4fd4}{\index{q\-Attitude\-Indicator@{q\-Attitude\-Indicator}!roll\-Point@{roll\-Point}}
+\index{roll\-Point@{roll\-Point}!qAttitudeIndicator@{q\-Attitude\-Indicator}}
+\subsubsection[{roll\-Point}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Point q\-Attitude\-Indicator\-::roll\-Point\mbox{[}{\bf numb\-Roll\-Line}\mbox{]}\mbox{[}2\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}}\label{classqAttitudeIndicator_a739d71cc4dfba5d2fbb23186372c4fd4}
+
+
+Definition at line 55 of file qattitudeindicator.\-h.
+
+
+
+Referenced by paint\-Event(), q\-Attitude\-Indicator(), and resize\-Event().
+
+\hypertarget{classqAttitudeIndicator_ac5ace954b2f7b2d88aeae586a1246c30}{\index{q\-Attitude\-Indicator@{q\-Attitude\-Indicator}!roll\-Pointer@{roll\-Pointer}}
+\index{roll\-Pointer@{roll\-Pointer}!qAttitudeIndicator@{q\-Attitude\-Indicator}}
+\subsubsection[{roll\-Pointer}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Vector$<$Q\-Line$>$ q\-Attitude\-Indicator\-::roll\-Pointer\hspace{0.3cm}{\ttfamily [private]}}}\label{classqAttitudeIndicator_ac5ace954b2f7b2d88aeae586a1246c30}
+
+
+Definition at line 59 of file qattitudeindicator.\-h.
+
+
+
+Referenced by paint\-Event(), and resize\-Roll\-Char().
+
+\hypertarget{classqAttitudeIndicator_afa3060f26300228565f05c0200d553c2}{\index{q\-Attitude\-Indicator@{q\-Attitude\-Indicator}!roll\-Rotate@{roll\-Rotate}}
+\index{roll\-Rotate@{roll\-Rotate}!qAttitudeIndicator@{q\-Attitude\-Indicator}}
+\subsubsection[{roll\-Rotate}]{\setlength{\rightskip}{0pt plus 5cm}qreal q\-Attitude\-Indicator\-::roll\-Rotate\mbox{[}{\bf numb\-Roll\-Line}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}}\label{classqAttitudeIndicator_afa3060f26300228565f05c0200d553c2}
+
+
+Definition at line 56 of file qattitudeindicator.\-h.
+
+
+
+Referenced by paint\-Event(), and q\-Attitude\-Indicator().
+
+\hypertarget{classqAttitudeIndicator_a0d7a73e4ee536cda1a005f626ef3935f}{\index{q\-Attitude\-Indicator@{q\-Attitude\-Indicator}!size@{size}}
+\index{size@{size}!qAttitudeIndicator@{q\-Attitude\-Indicator}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}int q\-Attitude\-Indicator\-::size\hspace{0.3cm}{\ttfamily [private]}}}\label{classqAttitudeIndicator_a0d7a73e4ee536cda1a005f626ef3935f}
+
+
+Definition at line 54 of file qattitudeindicator.\-h.
+
+
+
+Referenced by get\-Pitch\-Line(), get\-Roll\-Line(), init\-Roll\-Char(), init\-Target\-Char(), paint\-Event(), q\-Attitude\-Indicator(), and resize\-Event().
+
+\hypertarget{classqAttitudeIndicator_a7f5a24dd1bf00a9e81d2aeb0ac83359e}{\index{q\-Attitude\-Indicator@{q\-Attitude\-Indicator}!target@{target}}
+\index{target@{target}!qAttitudeIndicator@{q\-Attitude\-Indicator}}
+\subsubsection[{target}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Vector$<$Q\-Line$>$ q\-Attitude\-Indicator\-::target\hspace{0.3cm}{\ttfamily [private]}}}\label{classqAttitudeIndicator_a7f5a24dd1bf00a9e81d2aeb0ac83359e}
+
+
+Definition at line 58 of file qattitudeindicator.\-h.
+
+
+
+Referenced by init\-Roll\-Char(), init\-Target\-Char(), paint\-Event(), and resize\-Target\-Char().
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{qattitudeindicator_8h}{qattitudeindicator.\-h}\item 
+\hyperlink{qattitudeindicator_8cpp}{qattitudeindicator.\-cpp}\end{DoxyCompactItemize}

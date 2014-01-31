@@ -120,7 +120,7 @@ void SlippyMap::render(QPainter *p, const QRect &rect)
 
     // marker
     if (mx != 0 && my != 0) {
-    QIcon marker = QIcon("/home/estei/projet/fonctionnel/GPS/testQT/lightmaps/quadcopter-24.png");
+    QIcon marker = QIcon("/home/Guillaume_Pierre/GPS/quadcopter-24.png");
     p->drawPixmap((mx+(latdiff*256.0)-24), (my+(lngdiff*256.0)-24), marker.pixmap(24,24));
     }
 }

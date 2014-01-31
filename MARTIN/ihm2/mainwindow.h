@@ -6,16 +6,25 @@
 #include <QDebug>
 #include <QPushButton>
 //#include <opencv/highgui.h>
-#include </usr/local/include/opencv2/highgui.hpp>
+#include </usr/local/include/opencv2/highgui/highgui.hpp>
 #include <assert.h>
 #include "mydisplay.h"
 #include "camerawidget.h"
 #include "qbase.h"
 #include "battery.h"
 #include "ui_mainwindow.h"
-
 #include "lightmaps.h"
 #include "slippymap.h"
+#include "QProgressBar"
+
+
+/**
+* \file mainwindow.h
+* \brief Fichier d'inclusion des librairies nécessaires à la MainWindow.
+* \author Martin PRADEAU
+* \version Version finale
+* \date Janvier 2014
+*/
 
 #define INDEX_ONGLET_CAMERA  0
 #define INDEX_ONGLET_HORIZON 1
@@ -36,6 +45,10 @@ public:
     explicit MainWindow(QWidget *parent = 0);
 
     qreal latitude, longitude;
+    QProgressBar *progressBar1;
+    QProgressBar *progressBar2;
+    QProgressBar *progressBar3;
+    QProgressBar *progressBar4;
 
     ~MainWindow();
 

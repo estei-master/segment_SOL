@@ -1,0 +1,630 @@
+\hypertarget{classMyDisplay}{\section{My\-Display Class Reference}
+\label{classMyDisplay}\index{My\-Display@{My\-Display}}
+}
+
+
+{\ttfamily \#include \char`\"{}mydisplay.\-h\char`\"{}}
+
+
+
+Collaboration diagram for My\-Display\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{classMyDisplay__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMyDisplay_aaf21029e4055eaadf1d750514b3b800a}{My\-Display} ()
+\item 
+\hyperlink{classMyDisplay_ac60f1fded498f57332783a5b66264c8c}{$\sim$\-My\-Display} ()
+\item 
+void \hyperlink{classMyDisplay_a00b712ee117708d620dc80d84d3e7281}{camera} ()
+\item 
+void \hyperlink{classMyDisplay_abfe046ec64aef3f9487e76c5a523bb48}{camera\-\_\-\-N\-V\-G} ()
+\item 
+void \hyperlink{classMyDisplay_a15661db4339f486356e93716c65a3a7a}{camera\-\_\-\-N\-V\-G\-\_\-stretched} ()
+\item 
+void \hyperlink{classMyDisplay_ac2ce70a95b5dd437951d3ebc7f3756d3}{camera\-\_\-negatif} ()
+\item 
+void \hyperlink{classMyDisplay_a8033377d23dca5526634eded73efb902}{face\-\_\-tracking} ()
+\item 
+void \hyperlink{classMyDisplay_a23cd838f0f2300db6370334ab60b99e6}{human\-\_\-tracking} ()
+\item 
+void \hyperlink{classMyDisplay_aed313dcbb8592f0786479321ebcadb54}{negatif} (Ipl\-Image $\ast$image)
+\item 
+void \hyperlink{classMyDisplay_a62ac61c3751293a48dad6a7254d039c0}{stretch\-\_\-histogram\-\_\-\-N\-V\-G} (Ipl\-Image $\ast$image)
+\item 
+void \hyperlink{classMyDisplay_a85d57087410b57368b92661fc63a6488}{detect\-\_\-faces} (Cv\-Haar\-Classifier\-Cascade $\ast$cascade, Cv\-Mem\-Storage $\ast$storage)
+\item 
+void \hyperlink{classMyDisplay_acbd50379c2ac9d3a275699550ba8530d}{detect\-\_\-human} (Cv\-Haar\-Classifier\-Cascade $\ast$cascade, Cv\-Mem\-Storage $\ast$storage)
+\item 
+Ipl\-Image $\ast$ \hyperlink{classMyDisplay_abc01f4d82f8eb6fffbc479fd56b7630e}{image\-\_\-camera} (Cv\-Capture $\ast$\hyperlink{classMyDisplay_aa2d469497bae80c2dc6596542a6af041}{capture})
+\item 
+Ipl\-Image $\ast$ \hyperlink{classMyDisplay_a745b42e0c45958feb46783864c53ecd2}{image\-\_\-camera\-\_\-\-N\-V\-G} (Cv\-Capture $\ast$\hyperlink{classMyDisplay_aa2d469497bae80c2dc6596542a6af041}{capture})
+\item 
+Ipl\-Image $\ast$ \hyperlink{classMyDisplay_a661a4a4884d246002faf8044e0975312}{image\-\_\-camera\-\_\-\-N\-V\-G\-\_\-stretched} (Cv\-Capture $\ast$\hyperlink{classMyDisplay_aa2d469497bae80c2dc6596542a6af041}{capture})
+\item 
+Ipl\-Image $\ast$ \hyperlink{classMyDisplay_a19fca82a8e9441c154a3d1ed4fbc261a}{image\-\_\-camera\-\_\-negatif} (Cv\-Capture $\ast$\hyperlink{classMyDisplay_aa2d469497bae80c2dc6596542a6af041}{capture})
+\item 
+Ipl\-Image $\ast$ \hyperlink{classMyDisplay_ad1c456244088d6282726143224c112e0}{image\-\_\-face\-\_\-tracking} (Cv\-Capture $\ast$\hyperlink{classMyDisplay_aa2d469497bae80c2dc6596542a6af041}{capture})
+\item 
+Ipl\-Image $\ast$ \hyperlink{classMyDisplay_ae08642f4d5698ff0d25b9e03765db55b}{image\-\_\-human\-\_\-tracking} (Cv\-Capture $\ast$\hyperlink{classMyDisplay_aa2d469497bae80c2dc6596542a6af041}{capture})
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Ipl\-Image $\ast$ \hyperlink{classMyDisplay_aee26cb4ae47e963a1491466d08a27d0c}{frame} = N\-U\-L\-L
+\item 
+Ipl\-Image $\ast$ \hyperlink{classMyDisplay_a66ed19ac74896c2fef063f853a80416f}{img\-\_\-nvg} = N\-U\-L\-L
+\item 
+Ipl\-Image $\ast$ \hyperlink{classMyDisplay_aaa25208b5bfada51a5ac878f76453f44}{img\-\_\-bin} = N\-U\-L\-L
+\item 
+Cv\-Capture $\ast$ \hyperlink{classMyDisplay_aa2d469497bae80c2dc6596542a6af041}{capture} = N\-U\-L\-L
+\item 
+int \hyperlink{classMyDisplay_a94a51f56cd8e8c5b6e22f5634b5d5f12}{column} = 0
+\item 
+int \hyperlink{classMyDisplay_a2cb48c4b915895b0bc7e7cd0f524a3be}{lines} = 0
+\item 
+int \hyperlink{classMyDisplay_af7602dfb0020925158d89532de80135e}{key} = 0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 8 of file mydisplay.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classMyDisplay_aaf21029e4055eaadf1d750514b3b800a}{\index{My\-Display@{My\-Display}!My\-Display@{My\-Display}}
+\index{My\-Display@{My\-Display}!MyDisplay@{My\-Display}}
+\subsubsection[{My\-Display}]{\setlength{\rightskip}{0pt plus 5cm}My\-Display\-::\-My\-Display (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classMyDisplay_aaf21029e4055eaadf1d750514b3b800a}
+
+
+Definition at line 12 of file mydisplay.\-cpp.
+
+
+\begin{DoxyCode}
+\{
+\}
+\end{DoxyCode}
+\hypertarget{classMyDisplay_ac60f1fded498f57332783a5b66264c8c}{\index{My\-Display@{My\-Display}!$\sim$\-My\-Display@{$\sim$\-My\-Display}}
+\index{$\sim$\-My\-Display@{$\sim$\-My\-Display}!MyDisplay@{My\-Display}}
+\subsubsection[{$\sim$\-My\-Display}]{\setlength{\rightskip}{0pt plus 5cm}My\-Display\-::$\sim$\-My\-Display (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classMyDisplay_ac60f1fded498f57332783a5b66264c8c}
+
+
+Definition at line 17 of file mydisplay.\-cpp.
+
+
+\begin{DoxyCode}
+\{
+\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classMyDisplay_a00b712ee117708d620dc80d84d3e7281}{\index{My\-Display@{My\-Display}!camera@{camera}}
+\index{camera@{camera}!MyDisplay@{My\-Display}}
+\subsubsection[{camera}]{\setlength{\rightskip}{0pt plus 5cm}void My\-Display\-::camera (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classMyDisplay_a00b712ee117708d620dc80d84d3e7281}
+
+
+Definition at line 21 of file mydisplay.\-cpp.
+
+
+
+References capture, frame, and key.
+
+
+\begin{DoxyCode}
+\{
+    IplImage* \hyperlink{classMyDisplay_aee26cb4ae47e963a1491466d08a27d0c}{frame} = NULL;
+    CvCapture *\hyperlink{classMyDisplay_aa2d469497bae80c2dc6596542a6af041}{capture} = cvCreateCameraCapture(CV\_CAP\_ANY);
+    \textcolor{keywordflow}{while} (1)\{
+        frame = cvQueryFrame(capture);
+        cvShowImage(\textcolor{stringliteral}{"test"}, frame);
+        \textcolor{keywordtype}{int} \hyperlink{classMyDisplay_af7602dfb0020925158d89532de80135e}{key} = cvWaitKey(1);
+        \textcolor{keywordflow}{if} (key == \textcolor{charliteral}{'q'})
+        \{
+            \textcolor{keywordflow}{break};
+        \}
+        \textcolor{keywordflow}{else} \{
+            \textcolor{comment}{//nothing to do}
+        \}
+    \}
+    cvReleaseCapture(&capture);
+\}
+\end{DoxyCode}
+\hypertarget{classMyDisplay_ac2ce70a95b5dd437951d3ebc7f3756d3}{\index{My\-Display@{My\-Display}!camera\-\_\-negatif@{camera\-\_\-negatif}}
+\index{camera\-\_\-negatif@{camera\-\_\-negatif}!MyDisplay@{My\-Display}}
+\subsubsection[{camera\-\_\-negatif}]{\setlength{\rightskip}{0pt plus 5cm}void My\-Display\-::camera\-\_\-negatif (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classMyDisplay_ac2ce70a95b5dd437951d3ebc7f3756d3}
+
+
+Definition at line 161 of file mydisplay.\-cpp.
+
+
+
+References capture, frame, img\-\_\-nvg, key, negatif(), and stretch\-\_\-histogram\-\_\-\-N\-V\-G().
+
+
+\begin{DoxyCode}
+\{
+    \hyperlink{classMyDisplay_aa2d469497bae80c2dc6596542a6af041}{capture} = cvCreateCameraCapture(CV\_CAP\_ANY);
+    \textcolor{keywordflow}{while} (1)\{
+        \hyperlink{classMyDisplay_aee26cb4ae47e963a1491466d08a27d0c}{frame} = cvQueryFrame(\hyperlink{classMyDisplay_aa2d469497bae80c2dc6596542a6af041}{capture});
+        \hyperlink{classMyDisplay_a66ed19ac74896c2fef063f853a80416f}{img\_nvg} = cvCreateImage(cvGetSize(\hyperlink{classMyDisplay_aee26cb4ae47e963a1491466d08a27d0c}{frame}), \hyperlink{classMyDisplay_aee26cb4ae47e963a1491466d08a27d0c}{frame}->depth
+      , 1);
+
+        \textcolor{comment}{//conversion en niveau de gris}
+        cvConvertImage(\hyperlink{classMyDisplay_aee26cb4ae47e963a1491466d08a27d0c}{frame}, \hyperlink{classMyDisplay_a66ed19ac74896c2fef063f853a80416f}{img\_nvg}, 0);
+
+        \hyperlink{classMyDisplay_a62ac61c3751293a48dad6a7254d039c0}{stretch\_histogram\_NVG}(\hyperlink{classMyDisplay_a66ed19ac74896c2fef063f853a80416f}{img\_nvg});
+        \hyperlink{classMyDisplay_aed313dcbb8592f0786479321ebcadb54}{negatif}(\hyperlink{classMyDisplay_a66ed19ac74896c2fef063f853a80416f}{img\_nvg});
+
+        \textcolor{comment}{//frame = negatif(frame);}
+        cvShowImage(\textcolor{stringliteral}{"test"}, \hyperlink{classMyDisplay_a66ed19ac74896c2fef063f853a80416f}{img\_nvg});
+        \textcolor{keywordtype}{int} \hyperlink{classMyDisplay_af7602dfb0020925158d89532de80135e}{key} = cvWaitKey(1);
+        \textcolor{keywordflow}{if} (key == \textcolor{charliteral}{'q'})
+        \{
+            \textcolor{keywordflow}{break};
+        \}
+        \textcolor{keywordflow}{else} \{
+            \textcolor{comment}{//nothing to do}
+        \}
+    \}
+    cvReleaseCapture(&\hyperlink{classMyDisplay_aa2d469497bae80c2dc6596542a6af041}{capture});
+
+\}
+\end{DoxyCode}
+\hypertarget{classMyDisplay_abfe046ec64aef3f9487e76c5a523bb48}{\index{My\-Display@{My\-Display}!camera\-\_\-\-N\-V\-G@{camera\-\_\-\-N\-V\-G}}
+\index{camera\-\_\-\-N\-V\-G@{camera\-\_\-\-N\-V\-G}!MyDisplay@{My\-Display}}
+\subsubsection[{camera\-\_\-\-N\-V\-G}]{\setlength{\rightskip}{0pt plus 5cm}void My\-Display\-::camera\-\_\-\-N\-V\-G (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classMyDisplay_abfe046ec64aef3f9487e76c5a523bb48}
+
+
+Definition at line 40 of file mydisplay.\-cpp.
+
+
+
+References capture, frame, img\-\_\-nvg, and key.
+
+
+\begin{DoxyCode}
+\{
+    \hyperlink{classMyDisplay_aa2d469497bae80c2dc6596542a6af041}{capture} = cvCreateCameraCapture(CV\_CAP\_ANY);
+    \textcolor{keywordflow}{while} (1)\{
+        \hyperlink{classMyDisplay_aee26cb4ae47e963a1491466d08a27d0c}{frame} = cvQueryFrame(\hyperlink{classMyDisplay_aa2d469497bae80c2dc6596542a6af041}{capture});
+        \hyperlink{classMyDisplay_a66ed19ac74896c2fef063f853a80416f}{img\_nvg} = cvCreateImage(cvGetSize(\hyperlink{classMyDisplay_aee26cb4ae47e963a1491466d08a27d0c}{frame}), \hyperlink{classMyDisplay_aee26cb4ae47e963a1491466d08a27d0c}{frame}->depth
+      , 1);
+
+        \textcolor{comment}{//conversion en niveau de gris}
+        cvConvertImage(\hyperlink{classMyDisplay_aee26cb4ae47e963a1491466d08a27d0c}{frame}, \hyperlink{classMyDisplay_a66ed19ac74896c2fef063f853a80416f}{img\_nvg}, 0);
+
+        cvShowImage(\textcolor{stringliteral}{"test"}, \hyperlink{classMyDisplay_a66ed19ac74896c2fef063f853a80416f}{img\_nvg});
+        \textcolor{keywordtype}{int} \hyperlink{classMyDisplay_af7602dfb0020925158d89532de80135e}{key} = cvWaitKey(1);
+        \textcolor{keywordflow}{if} (key == \textcolor{charliteral}{'q'})
+        \{
+            \textcolor{keywordflow}{break};
+        \}
+        \textcolor{keywordflow}{else} \{
+            \textcolor{comment}{//nothing to do}
+        \}
+    \}
+    cvReleaseCapture(&\hyperlink{classMyDisplay_aa2d469497bae80c2dc6596542a6af041}{capture});
+\}
+\end{DoxyCode}
+\hypertarget{classMyDisplay_a15661db4339f486356e93716c65a3a7a}{\index{My\-Display@{My\-Display}!camera\-\_\-\-N\-V\-G\-\_\-stretched@{camera\-\_\-\-N\-V\-G\-\_\-stretched}}
+\index{camera\-\_\-\-N\-V\-G\-\_\-stretched@{camera\-\_\-\-N\-V\-G\-\_\-stretched}!MyDisplay@{My\-Display}}
+\subsubsection[{camera\-\_\-\-N\-V\-G\-\_\-stretched}]{\setlength{\rightskip}{0pt plus 5cm}void My\-Display\-::camera\-\_\-\-N\-V\-G\-\_\-stretched (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classMyDisplay_a15661db4339f486356e93716c65a3a7a}
+
+
+Definition at line 121 of file mydisplay.\-cpp.
+
+
+
+References capture, frame, img\-\_\-nvg, key, and stretch\-\_\-histogram\-\_\-\-N\-V\-G().
+
+
+\begin{DoxyCode}
+\{
+    \hyperlink{classMyDisplay_aa2d469497bae80c2dc6596542a6af041}{capture} = cvCreateCameraCapture(CV\_CAP\_ANY);
+    \textcolor{keywordflow}{while} (1)\{
+        \hyperlink{classMyDisplay_aee26cb4ae47e963a1491466d08a27d0c}{frame} = cvQueryFrame(\hyperlink{classMyDisplay_aa2d469497bae80c2dc6596542a6af041}{capture});
+        \hyperlink{classMyDisplay_a66ed19ac74896c2fef063f853a80416f}{img\_nvg} = cvCreateImage(cvGetSize(\hyperlink{classMyDisplay_aee26cb4ae47e963a1491466d08a27d0c}{frame}), \hyperlink{classMyDisplay_aee26cb4ae47e963a1491466d08a27d0c}{frame}->depth
+      , 1);
+
+        \textcolor{comment}{//conversion en niveau de gris}
+        cvConvertImage(\hyperlink{classMyDisplay_aee26cb4ae47e963a1491466d08a27d0c}{frame}, \hyperlink{classMyDisplay_a66ed19ac74896c2fef063f853a80416f}{img\_nvg}, 0);
+
+        \hyperlink{classMyDisplay_a62ac61c3751293a48dad6a7254d039c0}{stretch\_histogram\_NVG}(\hyperlink{classMyDisplay_a66ed19ac74896c2fef063f853a80416f}{img\_nvg});
+
+        cvShowImage(\textcolor{stringliteral}{"test"}, \hyperlink{classMyDisplay_a66ed19ac74896c2fef063f853a80416f}{img\_nvg});
+        \textcolor{keywordtype}{int} \hyperlink{classMyDisplay_af7602dfb0020925158d89532de80135e}{key} = cvWaitKey(1);
+        \textcolor{keywordflow}{if} (key == \textcolor{charliteral}{'q'})
+        \{
+            \textcolor{keywordflow}{break};
+        \}
+        \textcolor{keywordflow}{else} \{
+            \textcolor{comment}{//nothing to do}
+        \}
+    \}
+    cvReleaseCapture(&\hyperlink{classMyDisplay_aa2d469497bae80c2dc6596542a6af041}{capture});
+\}
+\end{DoxyCode}
+\hypertarget{classMyDisplay_a85d57087410b57368b92661fc63a6488}{\index{My\-Display@{My\-Display}!detect\-\_\-faces@{detect\-\_\-faces}}
+\index{detect\-\_\-faces@{detect\-\_\-faces}!MyDisplay@{My\-Display}}
+\subsubsection[{detect\-\_\-faces}]{\setlength{\rightskip}{0pt plus 5cm}void My\-Display\-::detect\-\_\-faces (
+\begin{DoxyParamCaption}
+\item[{Cv\-Haar\-Classifier\-Cascade $\ast$}]{cascade, }
+\item[{Cv\-Mem\-Storage $\ast$}]{storage}
+\end{DoxyParamCaption}
+)}}\label{classMyDisplay_a85d57087410b57368b92661fc63a6488}
+\hypertarget{classMyDisplay_acbd50379c2ac9d3a275699550ba8530d}{\index{My\-Display@{My\-Display}!detect\-\_\-human@{detect\-\_\-human}}
+\index{detect\-\_\-human@{detect\-\_\-human}!MyDisplay@{My\-Display}}
+\subsubsection[{detect\-\_\-human}]{\setlength{\rightskip}{0pt plus 5cm}void My\-Display\-::detect\-\_\-human (
+\begin{DoxyParamCaption}
+\item[{Cv\-Haar\-Classifier\-Cascade $\ast$}]{cascade, }
+\item[{Cv\-Mem\-Storage $\ast$}]{storage}
+\end{DoxyParamCaption}
+)}}\label{classMyDisplay_acbd50379c2ac9d3a275699550ba8530d}
+\hypertarget{classMyDisplay_a8033377d23dca5526634eded73efb902}{\index{My\-Display@{My\-Display}!face\-\_\-tracking@{face\-\_\-tracking}}
+\index{face\-\_\-tracking@{face\-\_\-tracking}!MyDisplay@{My\-Display}}
+\subsubsection[{face\-\_\-tracking}]{\setlength{\rightskip}{0pt plus 5cm}void My\-Display\-::face\-\_\-tracking (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classMyDisplay_a8033377d23dca5526634eded73efb902}
+\hypertarget{classMyDisplay_a23cd838f0f2300db6370334ab60b99e6}{\index{My\-Display@{My\-Display}!human\-\_\-tracking@{human\-\_\-tracking}}
+\index{human\-\_\-tracking@{human\-\_\-tracking}!MyDisplay@{My\-Display}}
+\subsubsection[{human\-\_\-tracking}]{\setlength{\rightskip}{0pt plus 5cm}void My\-Display\-::human\-\_\-tracking (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classMyDisplay_a23cd838f0f2300db6370334ab60b99e6}
+\hypertarget{classMyDisplay_abc01f4d82f8eb6fffbc479fd56b7630e}{\index{My\-Display@{My\-Display}!image\-\_\-camera@{image\-\_\-camera}}
+\index{image\-\_\-camera@{image\-\_\-camera}!MyDisplay@{My\-Display}}
+\subsubsection[{image\-\_\-camera}]{\setlength{\rightskip}{0pt plus 5cm}Ipl\-Image $\ast$ My\-Display\-::image\-\_\-camera (
+\begin{DoxyParamCaption}
+\item[{Cv\-Capture $\ast$}]{capture}
+\end{DoxyParamCaption}
+)}}\label{classMyDisplay_abc01f4d82f8eb6fffbc479fd56b7630e}
+
+
+Definition at line 331 of file mydisplay.\-cpp.
+
+
+
+References frame.
+
+
+\begin{DoxyCode}
+\{
+    IplImage* \hyperlink{classMyDisplay_aee26cb4ae47e963a1491466d08a27d0c}{frame} = NULL;
+    frame = cvQueryFrame(\hyperlink{classMyDisplay_aa2d469497bae80c2dc6596542a6af041}{capture});
+    \textcolor{keywordflow}{return} \hyperlink{classMyDisplay_aee26cb4ae47e963a1491466d08a27d0c}{frame};
+\}
+\end{DoxyCode}
+\hypertarget{classMyDisplay_a19fca82a8e9441c154a3d1ed4fbc261a}{\index{My\-Display@{My\-Display}!image\-\_\-camera\-\_\-negatif@{image\-\_\-camera\-\_\-negatif}}
+\index{image\-\_\-camera\-\_\-negatif@{image\-\_\-camera\-\_\-negatif}!MyDisplay@{My\-Display}}
+\subsubsection[{image\-\_\-camera\-\_\-negatif}]{\setlength{\rightskip}{0pt plus 5cm}Ipl\-Image $\ast$ My\-Display\-::image\-\_\-camera\-\_\-negatif (
+\begin{DoxyParamCaption}
+\item[{Cv\-Capture $\ast$}]{capture}
+\end{DoxyParamCaption}
+)}}\label{classMyDisplay_a19fca82a8e9441c154a3d1ed4fbc261a}
+
+
+Definition at line 362 of file mydisplay.\-cpp.
+
+
+
+References frame, img\-\_\-nvg, negatif(), and stretch\-\_\-histogram\-\_\-\-N\-V\-G().
+
+
+\begin{DoxyCode}
+\{
+
+    \hyperlink{classMyDisplay_aee26cb4ae47e963a1491466d08a27d0c}{frame} = cvQueryFrame(\hyperlink{classMyDisplay_aa2d469497bae80c2dc6596542a6af041}{capture});
+    \hyperlink{classMyDisplay_a66ed19ac74896c2fef063f853a80416f}{img\_nvg} = cvCreateImage(cvGetSize(\hyperlink{classMyDisplay_aee26cb4ae47e963a1491466d08a27d0c}{frame}), \hyperlink{classMyDisplay_aee26cb4ae47e963a1491466d08a27d0c}{frame}->depth, 1)
+      ;
+
+    \textcolor{comment}{//conversion en niveau de gris}
+    cvConvertImage(\hyperlink{classMyDisplay_aee26cb4ae47e963a1491466d08a27d0c}{frame}, \hyperlink{classMyDisplay_a66ed19ac74896c2fef063f853a80416f}{img\_nvg}, 0);
+
+    \hyperlink{classMyDisplay_a62ac61c3751293a48dad6a7254d039c0}{stretch\_histogram\_NVG}(\hyperlink{classMyDisplay_a66ed19ac74896c2fef063f853a80416f}{img\_nvg});
+    \hyperlink{classMyDisplay_aed313dcbb8592f0786479321ebcadb54}{negatif}(\hyperlink{classMyDisplay_a66ed19ac74896c2fef063f853a80416f}{img\_nvg});
+    \textcolor{keywordflow}{return} \hyperlink{classMyDisplay_a66ed19ac74896c2fef063f853a80416f}{img\_nvg};
+\}
+\end{DoxyCode}
+\hypertarget{classMyDisplay_a745b42e0c45958feb46783864c53ecd2}{\index{My\-Display@{My\-Display}!image\-\_\-camera\-\_\-\-N\-V\-G@{image\-\_\-camera\-\_\-\-N\-V\-G}}
+\index{image\-\_\-camera\-\_\-\-N\-V\-G@{image\-\_\-camera\-\_\-\-N\-V\-G}!MyDisplay@{My\-Display}}
+\subsubsection[{image\-\_\-camera\-\_\-\-N\-V\-G}]{\setlength{\rightskip}{0pt plus 5cm}Ipl\-Image $\ast$ My\-Display\-::image\-\_\-camera\-\_\-\-N\-V\-G (
+\begin{DoxyParamCaption}
+\item[{Cv\-Capture $\ast$}]{capture}
+\end{DoxyParamCaption}
+)}}\label{classMyDisplay_a745b42e0c45958feb46783864c53ecd2}
+
+
+Definition at line 338 of file mydisplay.\-cpp.
+
+
+
+References frame, and img\-\_\-nvg.
+
+
+\begin{DoxyCode}
+\{
+    \hyperlink{classMyDisplay_aee26cb4ae47e963a1491466d08a27d0c}{frame} = cvQueryFrame(\hyperlink{classMyDisplay_aa2d469497bae80c2dc6596542a6af041}{capture});
+    \hyperlink{classMyDisplay_a66ed19ac74896c2fef063f853a80416f}{img\_nvg} = cvCreateImage(cvGetSize(\hyperlink{classMyDisplay_aee26cb4ae47e963a1491466d08a27d0c}{frame}), \hyperlink{classMyDisplay_aee26cb4ae47e963a1491466d08a27d0c}{frame}->depth, 1)
+      ;
+
+    \textcolor{comment}{//conversion en niveau de gris}
+    cvConvertImage(\hyperlink{classMyDisplay_aee26cb4ae47e963a1491466d08a27d0c}{frame}, \hyperlink{classMyDisplay_a66ed19ac74896c2fef063f853a80416f}{img\_nvg}, 0);
+    \textcolor{keywordflow}{return} \hyperlink{classMyDisplay_aee26cb4ae47e963a1491466d08a27d0c}{frame};
+\}
+\end{DoxyCode}
+\hypertarget{classMyDisplay_a661a4a4884d246002faf8044e0975312}{\index{My\-Display@{My\-Display}!image\-\_\-camera\-\_\-\-N\-V\-G\-\_\-stretched@{image\-\_\-camera\-\_\-\-N\-V\-G\-\_\-stretched}}
+\index{image\-\_\-camera\-\_\-\-N\-V\-G\-\_\-stretched@{image\-\_\-camera\-\_\-\-N\-V\-G\-\_\-stretched}!MyDisplay@{My\-Display}}
+\subsubsection[{image\-\_\-camera\-\_\-\-N\-V\-G\-\_\-stretched}]{\setlength{\rightskip}{0pt plus 5cm}Ipl\-Image $\ast$ My\-Display\-::image\-\_\-camera\-\_\-\-N\-V\-G\-\_\-stretched (
+\begin{DoxyParamCaption}
+\item[{Cv\-Capture $\ast$}]{capture}
+\end{DoxyParamCaption}
+)}}\label{classMyDisplay_a661a4a4884d246002faf8044e0975312}
+
+
+Definition at line 348 of file mydisplay.\-cpp.
+
+
+
+References frame, img\-\_\-nvg, and stretch\-\_\-histogram\-\_\-\-N\-V\-G().
+
+
+\begin{DoxyCode}
+\{
+
+    \hyperlink{classMyDisplay_aee26cb4ae47e963a1491466d08a27d0c}{frame} = cvQueryFrame(\hyperlink{classMyDisplay_aa2d469497bae80c2dc6596542a6af041}{capture});
+    \hyperlink{classMyDisplay_a66ed19ac74896c2fef063f853a80416f}{img\_nvg} = cvCreateImage(cvGetSize(\hyperlink{classMyDisplay_aee26cb4ae47e963a1491466d08a27d0c}{frame}), \hyperlink{classMyDisplay_aee26cb4ae47e963a1491466d08a27d0c}{frame}->depth, 1)
+      ;
+
+    \textcolor{comment}{//conversion en niveau de gris}
+    cvConvertImage(\hyperlink{classMyDisplay_aee26cb4ae47e963a1491466d08a27d0c}{frame}, \hyperlink{classMyDisplay_a66ed19ac74896c2fef063f853a80416f}{img\_nvg}, 0);
+
+    \hyperlink{classMyDisplay_a62ac61c3751293a48dad6a7254d039c0}{stretch\_histogram\_NVG}(\hyperlink{classMyDisplay_a66ed19ac74896c2fef063f853a80416f}{img\_nvg});
+
+    \textcolor{keywordflow}{return} \hyperlink{classMyDisplay_a66ed19ac74896c2fef063f853a80416f}{img\_nvg};
+\}
+\end{DoxyCode}
+\hypertarget{classMyDisplay_ad1c456244088d6282726143224c112e0}{\index{My\-Display@{My\-Display}!image\-\_\-face\-\_\-tracking@{image\-\_\-face\-\_\-tracking}}
+\index{image\-\_\-face\-\_\-tracking@{image\-\_\-face\-\_\-tracking}!MyDisplay@{My\-Display}}
+\subsubsection[{image\-\_\-face\-\_\-tracking}]{\setlength{\rightskip}{0pt plus 5cm}Ipl\-Image$\ast$ My\-Display\-::image\-\_\-face\-\_\-tracking (
+\begin{DoxyParamCaption}
+\item[{Cv\-Capture $\ast$}]{capture}
+\end{DoxyParamCaption}
+)}}\label{classMyDisplay_ad1c456244088d6282726143224c112e0}
+\hypertarget{classMyDisplay_ae08642f4d5698ff0d25b9e03765db55b}{\index{My\-Display@{My\-Display}!image\-\_\-human\-\_\-tracking@{image\-\_\-human\-\_\-tracking}}
+\index{image\-\_\-human\-\_\-tracking@{image\-\_\-human\-\_\-tracking}!MyDisplay@{My\-Display}}
+\subsubsection[{image\-\_\-human\-\_\-tracking}]{\setlength{\rightskip}{0pt plus 5cm}Ipl\-Image$\ast$ My\-Display\-::image\-\_\-human\-\_\-tracking (
+\begin{DoxyParamCaption}
+\item[{Cv\-Capture $\ast$}]{capture}
+\end{DoxyParamCaption}
+)}}\label{classMyDisplay_ae08642f4d5698ff0d25b9e03765db55b}
+\hypertarget{classMyDisplay_aed313dcbb8592f0786479321ebcadb54}{\index{My\-Display@{My\-Display}!negatif@{negatif}}
+\index{negatif@{negatif}!MyDisplay@{My\-Display}}
+\subsubsection[{negatif}]{\setlength{\rightskip}{0pt plus 5cm}void My\-Display\-::negatif (
+\begin{DoxyParamCaption}
+\item[{Ipl\-Image $\ast$}]{image}
+\end{DoxyParamCaption}
+)}}\label{classMyDisplay_aed313dcbb8592f0786479321ebcadb54}
+
+
+Definition at line 146 of file mydisplay.\-cpp.
+
+
+
+References column, and lines.
+
+
+
+Referenced by camera\-\_\-negatif(), and image\-\_\-camera\-\_\-negatif().
+
+
+\begin{DoxyCode}
+\{
+    CvScalar scalar\_return;
+
+    \textcolor{keywordflow}{for} (\hyperlink{classMyDisplay_a94a51f56cd8e8c5b6e22f5634b5d5f12}{column} = 0; \hyperlink{classMyDisplay_a94a51f56cd8e8c5b6e22f5634b5d5f12}{column} < image->width; \hyperlink{classMyDisplay_a94a51f56cd8e8c5b6e22f5634b5d5f12}{column}++)
+    \{
+        \textcolor{keywordflow}{for} (\hyperlink{classMyDisplay_a2cb48c4b915895b0bc7e7cd0f524a3be}{lines} = 0; \hyperlink{classMyDisplay_a2cb48c4b915895b0bc7e7cd0f524a3be}{lines} < image->height; \hyperlink{classMyDisplay_a2cb48c4b915895b0bc7e7cd0f524a3be}{lines}++)
+        \{
+            scalar\_return = cvGet2D(image, \hyperlink{classMyDisplay_a2cb48c4b915895b0bc7e7cd0f524a3be}{lines}, \hyperlink{classMyDisplay_a94a51f56cd8e8c5b6e22f5634b5d5f12}{column});
+            scalar\_return.val[0] = 255 - scalar\_return.val[0];
+            cvSet2D(image, \hyperlink{classMyDisplay_a2cb48c4b915895b0bc7e7cd0f524a3be}{lines}, \hyperlink{classMyDisplay_a94a51f56cd8e8c5b6e22f5634b5d5f12}{column}, scalar\_return);
+        \}
+    \}
+\}
+\end{DoxyCode}
+\hypertarget{classMyDisplay_a62ac61c3751293a48dad6a7254d039c0}{\index{My\-Display@{My\-Display}!stretch\-\_\-histogram\-\_\-\-N\-V\-G@{stretch\-\_\-histogram\-\_\-\-N\-V\-G}}
+\index{stretch\-\_\-histogram\-\_\-\-N\-V\-G@{stretch\-\_\-histogram\-\_\-\-N\-V\-G}!MyDisplay@{My\-Display}}
+\subsubsection[{stretch\-\_\-histogram\-\_\-\-N\-V\-G}]{\setlength{\rightskip}{0pt plus 5cm}void My\-Display\-::stretch\-\_\-histogram\-\_\-\-N\-V\-G (
+\begin{DoxyParamCaption}
+\item[{Ipl\-Image $\ast$}]{image}
+\end{DoxyParamCaption}
+)}}\label{classMyDisplay_a62ac61c3751293a48dad6a7254d039c0}
+
+
+Definition at line 63 of file mydisplay.\-cpp.
+
+
+
+References column, and lines.
+
+
+
+Referenced by camera\-\_\-negatif(), camera\-\_\-\-N\-V\-G\-\_\-stretched(), image\-\_\-camera\-\_\-negatif(), and image\-\_\-camera\-\_\-\-N\-V\-G\-\_\-stretched().
+
+
+\begin{DoxyCode}
+\{
+    \textcolor{comment}{//if the picture is in NVG}
+    \textcolor{keywordflow}{if} (image->nChannels != 1)
+    \{
+        \textcolor{keywordflow}{return};
+    \}
+    \textcolor{keywordflow}{else} \{
+        \textcolor{comment}{//nothing to do}
+    \}
+
+    \textcolor{comment}{// fix the max and min for the mathematic function}
+    \textcolor{keywordtype}{int} pix\_min = 255;
+    \textcolor{keywordtype}{int} pix\_max = 0;
+
+    CvScalar scalaire;
+
+    \textcolor{comment}{//we search pix\_min and pix\_max}
+    \textcolor{keywordflow}{for} (\hyperlink{classMyDisplay_a94a51f56cd8e8c5b6e22f5634b5d5f12}{column} = 0; \hyperlink{classMyDisplay_a94a51f56cd8e8c5b6e22f5634b5d5f12}{column} < image->width; \hyperlink{classMyDisplay_a94a51f56cd8e8c5b6e22f5634b5d5f12}{column}++)
+    \{
+        \textcolor{keywordflow}{for} (\hyperlink{classMyDisplay_a2cb48c4b915895b0bc7e7cd0f524a3be}{lines} = 0; \hyperlink{classMyDisplay_a2cb48c4b915895b0bc7e7cd0f524a3be}{lines} < image->height; \hyperlink{classMyDisplay_a2cb48c4b915895b0bc7e7cd0f524a3be}{lines}++)
+        \{
+            \textcolor{comment}{//we take the pixel or scalaire}
+            scalaire = cvGet2D(image, \hyperlink{classMyDisplay_a2cb48c4b915895b0bc7e7cd0f524a3be}{lines}, \hyperlink{classMyDisplay_a94a51f56cd8e8c5b6e22f5634b5d5f12}{column});
+
+            \textcolor{comment}{//we search extremums}
+            \textcolor{keywordflow}{if} (scalaire.val[0] < pix\_min)
+            \{
+                pix\_min = (int)scalaire.val[0];
+            \}
+            \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (scalaire.val[0] > pix\_max)
+            \{
+                pix\_max = (int)scalaire.val[0];
+            \}
+            \textcolor{keywordflow}{else} \{
+                \textcolor{comment}{//nothing to do}
+            \}
+        \}
+    \}
+
+    \textcolor{comment}{//we have max and min, we normalize}
+    \textcolor{keywordflow}{for} (\hyperlink{classMyDisplay_a94a51f56cd8e8c5b6e22f5634b5d5f12}{column} = 0; \hyperlink{classMyDisplay_a94a51f56cd8e8c5b6e22f5634b5d5f12}{column} < image->width; \hyperlink{classMyDisplay_a94a51f56cd8e8c5b6e22f5634b5d5f12}{column}++)
+    \{
+        \textcolor{keywordflow}{for} (\hyperlink{classMyDisplay_a2cb48c4b915895b0bc7e7cd0f524a3be}{lines} = 0; \hyperlink{classMyDisplay_a2cb48c4b915895b0bc7e7cd0f524a3be}{lines} < image->height; \hyperlink{classMyDisplay_a2cb48c4b915895b0bc7e7cd0f524a3be}{lines}++)
+        \{
+            \textcolor{comment}{//we take the pixel or scalaire}
+            scalaire = cvGet2D(image, \hyperlink{classMyDisplay_a2cb48c4b915895b0bc7e7cd0f524a3be}{lines}, \hyperlink{classMyDisplay_a94a51f56cd8e8c5b6e22f5634b5d5f12}{column});
+
+            \textcolor{comment}{//Normalize with mathematic equation}
+            scalaire.val[0] = 255 * (scalaire.val[0] - pix\_min);
+            scalaire.val[0] = scalaire.val[0] / (pix\_max - pix\_min);
+
+            \textcolor{comment}{//we replace the pixel in the picture}
+            cvSet2D(image, \hyperlink{classMyDisplay_a2cb48c4b915895b0bc7e7cd0f524a3be}{lines}, \hyperlink{classMyDisplay_a94a51f56cd8e8c5b6e22f5634b5d5f12}{column}, scalaire);
+        \}
+    \}
+\}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classMyDisplay_aa2d469497bae80c2dc6596542a6af041}{\index{My\-Display@{My\-Display}!capture@{capture}}
+\index{capture@{capture}!MyDisplay@{My\-Display}}
+\subsubsection[{capture}]{\setlength{\rightskip}{0pt plus 5cm}Cv\-Capture$\ast$ My\-Display\-::capture = N\-U\-L\-L\hspace{0.3cm}{\ttfamily [private]}}}\label{classMyDisplay_aa2d469497bae80c2dc6596542a6af041}
+
+
+Definition at line 48 of file mydisplay.\-h.
+
+
+
+Referenced by camera(), camera\-\_\-negatif(), camera\-\_\-\-N\-V\-G(), and camera\-\_\-\-N\-V\-G\-\_\-stretched().
+
+\hypertarget{classMyDisplay_a94a51f56cd8e8c5b6e22f5634b5d5f12}{\index{My\-Display@{My\-Display}!column@{column}}
+\index{column@{column}!MyDisplay@{My\-Display}}
+\subsubsection[{column}]{\setlength{\rightskip}{0pt plus 5cm}int My\-Display\-::column = 0\hspace{0.3cm}{\ttfamily [private]}}}\label{classMyDisplay_a94a51f56cd8e8c5b6e22f5634b5d5f12}
+
+
+Definition at line 49 of file mydisplay.\-h.
+
+
+
+Referenced by negatif(), and stretch\-\_\-histogram\-\_\-\-N\-V\-G().
+
+\hypertarget{classMyDisplay_aee26cb4ae47e963a1491466d08a27d0c}{\index{My\-Display@{My\-Display}!frame@{frame}}
+\index{frame@{frame}!MyDisplay@{My\-Display}}
+\subsubsection[{frame}]{\setlength{\rightskip}{0pt plus 5cm}Ipl\-Image$\ast$ My\-Display\-::frame = N\-U\-L\-L\hspace{0.3cm}{\ttfamily [private]}}}\label{classMyDisplay_aee26cb4ae47e963a1491466d08a27d0c}
+
+
+Definition at line 45 of file mydisplay.\-h.
+
+
+
+Referenced by camera(), camera\-\_\-negatif(), camera\-\_\-\-N\-V\-G(), camera\-\_\-\-N\-V\-G\-\_\-stretched(), image\-\_\-camera(), image\-\_\-camera\-\_\-negatif(), image\-\_\-camera\-\_\-\-N\-V\-G(), and image\-\_\-camera\-\_\-\-N\-V\-G\-\_\-stretched().
+
+\hypertarget{classMyDisplay_aaa25208b5bfada51a5ac878f76453f44}{\index{My\-Display@{My\-Display}!img\-\_\-bin@{img\-\_\-bin}}
+\index{img\-\_\-bin@{img\-\_\-bin}!MyDisplay@{My\-Display}}
+\subsubsection[{img\-\_\-bin}]{\setlength{\rightskip}{0pt plus 5cm}Ipl\-Image$\ast$ My\-Display\-::img\-\_\-bin = N\-U\-L\-L\hspace{0.3cm}{\ttfamily [private]}}}\label{classMyDisplay_aaa25208b5bfada51a5ac878f76453f44}
+
+
+Definition at line 47 of file mydisplay.\-h.
+
+\hypertarget{classMyDisplay_a66ed19ac74896c2fef063f853a80416f}{\index{My\-Display@{My\-Display}!img\-\_\-nvg@{img\-\_\-nvg}}
+\index{img\-\_\-nvg@{img\-\_\-nvg}!MyDisplay@{My\-Display}}
+\subsubsection[{img\-\_\-nvg}]{\setlength{\rightskip}{0pt plus 5cm}Ipl\-Image$\ast$ My\-Display\-::img\-\_\-nvg = N\-U\-L\-L\hspace{0.3cm}{\ttfamily [private]}}}\label{classMyDisplay_a66ed19ac74896c2fef063f853a80416f}
+
+
+Definition at line 46 of file mydisplay.\-h.
+
+
+
+Referenced by camera\-\_\-negatif(), camera\-\_\-\-N\-V\-G(), camera\-\_\-\-N\-V\-G\-\_\-stretched(), image\-\_\-camera\-\_\-negatif(), image\-\_\-camera\-\_\-\-N\-V\-G(), and image\-\_\-camera\-\_\-\-N\-V\-G\-\_\-stretched().
+
+\hypertarget{classMyDisplay_af7602dfb0020925158d89532de80135e}{\index{My\-Display@{My\-Display}!key@{key}}
+\index{key@{key}!MyDisplay@{My\-Display}}
+\subsubsection[{key}]{\setlength{\rightskip}{0pt plus 5cm}int My\-Display\-::key = 0\hspace{0.3cm}{\ttfamily [private]}}}\label{classMyDisplay_af7602dfb0020925158d89532de80135e}
+
+
+Definition at line 51 of file mydisplay.\-h.
+
+
+
+Referenced by camera(), camera\-\_\-negatif(), camera\-\_\-\-N\-V\-G(), and camera\-\_\-\-N\-V\-G\-\_\-stretched().
+
+\hypertarget{classMyDisplay_a2cb48c4b915895b0bc7e7cd0f524a3be}{\index{My\-Display@{My\-Display}!lines@{lines}}
+\index{lines@{lines}!MyDisplay@{My\-Display}}
+\subsubsection[{lines}]{\setlength{\rightskip}{0pt plus 5cm}int My\-Display\-::lines = 0\hspace{0.3cm}{\ttfamily [private]}}}\label{classMyDisplay_a2cb48c4b915895b0bc7e7cd0f524a3be}
+
+
+Definition at line 50 of file mydisplay.\-h.
+
+
+
+Referenced by negatif(), and stretch\-\_\-histogram\-\_\-\-N\-V\-G().
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{mydisplay_8h}{mydisplay.\-h}\item 
+\hyperlink{mydisplay_8cpp}{mydisplay.\-cpp}\end{DoxyCompactItemize}

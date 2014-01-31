@@ -19,7 +19,7 @@ int main(void)
 			//récupération de la trame écrite dans le fichier
 			fgets(donneesGPS[0], 100, fichier);
 			//affichage de la trame reçue
-			printf("Données reçues : %s\n", donneesGPS[0]);
+			//printf("Données reçues : %s\n", donneesGPS[0]);
 			//stockage des différentes données de la trame dans le tableau "donneesGPS"
 			for(i=1;i<4;i++)
 			{
@@ -40,10 +40,10 @@ int main(void)
 			fclose(fichier);
 		}
 		/*---affichage des données---*/
-		printf("Latitude : %s\n", donneesGPS[1]);
+		/*printf("Latitude : %s\n", donneesGPS[1]);
 		printf("Longitude : %s\n", donneesGPS[2]);
 		printf("Heure : %s\n", donneesGPS[3]);
-		printf("\n");
+		printf("\n");*/
 		/*---RàZ des buffers---*/
 		for(i=0;i<4;i++)
 			strcpy(donneesGPS[i], "");

@@ -44,9 +44,9 @@ Préambule bis : Le cross-compilateur (de chez Linaro)
 
 Téléchargement via git --> commande : 
 ------------------------
-	git clone https://github.com/texierp/PROJET_Drone.git
+	git clone https://github.com/estei-master/segment_SOL.git
 	<chemin de la cross-tool chain>=
-	PROJET_Drone/gcc-linaro-arm-linux-gnueabihf-4.7-2013.01-20130125_linux
+	segment_SOL/crosstool-chain//gcc-linaro-arm-linux-gnueabihf-4.7-2013.01-20130125_linux
 
 First : Compiler tslib (en root)
 =====
@@ -86,7 +86,7 @@ Second : Compiler Qtembedded (en root)
 	root@debian:/home/texierp/qt-everywhere# wget \
 	http://download.qt-project.org/archive/qt/4.8/4.8.2/qt-everywhere-opensource-src-4.8.2.tar.gz
 	root@debian:/home/texierp/qt-everywhere# tar xzvf \
-	qt-everywhere-opensource-src-4.7.3.tar.gz
+	qt-everywhere-opensource-src-4.8.2.tar.gz
 
 modification du fichier : qmake.conf
 ------------------------

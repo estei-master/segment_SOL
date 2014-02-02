@@ -13,13 +13,13 @@ TODO
 Hiérarchie des dossiers
 ----------------------
 `gps` 
-:   Contient l'application "GPS" et les scripts bash et fichiers permettant d'en simuler le comportement
+:   Contient l'application "GPS", les scripts et fichiers de simulation
 
 `batterie` 
-:   Contient l'application "batterie" et les scripts bash et fichiers permettant d'en simuler le comportement
+:   Contient l'application "batterie", les scripts et fichiers de simulation
 
 `signalRF` 
-:   Contient l'application "signalrf" et les scripts bash et fichiers permettant d'en simuler le comportement
+:   Contient l'application "signalrf", les scripts et fichiers de simulation
 
 README.md vers PDF
 ------------------

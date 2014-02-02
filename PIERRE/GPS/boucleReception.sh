@@ -22,6 +22,7 @@ do
 		if [[ $l -ne 9 ]]
 		then
 			let l++
+			let s++
 			trame=$latitude,$longitude,$heures,
 			echo $trame
 			echo $trame > /home/pierre/Documents/GPS/donneeIHM.txt		
@@ -36,21 +37,18 @@ do
 		fi
 	done
 	
-	let s++
-	
 	while [[ $i -ne 8 ]]
 	do
 		longitude=-0.5$j$l
 		latitude=44.86$i
 		heures=11h35m$s
 		let i++
+		let s++
 		trame=$latitude,$longitude,$heures,
 		echo $trame
 		echo $trame > /home/pierre/Documents/GPS/donneeIHM.txt	
 		sleep 1	
 	done
-	
-	let s++
 	
 	while [[ $j -ne 5 || $l -ne 0 ]]
 	do
@@ -60,6 +58,7 @@ do
 		if [[ $l -ne 0 ]]
 		then
 			let l--
+			let s++
 			trame=$latitude,$longitude,$heures,
 			echo $trame
 			echo $trame > /home/pierre/Documents/GPS/donneeIHM.txt			
@@ -74,8 +73,6 @@ do
 		fi	
 	done
 	
-	let s++
-	
 	while [[ $i -ne 1 ]]
 	do
 		longitude=-0.5$j$l
@@ -83,6 +80,7 @@ do
 		heures=11h35m$s
 		j=5
 		let i--
+		let s++
 		trame=$latitude,$longitude,$heures,
 		echo $trame
 		echo $trame > /home/pierre/Documents/GPS/donneeIHM.txt	

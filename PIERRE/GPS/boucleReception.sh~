@@ -9,7 +9,6 @@ s=0
 latitude=44.86
 longitude=-0.5
 heures=11h35m28
-niveauBatterie=$k
 trame=0
 
 while [[ $k -ne 3 ]]

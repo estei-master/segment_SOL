@@ -12,7 +12,7 @@ TODO
 Hiérarchie des dossiers
 ----------------------
 `classifier` 
-:	contient l'arborescence et les outils pour la création d'un classifieur
+:	contient des classifiers et les outils pour la création d'un classifieur
 
 README.md vers PDF
 ------------------

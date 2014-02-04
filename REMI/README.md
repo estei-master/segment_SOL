@@ -20,6 +20,12 @@ Hiérarchie des dossiers
 `DLL_GPU`
 :	contient les DLL pour l'utilisation du GPU
 
+`include`
+:	contient les includes pour OpenCV 1 et 2
+
+`lib`
+:	contient les librairies pour Visual Studio 2013
+
 README.md vers PDF
 ------------------
 	su -c 'aptitude install pandoc' 

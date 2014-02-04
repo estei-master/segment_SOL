@@ -17,6 +17,9 @@ Hiérarchie des dossiers
 `DLL`
 :	contient les DLL compilés pour Visual Studio 2013 
 
+`DLL_GPU`
+:	contient les DLL pour l'utilisation du GPU
+
 README.md vers PDF
 ------------------
 	su -c 'aptitude install pandoc' 

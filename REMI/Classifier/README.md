@@ -14,7 +14,7 @@ Hiérarchie des dossiers
 `haartraining` 
 :	contient les outils pour la création d'un classifieur
 `intel_classifiers` 
-:	contient des classifieurs près à l'emploi
+:	contient des classifieurs prêt à l'emploi
 
 README.md vers PDF
 ------------------

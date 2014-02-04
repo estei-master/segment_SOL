@@ -1,0 +1,6 @@
+Fichiers createtestsamples.pl et createtrainsamples.pl par Naotoshi Seo
+License : X11
+
+Le reste : license GPL
+
+test_vision : fait à partir des exemples donnés dans la documentation d'opencv

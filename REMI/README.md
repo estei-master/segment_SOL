@@ -14,6 +14,9 @@ Hiérarchie des dossiers
 `classifier` 
 :	contient des classifiers et les outils pour la création d'un classifieur
 
+`DLL`
+:	contient les DLL compilés pour Visual Studio 2013 
+
 README.md vers PDF
 ------------------
 	su -c 'aptitude install pandoc' 

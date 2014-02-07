@@ -24,7 +24,7 @@ LIMIT=50
 
 if [ $(cat /sys/class/power_supply/battery/capacity) -ge $LIMIT ]  
 then
-        echo "$(cat /sys/class/power_supply/battery/capacity)%" >> /tmp/LOG
+        echo "$(cat /sys/class/power_supply/battery/capacity)" >> /tmp/LOG
 else
 	# On passe le governor en mode powersave (fréquence la plus basse)
 	# Governor disponible sur notre SoC

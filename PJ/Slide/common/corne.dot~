@@ -1,0 +1,9 @@
+digraph G {
+
+"Segment SOL" [shape=box,style=filled,color=".2 .6 1.0"]; 
+"Permettre à l'utilisateur de commander le drone" [shape=box,style=filled,color=".2 .6 1.0"]; 
+Utilisateur  -> "Segment SOL"
+Utilisateur -> "Segment Drone"
+"Segment Drone" -> "Permettre à l'utilisateur de commander le drone"
+"Segment Drone" -> "Permettre à l'utilisateur de commander le drone"
+} 

@@ -1,0 +1,28 @@
+\beamer@endinputifotherversion {3.10pt}
+\select@language {french}
+\beamer@sectionintoc {1}{Pr\IeC {\'e}sentation du Projet}{3}{0}{1}
+\beamer@sectionintoc {2}{Pr\IeC {\'e}sentation Segment SOL}{7}{0}{2}
+\beamer@subsectionintoc {2}{1}{Matrice de Comp\IeC {\'e}tence}{10}{0}{2}
+\beamer@sectionintoc {3}{Analyse Fonctionelle}{11}{0}{3}
+\beamer@sectionintoc {4}{Gestion de Projet}{12}{0}{4}
+\beamer@subsectionintoc {4}{1}{Cycle de vie Logiciel}{12}{0}{4}
+\beamer@subsectionintoc {4}{2}{Diagramme de GANTT}{17}{0}{4}
+\beamer@subsectionintoc {4}{3}{Diagramme PERT}{18}{0}{4}
+\beamer@subsectionintoc {4}{4}{Outils}{19}{0}{4}
+\beamer@subsubsectionintoc {4}{4}{1}{Outils mis en place}{19}{0}{4}
+\beamer@sectionintoc {5}{Cahier des Charges}{20}{0}{5}
+\beamer@sectionintoc {6}{Droit}{22}{0}{6}
+\beamer@sectionintoc {7}{R\IeC {\'e}alisations}{27}{0}{7}
+\beamer@subsectionintoc {7}{1}{Choix technologiques}{28}{0}{7}
+\beamer@subsectionintoc {7}{2}{Environnement}{30}{0}{7}
+\beamer@subsectionintoc {7}{3}{Kernel}{33}{0}{7}
+\beamer@subsectionintoc {7}{4}{Qt embedded}{40}{0}{7}
+\beamer@subsectionintoc {7}{5}{OpenCV embedded}{43}{0}{7}
+\beamer@subsectionintoc {7}{6}{Optimisation d\IeC {\'e}marrage}{44}{0}{7}
+\beamer@subsubsectionintoc {7}{6}{1}{Hardware}{44}{0}{7}
+\beamer@subsubsectionintoc {7}{6}{2}{Subjectif}{45}{0}{7}
+\beamer@subsectionintoc {7}{7}{Power Management}{47}{0}{7}
+\beamer@subsectionintoc {7}{8}{Optimisation du Syst\IeC {\`e}me}{48}{0}{7}
+\beamer@sectionintoc {8}{Bilan de LOT}{56}{0}{8}
+\beamer@sectionintoc {9}{Conclusion}{57}{0}{9}
+\beamer@subsectionintoc {9}{1}{Questions}{58}{0}{9}

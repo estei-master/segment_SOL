@@ -55,9 +55,6 @@
 		\end{figure}
 	\end{frame}
 		
-% 	\section{Sommaire}
-%	\subsection{} ...
-%   \subsubsection{} ...
 	\begin{frame}
 		\frametitle{Sommaire}
 		%\framesubtitle{}
@@ -82,10 +79,10 @@
 	 \item Mise en situation industrielle
 	 \pause
 	 \item 2 Composants --> 2 Equipes  
-	      \begin{center}
-		 
+	 \pause
+	 \begin{center}
 		    \includegraphics[width=5cm]{common/projet.png}
-	      \end{center}
+	 \end{center}
 	\end{itemize}
 	\end{frame}
 	
@@ -96,12 +93,12 @@
 		\begin{itemize}
 		    \item Présentation
 		    \pause
-		    \item L'équipe (OBS : Organization Breakdown Structure)\\
+			\item L'équipe (OBS : Organization Breakdown Structure)\\
 		    \pause
 		    \begin{center}
-		    \includegraphics[width=8cm]{common/OBS.png}
+			\includegraphics[width=8cm]{common/OBS.png}
 		    \end{center}
-		  \end{itemize}
+		\end{itemize}
 	\end{frame}
 	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -145,7 +142,7 @@
 		\begin{block}{Remarques}
 		\begin{itemize}
 			\item 2 Jalons : Intégration
-			\item Suivi du cycle de vie Logiciel
+			\item Suivi du cycle de Vie Logiciel
 		\end{itemize}
 		\end{block}
 	\end{frame}
@@ -170,6 +167,12 @@
 		\begin{center}
 			\includegraphics[width=10cm]{common/Gantt.png}
 		\end{center}
+				
+		\begin{block}{Remarques}
+			\begin{itemize}
+			\item Les tâches du cahier des charges sont présentées ainsi que les relations entre elles
+		\end{itemize}
+		\end{block}
 	\end{frame}
 	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -212,10 +215,13 @@
 	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	
-	\section{CdC}
+	\section{Cahier des Charges}
 	\begin{frame}
 		\frametitle{Cahier des Charges Personnel}
-		\framesubtitle{}
+		\framesubtitle{FP1 - FP6}
+		\begin{center}
+				\includegraphics[width=3cm]{common/cdcperso.png}	\\ 
+		\end{center}
 	\begin{block}{Tâches à réaliser}
 		\begin{itemize}
 			\item OS Linux embarqué Fonctionnel
@@ -230,7 +236,7 @@
 	\section{Droit}
 	
 	\begin{frame}{Droit}
-	2 types de Licences
+	2 types de Licences utilisés pour le Projet
 	\pause	
 	\begin{itemize}
 		\item GPLv3 \includegraphics[width=0.4cm]{common/gnu.png}	\\
@@ -318,24 +324,26 @@
 	\end{columns}
 	\end{frame}
 	
-	\begin{frame}{Environnement}
+	\begin{frame}{Risques et Opportunités}
 	\begin{center}
-	
+	  \includegraphics[width=8cm]{common/risques.png}\\
 	\end{center}
 	\end{frame}
 	
 
 	
 	\subsection{Kernel}
-	\begin{frame}{Kernel}
-	Kernel ? \\
-	Qt embedded 4.8.2 \hyperlink{Qt}{\beamergotobutton{Qt}}\\
+	\begin{frame}[label=Kernel]{Kernel}
+	Kernel ? \\ \hyperlink{Linux}{\beamergotobutton{Linux}}\\
+	\pause
 	Pourquoi ?
+	\pause
 	 \begin{itemize}
 	  \item Empreinte Mémoire
+	  \pause
 	  \item Besoins pour le Projet (V4L, Tactile, ...)
 	 \end{itemize}
- 
+	  \pause
 		\begin{block}{Informations}
 		\begin{itemize}
 			\item Version 3.4.67
@@ -343,8 +351,22 @@
 			\href{https://github.com/linux-sunxi/linux-sunxi}{\beamergotobutton{Lien github}}
 		\end{itemize}
 		\end{block}
-
+	\end{frame}
 	
+	\begin{frame}{Configuration}
+	 \begin{itemize}
+	  \item Xconfig
+	  \item 5.20 MB --> 3.33 MB
+	 \end{itemize}
+	\includegraphics[width=3cm]{common/tuxleg.png}\\
+	\end{frame}
+	
+	\begin{frame}{Configuration}
+	 \begin{itemize}
+	  \item Xconfig
+	  \item 5.20 MB --> 3.33 MB
+	 \end{itemize}
+	\includegraphics[width=3cm]{common/SD.png}\\
 	\end{frame}
 	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -367,6 +389,7 @@
 	
 	\subsection{OpenCV embedded}
 	\begin{frame}[label=pageopenCV]{OpenCV embedded}
+	\includegraphics[width=1cm]{common/opencv.png}\\
 	\hyperlink{openCV}{\beamergotobutton{openCV}}\\
 		\begin{center}
 			
@@ -419,24 +442,29 @@
 				*/2 * * * * /bin/bash /home/PJ/power-management.sh\\
 				\end{block}
 	\end{itemize}
-
-			\includegraphics[width=4cm]{common/power_management.png}
-		
+	\begin{center}
+		\includegraphics[width=4cm]{common/power_management.png}
+	\end{center}
 	\end{frame}
 	%%%%%%%%%%%%%%%%%%%
 	\subsection{Optimisation du Système}
 	\begin{frame}{Réalisé}
-	 Système de fichier Temporaire \\
-	\begin{block}{}
-	tmpfs	/tmp	tmpfs	defaults		0 0\\
-	\end{block}
-	Autologin \\
-	\begin{block}{}
-	1:2345:respawn:/sbin/agetty --autologin root 38400 tty1\\
-	\end{block}
-	Lancement Automatique de l'application : ihm\\
-	UDEV \\
-	
+	 \begin{itemize}
+	 \item  Système de fichier Temporaire \\
+	    	 \begin{itemize}
+		    \item  \textit{tmpFS}
+		  \end{itemize}
+	\item Autologin \\
+	  	  \begin{itemize}
+		    \item  \textit{agetty --autologin}
+		  \end{itemize}
+	\item Lancement Automatique de l'application : ihm\\
+	\item UDEV \\
+	  \begin{itemize}
+		    \item iDVendor
+		    \item iDProduct
+	  \end{itemize}
+	\end{itemize}
 	\end{frame}
 	
 	\begin{frame}{Possible}
@@ -446,13 +474,18 @@
 		\includegraphics[width=2cm]{common/opengles.png}
 	\end{center}
 	 \item Gestion des Heuristiques
-
+	 \pause
 	 \begin{itemize}
 	 \item powersave
+	 \pause
 	 \item fantasy
+	 \pause
 	 \item ondemand
+	 \pause
 	 \item interactive
+	 \pause
 	 \item userspace
+	 \pause
 	 \item perfomance
 	 \end{itemize}
 	\end{itemize}
@@ -514,6 +547,13 @@
 	\end{frame}
 	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{frame}[label=Linux]{Système Linux}
+	 \begin{center}
+		\includegraphics[width=8cm]{common/kernel.png}
+	 \end{center}
+	\hyperlink{Kernel}{\beamerreturnbutton{retour}}
+	\end{frame}
+	
 	\begin{frame}[label=SoC]{Synoptique du System On Chip}
 	 \begin{center}
 		\includegraphics[width=7cm]{common/SoC.png}

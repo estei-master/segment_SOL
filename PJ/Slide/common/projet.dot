@@ -1,0 +1,7 @@
+digraph G {
+"Projet DRONE" [shape=note]; 
+"Segment SOL" [shape=component] ;
+"Segment Drone" [shape=component];
+"Projet DRONE"-> "Segment SOL"
+"Projet DRONE"-> "Segment Drone"
+} 

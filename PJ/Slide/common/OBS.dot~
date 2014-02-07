@@ -1,0 +1,8 @@
+digraph G {
+"Segment Drone" -> "Segment SOL"  [shape=component] ;
+"Segment SOL" -> "Pierre-Jean" [label="Chef de Projet"]
+"Pierre-Jean" -> Martin [style=dotted,label="Développeur"]
+"Pierre-Jean" -> Guillaume [style=dotted,label="Développeur"]
+"Pierre-Jean" -> Pierre [style=dotted,label="Développeur"]
+"Pierre-Jean" -> Remi [style=dotted,label="Développeur"]
+} 

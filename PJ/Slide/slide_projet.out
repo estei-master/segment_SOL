@@ -1,22 +1,30 @@
 \BOOKMARK [2][]{Outline0.1}{Pr\351sentation du Projet}{}% 1
-\BOOKMARK [2][]{Outline0.2}{Pr\351sentation Segment SOL}{}% 2
-\BOOKMARK [2][]{Outline0.3}{Analyse Fonctionelle}{}% 3
-\BOOKMARK [2][]{Outline0.4}{Gestion de Projet}{}% 4
-\BOOKMARK [3][]{Outline0.4.1.12}{Cycle de vie Logiciel}{Outline0.4}% 5
-\BOOKMARK [3][]{Outline0.4.2.17}{Diagramme de GANTT}{Outline0.4}% 6
-\BOOKMARK [3][]{Outline0.4.3.18}{Diagramme PERT}{Outline0.4}% 7
-\BOOKMARK [3][]{Outline0.4.4.19}{Outils}{Outline0.4}% 8
-\BOOKMARK [2][]{Outline0.5}{Cahier des Charges}{}% 9
-\BOOKMARK [2][]{Outline0.6}{Droit}{}% 10
-\BOOKMARK [2][]{Outline0.7}{R\351alisations}{}% 11
-\BOOKMARK [3][]{Outline0.7.1.28}{Choix technologiques}{Outline0.7}% 12
-\BOOKMARK [3][]{Outline0.7.2.30}{Environnement}{Outline0.7}% 13
-\BOOKMARK [3][]{Outline0.7.3.33}{Kernel}{Outline0.7}% 14
-\BOOKMARK [3][]{Outline0.7.4.40}{Qt embedded}{Outline0.7}% 15
-\BOOKMARK [3][]{Outline0.7.5.43}{OpenCV embedded}{Outline0.7}% 16
-\BOOKMARK [3][]{Outline0.7.6.44}{Optimisation d\351marrage}{Outline0.7}% 17
-\BOOKMARK [3][]{Outline0.7.7.47}{Power Management}{Outline0.7}% 18
-\BOOKMARK [3][]{Outline0.7.8.48}{Optimisation du Syst\350me}{Outline0.7}% 19
-\BOOKMARK [2][]{Outline0.8}{Bilan de LOT}{}% 20
-\BOOKMARK [2][]{Outline0.9}{Conclusion}{}% 21
-\BOOKMARK [3][]{Outline0.9.1.58}{Questions}{Outline0.9}% 22
+\BOOKMARK [2][]{Outline0.2}{Segment SOL}{}% 2
+\BOOKMARK [3][]{Outline0.2.1.11}{Matrice de Comp\351tence}{Outline0.2}% 3
+\BOOKMARK [3][]{Outline0.2.2.12}{Phase Programme}{Outline0.2}% 4
+\BOOKMARK [3][]{Outline0.2.3.13}{Analyse Fonctionnelle}{Outline0.2}% 5
+\BOOKMARK [3][]{Outline0.2.4.14}{Cahier des Charges}{Outline0.2}% 6
+\BOOKMARK [2][]{Outline0.3}{Gestion de Projet}{}% 7
+\BOOKMARK [3][]{Outline0.3.1.17}{Cycle de vie Logiciel}{Outline0.3}% 8
+\BOOKMARK [3][]{Outline0.3.2.18}{ROADMAP}{Outline0.3}% 9
+\BOOKMARK [3][]{Outline0.3.3.20}{Suivi des D\351penses}{Outline0.3}% 10
+\BOOKMARK [3][]{Outline0.3.4.22}{Diagramme de GANTT}{Outline0.3}% 11
+\BOOKMARK [3][]{Outline0.3.5.24}{Diagramme PERT}{Outline0.3}% 12
+\BOOKMARK [3][]{Outline0.3.6.25}{Outils}{Outline0.3}% 13
+\BOOKMARK [2][]{Outline0.4}{Droit}{}% 14
+\BOOKMARK [2][]{Outline0.5}{R\351alisations}{}% 15
+\BOOKMARK [3][]{Outline0.5.1.32}{Choix technologiques}{Outline0.5}% 16
+\BOOKMARK [3][]{Outline0.5.2.33}{Environnement}{Outline0.5}% 17
+\BOOKMARK [3][]{Outline0.5.3.38}{Kernel}{Outline0.5}% 18
+\BOOKMARK [3][]{Outline0.5.4.45}{Qt embedded}{Outline0.5}% 19
+\BOOKMARK [3][]{Outline0.5.5.46}{OpenCV embedded}{Outline0.5}% 20
+\BOOKMARK [3][]{Outline0.5.6.47}{Optimisation d\351marrage}{Outline0.5}% 21
+\BOOKMARK [3][]{Outline0.5.7.51}{Power Management}{Outline0.5}% 22
+\BOOKMARK [3][]{Outline0.5.8.52}{Optimisation du Syst\350me}{Outline0.5}% 23
+\BOOKMARK [2][]{Outline0.6}{Bilan de LOT}{}% 24
+\BOOKMARK [3][]{Outline0.6.1.60}{LOT Segment SOL : Co\373ts}{Outline0.6}% 25
+\BOOKMARK [3][]{Outline0.6.2.61}{Conclusion}{Outline0.6}% 26
+\BOOKMARK [2][]{Outline0.7}{Conclusion}{}% 27
+\BOOKMARK [3][]{Outline0.7.1.62}{Matrice de Validation}{Outline0.7}% 28
+\BOOKMARK [3][]{Outline0.7.2.63}{Conclusion}{Outline0.7}% 29
+\BOOKMARK [3][]{Outline0.7.3.64}{Questions}{Outline0.7}% 30

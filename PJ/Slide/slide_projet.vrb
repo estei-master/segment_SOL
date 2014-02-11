@@ -1,10 +1,10 @@
-\frametitle {Power Management}\begin {itemize}
-\item Composant --> AXP209\\
-\item Création d'un `Cron'
-\begin{block}{}
-*/2 * * * * /bin/bash /home/PJ/power-management.sh\\
-\end{block}
+\frametitle {Power Management}\begin {block}{Réalisé}
+\begin{itemize}
+\item Création d'un Crontab
+\item Test sur l'autonomie du Système
 \end{itemize}
+\end{block}
+
 \begin{center}
-\includegraphics[width=4cm]{common/power_management.png}
+\includegraphics[width=7cm]{common/power_management.png}
 \end{center}

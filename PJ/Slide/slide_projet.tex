@@ -6,6 +6,9 @@
 \usepackage{graphicx}
 \usepackage[french]{babel}
 \usepackage{listings}
+\usepackage{eurosym}
+\usepackage{verbatim}
+\usepackage{colortbl}
 
 \setbeamertemplate{blocks}[rounded][shadow=true]
 \expandafter\def\expandafter\insertshorttitle\expandafter{%
@@ -27,7 +30,7 @@
 %\setbeamertemplate{footline}[frame number]
 
 \title[Equipe segment SOL : Chef de PROJET]{Projet DRONE}
-\subtitle{Gestion de L'OS Embarqué}
+\subtitle{Gestion de L'OS Embarqué et de l'environnement Graphique}
 \institute{ Ecole Supérieure des Technologies Electronique Informatique Infographie  }
 \author{Pierre-jean \textsc{TEXIER}}
 \date{13 Février 2014}
@@ -60,10 +63,10 @@
 		%\framesubtitle{}
 		\begin{columns}[t]
 		\begin{column}{5cm}
-		\tableofcontents[sections={1-5},hideallsubsections]
+		\tableofcontents[sections={1-4},hideallsubsections]
 		\end{column}
 		\begin{column}{5cm}
-		\tableofcontents[sections={6-10},hideallsubsections]
+		\tableofcontents[sections={5-10},hideallsubsections]
 		\end{column}
 		\end{columns}
 	 \end{frame}
@@ -72,38 +75,47 @@
 	
  	\section{Présentation du Projet}
 	\begin{frame}{Présentation du Projet}
-	
+	\begin{block}{Projet de FIN d'étude }
 	\begin{itemize}
-	 \item Projet de FIN d'étude
 	 \pause
-	 \item Mise en situation industrielle
+	 \item ``Contexte Industriel''
 	 \pause
+	 \item PROJET Drone \textit{Next GEN}
+	  	 \pause
+	  \begin{itemize}
+	  
 	 \item 2 Composants --> 2 Equipes  
 	 \pause
+	 	 \end{itemize}
+	\end{itemize}
+	 \end{block}
 	 \begin{center}
 		    \includegraphics[width=5cm]{common/projet.png}
 	 \end{center}
-	\end{itemize}
+
 	\end{frame}
 	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	
-	\section{Présentation Segment SOL}
+	\section{Segment SOL}
 	\begin{frame}{Présentation du Segment SOL}
 		\begin{itemize}
-		    \item Présentation
+		    \item Présentation\\
+		      \begin{center}
+		    \includegraphics[width=2cm]{common/segment.png}\\
+		    \end{center}
 		    \pause
 			\item L'équipe (OBS : Organization Breakdown Structure)\\
 		    \pause
 		    \begin{center}
-			\includegraphics[width=8cm]{common/OBS.png}
+			\includegraphics[width=7cm]{common/OBS.png}
 		    \end{center}
 		\end{itemize}
 	\end{frame}
 	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	
-	\subsection[]{Matrice de Compétence}
+	\subsection{Matrice de Compétence}
 	\begin{frame}{Matrice de compétence Segment SOL}
 		\begin{center}
 			\includegraphics[width=10cm]{common/matrice.png}
@@ -114,26 +126,72 @@
 			  \end{itemize}
 			\end{block}
 	\end{frame}
-		
+	
+	\subsection{Phase Programme}
+	\begin{frame}{Expression des Besoins}
+	\underline{Besoins Exprimés par le Client} :
+	\newline
+	\begin{itemize}
+	 \item Affichage
+	  \item Ergonomie
+	   \item Vidéo
+	    \item Communication
+	    \item Gamme de Température
+	    \begin{itemize}   
+	    \item Commerciale : 0\textdegree C à  70\textdegree C
+	    \item Industrielle :  -45\textdegree C à  85\textdegree C
+	    \end{itemize}
+	\end{itemize}
+	\end{frame}
+	
+	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%ù
 	
-	\section{Analyse Fonctionelle}
-	\begin{frame}{Degré 1}
+	\subsection{Analyse Fonctionnelle}
+	\begin{frame}{Diagramme Fonctionnel de Degré 1}
 	\begin{center}
 		\includegraphics[width=7cm]{common/fonc.png}
 	\end{center}
 	\end{frame}
 	
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	\subsection{Cahier des Charges}
+	\begin{frame}
+		\frametitle{Cahier des Charges Personnel}
+		\framesubtitle{FP1 - FP6}
+		\begin{center}
+				\includegraphics[width=3cm]{common/cdcperso.png}	\\ 
+		\end{center}
+	\begin{block}{Tâches à réaliser}
+		\begin{itemize}
+			\item OS Linux embarqué Fonctionnel
+			\item Préparation de l'environnement graphique (Qt, openCV, ...)
+			\item Optimisation du temps de boot \textbf<2>{hardware} et \textbf<2>{subjectif}
+			\item Gestion de l'énergie
+		\end{itemize}
+	\end{block}
+	\end{frame}
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%ù
 	
 	\section{Gestion de Projet}
+	
+	\begin{frame}{Gestion de Projet}
+		\begin{center}
+			\includegraphics[width=5cm]{common/gestion.jpg}
+		\end{center}
+	\end{frame}
+	
 	\subsection{Cycle de vie Logiciel}
 	\begin{frame}{Cycle de vie Logiciel}
 		\begin{center}
 			\includegraphics[width=10cm]{common/V.png}
 		\end{center}
 	\end{frame}
-	
+	\subsection{ROADMAP}
 	\begin{frame}{ROADMAP : Segment SOL}
 		\begin{center}
 			\includegraphics[width=10cm]{common/roadmap.png}
@@ -147,6 +205,7 @@
 		\end{block}
 	\end{frame}
 	
+	\subsection{Suivi des Dépenses}
 	\begin{frame}{Suivi des dépenses : Segment SOL}
 		\begin{center}
 			\includegraphics[width=10cm]{common/depenses.png}
@@ -167,7 +226,7 @@
 		\begin{center}
 			\includegraphics[width=10cm]{common/Gantt.png}
 		\end{center}
-				
+		 \pause		
 		\begin{block}{Remarques}
 			\begin{itemize}
 			\item Les tâches du cahier des charges sont présentées ainsi que les relations entre elles
@@ -180,7 +239,7 @@
 	\subsection{Diagramme PERT}
 	\begin{frame}{Pert}
 		\begin{center}
-			\includegraphics[width=4cm]{common/pert.png}
+			\includegraphics[width=6cm]{common/pert.png}
 		\end{center}
 	\end{frame}
 	
@@ -213,26 +272,8 @@
 	
 	\end{frame}
 	
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	
-	\section{Cahier des Charges}
-	\begin{frame}
-		\frametitle{Cahier des Charges Personnel}
-		\framesubtitle{FP1 - FP6}
-		\begin{center}
-				\includegraphics[width=3cm]{common/cdcperso.png}	\\ 
-		\end{center}
-	\begin{block}{Tâches à réaliser}
-		\begin{itemize}
-			\item OS Linux embarqué Fonctionnel
-			\item Préparation de l'environnement graphique (Qt, openCV, ...)
-			\item Optimisation du temps de boot \textbf<2>{hardware} et \textbf<2>{subjectif}
-			\item Gestion de l'énergie
-		\end{itemize}
-	\end{block}
-	\end{frame}
-	
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\section{Droit}
 	
 	\begin{frame}{Droit}
@@ -269,59 +310,55 @@
 	\begin{frame}{Réalisations}
 		
 			\begin{center}
-	\includegraphics[width=2cm]{common/tux.png}	
+			\includegraphics[width=3cm]{common/Settings.png}	
 	\end{center}
 		
 	\end{frame}
 	
 	\subsection{Choix technologiques}
 	\begin{frame}[label=choix]{Choix technologiques}
+	\framesubtitle{Etude Materiel}
 	\begin{itemize}
-	\item \textbf<2>{S}ystem \textbf<2>{O}n \textbf<2>{C}hip\\
+	\item System On Chip\\
 	\begin{center}
 		  \includegraphics[width=2cm]{common/220px-AllWinner_A20.jpg}\\
 		  \hyperlink{SoC}{\beamergotobutton{Synoptique}}\\
 	\end{center}
-	\item Carte de développement
+	\item Single Board Computer
 	\end{itemize}
 	\begin{center}
 		  \includegraphics[width=2cm]{common/A20-OLinuXino-MICRO-0.jpg}\\
-		  \hyperlink{SbC}{\beamergotobutton{Analyse des périphériques}} \hyperlink{SbC_2}{\beamergotobutton{Disponible sur le marchés}}\\
+		  \hyperlink{SbC_2}{\beamergotobutton{Disponible sur le marchés}}\\
 	\end{center}
 	\end{frame}
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	
 	\subsection{Environnement}
 	\begin{frame}{Environnement ``Linux Embarqué''}
 	\begin{center}
-	\includegraphics[width=8cm]{common/arcg.png}	
+	\includegraphics[width=10cm]{common/arcg.png}	
 	\end{center}
 	\end{frame}
 	
 	
 	\begin{frame}{Chaine de compilation croisée}
-	\begin{center}
-	  \includegraphics[width=2cm]{common/linaro.jpeg}
-	\end{center}
-	\begin{itemize}
-			\item gcc-linaro-arm-linux-gnueabihf-4.7-linux
-			\includegraphics[width=1cm]{common/gnu.jpeg}
-	\end{itemize}
-	\begin{columns}[t]
-	\begin{column}{5cm}
-	\begin{block}{Pourquoi armhf ?}
-		FPU neon-vfvp4
+	\begin{block}{ Compilation Croisée ?}
+	\centering Une chaîne de compilation croisée est un groupe d'outils permettant la compilation d'un programme d'une architecture processeur à une autre (x86 => ARM).
 	\end{block}
-	\end{column}
-	\begin{column}{5cm}
-	\begin{block}{Possibilitées}
+	\pause
+	\begin{alertblock}{Mon Choix}
+	\includegraphics[width=1cm]{common/linaro.jpeg} --> \textit{arm-linux-gnueabihf-*}
+	\end{alertblock}
+
+	\pause
+	\begin{block}{Pourquoi eabihf ?}
 	\begin{itemize}
-	      \item CodeSourcery
-	      \item Crosstool-ng
-	      \item Buildroot
+	 \item HardFloat
+	 \item FPU neon-vfvp4
 	\end{itemize}
 	\end{block}
-	\end{column}
-	\end{columns}
+
 	\end{frame}
 	
 	\begin{frame}{Risques et Opportunités}
@@ -336,7 +373,7 @@
 	\begin{frame}[label=Kernel]{Kernel}
 	Kernel ? \\ \hyperlink{Linux}{\beamergotobutton{Linux}}\\
 	\pause
-	Pourquoi ?
+	Pourquoi Optimiser ?
 	\pause
 	 \begin{itemize}
 	  \item Empreinte Mémoire
@@ -344,6 +381,8 @@
 	  \item Besoins pour le Projet (V4L, Tactile, ...)
 	 \end{itemize}
 	  \pause
+	  	\begin{columns}[t]
+		\begin{column}{5cm}
 		\begin{block}{Informations}
 		\begin{itemize}
 			\item Version 3.4.67
@@ -351,36 +390,63 @@
 			\href{https://github.com/linux-sunxi/linux-sunxi}{\beamergotobutton{Lien github}}
 		\end{itemize}
 		\end{block}
+		\end{column}
+		
+		\begin{column}{5cm}
+		\begin{block}{A savoir} 
+		  \begin{itemize}
+		    \item Plusieurs branches
+		    \item 3.0 et 3.4.67 = stable
+		    \item 3.10 = experimental
+	\end{itemize}
+	\end{block}
+	\end{column}
+	\end{columns}
 	\end{frame}
+
 	
 	\begin{frame}{Configuration}
+
+	 \begin{center}
+	 \includegraphics[width=3cm]{common/tuxleg.png}\\
+	 \end{center}
 	 \begin{itemize}
-	  \item Xconfig
-	  \item 5.20 MB --> 3.33 MB
-	 \end{itemize}
-	\includegraphics[width=3cm]{common/tuxleg.png}\\
+		\item Interface : xconfig (\textbf{make ARCH=arm xconfig})
+		\item Suppression : 
+			\begin{itemize}
+			    \item Options inutiles dans l'embarqué (\underline{ex} : Swap)
+			    \item Options de Debug / Profilling (\underline{ex} : Ftrace)
+			    \item Options Inutiles pour notre Projet (\underline{ex} : HDMI)
+			 \end{itemize}
+		 \end{itemize}
+	 \begin{block}{Empreinte Mémoire}
+	  Début du Projet : 5.20 MB --> Fin du Projet : 3.33 MB
+	 \end{block}	
 	\end{frame}
 	
-	\begin{frame}{Configuration}
-	 \begin{itemize}
-	  \item Xconfig
-	  \item 5.20 MB --> 3.33 MB
-	 \end{itemize}
-	\includegraphics[width=3cm]{common/SD.png}\\
+	\begin{frame}{Implantation sur cible}
+	\centering \includegraphics[width=3cm]{common/SD.png}\\
 	\end{frame}
 	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	
 	\subsection{Qt embedded}
-	\begin{frame}[label=pageQt]{Qt embedded}
-	 \includegraphics[width=1cm]{common/Qt.jpeg}\\
-			  Portage sur cible Arm Cortex A7 : 
-		\begin{itemize}
-		\pause
-			  \item<+-|alert@+> Librairie touchscreen tslib \hyperlink{tslib}{\beamergotobutton{tslib}}\\
-			  \item<+-|alert@+> Qt embedded 4.8.2 \hyperlink{Qt}{\beamergotobutton{Qt}}\\
-			  
-		\end{itemize}
+	\begin{frame}[label=pageQt]{Qt embedded  \includegraphics[width=0.3cm]{common/Qt.jpeg}}
+	  Fonctionnement : \hyperlink{Qt}{\beamergotobutton{Qt}}\\	
+	  %\includegraphics[width=2cm]{common/Qtembedded.png}\\
+	  \centering Besoins : Génération d'un ``qmake'' spécifique à notre architecture :
+	\begin{block}{Etapes}
+	\begin{enumerate}
+			\item Cross-compilation de la librairie Tactile : tslib \hyperlink{tslib}{\beamergotobutton{tslib}}
+			\item Modification du fichier qmake.conf
+			\item Génération du Makefile spécifique aux besoins (./configure)
+			\item Cross-compilation de Qt embedded 4.8.2 (make)
+			\item Installation des binaires (make install)
+			\item Portage des binaires générés sur cible
+			\item Tests
+	\end{enumerate}
+	\end{block}	
+	
 	\end{frame}
 	
 
@@ -389,18 +455,31 @@
 	
 	\subsection{OpenCV embedded}
 	\begin{frame}[label=pageopenCV]{OpenCV embedded}
+	\begin{center}
 	\includegraphics[width=1cm]{common/opencv.png}\\
+	\end{center}
+	Portage sur Architecture ARM
 	\hyperlink{openCV}{\beamergotobutton{openCV}}\\
-		\begin{center}
-			
-		\end{center}
+		\begin{block}{Etapes}
+		\begin{enumerate}
+			\item Choix des Modules openCV : Utilisation de Cmake
+			\item Cross-compilation librairies/modules
+			\item Portage des binaires générés sur cible
+			\item Tests
+	\end{enumerate}
+	\end{block}	
 	\end{frame}
-	
-	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	
 	\subsection{Optimisation démarrage}
-	\subsubsection[]{Hardware}
+
+	\begin{frame}{Optimisation du temps d'amorçage système}
+	\begin{center}
+	 \includegraphics[width=2cm]{common/boottime.png}
+	\end{center}
+	\end{frame}
+	
+	\subsubsection{Hardware}
 	\begin{frame}[label=optimisation]{Hardware}
 	U-boot
 	\begin{itemize}
@@ -414,41 +493,50 @@
 			\item apache
 	\end{itemize}
 	\end{frame}
-	\subsubsection[]{Subjectif}
+	\subsubsection{Subjectif}
 	\begin{frame}{Subjectif}
-	Remplacement du Logo 
+	Remplacement du Logo de démarrage : {\itshape \bfseries logo\string_linux\string_clut224.ppm}
+	 \newline
 	\begin{itemize}
 	\item Logo de base 
 		\begin{center}
 		 \includegraphics[width=1cm]{common/logo_1.png}
 		\end{center}
-	\item Logo personnalisé
+	\item Logo personnalisé : 640*480
 		\begin{center}
-		 \includegraphics[width=2cm]{common/logo_2.png}
+		 \includegraphics[width=3cm]{common/logo_2.png}
 		\end{center}
 	\end{itemize}
 	\end{frame}
 	
-	\begin{frame}{Suite ... Subjectif}
-	Utilisation simpliste du Framebuffer
+	\begin{frame}{PBIT}
+	\framesubtitle{Power On Built in Test}
+	Utilisation simpliste du Framebuffer pour la phase de ``PBIT''
+	 \newline
+	 \includegraphics[width=3cm]{common/PBIT1.png}
+	 \includegraphics[width=3cm]{common/PBIT2.png}
+	 \includegraphics[width=3cm]{common/PBIT3.png}\\
+	 \includegraphics[width=3cm]{common/PBIT4.png}
+	 \includegraphics[width=3cm]{common/PBIT5.png}
 	\end{frame}
 	%%%%%%%%%%%%%%%%%
 	\subsection{Power Management}
 	\begin{frame}[fragile]{Power Management}
+	\begin{block}{Réalisé}
 	\begin{itemize}
-			\item Composant --> AXP209\\
-			\item Création d'un `Cron'
-				\begin{block}{}
-				*/2 * * * * /bin/bash /home/PJ/power-management.sh\\
-				\end{block}
+			\item Création d'un Crontab
+			\item Test sur l'autonomie du Système
 	\end{itemize}
+	\end{block}
+	
 	\begin{center}
-		\includegraphics[width=4cm]{common/power_management.png}
+		\includegraphics[width=7cm]{common/power_management.png}
 	\end{center}
 	\end{frame}
 	%%%%%%%%%%%%%%%%%%%
 	\subsection{Optimisation du Système}
-	\begin{frame}{Réalisé}
+	\begin{frame}{Optimisation du Système}
+	\framesubtitle{Réalisé}
 	 \begin{itemize}
 	 \item  Système de fichier Temporaire \\
 	    	 \begin{itemize}
@@ -467,14 +555,16 @@
 	\end{itemize}
 	\end{frame}
 	
-	\begin{frame}{Possible}
-	\begin{itemize}
+	\begin{frame}{Optimisation du Système}
+	\framesubtitle{Possible}
+	 \begin{enumerate}
 	 \item Accélération matérielle 
 	\begin{center}
 		\includegraphics[width=2cm]{common/opengles.png}
 	\end{center}
 	 \item Gestion des Heuristiques
 	 \pause
+	
 	 \begin{itemize}
 	 \item powersave
 	 \pause
@@ -487,49 +577,83 @@
 	 \item userspace
 	 \pause
 	 \item perfomance
-	 \end{itemize}
+	 
 	\end{itemize}
+	 \end{enumerate}
 	\end{frame}
 
-		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%ù
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
 	\section{Bilan de LOT}
-	\begin{frame}{Bilan de LOT}
-	Coût de Developpement\\
+	\subsection{LOT Segment SOL : Coûts}
+	\begin{frame}{LOT Segment SOL : Coûts}
+	Coût de Developpement   \includegraphics[width=0.5cm]{common/coins.png}\\
 	\begin{center}
 	\begin{tabular}{|c|c|}
 			\hline
 			Nom / Prénom & Coût\\
 			\hline
-			TEXIER Pierre-jean  & 3300 Euros\\
+			TEXIER Pierre-jean  & 3300 \euro \\
 			\hline
-			PRADEAU Martin  & 2719 Euros \\
+			PRADEAU Martin  & 2719 \euro \\
 			%\hline
-			POUCH Pierre  & 2640 Euros \\
+			POUCH Pierre  & 2640 \euro \\
 			%\hline
-			L'HUILLIER Guillaume  & 2640 Euros \\
+			L'HUILLIER Guillaume  & 2640 \euro \\
 			%\hline
-			OUKRAT Rémi  & 19 669 Euros\\
-				
+			OUKRAT Rémi  & 19 669 \euro \\
 			\hline
 			\end{tabular}
 			\end{center}
-	Coût D'industrialisation pour 100 Pièces --> 33905 euros
-
+			
+	Coût D'industrialisation \includegraphics[width=0.5cm]{common/industry.png} : 100 Pièces => 33905 \euro
 	\end{frame}
 	
-
+	\subsection{Conclusion}
+	\begin{frame}{Conclusion}
+	\end{frame}
+	
 	\section{Conclusion}
+	\subsection{Matrice de Validation}
+	\begin{frame}{Matrice de Validation}
+
+	\begin{center}
+	\begin{tabular}{|p{3cm}|c|c|}
+			\hline
+			\rowcolor{yellow}Cahier des Charges & TV & Commentaires\\
+			\hline
+			 \centering Choix SoC / SbC & Levée de risque sur carte & \includegraphics[width=0.5cm]{common/ok.png} \\
+			\hline
+			 \centering Chaine de \par compilation croisée & Compilation ``hello world'' & \includegraphics[width=0.5cm]{common/ok.png} \\
+			\hline
+			 \centering OS Linux sur cible & Sur carte SD & \includegraphics[width=0.5cm]{common/ok.png} \\
+			\hline
+			 \centering Préparation graphique & Qt / OpenCV & \includegraphics[width=0.5cm]{common/ok.png} \\
+			\hline
+			 \centering Power Management & Via sysFS & \includegraphics[width=0.5cm]{common/ok.png} \\
+				
+			\hline
+			\end{tabular}
+	\end{center}
+	\end{frame}
+
+	\subsection{Conclusion}
 	\begin{frame}{Conclusion}
 	Compétences Acquises
 		\begin{center}
 		\begin{itemize}
-			\item Apport ...
+			\item Portage d'application graphique sur \textit{Architecture ARM}
+			\item Optimisation d'un système Linux
+			\item Gestion d'un Projet de bout en bout : \textit{Chef de Projet}
 		\end{itemize}
 		\end{center}
 	Bilan Personnel
 		\begin{center}
 		\begin{itemize}
-			\item Apport ...
+			\item Mise en pratique de l'enseignement \includegraphics[width=1.5cm]{common/estei.png}
+			\item Orientation en \textit{Linux Embarqué} confortée
+			\item Atout pour le prochain stage
+			\item Implication dans la communauté ``SUNXI''
 		\end{itemize}
 		\end{center}
 	\end{frame}
@@ -561,12 +685,6 @@
 	\hyperlink{choix}{\beamerreturnbutton{retour}}
 	\end{frame}
 	
-	\begin{frame}[label=SbC]{Analyse des périphériques}
-	 \begin{center}
-		\includegraphics[width=6cm]{common/Periph.png}
-	 \end{center}
-	\hyperlink{choix}{\beamerreturnbutton{retour}}
-	\end{frame}
 	
 	\begin{frame}[label=SbC_2]{Etude du Marché}
 	 \begin{center}

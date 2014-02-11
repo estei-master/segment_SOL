@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.12.24)  7 FEB 2014 21:17
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.12.24)  11 FEB 2014 19:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -972,6 +972,30 @@ File: listings.cfg 2007/02/22 1.4 listings configuration
 ))
 Package: listings 2007/02/22 1.4 (Carsten Heinz)
 
+(/usr/share/texlive/texmf-dist/tex/latex/eurosym/eurosym.sty
+Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
+\@eurobox=\box55
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks43
+\verbatim@line=\toks44
+\verbatim@in@stream=\read2
+)
+(/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen189
+\extrarowheight=\dimen190
+\NC@list=\toks45
+\extratabsurround=\skip57
+\backup@length=\skip58
+)
+\everycr=\toks46
+\minrowclearance=\skip59
+)
 (/usr/share/texlive/texmf-dist/tex/latex/animate/animate.sty
 Package: animate 2012/05/24 PDF animations from files and inline graphics
 
@@ -985,14 +1009,14 @@ Package: ifdraft 2008/08/11 v1.3 Detect class options draft and final (HO)
 Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count164
 \calc@Bcount=\count165
-\calc@Adimen=\dimen189
-\calc@Bdimen=\dimen190
-\calc@Askip=\skip57
-\calc@Bskip=\skip58
+\calc@Adimen=\dimen191
+\calc@Bdimen=\dimen192
+\calc@Askip=\skip60
+\calc@Bskip=\skip61
 LaTeX Info: Redefining \setlength on input line 76.
 LaTeX Info: Redefining \addtolength on input line 77.
 \calc@Ccount=\count166
-\calc@Cskip=\skip59
+\calc@Cskip=\skip62
 )
 (/usr/share/texlive/texmf-dist/tex/latex/animate/animfp.sty
 Package: animfp 2009/07/23 fixed point addition for animate.sty
@@ -1008,37 +1032,37 @@ Package: animfp 2009/07/23 fixed point addition for animate.sty
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count175
-\scratchdimen=\dimen191
-\scratchbox=\box55
+\scratchdimen=\dimen193
+\scratchbox=\box56
 \nofMPsegments=\count176
 \nofMParguments=\count177
-\everyMPshowfont=\toks43
+\everyMPshowfont=\toks47
 \MPscratchCnt=\count178
-\MPscratchDim=\dimen192
+\MPscratchDim=\dimen194
 \MPnumerator=\count179
 \makeMPintoPDFobject=\count180
-\everyMPtoPDFconversion=\toks44
+\everyMPtoPDFconversion=\toks48
 )
 \@anim@@fields=\count181
 \@anim@@ocgs=\count182
 \@anim@@posterocgs=\count183
-\@anim@box=\box56
-\@anim@tmpdima=\dimen193
-\@anim@tmpdimb=\dimen194
+\@anim@box=\box57
+\@anim@tmpdima=\dimen195
+\@anim@tmpdimb=\dimen196
 \@anim@num=\count184
 \@anim@curframe=\count185
 \@anim@curframe@zb=\count186
 \@anim@resize=\count187
 \@anim@skipfram=\count188
 \@anim@mulframecnt=\count189
-\@anim@@tmlnfile=\read2
+\@anim@@tmlnfile=\read3
 \@anim@tmpcnt=\count190
 \c@@anim@ltxcnt=\count191
 \@anim@curlayer=\count192
 \@anim@lineno=\count193
 \@anim@curfield=\count194
-\@anim@begin=\toks45
-\@anim@end=\toks46
+\@anim@begin=\toks49
+\@anim@end=\toks50
 ) (/usr/share/texmf/tex/latex/beamer/base/themes/theme/beamerthemeWarsaw.sty
 Package: beamerthemeWarsaw 2010/06/17  (rcs-revision d02a7cf4d8ae)
 
@@ -1059,21 +1083,21 @@ Package: beamercolorthemewhale 2010/06/17  (rcs-revision d02a7cf4d8ae)
 )) (./slide_projet.aux)
 \openout1 = `slide_projet.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Try loading font information for T1+lmss on input line 46.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 49.
  (/usr/share/texmf/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -1127,8 +1151,8 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box57
-Package hyperref Info: Link coloring OFF on input line 46.
+\AtBeginShipoutBox=\box58
+Package hyperref Info: Link coloring OFF on input line 49.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
@@ -1138,56 +1162,56 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count195
 )
-LaTeX Info: Redefining \ref on input line 46.
-LaTeX Info: Redefining \pageref on input line 46.
-LaTeX Info: Redefining \nameref on input line 46.
+LaTeX Info: Redefining \ref on input line 49.
+LaTeX Info: Redefining \pageref on input line 49.
+LaTeX Info: Redefining \nameref on input line 49.
 
 (./slide_projet.out) (./slide_projet.out)
 \@outlinefile=\write5
 \openout5 = `slide_projet.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/lmr/m/n --> OT1/cmss/m/n on input line 46.
+(Font)                  OT1/lmr/m/n --> OT1/cmss/m/n on input line 49.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/lmr/bx/n --> OT1/cmss/bx/n on input line 46.
+(Font)                  OT1/lmr/bx/n --> OT1/cmss/bx/n on input line 49.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/lmr/m/n on input line 46.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 46.
+(Font)                  OT1/cmss/m/n --> T1/lmr/m/n on input line 49.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 49.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/lmr/bx/n --> T1/lmss/bx/n on input line 46.
+(Font)                  OT1/lmr/bx/n --> T1/lmss/bx/n on input line 49.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/lmr/bx/n --> T1/lmss/bx/n on input line 46.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 46.
+(Font)                  OT1/lmr/bx/n --> T1/lmss/bx/n on input line 49.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 49.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/lmss/m/n --> T1/lmss/m/n on input line 46.
+(Font)                  OT1/lmss/m/n --> T1/lmss/m/n on input line 49.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/lmss/bx/n --> T1/lmss/m/n on input line 46.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 46.
+(Font)                  OT1/lmss/bx/n --> T1/lmss/m/n on input line 49.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 49.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/lmr/m/it --> T1/lmss/m/it on input line 46.
+(Font)                  OT1/lmr/m/it --> T1/lmss/m/it on input line 49.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/lmr/bx/it --> T1/lmss/m/it on input line 46.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 46.
+(Font)                  OT1/lmr/bx/it --> T1/lmss/m/it on input line 49.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 49.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/lmtt/m/n --> T1/lmtt/m/n on input line 46.
+(Font)                  OT1/lmtt/m/n --> T1/lmtt/m/n on input line 49.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/lmtt/m/n --> T1/lmtt/m/n on input line 46.
+(Font)                  OT1/lmtt/m/n --> T1/lmtt/m/n on input line 49.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  T1/lmss/m/n --> T1/lmss/bx/n on input line 46.
+(Font)                  T1/lmss/m/n --> T1/lmss/bx/n on input line 49.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T1/lmss/m/it --> T1/lmss/bx/it on input line 46.
+(Font)                  T1/lmss/m/it --> T1/lmss/bx/it on input line 49.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/bx/n --> T1/lmr/bx/n on input line 46.
+(Font)                  OT1/cmss/bx/n --> T1/lmr/bx/n on input line 49.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  T1/lmss/bx/n --> T1/lmss/bx/n on input line 46.
+(Font)                  T1/lmss/bx/n --> T1/lmss/bx/n on input line 49.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  T1/lmss/m/n --> T1/lmss/bx/n on input line 46.
+(Font)                  T1/lmss/m/n --> T1/lmss/bx/n on input line 49.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  T1/lmss/m/it --> T1/lmss/bx/it on input line 46.
+(Font)                  T1/lmss/m/it --> T1/lmss/bx/it on input line 49.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  T1/lmtt/m/n --> T1/lmtt/bx/n on input line 46.
+(Font)                  T1/lmtt/m/n --> T1/lmtt/bx/n on input line 49.
 
 (/usr/share/texmf/tex/latex/beamer/base/translator/dicts/translator-basic-dicti
 onary/translator-basic-dictionary-English.dict
@@ -1213,49 +1237,48 @@ Dictionary: translator-numbers-dictionary, Language: English
 tionary/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \degres on input line 46.
-LaTeX Info: Redefining \dots on input line 46.
-LaTeX Info: Redefining \up on input line 46.
+LaTeX Info: Redefining \degres on input line 49.
+LaTeX Info: Redefining \dots on input line 49.
+LaTeX Info: Redefining \up on input line 49.
 \c@lstlisting=\count196
  (./slide_projet.nav)
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 46.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 49.
 
 (/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 
 LaTeX Font Warning: Font shape `T1/lmss/m/sc' in size <6> not available
-(Font)              Font shape `T1/lmr/m/sc' tried instead on input line 46.
+(Font)              Font shape `T1/lmr/m/sc' tried instead on input line 49.
 
 
 LaTeX Font Warning: Font shape `T1/lmss/m/sc' in size <10.95> not available
-(Font)              Font shape `T1/lmr/m/sc' tried instead on input line 56.
+(Font)              Font shape `T1/lmr/m/sc' tried instead on input line 59.
 
-<common/estei.png, id=116, 114.6684pt x 36.135pt>
+<common/estei.png, id=146, 114.6684pt x 36.135pt>
 File: common/estei.png Graphic file (type png)
  <use common/estei.png>
-Package pdftex.def Info: common/estei.png used on input line 56.
+Package pdftex.def Info: common/estei.png used on input line 59.
 (pdftex.def)             Requested size: 56.9055pt x 17.93234pt.
 
-<common/cc.png, id=118, 88.33pt x 31.11626pt>
+<common/cc.png, id=148, 88.33pt x 31.11626pt>
 File: common/cc.png Graphic file (type png)
  <use common/cc.png>
-Package pdftex.def Info: common/cc.png used on input line 56.
+Package pdftex.def Info: common/cc.png used on input line 59.
 (pdftex.def)             Requested size: 28.45274pt x 10.02292pt.
-
-Overfull \vbox (3.07814pt too high) detected at line 56
- []
-
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+ [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
  <./common/estei.png> <./common/cc.png>] (./slide_projet.toc) (./slide_projet.t
 oc) [2
 
 ]
-<common/projet.png, id=225, 348.30125pt x 155.58125pt>
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 96.
+
+<common/projet.png, id=249, 348.30125pt x 155.58125pt>
 File: common/projet.png Graphic file (type png)
  <use common/projet.png>
-Package pdftex.def Info: common/projet.png used on input line 87.
+Package pdftex.def Info: common/projet.png used on input line 96.
 (pdftex.def)             Requested size: 142.26378pt x 63.54657pt.
 
 [3
@@ -1263,14 +1286,14 @@ Package pdftex.def Info: common/projet.png used on input line 87.
  <./common/projet.png>]
 File: common/projet.png Graphic file (type png)
  <use common/projet.png>
-Package pdftex.def Info: common/projet.png used on input line 87.
+Package pdftex.def Info: common/projet.png used on input line 96.
 (pdftex.def)             Requested size: 142.26378pt x 63.54657pt.
  [4
 
 ]
 File: common/projet.png Graphic file (type png)
  <use common/projet.png>
-Package pdftex.def Info: common/projet.png used on input line 87.
+Package pdftex.def Info: common/projet.png used on input line 96.
 (pdftex.def)             Requested size: 142.26378pt x 63.54657pt.
 
 [5
@@ -1278,577 +1301,675 @@ Package pdftex.def Info: common/projet.png used on input line 87.
 ]
 File: common/projet.png Graphic file (type png)
  <use common/projet.png>
-Package pdftex.def Info: common/projet.png used on input line 87.
+Package pdftex.def Info: common/projet.png used on input line 96.
 (pdftex.def)             Requested size: 142.26378pt x 63.54657pt.
  [6
 
 ]
-<common/OBS.png, id=367, 627.34375pt x 300.12125pt>
-File: common/OBS.png Graphic file (type png)
- <use common/OBS.png>
-Package pdftex.def Info: common/OBS.png used on input line 102.
-(pdftex.def)             Requested size: 227.62204pt x 108.89534pt.
-
-[7
-
- <./common/OBS.png>]
-File: common/OBS.png Graphic file (type png)
- <use common/OBS.png>
-Package pdftex.def Info: common/OBS.png used on input line 102.
-(pdftex.def)             Requested size: 227.62204pt x 108.89534pt.
- [8
+File: common/projet.png Graphic file (type png)
+ <use common/projet.png>
+Package pdftex.def Info: common/projet.png used on input line 96.
+(pdftex.def)             Requested size: 142.26378pt x 63.54657pt.
+ [7
 
 ]
+<common/segment.png, id=422, 170.0754pt x 119.0046pt>
+File: common/segment.png Graphic file (type png)
+ <use common/segment.png>
+Package pdftex.def Info: common/segment.png used on input line 114.
+(pdftex.def)             Requested size: 56.9055pt x 39.81639pt.
+
+<common/OBS.png, id=423, 627.34375pt x 300.12125pt>
 File: common/OBS.png Graphic file (type png)
  <use common/OBS.png>
-Package pdftex.def Info: common/OBS.png used on input line 102.
-(pdftex.def)             Requested size: 227.62204pt x 108.89534pt.
+Package pdftex.def Info: common/OBS.png used on input line 114.
+(pdftex.def)             Requested size: 199.16928pt x 95.28056pt.
+
+[8
+
+ <./common/segment.png> <./common/OBS.png>]
+File: common/segment.png Graphic file (type png)
+ <use common/segment.png>
+Package pdftex.def Info: common/segment.png used on input line 114.
+(pdftex.def)             Requested size: 56.9055pt x 39.81639pt.
+File: common/OBS.png Graphic file (type png)
+
+<use common/OBS.png>
+Package pdftex.def Info: common/OBS.png used on input line 114.
+(pdftex.def)             Requested size: 199.16928pt x 95.28056pt.
  [9
 
 ]
-<common/matrice.png, id=478, 452.892pt x 183.5658pt>
+File: common/segment.png Graphic file (type png)
+ <use common/segment.png>
+Package pdftex.def Info: common/segment.png used on input line 114.
+(pdftex.def)             Requested size: 56.9055pt x 39.81639pt.
+File: common/OBS.png Graphic file (type png)
+ <use common/OBS.png>
+Package pdftex.def Info: common/OBS.png used on input line 114.
+(pdftex.def)             Requested size: 199.16928pt x 95.28056pt.
+ [10
+
+]
+<common/matrice.png, id=542, 452.892pt x 183.5658pt>
 File: common/matrice.png Graphic file (type png)
  <use common/matrice.png>
-Package pdftex.def Info: common/matrice.png used on input line 116.
+Package pdftex.def Info: common/matrice.png used on input line 128.
 (pdftex.def)             Requested size: 284.52756pt x 115.32774pt.
-
-[10
-
- <./common/matrice.png>]
-<common/fonc.png, id=521, 600.2425pt x 458.71375pt>
-File: common/fonc.png Graphic file (type png)
- <use common/fonc.png>
-Package pdftex.def Info: common/fonc.png used on input line 125.
-(pdftex.def)             Requested size: 199.16928pt x 152.20892pt.
 
 [11
 
- <./common/fonc.png>] <common/V.png, id=556, 357.4956pt x 185.0112pt>
-File: common/V.png Graphic file (type png)
+ <./common/matrice.png>]
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 145.
 
-<use common/V.png>
-Package pdftex.def Info: common/V.png used on input line 135.
-(pdftex.def)             Requested size: 284.52756pt x 147.25822pt.
- [12
-
- <./common/V.png>]
-<common/roadmap.png, id=601, 452.892pt x 159.4758pt>
-File: common/roadmap.png Graphic file (type png)
- <use common/roadmap.png>
-Package pdftex.def Info: common/roadmap.png used on input line 148.
-(pdftex.def)             Requested size: 284.52756pt x 100.19287pt.
-
-[13
-
- <./common/roadmap.png>]
-File: common/roadmap.png Graphic file (type png)
- <use common/roadmap.png>
-Package pdftex.def Info: common/roadmap.png used on input line 148.
-(pdftex.def)             Requested size: 284.52756pt x 100.19287pt.
- [14
-
-]
-<common/depenses.png, id=683, 848.16875pt x 271.0125pt>
-File: common/depenses.png Graphic file (type png)
-
-<use common/depenses.png>
-Package pdftex.def Info: common/depenses.png used on input line 161.
-(pdftex.def)             Requested size: 284.52756pt x 90.91483pt.
- [15
-
- <./common/depenses.png>]
-File: common/depenses.png Graphic file (type png)
-
-<use common/depenses.png>
-Package pdftex.def Info: common/depenses.png used on input line 161.
-(pdftex.def)             Requested size: 284.52756pt x 90.91483pt.
- [16
-
-]
-<common/Gantt.png, id=761, 452.892pt x 142.131pt>
-File: common/Gantt.png Graphic file (type png)
- <use common/Gantt.png>
-Package pdftex.def Info: common/Gantt.png used on input line 176.
-(pdftex.def)             Requested size: 284.52756pt x 89.29575pt.
-
-[17
-
- <./common/Gantt.png>] <common/pert.png, id=801, 159.9576pt x 190.311pt>
-File: common/pert.png Graphic file (type png)
-
-<use common/pert.png>
-Package pdftex.def Info: common/pert.png used on input line 185.
-(pdftex.def)             Requested size: 113.81102pt x 135.40923pt.
- [18
-
- <./common/pert.png>] [19
-
-]
-<common/cdcperso.png, id=887, 215.8464pt x 147.9126pt>
-File: common/cdcperso.png Graphic file (type png)
-
-<use common/cdcperso.png>
-Package pdftex.def Info: common/cdcperso.png used on input line 233.
-(pdftex.def)             Requested size: 85.35826pt x 58.49367pt.
- [20
-
- <./common/cdcperso.png>]
-File: common/cdcperso.png Graphic file (type png)
-
-<use common/cdcperso.png>
-Package pdftex.def Info: common/cdcperso.png used on input line 233.
-(pdftex.def)             Requested size: 85.35826pt x 58.49367pt.
- [21
-
-] <common/gnu.png, id=961, 220.825pt x 220.825pt>
-File: common/gnu.png Graphic file (type png)
-
-<use common/gnu.png>
-Package pdftex.def Info: common/gnu.png used on input line 264.
-(pdftex.def)             Requested size: 11.38092pt x 11.37885pt.
-File: common/cc.png Graphic file (type png)
- <use common/cc.png>
-Package pdftex.def Info: common/cc.png used on input line 264.
-(pdftex.def)             Requested size: 28.45274pt x 10.02292pt.
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 264.
-
-
-(/usr/share/texmf/tex/latex/lm/omllmm.fd
+ (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 264
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 145
 .
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 264
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 145
 .
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 264.
+(Font)              <10.95> on input line 145.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 264.
+(Font)              <8> on input line 145.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 264.
-LaTeX Font Info:    Try loading font information for U+msa on input line 264.
+(Font)              <6> on input line 145.
+LaTeX Font Info:    Try loading font information for U+msa on input line 145.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 264.
+LaTeX Font Info:    Try loading font information for U+msb on input line 145.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 264.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <8> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 264.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 145.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <6> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 264.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 145.
 
-Overfull \vbox (0.85376pt too high) detected at line 264
- []
+
+Package frenchb.ldf Warning: Degrees would look better in TS1-encoding: 
+(frenchb.ldf)                add \usepackage{textcomp} to the preamble. 
+(frenchb.ldf)                Degrees used on input line 145.
+
+[12
+
+] <common/fonc.png, id=618, 600.2425pt x 458.71375pt>
+File: common/fonc.png Graphic file (type png)
+ <use common/fonc.png>
+Package pdftex.def Info: common/fonc.png used on input line 155.
+(pdftex.def)             Requested size: 199.16928pt x 152.20892pt.
+
+[13
+
+ <./common/fonc.png>]
+<common/cdcperso.png, id=657, 215.8464pt x 147.9126pt>
+File: common/cdcperso.png Graphic file (type png)
+
+<use common/cdcperso.png>
+Package pdftex.def Info: common/cdcperso.png used on input line 174.
+(pdftex.def)             Requested size: 85.35826pt x 58.49367pt.
+ [14
+
+ <./common/cdcperso.png>]
+File: common/cdcperso.png Graphic file (type png)
+
+<use common/cdcperso.png>
+Package pdftex.def Info: common/cdcperso.png used on input line 174.
+(pdftex.def)             Requested size: 85.35826pt x 58.49367pt.
+ [15
+
+]
+<common/gestion.jpg, id=733, 351.3125pt x 358.33875pt>
+File: common/gestion.jpg Graphic file (type jpg)
+
+<use common/gestion.jpg>
+Package pdftex.def Info: common/gestion.jpg used on input line 186.
+(pdftex.def)             Requested size: 142.26378pt x 145.10999pt.
+ [16
+
+ <./common/gestion.jpg>]
+<common/V.png, id=779, 357.4956pt x 185.0112pt>
+File: common/V.png Graphic file (type png)
+ <use common/V.png>
+Package pdftex.def Info: common/V.png used on input line 193.
+(pdftex.def)             Requested size: 284.52756pt x 147.25822pt.
+ [17
+
+ <./common/V.png>] <common/roadmap.png, id=819, 452.892pt x 159.4758pt>
+File: common/roadmap.png Graphic file (type png)
+
+<use common/roadmap.png>
+Package pdftex.def Info: common/roadmap.png used on input line 206.
+(pdftex.def)             Requested size: 284.52756pt x 100.19287pt.
+ [18
+
+ <./common/roadmap.png>]
+File: common/roadmap.png Graphic file (type png)
+ <use common/roadmap.png>
+Package pdftex.def Info: common/roadmap.png used on input line 206.
+(pdftex.def)             Requested size: 284.52756pt x 100.19287pt.
+
+[19
+
+] <common/depenses.png, id=900, 848.16875pt x 271.0125pt>
+File: common/depenses.png Graphic file (type png)
+
+<use common/depenses.png>
+Package pdftex.def Info: common/depenses.png used on input line 220.
+(pdftex.def)             Requested size: 284.52756pt x 90.91483pt.
+ [20
+
+ <./common/depenses.png>]
+File: common/depenses.png Graphic file (type png)
+
+<use common/depenses.png>
+Package pdftex.def Info: common/depenses.png used on input line 220.
+(pdftex.def)             Requested size: 284.52756pt x 90.91483pt.
+ [21
+
+]
+<common/Gantt.png, id=979, 1281.78876pt x 427.5975pt>
+File: common/Gantt.png Graphic file (type png)
+ <use common/Gantt.png>
+Package pdftex.def Info: common/Gantt.png used on input line 235.
+(pdftex.def)             Requested size: 284.52756pt x 94.9134pt.
 
 [22
 
- <./common/gnu.png>]
-File: common/gnu.png Graphic file (type png)
- <use common/gnu.png>
-Package pdftex.def Info: common/gnu.png used on input line 264.
-(pdftex.def)             Requested size: 11.38092pt x 11.37885pt.
-File: common/cc.png Graphic file (type png)
- <use common/cc.png>
-Package pdftex.def Info: common/cc.png used on input line 264.
-(pdftex.def)             Requested size: 28.45274pt x 10.02292pt.
-
-Overfull \vbox (0.85376pt too high) detected at line 264
- []
-
-[23
+ <./common/Gantt.png>]
+File: common/Gantt.png Graphic file (type png)
+ <use common/Gantt.png>
+Package pdftex.def Info: common/Gantt.png used on input line 235.
+(pdftex.def)             Requested size: 284.52756pt x 94.9134pt.
+ [23
 
 ]
-File: common/gnu.png Graphic file (type png)
- <use common/gnu.png>
-Package pdftex.def Info: common/gnu.png used on input line 264.
-(pdftex.def)             Requested size: 11.38092pt x 11.37885pt.
-File: common/cc.png Graphic file (type png)
- <use common/cc.png>
-Package pdftex.def Info: common/cc.png used on input line 264.
-(pdftex.def)             Requested size: 28.45274pt x 10.02292pt.
-
-Overfull \vbox (0.85376pt too high) detected at line 264
- []
+<common/pert.png, id=1058, 512.91624pt x 484.81125pt>
+File: common/pert.png Graphic file (type png)
+ <use common/pert.png>
+Package pdftex.def Info: common/pert.png used on input line 244.
+(pdftex.def)             Requested size: 170.71652pt x 161.36415pt.
 
 [24
 
-]
+ <./common/pert.png>] [25
+
+] <common/gnu.png, id=1140, 220.825pt x 220.825pt>
 File: common/gnu.png Graphic file (type png)
- <use common/gnu.png>
-Package pdftex.def Info: common/gnu.png used on input line 264.
+
+<use common/gnu.png>
+Package pdftex.def Info: common/gnu.png used on input line 305.
 (pdftex.def)             Requested size: 11.38092pt x 11.37885pt.
 File: common/cc.png Graphic file (type png)
  <use common/cc.png>
-Package pdftex.def Info: common/cc.png used on input line 264.
+Package pdftex.def Info: common/cc.png used on input line 305.
 (pdftex.def)             Requested size: 28.45274pt x 10.02292pt.
+ [26
 
-Overfull \vbox (0.85376pt too high) detected at line 264
- []
+ <./common/gnu.png>]
+File: common/gnu.png Graphic file (type png)
 
-[25
+<use common/gnu.png>
+Package pdftex.def Info: common/gnu.png used on input line 305.
+(pdftex.def)             Requested size: 11.38092pt x 11.37885pt.
+File: common/cc.png Graphic file (type png)
+ <use common/cc.png>
+Package pdftex.def Info: common/cc.png used on input line 305.
+(pdftex.def)             Requested size: 28.45274pt x 10.02292pt.
+ [27
 
 ]
 File: common/gnu.png Graphic file (type png)
  <use common/gnu.png>
-Package pdftex.def Info: common/gnu.png used on input line 264.
+Package pdftex.def Info: common/gnu.png used on input line 305.
 (pdftex.def)             Requested size: 11.38092pt x 11.37885pt.
 File: common/cc.png Graphic file (type png)
- <use common/cc.png>
-Package pdftex.def Info: common/cc.png used on input line 264.
+
+<use common/cc.png>
+Package pdftex.def Info: common/cc.png used on input line 305.
 (pdftex.def)             Requested size: 28.45274pt x 10.02292pt.
-
-Overfull \vbox (0.85376pt too high) detected at line 264
- []
-
-[26
-
-] <common/tux.png, id=1150, 128.48pt x 128.48pt>
-File: common/tux.png Graphic file (type png)
- <use common/tux.png>
-Package pdftex.def Info: common/tux.png used on input line 275.
-(pdftex.def)             Requested size: 56.9055pt x 56.9058pt.
-
-[27
-
- <./common/tux.png>]
-<common/220px-AllWinner_A20.jpg, id=1203, 220.825pt x 171.64125pt>
-File: common/220px-AllWinner_A20.jpg Graphic file (type jpg)
-
-<use common/220px-AllWinner_A20.jpg>
-Package pdftex.def Info: common/220px-AllWinner_A20.jpg used on input line 291.
-
-(pdftex.def)             Requested size: 56.9055pt x 44.23018pt.
-
-<common/A20-OLinuXino-MICRO-0.jpg, id=1205, 542.025pt x 375.4025pt>
-File: common/A20-OLinuXino-MICRO-0.jpg Graphic file (type jpg)
-
-<use common/A20-OLinuXino-MICRO-0.jpg>
-Package pdftex.def Info: common/A20-OLinuXino-MICRO-0.jpg used on input line 29
-1.
-(pdftex.def)             Requested size: 56.9055pt x 39.40982pt.
  [28
 
- <./common/220px-AllWinner_A20.jpg> <./common/A20-OLinuXino-MICRO-0.jpg>]
-File: common/220px-AllWinner_A20.jpg Graphic file (type jpg)
- <use common/220px-AllWinner_A20.jpg>
-Package pdftex.def Info: common/220px-AllWinner_A20.jpg used on input line 291.
-
-(pdftex.def)             Requested size: 56.9055pt x 44.23018pt.
-File: common/A20-OLinuXino-MICRO-0.jpg Graphic file (type jpg)
-
-<use common/A20-OLinuXino-MICRO-0.jpg>
-Package pdftex.def Info: common/A20-OLinuXino-MICRO-0.jpg used on input line 29
-1.
-(pdftex.def)             Requested size: 56.9055pt x 39.40982pt.
+]
+File: common/gnu.png Graphic file (type png)
+ <use common/gnu.png>
+Package pdftex.def Info: common/gnu.png used on input line 305.
+(pdftex.def)             Requested size: 11.38092pt x 11.37885pt.
+File: common/cc.png Graphic file (type png)
+ <use common/cc.png>
+Package pdftex.def Info: common/cc.png used on input line 305.
+(pdftex.def)             Requested size: 28.45274pt x 10.02292pt.
  [29
 
 ]
-<common/arcg.png, id=1303, 381.1038pt x 143.5764pt>
+File: common/gnu.png Graphic file (type png)
+
+<use common/gnu.png>
+Package pdftex.def Info: common/gnu.png used on input line 305.
+(pdftex.def)             Requested size: 11.38092pt x 11.37885pt.
+File: common/cc.png Graphic file (type png)
+ <use common/cc.png>
+Package pdftex.def Info: common/cc.png used on input line 305.
+(pdftex.def)             Requested size: 28.45274pt x 10.02292pt.
+ [30
+
+]
+<common/Settings.png, id=1318, 128.48pt x 128.48pt>
+File: common/Settings.png Graphic file (type png)
+ <use common/Settings.png>
+Package pdftex.def Info: common/Settings.png used on input line 316.
+(pdftex.def)             Requested size: 85.35826pt x 85.3597pt.
+
+[31
+
+ <./common/Settings.png>]
+<common/220px-AllWinner_A20.jpg, id=1371, 220.825pt x 171.64125pt>
+File: common/220px-AllWinner_A20.jpg Graphic file (type jpg)
+
+<use common/220px-AllWinner_A20.jpg>
+Package pdftex.def Info: common/220px-AllWinner_A20.jpg used on input line 333.
+
+(pdftex.def)             Requested size: 56.9055pt x 44.23018pt.
+
+<common/A20-OLinuXino-MICRO-0.jpg, id=1373, 542.025pt x 375.4025pt>
+File: common/A20-OLinuXino-MICRO-0.jpg Graphic file (type jpg)
+
+<use common/A20-OLinuXino-MICRO-0.jpg>
+Package pdftex.def Info: common/A20-OLinuXino-MICRO-0.jpg used on input line 33
+3.
+(pdftex.def)             Requested size: 56.9055pt x 39.40982pt.
+ [32
+
+ <./common/220px-AllWinner_A20.jpg> <./common/A20-OLinuXino-MICRO-0.jpg>]
+<common/arcg.png, id=1419, 381.1038pt x 143.5764pt>
 File: common/arcg.png Graphic file (type png)
  <use common/arcg.png>
-Package pdftex.def Info: common/arcg.png used on input line 298.
-(pdftex.def)             Requested size: 227.62204pt x 85.75433pt.
+Package pdftex.def Info: common/arcg.png used on input line 342.
+(pdftex.def)             Requested size: 284.52756pt x 107.19347pt.
 
-[30
+[33
 
  <./common/arcg.png>]
-<common/linaro.jpeg, id=1349, 319.1925pt x 159.59625pt>
+<common/linaro.jpeg, id=1464, 319.1925pt x 159.59625pt>
 File: common/linaro.jpeg Graphic file (type jpg)
 
 <use common/linaro.jpeg>
-Package pdftex.def Info: common/linaro.jpeg used on input line 325.
-(pdftex.def)             Requested size: 56.9055pt x 28.4509pt.
- <common/gnu.jpeg, id=1350, 206.7725pt x 245.91875pt>
-File: common/gnu.jpeg Graphic file (type jpg)
+Package pdftex.def Info: common/linaro.jpeg used on input line 362.
+(pdftex.def)             Requested size: 28.45274pt x 14.22423pt.
+ [34
 
-<use common/gnu.jpeg>
-Package pdftex.def Info: common/gnu.jpeg used on input line 325.
-(pdftex.def)             Requested size: 28.45274pt x 33.83925pt.
- [31
+ <./common/linaro.jpeg>]
+File: common/linaro.jpeg Graphic file (type jpg)
+ <use common/linaro.jpeg>
+Package pdftex.def Info: common/linaro.jpeg used on input line 362.
+(pdftex.def)             Requested size: 28.45274pt x 14.22423pt.
 
- <./common/linaro.jpeg> <./common/gnu.jpeg>]
-<common/risques.png, id=1395, 452.892pt x 188.8656pt>
+[35
+
+]
+File: common/linaro.jpeg Graphic file (type jpg)
+ <use common/linaro.jpeg>
+Package pdftex.def Info: common/linaro.jpeg used on input line 362.
+(pdftex.def)             Requested size: 28.45274pt x 14.22423pt.
+ [36
+
+]
+<common/risques.png, id=1590, 452.892pt x 188.8656pt>
 File: common/risques.png Graphic file (type png)
  <use common/risques.png>
-Package pdftex.def Info: common/risques.png used on input line 331.
+Package pdftex.def Info: common/risques.png used on input line 368.
 (pdftex.def)             Requested size: 227.62204pt x 94.92247pt.
 
-[32
+[37
 
- <./common/risques.png>] [33
+ <./common/risques.png>] [38
 
-] [34
+] [39
 
-] [35
+] [40
 
-] [36
+] [41
 
-] [37
+] [42
 
 ]
-<common/tuxleg.png, id=1676, 192.2382pt x 66.9702pt>
+<common/tuxleg.png, id=1858, 192.2382pt x 66.9702pt>
 File: common/tuxleg.png Graphic file (type png)
  <use common/tuxleg.png>
-Package pdftex.def Info: common/tuxleg.png used on input line 362.
+Package pdftex.def Info: common/tuxleg.png used on input line 425.
 (pdftex.def)             Requested size: 85.35826pt x 29.73674pt.
-
-[38
-
- <./common/tuxleg.png>] <common/SD.png, id=1720, 110.3322pt x 115.632pt>
-File: common/SD.png Graphic file (type png)
-
-<use common/SD.png>
-Package pdftex.def Info: common/SD.png used on input line 370.
-(pdftex.def)             Requested size: 85.35826pt x 89.46036pt.
- [39
-
- <./common/SD.png>]
-<common/Qt.jpeg, id=1764, 160.6pt x 180.675pt>
-File: common/Qt.jpeg Graphic file (type jpg)
- <use common/Qt.jpeg>
-Package pdftex.def Info: common/Qt.jpeg used on input line 384.
-(pdftex.def)             Requested size: 28.45274pt x 32.00731pt.
- [40
-
- <./common/Qt.jpeg>]
-File: common/Qt.jpeg Graphic file (type jpg)
- <use common/Qt.jpeg>
-Package pdftex.def Info: common/Qt.jpeg used on input line 384.
-(pdftex.def)             Requested size: 28.45274pt x 32.00731pt.
- [41
-
-]
-File: common/Qt.jpeg Graphic file (type jpg)
- <use common/Qt.jpeg>
-Package pdftex.def Info: common/Qt.jpeg used on input line 384.
-(pdftex.def)             Requested size: 28.45274pt x 32.00731pt.
- [42
-
-]
-<common/opencv.png, id=1909, 144.54pt x 178.0251pt>
-File: common/opencv.png Graphic file (type png)
- <use common/opencv.png>
-Package pdftex.def Info: common/opencv.png used on input line 397.
-(pdftex.def)             Requested size: 28.45274pt x 35.04207pt.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 425.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 425.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 425.
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 425.
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <7> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 425.
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <5> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 425.
 
 [43
 
- <./common/opencv.png>] [44
+ <./common/tuxleg.png>] <common/SD.png, id=1902, 110.3322pt x 115.632pt>
+File: common/SD.png Graphic file (type png)
+
+<use common/SD.png>
+Package pdftex.def Info: common/SD.png used on input line 429.
+(pdftex.def)             Requested size: 85.35826pt x 89.46036pt.
+ [44
+
+ <./common/SD.png>]
+<common/Qt.jpeg, id=1946, 160.6pt x 180.675pt>
+File: common/Qt.jpeg Graphic file (type jpg)
+ <use common/Qt.jpeg>
+Package pdftex.def Info: common/Qt.jpeg used on input line 450.
+(pdftex.def)             Requested size: 8.5359pt x 9.60219pt.
+ [45
+
+ <./common/Qt.jpeg>] <common/opencv.png, id=1991, 144.54pt x 178.0251pt>
+File: common/opencv.png Graphic file (type png)
+
+<use common/opencv.png>
+Package pdftex.def Info: common/opencv.png used on input line 471.
+(pdftex.def)             Requested size: 28.45274pt x 35.04207pt.
+ [46
+
+ <./common/opencv.png>]
+<common/boottime.png, id=2038, 49.1436pt x 45.2892pt>
+File: common/boottime.png Graphic file (type png)
+
+<use common/boottime.png>
+Package pdftex.def Info: common/boottime.png used on input line 480.
+(pdftex.def)             Requested size: 56.9055pt x 52.44496pt.
+ [47
+
+ <./common/boottime.png>] [48
 
 ]
-<common/logo_1.png, id=2008, 80.4606pt x 80.4606pt>
+LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <10.95> not available
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 510.
+
+
+<common/logo_1.png, id=2129, 80.4606pt x 80.4606pt>
 File: common/logo_1.png Graphic file (type png)
  <use common/logo_1.png>
-Package pdftex.def Info: common/logo_1.png used on input line 430.
+Package pdftex.def Info: common/logo_1.png used on input line 510.
 (pdftex.def)             Requested size: 28.45274pt x 28.45259pt.
 
-<common/logo_2.png, id=2009, 231.264pt x 173.448pt>
+<common/logo_2.png, id=2130, 231.264pt x 173.448pt>
 File: common/logo_2.png Graphic file (type png)
  <use common/logo_2.png>
-Package pdftex.def Info: common/logo_2.png used on input line 430.
-(pdftex.def)             Requested size: 56.9055pt x 42.67906pt.
+Package pdftex.def Info: common/logo_2.png used on input line 510.
+(pdftex.def)             Requested size: 85.35826pt x 64.0186pt.
 
-[45
+[49
 
- <./common/logo_1.png> <./common/logo_2.png>] [46
+ <./common/logo_1.png> <./common/logo_2.png>]
+<common/PBIT1.png, id=2176, 140.6856pt x 84.7968pt>
+File: common/PBIT1.png Graphic file (type png)
+ <use common/PBIT1.png>
+Package pdftex.def Info: common/PBIT1.png used on input line 521.
+(pdftex.def)             Requested size: 85.35826pt x 51.45035pt.
 
-]
+<common/PBIT2.png, id=2177, 144.54pt x 86.724pt>
+File: common/PBIT2.png Graphic file (type png)
+ <use common/PBIT2.png>
+Package pdftex.def Info: common/PBIT2.png used on input line 521.
+(pdftex.def)             Requested size: 85.35826pt x 51.21434pt.
+
+<common/PBIT3.png, id=2178, 144.54pt x 86.724pt>
+File: common/PBIT3.png Graphic file (type png)
+ <use common/PBIT3.png>
+Package pdftex.def Info: common/PBIT3.png used on input line 521.
+(pdftex.def)             Requested size: 85.35826pt x 51.21434pt.
+
+<common/PBIT4.png, id=2179, 145.9854pt x 87.6876pt>
+File: common/PBIT4.png Graphic file (type png)
+ <use common/PBIT4.png>
+Package pdftex.def Info: common/PBIT4.png used on input line 521.
+(pdftex.def)             Requested size: 85.35826pt x 51.27094pt.
+
+<common/PBIT5.png, id=2180, 144.54pt x 86.724pt>
+File: common/PBIT5.png Graphic file (type png)
+ <use common/PBIT5.png>
+Package pdftex.def Info: common/PBIT5.png used on input line 521.
+(pdftex.def)             Requested size: 85.35826pt x 51.21434pt.
+
+[50
+
+ <./common/PBIT1.png> <./common/PBIT2.png> <./common/PBIT3.png> <./common/PBIT4
+.png> <./common/PBIT5.png>]
 \openout4 = `slide_projet.vrb'.
 
  (./slide_projet.vrb
-<common/power_management.png, id=2098, 1027.84pt x 602.25pt>
+<common/power_management.png, id=2227, 1027.84pt x 602.25pt>
 File: common/power_management.png Graphic file (type png)
 
 <use common/power_management.png>
 Package pdftex.def Info: common/power_management.png used on input line 9.
-(pdftex.def)             Requested size: 113.81102pt x 66.67961pt.
-) [47
+(pdftex.def)             Requested size: 199.16928pt x 116.6985pt.
+)
+Overfull \vbox (5.6223pt too high) detected at line 535
+ []
 
- <./common/power_management.png>]
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 468.
+[51
 
-[48
+ <./common/power_management.png>] [52
 
-] <common/opengles.png, id=2186, 104.5506pt x 109.3686pt>
+]
+<common/opengles.png, id=2310, 104.5506pt x 109.3686pt>
 File: common/opengles.png Graphic file (type png)
 
 <use common/opengles.png>
-Package pdftex.def Info: common/opengles.png used on input line 492.
+Package pdftex.def Info: common/opengles.png used on input line 583.
 (pdftex.def)             Requested size: 56.9055pt x 59.52876pt.
- [49
+ [53
 
  <./common/opengles.png>]
 File: common/opengles.png Graphic file (type png)
 
 <use common/opengles.png>
-Package pdftex.def Info: common/opengles.png used on input line 492.
-(pdftex.def)             Requested size: 56.9055pt x 59.52876pt.
- [50
-
-]
-File: common/opengles.png Graphic file (type png)
- <use common/opengles.png>
-Package pdftex.def Info: common/opengles.png used on input line 492.
-(pdftex.def)             Requested size: 56.9055pt x 59.52876pt.
- [51
-
-]
-File: common/opengles.png Graphic file (type png)
-
-<use common/opengles.png>
-Package pdftex.def Info: common/opengles.png used on input line 492.
-(pdftex.def)             Requested size: 56.9055pt x 59.52876pt.
- [52
-
-]
-File: common/opengles.png Graphic file (type png)
- <use common/opengles.png>
-Package pdftex.def Info: common/opengles.png used on input line 492.
-(pdftex.def)             Requested size: 56.9055pt x 59.52876pt.
- [53
-
-]
-File: common/opengles.png Graphic file (type png)
-
-<use common/opengles.png>
-Package pdftex.def Info: common/opengles.png used on input line 492.
+Package pdftex.def Info: common/opengles.png used on input line 583.
 (pdftex.def)             Requested size: 56.9055pt x 59.52876pt.
  [54
 
 ]
 File: common/opengles.png Graphic file (type png)
  <use common/opengles.png>
-Package pdftex.def Info: common/opengles.png used on input line 492.
+Package pdftex.def Info: common/opengles.png used on input line 583.
 (pdftex.def)             Requested size: 56.9055pt x 59.52876pt.
  [55
 
-] [56
+]
+File: common/opengles.png Graphic file (type png)
 
-] [57
+<use common/opengles.png>
+Package pdftex.def Info: common/opengles.png used on input line 583.
+(pdftex.def)             Requested size: 56.9055pt x 59.52876pt.
+ [56
 
 ]
-<common/dialog-question.png, id=2563, 128.48pt x 128.48pt>
+File: common/opengles.png Graphic file (type png)
+ <use common/opengles.png>
+Package pdftex.def Info: common/opengles.png used on input line 583.
+(pdftex.def)             Requested size: 56.9055pt x 59.52876pt.
+ [57
+
+]
+File: common/opengles.png Graphic file (type png)
+
+<use common/opengles.png>
+Package pdftex.def Info: common/opengles.png used on input line 583.
+(pdftex.def)             Requested size: 56.9055pt x 59.52876pt.
+ [58
+
+]
+File: common/opengles.png Graphic file (type png)
+ <use common/opengles.png>
+Package pdftex.def Info: common/opengles.png used on input line 583.
+(pdftex.def)             Requested size: 56.9055pt x 59.52876pt.
+ [59
+
+]
+<common/coins.png, id=2601, 128.48pt x 128.48pt>
+File: common/coins.png Graphic file (type png)
+ <use common/coins.png>
+Package pdftex.def Info: common/coins.png used on input line 610.
+(pdftex.def)             Requested size: 14.22636pt x 14.22498pt.
+
+<common/industry.png, id=2602, 128.48pt x 128.48pt>
+File: common/industry.png Graphic file (type png)
+ <use common/industry.png>
+Package pdftex.def Info: common/industry.png used on input line 610.
+(pdftex.def)             Requested size: 14.22636pt x 14.22498pt.
+
+[60
+
+ <./common/coins.png> <./common/industry.png>] [61
+
+]
+<common/ok.png, id=2677, 128.48pt x 128.48pt>
+File: common/ok.png Graphic file (type png)
+ <use common/ok.png>
+Package pdftex.def Info: common/ok.png used on input line 638.
+(pdftex.def)             Requested size: 14.22636pt x 14.22498pt.
+File: common/ok.png Graphic file (type png)
+
+<use common/ok.png>
+Package pdftex.def Info: common/ok.png used on input line 638.
+(pdftex.def)             Requested size: 14.22636pt x 14.22498pt.
+File: common/ok.png Graphic file (type png)
+ <use common/ok.png>
+Package pdftex.def Info: common/ok.png used on input line 638.
+(pdftex.def)             Requested size: 14.22636pt x 14.22498pt.
+File: common/ok.png Graphic file (type png)
+ <use common/ok.png>
+Package pdftex.def Info: common/ok.png used on input line 638.
+(pdftex.def)             Requested size: 14.22636pt x 14.22498pt.
+File: common/ok.png Graphic file (type png)
+
+<use common/ok.png>
+Package pdftex.def Info: common/ok.png used on input line 638.
+(pdftex.def)             Requested size: 14.22636pt x 14.22498pt.
+ [62
+
+ <./common/ok.png>]
+File: common/estei.png Graphic file (type png)
+ <use common/estei.png>
+Package pdftex.def Info: common/estei.png used on input line 659.
+(pdftex.def)             Requested size: 42.67912pt x 13.44913pt.
+ [63
+
+]
+<common/dialog-question.png, id=2752, 128.48pt x 128.48pt>
 File: common/dialog-question.png Graphic file (type png)
 
 <use common/dialog-question.png>
-Package pdftex.def Info: common/dialog-question.png used on input line 547.
+Package pdftex.def Info: common/dialog-question.png used on input line 671.
 (pdftex.def)             Requested size: 56.9055pt x 56.9058pt.
 
-<common/appli.png, id=2564, 161.403pt x 101.178pt>
+<common/appli.png, id=2753, 161.403pt x 101.178pt>
 File: common/appli.png Graphic file (type png)
  <use common/appli.png>
-Package pdftex.def Info: common/appli.png used on input line 547.
+Package pdftex.def Info: common/appli.png used on input line 671.
 (pdftex.def)             Requested size: 85.35826pt x 53.50829pt.
-
-[58
-
- <./common/dialog-question.png> <./common/appli.png>]
-<common/kernel.png, id=2603, 379.1766pt x 206.2104pt>
-File: common/kernel.png Graphic file (type png)
- <use common/kernel.png>
-Package pdftex.def Info: common/kernel.png used on input line 555.
-(pdftex.def)             Requested size: 227.62204pt x 123.79012pt.
-
-[59
-
- <./common/kernel.png>] <common/SoC.png, id=2644, 279.9258pt x 150.3216pt>
-File: common/SoC.png Graphic file (type png)
-
-<use common/SoC.png>
-Package pdftex.def Info: common/SoC.png used on input line 562.
-(pdftex.def)             Requested size: 199.16928pt x 106.95615pt.
- [60
-
- <./common/SoC.png>]
-<common/Periph.png, id=2684, 251.4996pt x 166.221pt>
-File: common/Periph.png Graphic file (type png)
- <use common/Periph.png>
-Package pdftex.def Info: common/Periph.png used on input line 569.
-(pdftex.def)             Requested size: 170.71652pt x 112.836pt.
-
-[61
-
- <./common/Periph.png>] <common/rpi.jpg, id=2726, 1284.8pt x 1027.84pt>
-File: common/rpi.jpg Graphic file (type jpg)
-
-<use common/rpi.jpg>
-Package pdftex.def Info: common/rpi.jpg used on input line 579.
-(pdftex.def)             Requested size: 71.13188pt x 56.89993pt.
- <common/Panda.png, id=2727, 642.4pt x 426.59375pt>
-File: common/Panda.png Graphic file (type png)
-
-<use common/Panda.png>
-Package pdftex.def Info: common/Panda.png used on input line 579.
-(pdftex.def)             Requested size: 71.13188pt x 47.23138pt.
- <common/odroid.jpg, id=2728, 632.3625pt x 439.6425pt>
-File: common/odroid.jpg Graphic file (type jpg)
-
-<use common/odroid.jpg>
-Package pdftex.def Info: common/odroid.jpg used on input line 579.
-(pdftex.def)             Requested size: 71.13188pt x 49.44757pt.
-
-<common/Cubieboard.jpeg, id=2729, 692.5875pt x 444.91219pt>
-File: common/Cubieboard.jpeg Graphic file (type jpg)
-
-<use common/Cubieboard.jpeg>
-Package pdftex.def Info: common/Cubieboard.jpeg used on input line 579.
-(pdftex.def)             Requested size: 71.13188pt x 45.68864pt.
- [62
-
- <./common/rpi.jpg> <./common/Panda.png> <./common/odroid.jpg> <./common/Cubieb
-oard.jpeg>]
-<common/Qt_arch.png, id=2769, 939.51pt x 556.0775pt>
-File: common/Qt_arch.png Graphic file (type png)
- <use common/Qt_arch.png>
-Package pdftex.def Info: common/Qt_arch.png used on input line 586.
-(pdftex.def)             Requested size: 227.62204pt x 134.72559pt.
-
-[63
-
- <./common/Qt_arch.png>]
-<common/tslib.png, id=2808, 671.50874pt x 506.89375pt>
-File: common/tslib.png Graphic file (type png)
- <use common/tslib.png>
-Package pdftex.def Info: common/tslib.png used on input line 593.
-(pdftex.def)             Requested size: 170.71652pt x 128.8656pt.
 
 [64
 
- <./common/tslib.png>] <common/v4l.png, id=2848, 210.5466pt x 157.5486pt>
+ <./common/dialog-question.png> <./common/appli.png>]
+<common/kernel.png, id=2792, 379.1766pt x 206.2104pt>
+File: common/kernel.png Graphic file (type png)
+ <use common/kernel.png>
+Package pdftex.def Info: common/kernel.png used on input line 679.
+(pdftex.def)             Requested size: 227.62204pt x 123.79012pt.
+
+[65
+
+ <./common/kernel.png>] <common/SoC.png, id=2832, 279.9258pt x 150.3216pt>
+File: common/SoC.png Graphic file (type png)
+
+<use common/SoC.png>
+Package pdftex.def Info: common/SoC.png used on input line 686.
+(pdftex.def)             Requested size: 199.16928pt x 106.95615pt.
+ [66
+
+ <./common/SoC.png>]
+<common/rpi.jpg, id=2873, 1284.8pt x 1027.84pt>
+File: common/rpi.jpg Graphic file (type jpg)
+ <use common/rpi.jpg>
+Package pdftex.def Info: common/rpi.jpg used on input line 697.
+(pdftex.def)             Requested size: 71.13188pt x 56.89993pt.
+
+<common/Panda.png, id=2874, 642.4pt x 426.59375pt>
+File: common/Panda.png Graphic file (type png)
+ <use common/Panda.png>
+Package pdftex.def Info: common/Panda.png used on input line 697.
+(pdftex.def)             Requested size: 71.13188pt x 47.23138pt.
+
+<common/odroid.jpg, id=2875, 632.3625pt x 439.6425pt>
+File: common/odroid.jpg Graphic file (type jpg)
+ <use common/odroid.jpg>
+Package pdftex.def Info: common/odroid.jpg used on input line 697.
+(pdftex.def)             Requested size: 71.13188pt x 49.44757pt.
+
+<common/Cubieboard.jpeg, id=2876, 692.5875pt x 444.91219pt>
+File: common/Cubieboard.jpeg Graphic file (type jpg)
+
+<use common/Cubieboard.jpeg>
+Package pdftex.def Info: common/Cubieboard.jpeg used on input line 697.
+(pdftex.def)             Requested size: 71.13188pt x 45.68864pt.
+ [67
+
+ <./common/rpi.jpg> <./common/Panda.png> <./common/odroid.jpg> <./common/Cubieb
+oard.jpeg>]
+<common/Qt_arch.png, id=2917, 939.51pt x 556.0775pt>
+File: common/Qt_arch.png Graphic file (type png)
+ <use common/Qt_arch.png>
+Package pdftex.def Info: common/Qt_arch.png used on input line 704.
+(pdftex.def)             Requested size: 227.62204pt x 134.72559pt.
+
+[68
+
+ <./common/Qt_arch.png>]
+<common/tslib.png, id=2956, 671.50874pt x 506.89375pt>
+File: common/tslib.png Graphic file (type png)
+ <use common/tslib.png>
+Package pdftex.def Info: common/tslib.png used on input line 711.
+(pdftex.def)             Requested size: 170.71652pt x 128.8656pt.
+
+[69
+
+ <./common/tslib.png>] <common/v4l.png, id=2996, 210.5466pt x 157.5486pt>
 File: common/v4l.png Graphic file (type png)
 
 <use common/v4l.png>
-Package pdftex.def Info: common/v4l.png used on input line 600.
+Package pdftex.def Info: common/v4l.png used on input line 718.
 (pdftex.def)             Requested size: 170.71652pt x 127.75308pt.
- [65
+ [70
 
  <./common/v4l.png>]
-<common/bootchart.png, id=2887, 662.475pt x 871.255pt>
+<common/bootchart.png, id=3035, 662.475pt x 871.255pt>
 File: common/bootchart.png Graphic file (type png)
 
 <use common/bootchart.png>
-Package pdftex.def Info: common/bootchart.png used on input line 607.
+Package pdftex.def Info: common/bootchart.png used on input line 725.
 (pdftex.def)             Requested size: 113.81102pt x 149.66681pt.
-
-Overfull \vbox (3.2229pt too high) detected at line 607
- []
-
-[66
+ [71
 
  <./common/bootchart.png>]
 \tf@nav=\write6
@@ -1860,33 +1981,34 @@ Overfull \vbox (3.2229pt too high) detected at line 607
 \tf@snm=\write8
 \openout8 = `slide_projet.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 609.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 609.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 727.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 727.
  (./slide_projet.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 609.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 609.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 727.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 727.
 Package rerunfilecheck Info: File `slide_projet.out' has not changed.
-(rerunfilecheck)             Checksum: EC8EA4AAD8DE2B78DD70EC8427C4940E;1327.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 609.
+(rerunfilecheck)             Checksum: C6F58CE22138A8153A5CEBFBCFF29361;1884.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 727.
  ) 
 Here is how much of TeX's memory you used:
- 19351 strings out of 495059
- 345815 string characters out of 3182029
- 449103 words of memory out of 3000000
- 21833 multiletter control sequences out of 15000+200000
- 48044 words of font info for 46 fonts, out of 3000000 for 9000
+ 19664 strings out of 495059
+ 350745 string characters out of 3182029
+ 454874 words of memory out of 3000000
+ 22104 multiletter control sequences out of 15000+200000
+ 66240 words of font info for 67 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 49i,19n,61p,401b,990s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf/fonts/type1/
-public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/
-share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/publ
-ic/lm/lmss8.pfb></usr/share/texmf/fonts/type1/public/lm/lmss9.pfb></usr/share/t
-exmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm
-/lmsso10.pfb>
-Output written on slide_projet.pdf (66 pages, 3102124 bytes).
+ 49i,19n,61p,401b,1055s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texlive/texmf-dist
+/fonts/type1/public/eurosym/feymr10.pfb></usr/share/texmf/fonts/type1/public/lm
+/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/tex
+mf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lms
+s8.pfb></usr/share/texmf/fonts/type1/public/lm/lmss9.pfb></usr/share/texmf/font
+s/type1/public/lm/lmssbo10.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10
+.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso10.pfb>
+Output written on slide_projet.pdf (71 pages, 3520911 bytes).
 PDF statistics:
- 2995 PDF objects out of 3580 (max. 8388607)
- 2799 compressed objects within 28 object streams
- 192 named destinations out of 1000 (max. 500000)
- 492 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3152 PDF objects out of 3580 (max. 8388607)
+ 2932 compressed objects within 30 object streams
+ 204 named destinations out of 1000 (max. 500000)
+ 607 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,7 +1,7 @@
 digraph G {
-"Projet DRONE" [shape=note]; 
+"Projet DRONE" [shape=note, ,style=filled, color=yellow]; 
 "Segment SOL" [shape=component] ;
 "Segment Drone" [shape=component];
-"Projet de Fin d'étude"-> "Segment SOL"
-"Projet de Fin d'étude"-> "Segment Drone"
+"Projet DRONE"-> "Segment SOL"
+"Projet DRONE"-> "Segment Drone"
 } 
